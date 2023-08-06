@@ -1,0 +1,15 @@
+[
+    {  // borrowing this while testing
+     "name": "Portal Gate", 
+     "cost": 0, 
+     "uniques": [ 
+        "Can only be built [in capital]",
+        "Free [Worker] appears",
+        "Reveals the entire map",
+        "[+10 Food, +10 Production, +10 Gold, +10 Science, +10 Culture, +10 Faith] from [Grassland] tiles [in this city]", 
+        "Limited to [1] per Civilization", 
+        "[+10] population [in all cities]",
+        "[+100 Happiness] [in all cities]"
+        ]
+    }
+] 
