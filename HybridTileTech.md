@@ -29,6 +29,8 @@ Credit unwittingly goes to A1y0sh4 for inadvertently applying this strange behav
 
 ## Features
 
+Land units can cross bridge/hybrid tiles withough embarking, while Water units can cross bridge/hybrid tiles without impedement.
+
 Not just bridges, but also, in the case of Z2, _secret water paths_ Land units can traverse using CoastTile or OceanTile.
 
 Hybrid tiles do not count in continent calculations, meaning “attached” lands can now be split! You’ll find “Maze Island” is a different continent than the central continent even though they are adjoined by a bridge.
