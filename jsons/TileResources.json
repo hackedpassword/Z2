@@ -327,7 +327,7 @@
 	{
 		"name": "Silk",
 		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Forest","Jungle","Grassland","Swamp"],
+		"terrainsCanBeFoundOn": ["Forest","Jungle","Grassland","Marsh"],
 		"gold": 2,
 		"improvement": "Plantation",
 		"uniques": ["Generated with weight [5] <in [Jungle] Regions>",
