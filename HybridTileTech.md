@@ -18,6 +18,10 @@ Terrains.json:
 	    "unbuildable": true,
 ```
 
+The basic assembly process looks like:
+
+![](https://github.com/hackedpassword/Unciv-Assets/blob/main/Images/Z2/Bridge_info.png?raw=true)
+
 _You’ll want to read on before jumping into this, there’s a bit more to it._
 
 
