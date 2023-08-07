@@ -4,6 +4,7 @@ Author: hackedpassword | discord/wphoenix
 
 # Hybrid tile tech: The birth of hybrid tiles, i.e. Bridges!
 
+![](https://media.discordapp.net/attachments/664739473367760908/1137293801862463638/totally_crossed_out.png?width=1074&height=631)
 
 ## Reveal
 
