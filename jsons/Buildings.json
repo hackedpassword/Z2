@@ -1,6 +1,6 @@
 [
     {  // Experimenting
-     "name": "Ancient Portal Gate", 
+     "name": "Portal Gate", 
      "cost": 0, 
      "uniques": [ 
         "Can only be built [in capital]",
