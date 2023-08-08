@@ -11,9 +11,16 @@ This isn’t your normal Unciv map, or mod. Being that I’m a huge fan of the o
 
 There’s a write up on [Hybrid Tile Tech](HybridTileTech.md) revealing how this bridge madness works.
 
+## Before:
+
+![](https://raw.githubusercontent.com/hackedpassword/Unciv-Assets/main/Images/Z2/Z2_before.png)
+
+## After:
+![](https://raw.githubusercontent.com/hackedpassword/Unciv-Assets/main/Images/Z2/Z2_after.png)
+
 ## Credits are due!
 - [The Spriters Resource]( https://www.spriters-resource.com/) for fantastic sprite sheets.
-- Included are credits to the sprite rippers: Mister Mike, Obreck, Rick N. Bruns
+- Included are credits to the sprite rippers: Mister Mike, Obreck, Rick N. Bruns (that partial original map above) - huge thanks for creating that map!
 - Everyone’s images on the net I used for visual reference
 - Ninendo including my NES and my copy of Zelda 2
 - Myself for upcoming audio samples from the game for in-game Z2 use
@@ -28,7 +35,7 @@ First and foremost, this is an experimental, unbalanced, first release demo. The
 
 The initial aesthetics are intact. All places, power-ups, bonuses, etc are as-is in a very detailed interpretation of the original Zelda game. Converting from square tiles to hex tiles is challenging, but the challenge was met!
 
-The map was built with purists in mind. Take Maze Island for instance. At the scale of square-hex conversion, I dare you to find a better tile conversion. Nerds may apply!
+The map was built with purists in mind. Take Maze Island for instance. I'm constantly looking for accuracy tweaks. Hey, there's one now!
 
 Bringing Unciv elements to Z2 was interesting. I have managed to effectively crossover both games. More work is needed, especially once improvements are created.
 
