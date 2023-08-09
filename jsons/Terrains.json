@@ -579,7 +579,7 @@
 	    "movementCost": 1,
 	    "occursOn": ["Coast"],
 	    "uniques": ["Rare feature",
-	    "Units ending their turn on this terrain take [30] damage", // won't trigger: <for [land units] units>
+	    "Units ending their turn on this terrain take [10] damage", // won't trigger: <for [land units] units>
 	    "Never receives any resources <in [Hill] tiles>", "Always Fertility [-1] for Map Generation",
             "Only [Great] improvements may be built on this tile"],
 	    "turnsInto": "Hill",
@@ -589,10 +589,10 @@
 	{
 	    "name": "OceanTile",
 	    "type": "NaturalWonder",
-	    "movementCost": 1,
+	    "movementCost": 0,
 	    "occursOn": ["Ocean"],
 	    "uniques": ["Rare feature",
-	    "Units ending their turn on this terrain take [40] damage", // won't trigger: <for [land units] units>
+	    "Units ending their turn on this terrain take [25] damage", // won't trigger: <for [land units] units>
 	    "Never receives any resources <in [Hill] tiles>", "Always Fertility [-1] for Map Generation",
             "Only [Great] improvements may be built on this tile"],
 	    "turnsInto": "Hill",
