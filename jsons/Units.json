@@ -8,11 +8,11 @@
 		"unitType": "Civilian",
 		"movement": 2,
 		"uniques": ["Automation is a primary action",
-		"Ignores terrain cost",
+//		"Ignores terrain cost",
                 "Can build [Land] improvements on tiles",
 		"Can build [Natural Wonder] improvements on tiles", // Hacky attempt at adding features/improvements for things like bridges, doesn't work atm
 		"Can build [Water] improvements on tiles", // Workers do water improvements
-		"May create improvements on water resources"],
+		"May create improvements on water resources"], // create rice patty fields on lakes! 
 		"cost": 25 // Cheap!
 	},
 // We don't need no steenken workboats but you can if you want
@@ -30,7 +30,7 @@
 		"name": "Settler",
 		"unitType": "Civilian",
 		"movement": 2,
-		"cost": 106,
+		"cost": 100,
 		"uniques": ["Founds a new city <by consuming this unit>", "Excess Food converted to Production when under construction",
 			"Requires at least [2] population"],
 		"hurryCostModifier": 20
