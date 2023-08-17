@@ -42,6 +42,9 @@ Hybrid tiles do not count in continent calculations, meaning “attached” land
 
 Advanced usage of continent splitting is possible by say, creating a Mountain as a hybrid, then bordering land to split it.
 
+![](https://raw.githubusercontent.com/hackedpassword/Unciv-Assets/main/Images/Z2/sea_fight.jpg)
+
+The hidden water path above hosts a land unit, non-embarked. The submarine cannot target the unit on top of the water. 
 
 ## Nuances
 
