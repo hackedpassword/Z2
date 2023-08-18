@@ -1,9 +1,9 @@
 { // Experimental phase
     "name": "Global uniques",
     "uniques": [
-	"[2] Movement point cost to disembark", // These 2 uniques are probably needed for correct bridge gameplay
+	"[1] Movement point cost to disembark", // These 2 uniques are probably needed for correct bridge gameplay
 	"[1] Movement point cost to embark",
-	"Double movement in [CoastTile]", // This doesn't work. 
+	"Double movement in [CoastTile] <for [All] units>", // This doesn't work. 
         "[4] free random researchable Tech(s) from the [Ancient era]", // Let's go!
         "[+1] Movement <for [All] units>", // Yes. Proven great by Alpha Frontier 
         "[-90]% maintenance on road & railroads" // We'll see.
