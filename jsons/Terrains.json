@@ -143,11 +143,12 @@
             "Considered [Undesirable] when determining start locations",
             "Becomes [Tundra] when adjacent to [River]",
             "Every [17] tiles with this terrain will receive a major deposit of a strategic resource.",
+            "Has an elevation of [1] for visibility calculations", // snow is cave entrance for now until new tile created
             "Never receives any resources <in [Hill] tiles>"]
 	},
 
 	// Terrain features
-	{
+	{  // Once Force is implemented we can restore Hill to normal
 		"name": "Hill",
 		"type": "TerrainFeature",
 //		"production": 2,
@@ -159,6 +160,26 @@
 		"uniques": ["Rough terrain",
 					"[+5] Strength for cities built on this terrain",
 					"Has an elevation of [1] for visibility calculations",
+					"Occurs in groups around high elevations",
+					"[+1] to Fertility for Map Generation",
+					"A Region is formed with at least [40]% [Hill] tiles, with priority [5]",
+					"Base Terrain on this tile is not counted for Region determination",
+					"Starts in regions of this type receive an extra [Sheep]",
+					"Considered [Desirable] when determining start locations",
+					"Considered [Production] when determining start locations",
+					"Every [22] tiles with this terrain will receive a major deposit of a strategic resource."]
+	},
+	{
+		"name": "Force",  // switching from Hill to Force for hybrid tile bases
+		"type": "TerrainFeature",
+		"movementCost": 2,
+		"overrideStats": true,
+		"defenceBonus": 0.25,
+		"RGB": [105,125,72],
+		"occursOn": ["Tundra","Plains","Grassland","Desert","Snow"],
+		"uniques": ["Rough terrain",
+					"[+5] Strength for cities built on this terrain",
+					"Has an elevation of [0] for visibility calculations", // differs from Hill and should not block vis
 					"Occurs in groups around high elevations",
 					"[+1] to Fertility for Map Generation",
 					"A Region is formed with at least [40]% [Hill] tiles, with priority [5]",
@@ -530,13 +551,13 @@
 		"gold": 10,
 		"faith": 10,
 		"culture": 5,
-		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2
-		"uniques": ["Grants 250 Gold to the first civilization to discover it", "Rough terrain",
+		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
+		"uniques": ["Grants 500 Gold to the first civilization to discover it", "Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [50] damage",
 			"Tile provides yield without assigned population"],
 		"turnsInto": "Mountain",
-		"impassable": false,  // will be true when some "hero" ability is created
+		"impassable": false,  // may be true when some "hero" ability is created
 		"unbuildable": false, // allow PalaceGlow to enhance this tile
 		"weight": 10
 	},
@@ -572,7 +593,7 @@
 		"weight": 10
 	},
 
-// Bridges
+// Bridges using hybrid tile tech
 	{
 	    "name": "CoastTile",
 	    "type": "NaturalWonder",
@@ -599,10 +620,36 @@
 	    "unbuildable": false,
 	    "impassable": false
 	},
+	{  // Migrating from Hill to Force as base
+	    "name": "CoastTile2",
+	    "type": "NaturalWonder",
+	    "movementCost": 1,
+	    "occursOn": ["Coast"],
+	    "uniques": ["Rare feature",
+	    "Units ending their turn on this terrain take [10] damage", // won't trigger: <for [land units] units>
+	    "Never receives any resources <in [Hill] tiles>", "Always Fertility [-1] for Map Generation",
+            "Only [Great] improvements may be built on this tile"],
+	    "turnsInto": "Force",
+	    "unbuildable": false,
+	    "impassable": false
+	},
+	{
+	    "name": "OceanTile2",
+	    "type": "NaturalWonder",
+	    "movementCost": 0,
+	    "occursOn": ["Ocean"],
+	    "uniques": ["Rare feature",
+	    "Units ending their turn on this terrain take [25] damage", // won't trigger: <for [land units] units>
+	    "Never receives any resources <in [Hill] tiles>", "Always Fertility [-1] for Map Generation",
+            "Only [Great] improvements may be built on this tile"],
+	    "turnsInto": "Force",
+	    "unbuildable": false,
+	    "impassable": false
+	},
 	{
 	    "name": "Bridge1ocean",
 	    "type": "NaturalWonder",
-	    "movementCost": 0,
+	    "movementCost": 0,  // We want water walkers to effectively teleport across these tiles. Primarily/only for the raft path atm.
 	    "occursOn": ["Coast"],
 	    "uniques": ["[-10] Strength for cities built on this terrain"],
 	    "turnsInto": "Hill",
@@ -639,7 +686,7 @@
 	    "unbuildable": true,
 	    "impassable": false
 	},
-	{
+	{  // Vertical bridge with Coast
 	    "name": "Bridge3coast",
 	    "type": "NaturalWonder",
 	    "movementCost": 0,
@@ -651,7 +698,7 @@
 	    "unbuildable": true,
 	    "impassable": false
 	},
-	{
+	{  // Vertical bridge with Lake
 	    "name": "Bridge3",
 	    "type": "NaturalWonder",
 	    "movementCost": 0,
@@ -664,7 +711,7 @@
 	    "impassable": false
 	}
 // Corner patches for Bridge
-	{
+	{  // Feature left patch
 		"name": "BridgeFL",
 		"type": "TerrainFeature",
 		"movementCost": 2,
@@ -672,7 +719,7 @@
 		"occursOn": ["Desert","Plains","Coast","Ocean","Grassland","CoastTile"],
 		"uniques": ["Never receives any resources"]
 	},
-	{
+	{  // Feature right patch
 		"name": "BridgeFR",
 		"type": "TerrainFeature",
 		"movementCost": 2,
