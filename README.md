@@ -20,7 +20,7 @@ There’s a write up on [Hybrid Tile Tech](HybridTileTech.md) revealing how this
 
 ## Credits are due!
 - [The Spriters Resource]( https://www.spriters-resource.com/) for fantastic sprite sheets.
-- Included are credits to the sprite rippers: Mister Mike, Obreck, Rick N. Bruns (that partial original map above) - huge thanks for creating that map!
+- Included are credits to the sprite rippers: Mister Mike, Obreck, [Rick N. Bruns](https://www.pinterest.com/snesmaster/) (that partial original map above) - huge thanks for creating that map!
 - Everyone’s images on the net I used for visual reference
 - Ninendo including my NES and my copy of Zelda 2
 - Myself for upcoming audio samples from the game for in-game Z2 use
