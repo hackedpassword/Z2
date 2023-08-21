@@ -20,32 +20,33 @@ There’s a write up on [Hybrid Tile Tech](HybridTileTech.md) revealing how this
 
 ## Credits are due!
 - [The Spriters Resource]( https://www.spriters-resource.com/) for fantastic sprite sheets.
-- Included are credits to the sprite rippers: Mister Mike, Obreck, [Rick N. Bruns](https://www.pinterest.com/snesmaster/) (that partial original map above) - huge thanks for creating that map!
-- Everyone’s images on the net I used for visual reference
-- Ninendo including my NES and my copy of Zelda 2
-- Myself for upcoming audio samples from the game for in-game Z2 use
-- Myself for ripping sprites from the sheets and converting them to hex tiles
-- Yairm210 for Unciv and Unciv assets and amazing documentation
-- A1y0sh4 and Indonesian Gentleman for the relentless references I made to understand Unciv modding via their mods
+- Included are credits to the sprite rippers: [Mister Mike](https://www.spriters-resource.com/submitter/MisterMike/), Obreck, [Rick N. Bruns](https://www.pinterest.com/snesmaster/) (that partial original map above) - huge thanks for creating that map!
+- Everyone’s images on the net I used for visual reference.
+- Ninendo including my NES and my copy of Zelda 2.
+- Myself for upcoming audio samples from the game for in-game Z2 use.
+- Myself for ripping sprites from the sheets and converting them to hex tiles.
+- Yairm210 for Unciv and Unciv assets and amazing documentation.
+- [A1y0sh4](https://github.com/A1y0sh4/The-Great-Unciv-Rework) and [Indonesian Gentleman](https://github.com/carriontrooper/Alpha-Frontier) for the relentless references I made to understand Unciv modding via their mods.
 - Did I miss any?
 
 ## Game notes
 
-First and foremost, this is an experimental, unbalanced, first release demo. There’s still a lot to do to get the correct intended gameplay.
+Second release, see [discord](https://discord.com/channels/586194543280390151/1138883296835682324) for release notes.
+
+This mod/etention is still experimental, a lot to do to get the correct intended gameplay, but it does play well!
 
 The initial aesthetics are intact. All places, power-ups, bonuses, etc are as-is in a very detailed interpretation of the original Zelda game. Converting from square tiles to hex tiles is challenging, but the challenge was met!
 
-The map was built with purists in mind. Take Maze Island for instance. I'm constantly looking for accuracy tweaks. Hey, there's one now!
+The map was built with purists in mind. Take Maze Island for instance. I'm constantly looking for accuracy tweaks.
 
-Bringing Unciv elements to Z2 was interesting. I have managed to effectively crossover both games. More work is needed, especially once improvements are created.
+Bringing Unciv elements to Z2 was interesting. I have managed to effectively crossover both games. More work is needed, especially once improvements are created. No sprites/tiles yet respond to improvements, you get default G&K improvements.
 
-Unit/terrain bonuses/uniques are a bit haphazard atm. It’s enough to get this map-mod off the ground for now.
+Unit/terrain bonuses/uniques are a bit haphazard atm. Much work to do in the json configs.
 
 ## Modder notes
 
 Feel free to review the json’s. Lots can be removed and lots more to do. Definitely need to prune unused config blocks.
 
-In the future I’ll be moving the image assets over to my assets repo to reduce the mod size.
+In the future I’ll be moving the image/ assets over to my [assets repo](https://github.com/hackedpassword/Unciv-Assets) to reduce the mod size and build the atlas as needed.
 
-There will probably be a discord channel for this map. Comment there. Would like to hear your feedback.
-
+Comment in the [discord](https://discord.com/channels/586194543280390151/1138883296835682324) channel. Would like to hear your feedback.
