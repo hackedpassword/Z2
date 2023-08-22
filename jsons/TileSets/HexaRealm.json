@@ -6,5 +6,9 @@
 	// Z2
 //	"Plains+NorthCastle": ["Plains","NorthCastleGlow"],
 	// Seems this works on Wonders as seen above, but don't want it atm
+
+	"Plains+City ruins": ["Plains","City ruins"],
+	"Plains+City ruins+Trap": ["Plains","City ruins"+"Trap"]
+	
     }
 } 
