@@ -57,7 +57,7 @@
 	{
 		"name": "Force",  // switching from Hill to Force for hybrid tile bases
 		"type": "TerrainFeature",
-		"movementCos
+		"movementCost": 1,
 		"overrideStats": true,
 		"defenceBonus": 0.25,
 		"RGB": [105,125,72],
