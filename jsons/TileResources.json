@@ -1,4 +1,4 @@
-
+[
 	{  // Let's try to build bridges. Doesn't work right, just adds a wonky bridge
 		"name": "Foundation",
 		"resourceType": "Bonus",
@@ -6,3 +6,4 @@
 		"production": 1,
 		"improvement": "Bridge"
 	}
+]
