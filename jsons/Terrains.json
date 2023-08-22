@@ -169,13 +169,13 @@
 	    "occursOn": ["Ocean"],
 	    "uniques": ["Rare feature",
 	    "Units ending their turn on this terrain take [25] damage", // won't trigger: <for [land units] units>
-	    "Never receives any resources <in [Hill] tiles>", "Always Fertility [-1] for Map Generation",
+	    "Never receives any resources <in [Force] tiles>", "Always Fertility [-1] for Map Generation",
             "Only [Great] improvements may be built on this tile"],
-	    "turnsInto": "Hill",
+	    "turnsInto": "Force",
 	    "unbuildable": false,
 	    "impassable": false
 	},
-	{  // Migrating from Hill to Force as base
+	{  // Migrating from Hill to Force as base, series 2
 	    "name": "CoastTile2",
 	    "type": "NaturalWonder",
 	    "movementCost": 1,
