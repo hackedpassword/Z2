@@ -5,5 +5,19 @@
 		"terrainsCanBeFoundOn": ["Coast","CoastTile","Ocean"],  // Can't get this to place on CoastTile in the editor..
 		"production": 1,
 		"improvement": "Bridge"
+	}, 
+	{
+		"name": "Gold Ore",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Desert","Hill","Forest","Jungle","Plains"],
+		"gold": 3,
+		"improvement": "Customs house",
+		"uniques": ["Generated with weight [25] <in [Desert] Regions>",
+					"Generated with weight [30] <in [Hill] Regions>",
+					"Generated with weight [5] <in [Plains] Regions>",
+					"Generated with weight [5] <in [Hybrid] Regions>",
+					"Generated near City States with weight [10]",
+					"Doesn't generate naturally <in [Forest] tiles> <in tiles without [Hill]>",
+					"Doesn't generate naturally <in [Jungle] tiles> <in tiles without [Hill]>"]
 	}
 ]
