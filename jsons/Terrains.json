@@ -266,7 +266,7 @@
 	    "turnsInto": "Hill",
 	    "unbuildable": true,
 	    "impassable": false
-	}
+	},
 // Force migration
 	{
 	    "name": "CoastTile-Force",
