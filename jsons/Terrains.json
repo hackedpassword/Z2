@@ -59,47 +59,46 @@
 		"type": "TerrainFeature",
 		"movementCost": 1,
 		"overrideStats": true,
-		"defenceBonus": 0.25,
+		"defenceBonus": 0,
 		"RGB": [105,125,72],
 		"occursOn": ["Tundra","Plains","Grassland","Desert","Snow"],
 		"uniques": ["Rough terrain",
-					"[+5] Strength for cities built on this terrain",
-					"Has an elevation of [0] for visibility calculations", // differs from Hill and should not block vis
-					"Occurs in groups around high elevations",
-					"[+1] to Fertility for Map Generation",
-					"A Region is formed with at least [40]% [Hill] tiles, with priority [5]",
-					"Base Terrain on this tile is not counted for Region determination",
-					"Starts in regions of this type receive an extra [Sheep]",
-					"Considered [Desirable] when determining start locations",
-					"Considered [Production] when determining start locations",
-					"Every [22] tiles with this terrain will receive a major deposit of a strategic resource."]
+				"Has an elevation of [0] for visibility calculations", // should not block vis
+				"Base Terrain on this tile is not counted for Region determination",
+				"Considered [Undesirable] when determining start locations"]
 	},
 // Z2
 	{
 		"name": "Boulder",
 		"type": "TerrainFeature",
-		"movementCost": 5,
+		"movementCost": 5, // hard to pass through
 		"unbuildable": true,
-		"uniques": ["Rare feature", "Nullifies all other stats this tile provides", "Doesn't generate naturally",
-		"Units ending their turn on this terrain take [20] damage",
-		"Provides a one-time Production bonus to the closest city when cut down",
-		"Has an elevation of [2] for visibility calculations",
-		"Rough terrain"],
+		"uniques": ["Rare feature",
+			"Nullifies all other stats this tile provides",
+			"Doesn't generate naturally",
+			"Units ending their turn on this terrain take [20] damage",
+			"Provides a one-time Production bonus to the closest city when cut down",
+			"Has an elevation of [2] for visibility calculations",
+			"Rough terrain"],
 		"occursOn": ["Grassland","Plains","Desert","Marsh"],
 		"defenceBonus": 0.30
 	},
 	{
 		"name": "Trap",
 		"type": "TerrainFeature",
-		"movementCost": 3,
+		"movementCost": 4,
 		"unbuildable": true,
-		"uniques": ["Rare feature", "Nullifies all other stats this tile provides", "Doesn't generate naturally",
-		"Units ending their turn on this terrain take [35] damage",
-		"Rough terrain",
-		"Blocks line-of-sight from tiles at same elevation"],
+		"uniques": ["Rare feature",
+			"Nullifies all other stats this tile provides",
+			"Doesn't generate naturally",
+			"Units ending their turn on this terrain take [35] damage",
+			"Rough terrain",
+			"Blocks line-of-sight from tiles at same elevation"],
 		"occursOn": ["Grassland","Plains","Forest","Desert","Tundra","Snow","Hill"],
 		"defenceBonus": -0.30
 	},
+
+// Palaces //
 	{
 		"name": "GreatPalace",
 		"type": "NaturalWonder",
@@ -132,7 +131,7 @@
 		"weight": 10
 	},
 	{ // Create some resource like 'magic' that appears in some era to allow enhancements. Can be applied to Z2/Citadel for now.
-		"name": "PalaceGlow",
+		"name": "PalaceGlow", // Currently being used as placeholder for Great Palace, need to resort names/objects
 		"type": "TerrainFeature",
 		"gold": 40,
 		"faith": 20,
@@ -148,7 +147,9 @@
 		"weight": 10
 	},
 
-// Bridges using hybrid tile tech
+  ////////////////////////////////////
+ // Bridges using hybrid tile tech //
+////////////////////////////////////
 	{
 	    "name": "CoastTile",
 	    "type": "NaturalWonder",
@@ -158,7 +159,7 @@
 	    "Units ending their turn on this terrain take [10] damage", // won't trigger: <for [land units] units>
 	    "Never receives any resources <in [Hill] tiles>", "Always Fertility [-1] for Map Generation",
             "Only [Great] improvements may be built on this tile"],
-	    "turnsInto": "Hill",
+	    "turnsInto": "Force",
 	    "unbuildable": false,
 	    "impassable": false
 	},
@@ -208,7 +209,7 @@
 	    "movementCost": 0.1,  // We want water walkers to effectively teleport across these tiles. Primarily/only for the raft path atm.
 	    "occursOn": ["Coast"],
 	    "uniques": ["[-10] Strength for cities built on this terrain"],
-	    "turnsInto": "Hill",
+	    "turnsInto": "Force",
 	    "unbuildable": true,
 	    "impassable": false
 	},
@@ -218,7 +219,7 @@
 	    "movementCost": 0.1,
 	    "occursOn": ["Coast"],
 	    "uniques": ["[-10] Strength for cities built on this terrain"],
-	    "turnsInto": "Hill",
+	    "turnsInto": "Force",
 	    "unbuildable": true,
 	    "impassable": false
 	},	
@@ -228,7 +229,7 @@
 	    "movementCost": 0.1,
 	    "occursOn": ["Coast"],
 	    "uniques": ["[-10] Strength for cities built on this terrain"],
-	    "turnsInto": "Hill",
+	    "turnsInto": "Force",
 	    "unbuildable": true,
 	    "impassable": false
 	},
@@ -238,7 +239,7 @@
 	    "movementCost": 0.1,
 	    "occursOn": ["Coast"],
 	    "uniques": ["[-10] Strength for cities built on this terrain"],
-	    "turnsInto": "Hill",
+	    "turnsInto": "Force",
 	    "unbuildable": true,
 	    "impassable": false
 	},
@@ -250,7 +251,7 @@
 	    "food": 1,
 	    "occursOn": ["Coast"],
 	    "uniques": ["[-10] Strength for cities built on this terrain"],
-	    "turnsInto": "Hill",
+	    "turnsInto": "Force",
 	    "unbuildable": true,
 	    "impassable": false
 	},
@@ -262,12 +263,13 @@
 	    "food": 1,
 	    "occursOn": ["Coast"],
 	    "uniques": ["[-10] Strength for cities built on this terrain"],
-	    "turnsInto": "Hill",
+	    "turnsInto": "Force",
 	    "unbuildable": true,
 	    "impassable": false
 	}
-// Corner patches for Bridge
-	{  // Feature left patch
+
+// Corner patches for Bridge //
+	{  // Feature-Left patch
 		"name": "BridgeFL",
 		"type": "TerrainFeature",
 		"movementCost": 2,
@@ -275,13 +277,13 @@
 		"occursOn": ["Desert","Plains","Coast","Ocean","Grassland","CoastTile"],
 		"uniques": ["Never receives any resources"]
 	},
-	{  // Feature right patch
+	{  // Feature-Right patch
 		"name": "BridgeFR",
 		"type": "TerrainFeature",
 		"movementCost": 2,
 		"defenceBonus": -0.1,
 		"occursOn": ["Desert","Plains","Coast","Ocean","Grassland","CoastTile"],
 		"uniques": ["Never receives any resources"]
-	},
-
+	}, // Add high or low patches, then including high or low bridge
+// to-do: angle bridges, but not for Zelda 2 map, for extension maps following Z2
 ]
