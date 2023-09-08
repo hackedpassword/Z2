@@ -52,4 +52,16 @@
 
 // No further changes from original G&K
 
+	{ // no change, mod checker complaining "may upgrade to [Archer] doesn't fit baseUnitFilter, including here
+		"name": "Archer",
+		"unitType": "Archery",
+		"movement": 2,
+		"strength": 5,
+		"rangedStrength": 7,
+		"cost": 40,
+		"requiredTech": "Archery",
+		"obsoleteTech": "Construction",
+		"upgradesTo": "Composite Bowman",
+		"attackSound": "arrow"
+	},
 ]
