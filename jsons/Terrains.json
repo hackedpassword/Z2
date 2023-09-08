@@ -165,7 +165,7 @@
 	{
 	    "name": "OceanTile",
 	    "type": "NaturalWonder",
-	    "movementCost": 0,
+	    "movementCost": 0.1,
 	    "occursOn": ["Ocean"],
 	    "uniques": ["Rare feature",
 	    "Units ending their turn on this terrain take [25] damage", // won't trigger: <for [land units] units>
@@ -192,7 +192,7 @@
 	{
 	    "name": "OceanTile2",
 	    "type": "NaturalWonder",
-	    "movementCost": 0,
+	    "movementCost": 0.1,
 	    "occursOn": ["Ocean"],
 	    "uniques": ["Rare feature",
 	    "Units ending their turn on this terrain take [25] damage", // won't trigger: <for [land units] units>
@@ -205,7 +205,7 @@
 	{
 	    "name": "Bridge1ocean",
 	    "type": "NaturalWonder",
-	    "movementCost": 0,  // We want water walkers to effectively teleport across these tiles. Primarily/only for the raft path atm.
+	    "movementCost": 0.1,  // We want water walkers to effectively teleport across these tiles. Primarily/only for the raft path atm.
 	    "occursOn": ["Coast"],
 	    "uniques": ["[-10] Strength for cities built on this terrain"],
 	    "turnsInto": "Hill",
@@ -215,7 +215,7 @@
 	{
 	    "name": "Bridge2ocean",
 	    "type": "NaturalWonder",
-	    "movementCost": 0,
+	    "movementCost": 0.1,
 	    "occursOn": ["Coast"],
 	    "uniques": ["[-10] Strength for cities built on this terrain"],
 	    "turnsInto": "Hill",
@@ -225,7 +225,7 @@
 	{
 	    "name": "Bridge1coast",
 	    "type": "NaturalWonder",
-	    "movementCost": 0,
+	    "movementCost": 0.1,
 	    "occursOn": ["Coast"],
 	    "uniques": ["[-10] Strength for cities built on this terrain"],
 	    "turnsInto": "Hill",
@@ -235,7 +235,7 @@
 	{
 	    "name": "Bridge2coast",
 	    "type": "NaturalWonder",
-	    "movementCost": 0,
+	    "movementCost": 0.1,
 	    "occursOn": ["Coast"],
 	    "uniques": ["[-10] Strength for cities built on this terrain"],
 	    "turnsInto": "Hill",
@@ -245,7 +245,7 @@
 	{  // Vertical bridge with Coast
 	    "name": "Bridge3coast",
 	    "type": "NaturalWonder",
-	    "movementCost": 0,
+	    "movementCost": 0.1,
 	    "culture": 1,
 	    "food": 1,
 	    "occursOn": ["Coast"],
@@ -257,7 +257,7 @@
 	{  // Vertical bridge with Lake
 	    "name": "Bridge3",
 	    "type": "NaturalWonder",
-	    "movementCost": 0,
+	    "movementCost": 0.1,
 	    "culture": 1,
 	    "food": 1,
 	    "occursOn": ["Coast"],
