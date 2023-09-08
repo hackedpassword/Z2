@@ -1,14 +1,15 @@
 [
     {  // Experimenting
      "name": "Portal Gate", 
-     "cost": 0, 
-     "uniques": [ 
+     "cost": 0,
+     "uniques": [
         "Can only be built [in capital]",
         "Free [Worker] appears",
-//        "Reveals the entire map",
-//        "[+10 Food, +10 Production, +10 Gold, +10 Science, +10 Culture, +10 Faith] from [Grassland] tiles [in this city]", 
+        "[4] free random researchable Tech(s) from the [Ancient era]", // Let's go!
         "Limited to [1] per Civilization", 
         "[+1] population [in all cities]",
+//        "Reveals the entire map",
+//        "[+10 Food, +10 Production, +10 Gold, +10 Science, +10 Culture, +10 Faith] from [Grassland] tiles [in this city]", 
 //        "[+1 Happiness] [in all cities]"
         ]
     }
