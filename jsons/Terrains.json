@@ -159,7 +159,7 @@
 	    "Units ending their turn on this terrain take [10] damage", // won't trigger: <for [land units] units>
 	    "Never receives any resources <in [Hill] tiles>", "Always Fertility [-1] for Map Generation",
             "Only [Great] improvements may be built on this tile"],
-	    "turnsInto": "Force",
+	    "turnsInto": "Hill",
 	    "unbuildable": false,
 	    "impassable": false
 	},
@@ -173,7 +173,7 @@
 	    "Never receives any resources <in [Force] tiles>", // bakes in upon game start, will have to test Force (vs Hill) next game test
             "Always Fertility [-1] for Map Generation",
             "Only [Great] improvements may be built on this tile"],
-	    "turnsInto": "Force",
+	    "turnsInto": "Hill",
 	    "unbuildable": false,
 	    "impassable": false
 	},
@@ -186,7 +186,7 @@
 	    "Units ending their turn on this terrain take [10] damage", // won't trigger: <for [land units] units>
 	    "Never receives any resources <in [Hill] tiles>", "Always Fertility [-1] for Map Generation",
             "Only [Great] improvements may be built on this tile"],
-	    "turnsInto": "Force",
+	    "turnsInto": "Hill",
 	    "unbuildable": false,
 	    "impassable": false
 	},
@@ -199,7 +199,7 @@
 	    "Units ending their turn on this terrain take [25] damage", // won't trigger: <for [land units] units>
 	    "Never receives any resources <in [Hill] tiles>", "Always Fertility [-1] for Map Generation",
             "Only [Great] improvements may be built on this tile"],
-	    "turnsInto": "Force",
+	    "turnsInto": "Hill",
 	    "unbuildable": false,
 	    "impassable": false
 	},
@@ -209,7 +209,7 @@
 	    "movementCost": 0.1,  // We want water walkers to effectively teleport across these tiles. Primarily/only for the raft path atm.
 	    "occursOn": ["Coast"],
 	    "uniques": ["[-10] Strength for cities built on this terrain"],
-	    "turnsInto": "Force",
+	    "turnsInto": "Hill",
 	    "unbuildable": true,
 	    "impassable": false
 	},
@@ -219,7 +219,7 @@
 	    "movementCost": 0.1,
 	    "occursOn": ["Coast"],
 	    "uniques": ["[-10] Strength for cities built on this terrain"],
-	    "turnsInto": "Force",
+	    "turnsInto": "Hill",
 	    "unbuildable": true,
 	    "impassable": false
 	},	
@@ -229,7 +229,7 @@
 	    "movementCost": 0.1,
 	    "occursOn": ["Coast"],
 	    "uniques": ["[-10] Strength for cities built on this terrain"],
-	    "turnsInto": "Force",
+	    "turnsInto": "Hill",
 	    "unbuildable": true,
 	    "impassable": false
 	},
@@ -239,7 +239,7 @@
 	    "movementCost": 0.1,
 	    "occursOn": ["Coast"],
 	    "uniques": ["[-10] Strength for cities built on this terrain"],
-	    "turnsInto": "Force",
+	    "turnsInto": "Hill",
 	    "unbuildable": true,
 	    "impassable": false
 	},
@@ -251,12 +251,130 @@
 	    "food": 1,
 	    "occursOn": ["Coast"],
 	    "uniques": ["[-10] Strength for cities built on this terrain"],
-	    "turnsInto": "Force",
+	    "turnsInto": "Hill",
 	    "unbuildable": true,
 	    "impassable": false
 	},
 	{  // Vertical bridge with Lake
 	    "name": "Bridge3",
+	    "type": "NaturalWonder",
+	    "movementCost": 0.1,
+	    "culture": 1,
+	    "food": 1,
+	    "occursOn": ["Coast"],
+	    "uniques": ["[-10] Strength for cities built on this terrain"],
+	    "turnsInto": "Hill",
+	    "unbuildable": true,
+	    "impassable": false
+	}
+// Force migration
+	{
+	    "name": "CoastTile-Force",
+	    "type": "NaturalWonder",
+	    "movementCost": 1,
+	    "occursOn": ["Coast"],
+	    "uniques": ["Rare feature",
+	    "Units ending their turn on this terrain take [10] damage", // won't trigger: <for [land units] units>
+	    "Never receives any resources <in [Hill] tiles>", "Always Fertility [-1] for Map Generation",
+            "Only [Great] improvements may be built on this tile"],
+	    "turnsInto": "Force",
+	    "unbuildable": false,
+	    "impassable": false
+	},
+	{
+	    "name": "OceanTile-Force",
+	    "type": "NaturalWonder",
+	    "movementCost": 0.1,
+	    "occursOn": ["Ocean"],
+	    "uniques": ["Rare feature",
+	    "Units ending their turn on this terrain take [25] damage", // won't trigger: <for [land units] units>
+	    "Never receives any resources <in [Force] tiles>", // bakes in upon game start, will have to test Force (vs Hill) next game test
+            "Always Fertility [-1] for Map Generation",
+            "Only [Great] improvements may be built on this tile"],
+	    "turnsInto": "Force",
+	    "unbuildable": false,
+	    "impassable": false
+	},
+	{  // Migrating from Hill to Force as base, series 2
+	    "name": "CoastTile2-Force",
+	    "type": "NaturalWonder",
+	    "movementCost": 1,
+	    "occursOn": ["Coast"],
+	    "uniques": ["Rare feature",
+	    "Units ending their turn on this terrain take [10] damage", // won't trigger: <for [land units] units>
+	    "Never receives any resources <in [Hill] tiles>", "Always Fertility [-1] for Map Generation",
+            "Only [Great] improvements may be built on this tile"],
+	    "turnsInto": "Force",
+	    "unbuildable": false,
+	    "impassable": false
+	},
+	{
+	    "name": "OceanTile2-Force",
+	    "type": "NaturalWonder",
+	    "movementCost": 0.1,
+	    "occursOn": ["Ocean"],
+	    "uniques": ["Rare feature",
+	    "Units ending their turn on this terrain take [25] damage", // won't trigger: <for [land units] units>
+	    "Never receives any resources <in [Hill] tiles>", "Always Fertility [-1] for Map Generation",
+            "Only [Great] improvements may be built on this tile"],
+	    "turnsInto": "Force",
+	    "unbuildable": false,
+	    "impassable": false
+	},
+	{
+	    "name": "Bridge1ocean-Force",
+	    "type": "NaturalWonder",
+	    "movementCost": 0.1,  // We want water walkers to effectively teleport across these tiles. Primarily/only for the raft path atm.
+	    "occursOn": ["Coast"],
+	    "uniques": ["[-10] Strength for cities built on this terrain"],
+	    "turnsInto": "Force",
+	    "unbuildable": true,
+	    "impassable": false
+	},
+	{
+	    "name": "Bridge2ocean-Force",
+	    "type": "NaturalWonder",
+	    "movementCost": 0.1,
+	    "occursOn": ["Coast"],
+	    "uniques": ["[-10] Strength for cities built on this terrain"],
+	    "turnsInto": "Force",
+	    "unbuildable": true,
+	    "impassable": false
+	},	
+	{
+	    "name": "Bridge1coast-Force",
+	    "type": "NaturalWonder",
+	    "movementCost": 0.1,
+	    "occursOn": ["Coast"],
+	    "uniques": ["[-10] Strength for cities built on this terrain"],
+	    "turnsInto": "Force",
+	    "unbuildable": true,
+	    "impassable": false
+	},
+	{
+	    "name": "Bridge2coast-Force",
+	    "type": "NaturalWonder",
+	    "movementCost": 0.1,
+	    "occursOn": ["Coast"],
+	    "uniques": ["[-10] Strength for cities built on this terrain"],
+	    "turnsInto": "Force",
+	    "unbuildable": true,
+	    "impassable": false
+	},
+	{  // Vertical bridge with Coast
+	    "name": "Bridge3coast-Force",
+	    "type": "NaturalWonder",
+	    "movementCost": 0.1,
+	    "culture": 1,
+	    "food": 1,
+	    "occursOn": ["Coast"],
+	    "uniques": ["[-10] Strength for cities built on this terrain"],
+	    "turnsInto": "Force",
+	    "unbuildable": true,
+	    "impassable": false
+	},
+	{  // Vertical bridge with Lake
+	    "name": "Bridge3-Force",
 	    "type": "NaturalWonder",
 	    "movementCost": 0.1,
 	    "culture": 1,
