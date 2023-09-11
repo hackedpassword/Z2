@@ -1,5 +1,6 @@
 [
-	{  // Let's try to build bridges. Doesn't work right, just adds a wonky bridge
+
+	{  // Let's try to build bridges. Doesn't work right, just adds a wonky bridge, more dev needed
 		"name": "Foundation",
 		"resourceType": "Bonus",
 		"terrainsCanBeFoundOn": ["Coast","CoastTile","Ocean"],  // Can't get this to place on CoastTile in the editor..
@@ -7,7 +8,7 @@
 		"improvement": "Bridge"
 	},
 
-	{
+	{ // Exp bag
 		"name": "Coal",
 		"resourceType": "Strategic",
 		"revealedBy": "Industrialization",
@@ -29,7 +30,7 @@
 		"majorDepositAmount": {"sparse": 5, "default": 7, "abundant": 10},
 		"minorDepositAmount": {"sparse": 2, "default": 3, "abundant": 3}
 	},
-	{
+	{ // Heart
 		"name": "Oil",
 		"resourceType": "Strategic",
 		"revealedBy": "Biology",
@@ -52,7 +53,7 @@
 		"majorDepositAmount": {"sparse": 5, "default": 7, "abundant": 9},
 		"minorDepositAmount": {"sparse": 2, "default": 3, "abundant": 3}
 	},
-	{
+	{ // Magic potion
 		"name": "Aluminum",
 		"resourceType": "Strategic",
 		"revealedBy": "Electricity",
@@ -69,7 +70,7 @@
 		"minorDepositAmount": {"sparse": 2, "default": 3, "abundant": 3}
 	},
 
-	{
+	{ // Trophy
 		"name": "Silver",
 		"resourceType": "Luxury",
 		"terrainsCanBeFoundOn": ["Hill","Forest","Jungle","Tundra","Grassland","Cave"],
@@ -87,7 +88,7 @@
 					"Doesn't generate naturally <in [Grassland] [Hill] tiles>"
 		]
 	},
-	{
+	{ // Medicine bottle
 		"name": "Citrus",
 		"resourceType": "Luxury",
 		"terrainsCanBeFoundOn": ["Jungle","Forest","Flood plains","Cave"],
@@ -101,7 +102,7 @@
 					"Generated near City States with weight [15]",
 					"Doesn't generate naturally <in [Tundra] tiles>"]
 	},
-	{
+	{ // Hammer
 		"name": "Copper",
 		"resourceType": "Luxury",
 		"terrainsCanBeFoundOn": ["Hill","Forest","Jungle","Grassland","Tundra","Cave"],
@@ -119,12 +120,11 @@
 					"Doesn't generate naturally <in [Jungle] tiles> <in tiles without [Hill]>",
 					"Doesn't generate naturally <in [Forest] tiles> <in tiles without [Hill]> <in tiles without [Tundra]>"]
 	},
-
-	{
+	{ // Triforce
 		"name": "Gold Ore",
 		"resourceType": "Luxury",
 		"terrainsCanBeFoundOn": ["Desert","Hill","Forest","Jungle","Plains"],
-		"gold": 3,
+		"gold": 10,
 		"improvement": "Customs house",
 		"uniques": ["Generated with weight [25] <in [Desert] Regions>",
 					"Generated with weight [30] <in [Hill] Regions>",
