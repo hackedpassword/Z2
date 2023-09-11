@@ -17,7 +17,7 @@
 		"name": "Snow",
 		"type": "Land",
 		"movementCost": 2,
-		"RGB": [230, 238, 255], //Darker229, 229, 255
+		"RGB": [230, 238, 255],
 		"uniques": [
             "Occurs at temperature between [-1] and [-0.9] and humidity between [0] and [1]",
             "Occurs at temperature between [-0.9] and [-0.8] and humidity between [0] and [0.8]",
@@ -32,8 +32,20 @@
             "Never receives any resources <in [Hill] tiles>"]
 	},
 
+	{
+		"name": "Cave",
+		"type": "Land",
+		"movementCost": 2,
+		"RGB": [50, 58, 25],
+		"uniques": [
+            "Always Fertility [-1] for Map Generation",
+            "Considered [Undesirable] when determining start locations",
+             "Has an elevation of [2] for visibility calculations",
+            "Never receives any resources"]
+	},
+
 	// Terrain features
-	{  // Once Force is implemented we can restore Hill to normal
+	{
 		"name": "Hill",
 		"type": "TerrainFeature",
 //		"production": 2,
@@ -48,6 +60,27 @@
 					"Occurs in groups around high elevations",
 					"[+1] to Fertility for Map Generation",
 					"A Region is formed with at least [40]% [Hill] tiles, with priority [5]",
+					"Base Terrain on this tile is not counted for Region determination",
+					"Starts in regions of this type receive an extra [Sheep]",
+					"Considered [Desirable] when determining start locations",
+					"Considered [Production] when determining start locations",
+					"Every [22] tiles with this terrain will receive a major deposit of a strategic resource."]
+	},
+	{
+		"name": "Mound",
+		"type": "TerrainFeature",
+//		"production": 2,
+		"movementCost": 2,
+		"overrideStats": true,
+		"defenceBonus": 0.25,
+		"RGB": [105,125,72],
+		"occursOn": ["Tundra","Plains","Grassland","Desert","Snow"],
+		"uniques": ["Rough terrain",
+					"[+5] Strength for cities built on this terrain",
+					"Has an elevation of [1] for visibility calculations",
+					"Occurs in groups around high elevations",
+					"[+1] to Fertility for Map Generation",
+					"A Region is formed with at least [40]% [Mound] tiles, with priority [5]",
 					"Base Terrain on this tile is not counted for Region determination",
 					"Starts in regions of this type receive an extra [Sheep]",
 					"Considered [Desirable] when determining start locations",
@@ -100,22 +133,6 @@
 
 // Palaces //
 	{
-		"name": "GreatPalace",
-		"type": "NaturalWonder",
-		"gold": 10,
-		"faith": 10,
-		"culture": 5,
-		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
-		"uniques": ["Grants 500 Gold to the first civilization to discover it", "Rough terrain",
-			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
-			"Units ending their turn on this terrain take [50] damage",
-			"Tile provides yield without assigned population"],
-		"turnsInto": "Mountain",
-		"impassable": false,  // may be true when some "hero" ability is created
-		"unbuildable": false, // allow PalaceGlow to enhance this tile
-		"weight": 10
-	},
-	{
 		"name": "NorthCastle",
 		"type": "NaturalWonder",
 		"gold": 25,
@@ -130,13 +147,146 @@
 		"unbuildable": false, // allow PalaceGlow to enhance this tile
 		"weight": 10
 	},
+	{
+		"name": "GreatPalace",
+		"type": "NaturalWonder",
+		"gold": 10,
+		"faith": 10,
+		"culture": 5,
+		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
+		"uniques": ["Grants 500 Gold to the first civilization to discover it", "Rough terrain",
+			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
+			"Units ending their turn on this terrain take [75] damage",
+			"Tile provides yield without assigned population"],
+		"turnsInto": "Mountain",
+		"impassable": false,  // may be true when some "hero" ability is created
+		"unbuildable": false, // allow PalaceGlow to enhance this tile
+		"weight": 10
+	},
+
+////////
+	{
+		"name": "GreatPalace1",
+		"type": "NaturalWonder",
+		"gold": 10,
+		"faith": 10,
+		"culture": 5,
+		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
+		"uniques": ["Grants 500 Gold to the first civilization to discover it", "Rough terrain",
+			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
+			"Units ending their turn on this terrain take [75] damage",
+			"Tile provides yield without assigned population"],
+		"turnsInto": "Mountain",
+		"impassable": false,  // may be true when some "hero" ability is created
+		"unbuildable": false, // allow PalaceGlow to enhance this tile
+		"weight": 10
+	},
+	{
+		"name": "GreatPalace2",
+		"type": "NaturalWonder",
+		"gold": 10,
+		"faith": 10,
+		"culture": 5,
+		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
+		"uniques": ["Grants 500 Gold to the first civilization to discover it", "Rough terrain",
+			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
+			"Units ending their turn on this terrain take [75] damage",
+			"Tile provides yield without assigned population"],
+		"turnsInto": "Mountain",
+		"impassable": false,  // may be true when some "hero" ability is created
+		"unbuildable": false, // allow PalaceGlow to enhance this tile
+		"weight": 10
+	},
+	{
+		"name": "GreatPalace3",
+		"type": "NaturalWonder",
+		"gold": 10,
+		"faith": 10,
+		"culture": 5,
+		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
+		"uniques": ["Grants 500 Gold to the first civilization to discover it", "Rough terrain",
+			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
+			"Units ending their turn on this terrain take [75] damage",
+			"Tile provides yield without assigned population"],
+		"turnsInto": "Mountain",
+		"impassable": false,  // may be true when some "hero" ability is created
+		"unbuildable": false, // allow PalaceGlow to enhance this tile
+		"weight": 10
+	},
+	{
+		"name": "GreatPalace4",
+		"type": "NaturalWonder",
+		"gold": 10,
+		"faith": 10,
+		"culture": 5,
+		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
+		"uniques": ["Grants 500 Gold to the first civilization to discover it", "Rough terrain",
+			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
+			"Units ending their turn on this terrain take [75] damage",
+			"Tile provides yield without assigned population"],
+		"turnsInto": "Mountain",
+		"impassable": false,  // may be true when some "hero" ability is created
+		"unbuildable": false, // allow PalaceGlow to enhance this tile
+		"weight": 10
+	},
+	{
+		"name": "GreatPalace5",
+		"type": "NaturalWonder",
+		"gold": 10,
+		"faith": 10,
+		"culture": 5,
+		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
+		"uniques": ["Grants 500 Gold to the first civilization to discover it", "Rough terrain",
+			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
+			"Units ending their turn on this terrain take [75] damage",
+			"Tile provides yield without assigned population"],
+		"turnsInto": "Mountain",
+		"impassable": false,  // may be true when some "hero" ability is created
+		"unbuildable": false, // allow PalaceGlow to enhance this tile
+		"weight": 10
+	},
+	{
+		"name": "GreatPalace6",
+		"type": "NaturalWonder",
+		"gold": 10,
+		"faith": 10,
+		"culture": 5,
+		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
+		"uniques": ["Grants 500 Gold to the first civilization to discover it", "Rough terrain",
+			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
+			"Units ending their turn on this terrain take [75] damage",
+			"Tile provides yield without assigned population"],
+		"turnsInto": "Mountain",
+		"impassable": false,  // may be true when some "hero" ability is created
+		"unbuildable": false, // allow PalaceGlow to enhance this tile
+		"weight": 10
+	},
+	{
+		"name": "GreatPalace7",
+		"type": "NaturalWonder",
+		"gold": 10,
+		"faith": 10,
+		"culture": 5,
+		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
+		"uniques": ["Grants 500 Gold to the first civilization to discover it", "Rough terrain",
+			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
+			"Units ending their turn on this terrain take [75] damage",
+			"Tile provides yield without assigned population"],
+		"turnsInto": "Mountain",
+		"impassable": false,  // may be true when some "hero" ability is created
+		"unbuildable": false, // allow PalaceGlow to enhance this tile
+		"weight": 10
+	},
+
+////////
+
 	{ // Create some resource like 'magic' that appears in some era to allow enhancements. Can be applied to Z2/Citadel for now.
 		"name": "PalaceGlow", // Currently being used as placeholder for Great Palace, need to resort names/objects
 		"type": "TerrainFeature",
 		"gold": 40,
 		"faith": 20,
 		"culture": 25,
-		"occursOn": ["Plains"],
+		"occursOn": ["Plains","Mountain","Desert","Grassland"],
 		"uniques": ["Must be adjacent to [1] to [5] [Plains] tiles",
 			"Grants 500 Gold to the first civilization to discover it",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
@@ -159,7 +309,7 @@
 	    "Units ending their turn on this terrain take [10] damage", // won't trigger: <for [land units] units>
 	    "Never receives any resources <in [Hill] tiles>", "Always Fertility [-1] for Map Generation",
             "Only [Great] improvements may be built on this tile"],
-	    "turnsInto": "Hill",
+	    "turnsInto": "Force",
 	    "unbuildable": false,
 	    "impassable": false
 	},
@@ -173,33 +323,7 @@
 	    "Never receives any resources <in [Force] tiles>", // bakes in upon game start, will have to test Force (vs Hill) next game test
             "Always Fertility [-1] for Map Generation",
             "Only [Great] improvements may be built on this tile"],
-	    "turnsInto": "Hill",
-	    "unbuildable": false,
-	    "impassable": false
-	},
-	{  // Migrating from Hill to Force as base, series 2
-	    "name": "CoastTile2",
-	    "type": "NaturalWonder",
-	    "movementCost": 1,
-	    "occursOn": ["Coast"],
-	    "uniques": ["Rare feature",
-	    "Units ending their turn on this terrain take [10] damage", // won't trigger: <for [land units] units>
-	    "Never receives any resources <in [Hill] tiles>", "Always Fertility [-1] for Map Generation",
-            "Only [Great] improvements may be built on this tile"],
-	    "turnsInto": "Hill",
-	    "unbuildable": false,
-	    "impassable": false
-	},
-	{
-	    "name": "OceanTile2",
-	    "type": "NaturalWonder",
-	    "movementCost": 0.1,
-	    "occursOn": ["Ocean"],
-	    "uniques": ["Rare feature",
-	    "Units ending their turn on this terrain take [25] damage", // won't trigger: <for [land units] units>
-	    "Never receives any resources <in [Hill] tiles>", "Always Fertility [-1] for Map Generation",
-            "Only [Great] improvements may be built on this tile"],
-	    "turnsInto": "Hill",
+	    "turnsInto": "Force",
 	    "unbuildable": false,
 	    "impassable": false
 	},
@@ -209,7 +333,7 @@
 	    "movementCost": 0.1,  // We want water walkers to effectively teleport across these tiles. Primarily/only for the raft path atm.
 	    "occursOn": ["Coast"],
 	    "uniques": ["[-10] Strength for cities built on this terrain"],
-	    "turnsInto": "Hill",
+	    "turnsInto": "Force",
 	    "unbuildable": true,
 	    "impassable": false
 	},
@@ -219,7 +343,7 @@
 	    "movementCost": 0.1,
 	    "occursOn": ["Coast"],
 	    "uniques": ["[-10] Strength for cities built on this terrain"],
-	    "turnsInto": "Hill",
+	    "turnsInto": "Force",
 	    "unbuildable": true,
 	    "impassable": false
 	},	
@@ -229,7 +353,7 @@
 	    "movementCost": 0.1,
 	    "occursOn": ["Coast"],
 	    "uniques": ["[-10] Strength for cities built on this terrain"],
-	    "turnsInto": "Hill",
+	    "turnsInto": "Force",
 	    "unbuildable": true,
 	    "impassable": false
 	},
@@ -239,7 +363,7 @@
 	    "movementCost": 0.1,
 	    "occursOn": ["Coast"],
 	    "uniques": ["[-10] Strength for cities built on this terrain"],
-	    "turnsInto": "Hill",
+	    "turnsInto": "Force",
 	    "unbuildable": true,
 	    "impassable": false
 	},
@@ -251,7 +375,7 @@
 	    "food": 1,
 	    "occursOn": ["Coast"],
 	    "uniques": ["[-10] Strength for cities built on this terrain"],
-	    "turnsInto": "Hill",
+	    "turnsInto": "Force",
 	    "unbuildable": true,
 	    "impassable": false
 	},
@@ -263,128 +387,10 @@
 	    "food": 1,
 	    "occursOn": ["Coast"],
 	    "uniques": ["[-10] Strength for cities built on this terrain"],
-	    "turnsInto": "Hill",
-	    "unbuildable": true,
-	    "impassable": false
-	},
-// Force migration
-	{
-	    "name": "CoastTile-Force",
-	    "type": "NaturalWonder",
-	    "movementCost": 1,
-	    "occursOn": ["Coast"],
-	    "uniques": ["Rare feature",
-	    "Units ending their turn on this terrain take [10] damage", // won't trigger: <for [land units] units>
-	    "Never receives any resources <in [Hill] tiles>", "Always Fertility [-1] for Map Generation",
-            "Only [Great] improvements may be built on this tile"],
-	    "turnsInto": "Force",
-	    "unbuildable": false,
-	    "impassable": false
-	},
-	{
-	    "name": "OceanTile-Force",
-	    "type": "NaturalWonder",
-	    "movementCost": 0.1,
-	    "occursOn": ["Ocean"],
-	    "uniques": ["Rare feature",
-	    "Units ending their turn on this terrain take [25] damage", // won't trigger: <for [land units] units>
-	    "Never receives any resources <in [Force] tiles>", // bakes in upon game start, will have to test Force (vs Hill) next game test
-            "Always Fertility [-1] for Map Generation",
-            "Only [Great] improvements may be built on this tile"],
-	    "turnsInto": "Force",
-	    "unbuildable": false,
-	    "impassable": false
-	},
-	{  // Migrating from Hill to Force as base, series 2
-	    "name": "CoastTile2-Force",
-	    "type": "NaturalWonder",
-	    "movementCost": 1,
-	    "occursOn": ["Coast"],
-	    "uniques": ["Rare feature",
-	    "Units ending their turn on this terrain take [10] damage", // won't trigger: <for [land units] units>
-	    "Never receives any resources <in [Hill] tiles>", "Always Fertility [-1] for Map Generation",
-            "Only [Great] improvements may be built on this tile"],
-	    "turnsInto": "Force",
-	    "unbuildable": false,
-	    "impassable": false
-	},
-	{
-	    "name": "OceanTile2-Force",
-	    "type": "NaturalWonder",
-	    "movementCost": 0.1,
-	    "occursOn": ["Ocean"],
-	    "uniques": ["Rare feature",
-	    "Units ending their turn on this terrain take [25] damage", // won't trigger: <for [land units] units>
-	    "Never receives any resources <in [Hill] tiles>", "Always Fertility [-1] for Map Generation",
-            "Only [Great] improvements may be built on this tile"],
-	    "turnsInto": "Force",
-	    "unbuildable": false,
-	    "impassable": false
-	},
-	{
-	    "name": "Bridge1ocean-Force",
-	    "type": "NaturalWonder",
-	    "movementCost": 0.1,  // We want water walkers to effectively teleport across these tiles. Primarily/only for the raft path atm.
-	    "occursOn": ["Coast"],
-	    "uniques": ["[-10] Strength for cities built on this terrain"],
 	    "turnsInto": "Force",
 	    "unbuildable": true,
 	    "impassable": false
 	},
-	{
-	    "name": "Bridge2ocean-Force",
-	    "type": "NaturalWonder",
-	    "movementCost": 0.1,
-	    "occursOn": ["Coast"],
-	    "uniques": ["[-10] Strength for cities built on this terrain"],
-	    "turnsInto": "Force",
-	    "unbuildable": true,
-	    "impassable": false
-	},	
-	{
-	    "name": "Bridge1coast-Force",
-	    "type": "NaturalWonder",
-	    "movementCost": 0.1,
-	    "occursOn": ["Coast"],
-	    "uniques": ["[-10] Strength for cities built on this terrain"],
-	    "turnsInto": "Force",
-	    "unbuildable": true,
-	    "impassable": false
-	},
-	{
-	    "name": "Bridge2coast-Force",
-	    "type": "NaturalWonder",
-	    "movementCost": 0.1,
-	    "occursOn": ["Coast"],
-	    "uniques": ["[-10] Strength for cities built on this terrain"],
-	    "turnsInto": "Force",
-	    "unbuildable": true,
-	    "impassable": false
-	},
-	{  // Vertical bridge with Coast
-	    "name": "Bridge3coast-Force",
-	    "type": "NaturalWonder",
-	    "movementCost": 0.1,
-	    "culture": 1,
-	    "food": 1,
-	    "occursOn": ["Coast"],
-	    "uniques": ["[-10] Strength for cities built on this terrain"],
-	    "turnsInto": "Force",
-	    "unbuildable": true,
-	    "impassable": false
-	},
-	{  // Vertical bridge with Lake
-	    "name": "Bridge3-Force",
-	    "type": "NaturalWonder",
-	    "movementCost": 0.1,
-	    "culture": 1,
-	    "food": 1,
-	    "occursOn": ["Coast"],
-	    "uniques": ["[-10] Strength for cities built on this terrain"],
-	    "turnsInto": "Force",
-	    "unbuildable": true,
-	    "impassable": false
-	}
 
 // Corner patches for Bridge //
 	{  // Feature-Left patch

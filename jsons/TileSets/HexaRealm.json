@@ -1,14 +1,21 @@
 {
     "useColorAsBaseTerrain": "false",
-//    "fallbackTileSet": "FantasyHex",
+//    "fallbackTileSet": "FantasyHex",  // don't want a fallback
+
     "ruleVariants": {
 
-	// Z2
-//	"Plains+NorthCastle": ["Plains","NorthCastleGlow"],
-	// Seems this works on Wonders as seen above, but don't want it atm
+//	"Plains+NorthCastle": ["Plains","NorthCastleGlow"],  // Seems this works on Wonders as seen above, but don't want it atm
+
+
+	"Coast+Oil": ["Coast", "Oil", "Coast Waves"],
+	"Grassland+Marsh+Uranium": ["Grassland", "Marsh", "Uranium"],
+	"Grassland+Forest+Coal": ["Grassland", "ForestG", "Coal"],
+
+// Insert additional tiles above
 
 	"Plains+City ruins": ["Plains","City ruins"],
 	"Plains+City ruins+Trap": ["Plains","City ruins","Trap"]
 	
+
     }
 } 
