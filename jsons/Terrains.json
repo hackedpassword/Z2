@@ -407,7 +407,7 @@
 	    "movementCost": 0.1,
 	    "culture": 1,
 	    "food": 1,
-	    "occursOn": ["Lake"],
+	    "occursOn": ["Lakes"],
 	    "uniques": ["Never receives any resources <in [Force] tiles>",
 			"[-10] Strength for cities built on this terrain"],
 	    "turnsInto": "Force",
