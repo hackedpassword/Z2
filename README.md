@@ -16,7 +16,9 @@ There’s a write up on [Hybrid Tile Tech](HybridTileTech.md) revealing how this
 ![](https://raw.githubusercontent.com/hackedpassword/Unciv-Assets/main/Images/Z2/Z2_before.png)
 
 ## After:
-![](https://raw.githubusercontent.com/hackedpassword/Unciv-Assets/main/Images/Z2/Z2_after.png)
+![](https://raw.githubusercontent.com/hackedpassword/Unciv-Assets/main/Images/Z2/Screenshot_20230912_094443.jpg)
+
+Take a closer look at the above, and you'll see the hidden water paths using Force (TerrainFeature) via hybrid tiles! 
 
 ## Credits are due!
 - [The Spriters Resource]( https://www.spriters-resource.com/) for fantastic sprite sheets.
@@ -31,22 +33,22 @@ There’s a write up on [Hybrid Tile Tech](HybridTileTech.md) revealing how this
 
 ## Game notes
 
-Second release, see [discord](https://discord.com/channels/586194543280390151/1138883296835682324) for release notes.
+Fifth release, see [discord](https://discord.com/channels/586194543280390151/1138883296835682324) for release notes.
 
 This mod/etention is still experimental, a lot to do to get the correct intended gameplay, but it does play well!
 
-The initial aesthetics are intact. All places, power-ups, bonuses, etc are as-is in a very detailed interpretation of the original Zelda game. Converting from square tiles to hex tiles is challenging, but the challenge was met!
+Game aesthetics are intact. All places, power-ups, bonuses, etc are as-is in a very detailed interpretation of the original Zelda game. Converting from square tiles to hex tiles is challenging, but the challenge was met! Approximation is an art. I'm constantly looking for accuracy tweaks.
 
-The map was built with purists in mind. Take Maze Island for instance. I'm constantly looking for accuracy tweaks.
+The map was built with purists in mind. Take Maze Island for instance. Super challenging to make this approximation within the constraints of the scale.
 
-Bringing Unciv elements to Z2 was interesting. I have managed to effectively crossover both games. More work is needed, especially once improvements are created. No sprites/tiles yet respond to improvements, you get default G&K improvements.
+Bringing Unciv elements to Z2 was interesting. I have managed to effectively crossover both games. More work is needed, especially once improvements are created.
 
-Unit/terrain bonuses/uniques are a bit haphazard atm. Much work to do in the json configs.
+Unit/terrain bonuses/uniques are a bit haphazard atm. Palaces provide a general powerup to any adjacent land unit, to be refined and aligned to each palaces' unique item. Towns will undergo the same.
 
 ## Modder notes
 
-Feel free to review the json’s. Lots can be removed and lots more to do. Definitely need to prune unused config blocks.
+Feel free to review/reuse the json’s. Ask questions in discord. I've gained a lot of experience implementing hybrid tiles.
 
-In the future I’ll be moving the image/ assets over to my [assets repo](https://github.com/hackedpassword/Unciv-Assets) to reduce the mod size and build the atlas as needed.
+In the future I’ll be moving the ./image/ assets over to my [assets repo](https://github.com/hackedpassword/Unciv-Assets/images/Z2/) to reduce the mod size and build the atlas as needed.
 
 Comment in the [discord](https://discord.com/channels/586194543280390151/1138883296835682324) channel. Would like to hear your feedback.
