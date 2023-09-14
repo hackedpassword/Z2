@@ -7,6 +7,7 @@
 //	"Plains+NorthCastle": ["Plains","NorthCastleGlow"],  // Seems this works on Wonders as seen above, but don't want it atm
 
 	// to-do: cites and city ruins plus bridges
+	// and: make new fallout tile
 
 	"Coast+Oil": ["Coast", "Oil", "Coast Waves"],
 	"Grassland+Marsh+Uranium": ["Grassland", "Marsh", "Uranium"],
