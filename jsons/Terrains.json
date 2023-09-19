@@ -333,7 +333,7 @@
 		    "Units ending their turn on this terrain take [25] damage", // won't trigger: <for [land units] units>
 		    "Never receives any resources <in [Force] tiles>", // Force bakes into the map upon game start, important design aspect
 		    "Always Fertility [-1] for Map Generation",
-		    "[-50] Strength for cities built on this terrain"], // not a good place to settle
+		    "[-50] Strength for cities built on this terrain", // not a good place to settle
 		    "Only [Great] improvements may be built on this tile"], // floating great improvements
 	    "turnsInto": "Force",
 	    "unbuildable": true,
