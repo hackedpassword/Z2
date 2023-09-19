@@ -5,9 +5,10 @@
 		"terrainsCanBeBuiltOn": ["Coast","CoastTile","Ocean","Lakes"],
 		"culture": 1,
 		"techRequired": "Sailing",
-		"uniques": ["Can also be built on tiles adjacent to fresh water",
-	        "Can only be built on [Water] tiles",
-                "Can be built outside your borders", "Removes removable features when built"],
+		"uniques": ["Can only be built on [Water] tiles",
+                "Can be built outside your borders",
+	        "Removes removable features when built"],
+               // "Can also be built on tiles adjacent to fresh water",
 	},
 	{
 		"name": "Remove Boulder",
