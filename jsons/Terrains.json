@@ -316,7 +316,7 @@
 	    "occursOn": ["Coast"],
 	    "uniques": ["Rare feature",
 			"Units ending their turn on this terrain take [10] damage", // won't trigger: <for [land units] units>
-		        "[-50] Strength for cities built on this terrain"], // not a good place to settle
+		        "[-50] Strength for cities built on this terrain", // not a good place to settle
 		        "Never receives any resources <in [Force] tiles>", 
 			"Always Fertility [-1] for Map Generation",
 			"Only [Great] improvements may be built on this tile"], // floating great improvements
