@@ -6,8 +6,10 @@
 		"movementCost": 2,
 		"RGB": [50, 58, 25],
 		"uniques": ["Always Fertility [-1] for Map Generation",
+			    "Units ending their turn on this terrain take [15] damage",
 		            "Considered [Undesirable] when determining start locations",
-		             "Has an elevation of [2] for visibility calculations",
+		            "Has an elevation of [2] for visibility calculations",
+			    "Blocks line-of-sight from tiles at same elevation",
 		            "Never receives any resources"]
 	},
 	
@@ -25,17 +27,8 @@
 		            "Considered [Undesirable] when determining start locations"]
 	},
 
-	{ // Regular terrain
-		"name": "Cave",
-		"type": "Land",
-		"movementCost": 2,
-		"RGB": [50, 58, 25],
-		"uniques": ["Always Fertility [-1] for Map Generation",
-			    "Considered [Undesirable] when determining start locations",
-			     "Has an elevation of [2] for visibility calculations",
-			    "Never receives any resources"]
-	},
-
+// to-do: cave should become cave entrance, then tundra becomes cave inside or whatever
+	
 //// Terrain features ////
 	
 	{ // also to make mods to this later. There's only 2 hills in the map, so not a big deal
@@ -129,7 +122,7 @@
 		"type": "TerrainFeature",
 		"movementCost": 2,
 		"defenceBonus": -0.1,
-		"occursOn": ["Desert","Plains","Coast","Ocean","Grassland","CoastTile"],
+		"occursOn": ["Desert","Plains","Coast","Ocean","Grassland","Tundra","CoastTile","OceanTile"],
 		"uniques": ["Never receives any resources"]
 	},
 	{  // Feature-Right patch
@@ -323,11 +316,12 @@
 	    "occursOn": ["Coast"],
 	    "uniques": ["Rare feature",
 			"Units ending their turn on this terrain take [10] damage", // won't trigger: <for [land units] units>
-			"Never receives any resources <in [Force] tiles>", 
+		        "[-50] Strength for cities built on this terrain"], // not a good place to settle
+		        "Never receives any resources <in [Force] tiles>", 
 			"Always Fertility [-1] for Map Generation",
-			"Only [Great] improvements may be built on this tile"],
+			"Only [Great] improvements may be built on this tile"], // floating great improvements
 	    "turnsInto": "Force",
-	    "unbuildable": false,
+	    "unbuildable": true,
 	    "impassable": false
 	},
 	{
@@ -339,9 +333,10 @@
 		    "Units ending their turn on this terrain take [25] damage", // won't trigger: <for [land units] units>
 		    "Never receives any resources <in [Force] tiles>", // Force bakes into the map upon game start, important design aspect
 		    "Always Fertility [-1] for Map Generation",
-		    "Only [Great] improvements may be built on this tile"],
+		    "[-50] Strength for cities built on this terrain"], // not a good place to settle
+		    "Only [Great] improvements may be built on this tile"], // floating great improvements
 	    "turnsInto": "Force",
-	    "unbuildable": false,
+	    "unbuildable": true,
 	    "impassable": false
 	},
 	{
@@ -350,7 +345,7 @@
 	    "movementCost": 0.1,  // We want water walkers to effectively teleport across these tiles. Primarily/only for the raft path atm.
 	    "occursOn": ["Ocean"],
 	    "uniques": ["Never receives any resources <in [Force] tiles>",
-			"[-10] Strength for cities built on this terrain"],
+			"[-20] Strength for cities built on this terrain"],
 	    "turnsInto": "Force",
 	    "unbuildable": true,
 	    "impassable": false
@@ -361,7 +356,7 @@
 	    "movementCost": 0.1,
 	    "occursOn": ["Ocean"],
 	    "uniques": ["Never receives any resources <in [Force] tiles>",
-			"[-10] Strength for cities built on this terrain"],
+			"[-20] Strength for cities built on this terrain"],
 	    "turnsInto": "Force",
 	    "unbuildable": true,
 	    "impassable": false
@@ -374,7 +369,7 @@
 	    "uniques": ["Never receives any resources <in [Force] tiles>",
 			"[-10] Strength for cities built on this terrain"],
 	    "turnsInto": "Force",
-	    "unbuildable": true,
+	    "unbuildable": false,
 	    "impassable": false
 	},
 	{
@@ -385,7 +380,7 @@
 	    "uniques": ["Never receives any resources <in [Force] tiles>",
 			"[-10] Strength for cities built on this terrain"],
 	    "turnsInto": "Force",
-	    "unbuildable": true,
+	    "unbuildable": false,
 	    "impassable": false
 	},	
 	{  // Vertical bridge with Coast
@@ -398,7 +393,7 @@
 	    "uniques": ["Never receives any resources <in [Force] tiles>",
 			"[-10] Strength for cities built on this terrain"],
 	    "turnsInto": "Force",
-	    "unbuildable": true,
+	    "unbuildable": false,
 	    "impassable": false
 	},
 	{  // Vertical bridge with Lake
@@ -409,9 +404,9 @@
 	    "food": 1,
 	    "occursOn": ["Lakes"],
 	    "uniques": ["Never receives any resources <in [Force] tiles>",
-			"[-10] Strength for cities built on this terrain"],
+			"[-5] Strength for cities built on this terrain"],
 	    "turnsInto": "Force",
-	    "unbuildable": true,
+	    "unbuildable": false,
 	    "impassable": false
 	},	
 
