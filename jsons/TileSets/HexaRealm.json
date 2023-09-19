@@ -20,6 +20,8 @@
 	"Bridge2coast+City ruins": ["Bridge2coast","City ruins"],
 	"Bridge3+City ruins": ["Bridge3","City ruins"], // lakes
 	"Bridge3coast+City ruins": ["Bridge3coast","City ruins"],
+	"BridgeLow+City ruins": ["BridgeLow","City ruins"],
+	"BridgeHigh+City ruins": ["BridgeHigh","City ruins"],
 	
 	"Plains+City ruins": ["Plains","City ruins"],
 	"Plains+City ruins+Trap": ["Plains","City ruins","Trap"]
