@@ -14,6 +14,13 @@
 	"Grassland+Marsh+Uranium": ["Grassland", "Marsh", "Uranium"],
 	"Grassland+Forest+Coal": ["Grassland", "ForestG", "Coal"],
 
+	"Bridge1ocean+City ruins": ["Bridge1ocean","City ruins"],
+	"Bridge1coast+City ruins": ["Bridge1coast","City ruins"],
+	"Bridge2ocean+City ruins": ["Bridge2ocean","City ruins"],
+	"Bridge2coast+City ruins": ["Bridge2coast","City ruins"],
+	"Bridge3+City ruins": ["Bridge3","City ruins"], // lakes
+	"Bridge3coast+City ruins": ["Bridge3coast","City ruins"],
+	
 	"Plains+City ruins": ["Plains","City ruins"],
 	"Plains+City ruins+Trap": ["Plains","City ruins","Trap"]
 	
