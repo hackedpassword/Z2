@@ -2,12 +2,11 @@
 // Z2
 	{
 		"name": "Bridge",
-		"terrainsCanBeBuiltOn": ["Coast","CoastTile","Ocean"],
+		"terrainsCanBeBuiltOn": ["Coast","CoastTile","Ocean","Lakes"],
 		"culture": 1,
 		"techRequired": "Sailing",
 		"uniques": ["Can also be built on tiles adjacent to fresh water",
                 "Can be built outside your borders", "Removes removable features when built"],
-		"shortcutKey": "F"
 	},
 	{
 		"name": "Remove Boulder",
