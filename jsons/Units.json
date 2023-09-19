@@ -22,7 +22,8 @@
 		"movement": 3,
 		"cost": 10,
 		"requiredTech": "Sailing",
-		"uniques": ["Cannot enter ocean tiles <before discovering [Astronomy]>",
+		"uniques": ["Automation is a primary action",
+			"Cannot enter ocean tiles <before discovering [Astronomy]>",
 			"May create improvements on water resources",
         	    	"Uncapturable", "Automation is a primary action"]
 	},
