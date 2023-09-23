@@ -1,10 +1,12 @@
 [
+// uniques with map generation we're ignoring, probably remove those. Z2 is a map mod extension, not a TC ruleset.
+// to-do: Rebuild improvements to match Z2 theme. Work worthy of a branch.
 
 	{  // Let's try to build bridges. Doesn't work right, just adds a wonky bridge, more dev needed
-		"name": "Foundation",
+		"name": "Foundation",  // prob remove and send to Castles repo map mod
 		"resourceType": "Bonus",
-		"terrainsCanBeFoundOn": ["Coast","CoastTile","Ocean"],  // Can't get this to place on CoastTile in the editor..
-		"production": 1,
+		"terrainsCanBeFoundOn": ["Coast","Ocean","CoastTile"],  // Can't get this to place on CoastTile in the editor..
+		"culture": 1,
 		"improvement": "Bridge"
 	},
 
@@ -12,7 +14,7 @@
 		"name": "Coal",
 		"resourceType": "Strategic",
 		"revealedBy": "Industrialization",
-		"terrainsCanBeFoundOn": ["Grassland","Plains","Hill","Jungle","Forest","Marsh","Cave"],
+		"terrainsCanBeFoundOn": ["Grassland","Plains","Hill","Jungle","Forest","Marsh","Cave","Cavern"],
 		"production": 1,
 		"improvement": "Mine",
 		"improvementStats": {"production": 1},
@@ -34,7 +36,7 @@
 		"name": "Oil",
 		"resourceType": "Strategic",
 		"revealedBy": "Biology",
-		"terrainsCanBeFoundOn": ["Desert","Coast","Tundra","Snow","Marsh","Jungle","Cave"],
+		"terrainsCanBeFoundOn": ["Desert","Coast","Tundra","Snow","Marsh","Jungle","Cave","Cavern"],
 		"production": 1,
 		"improvedBy": ["Oil well", "Offshore Platform"],
 		"improvementStats": {"production": 3},
@@ -57,7 +59,7 @@
 		"name": "Aluminum",
 		"resourceType": "Strategic",
 		"revealedBy": "Electricity",
-		"terrainsCanBeFoundOn": ["Desert","Tundra","Hill","Snow","Jungle","Cave"],
+		"terrainsCanBeFoundOn": ["Desert","Tundra","Hill","Snow","Jungle","Cave","Cavern"],
 		"production": 1,
 		"improvement": "Mine",
 		"improvementStats": {"production": 1},
@@ -73,7 +75,7 @@
 	{ // Trophy
 		"name": "Silver",
 		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Hill","Forest","Jungle","Tundra","Grassland","Cave"],
+		"terrainsCanBeFoundOn": ["Hill","Forest","Jungle","Tundra","Grassland","Cave","Cavern"],
 		"gold": 2,
 		"improvement": "Mine",
 		"uniques": ["Generated with weight [25] <in [Tundra] Regions>",
@@ -91,7 +93,7 @@
 	{ // Medicine bottle
 		"name": "Citrus",
 		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Jungle","Forest","Flood plains","Cave"],
+		"terrainsCanBeFoundOn": ["Jungle","Forest","Flood plains","Cave","Cavern"],
 		"food": 1,
 		"gold": 1,
 		"improvement": "Plantation",
@@ -105,7 +107,7 @@
 	{ // Hammer
 		"name": "Copper",
 		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Hill","Forest","Jungle","Grassland","Tundra","Cave"],
+		"terrainsCanBeFoundOn": ["Hill","Forest","Jungle","Grassland","Tundra","Cave","Cavern"],
 		"gold": 2,
 		"improvement": "Mine",
 		"uniques": ["Generated with weight [15] <in [Tundra] Regions>",
@@ -124,7 +126,9 @@
 		"name": "Gold Ore",
 		"resourceType": "Luxury",
 		"terrainsCanBeFoundOn": ["Desert","Hill","Forest","Jungle","Plains"],
-		"gold": 10,
+		"gold": 4,
+		"culture": 6,
+		"faith": 4,
 		"improvement": "Customs house",
 		"uniques": ["Generated with weight [25] <in [Desert] Regions>",
 					"Generated with weight [30] <in [Hill] Regions>",
