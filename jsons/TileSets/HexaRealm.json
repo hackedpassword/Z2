@@ -13,6 +13,7 @@
 	"Coast+Oil": ["Coast", "Oil", "Coast Waves"],
 	"Grassland+Marsh+Uranium": ["Grassland", "Marsh", "Uranium"],
 	"Grassland+Forest+Coal": ["Grassland", "ForestG", "Coal"],
+	"Grassland+Forest+Trap": ["Grassland", "ForestG", "Trap"],
 
 	"Bridge1ocean+City ruins": ["Bridge1ocean","City ruins"],
 	"Bridge1coast+City ruins": ["Bridge1coast","City ruins"],
@@ -25,7 +26,12 @@
 	
 	"Plains+City ruins": ["Plains","City ruins"],
 	"Plains+City ruins+Trap": ["Plains","City ruins","Trap"]
-	
+
+    	"Cavern+City ruins": ["Cavern","City ruins"],
+    	"Cavern+Trap": ["Cavern","Trap"],
+
+    	"Desert+Trap": ["Desert","Trap"],
+    	"Tundra+Trap": ["Tundra","Trap"],
 
     }
 } 
