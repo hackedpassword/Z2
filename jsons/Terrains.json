@@ -378,8 +378,7 @@
 	    "type": "NaturalWonder",
 	    "movementCost": 0.1,
 	    "occursOn": ["Coast"],
-	    "uniques": [
-		    // "Never receives any resources <in [Force] tiles>",
+	    "uniques": ["Never receives any resources <in [Force] tiles>",  // removing still doesn't allow placement of Foundation resource 
 			"[-10] Strength for cities built on this terrain"],
 	    "turnsInto": "Force",
 	    "unbuildable": false,
@@ -390,8 +389,7 @@
 	    "type": "NaturalWonder",
 	    "movementCost": 0.1,
 	    "occursOn": ["Coast"],
-	    "uniques": [
-		    // "Never receives any resources <in [Force] tiles>",
+	    "uniques": ["Never receives any resources <in [Force] tiles>",
 			"[-10] Strength for cities built on this terrain"],
 	    "turnsInto": "Force",
 	    "unbuildable": false,
@@ -404,8 +402,7 @@
 	    "culture": 1,
 	    "food": 1,
 	    "occursOn": ["Coast"],
-	    "uniques": [
-		    // "Never receives any resources <in [Force] tiles>",
+	    "uniques": ["Never receives any resources <in [Force] tiles>",
 			"[-10] Strength for cities built on this terrain"],
 	    "turnsInto": "Force",
 	    "unbuildable": false,
