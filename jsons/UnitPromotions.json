@@ -1,13 +1,16 @@
-[
+[ // Will incorporate these/other individually as magic upgrades to towns. For now, get'm all!
 
-        { // Will incorporate these/other individually as magic upgrades to towns. For now, get'm all!
+	{ // Split uniques into Combat
 		"name": "Adventurer",
 		"uniques": ["Can pass through impassable tiles",
-		"May attack when embarked",
-		"Eliminates combat penalty for attacking over a river",
-		"Ranged attacks may be performed over obstacles",
 		"Can move after attacking",
 		"Can see over obstacles"]
+	}
+        { // Towns/Landmarks now grant Combat
+		"name": "Combat",
+		"uniques": ["Eliminates combat penalty for attacking over a river",
+		"Ranged attacks may be performed over obstacles",
+		"May attack when embarked"]
 	}
 
 ]
