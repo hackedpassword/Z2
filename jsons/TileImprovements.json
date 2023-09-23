@@ -15,14 +15,22 @@
 		"turnsToBuild": 2,
 		// Has no tech requirements as it can always be built
 		"uniques": ["Can be built outside your borders"],
-		"shortcutKey": "X"
 	},
 	{
 		"name": "Remove Trap",
 		"turnsToBuild": 2,
 		// Has no tech requirements as it can always be built
 		"uniques": ["Can be built outside your borders"],
-		"shortcutKey": "X"
-	}
+	},
+	{
+		"name": "Mine",
+		"terrainsCanBeBuiltOn": ["Hill","Mountain"],
+		"production": 2,
+		"turnsToBuild": 7,
+		"techRequired": "Mining",
+		"uniques": ["[+1 Production] <after discovering [Chemistry]>",
+		"Pillaging this improvement yields approximately [+20 Gold]"],
+		"shortcutKey": "M"
+	},
 
 ]
