@@ -5,24 +5,23 @@
 		"type": "Land",
 		"movementCost": 2,
 		"RGB": [50, 58, 25],
-		"uniques": ["Always Fertility [-1] for Map Generation",
-			    "Units ending their turn on this terrain take [5] damage",
+		"uniques": ["Always Fertility [-4] for Map Generation",
 		            "Considered [Undesirable] when determining start locations",
 		            "Has an elevation of [1] for visibility calculations",
 			    "Blocks line-of-sight from tiles at same elevation",
 		            "Never receives any resources"]
 	},
 	{
-		"name": "Caverns", // This will replace Tundra in Caves
+		"name": "Cavern", // This will replace Tundra in Caves
 		"type": "Land",
 		"movementCost": 2,
+		"gold": 3,
 		"RGB": [50, 58, 25],
-		"uniques": ["Always Fertility [-1] for Map Generation",
-			    "Units ending their turn on this terrain take [15] damage",
+		"uniques": ["Always Fertility [-3] for Map Generation",
+			    "Units ending their turn on this terrain take [5] damage",
 		            "Considered [Undesirable] when determining start locations",
-		            "Has an elevation of [2] for visibility calculations",
-			    "Blocks line-of-sight from tiles at same elevation",
-		            "Never receives any resources"]
+		            "Has an elevation of [3] for visibility calculations",
+			    "Blocks line-of-sight from tiles at same elevation"]
 	},
 	
 	
