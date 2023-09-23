@@ -42,5 +42,15 @@
 		"Pillaging this improvement yields approximately [+10 Gold]"],
 		"shortcutKey": "F"
 	},
+	{
+		"name": "Landmark",  // town atm
+		"terrainsCanBeBuiltOn": ["Land"],
+		"culture": 6,
+		"uniques": ["Great Improvement",
+		"Grants [Combat] ([More combat abilities]) to adjacent [Land] units for the rest of the game",
+		"Removes removable features when built",
+		"Pillaging this improvement yields approximately [+20 Gold]"]
+	},
+
 
 ]
