@@ -24,6 +24,7 @@
 		"uniques": ["Automation is a primary action",
 			"Cannot enter ocean tiles <before discovering [Astronomy]>",
 			"May create improvements on water resources",
+			"Can instantly construct a [Fishing Boats] improvement <by consuming this unit>",
         	    	// "Uncapturable",
 			"Automation is a primary action"]
 	},
