@@ -1,7 +1,7 @@
 [
 // Z2
 	{
-		"name": "Bridge",
+		"name": "Bridge",  // experimental, not used. Will likely remove and send to Castles repo map mod
 		"terrainsCanBeBuiltOn": ["Coast","CoastTile","Ocean","Lakes"],
 		"culture": 1,
 		"techRequired": "Sailing",
@@ -23,11 +23,11 @@
 		"uniques": ["Can be built outside your borders"],
 	},
 	{
-		"name": "Mine",
-		"terrainsCanBeBuiltOn": ["Hill","Mountain"],
+		"name": "Mine",  // this will hopefully lead to production improvements as resources in Z2 are scarce
+		"terrainsCanBeBuiltOn": ["Hill","Mountain"],  // don't forget workers are taking 50 dmg/t so building these are tricky
 		"production": 2,
 		"turnsToBuild": 7,
-		"techRequired": "Mining",
+		"techRequired": "Mining",  // ..and requires the worker unit to have learned Adventurer promotion
 		"uniques": ["[+1 Production] <after discovering [Chemistry]>",
 		"Pillaging this improvement yields approximately [+20 Gold]"],
 		"shortcutKey": "M"
