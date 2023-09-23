@@ -35,7 +35,7 @@
 	{
 		"name": "Fishing Boats",
 		"terrainsCanBeBuiltOn": ["Coast"],
-		"food": 2,
+		"food": 1,
 		"techRequired": "Sailing",
 		"uniques": ["[+1 Gold] <after discovering [Compass]>",
 		// "Can only be built to improve a resource",  // Let's go fishing
