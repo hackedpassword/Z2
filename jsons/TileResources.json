@@ -5,7 +5,7 @@
 	{  // Let's try to build bridges. Doesn't work right, just adds a wonky bridge, more dev needed
 		"name": "Foundation",  // prob remove and send to Castles repo map mod
 		"resourceType": "Bonus",
-		"terrainsCanBeFoundOn": ["Coast","Ocean","CoastTile"],  // Can't get this to place on CoastTile in the editor..
+		"terrainsCanBeFoundOn": ["Coast","Ocean","Bridge1coast","Bridge2coast","Bridge3coast"],  // Can't get this to place on CoastTile in the editor..
 		"culture": 1,
 		"improvement": "Bridge"
 	},
