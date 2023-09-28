@@ -33,7 +33,7 @@ Take a closer look at the above, and you'll see the hidden water paths using For
 
 ## Game notes
 
-Fifth release, see [discord](https://discord.com/channels/586194543280390151/1138883296835682324) for release notes.
+Fifth release, see [discord](https://discord.com/channels/586194543280390151/1138883296835682324) for release notes. Assets for sixth release are actively updated, live and potentially volatile! v7 map in development.
 
 This mod/etention is still experimental, a lot to do to get the correct intended gameplay, but it does play well!
 
