@@ -121,6 +121,19 @@
 					"Doesn't generate naturally <in [Grassland] [Fresh Water] tiles>",
 					"Doesn't generate naturally <in [Jungle] tiles> <in tiles without [Hill]>",
 					"Doesn't generate naturally <in [Forest] tiles> <in tiles without [Hill]> <in tiles without [Tundra]>"]
+		
+	},
+	{
+		"name": "Cotton",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Grassland","Flood plains","Plains"],
+		"gold": 2,
+		"improvement": "Plantation",
+		"uniques": ["Generated with weight [15] <in [Desert] Regions>",
+					"Generated with weight [30] <in [Grassland] Regions>",
+					"Generated with weight [15] <in [Hybrid] Regions>",
+					"Generated near City States with weight [10]",
+					"Doesn't generate naturally <in [Hill] tiles>"]
 	},
 	{ // Triforce
 		"name": "Gold Ore",
