@@ -323,7 +323,7 @@
 		"gold": 1,
 		"faith": 2,
 		"culture": 1,
-		"production", 1,
+		"production" 1,
 		"movementCost": 3,
 		"occursOn": ["Plains","Mountain","Desert","Grassland"],
 		"uniques": [
