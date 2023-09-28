@@ -323,7 +323,7 @@
 		"gold": 1,
 		"faith": 2,
 		"culture": 1,
-		"production" 1,
+		"production": 1,
 		"movementCost": 3,
 		"occursOn": ["Plains","Mountain","Desert","Grassland"],
 		"uniques": [
@@ -332,7 +332,8 @@
 			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
 			// Will -50 result in regen instead of dmg? 
-			"Units ending their turn on this terrain take [-50] damage", // Experiment - 2/t max heal - towns' healer house
+			"Units ending their turn on this terrain take [-50] damage"
+			// Experiment - 2/t max heal - towns' healer house
 		        ],
 		"turnsInto": "Plains",
 		"impassable": false,  // Can't build natural wonders anyway
