@@ -147,6 +147,7 @@
 	},
 
 // Palaces //
+	
 	{
 		"name": "NorthCastle",
 		"type": "NaturalWonder",
@@ -299,6 +300,144 @@
 		"weight": 10
 	},
 
+// Named Palaces //
+	
+	{
+		"name": "North Castle",
+		"type": "NaturalWonder",
+		"gold": 25,
+		"faith": 15,
+		"culture": 20,
+		"occursOn": ["Plains"],
+		"uniques": ["Grants 500 Gold to the first civilization to discover it",
+			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
+			"Tile provides yield without assigned population"],
+		"turnsInto": "Plains",
+		"impassable": false,  // will be true when some "hero" ability is created
+		"unbuildable": false, // allow PalaceGlow to enhance this tile
+		"weight": 10
+	},
+	{
+		"name": "Parapa Palace",
+		"type": "NaturalWonder",
+		"gold": 10,
+		"faith": 10,
+		"culture": 5,
+		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
+		"uniques": ["Grants 500 Gold to the first civilization to discover it",
+			"Rough terrain",
+			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
+			"Units ending their turn on this terrain take [75] damage",
+			"Tile provides yield without assigned population"],
+		"turnsInto": "Mountain",
+		"impassable": false,  // may be true when some "hero" ability is created
+		"unbuildable": false, // allow PalaceGlow to enhance this tile
+		"weight": 10
+	},
+	{
+		"name": "Midoro Palace",
+		"type": "NaturalWonder",
+		"gold": 10,
+		"faith": 10,
+		"culture": 5,
+		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
+		"uniques": ["Grants 500 Gold to the first civilization to discover it",
+			"Rough terrain",
+			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
+			"Units ending their turn on this terrain take [75] damage",
+			"Tile provides yield without assigned population"],
+		"turnsInto": "Mountain",
+		"impassable": false,  // may be true when some "hero" ability is created
+		"unbuildable": false, // allow PalaceGlow to enhance this tile
+		"weight": 10
+	},
+	{
+		"name": "Island Palace",
+		"type": "NaturalWonder",
+		"gold": 10,
+		"faith": 10,
+		"culture": 5,
+		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
+		"uniques": ["Grants 500 Gold to the first civilization to discover it",
+			"Rough terrain",
+			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
+			"Units ending their turn on this terrain take [75] damage",
+			"Tile provides yield without assigned population"],
+		"turnsInto": "Mountain",
+		"impassable": false,  // may be true when some "hero" ability is created
+		"unbuildable": false, // allow PalaceGlow to enhance this tile
+		"weight": 10
+	},
+	{
+		"name": "Maze Palace",
+		"type": "NaturalWonder",
+		"gold": 10,
+		"faith": 10,
+		"culture": 5,
+		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
+		"uniques": ["Grants 500 Gold to the first civilization to discover it",
+			"Rough terrain",
+			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
+			"Units ending their turn on this terrain take [75] damage",
+			"Tile provides yield without assigned population"],
+		"turnsInto": "Mountain",
+		"impassable": false,  // may be true when some "hero" ability is created
+		"unbuildable": false, // allow PalaceGlow to enhance this tile
+		"weight": 10
+	},
+	{
+		"name": "Sea Palace",
+		"type": "NaturalWonder",
+		"gold": 10,
+		"faith": 10,
+		"culture": 5,
+		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
+		"uniques": ["Grants 500 Gold to the first civilization to discover it",
+			"Rough terrain",
+			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
+			"Units ending their turn on this terrain take [75] damage",
+			"Tile provides yield without assigned population"],
+		"turnsInto": "Mountain",
+		"impassable": false,  // may be true when some "hero" ability is created
+		"unbuildable": false, // allow PalaceGlow to enhance this tile
+		"weight": 10
+	},
+	{
+		"name": "ThreeEye Rock Palace",
+		"type": "NaturalWonder",
+		"gold": 10,
+		"faith": 10,
+		"culture": 5,
+		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
+		"uniques": ["Grants 500 Gold to the first civilization to discover it",
+			"Rough terrain",
+			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
+			"Units ending their turn on this terrain take [75] damage",
+			"Tile provides yield without assigned population"],
+		"turnsInto": "Mountain",
+		"impassable": false,  // may be true when some "hero" ability is created
+		"unbuildable": false, // allow PalaceGlow to enhance this tile
+		"weight": 10
+	},
+	{
+		"name": "Great Palace",
+		"type": "NaturalWonder",
+		"gold": 10,
+		"faith": 10,
+		"culture": 5,
+		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
+		"uniques": ["Grants 500 Gold to the first civilization to discover it",
+			"Rough terrain",
+			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
+			"Units ending their turn on this terrain take [75] damage",
+			"Tile provides yield without assigned population"],
+		"turnsInto": "Mountain",
+		"impassable": false,  // may be true when some "hero" ability is created
+		"unbuildable": false, // allow PalaceGlow to enhance this tile
+		"weight": 10
+	},
+
+	
 /// Special Wonder-buildings
 
 	{ // Create some resource like 'magic' that appears in some era to allow enhancements. Can be applied to Z2/Citadel for now.
