@@ -333,56 +333,105 @@ TileSets/HexaRealm/Tiles/Rauru Town
   orig: 64, 64
   offset: 0, 0
   index: -1
+TileSets/HexaRealm/Tiles/Great Palace
+  rotate: false
+  xy: 484, 297
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/GreatPalace7
+  rotate: false
+  xy: 484, 297
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
 TileSets/HexaRealm/Tiles/GreatPalace
-  rotate: false
-  xy: 484, 297
-  size: 64, 64
-  orig: 64, 64
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/GreatPalace1
-  rotate: false
-  xy: 484, 297
-  size: 64, 64
-  orig: 64, 64
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Tiles/GreatPalace2
   rotate: false
   xy: 556, 297
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/GreatPalace3
+TileSets/HexaRealm/Tiles/GreatPalace1
+  rotate: false
+  xy: 556, 297
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Parapa Palace
+  rotate: false
+  xy: 556, 297
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/GreatPalace2
   rotate: false
   xy: 628, 297
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/GreatPalace4
+TileSets/HexaRealm/Tiles/Midoro Palace
+  rotate: false
+  xy: 628, 297
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/GreatPalace3
   rotate: false
   xy: 700, 297
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/GreatPalace5
+TileSets/HexaRealm/Tiles/Island Palace
+  rotate: false
+  xy: 700, 297
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/GreatPalace4
   rotate: false
   xy: 772, 297
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/GreatPalace6
+TileSets/HexaRealm/Tiles/Maze Palace
+  rotate: false
+  xy: 772, 297
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/GreatPalace5
   rotate: false
   xy: 844, 297
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/GreatPalace7
+TileSets/HexaRealm/Tiles/Sea Palace
+  rotate: false
+  xy: 844, 297
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/GreatPalace6
+  rotate: false
+  xy: 916, 297
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/ThreeEye Rock Palace
   rotate: false
   xy: 916, 297
   size: 64, 64
@@ -574,6 +623,13 @@ TileSets/HexaRealm/Tiles/Ruto Town
 TileSets/HexaRealm/Tiles/Saria Town
   rotate: false
   xy: 724, 225
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/North Castle
+  rotate: false
+  xy: 652, 81
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
