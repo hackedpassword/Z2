@@ -339,7 +339,170 @@
 		"impassable": false,  // Can't build natural wonders anyway
 		"unbuildable": false
 	},
-	
+	{
+		"name": "Darunia Town", // Placeholder attributes
+		"type": "NaturalWonder",
+		"gold": 1,
+		"faith": 2,
+		"culture": 1,
+		"production": 1,
+		"movementCost": 3,
+		"occursOn": ["Plains","Mountain","Desert","Grassland"],
+		"uniques": [
+			"Grants 50 Gold to the first civilization to discover it",
+			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
+			"Tile provides yield without assigned population",
+			"Doesn't generate naturally",
+			"Units ending their turn on this terrain take [-50] damage"
+		        ],
+		"turnsInto": "Plains",
+		"impassable": false,
+		"unbuildable": false
+	},
+	{
+		"name": "Kasuto Town", // Placeholder attributes
+		"type": "NaturalWonder",
+		"gold": 1,
+		"faith": 2,
+		"culture": 1,
+		"production": 1,
+		"movementCost": 3,
+		"occursOn": ["Plains","Mountain","Desert","Grassland"],
+		"uniques": [
+			"Grants 50 Gold to the first civilization to discover it",
+			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
+			"Tile provides yield without assigned population",
+			"Doesn't generate naturally",
+			"Units ending their turn on this terrain take [-50] damage"
+		        ],
+		"turnsInto": "Plains",
+		"impassable": false,
+		"unbuildable": false
+	},
+	{
+		"name": "Mido Town", // Placeholder attributes
+		"type": "NaturalWonder",
+		"gold": 1,
+		"faith": 2,
+		"culture": 1,
+		"production": 1,
+		"movementCost": 3,
+		"occursOn": ["Plains","Mountain","Desert","Grassland"],
+		"uniques": [
+			"Grants 50 Gold to the first civilization to discover it",
+			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
+			"Tile provides yield without assigned population",
+			"Doesn't generate naturally",
+			"Units ending their turn on this terrain take [-50] damage"
+		        ],
+		"turnsInto": "Plains",
+		"impassable": false,
+		"unbuildable": false
+	},
+	{
+		"name": "Nabooru Town", // Placeholder attributes
+		"type": "NaturalWonder",
+		"gold": 1,
+		"faith": 2,
+		"culture": 1,
+		"production": 1,
+		"movementCost": 3,
+		"occursOn": ["Plains","Mountain","Desert","Grassland"],
+		"uniques": [
+			"Grants 50 Gold to the first civilization to discover it",
+			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
+			"Tile provides yield without assigned population",
+			"Doesn't generate naturally",
+			"Units ending their turn on this terrain take [-50] damage"
+		        ],
+		"turnsInto": "Plains",
+		"impassable": false,
+		"unbuildable": false
+	},
+	{
+		"name": "Rauru Town", // Placeholder attributes
+		"type": "NaturalWonder",
+		"gold": 1,
+		"faith": 2,
+		"culture": 1,
+		"production": 1,
+		"movementCost": 3,
+		"occursOn": ["Plains","Mountain","Desert","Grassland"],
+		"uniques": [
+			"Grants 50 Gold to the first civilization to discover it",
+			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
+			"Tile provides yield without assigned population",
+			"Doesn't generate naturally",
+			"Units ending their turn on this terrain take [-50] damage"
+		        ],
+		"turnsInto": "Plains",
+		"impassable": false,
+		"unbuildable": false
+	},
+	{
+		"name": "Ruto Town", // Placeholder attributes
+		"type": "NaturalWonder",
+		"gold": 1,
+		"faith": 2,
+		"culture": 1,
+		"production": 1,
+		"movementCost": 3,
+		"occursOn": ["Plains","Mountain","Desert","Grassland"],
+		"uniques": [
+			"Grants 50 Gold to the first civilization to discover it",
+			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
+			"Tile provides yield without assigned population",
+			"Doesn't generate naturally",
+			"Units ending their turn on this terrain take [-50] damage"
+		        ],
+		"turnsInto": "Plains",
+		"impassable": false,
+		"unbuildable": false
+	},
+	{
+		"name": "Saria Town", // Placeholder attributes
+		"type": "NaturalWonder",
+		"gold": 1,
+		"faith": 2,
+		"culture": 1,
+		"production": 1,
+		"movementCost": 3,
+		"occursOn": ["Plains","Mountain","Desert","Grassland"],
+		"uniques": [
+			"Grants 50 Gold to the first civilization to discover it",
+			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
+			"Tile provides yield without assigned population",
+			"Doesn't generate naturally",
+			"Units ending their turn on this terrain take [-50] damage"
+		        ],
+		"turnsInto": "Plains",
+		"impassable": false,
+		"unbuildable": false
+	},
+	{
+		"name": "Kasuto Ruins", // Placeholder attributes
+		"type": "NaturalWonder",
+		"gold": 1,
+		"faith": 2,
+		"culture": 1,
+		"production": 1,
+		"movementCost": 3,
+		"occursOn": ["Plains","Mountain","Desert","Grassland"],
+		"uniques": [
+			"Grants 50 Gold to the first civilization to discover it",
+			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
+			"Tile provides yield without assigned population",
+			"Doesn't generate naturally",
+			"Units ending their turn on this terrain take [-50] damage"
+		        ],
+		"turnsInto": "Plains",
+		"impassable": false,
+		"unbuildable": false
+	},
+
+
+
+
 
   ////////////////////////////////////
  // Bridges using hybrid tile tech //
