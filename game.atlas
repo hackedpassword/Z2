@@ -452,6 +452,13 @@ TileSets/HexaRealm/Tiles/Landmark
   orig: 64, 64
   offset: 0, 0
   index: -1
+TileSets/HexaRealm/Tiles/Town
+  rotate: false
+  xy: 436, 153
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
 TileSets/HexaRealm/Tiles/Marble
   rotate: false
   xy: 508, 225
