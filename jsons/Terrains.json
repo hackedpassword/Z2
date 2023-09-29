@@ -317,26 +317,69 @@
 		"unbuildable": false,
 		"weight": 10
 	},
-	{ //  
-		"name": "Town", // Generic town, prob add named ones later
+
+// Towns
+	
+	{
+		"name": "Plains Town", // Generic town
 		"type": "NaturalWonder",
 		"gold": 1,
 		"faith": 2,
 		"culture": 1,
 		"production": 1,
 		"movementCost": 3,
-		"occursOn": ["Plains","Mountain","Desert","Grassland"],
+		"occursOn": ["Plains"],
 		"uniques": [
 			"Grants 50 Gold to the first civilization to discover it",
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
-			// Will -50 result in regen instead of dmg? 
+			// [-50] results in regen instead of dmg
 			"Units ending their turn on this terrain take [-50] damage"
-			// Experiment - 2/t max heal - towns' healer house
+			// 2/t max heal - towns' healer house
 		        ],
 		"turnsInto": "Plains",
 		"impassable": false,  // Can't build natural wonders anyway
+		"unbuildable": false
+	},
+	{
+		"name": "Desert Town", // Generic town
+		"type": "NaturalWonder",
+		"gold": 1,
+		"faith": 2,
+		"culture": 1,
+		"production": 1,
+		"movementCost": 3,
+		"occursOn": ["Desert"],
+		"uniques": [
+			"Grants 50 Gold to the first civilization to discover it",
+			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
+			"Tile provides yield without assigned population",
+			"Doesn't generate naturally",
+			"Units ending their turn on this terrain take [-50] damage",  // regen, healer
+		        ],
+		"turnsInto": "Desert",
+		"impassable": false,
+		"unbuildable": false
+	},
+	{
+		"name": "Grassland Town", // Generic town
+		"type": "NaturalWonder",
+		"gold": 1,
+		"faith": 2,
+		"culture": 1,
+		"production": 1,
+		"movementCost": 3,
+		"occursOn": ["Grassland"],
+		"uniques": [
+			"Grants 50 Gold to the first civilization to discover it",
+			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
+			"Tile provides yield without assigned population",
+			"Doesn't generate naturally",
+			"Units ending their turn on this terrain take [-50] damage",  // regen, healer
+		        ],
+		"turnsInto": "Grassland",
+		"impassable": false,
 		"unbuildable": false
 	},
 	{
@@ -347,15 +390,15 @@
 		"culture": 1,
 		"production": 1,
 		"movementCost": 3,
-		"occursOn": ["Plains","Mountain","Desert","Grassland"],
+		"occursOn": ["Desert"],
 		"uniques": [
 			"Grants 50 Gold to the first civilization to discover it",
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
-			"Units ending their turn on this terrain take [-50] damage"
+			"Units ending their turn on this terrain take [-50] damage",  // regen, healer
 		        ],
-		"turnsInto": "Plains",
+		"turnsInto": "Desert",
 		"impassable": false,
 		"unbuildable": false
 	},
@@ -367,15 +410,15 @@
 		"culture": 1,
 		"production": 1,
 		"movementCost": 3,
-		"occursOn": ["Plains","Mountain","Desert","Grassland"],
+		"occursOn": ["Grassland"],
 		"uniques": [
 			"Grants 50 Gold to the first civilization to discover it",
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
-			"Units ending their turn on this terrain take [-50] damage"
+			"Units ending their turn on this terrain take [-50] damage",  // regen, healer
 		        ],
-		"turnsInto": "Plains",
+		"turnsInto": "Grassland",
 		"impassable": false,
 		"unbuildable": false
 	},
@@ -387,15 +430,15 @@
 		"culture": 1,
 		"production": 1,
 		"movementCost": 3,
-		"occursOn": ["Plains","Mountain","Desert","Grassland"],
+		"occursOn": ["Desert"],
 		"uniques": [
 			"Grants 50 Gold to the first civilization to discover it",
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
-			"Units ending their turn on this terrain take [-50] damage"
+			"Units ending their turn on this terrain take [-50] damage",  // regen, healer
 		        ],
-		"turnsInto": "Plains",
+		"turnsInto": "Desert",
 		"impassable": false,
 		"unbuildable": false
 	},
@@ -407,13 +450,13 @@
 		"culture": 1,
 		"production": 1,
 		"movementCost": 3,
-		"occursOn": ["Plains","Mountain","Desert","Grassland"],
+		"occursOn": ["Plains"],
 		"uniques": [
 			"Grants 50 Gold to the first civilization to discover it",
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
-			"Units ending their turn on this terrain take [-50] damage"
+			"Units ending their turn on this terrain take [-50] damage",  // regen, healer
 		        ],
 		"turnsInto": "Plains",
 		"impassable": false,
@@ -427,15 +470,15 @@
 		"culture": 1,
 		"production": 1,
 		"movementCost": 3,
-		"occursOn": ["Plains","Mountain","Desert","Grassland"],
+		"occursOn": ["Grassland"],
 		"uniques": [
 			"Grants 50 Gold to the first civilization to discover it",
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
-			"Units ending their turn on this terrain take [-50] damage"
+			"Units ending their turn on this terrain take [-50] damage",  // regen, healer
 		        ],
-		"turnsInto": "Plains",
+		"turnsInto": "Grassland",
 		"impassable": false,
 		"unbuildable": false
 	},
@@ -447,13 +490,13 @@
 		"culture": 1,
 		"production": 1,
 		"movementCost": 3,
-		"occursOn": ["Plains","Mountain","Desert","Grassland"],
+		"occursOn": ["Plains"],
 		"uniques": [
 			"Grants 50 Gold to the first civilization to discover it",
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
-			"Units ending their turn on this terrain take [-50] damage"
+			"Units ending their turn on this terrain take [-50] damage",  // regen, healer
 		        ],
 		"turnsInto": "Plains",
 		"impassable": false,
@@ -467,13 +510,13 @@
 		"culture": 1,
 		"production": 1,
 		"movementCost": 3,
-		"occursOn": ["Plains","Mountain","Desert","Grassland"],
+		"occursOn": ["Plains"],
 		"uniques": [
 			"Grants 50 Gold to the first civilization to discover it",
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
-			"Units ending their turn on this terrain take [-50] damage"
+			"Units ending their turn on this terrain take [-50] damage",  // regen, healer
 		        ],
 		"turnsInto": "Plains",
 		"impassable": false,
@@ -482,18 +525,13 @@
 	{
 		"name": "Kasuto Ruins", // Placeholder attributes
 		"type": "NaturalWonder",
-		"gold": 1,
-		"faith": 2,
-		"culture": 1,
-		"production": 1,
-		"movementCost": 3,
-		"occursOn": ["Plains","Mountain","Desert","Grassland"],
+		"faith": 1,
+		"movementCost": 4,
+		"occursOn": ["Plains"],
 		"uniques": [
-			"Grants 50 Gold to the first civilization to discover it",
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
-			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
-			"Units ending their turn on this terrain take [-50] damage"
+			"Units ending their turn on this terrain take [25] damage",
 		        ],
 		"turnsInto": "Plains",
 		"impassable": false,
