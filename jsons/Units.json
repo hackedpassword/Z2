@@ -66,4 +66,18 @@
 		"upgradesTo": "Composite Bowman",
 		"attackSound": "arrow"
 	},
+	{
+		"name": "Nuclear Submarine",
+		"unitType": "Submarine",
+		"movement": 6,
+		"strength": 50,
+		"range": 3,
+		"rangedStrength": 85,
+		"cost": 425,
+		"requiredTech": "Nuclear Fusion",
+		"requiredResource": "Uranium",
+		"uniques": ["[100]% chance to intercept air attacks", "Can see invisible [Submarine] units",
+		"[+75]% Strength <when attacking>", "Can only attack [Water] tiles", "[+1] Sight", "Can carry [2] [Missile] units", "Never appears as a Barbarian unit"],
+		"attackSound": "torpedo"
+	},
 ]
