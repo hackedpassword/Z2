@@ -41,6 +41,14 @@
 		"Pillaging this improvement yields approximately [+20 Gold]"],
 		"shortcutKey": "M"
 	},
+        {
+		"name": "Smelter",  // Specific to improve Gold Ore in plains tiles (triforce)
+		"turnsToBuild": 8,
+		"techRequired": "Mining",
+		"uniques": ["[+2 Production] <after discovering [Chemistry]>",
+			"Can only be built to improve a resource",
+			"Pillaging this improvement yields approximately [+20 Gold]"],
+	},
 	{
 		"name": "Fishing Boats",
 		"terrainsCanBeBuiltOn": ["Coast"],
