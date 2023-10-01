@@ -14,7 +14,7 @@ Terrains.json:
 ```
 	    "name": "Bridge1ocean",
 	    "type": "NaturalWonder",
-	    "turnsInto": "Hill",
+	    "turnsInto": "Force",  // or Hill, any terrainFeature
 	    "unbuildable": true,
 ```
 
@@ -27,7 +27,7 @@ _You’ll want to read on before jumping into this, there’s a bit more to it._
 
 ## How
 
-Because the engine allows `turnsInto:` to accept a `TerrainFeature` as `Type:String`, apparently neither Land or Water units are implied, becoming (sort of) “whatever” (vs Any, neither, both, null).
+Because the engine allows `turnsInto:` to accept a `TerrainFeature` as `Type:String`, apparently neither Land or Water units are implied, becoming (sort of) “whatever” (vs Any, neither, both, null). That's my observation at least.
 
 Credit unwittingly goes to A1y0sh4 for inadvertently applying this strange behavior to Rock of Gibraltar in [the Great Unciv Rework](https://github.com/A1y0sh4/The-Great-Unciv-Rework) versions <= 2.1. I recognized when the Wonder tile was placed next to a Coast, unit mobility behavior acted like a canal tile. Experiments proved bridge building with this technique was possible.
 
@@ -58,13 +58,7 @@ Secondly on W-E bridges, endpoints are rendered over by the next row of tiles, r
 
 Angle bridges are an entire project on their own, but doable. Likely a variant of the above technique.
 
-GlobalUniques:
-```
-	"[2] Movement point cost to disembark",
-	"[2] Movement point cost to embark"
-	// Embark movement penalty moving onto from Land tile onto hybrid tile does apply
-```
-
+I implemented OceanTile with movement=0 as the Raft crosses in one movement. Once, Unciv crashed due to the AI zig-zagging back and forth on the water infinitly. Yairm210 figured this out using his code-ray vision. Basically, until float movement values are implemented, not a good idea to use zero.
 
 
 ## Issues
@@ -131,7 +125,7 @@ TileResources.json
 	// Unable to place Foundation on CoastTile
 ```
 
-## Other
+## Other Hacky Efforts
 
 There remains an uncovered hack-feature that’s out of my/modders’ control to steer properly:
 
