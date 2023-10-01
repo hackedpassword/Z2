@@ -33,7 +33,8 @@
 	},
 	{
 		"name": "Mine",  // This leads to production improvements w/ Mountains as resources in Z2 are scarce
-		"terrainsCanBeBuiltOn": ["Hill","Mountain"],  // don't forget workers are taking 50 dmg/t/Mountain so building these are tricky
+				 // don't forget workers are taking 50 dmg/t/Mountain so building these are tricky
+		"terrainsCanBeBuiltOn": ["Hill","Mountain"],
 		"production": 2,
 		"turnsToBuild": 7,
 		"techRequired": "Mining",  // ..and requires the worker unit to have learned Adventurer promotion
