@@ -77,7 +77,7 @@
 		"resourceType": "Luxury",
 		"terrainsCanBeFoundOn": ["Hill","Forest","Jungle","Tundra","Grassland","Cave","Cavern"],
 		"gold": 2,
-		"improvement": "Mine",
+		"improvement": "Smelter",
 		"uniques": ["Generated with weight [25] <in [Tundra] Regions>",
 					"Generated with weight [30] <in [Hill] Regions>",
 					"Generated with weight [20] <in [Grassland] Regions>",
@@ -123,7 +123,7 @@
 					"Doesn't generate naturally <in [Forest] tiles> <in tiles without [Hill]> <in tiles without [Tundra]>"]
 		
 	},
-	{
+	{  // Boot
 		"name": "Cotton",
 		"resourceType": "Luxury",
 		"terrainsCanBeFoundOn": ["Grassland","Flood plains","Plains"],
