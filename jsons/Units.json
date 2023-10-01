@@ -52,8 +52,6 @@
 		"attackSound": "nonmetalhit"
 	},
 
-// No further changes from original G&K
-
 	{ // no change, mod checker complaining "may upgrade to [Archer] doesn't fit baseUnitFilter, including here
 		"name": "Archer",
 		"unitType": "Archery",
@@ -74,7 +72,7 @@
 		"range": 3,
 		"rangedStrength": 85,
 		"cost": 425,
-		"requiredTech": "Nuclear Fusion",
+		"requiredTech": "Mobile Tactics",
 		"requiredResource": "Uranium",
 		"uniques": ["[100]% chance to intercept air attacks", "Can see invisible [Submarine] units",
 		"[+75]% Strength <when attacking>", "Can only attack [Water] tiles", "[+1] Sight", "Can carry [2] [Missile] units", "Never appears as a Barbarian unit"],
