@@ -6,6 +6,8 @@
 	"[1] Movement point cost to embark", // also trying float [1.5] to movement cost - doesn't work
         "[+1] Movement <for [All] units>", // Yes. Proven great by Alpha Frontier, anti-crawl
         "[-90]% maintenance on road & railroads" // Not trying to penalize player for establishing movement paths
-// "Double movement in [Force] <for [All] units>", // This doesn't work.
+	// "Double movement in [Force] <for [All] units>", // This doesn't work.
+	"Allow raze capitol",  // Allow razing any city
+	"Allow raze holy city",
     ]
 }
