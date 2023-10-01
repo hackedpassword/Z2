@@ -77,8 +77,8 @@
 		"uniques": ["Can move after attacking",
 			"No defensive terrain bonus",
 			"Never appears as a Barbarian unit",
-			"promotions": ["Indirect Fire"]
 		],
+		"promotions": ["Indirect Fire"],
 		"attackSound": "tankshot"
 	},
 	{
