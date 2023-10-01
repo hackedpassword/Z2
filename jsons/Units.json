@@ -65,17 +65,196 @@
 		"attackSound": "arrow"
 	},
 	{
+		"name": "Modern Armor",
+		"unitType": "Armored",
+		"movement": 5,
+		"strength": 100,
+		"range": 2,
+		"cost": 425,
+		"requiredTech": "Lasers",
+		"requiredResource": "Aluminum",
+		"upgradesTo": "Giant Death Robot",
+		"uniques": ["Can move after attacking",
+			"No defensive terrain bonus",
+			"Never appears as a Barbarian unit",
+			"promotions": ["Indirect Fire"]
+		],
+		"attackSound": "tankshot"
+	},
+	{
 		"name": "Nuclear Submarine",
 		"unitType": "Submarine",
 		"movement": 6,
-		"strength": 50,
+		"strength": 90,
 		"range": 3,
 		"rangedStrength": 85,
-		"cost": 425,
+		"cost": 475,
 		"requiredTech": "Mobile Tactics",
-		"requiredResource": "Uranium",
-		"uniques": ["[100]% chance to intercept air attacks", "Can see invisible [Submarine] units",
-		"[+75]% Strength <when attacking>", "Can only attack [Water] tiles", "[+1] Sight", "Can carry [2] [Missile] units", "Never appears as a Barbarian unit"],
+		"requiredResource": "Uranium",  // how is this not in original G&K?
+		"uniques": ["[75]% chance to intercept air attacks",
+			"Can see invisible [Submarine] units",
+			"[+75]% Strength <when attacking>",
+			"Can only attack [Water] tiles",
+			"[+2] Sight",
+			"Can carry [3] [Missile] units",
+			"Can carry [1] [Atomic Bomber] units",
+			"Never appears as a Barbarian unit"
+		],
 		"attackSound": "torpedo"
 	},
+	{
+		"name": "Carrier",
+		"unitType": "Aircraft Carrier",
+		"movement": 5,
+		"strength": 80,
+		"cost": 505,
+		"requiredTech": "Electronics",
+		"uniques": ["Can only attack [Melee Water] units",  // better believe the Navy put a couple guns on these
+			"Can carry [4] [Aircraft] units",
+			"Can carry [2] [Gunpowder] units",
+			"Can carry [1] [Missile] units",
+		]
+	},
+	{
+		"name": "Battleship",
+		"unitType": "Ranged Water",
+		"movement": 5,
+		"strength": 75,
+		"rangedStrength": 55,
+		"range": 3,
+		"cost": 375,
+		"requiredResource": "Oil",
+		"requiredTech": "Electronics",
+		"uniques": ["Never appears as a Barbarian unit",
+			"[+100]% Strength <vs [Ranged Water] units>"
+			"[+75]% Strength <with [15]% chance>",  // critical hit
+			"Can carry [1] [Gunpowder] units", 
+			"Can carry [1] [Missile] units", 
+		],
+		"promotions": ["Indirect Fire"],
+		"attackSound": "shipguns"
+	},
+	{
+		"name": "Destroyer",
+		"unitType": "Melee Water",
+		"movement": 6,
+		"strength": 55,
+		"interceptRange": 2,
+		"cost": 375,
+		"requiredTech": "Combustion",
+		"uniques": ["Can see invisible [Submarine] units",
+			"[40]% chance to intercept air attacks",
+			"May withdraw before melee ([80]%)",
+			"Can carry [3] [Missile] units",  // how does a destroyer not have missile launch capabilities?
+			"[+100]% Strength <vs [Submarine] units>"
+			"[+50]% Strength <vs [Water] units>"
+		],
+		"attackSound": "shipguns"
+	},
+	{
+		"name": "Guided Missile",
+		"unitType": "Missile",
+		"movement": 1,
+		"strength": 60,
+		"rangedStrength": 80,
+		"range": 8,
+		"cost": 150,
+		"requiredTech": "Radar",
+		"uniques": ["[-100]% maintenance costs"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Cruise Missile",
+		"unitType": "Missile",
+		"movement": 1,
+		"strength": 90,
+		"rangedStrength": 125,
+		"range": 8,
+		"cost": 400,
+		"requiredTech": "Rocketry",
+		"uniques": ["[-100]% maintenance costs"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Bunker Buster",
+		"unitType": "Atomic Bomber",
+		"movement": 1,
+		"strength": 120,
+		"rangedStrength": 100,
+		"range": 8,
+		"cost": 800,
+		"requiredTech": "Advanced Ballistics",
+		"uniques": ["[-100]% maintenance costs",
+			"Destroys tile improvements when attacking",
+			"[+250]% Strength <vs cities> <when attacking>",
+			"Consumes [1] [Aluminum]"
+		],
+		"attackSound": "nuke"
+	},
+	{
+		"name": "Nuclear Missile",
+		"unitType": "Missile",
+		"movement": 1,
+		"strength": 50,
+		"rangedStrength": 300,
+		"range": 8,
+		"cost": 1500,
+		"requiredTech": "Advanced Ballistics",
+		"uniques": ["Nuclear weapon of Strength [2]",
+			"Only available <if [Manhattan Project] is constructed>",
+			"Blast radius [2]",
+			"Consumes [2] [Uranium]"
+		],
+		"attackSound": "nuke"
+	},
+	{
+		"name": "Nuclear Missile ICBM",
+		"unitType": "Atomic Bomber",
+		"movement": 1,
+		"strength": 75,
+		"rangedStrength": 300,
+		"range": 15,
+		"cost": 2500,
+		"requiredTech": "Nuclear Fusion",
+		"uniques": ["Nuclear weapon of Strength [3]",
+			"Only available <if [Manhattan Project] is constructed>",
+			"Blast radius [3]",
+			"Consumes [3] [Uranium]"
+		],
+		"attackSound": "nuke"
+	},
+	{
+		"name": "Nuclear Bunker Buster",
+		"unitType": "Atomic Bomber",
+		"movement": 1,
+		"strength": 120,
+		"rangedStrength": 150,
+		"range": 8,
+		"cost": 3000,
+		"requiredTech": "Nuclear Fusion",
+		"uniques": ["[-100]% maintenance costs",
+			"Destroys tile improvements when attacking",			
+			"[+800]% Strength <vs cities> <when attacking>",
+			"Consumes [2] [Uranium]"
+		],
+		"attackSound": "nuke"
+	},
+	{
+		"name": "Nuclear Missile TSAR",
+		"unitType": "Atomic Bomber",
+		"movement": 1,
+		"strength": 75,
+		"rangedStrength": 500,
+		"range": 15,
+		"cost": 4000,
+		"requiredTech": "Particle Physics",
+		"uniques": ["Nuclear weapon of Strength [6]",
+			"Triggers a global alert upon completion",
+			"Only available <if [Manhattan Project] is constructed>",
+			"Blast radius [6]",
+			"Consumes [5] [Uranium]"
+		],
+		"attackSound": "nuke"
+	},
+
 ]
