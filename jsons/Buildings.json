@@ -16,5 +16,41 @@
 //        "[+10 Food, +10 Production, +10 Gold, +10 Science, +10 Culture, +10 Faith] from [Grassland] tiles [in this city]", 
 //        "[+1 Happiness] [in all cities]"
         ]
-    }
+    },
+    {
+        "name": "Horse Track",  // Do something with stale strategic resources, horses, coal, and iron
+        "cost": 180,
+		"maintenance": 2,
+		"requiredTech": "Economics",
+        "uniques": [
+            "Consumes [2] [Horses]",
+            "Gain [1] [Happiness]",
+            "Gain [3] [Culture]",
+            "Provides 1 extra copy of each improved luxury resource near this City",
+        ]
+    },
+    {
+        "name": "Coal Refinery",
+        "cost": 300,
+		"maintenance": 2,
+		"requiredTech": "Plastics",
+        "uniques": [
+            "Consumes [2] [Coal]",
+            "Gain [1] [Oil]",
+            "Gain [4] [Production]",
+            "Gain [2] [Science]",
+        ]
+    },
+    {
+        "name": "Ironworks Foundry",
+        "cost": 470,
+		"maintenance": 3,
+		"requiredTech": "Metallurgy",
+        "uniques": [
+            "Consumes [2] [Iron]",
+            "Gain [1] [Aluminum]",
+            "Gain [6] [Production]",
+            "Gain [1] [Science]",
+        ]
+    },
 ] 
