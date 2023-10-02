@@ -42,7 +42,7 @@
         ]
     },
     {
-        "name": "Ironworks Foundry",
+        "name": "Metalworks Foundry",
         "cost": 470,
 		"maintenance": 3,
 		"requiredTech": "Metallurgy",
