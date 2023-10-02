@@ -17,4 +17,16 @@
 //        "[+1 Happiness] [in all cities]"
         ]
     },
+    {
+        "name": "Horse Track",  // Do something with stale strategic resources, horses, coal, and iron
+        "cost": 180,
+	"maintenance": 2,
+	"requiredTech": "Economics",
+        "uniques": [	
+		"Consumes [2] [Horses]",
+		"happiness": 1,
+        	"culture": 3,
+		"Provides 1 extra copy of each improved luxury resource near this City",
+	    ]
+    },
 ]
