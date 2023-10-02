@@ -201,6 +201,7 @@
 		"cost": 1500,
 		"requiredTech": "Advanced Ballistics",
 		"uniques": ["Nuclear weapon of Strength [2]",
+			"Triggers the following global alert: [A nuclear explosion was witnessed!] <when attacking>",
 			"Only available <if [Manhattan Project] is constructed>",
 			"Blast radius [2]",
 			"Consumes [2] [Uranium]"
@@ -217,9 +218,12 @@
 		"cost": 2500,
 		"requiredTech": "Nuclear Fusion",
 		"uniques": ["Nuclear weapon of Strength [3]",
+			"Triggers the following global alert: [A large nuclear explosion was witnessed!] <when attacking>",
+			"Limited to [3] per Civilization",
 			"Only available <if [Manhattan Project] is constructed>",
 			"Blast radius [3]",
-			"Consumes [3] [Uranium]"
+			"Consumes [3] [Uranium]",
+			"Consumes [1] [Aluminum]"
 		],
 		"attackSound": "nuke"
 	},
@@ -233,14 +237,17 @@
 		"cost": 3000,
 		"requiredTech": "Nuclear Fusion",
 		"uniques": ["[-100]% maintenance costs",
-			"Destroys tile improvements when attacking",			
+			"Destroys tile improvements when attacking",
+			"Limited to [3] per Civilization",
+			"Triggers the following global alert: [A deeply resonating quake was felt!] <when attacking>",
 			"[+800]% Strength <vs cities> <when attacking>",
-			"Consumes [2] [Uranium]"
+			"Consumes [2] [Uranium]",
+			"Consumes [1] [Aluminum]"
 		],
 		"attackSound": "nuke"
 	},
 	{
-		"name": "Nuclear Missile TSAR",
+		"name": "TSAR Nuclear Bomb",
 		"unitType": "Atomic Bomber",
 		"movement": 1,
 		"strength": 75,
@@ -249,10 +256,15 @@
 		"cost": 4000,
 		"requiredTech": "Particle Physics",
 		"uniques": ["Nuclear weapon of Strength [6]",
+			"Triggers a global alert upon build start",
 			"Triggers a global alert upon completion",
+			"Triggers the following global alert: [Man-made Armageddon has scorched the land. Is this the price of victory?] <when attacking>",
+			"Destroys tile improvements when attacking",
+			"Limited to [1] per Civilization",
 			"Only available <if [Manhattan Project] is constructed>",
 			"Blast radius [6]",
-			"Consumes [5] [Uranium]"
+			"Consumes [5] [Uranium]",
+			"Consumes [1] [Aluminum]"
 		],
 		"attackSound": "nuke"
 	},
