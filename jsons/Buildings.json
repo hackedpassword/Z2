@@ -23,7 +23,7 @@
 	"maintenance": 2,
 	"requiredTech": "Economics",
 	"happiness": 1,
-       	"culture": 3,
+	"gold": 4,
         "uniques": [
 		"Consumes [2] [Horses]",
 		"Provides 1 extra copy of each improved luxury resource near this City",
@@ -47,10 +47,21 @@
 	"maintenance": 3,
 	"requiredTech": "Metallurgy",
 	"production": 6,
-	"science": 1,
+	"science": 2,
         "uniques": [
 		"Consumes [2] [Iron]",
 		"Provides [1] [Aluminum]",
+		]
+    },
+    {
+        "name": "Calutron Enrichment Lab",
+        "cost": 690,
+	"maintenance": 5,
+	"requiredTech": "Computers",
+	"science": 8,
+        "uniques": [
+		"Consumes [4] [Iron]",
+		"Provides [1] [Uranium]",
 		]
     },
 ]
