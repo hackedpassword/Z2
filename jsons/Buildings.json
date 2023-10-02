@@ -20,8 +20,8 @@
     {
         "name": "Horse Track",  // Do something with stale strategic resources, horses, coal, and iron
         "cost": 180,
-		"maintenance": 2,
-		"requiredTech": "Economics",
+	"maintenance": 2,
+	"requiredTech": "Economics",
 //        "uniques": [
 //		"Consumes [2] [Horses]",
 		// "happiness": 1,
