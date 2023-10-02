@@ -22,12 +22,12 @@
         "cost": 180,
 		"maintenance": 2,
 		"requiredTech": "Economics",
-        "uniques": [
-		"Consumes [2] [Horses]",
+//        "uniques": [
+//		"Consumes [2] [Horses]",
 		// "happiness": 1,
-        	"culture": 3,
-		"Provides 1 extra copy of each improved luxury resource near this City",
-	]
+//        	"culture": 3,
+//		"Provides 1 extra copy of each improved luxury resource near this City",
+//	]
     },
     {
         "name": "Coal Refinery",
