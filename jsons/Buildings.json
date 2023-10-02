@@ -23,11 +23,11 @@
 		"maintenance": 2,
 		"requiredTech": "Economics",
         "uniques": [
-            "Consumes [2] [Horses]",
-            "Provides [1] [Happiness]",
-            "Provides [3] [Culture]",
-            "Provides 1 extra copy of each improved luxury resource near this City",
-        ]
+		"Consumes [2] [Horses]",
+	        "happiness": 1,
+        	"culture": 3,
+		"Provides 1 extra copy of each improved luxury resource near this City",
+	]
     },
     {
         "name": "Coal Refinery",
@@ -35,10 +35,10 @@
 		"maintenance": 2,
 		"requiredTech": "Plastics",
         "uniques": [
-            "Consumes [2] [Coal]",
-            "Provides [1] [Oil]",
-            "Provides [4] [Production]",
-            "Provides [2] [Science]",
+		"Consumes [2] [Coal]",
+		"Provides [1] [Oil]",
+		"production": 4,
+		"science": 2,
         ]
     },
     {
@@ -47,10 +47,10 @@
 		"maintenance": 3,
 		"requiredTech": "Metallurgy",
         "uniques": [
-            "Consumes [2] [Iron]",
-            "Provides [1] [Aluminum]",
-            "Provides [6] [Production]",
-            "Provides [1] [Science]",
+		"Consumes [2] [Iron]",
+		"Provides [1] [Aluminum]",
+		"production": 6,
+		"science": 1,
         ]
     },
 ] 
