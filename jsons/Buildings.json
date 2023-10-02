@@ -32,8 +32,8 @@
     {
         "name": "Coal Refinery",
         "cost": 300,
-		"maintenance": 2,
-		"requiredTech": "Plastics",
+	"maintenance": 2,
+	"requiredTech": "Plastics",
         "uniques": [
 		"Consumes [2] [Coal]",
 		"Provides [1] [Oil]",
@@ -44,8 +44,8 @@
     {
         "name": "Metalworks Foundry",
         "cost": 470,
-		"maintenance": 3,
-		"requiredTech": "Metallurgy",
+	"maintenance": 3,
+	"requiredTech": "Metallurgy",
         "uniques": [
 		"Consumes [2] [Iron]",
 		"Provides [1] [Aluminum]",
