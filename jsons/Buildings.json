@@ -17,40 +17,4 @@
 //        "[+1 Happiness] [in all cities]"
         ]
     },
-    {
-        "name": "Horse Track",  // Do something with stale strategic resources, horses, coal, and iron
-        "cost": 180,
-	"maintenance": 2,
-	"requiredTech": "Economics",
-//        "uniques": [
-//		"Consumes [2] [Horses]",
-		// "happiness": 1,
-//        	"culture": 3,
-//		"Provides 1 extra copy of each improved luxury resource near this City",
-//	]
-    },
-    {
-        "name": "Coal Refinery",
-        "cost": 300,
-	"maintenance": 2,
-	"requiredTech": "Plastics",
-        "uniques": [
-		"Consumes [2] [Coal]",
-		"Provides [1] [Oil]",
-		"production": 4,
-		"science": 2,
-        ]
-    },
-    {
-        "name": "Metalworks Foundry",
-        "cost": 470,
-	"maintenance": 3,
-	"requiredTech": "Metallurgy",
-        "uniques": [
-		"Consumes [2] [Iron]",
-		"Provides [1] [Aluminum]",
-		"production": 6,
-		"science": 1,
-        ]
-    },
-] 
+]
