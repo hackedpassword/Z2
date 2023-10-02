@@ -24,7 +24,7 @@
 		"requiredTech": "Economics",
         "uniques": [
 		"Consumes [2] [Horses]",
-	        "happiness": 1,
+		"happiness": 1,
         	"culture": 3,
 		"Provides 1 extra copy of each improved luxury resource near this City",
 	]
