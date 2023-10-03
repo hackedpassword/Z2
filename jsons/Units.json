@@ -286,7 +286,7 @@
 		"range": 3,
 		"strength": 225,
 		"cost": 805,
-		"requiredTech": ["Nanotechnology"],
+		"requiredTech": "Nanotechnology",
 		"requiredResource": "Uranium",
 		"promotions": ["March"],  // Nanotech repair system
 		"uniques": [
@@ -312,7 +312,7 @@
 		"range": 2,
 		"strength": 375,
 		"cost": 1400,
-		"requiredTech": ["Future Tech"],
+		"requiredTech": "Future Tech",
 		"requiredResource": "Uranium",
 		"promotions": ["March","Rejuvenation"],  // Gen-2 nanotech
 		"uniques": [
