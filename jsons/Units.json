@@ -189,7 +189,7 @@
 			"[+250]% Strength <vs cities> <when attacking>",
 			"Consumes [1] [Aluminum]"
 		],
-		"attackSound": "nuke"
+		"attackSound": "torpedo"
 	},
 	{
 		"name": "Nuclear Missile",
@@ -244,7 +244,7 @@
 			"Consumes [2] [Uranium]",
 			"Consumes [1] [Aluminum]"
 		],
-		"attackSound": "nuke"
+		"attackSound": "torpedo"
 	},
 	{
 		"name": "TSAR Nuclear Bomb",
@@ -287,7 +287,7 @@
 		"strength": 225,
 		"cost": 805,
 		"requiredTech": "Nanotechnology",
-		"requiredBuilding": "Nuclear Plant",
+		// "requiredBuilding": "Nuclear Plant",  // doesn't trigger
 		"requiredResource": "Uranium",
 		"promotions": ["March"],  // Nanotech repair system
 		"uniques": [
@@ -304,7 +304,7 @@
 			"[+2] Sight",
 			"Never appears as a Barbarian unit"
 		],
-		"attackSound": "gdrAttack"
+		"attackSound": "tankshot"
 	},
 	{
 		"name": "Giant Death Robot MK-III",  // Project Last Hope
@@ -314,7 +314,7 @@
 		"strength": 375,
 		"cost": 1400,
 		"requiredTech": "Future Tech",
-		"requiredBuilding": "Nuclear Plant",
+		// "requiredBuilding": "Nuclear Plant",  // doesn't trigger
 		"requiredResource": "Uranium",
 		"promotions": ["March","Rejuvenation"],  // Gen-2 nanotech
 		"uniques": [
@@ -332,6 +332,6 @@
 			"Self-destructs when attacking <upon being defeated>","Blast radius [1]","Nuclear weapon of Strength [1]",  // gonna try it
 			// "Never appears as a Barbarian unit"  // Surprise, rebels stole the plans
 		],
-		"attackSound": "gdrAttack"
+		"attackSound": "shipguns"
 	},
 ]
