@@ -272,7 +272,7 @@
 		],
 		"attackSound": "nuke"
 	},
-	{  // No current changes
+	{
 		"name": "Giant Death Robot",
 		"unitType": "Armored",
 		"movement": 5,
@@ -280,7 +280,11 @@
 		"cost": 425,
 		"requiredTech": "Nuclear Fusion",
 		"requiredResource": "Uranium",
-		"uniques": ["Can move after attacking", "No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"uniques": ["Can move after attacking",
+			"[+125]% Strength <vs cities> <when attacking>",  // GDR's are urban menaces 
+			"No defensive terrain bonus",
+			"Never appears as a Barbarian unit"
+		],
 		"attackSound": "gdrAttack"
 	},
 	{
