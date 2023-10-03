@@ -111,7 +111,7 @@
 		"requiredTech": "Electronics",
 		"uniques": ["Can only attack [Melee Water] units",  // better believe the Navy put a couple guns on these
 			"Can carry [4] [Aircraft] units",
-			"Can carry [2] [Gunpowder] units",
+			// "Can carry [2] [Gunpowder] units",  // doesn't work
 			"Can carry [1] [Missile] units",
 		]
 	},
@@ -126,9 +126,9 @@
 		"requiredResource": "Oil",
 		"requiredTech": "Electronics",
 		"uniques": ["Never appears as a Barbarian unit",
-			"[+100]% Strength <vs [Ranged Water] units>"
+			"[+100]% Strength <vs [Ranged Water] units>",
 			"[+75]% Strength <with [15]% chance>",  // critical hit
-			"Can carry [1] [Gunpowder] units", 
+			// "Can carry [1] [Gunpowder] units",  // doesn't work
 			"Can carry [1] [Missile] units", 
 		],
 		"promotions": ["Indirect Fire"],
@@ -146,7 +146,7 @@
 			"[40]% chance to intercept air attacks",
 			"May withdraw before melee ([80]%)",
 			"Can carry [3] [Missile] units",  // how does a destroyer not have missile launch capabilities?
-			"[+100]% Strength <vs [Submarine] units>"
+			"[+100]% Strength <vs [Submarine] units>",
 			"[+50]% Strength <vs [Water] units>"
 		],
 		"attackSound": "shipguns"
@@ -156,7 +156,7 @@
 		"unitType": "Missile",
 		"movement": 1,
 		"strength": 60,
-		"rangedStrength": 80,
+		"rangedStrength": 90,
 		"range": 8,
 		"cost": 150,
 		"requiredTech": "Radar",
@@ -168,7 +168,7 @@
 		"unitType": "Missile",
 		"movement": 1,
 		"strength": 90,
-		"rangedStrength": 125,
+		"rangedStrength": 150,
 		"range": 8,
 		"cost": 400,
 		"requiredTech": "Rocketry",
@@ -185,6 +185,7 @@
 		"cost": 800,
 		"requiredTech": "Advanced Ballistics",
 		"uniques": ["[-100]% maintenance costs",
+			"Can only attack [Land] tiles",
 			"Destroys tile improvements when attacking",
 			"[+250]% Strength <vs cities> <when attacking>",
 			"Consumes [1] [Aluminum]"
@@ -237,6 +238,7 @@
 		"cost": 3000,
 		"requiredTech": "Nuclear Fusion",
 		"uniques": ["[-100]% maintenance costs",
+			"Can only attack [Land] tiles",
 			"Destroys tile improvements when attacking",
 			"Limited to [3] per Civilization",
 			"Triggers the following global alert: [A deeply resonating quake was felt!] <when attacking>",
@@ -299,9 +301,9 @@
 			"Ignores Zone of Control",
 			"Destroys tile improvements when attacking",
 			"[+150]% Strength <vs cities> <when attacking>",
-			"Can carry [1] [Missile] units",
-			"Unit will heal every turn, even if it performs an action",
-			"[+2] Sight",
+			"Can carry [1] [Missile] units",  // LRM pod
+			"Unit will heal every turn, even if it performs an action",  // Thanks to the MetalSweat active repair system
+			"[+2] Sight", "Indirect Fire",
 			"Never appears as a Barbarian unit"
 		],
 		"attackSound": "tankshot"
@@ -321,14 +323,14 @@
 			"Only available <if [Spaceship Factory] is constructed>",
 			"Can move after attacking",
 			"[1] additional attacks per turn",
-			"Consumes [3] [Uranium]",
-			"May Paradrop up to [5] tiles from inside friendly territory",
+			"Consumes [3] [Uranium]",  // dual reactor, fusion generator
+			"May Paradrop up to [5] tiles from inside friendly territory",  // plasma-lithium jump jets
 			"No defensive terrain bonus",
 			"Ignores Zone of Control",
 			"Destroys tile improvements when attacking",
 			"[+200]% Strength <vs cities> <when attacking>",
-			"Can carry [2] [Missile] units", 
-			"[+3] Sight",
+			"Can carry [2] [Missile] units",  // dual LRM pods
+			"[+3] Sight",  // New drone-based omni-LIDAR installed
 			"Self-destructs when attacking <upon being defeated>","Blast radius [1]","Nuclear weapon of Strength [1]",  // gonna try it
 			// "Never appears as a Barbarian unit"  // Surprise, rebels stole the plans
 		],
