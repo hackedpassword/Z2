@@ -4,6 +4,27 @@ size: 2048, 1024
 format: RGBA8888
 filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
+TileSets/FantasyHex/Units/Giant Death Robot
+  rotate: false
+  xy: 4, 449
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Giant Death Robot MK-II
+  rotate: false
+  xy: 524, 449
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Giant Death Robot MK-III
+  rotate: false
+  xy: 1044, 449
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
 TileSets/HexaRealm/Tiles/Aluminum
   rotate: false
   xy: 1564, 897
@@ -807,26 +828,5 @@ TileSets/HexaRealm/Tiles/Wheat
   xy: 1204, 305
   size: 64, 64
   orig: 64, 64
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Giant Death Robot
-  rotate: false
-  xy: 4, 449
-  size: 512, 512
-  orig: 512, 512
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Giant Death Robot MK-II
-  rotate: false
-  xy: 524, 449
-  size: 512, 512
-  orig: 512, 512
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Giant Death Robot MK-III
-  rotate: false
-  xy: 1044, 449
-  size: 512, 512
-  orig: 512, 512
   offset: 0, 0
   index: -1
