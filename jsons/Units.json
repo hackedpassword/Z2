@@ -188,6 +188,7 @@
 			"Can only attack [Land] tiles",
 			"Destroys tile improvements when attacking",
 			"[+500]% Strength <vs cities> <when attacking>",
+			"Self-destructs when attacking",
 			"Consumes [1] [Aluminum]"
 		],
 		"attackSound": "torpedo"
@@ -243,6 +244,7 @@
 			"Limited to [3] per Civilization",
 			"Triggers the following global alert: [A deeply resonating quake was felt!] <when attacking>",
 			"[+1500]% Strength <vs cities> <when attacking>",
+			"Self-destructs when attacking",
 			"Consumes [2] [Uranium]",
 			"Consumes [1] [Aluminum]"
 		],
