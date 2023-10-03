@@ -268,5 +268,68 @@
 		],
 		"attackSound": "nuke"
 	},
-
+	{  // No current changes
+		"name": "Giant Death Robot",
+		"unitType": "Armored",
+		"movement": 5,
+		"strength": 150,
+		"cost": 425,
+		"requiredTech": "Nuclear Fusion",
+		"requiredResource": "Uranium",
+		"uniques": ["Can move after attacking", "No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"attackSound": "gdrAttack"
+	},
+	{
+		"name": "Giant Death Robot MK-II",  // Next gen GDR
+		"unitType": "Armored",
+		"movement": 5,
+		"range": 3,
+		"strength": 225,
+		"cost": 805,
+		"requiredTech": ["Nanotechnology"],
+		"requiredResource": "Uranium",
+		"promotions": ["March"],  // Nanotech repair system
+		"uniques": [
+			"Can move after attacking",
+			"Only available <after discovering [Nuclear Fusion]>",
+			"Only available <after discovering [Particle Physics]>",
+			"Consumes [2] [Uranium]",
+			"No defensive terrain bonus",
+			"Ignores Zone of Control",
+			"Destroys tile improvements when attacking",
+			"[+150]% Strength <vs cities> <when attacking>",
+			"Can carry [1] [Missile] units",
+			"Unit will heal every turn, even if it performs an action",
+			"[+2] Sight",
+			"Never appears as a Barbarian unit"
+		],
+		"attackSound": "gdrAttack"
+	},
+	{
+		"name": "Giant Death Robot MK-III",  // Project Last Hope
+		"unitType": "Siege",
+		"movement": 6,
+		"range": 2,
+		"strength": 375,
+		"cost": 1400,
+		"requiredTech": ["Future Tech"],
+		"requiredResource": "Uranium",
+		"promotions": ["March","Rejuvenation"],  // Gen-2 nanotech
+		"uniques": [
+			"Only available <if [Spaceship Factory] is constructed>",
+			"Can move after attacking",
+			"[1] additional attacks per turn",
+			"Consumes [3] [Uranium]",
+			"May Paradrop up to [5] tiles from inside friendly territory",
+			"No defensive terrain bonus",
+			"Ignores Zone of Control",
+			"Destroys tile improvements when attacking",
+			"[+200]% Strength <vs cities> <when attacking>",
+			"Can carry [2] [Missile] units", 
+			"[+3] Sight",
+			"Self-destructs when attacking <upon being defeated>","Blast radius [1]","Nuclear weapon of Strength [1]",  // gonna try it
+			// "Never appears as a Barbarian unit"  // Surprise, rebels stole the plans
+		],
+		"attackSound": "gdrAttack"
+	},
 ]
