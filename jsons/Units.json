@@ -187,7 +187,7 @@
 		"uniques": ["[-100]% maintenance costs",
 			"Can only attack [Land] tiles",
 			"Destroys tile improvements when attacking",
-			"[+800]% Strength <vs cities> <when attacking>",
+			"[+500]% Strength <vs cities> <when attacking>",
 			"Consumes [1] [Aluminum]"
 		],
 		"attackSound": "torpedo"
