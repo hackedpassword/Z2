@@ -127,7 +127,7 @@
 		"requiredTech": "Electronics",
 		"uniques": ["Never appears as a Barbarian unit",
 			"[+100]% Strength <vs [Ranged Water] units>",
-			"[+75]% Strength <with [15]% chance>",  // critical hit
+			"[+75]% Strength <with [15]% chance> <Triggers the following global alert: [Critical hit!]>",  // critical hit, testing alert
 			// "Can carry [1] [Gunpowder] units",  // doesn't work
 			"Can carry [1] [Missile] units", 
 		],
@@ -156,7 +156,7 @@
 		"unitType": "Missile",
 		"movement": 1,
 		"strength": 60,
-		"rangedStrength": 125,
+		"rangedStrength": 125,  // not a C6-3, missiles blow stuff up
 		"range": 8,
 		"cost": 150,
 		"requiredTech": "Radar",
@@ -164,11 +164,11 @@
 		"attackSound": "missile"
 	},
 	{
-		"name": "Cruise Missile",
+		"name": "Cruise Missile",  // i.e. Tomahawk, shock-and-awe destruction
 		"unitType": "Missile",
 		"movement": 1,
 		"strength": 90,
-		"rangedStrength": 350,
+		"rangedStrength": 350,  // meant to one-shot most units
 		"range": 8,
 		"cost": 400,
 		"requiredTech": "Rocketry",
@@ -177,7 +177,7 @@
 	},
 	{
 		"name": "Bunker Buster",
-		"unitType": "Atomic Bomber",
+		"unitType": "Atomic Bomber",  // Can be carried by Nuclear sub
 		"movement": 1,
 		"strength": 120,
 		"rangedStrength": 150,
@@ -187,9 +187,9 @@
 		"uniques": ["[-100]% maintenance costs",
 			"Can only attack [Land] tiles",
 			"Destroys tile improvements when attacking",
-			"[+500]% Strength <vs cities> <when attacking>",
+			"[+400]% Strength <vs cities> <when attacking>",  // should generally do 50-66% dmg
 			"Self-destructs when attacking",
-			"Consumes [1] [Aluminum]"
+			"Consumes [1] [Aluminum]",  // trade-off resource
 		],
 		"attackSound": "torpedo"
 	},
@@ -203,7 +203,7 @@
 		"cost": 1500,
 		"requiredTech": "Advanced Ballistics",
 		"uniques": ["Nuclear weapon of Strength [2]",
-			"Triggers the following global alert: [A nuclear explosion was witnessed!] <when attacking>",
+			"<when attacking> Triggers the following global alert: [A nuclear explosion was witnessed!]",
 			"Only available <if [Manhattan Project] is constructed>",
 			"Blast radius [2]",
 			"Consumes [2] [Uranium]"
@@ -212,7 +212,7 @@
 	},
 	{
 		"name": "Nuclear Missile ICBM",
-		"unitType": "Atomic Bomber",
+		"unitType": "Atomic Bomber",  // Can be carried by Nuclear sub
 		"movement": 1,
 		"strength": 75,
 		"rangedStrength": 300,
@@ -220,7 +220,8 @@
 		"cost": 2500,
 		"requiredTech": "Nuclear Fusion",
 		"uniques": ["Nuclear weapon of Strength [3]",
-			"Triggers the following global alert: [A large nuclear explosion was witnessed!] <when attacking>",
+			"Self-destructs when attacking",
+			"<when attacking> Triggers the following global alert: [A large nuclear explosion was witnessed!]",
 			"Limited to [3] per Civilization",
 			"Only available <if [Manhattan Project] is constructed>",
 			"Blast radius [3]",
@@ -231,10 +232,10 @@
 	},
 	{
 		"name": "Nuclear Bunker Buster",
-		"unitType": "Atomic Bomber",
+		"unitType": "Atomic Bomber",  // Can be carried by Nuclear sub
 		"movement": 1,
 		"strength": 120,
-		"rangedStrength": 250,
+		"rangedStrength": 500,
 		"range": 8,
 		"cost": 3000,
 		"requiredTech": "Nuclear Fusion",
@@ -242,9 +243,11 @@
 			"Can only attack [Land] tiles",
 			"Destroys tile improvements when attacking",
 			"Limited to [3] per Civilization",
-			"Triggers the following global alert: [A deeply resonating quake was felt!] <when attacking>",
-			"[+1500]% Strength <vs cities> <when attacking>",
+			"<when attacking> Triggers the following global alert: [A deeply resonating quake was felt!]",
+			"[+1500]% Strength <vs cities> <when attacking>",  // meant to one-shot even hardened cities
 			"Self-destructs when attacking",
+			"Blast radius [0]",  // adding this to maybe trigger demolishing city
+			"Nuclear weapon of Strength [2]",
 			"Consumes [2] [Uranium]",
 			"Consumes [1] [Aluminum]"
 		],
@@ -252,7 +255,7 @@
 	},
 	{
 		"name": "TSAR Nuclear Bomb",
-		"unitType": "Atomic Bomber",
+		"unitType": "Atomic Bomber",  // Can be carried by Nuclear sub >> need to make a new unitType for heavy WMD's
 		"movement": 1,
 		"strength": 75,
 		"rangedStrength": 500,
@@ -262,16 +265,22 @@
 		"uniques": ["Nuclear weapon of Strength [6]",
 			"Triggers a global alert upon build start",
 			"Triggers a global alert upon completion",
-			"Triggers the following global alert: [Man-made Armageddon has scorched the land. Is this the price of victory?] <when attacking>",
+			"<when attacking> Triggers the following global alert: [Man-made Armageddon has scorched the land. Is this the price of victory?]",
 			"Destroys tile improvements when attacking",
 			"Limited to [1] per Civilization",
 			"Only available <if [Manhattan Project] is constructed>",
 			"Blast radius [6]",
+			"Self-destructs when attacking",
 			"Consumes [5] [Uranium]",
 			"Consumes [1] [Aluminum]"
 		],
 		"attackSound": "nuke"
 	},
+	// to-do: add MOAB
+
+
+// GDR generations //
+	
 	{
 		"name": "Giant Death Robot",
 		"unitType": "Armored",
@@ -330,7 +339,7 @@
 			"Can move after attacking",
 			"[1] additional attacks per turn",
 			"Consumes [3] [Uranium]",  // dual reactor, fusion generator
-			"May Paradrop up to [5] tiles from inside friendly territory",  // plasma-lithium jump jets
+			"May Paradrop up to [5] tiles from inside friendly territory",  // extended range plasma-lithium jump jets (ER-PL JJ)
 			"No defensive terrain bonus",
 			"Ignores Zone of Control",
 			"Destroys tile improvements when attacking",
