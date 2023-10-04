@@ -1,42 +1,71 @@
 [
+// Z2 is not currently meant for random map generation.
 	
-	{ // Regular terrain
-		"name": "Cave",
+// Regular base terrains //
+	{
+		"name": "Cave",  // mountain entrance of caverns
 		"type": "Land",
 		"movementCost": 2,
 		"RGB": [50, 58, 25],
+		// to-do: settlers shouldn't settle here
 		"uniques": ["Always Fertility [-4] for Map Generation",
 		            "Considered [Undesirable] when determining start locations",
 		            "Has an elevation of [1] for visibility calculations",
 			    "Blocks line-of-sight from tiles at same elevation",
-		            "Never receives any resources"]
+		            "Never receives any resources"
+		]
 	},
 	{
-		"name": "Cavern", // This will replace Tundra in Caves
+		"name": "Cavern",
 		"type": "Land",
 		"movementCost": 2,
 		"gold": 3,
 		"RGB": [50, 58, 25],
+		// to-do: settlers shouldn't settle here
 		"uniques": ["Always Fertility [-3] for Map Generation",
-			    "Units ending their turn on this terrain take [5] damage",
+			    "Units ending their turn on this terrain take [10] damage",  // enemies amidst
 		            "Considered [Undesirable] when determining start locations",
-		            "Has an elevation of [3] for visibility calculations",
-			    "Blocks line-of-sight from tiles at same elevation"]
+		            "Has an elevation of [2] for visibility calculations",
+			    "Blocks line-of-sight from tiles at same elevation"
+		]
 	},
-	
+	{
+		"name": "Deep Ocean",
+		"type": "Water",
+		"movementCost": 2,
+		"RGB": [43, 87, 151],
+		"uniques": ["Rough terrain",
+                        "Never receives any resources",
+                        "Always Fertility [-2] for Map Generation",
+	        	"Has an elevation of [1] for visibility calculations",
+		] 
+	},
 	
 	{ // Probably don't need this but I'd like to turn some knobs on it later
 		"name": "Mountain",
 		"type": "Land",
-		"impassable": true,
+		"movementCost": 2,
 		"defenceBonus": 0.25,
 		"RGB": [102, 102, 102],
 		"uniques": ["Rough terrain",
 		            "Has an elevation of [2] for visibility calculations",
-		            "Occurs in chains at high elevations",
-		            "Units ending their turn on this terrain take [50] damage",
+		            "Units ending their turn on this terrain take [50] damage",  // get in get out
 		            "Always Fertility [-2] for Map Generation",
-		            "Considered [Undesirable] when determining start locations"]
+		            "Considered [Undesirable] when determining start locations"
+		], 
+	        "impassable": true,  // unless unit received Adventurer training/promotion 
+	},
+	{  // to be replaced by a similar terrain, more volcanic
+		"name": "Tundra",
+		"type": "Land",
+		"food": 1,
+	        "science": 1,
+		"movementCost": 1,
+		"RGB": [30, 113, 69],
+		"uniques": [
+			"Rough terrain",
+                        "[+2] to Fertility for Map Generation",
+		] 
 	},
 
 // to-do: cave should become cave entrance, then tundra becomes cave inside or whatever
@@ -53,16 +82,11 @@
 		"RGB": [105,125,72],
 		"occursOn": ["Tundra","Plains","Grassland","Desert","Snow"],
 		"uniques": ["Rough terrain",
-			"[+5] Strength for cities built on this terrain",
+			"[+10] Strength for cities built on this terrain",
 			"Has an elevation of [1] for visibility calculations",
 			"Occurs in groups around high elevations",
 			"[+1] to Fertility for Map Generation",
-			"A Region is formed with at least [40]% [Hill] tiles, with priority [5]",
-			"Base Terrain on this tile is not counted for Region determination",
-			"Starts in regions of this type receive an extra [Sheep]",
-			"Considered [Desirable] when determining start locations",
-			"Considered [Production] when determining start locations",
-			"Every [22] tiles with this terrain will receive a major deposit of a strategic resource."]
+			]
 	},
 	{ // mirrors Hill, different sprite, could have different resources than Hill
 		"name": "Mound",
@@ -76,14 +100,8 @@
 		"uniques": ["Rough terrain",
 			"[+5] Strength for cities built on this terrain",
 			"Has an elevation of [1] for visibility calculations",
-			"Occurs in groups around high elevations",
 			"[+1] to Fertility for Map Generation",
-			"A Region is formed with at least [40]% [Mound] tiles, with priority [5]",
-			"Base Terrain on this tile is not counted for Region determination",
-			"Starts in regions of this type receive an extra [Sheep]",
-			"Considered [Desirable] when determining start locations",
-			"Considered [Production] when determining start locations",
-			"Every [22] tiles with this terrain will receive a major deposit of a strategic resource."]
+			]
 	},
 	{
 		"name": "Force",  // switching from Hill to Force for hybrid tile bases
@@ -146,7 +164,7 @@
 		"uniques": ["Never receives any resources"]
 	},
 
-// Palaces //
+// Palaces // to be decommissioned - all named palaces are now in v7
 	
 	{
 		"name": "NorthCastle",
@@ -317,7 +335,7 @@
 		"unbuildable": false, // allow PalaceGlow to enhance this tile
 		"weight": 10
 	},
-	{
+	{  // palace 1
 		"name": "Parapa Palace",
 		"type": "NaturalWonder",
 		"gold": 10,
@@ -334,7 +352,7 @@
 		"unbuildable": false, // allow PalaceGlow to enhance this tile
 		"weight": 10
 	},
-	{
+	{  // palace 2
 		"name": "Midoro Palace",
 		"type": "NaturalWonder",
 		"gold": 10,
@@ -351,7 +369,7 @@
 		"unbuildable": false, // allow PalaceGlow to enhance this tile
 		"weight": 10
 	},
-	{
+	{  // palace 3
 		"name": "Island Palace",
 		"type": "NaturalWonder",
 		"gold": 10,
@@ -368,7 +386,7 @@
 		"unbuildable": false, // allow PalaceGlow to enhance this tile
 		"weight": 10
 	},
-	{
+	{  // palace 4
 		"name": "Maze Palace",
 		"type": "NaturalWonder",
 		"gold": 10,
@@ -385,7 +403,7 @@
 		"unbuildable": false, // allow PalaceGlow to enhance this tile
 		"weight": 10
 	},
-	{
+	{  // palace 5
 		"name": "Sea Palace",
 		"type": "NaturalWonder",
 		"gold": 10,
@@ -402,7 +420,7 @@
 		"unbuildable": false, // allow PalaceGlow to enhance this tile
 		"weight": 10
 	},
-	{
+	{  // palace 6
 		"name": "ThreeEye Rock Palace",
 		"type": "NaturalWonder",
 		"gold": 10,
@@ -419,7 +437,7 @@
 		"unbuildable": false, // allow PalaceGlow to enhance this tile
 		"weight": 10
 	},
-	{
+	{  // palace 7
 		"name": "Great Palace",
 		"type": "NaturalWonder",
 		"gold": 10,
@@ -441,13 +459,13 @@
 /// Special Wonder-buildings
 
 	{ // Create some resource like 'magic' that appears in some era to allow enhancements. Can be applied to Z2/Citadel for now.
-		"name": "PalaceGlow", // Currently being used as placeholder for Great Palace, need to resort names/objects
+		"name": "PalaceGlow", // experimental feature
 		"type": "TerrainFeature",
 		"gold": 40,
 		"faith": 20,
 		"culture": 25,
 		"occursOn": ["Plains","Mountain","Desert","Grassland"],
-		"uniques": ["Must be adjacent to [1] to [5] [Plains] tiles",
+		"uniques": [
 			"Grants 500 Gold to the first civilization to discover it",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population", "Doesn't generate naturally"],
@@ -457,9 +475,10 @@
 		"weight": 10
 	},
 
-// Towns
-	
-	{
+// Towns //
+
+	{  // Towns are natural wonders because they can grant promotions, whereas improvements cannot
+	   // Also makes the town permanent - no means to remove/destroy
 		"name": "Plains Town", // Generic town
 		"type": "NaturalWonder",
 		"gold": 1,
@@ -473,13 +492,13 @@
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
-			// [-50] results in regen instead of dmg
-			"Units ending their turn on this terrain take [-50] damage"
-			// 2/t max heal - towns' healer house
+			// [-50] results in regen instead of dmg:
+			"Units ending their turn on this terrain take [-50] damage",
+			// 2/t max heal - consistent with towns' healer house
 		        ],
 		"turnsInto": "Plains",
-		"impassable": false,  // Can't build natural wonders anyway
-		"unbuildable": false
+		"impassable": false,
+		"unbuildable": false, // Can't build natural wonders anyway
 	},
 	{
 		"name": "Desert Town", // Generic town
@@ -495,7 +514,7 @@
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
-			"Units ending their turn on this terrain take [-50] damage",  // regen, healer
+			"Units ending their turn on this terrain take [-50] damage",  // healer
 		        ],
 		"turnsInto": "Desert",
 		"impassable": false,
@@ -515,7 +534,7 @@
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
-			"Units ending their turn on this terrain take [-50] damage",  // regen, healer
+			"Units ending their turn on this terrain take [-50] damage",  // healer
 		        ],
 		"turnsInto": "Grassland",
 		"impassable": false,
@@ -535,7 +554,7 @@
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
-			"Units ending their turn on this terrain take [-50] damage",  // regen, healer
+			"Units ending their turn on this terrain take [-50] damage",  // healer
 		        ],
 		"turnsInto": "Desert",
 		"impassable": false,
@@ -555,7 +574,7 @@
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
-			"Units ending their turn on this terrain take [-50] damage",  // regen, healer
+			"Units ending their turn on this terrain take [-50] damage",  // healer
 		        ],
 		"turnsInto": "Grassland",
 		"impassable": false,
@@ -575,7 +594,7 @@
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
-			"Units ending their turn on this terrain take [-50] damage",  // regen, healer
+			"Units ending their turn on this terrain take [-50] damage",  // healer
 		        ],
 		"turnsInto": "Desert",
 		"impassable": false,
@@ -595,7 +614,7 @@
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
-			"Units ending their turn on this terrain take [-50] damage",  // regen, healer
+			"Units ending their turn on this terrain take [-50] damage",  // healer
 		        ],
 		"turnsInto": "Plains",
 		"impassable": false,
@@ -615,7 +634,7 @@
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
-			"Units ending their turn on this terrain take [-50] damage",  // regen, healer
+			"Units ending their turn on this terrain take [-50] damage",  // healer
 		        ],
 		"turnsInto": "Grassland",
 		"impassable": false,
@@ -635,7 +654,7 @@
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
-			"Units ending their turn on this terrain take [-50] damage",  // regen, healer
+			"Units ending their turn on this terrain take [-50] damage",  // healer
 		        ],
 		"turnsInto": "Plains",
 		"impassable": false,
@@ -655,7 +674,7 @@
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
-			"Units ending their turn on this terrain take [-50] damage",  // regen, healer
+			"Units ending their turn on this terrain take [-50] damage",  // healer
 		        ],
 		"turnsInto": "Plains",
 		"impassable": false,
@@ -692,7 +711,8 @@
 	    "uniques": ["Rare feature",
 			"Units ending their turn on this terrain take [10] damage", // won't trigger: <for [land units] units>
 		        "[-50] Strength for cities built on this terrain", // not a good place to settle
-		        "Never receives any resources <in [Force] tiles>", 
+		        "Never receives any resources <in [Force] tiles>",
+                        "Tile provides yield without assigned population",
 			"Always Fertility [-1] for Map Generation"
 	                ]
 	    "turnsInto": "Force",
