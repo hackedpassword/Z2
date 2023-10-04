@@ -32,51 +32,65 @@ TileSets/FantasyHex/Units/Worker
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Units/Worker-Modern era
-  rotate: false
-  xy: 1348, 385
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/FantasyHex/Units/Worker-Modern era2
-  rotate: false
-  xy: 1348, 321
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/FantasyHex/Units/Worker-Modern era3
-  rotate: false
-  xy: 1420, 385
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/FantasyHex/Units/Worker-Modern era4
-  rotate: false
-  xy: 1420, 321
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/FantasyHex/Units/Worker2
+TileSets/FantasyHex/Units/Worker-Atomic era
   rotate: false
   xy: 1204, 321
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Units/Worker3
+TileSets/FantasyHex/Units/Worker-Classical era
   rotate: false
   xy: 1276, 385
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Units/Worker4
+TileSets/FantasyHex/Units/Worker-Future era
   rotate: false
   xy: 1276, 321
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Worker-Generic era
+  rotate: false
+  xy: 1348, 385
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Worker-Industrial era
+  rotate: false
+  xy: 1348, 321
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Worker-Information era
+  rotate: false
+  xy: 1420, 385
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Worker-Medieval era
+  rotate: false
+  xy: 1420, 321
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Worker-Modern era
+  rotate: false
+  xy: 1492, 385
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Worker-Renaissance era
+  rotate: false
+  xy: 1564, 409
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
