@@ -105,7 +105,7 @@
 	{
 		"name": "Carrier",
 		"unitType": "Aircraft Carrier",
-		"movement": 5,
+		"movement": 4,
 		"strength": 80,
 		"cost": 505,
 		"requiredTech": "Electronics",
@@ -113,6 +113,8 @@
 			"Can carry [4] [Aircraft] units",
 			// "Can carry [2] [Gunpowder] units",  // doesn't work
 			"Can carry [1] [Missile] units",
+			"Double movement in [Ocean]",
+			"Double movement in [Deeo Ocean]",
 		]
 	},
 	{
@@ -223,7 +225,7 @@
 		"requiredTech": "Nuclear Fusion",
 		"uniques": ["Nuclear weapon of Strength [3]",
 			"Self-destructs when attacking",
-			"<when attacking> Triggers the following global alert: [A large nuclear explosion was witnessed!]",
+			"Triggers the following global alert: [A large nuclear explosion was witnessed!] <upon being defeated>",  // no: <when attacking>",
 			"Limited to [3] per Civilization",
 			"Only available <if [Manhattan Project] is constructed>",
 			"Blast radius [3]",
@@ -244,7 +246,7 @@
 		"uniques": ["[-100]% maintenance costs",
 			"Can only attack [Land] tiles",
 			"Destroys tile improvements when attacking",
-			"Limited to [3] per Civilization",
+			"Limited to [2] per Civilization",
 			"<when attacking> Triggers the following global alert: [A deeply resonating quake was felt!]",
 			"[+1500]% Strength <vs cities> <when attacking>",  // meant to one-shot even hardened cities
 			"Self-destructs when attacking",
@@ -257,7 +259,7 @@
 	},
 	{
 		"name": "TSAR Nuclear Bomb",
-		"unitType": "Atomic Bomber",  // Can be carried by Nuclear sub >> need to make a new unitType for heavy WMD's
+		"unitType": "Atomic Bomber",  // need to make a new unitType for heavy WMD's
 		"movement": 1,
 		"strength": 75,
 		"rangedStrength": 500,
@@ -267,11 +269,13 @@
 		"uniques": ["Nuclear weapon of Strength [6]",
 			"Triggers a global alert upon build start",
 			"Triggers a global alert upon completion",
+			"Cannot be carried by [Submarine] units",  // Air drop only via city
 			"<when attacking> Triggers the following global alert: [Man-made Armageddon has scorched the land. Is this the price of victory?]",
 			"Destroys tile improvements when attacking",
 			"Limited to [1] per Civilization",
 			"Only available <if [Manhattan Project] is constructed>",
-			"Blast radius [6]",
+			"Only available <after discovering [Nuclear Fusion]>",
+			"Blast radius [6]",  // armageddon!
 			"Self-destructs when attacking",
 			"Consumes [5] [Uranium]",
 			"Consumes [1] [Aluminum]"
@@ -294,6 +298,7 @@
 		"uniques": ["Can move after attacking",
 			"[+125]% Strength <vs cities> <when attacking>",  // GDR's are urban menaces 
 			"No defensive terrain bonus",
+			"Can see over obstacles",
 			"Never appears as a Barbarian unit"
 		],
 		"attackSound": "gdrAttack"
@@ -301,7 +306,7 @@
 	{
 		"name": "Giant Death Robot MK-II",  // Next gen GDR
 		"unitType": "Armored",
-		"movement": 5,
+		"movement": 4,
 		"range": 3,
 		"strength": 225,
 		"cost": 805,
@@ -316,19 +321,21 @@
 			"Consumes [2] [Uranium]",
 			"No defensive terrain bonus",
 			"Ignores Zone of Control",
+			"[1] additional attacks per turn",
 			"Destroys tile improvements when attacking",
 			"[+150]% Strength <vs cities> <when attacking>",
 			"Can carry [1] [Missile] units",  // LRM pod
 			"Unit will heal every turn, even if it performs an action",  // Thanks to the MetalSweat active repair system
-			"[+2] Sight", "Indirect Fire",
+			"[+2] Sight", "Can see over obstacles", "Indirect Fire",
+			"[25]% chance to intercept air attacks",  // AA cannon
 			"Never appears as a Barbarian unit"
 		],
 		"attackSound": "tankshot"
 	},
 	{
 		"name": "Giant Death Robot MK-III",  // Project Last Hope
-		"unitType": "Siege",
-		"movement": 6,
+		"unitType": "Siege",  // Superheavy GDR
+		"movement": 3,
 		"range": 2,
 		"strength": 375,
 		"cost": 1400,
@@ -339,15 +346,16 @@
 		"uniques": [
 			"Only available <if [Spaceship Factory] is constructed>",
 			"Can move after attacking",
-			"[1] additional attacks per turn",
+			"[2] additional attacks per turn",  // massive firepower
 			"Consumes [3] [Uranium]",  // dual reactor, fusion generator
-			"May Paradrop up to [5] tiles from inside friendly territory",  // extended range plasma-lithium jump jets (ER-PL JJ)
+			"May Paradrop up to [4] tiles from inside friendly territory",  // extended range plasma-lithium jump jets (ER-PL JJ)
 			"No defensive terrain bonus",
 			"Ignores Zone of Control",
 			"Destroys tile improvements when attacking",
 			"[+200]% Strength <vs cities> <when attacking>",
+			"[50]% chance to intercept air attacks",  // dual AA cannons
 			"Can carry [2] [Missile] units",  // dual LRM pods
-			"[+3] Sight",  // New drone-based omni-LIDAR installed
+			"Can see over obstacles","[+3] Sight",  // New drone-based omni-LIDAR installed
 			"Self-destructs when attacking <upon being defeated>","Blast radius [1]","Nuclear weapon of Strength [1]",  // gonna try it
 			// "Never appears as a Barbarian unit"  // Surprise, rebels stole the plans
 		],
