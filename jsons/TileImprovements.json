@@ -1,6 +1,20 @@
 [
 // Z2
 	{
+		"name": "Boulder",  // improvement, not terrainFeature, same name
+		"movementCost": 5, // hard to pass through
+		"turnsToBuild": 7,
+		"uniques": [
+			"Nullifies all other stats this tile provides",
+			"Units ending their turn on this terrain take [20] damage <with [50]% chance>",
+			"Has an elevation of [1] for visibility calculations",
+			"Rough terrain"
+		],
+		"techRequired": "Engineering",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"Gives a defensive bonus of [25]%"
+	},
+	{
 		"name": "Bridge",  // experimental, not used. Will likely remove and send to Castles repo map mod
 		"terrainsCanBeBuiltOn": ["Coast","CoastTile","Ocean","Lakes"],
 		"culture": 1,
