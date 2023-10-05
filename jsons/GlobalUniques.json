@@ -9,6 +9,5 @@
 	// "Double movement in [Force] <for [All] units>", // This doesn't work.
 	"Allow raze capitol",  // Allow razing any city
 	"Allow raze holy city",
-	"[95]% Chance to be destroyed by nukes",
     ]
 }
