@@ -12,7 +12,7 @@
 		            "Considered [Undesirable] when determining start locations",
 		            "Has an elevation of [1] for visibility calculations",
 			    "Blocks line-of-sight from tiles at same elevation",
-		            "Never receives any resources"
+		            "Never receives any resources",
 		]
 	},
 	{
@@ -21,12 +21,15 @@
 		"movementCost": 2,
 		"gold": 3,
 		"RGB": [50, 58, 25],
-		// to-do: settlers shouldn't settle here
+		// to-do: settlers shouldn't settle here - for now it's a nuke safe haven
 		"uniques": ["Always Fertility [-3] for Map Generation",
 			    "Units ending their turn on this terrain take [10] damage",  // enemies amidst
 		            "Considered [Undesirable] when determining start locations",
 		            "Has an elevation of [2] for visibility calculations",
-			    "Blocks line-of-sight from tiles at same elevation"
+			    "Blocks line-of-sight from tiles at same elevation", 
+			"[5]% Chance to be destroyed by nukes",
+			"Population loss from nuclear attacks [-95]%",
+			"Damage to garrison from nuclear attacks [-95]%", 
 		]
 	},
 	{
@@ -45,13 +48,16 @@
 		"name": "Mountain",
 		"type": "Land",
 		"movementCost": 2,
-		"defenceBonus": 0.25,
+		"defenceBonus": 0.5,
 		"RGB": [102, 102, 102],
 		"uniques": ["Rough terrain",
 		            "Has an elevation of [2] for visibility calculations",
 		            "Units ending their turn on this terrain take [50] damage",  // get in get out
 		            "Always Fertility [-2] for Map Generation",
-		            "Considered [Undesirable] when determining start locations"
+		            "Considered [Undesirable] when determining start locations", 
+			"[5]% Chance to be destroyed by nukes",
+			"Population loss from nuclear attacks [-50]%",
+			"Damage to garrison from nuclear attacks [-75]%", 
 		], 
 	        "impassable": true,  // unless unit received Adventurer training/promotion 
 	},
@@ -65,6 +71,7 @@
 		"uniques": [
 			"Rough terrain",
                         "[+2] to Fertility for Map Generation",
+			"[95]% Chance to be destroyed by nukes",
 		] 
 	},
 
