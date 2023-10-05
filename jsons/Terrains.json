@@ -12,7 +12,7 @@
 		        "Considered [Undesirable] when determining start locations",
 			"Blocks line-of-sight from tiles at same elevation",
 			"Never receives any resources",
-			"[5]% Chance to be destroyed by nukes",
+//			"[5]% Chance to be destroyed by nukes",
 			"Units ending their turn on this terrain take [10] damage <with [20]% chance>",  // enemies amidst
 		],
 	},
@@ -28,7 +28,7 @@
 			"Considered [Undesirable] when determining start locations",
 		        "Has an elevation of [2] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation", 
-			"[5]% Chance to be destroyed by nukes",
+//			"[5]% Chance to be destroyed by nukes",
 			"Population loss from nuclear attacks [-95]%",
 			"Damage to garrison from nuclear attacks [-95]%", 
 		],
@@ -54,7 +54,7 @@
 		        "Has an elevation of [2] for visibility calculations",
 		        "Units ending their turn on this terrain take [50] damage <with [80]% chance>",  // get in get out
 			"Considered [Undesirable] when determining start locations", 
-			"[5]% Chance to be destroyed by nukes",
+//			"[5]% Chance to be destroyed by nukes",
 			"Population loss from nuclear attacks [-50]%",
 			"Damage to garrison from nuclear attacks [-75]%", 
 		], 
@@ -70,7 +70,7 @@
 		"uniques": [
 			"Rough terrain",
                         "[+2] to Fertility for Map Generation",
-			"[95]% Chance to be destroyed by nukes",
+//			"[95]% Chance to be destroyed by nukes",
 		],
 	},
 	{
@@ -80,7 +80,7 @@
 		"movementCost": 1,
 		"RGB": [0, 163, 0],
 		"uniques": [
-			"[25]% Chance to be destroyed by nukes",
+//			"[25]% Chance to be destroyed by nukes",
 		],
 	},
 	{
@@ -91,7 +91,7 @@
 		"movementCost": 1,
 		"RGB": [153, 180, 51],
 		"uniques": [
-			"[75]% Chance to be destroyed by nukes",
+//			"[75]% Chance to be destroyed by nukes",
 		],
 	},
 	{
@@ -100,7 +100,7 @@
 		"movementCost": 1,
 		"RGB": [230, 172, 0],
 		"uniques": [
-			"[90]% Chance to be destroyed by nukes",
+//			"[90]% Chance to be destroyed by nukes",
 		],
 	},
 	{
@@ -163,7 +163,6 @@
 		"uniques": ["Rough terrain",
 			"[+5] Strength for cities built on this terrain",
 			"Has an elevation of [1] for visibility calculations",
-			"[+1] to Fertility for Map Generation",
 		],
 	},
 	{
