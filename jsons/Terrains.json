@@ -241,7 +241,7 @@
 		"uniques": ["Grants 500 Gold to the first civilization to discover it",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population"
-		,
+		],
 		"turnsInto": "Plains",
 		"impassable": false,  // will be true when some "hero" ability is created
 		"unbuildable": false, // allow PalaceGlow to enhance this tile
