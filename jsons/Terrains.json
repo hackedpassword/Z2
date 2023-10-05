@@ -184,10 +184,11 @@
 		"type": "TerrainFeature",
 		"movementCost": 5, // hard to pass through
 		"unbuildable": false,  // can we build these?
+		"turnsToBuild": 7,
 		"uniques": ["Rare feature",
 			"Nullifies all other stats this tile provides",
 			"Doesn't generate naturally",
-			"Units ending their turn on this terrain take [20] damage",
+			"Units ending their turn on this terrain take [20] damage <with [50]% chance>",
 			"Provides a one-time Production bonus to the closest city when cut down",
 			"Has an elevation of [1] for visibility calculations",
 			"Rough terrain"
