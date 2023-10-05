@@ -12,6 +12,7 @@
 		        "Considered [Undesirable] when determining start locations",
 			"Blocks line-of-sight from tiles at same elevation",
 			"Never receives any resources",
+			"[5]% Chance to be destroyed by nukes",
 			"Units ending their turn on this terrain take [10] damage <with [20]% chance>",  // enemies amidst
 		],
 	},
@@ -90,7 +91,7 @@
 		"movementCost": 1,
 		"RGB": [153, 180, 51],
 		"uniques": [
-			"[95]% Chance to be destroyed by nukes",
+			"[5]% Chance to be destroyed by nukes",
 		],
 	},
 	{
