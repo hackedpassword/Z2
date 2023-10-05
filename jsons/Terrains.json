@@ -80,7 +80,7 @@
 		"movementCost": 1,
 		"RGB": [0, 163, 0],
 		"uniques": [
-			"[95]% Chance to be destroyed by nukes",
+			"[25]% Chance to be destroyed by nukes",
 		],
 	},
 	{
@@ -91,7 +91,7 @@
 		"movementCost": 1,
 		"RGB": [153, 180, 51],
 		"uniques": [
-//			"[5]% Chance to be destroyed by nukes",
+			"[75]% Chance to be destroyed by nukes",
 		],
 	},
 	{
