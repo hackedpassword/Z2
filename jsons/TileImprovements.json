@@ -25,6 +25,7 @@
 		"uniques": ["Can only be built on [Water] tiles",
 			"Can only be built to improve a resource",
                         "Can be built outside your borders",
+			"Tile provides yield without assigned population",  // Foundation resource found outside 3-tile range
 	                "Removes removable features when built"
 		],
 	},
