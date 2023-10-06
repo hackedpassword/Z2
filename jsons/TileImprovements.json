@@ -17,13 +17,16 @@
 	},
 	{
 		"name": "Bridge",  // experimental, not used. Will likely remove and send to Castles repo map mod
+		"turnsToBuild": 7,
 		"terrainsCanBeBuiltOn": ["Coast","CoastTile","Ocean","Lakes"],
 		"culture": 1,
-		"techRequired": "Sailing",
+		"science": 5,
+		"techRequired": "Engineering",
 		"uniques": ["Can only be built on [Water] tiles",
-                "Can be built outside your borders",
-	        "Removes removable features when built"],
-               // "Can also be built on tiles adjacent to fresh water",
+			"Can only be built to improve a resource",
+                        "Can be built outside your borders",
+	                "Removes removable features when built"
+		],
 	},
 	{
 		"name": "Remove Boulder",
@@ -70,12 +73,17 @@
 		"terrainsCanBeBuiltOn": ["Coast"],
 		"food": 1,
 		"techRequired": "Sailing",
-		"uniques": ["[+1 Gold] <after discovering [Compass]>",
-		// "Can only be built to improve a resource",  // Let's go fishing!
+		"uniques": [  // the sea is a trove of resources
+			"[+1 Gold] <after discovering [Compass]>",
+			"[+1 Gold] <after discovering [Industrialization]>",
+			"[+1 Science] <after discovering [Biology]>",
+			"[+1 Food] <after discovering [Refrigeration]>",
+		// out // "Can only be built to improve a resource",  // Let's go fishing!
 		// This is the behavior of fishing boats I expected when first getting
 		// into Unciv. Since there are no Fish resources in Z2, we allow coastal
-		// cities this bonus action. It helps food supply, not OP as one might react.
-		"Pillaging this improvement yields approximately [+2 Gold]"],
+		// cities this bonus action. It helps food supply; not OP as one might suspect.
+		        "Pillaging this improvement yields approximately [+2 Gold]"
+                ],
 		"shortcutKey": "F"
 	},
 	{
