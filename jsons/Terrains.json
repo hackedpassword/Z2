@@ -12,7 +12,7 @@
 		        "Considered [Undesirable] when determining start locations",
 			"Blocks line-of-sight from tiles at same elevation",
 			"Never receives any resources",
-			"[5]% Chance to be destroyed by nukes",
+//			"[5]% Chance to be destroyed by nukes",
 			"Units ending their turn on this terrain take [10] damage <with [20]% chance>",  // enemies amidst
 		],
 	},
@@ -28,19 +28,21 @@
 			"Considered [Undesirable] when determining start locations",
 		        "Has an elevation of [2] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation", 
-			"[5]% Chance to be destroyed by nukes",
+//			"[5]% Chance to be destroyed by nukes",
 			"Population loss from nuclear attacks [-95]%",
 			"Damage to garrison from nuclear attacks [-95]%", 
 		],
 	},
 	{
-		"name": "Deep Ocean",
+		"name": "Deep Ocean",  // treacherous terrain used as a soft clip
 		"type": "Water",
-		"movementCost": 2,
+		"movementCost": 3,
 		"RGB": [43, 87, 151],
 		"uniques": ["Rough terrain",
+			"Units ending their turn on this terrain take [25] damage <with [50]% chance>",  // choppy and dangerous
                         "Never receives any resources",
-	        	"Has an elevation of [1] for visibility calculations",
+	        	"Has an elevation of [1] for visibility calculations",  // should generally dissuade transit in these areas
+			"Blocks line-of-sight from tiles at same elevation",  // waves and swells
 		],
 	},
 	
@@ -54,7 +56,7 @@
 		        "Has an elevation of [2] for visibility calculations",
 		        "Units ending their turn on this terrain take [50] damage <with [80]% chance>",  // get in get out
 			"Considered [Undesirable] when determining start locations", 
-			"[5]% Chance to be destroyed by nukes",
+//			"[5]% Chance to be destroyed by nukes",
 			"Population loss from nuclear attacks [-50]%",
 			"Damage to garrison from nuclear attacks [-75]%", 
 		], 
@@ -206,7 +208,8 @@
 			"Doesn't generate naturally",
 			"Units ending their turn on this terrain take [35] damage",
 			"Rough terrain",
-			"Blocks line-of-sight from tiles at same elevation"
+			"Blocks line-of-sight from tiles at same elevation", 
+			"[99]% Chance to be destroyed by nukes",
 		],
 		"occursOn": ["Grassland","Plains","Forest","Desert","Tundra","Snow","Hill"],
 		"defenceBonus": -0.30
@@ -219,7 +222,9 @@
 		"movementCost": 2,
 		"defenceBonus": -0.1,
 		"occursOn": ["Desert","Plains","Coast","Ocean","Grassland","Tundra","CoastTile","OceanTile"],
-		"uniques": ["Never receives any resources"]
+		"uniques": ["Never receives any resources",
+			"[0]% Chance to be destroyed by nukes",  // Can't destroy bridges
+		]
 	},
 	{  // Feature-Right patch
 		"name": "BridgeFR",
@@ -227,7 +232,9 @@
 		"movementCost": 2,
 		"defenceBonus": -0.1,
 		"occursOn": ["Desert","Plains","Coast","Ocean","Grassland","CoastTile"],
-		"uniques": ["Never receives any resources"]
+		"uniques": ["Never receives any resources",
+			"[0]% Chance to be destroyed by nukes",
+		]
 	},
 
 // Palaces // to be decommissioned - all named palaces are now in v7
