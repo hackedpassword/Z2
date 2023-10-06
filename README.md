@@ -37,8 +37,6 @@ In release 8, you'll now find:
 
 Palaces provide a powerup for scaling the mountainous landscape to adjacent land units, which will later be refined and aligned to each palaces' unique item. Towns will undergo the same treatment, currently healing units while granting non-military promotions.
 
-This mod/etention is still experimental, a lot to do to get the correct intended gameplay, but it does play well!
-
 All places, power-ups, bonuses, etc are found as expected in a very detailed interpretation of the original Zelda 2 game. Converting from square tiles to hex tiles was challenging, but the challenge was met!
 
 The map was built with purists in mind. Take Maze Island for instance. Super challenging to make an approximation of the paths within the constraints of the scale.
