@@ -16,7 +16,7 @@ I’m a huge fan of the original Zelda 2, up to and including no-lives-lost game
 ![](https://raw.githubusercontent.com/hackedpassword/Unciv-Assets/main/Images/Z2/Z2_before.png)
 
 ## After:
-![](https://raw.githubusercontent.com/hackedpassword/Unciv-Assets/main/Images/Z2/Screenshot_20230912_094443.jpg)
+![](https://raw.githubusercontent.com/hackedpassword/Unciv-Assets/main/Images/Z2/Screenshot_20231006_182203.jpg)
 
 Take a closer look at the above, and you'll see the hidden water paths using Force (TerrainFeature) via hybrid tiles! 
 
