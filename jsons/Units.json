@@ -185,7 +185,7 @@
 		"movement": 1,
 		"strength": 90,
 		"rangedStrength": 350,  // meant to one-shot most units
-		"range": 16,  # Long range ordnance
+		"range": 16,  // Long range ordnance
 		"cost": 400,
 		"requiredTech": "Rocketry",
 		"uniques": ["[25]% maintenance costs"],  // more expensive to maintain
