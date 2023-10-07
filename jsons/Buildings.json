@@ -60,7 +60,7 @@
 	"requiredTech": "Computers",
 	"science": 8,
         "uniques": [
-		"Consumes [4] [Iron]",
+		"Consumes [3] [Oil]",
 		"Provides [1] [Uranium]",
 		]
     },
