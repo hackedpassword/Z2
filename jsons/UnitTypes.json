@@ -14,7 +14,7 @@
             "Double movement in [Grassland]",
     },
     {
-        "name": "Ariel Payload",  // on-field plane aircraft, like helicopters
+        "name": "Warplane",  // on-field plane aircraft, like helicopters
         "movementType": "Air",
         "uniques": [
             "May travel on Water tiles without embarking",
@@ -34,6 +34,7 @@
         "uniques": [
             "Self-destructs when attacking", 
             "Cannot be intercepted <before discovering [Satellites]>",
+            "Destroys tile improvements when attacking",  // nuke based weapons will always
         ]
     }, 
     {
