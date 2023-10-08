@@ -12,12 +12,17 @@
         "uniques": [
             "Double movement in [Plains]",
             "Double movement in [Grassland]",
+        ]
     },
     {
-        "name": "Warplane",  // on-field plane aircraft, like helicopters
+        "name": "Warplane Bomber",  // on-field plane aircraft, like helicopters
         "movementType": "Air",
         "uniques": [
+            "Cannot attack",
+            "Can pass through impassable tiles",
             "May travel on Water tiles without embarking",
+            "Unable to capture cities",
+            "All tiles cost 1 movement",
         ]
     },
     {
