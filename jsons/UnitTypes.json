@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Civilian",
+        "movementType": "Land"
+        "uniques": [
+            "Double movement in [Plains]",
+        ] 
+    },
+    {
+        "name": "Scout",
+        "movementType": "Land"
+        "uniques": [
+            "Double movement in [Plains]",
+            "Double movement in [Grassland]",
+    },
+    {
+        "name": "Ariel Payload",  // on-field plane aircraft, like helicopters
+        "movementType": "Air",
+        "uniques": []
+    },
+
+
+] 
