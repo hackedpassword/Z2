@@ -16,8 +16,33 @@
     {
         "name": "Ariel Payload",  // on-field plane aircraft, like helicopters
         "movementType": "Air",
-        "uniques": []
+        "uniques": [
+            "May travel on Water tiles without embarking",
+        ]
     },
-
+    {
+        "name": "Helicopter",
+        "movementType": "Land",
+        "uniques": [
+            "Can pass through impassable tiles",
+            "May travel on Water tiles without embarking",  // how is this not default behavior
+        ]
+    },
+    {
+        "name": "Atomic Payload",  // For partitioning nukes
+        "movementType": "Air",
+        "uniques": [
+            "Self-destructs when attacking", 
+            "Cannot be intercepted <before discovering [Satellites]>",
+        ]
+    }, 
+    {
+        "name": "Missile",
+        "movementType": "Air",
+        "uniques": [
+            "Self-destructs when attacking",
+            "Cannot be intercepted <before discovering [Advanced Ballistics]>", 
+        ]
+    },
 
 ] 
