@@ -27,17 +27,20 @@
 			"Cannot enter ocean tiles <before discovering [Astronomy]>",
 			"May create improvements on water resources",
 			"Can instantly construct a [Fishing Boats] improvement <by consuming this unit>",  // Needed resource addition for fish-less Z2 waters
-        	    	// "Uncapturable",
-			"Automation is a primary action"]
+        	    	// "Uncapturable",  // you fish for us now
+			"Automation is a primary action"
+		]
 	},
 	{ // a bit cheaper and faster
 		"name": "Settler",
 		"unitType": "Civilian",
 		"movement": 3,
 		"cost": 50,
-		"uniques": ["Founds a new city <by consuming this unit>",
+		"uniques": [
+			"Founds a new city <by consuming this unit>",
 			"Excess Food converted to Production when under construction",
-			"Requires at least [2] population"],
+			"Requires at least [2] population"
+		],
 		"hurryCostModifier": 20
 	},
 	{
@@ -47,9 +50,11 @@
 		"strength": 5,
 		"cost": 25,
 		"obsoleteTech": "Scientific Theory",
-		"uniques": ["Can instantly construct a [Fort] improvement <by consuming this unit>",  // great upgrade
-		"May upgrade to [Archer] through ruins-like effects",
-		"Never appears as a Barbarian unit"],
+		"uniques": [
+			"Can instantly construct a [Fort] improvement <by consuming this unit>",  // great upgrade
+			"May upgrade to [Archer] through ruins-like effects",
+			"Never appears as a Barbarian unit"
+		],
 		"promotions": ["Ignore terrain cost"],
 		"attackSound": "nonmetalhit"
 	},
@@ -67,6 +72,23 @@
 		"attackSound": "arrow"
 	},
 	{
+		"name": "Mobile SAM",  // carries missiles. So carry one.
+		"unitType": "Gunpowder",
+		"movement": 3,
+		"interceptRange": 2,
+		"strength": 65,
+		"cost": 425,
+		"requiredTech": "Rocketry",
+		"uniques": [
+			"Can carry [1] [Missile] units",  // another obvious unit attribute
+			"[100]% chance to intercept air attacks",
+			"[+150]% Strength <vs [Air] units>",
+			"[+150]% Strength <vs [Helicopter] units>",
+			"Never appears as a Barbarian unit"
+		],
+		"attackSound": "missile"
+	},
+	{
 		"name": "Modern Armor",
 		"unitType": "Armored",
 		"movement": 5,
@@ -76,17 +98,40 @@
 		"requiredTech": "Lasers",
 		"requiredResource": "Aluminum",
 		"upgradesTo": "Giant Death Robot",
-		"uniques": ["Can move after attacking",
+		"uniques": [
+			"Can move after attacking",
 			"No defensive terrain bonus",
 			"Never appears as a Barbarian unit",
 		],
 		"promotions": ["Indirect Fire"],
 		"attackSound": "tankshot"
 	},
+	{
+		"name": "Helicopter Gunship",
+		"unitType": "Helicopter",
+		"movement": 6,
+		"strength": 60,
+		"cost": 425,
+		"requiredTech": "Computers",
+		"requiredResource": "Aluminum",
+		"uniques": [
+			"[+100]% Strength <vs [Armored] units>",
+			"No defensive terrain bonus",
+			"Can move after attacking",
+			"All tiles cost 1 movement",
+			"Ignores Zone of Control",
+			"Unable to capture cities",
+			"Can carry [1] [Payload] units",  // bunker buster delivery
+			"Can carry [1] [Guided Missile] units",  // Gun-ship
+			"Ranged attacks may be performed over obstacles",
+			"Never appears as a Barbarian unit"
+		],
+		"attackSound": "machinegun"
+	},
 
 // Water units //
 	
-	{
+	{  // Note that if Missile(s) are carried, they must be offloaded first to load Atomic Bombers
 		"name": "Nuclear Submarine",  // carries WMD's
 		"unitType": "Submarine",
 		"movement": 6,
@@ -95,15 +140,17 @@
 		"rangedStrength": 85,
 		"cost": 475,
 		"requiredTech": "Mobile Tactics",
-		"requiredResource": "Uranium",  // how is this not in original G&K?
-		"uniques": ["[75]% chance to intercept air attacks",
+		"requiredResource": "Uranium",  // how is this not in original G&K? asked every player
+		"uniques": [
+			"[75]% chance to intercept air attacks",
 			"Can see invisible [Submarine] units",
 			"[+75]% Strength <when attacking>",
 			"Can only attack [Water] tiles",
 			"[+2] Sight",
 			"Double movement in [Deep Ocean]",
 			"Can carry [2] [Missile] units",
-			"Can carry [1] [Atomic Bomber] units",
+			"Can carry [1] [Payload] units <after discovering [Rocketry]>",
+			"Can carry [1] [Atomic Payload] units",
 			"Never appears as a Barbarian unit"
 		],
 		"attackSound": "torpedo"
@@ -111,15 +158,15 @@
 	{
 		"name": "Carrier",
 		"unitType": "Aircraft Carrier",
-		"movement": 3,  // slow, +1 global, x2 ocean = fast on open water
+		"movement": 2,  // slow, +1 global, x2 ocean = fast on open water
 		"strength": 80,
 		"cost": 505,
 		"requiredTech": "Electronics",
-		"uniques": ["Can only attack [Melee Water] units",  // better believe the Navy put a couple guns on these
+		"uniques": [
+			"Can only attack [Melee Water] units",  // better believe the Navy put a couple guns on these
 			"Can carry [4] [Aircraft] units",
-			// "Can carry [2] [Gunpowder] units",  // doesn't work
+			// "Can carry [2] [Gunpowder] units",  // doesn't work :/
 			"Can carry [1] [Missile] units",
-			"Can carry [0] [Nuclear Missile] units",  // see battleship
 			"Double movement in [Ocean]",
 			"Double movement in [Deep Ocean]",
 		]
@@ -127,7 +174,7 @@
 	{
 		"name": "Battleship",
 		"unitType": "Ranged Water",
-		"movement": 5,
+		"movement": 3,  // +1 global, x2 ocean
 		"strength": 75,
 		"rangedStrength": 55,
 		"range": 3,
@@ -139,7 +186,7 @@
 			"[+75]% Strength <with [15]% chance> <vs [Water] units>",  // critical hit
 			// "Can carry [1] [Gunpowder] units",  // doesn't work
 			"Can carry [1] [Missile] units",  // If the below fails, we'll specify homing and cruise types 
-			"Can carry [0] [Nuclear Missile] units",  // Not allowed
+			"Double movement in [Ocean]",
 		],
 		"promotions": ["Indirect Fire"],
 		"attackSound": "shipguns"
@@ -158,7 +205,7 @@
 			"[60]% chance to intercept air attacks",  // AA
 			"May withdraw before melee ([80]%)",  // evasive
 			"Can carry [3] [Missile] units",  // how does a destroyer not have missile launch capabilities?
-			"Can carry [1] [Nuclear Missile] units",  // no more than
+			"Can carry [1] [Nuclear Missile] units",  // specific to and no more than one
 			"[+100]% Strength <vs [Submarine] units>",
 			"[+50]% Strength <vs [Water] units>"
 		],
@@ -175,7 +222,7 @@
 		"rangedStrength": 125,  // not a C6-3, missiles blow stuff up
 		"range": 8,
 		"cost": 150,
-		"requiredTech": "Radar",
+		"requiredTech": "Computers",  // Needs a computer to be guided
 		"uniques": ["[-75]% maintenance costs"],  // little maintenance needed
 		"attackSound": "missile"
 	},
@@ -184,7 +231,7 @@
 		"unitType": "Missile",
 		"movement": 1,
 		"strength": 90,
-		"rangedStrength": 350,  // meant to one-shot most units
+		"rangedStrength": 350,  // meant to one-shot most units, weak against Gunpowder units
 		"range": 16,  // Long range ordnance
 		"cost": 400,
 		"requiredTech": "Rocketry",
@@ -196,7 +243,7 @@
 	},
 	{
 		"name": "Bunker Buster",
-		"unitType": "Atomic Bomber",  // Can be carried/launched by Nuclear sub
+		"unitType": "Payload",  // Can be carried/launched by Helicopter, Nuclear sub
 		"movement": 1,
 		"strength": 120,
 		"rangedStrength": 150,
@@ -216,7 +263,7 @@
 	},
 	{
 		"name": "Nuclear Missile",
-		"unitType": "Missile",
+		"unitType": "Atomic Payload",
 		"movement": 1,
 		"strength": 50,
 		"rangedStrength": 300,
@@ -224,7 +271,8 @@
 		"cost": 1500,
 		"requiredTech": "Advanced Ballistics",
 		
-		"uniques": ["Nuclear weapon of Strength [2]",
+		"uniques": [
+			"Nuclear weapon of Strength [2]",
 			"[100]% maintenance costs",  // more expensive to maintain
 			"Triggers the following global alert: [A nuclear explosion was witnessed!]",
 			"Only available <if [Manhattan Project] is constructed>",
@@ -237,16 +285,16 @@
 	},
 	{
 		"name": "Nuclear Missile ICBM",
-		"unitType": "Atomic Bomber",  // Can be carried by Nuclear sub
+		"unitType": "Atomic Payload",  // Can be carried by Nuclear sub
 		"movement": 1,
 		"strength": 75,
 		"rangedStrength": 300,
 		"range": 15,
 		"cost": 2500,
 		"requiredTech": "Nuclear Fusion",
-		"uniques": ["Nuclear weapon of Strength [3]",
+		"uniques": [
+			"Nuclear weapon of Strength [3]",
 			"[200]% maintenance costs",  // expensive
-			"Self-destructs when attacking",
 			"Destroys tile improvements when attacking",
 			"Triggers the following global alert: [A large nuclear explosion was witnessed!]",  // no: <when attacking>",
 			"Limited to [3] per Civilization",
@@ -260,7 +308,7 @@
 	},
 	{
 		"name": "Nuclear Bunker Buster",
-		"unitType": "Atomic Bomber",  // Can be carried by Nuclear sub
+		"unitType": "Atomic Payload",  // Can be carried by Nuclear sub
 		"movement": 1,
 		"strength": 120,
 		"rangedStrength": 500,
@@ -272,7 +320,6 @@
 			"Limited to [2] per Civilization",
 			"Triggers the following global alert: [A deeply resonating quake was felt!]",
 			"[+1500]% Strength <vs cities> <when attacking>",  // meant to one-shot even hardened cities
-			"Self-destructs when attacking",
 			"Destroys tile improvements when attacking",
 			"Blast radius [0]",  // adding this to maybe trigger demolishing city
 			"Nuclear weapon of Strength [2]",
@@ -283,25 +330,24 @@
 	},
 	{
 		"name": "TSAR Nuclear Bomb",  // ultimate WMD (til the orbital kinetic weapon platform is built...tbd) 
-		"unitType": "Atomic Bomber",  // need to make a new unitType for heavy WMD's
+		"unitType": "Atomic Payload",  // need to make a new unitType for heavy WMD's
 		"movement": 1,
 		"strength": 75,
 		"rangedStrength": 500,
 		"range": 15,
 		"cost": 4000,
 		"requiredTech": "Particle Physics",
-		"uniques": ["Nuclear weapon of Strength [6]",
+		"uniques": [
+			"Nuclear weapon of Strength [6]",
 			"[500]% maintenance costs",  // needs tlc
 			"Triggers a global alert upon build start",
 			"Triggers a global alert upon completion",
 			"Cannot be carried by [Submarine] units",  // Air drop only via city
 			"Triggers the following global alert: [Man-made Armageddon has scorched the land. Is this the price of victory?]",
-			"Destroys tile improvements when attacking",
 			"Limited to [1] per Civilization",
 			"Only available <if [Manhattan Project] is constructed>",
 			"Only available <after discovering [Nuclear Fusion]>",
 			"Blast radius [6]",  // armageddon!
-			"Self-destructs when attacking",
 			"Consumes [5] [Uranium]",  // slightly more efficient than 1:1
 			"Consumes [1] [Aluminum]",  // massive casing
 		],
@@ -320,7 +366,8 @@
 		"cost": 425,
 		"requiredTech": "Nuclear Fusion",
 		"requiredResource": "Uranium",
-		"uniques": ["Can move after attacking",
+		"uniques": [
+			"Can move after attacking",
 			"[+125]% Strength <vs cities> <when attacking>",  // GDR's are urban menaces 
 			"No defensive terrain bonus",
 			"Can see over obstacles",
@@ -338,7 +385,8 @@
 		"requiredTech": "Nanotechnology",  // several other requirements below
 		"requiredResource": "Uranium",
 		"promotions": ["March"],  // Nanotech repair system
-		"uniques": ["[450]% maintenance costs",  // very costly to operate
+		"uniques": [
+			"[450]% maintenance costs",  // very costly to operate
 			"Can move after attacking",
 			"Only available <if [Nuclear Plant] is constructed> <in this city>",  // needs special materials handling
 			"Only available <after discovering [Nuclear Fusion]>",
@@ -368,7 +416,8 @@
 		"requiredTech": "Future Tech",  // the ultimate in war machine
 		"requiredResource": "Uranium",
 		"promotions": ["March","Rejuvenation"],  // Gen-2 nanotech
-		"uniques": ["[1000]% maintenance costs",  // not for the feint 
+		"uniques": [
+			"[1000]% maintenance costs",  // not for the feint 
 			"Only available <if [Spaceship Factory] is constructed> <in this city>",  // requires advanced construction facilities
 			"Only available <if [Nuclear Plant] is constructed> <in this city>",  // local materials handling
 			"[2] additional attacks per turn",  // massive firepower
