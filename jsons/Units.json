@@ -6,8 +6,8 @@
 		"name": "Worker",
 		"unitType": "Civilian",
 		"movement": 2,
-		"uniques": ["Automation is a primary action",
-		// "Ignores terrain cost",
+		"uniques": [
+			"Automation is a primary action",
 			"Can build [Boulder] improvements on tiles",
 			"Can build [Land] improvements on tiles",
 			"Can build [Natural Wonder] improvements on tiles", // Hacky attempt at adding features/improvements for things like bridges, doesn't work atm
@@ -235,7 +235,8 @@
 		"range": 16,  // Long range ordnance
 		"cost": 400,
 		"requiredTech": "Rocketry",
-		"uniques": ["[25]% maintenance costs",  // more expensive to maintain
+		"uniques": [
+			"[25]% maintenance costs",  // more expensive to maintain
 			"Destroys tile improvements when attacking",
 			"[+100]% Strength <vs [Armored] units> <when attacking>",
 		],
@@ -250,7 +251,8 @@
 		"range": 8,
 		"cost": 800,
 		"requiredTech": "Ballistics",
-		"uniques": ["[10]% maintenance costs <before discovering [Rocketry]>",  // a bit more expensive in earlier forms
+		"uniques": [
+			"[10]% maintenance costs <before discovering [Rocketry]>",  // a bit more expensive in earlier forms
 			"[45]% maintenance costs <after discovering [Rocketry]>",  // propulsion and navigation add cost
 			"Can only attack [Land] tiles",
 			"Destroys tile improvements when attacking",
@@ -315,7 +317,8 @@
 		"range": 8,
 		"cost": 3000,
 		"requiredTech": "Nuclear Fusion",
-		"uniques": ["[150]% maintenance costs",  // expensive
+		"uniques": [
+			"[150]% maintenance costs",  // expensive
 			"Can only attack [Land] tiles",
 			"Limited to [2] per Civilization",
 			"Triggers the following global alert: [A deeply resonating quake was felt!]",
