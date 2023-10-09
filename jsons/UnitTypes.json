@@ -34,6 +34,15 @@
         ]
     },
     {
+        "name": "Payload",  // For bomb type munitions, which isn't limited to dropped. Some may have thrust. 
+        "movementType": "Air",
+        "uniques": [
+            "Self-destructs when attacking", 
+            "Cannot be intercepted <before discovering [Lasers]>",
+            "Destroys tile improvements when attacking",
+        ]
+    }, 
+    {
         "name": "Atomic Payload",  // For partitioning nukes
         "movementType": "Air",
         "uniques": [
