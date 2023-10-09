@@ -326,7 +326,7 @@
 			"[+200]% Strength <vs cities>",  // meant to one-shot even hardened cities
 			"Destroys tile improvements when attacking",
 			"Blast radius [0]",  // adding this to maybe trigger demolishing city
-			"Nuclear weapon of Strength [5]",  // test
+			"Nuclear weapon of Strength [3]",  // test
 			"Consumes [2] [Uranium]",
 			"Consumes [1] [Aluminum]"
 		],
