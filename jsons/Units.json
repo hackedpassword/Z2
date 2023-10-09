@@ -181,7 +181,8 @@
 		"cost": 375,
 		"requiredResource": "Oil",
 		"requiredTech": "Electronics",
-		"uniques": ["Never appears as a Barbarian unit",
+		"uniques": [
+			"Never appears as a Barbarian unit",
 			"[+100]% Strength <vs [Ranged Water] units>",
 			"[+75]% Strength <with [15]% chance> <vs [Water] units>",  // critical hit
 			// "Can carry [1] [Gunpowder] units",  // doesn't work
@@ -199,7 +200,8 @@
 		"interceptRange": 2,
 		"cost": 375,
 		"requiredTech": "Combustion",
-		"uniques": ["Can see invisible [Submarine] units",
+		"uniques": [
+			"Can see invisible [Submarine] units",
 			"[+3] Sight <in [Deep Ocean] tiles>",  // advanced oceanic detection systems
 			"[+1] sight <when adjacent to a [Destroyer] unit>",  // combined data enhances resolution
 			"[60]% chance to intercept air attacks",  // AA
@@ -313,7 +315,7 @@
 		"unitType": "Atomic Payload",  // Can be carried by Nuclear sub
 		"movement": 1,
 		"strength": 120,
-		"rangedStrength": 500,
+		"rangedStrength": 500, // concentrated damage
 		"range": 8,
 		"cost": 3000,
 		"requiredTech": "Nuclear Fusion",
@@ -324,9 +326,8 @@
 			"Limited to [2] per Civilization",
 			"Triggers the following global alert: [A deeply resonating quake was felt!]",
 			"[+200]% Strength <vs cities>",  // meant to one-shot even hardened cities
-			"Destroys tile improvements when attacking",
-			"Blast radius [0]",  // adding this to maybe trigger demolishing city
-			"Nuclear weapon of Strength [2]",  // test
+			"Blast radius [0]",  // single tile
+			"Nuclear weapon of Strength [3]",  // minimum needed to demolish city
 			"Consumes [2] [Uranium]",
 			"Consumes [1] [Aluminum]"
 		],
