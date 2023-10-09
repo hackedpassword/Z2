@@ -272,7 +272,7 @@
 		"range": 8,
 		"cost": 1500,
 		"requiredTech": "Advanced Ballistics",
-		
+		"requiredResource": "Uranium",
 		"uniques": [
 			"Nuclear weapon of Strength [2]",
 			"[100]% maintenance costs",  // more expensive to maintain
@@ -317,6 +317,7 @@
 		"range": 8,
 		"cost": 3000,
 		"requiredTech": "Nuclear Fusion",
+		"requiredResource": "Uranium",
 		"uniques": [
 			"[150]% maintenance costs",  // expensive
 			"Can only attack [Land] tiles",
@@ -325,7 +326,6 @@
 			"[+1500]% Strength <vs cities>",  // meant to one-shot even hardened cities
 			"Destroys tile improvements when attacking",
 			"Blast radius [0]",  // adding this to maybe trigger demolishing city
-			"Nuclear weapon of Strength [2]",
 			"Consumes [2] [Uranium]",
 			"Consumes [1] [Aluminum]"
 		],
@@ -346,7 +346,7 @@
 			"Triggers a global alert upon build start",
 			"Triggers a global alert upon completion",
 			"Cannot be carried by [Submarine] units",  // Air drop only via city
-			"Triggers the following global alert: [Man-made Armageddon has scorched the land. Is this the price of victory?]",
+			"Triggers the following global alert: [Man-made Armageddon has scorched the land. Is this the price octory?]",
 			"Limited to [1] per Civilization",
 			"Only available <if [Manhattan Project] is constructed>",
 			"Only available <after discovering [Nuclear Fusion]>",
