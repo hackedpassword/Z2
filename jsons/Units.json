@@ -323,10 +323,10 @@
 			"Can only attack [Land] tiles",
 			"Limited to [2] per Civilization",
 			"Triggers the following global alert: [A deeply resonating quake was felt!]",
-			"[+15000]% Strength <vs cities>",  // meant to one-shot even hardened cities
+			"[+5000]% Strength <vs cities>",  // meant to one-shot even hardened cities
 			"Destroys tile improvements when attacking",
 			"Blast radius [0]",  // adding this to maybe trigger demolishing city
-			"Nuclear weapon of Strength [10]",  // test
+			"Nuclear weapon of Strength [5]",  // test
 			"Consumes [2] [Uranium]",
 			"Consumes [1] [Aluminum]"
 		],
