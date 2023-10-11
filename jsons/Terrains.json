@@ -30,8 +30,8 @@
 		        "Has an elevation of [2] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation", 
 //			"[5]% Chance to be destroyed by nukes",  // base terrains transform this value to 0% - semi-bug
-			"Population loss from nuclear attacks [-95]% <in this city>",
-			"Damage to garrison from nuclear attacks [-95]% <in this city>",
+			"Population loss from nuclear attacks [-95]% [in this city]",
+			"Damage to garrison from nuclear attacks [-95]% [in this city]",
 		],
 	},
 	{
@@ -60,8 +60,8 @@
 		        "Units ending their turn on this terrain take [50] damage <with [80]% chance>",  // get in get out
 			"Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
 //			"[5]% Chance to be destroyed by nukes",
-			"Population loss from nuclear attacks [-50]% <in this city>",  // in case a city is settled here
-			"Damage to garrison from nuclear attacks [-75]% <in this city>", 
+			"Population loss from nuclear attacks [-50]% [in this city]",  // in case a city is settled here
+			"Damage to garrison from nuclear attacks [-75]% [in this city]", 
 		], 
 	        "impassable": true,  // unless unit received Adventurer training/promotion 
 	},
