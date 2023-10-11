@@ -1,7 +1,7 @@
 [
 
-	// Info according to Civilization Wiki and https://www.civfanatics.com/civ5/info/units/gods-and-kings/
-
+	// Rebuilt for Z2, eventual target is forked mod
+	
 	{
 		"name": "Worker",
 		"unitType": "Civilian",
@@ -16,8 +16,8 @@
 		]
 		"cost": 25 // Cheap! Don't forget this is production cost, not gold cost!
 	},
-// We don't need no steenken workboats but you can if you want - faster/cheaper than water workers
-	{
+// 
+	{  // Needed for fish-less Z2 waters - consume to instantly fish
 		"name": "Work Boats",
 		"unitType": "Civilian Water",
 		"movement": 3,
@@ -26,7 +26,7 @@
 		"uniques": ["Automation is a primary action",
 			"Cannot enter ocean tiles <before discovering [Astronomy]>",
 			"May create improvements on water resources",
-			"Can instantly construct a [Fishing Boats] improvement <by consuming this unit>",  // Needed resource addition for fish-less Z2 waters
+			"Can instantly construct a [Fishing Boats] improvement <by consuming this unit>",
         	    	// "Uncapturable",  // you fish for us now
 			"Automation is a primary action"
 		]
@@ -59,12 +59,13 @@
 		"attackSound": "nonmetalhit"
 	},
 
-	{ // no change, mod checker complaining "may upgrade to [Archer] doesn't fit base Unit Filter, so including here
+	{ // mod checker complaining "may upgrade to [Archer] doesn't fit base Unit Filter, so including here
 		"name": "Archer",
 		"unitType": "Archery",
 		"movement": 2,
 		"strength": 5,
 		"rangedStrength": 7,
+		"range": 2,  // reasonable
 		"cost": 40,
 		"requiredTech": "Archery",
 		"obsoleteTech": "Construction",
@@ -89,17 +90,39 @@
 		"attackSound": "missile"
 	},
 	{
-		"name": "Modern Armor",
+		"name": "Tank",
 		"unitType": "Armored",
 		"movement": 5,
+		"strength": 70,
+		"range": 2,  // justify costly requirement of oil
+		"cost": 375,
+		"requiredTech": "Combined Arms",
+		"requiredResource": "Oil",
+		"upgradesTo": "Modern Armor",
+		"uniques": [
+			"Can move after attacking",
+			"[+75]% Strength <vs [Gunpowder] units> <when defending>",
+			"[+50]% Strength <vs [Armored] units> <when attacking>",
+			"No defensive terrain bonus",
+			"Never appears as a Barbarian unit"
+		],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Modern Armor",
+		"unitType": "Armored",
+		"movement": 6,
 		"strength": 100,
-		"range": 2,
+		"range": 3,
 		"cost": 425,
 		"requiredTech": "Lasers",
 		"requiredResource": "Aluminum",
-		"upgradesTo": "Giant Death Robot",
+		// "upgradesTo": "Giant Death Robot", // GDR is not a tank, it is a mech
 		"uniques": [
 			"Can move after attacking",
+			"[+150]% Strength <vs [Gunpowder] units> <when defending>",
+			"[+100]% Strength <vs [Armored] units> <when attacking>",
+			"Invisible to non-adjacent units <after discovering [Stealth]>",  // modern camouflage
 			"No defensive terrain bonus",
 			"Never appears as a Barbarian unit",
 		],
@@ -109,20 +132,23 @@
 	{
 		"name": "Helicopter Gunship",
 		"unitType": "Helicopter",
-		"movement": 6,
+		"movement": 7,
 		"strength": 60,
 		"cost": 425,
 		"requiredTech": "Computers",
 		"requiredResource": "Aluminum",
 		"uniques": [
-			"[+100]% Strength <vs [Armored] units>",
+			"[+100]% Strength <vs [Armored] units> <when attacking>",  // strength is attacking
+			"[1] additional attacks per turn <after discovering [Mobile Tactics]>",
+			"[-50]% Strength <vs [Armored] units> <when defending>",  // weakness against heavy arms
+			"[-100]% Strength <vs cities> <when defending>",  // hazardous
 			"No defensive terrain bonus",
 			"Can move after attacking",
 			"All tiles cost 1 movement",
 			"Ignores Zone of Control",
 			"Unable to capture cities",
 			"Can carry [1] [Payload] units",  // bunker buster delivery
-			"Can carry [1] [Guided Missile] units",  // Gun-ship
+			"Can carry [2] [Guided Missile] units",  // Gun-ship, aluminum is a costly requirement
 			"Ranged attacks may be performed over obstacles",
 			"Never appears as a Barbarian unit"
 		],
@@ -149,7 +175,7 @@
 			"[+2] Sight",
 			"Double movement in [Deep Ocean]",
 			"Can carry [2] [Missile] units",
-			"Can carry [1] [Payload] units <after discovering [Rocketry]>",
+			"Can carry [1] [Payload] units <after discovering [Rocketry]>",  // can launch payload munitions at target
 			"Can carry [1] [Atomic Payload] units",
 			"Never appears as a Barbarian unit"
 		],
@@ -164,7 +190,7 @@
 		"requiredTech": "Electronics",
 		"uniques": [
 			"Can only attack [Melee Water] units",  // better believe the Navy put a couple guns on these
-			"Can carry [4] [Aircraft] units",
+			"Can carry [4] [Aircraft] units",  // carrier.
 			// "Can carry [2] [Gunpowder] units",  // doesn't work :/
 			"Can carry [1] [Missile] units",
 			"Double movement in [Ocean]",
@@ -186,7 +212,7 @@
 			"[+100]% Strength <vs [Ranged Water] units>",
 			"[+75]% Strength <with [15]% chance> <vs [Water] units>",  // critical hit
 			// "Can carry [1] [Gunpowder] units",  // doesn't work
-			"Can carry [1] [Missile] units",  // If the below fails, we'll specify homing and cruise types 
+			"Can carry [1] [Missile] units", 
 			"Double movement in [Ocean]",
 		],
 		"promotions": ["Indirect Fire"],
@@ -207,7 +233,7 @@
 			"[60]% chance to intercept air attacks",  // AA
 			"May withdraw before melee ([80]%)",  // evasive
 			"Can carry [3] [Missile] units",  // how does a destroyer not have missile launch capabilities?
-			"Can carry [1] [Nuclear Missile] units",  // specific to and no more than one
+			"Can carry [1] [Nuclear Missile] units",  // specific to and no more than one - required loading this unit before missile units
 			"[+100]% Strength <vs [Submarine] units>",
 			"[+50]% Strength <vs [Water] units>"
 		],
