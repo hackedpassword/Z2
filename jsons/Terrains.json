@@ -47,7 +47,7 @@
 		],
 	},
 
-// Usual terrains //
+// Usual terrains - some here specifically because modchecker doesn't get that Z2 is a mod and should backreference to G&K json's //
 	
 	{
 		"name": "Mountain",
@@ -74,7 +74,6 @@
 		"RGB": [30, 113, 69],
 		"uniques": [
 			"Rough terrain",
-                        "[+2] to Fertility for Map Generation",
 //			"[95]% Chance to be destroyed by nukes",
 		],
 	},
@@ -84,8 +83,8 @@
 		"food": 2,
 		"movementCost": 1,
 		"RGB": [0, 163, 0],
-		"uniques": [ // 98%
-//			"[0]% Chance to be destroyed by nukes",
+		"uniques": [
+//			"[98]% Chance to be destroyed by nukes",
 		],
 	},
 	{
@@ -95,8 +94,8 @@
 		"production": 1,
 		"movementCost": 1,
 		"RGB": [153, 180, 51],
-		"uniques": [ // 98%
-//			"[0]% Chance to be destroyed by nukes",
+		"uniques": [
+//			"[98]% Chance to be destroyed by nukes",
 		],
 	},
 	{
@@ -104,9 +103,17 @@
 		"type": "Land",
 		"movementCost": 1,
 		"RGB": [230, 172, 0],
-		"uniques": [ // 90%
-//			"[0]% Chance to be destroyed by nukes",
+		"uniques": [
+//			"[90]% Chance to be destroyed by nukes",
 		],
+	},
+	{
+		"name": "Ocean",
+		"type": "Water",
+		"food": 1,
+		"gold": 1,
+		"movementCost": 1,
+		"RGB": [43, 87, 151]
 	},
 
 //// Terrain features ////
