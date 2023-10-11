@@ -1,7 +1,8 @@
 [
-// Z2 is not currently meant for random map generation.
-	
-// Regular base terrains //
+// Notes: Z2 is not currently meant for random map generation and has all map-gen uniques removed.
+
+
+// Z2 base terrains //
 	{
 		"name": "Cave",  // mountain entrance of caverns
 		"type": "Land",
@@ -9,7 +10,7 @@
 		"RGB": [50, 58, 25],
 		// to-do: settlers shouldn't settle here
 		"uniques": [
-		        "Considered [Undesirable] when determining start locations",
+		        "Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
 			"Blocks line-of-sight from tiles at same elevation",
 			"Never receives any resources",
 //			"[5]% Chance to be destroyed by nukes",
@@ -25,12 +26,12 @@
 		// to-do: settlers shouldn't settle here - for now it's essentially a nuke safe haven
 		"uniques": [
 			"Units ending their turn on this terrain take [15] damage <with [30]% chance>",  // enemies amidst
-			"Considered [Undesirable] when determining start locations",
+			"Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
 		        "Has an elevation of [2] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation", 
-//			"[5]% Chance to be destroyed by nukes",
-			"Population loss from nuclear attacks [-95]%",
-			"Damage to garrison from nuclear attacks [-95]%", 
+//			"[5]% Chance to be destroyed by nukes",  // base terrains transform this value to 0% - semi-bug
+			"Population loss from nuclear attacks [-95]% <in this city>",
+			"Damage to garrison from nuclear attacks [-95]% <in this city>",
 		],
 	},
 	{
@@ -45,6 +46,8 @@
 			"Blocks line-of-sight from tiles at same elevation",  // waves and swells
 		],
 	},
+
+// Usual terrains //
 	
 	{
 		"name": "Mountain",
@@ -55,10 +58,10 @@
 		"uniques": ["Rough terrain",
 		        "Has an elevation of [2] for visibility calculations",
 		        "Units ending their turn on this terrain take [50] damage <with [80]% chance>",  // get in get out
-			"Considered [Undesirable] when determining start locations", 
+			"Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
 //			"[5]% Chance to be destroyed by nukes",
-			"Population loss from nuclear attacks [-50]%",
-			"Damage to garrison from nuclear attacks [-75]%", 
+			"Population loss from nuclear attacks [-50]% <in this city>",  // in case a city is settled here
+			"Damage to garrison from nuclear attacks [-75]% <in this city>", 
 		], 
 	        "impassable": true,  // unless unit received Adventurer training/promotion 
 	},
@@ -105,6 +108,9 @@
 //			"[0]% Chance to be destroyed by nukes",
 		],
 	},
+
+//// Terrain features ////
+
 	{
 		"name": "Forest",
 		"type": "TerrainFeature",
@@ -118,7 +124,7 @@
 		"uniques": ["Rough terrain", "Vegetation",
 			"Provides a one-time Production bonus to the closest city when cut down",
 			"Blocks line-of-sight from tiles at same elevation",
-			"[99]% Chance to be destroyed by nukes",
+			"[99]% Chance to be destroyed by nukes",  // this works, can set values to TerrainFeatures
 		],
 	},
 	{
@@ -132,12 +138,8 @@
 		"uniques": [
 			"[40]% Chance to be destroyed by nukes",
 		],
-	},
-
-	
-//// Terrain features ////
-	
-	{ // also to make mods to this later. There's only 2 hills in the map, so not a big deal
+	},	
+	{  // also to make mods to this later. There's only 2 hills in the map, so not a big deal
 		"name": "Hill",
 		"type": "TerrainFeature",
 		"production": 5,
@@ -150,10 +152,9 @@
 			"[+10] Strength for cities built on this terrain",
 			"Has an elevation of [1] for visibility calculations",
 			"Occurs in groups around high elevations",
-			"[+1] to Fertility for Map Generation",
 		],
 	},
-	{ // mirrors Hill, different sprite, could have different resources than Hill
+	{  // mirrors Hill, different sprite, could have different resources than Hill
 		"name": "Mound",
 		"type": "TerrainFeature",
 		"gold": 5,
@@ -175,27 +176,27 @@
 		"defenceBonus": 0,
 		"RGB": [105,125,72],
 		"occursOn": ["Tundra","Plains","Grassland","Desert","Snow"],
-		"uniques": ["Rough terrain",
+		"uniques": ["Rough terrain",  // intangible distortion effect makes this rough
 			"Has an elevation of [0] for visibility calculations", // should not block vis
-			"Base Terrain on this tile is not counted for Region determination",
-			"Considered [Undesirable] when determining start locations"
+			"[0]% Chance to be destroyed by nukes",
 		],
 	},
 	{
-		"name": "Boulder",
+		"name": "Boulder",  // exists both this TerrainFeature, and improvement version. This one is map-baked.
 		"type": "TerrainFeature",
-		"movementCost": 5, // hard to pass through
-		"unbuildable": false,  // can we build these?
+		"movementCost": 5, // hard to pass through - if this works
+		"unbuildable": false,  // can be built by villagers - offensive improvement/TF destroyer - buildable boulder is improvement though
 		"turnsToBuild": 7,
 		"uniques": ["Rare feature",
 			"Nullifies all other stats this tile provides",
 			"Doesn't generate naturally",
 			"Units ending their turn on this terrain take [20] damage <with [50]% chance>",
-			"Provides a one-time Production bonus to the closest city when cut down",
+			"Provides a one-time Production bonus to the closest city when cut down",  // cut down = removed
 			"Has an elevation of [1] for visibility calculations",
-			"Rough terrain"
+			"Blocks line-of-sight from tiles at same elevation", 
+			"Rough terrain",
 		],
-		"occursOn": ["Grassland","Plains","Desert","Marsh"],
+		"occursOn": ["Grassland","Plains","Desert","Marsh","Cave"],
 		"defenceBonus": 0.10
 	},
 	{
@@ -209,9 +210,9 @@
 			"Units ending their turn on this terrain take [35] damage",
 			"Rough terrain",
 			"Blocks line-of-sight from tiles at same elevation", 
-			"[99]% Chance to be destroyed by nukes",
+//			"[99]% Chance to be destroyed by nukes",
 		],
-		"occursOn": ["Grassland","Plains","Forest","Desert","Tundra","Snow","Hill"],
+		"occursOn": ["Grassland","Plains","Forest","Desert","Tundra","Hill"],
 		"defenceBonus": -0.30
 	},
 
@@ -237,7 +238,18 @@
 		]
 	},
 
-// Palaces // to be decommissioned - all named palaces are now in v7
+// Nullifying unused terrains/features //
+
+	{
+		"name": "Snow",
+		"type": "Land",
+	},
+	{
+		"name": "Jungle",
+		"type": "TerrainFeature",
+	},
+
+// Palaces // to be decommissioned - all named palaces are now in v7 //
 	
 	{
 		"name": "NorthCastle",
@@ -563,7 +575,7 @@
 		"movementCost": 3,
 		"occursOn": ["Plains"],
 		"uniques": [
-			"Grants 50 Gold to the first civilization to discover it",
+			// "Grants 500 Gold to the first civilization to discover it",  // can't make this unique value '50' so it'll be 500 
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
@@ -585,7 +597,7 @@
 		"movementCost": 3,
 		"occursOn": ["Desert"],
 		"uniques": [
-			"Grants 50 Gold to the first civilization to discover it",
+			// "Grants 500 Gold to the first civilization to discover it",
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
@@ -605,7 +617,7 @@
 		"movementCost": 3,
 		"occursOn": ["Grassland"],
 		"uniques": [
-			"Grants 50 Gold to the first civilization to discover it",
+			// "Grants 500 Gold to the first civilization to discover it",
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
@@ -625,7 +637,7 @@
 		"movementCost": 3,
 		"occursOn": ["Desert"],
 		"uniques": [
-			"Grants 50 Gold to the first civilization to discover it",
+			// "Grants 500 Gold to the first civilization to discover it",
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
@@ -645,7 +657,7 @@
 		"movementCost": 3,
 		"occursOn": ["Grassland"],
 		"uniques": [
-			"Grants 50 Gold to the first civilization to discover it",
+			// "Grants 500 Gold to the first civilization to discover it",
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
@@ -665,7 +677,7 @@
 		"movementCost": 3,
 		"occursOn": ["Desert"],
 		"uniques": [
-			"Grants 50 Gold to the first civilization to discover it",
+			// "Grants 500 Gold to the first civilization to discover it",
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
@@ -685,7 +697,7 @@
 		"movementCost": 3,
 		"occursOn": ["Plains"],
 		"uniques": [
-			"Grants 50 Gold to the first civilization to discover it",
+			// "Grants 500 Gold to the first civilization to discover it",
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
@@ -705,7 +717,7 @@
 		"movementCost": 3,
 		"occursOn": ["Grassland"],
 		"uniques": [
-			"Grants 50 Gold to the first civilization to discover it",
+			// "Grants 500 Gold to the first civilization to discover it",
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
@@ -725,7 +737,7 @@
 		"movementCost": 3,
 		"occursOn": ["Plains"],
 		"uniques": [
-			"Grants 50 Gold to the first civilization to discover it",
+			// "Grants 500 Gold to the first civilization to discover it",
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
@@ -745,7 +757,7 @@
 		"movementCost": 3,
 		"occursOn": ["Plains"],
 		"uniques": [
-			"Grants 50 Gold to the first civilization to discover it",
+			// "Grants 500 Gold to the first civilization to discover it",
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Doesn't generate naturally",
