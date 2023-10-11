@@ -27,7 +27,7 @@
         "uniques": [
 		"Consumes [2] [Horses]",
 		"Provides 1 extra copy of each improved luxury resource near this City",
-		]
+	]
     },
     {
         "name": "Coal Refinery",
@@ -39,7 +39,7 @@
         "uniques": [
 		"Consumes [2] [Coal]",
 		"Provides [1] [Oil]",
-     		]
+     	]
     },
     {
         "name": "Metalworks Foundry",
@@ -51,7 +51,7 @@
         "uniques": [
 		"Consumes [2] [Iron]",
 		"Provides [1] [Aluminum]",
-		]
+	]
     },
     {
         "name": "Calutron Enrichment Lab",
@@ -60,8 +60,8 @@
 	"requiredTech": "Computers",
 	"science": 8,
         "uniques": [
-		"Consumes [3] [Oil]",
+		"Consumes [4] [Oil]",
 		"Provides [1] [Uranium]",
-		]
+	]
     },
 ]
