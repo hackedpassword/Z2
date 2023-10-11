@@ -1,5 +1,5 @@
 [
-// Z2
+// Z2 improvements
 	{
 		"name": "Boulder",  // improvement, not terrainFeature, same name
 		"movementCost": 5, // hard to pass through
@@ -22,7 +22,8 @@
 		"culture": 1,
 		"science": 5,
 		"techRequired": "Engineering",
-		"uniques": ["Can only be built on [Water] tiles",
+		"uniques": [
+			"Can only be built on [Water] tiles",
 			"Can only be built to improve a resource",
                         "Can be built outside your borders",
 			"Tile provides yield without assigned population",  // Foundation resource found outside 3-tile range
@@ -70,7 +71,7 @@
 		"uniques": [
 			"[+2 Production] <after discovering [Chemistry]>",
 			"Can only be built to improve a resource",
-			"[95]% Chance to be destroyed by nukes",
+//			"[95]% Chance to be destroyed by nukes",
 			"Pillaging this improvement yields approximately [+20 Gold]"
 		],
 	},
@@ -101,7 +102,7 @@
 		        "Grants [Combat] ([More combat abilities]) to adjacent [Land] units for the rest of the game",
 			"Removes removable features when built",
 			"Pillaging this improvement yields approximately [+20 Gold]",
-			"[95]% Chance to be destroyed by nukes",
+//			"[95]% Chance to be destroyed by nukes",
 			"Gives a defensive bonus of [25]%"
 		] 
 	},
@@ -145,7 +146,7 @@
 			"Can also be built on tiles adjacent to fresh water",
 			"[+1 Food] from [Fresh water] tiles <after discovering [Civil Service]>",
 			"[+1 Food] from [non-fresh water] tiles <after discovering [Fertilizer]>",
-			"[99]% Chance to be destroyed by nukes",
+//			"[99]% Chance to be destroyed by nukes",
                         "Pillaging this improvement yields approximately [+18 Gold]"
 		],
 		"shortcutKey": "F"
@@ -158,7 +159,7 @@
 		"techRequired": "Construction",
 		"uniques": [
 			"[+1 Production] <after discovering [Scientific Theory]>",
-			"[99]% Chance to be destroyed by nukes",
+//			"[99]% Chance to be destroyed by nukes",
 			"Pillaging this improvement yields approximately [+10 Gold]"
 		],
 		"shortcutKey": "L"
@@ -171,7 +172,7 @@
 		"techRequired": "Guilds",
 		"uniques": [
 			"[+1 Gold] <after discovering [Economics]>",
-			"[99]% Chance to be destroyed by nukes",
+//			"[99]% Chance to be destroyed by nukes",
 			"Pillaging this improvement yields approximately [+20 Gold]"
 		],
 		"shortcutKey": "T"
@@ -185,7 +186,7 @@
 			"Does not need removal of [Jungle]",
 			"[+1 Gold] <after discovering [Economics]>",
 			"Can only be built to improve a resource",
-			"[99]% Chance to be destroyed by nukes",
+//			"[99]% Chance to be destroyed by nukes",
 			"Pillaging this improvement yields approximately [+10 Gold]"
 		],
 		"shortcutKey": "C"
@@ -197,7 +198,7 @@
 		"uniques": [
 			"Can only be built to improve a resource",
 			"Cannot be built on [Water] tiles",
-			"[99]% Chance to be destroyed by nukes",
+//			"[99]% Chance to be destroyed by nukes",
 			"Pillaging this improvement yields approximately [+20 Gold]"
 		],
 		"shortcutKey": "W"
@@ -208,7 +209,7 @@
 		"uniques": [
 			"Can only be built to improve a resource",
 			"Can only be built on [Water] tiles",
-			"[99]% Chance to be destroyed by nukes",
+//			"[99]% Chance to be destroyed by nukes",
 			"Pillaging this improvement yields approximately [+20 Gold]"
 		],
 		"shortcutKey": "P"
@@ -220,7 +221,7 @@
 		"uniques": [
 			"[+1 Food] <after discovering [Fertilizer]>",
 			"Can only be built to improve a resource",
-			"[99]% Chance to be destroyed by nukes",
+//			"[99]% Chance to be destroyed by nukes",
 			"Pillaging this improvement yields approximately [+10 Gold]"
 		],
 		"shortcutKey": "P"
@@ -233,7 +234,7 @@
 		"uniques": [
 			"[+1 Food] <after discovering [Fertilizer]>",
 			"Can only be built to improve a resource",
-			"[99]% Chance to be destroyed by nukes",
+//			"[99]% Chance to be destroyed by nukes",
 			"Pillaging this improvement yields approximately [+10 Gold]"
 		],
 		"shortcutKey": "P"
