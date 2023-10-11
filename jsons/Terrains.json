@@ -30,8 +30,8 @@
 		        "Has an elevation of [2] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation", 
 //			"[5]% Chance to be destroyed by nukes",  // base terrains transform this value to 0% - semi-bug
-			"Population loss from nuclear attacks [-95]% [in this city]",
-			"Damage to garrison from nuclear attacks [-95]% [in this city]",
+			// "Population loss from nuclear attacks [-95]% [in this city]",  // disallowed, meant for buildings instead :/
+			// "Damage to garrison from nuclear attacks [-95]% [in this city]",
 		],
 	},
 	{
@@ -60,8 +60,8 @@
 		        "Units ending their turn on this terrain take [50] damage <with [80]% chance>",  // get in get out
 			"Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
 //			"[5]% Chance to be destroyed by nukes",
-			"Population loss from nuclear attacks [-50]% [in this city]",  // in case a city is settled here
-			"Damage to garrison from nuclear attacks [-75]% [in this city]", 
+			// "Population loss from nuclear attacks [-50]% [in this city]",  // in case a city is settled here
+			// "Damage to garrison from nuclear attacks [-75]% [in this city]",  // these two lines disallowed, meant for buildings instead :/
 		], 
 	        "impassable": true,  // unless unit received Adventurer training/promotion 
 	},
@@ -856,7 +856,7 @@
 	    "movementCost": 0.1,
 	    "occursOn": ["Coast"],
 	    "uniques": ["Never receives any resources <in [Force] tiles>",  // removing still doesn't allow placement of Foundation resource 
-		    	"Provides [1] [Foundation]",
+		    	// "Provides [1] [Foundation]",  // doesn't work
 			"[-10] Strength for cities built on this terrain"],
 	    "turnsInto": "Force",
 	    "unbuildable": false,
@@ -868,7 +868,7 @@
 	    "movementCost": 0.1,
 	    "occursOn": ["Coast"],
 	    "uniques": ["Never receives any resources <in [Force] tiles>",
-		    	"Provides [1] [Foundation]",
+		    	// "Provides [1] [Foundation]",
 			"[-10] Strength for cities built on this terrain"],
 	    "turnsInto": "Force",
 	    "unbuildable": false,
@@ -882,7 +882,7 @@
 	    "food": 1,
 	    "occursOn": ["Coast"],
 	    "uniques": ["Never receives any resources <in [Force] tiles>",
-		    	"Provides [1] [Foundation]",
+		    	// "Provides [1] [Foundation]",
 			"[-10] Strength for cities built on this terrain"],
 	    "turnsInto": "Force",
 	    "unbuildable": false,
