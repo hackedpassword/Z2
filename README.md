@@ -3,7 +3,7 @@
 
 Looking for some NES nostalgia? With a Civ V twist? You’ve come to the right place.
 
-I’m a huge fan of the original Zelda 2, up to and including no-lives-lost game completion.
+I’m a huge fan of the original Zelda 2, up to and including no-lives-lost vanila game completion. I run my own speedrun params for a currently ~27 min completion (w/o crystal exploit). I'll post a recording sometime.
 
 ### Z2 has some notable achievements:
 
@@ -23,6 +23,8 @@ Take a closer look at the above, and you'll see the hidden water paths using For
 ## Game notes
 
 Release 8 is now available! (v0.8)
+
+> _Info on current version 0.9 follows the FAQ below. If you look on the right, you'll see 0.8 is encapsulated as a Release, if stability is needed (because I commit straight to main while at zero-dot versions). But Z2 is not popular atm, so I can totally get away with this LOL._
 
 In release 8, you'll now find:
 
@@ -50,6 +52,34 @@ Feel free to review/reuse the json’s. Ask questions in discord. I've gained a 
 In the future I’ll be moving the ./image/ assets over to my [assets repo](https://github.com/hackedpassword/Unciv-Assets/images/Z2/) to reduce the mod size and build the atlas as needed.
 
 Comment in the [discord](https://discord.com/channels/586194543280390151/1138883296835682324) channel. Would like to hear your feedback.
+
+## Current WIP version (0.9)
+
+I'm focusing on the Unciv side atm, producing unit/weapons updates. These mind late and end-game gameplay. I've added a few additional new unit/weapons in 0.8 and are advancing these in 0.9.
+
+Here is a running list of WIP updates to v0.9 (with some augmentation from 0.8):
+- GDR MK-II, and MK-III - the latter available with Future Tech and utterly destructive. Think MW/Behemoth. Custom (temp-experimental) sprites for these. The MK-II on its own is fierce.
+- Applied logical attributes to various units, maybe TUGR-style. i.e., tanks now are ranged and have attack/def modifiers.
+- Some unit abilities do not activate until triggered via tech or buildings (this doesn't work correctly everywhere, suspecting bug)
+- Much work has been placed into ordnance. Whereas guided missiles for instance have historically been as effective as stink bombs, they now find practical use. In this instance generally 3 GM's can finish off a 50% gunpowder unit.
+- Bunker busters generally do 50-66% dmg to cities. Each req's 1 aluminum, only carried by a nuclear sub atm, or deployed by a city.
+- Nuclear bunker busters are 1-tile city obliterating WMD's. Procuring just one is very resource heavy. These will wipe a city off the map.
+- Cruise missiles, i.e. Tomahawks, have great range, and do very reasonable damage to units that make big targets. Can one-shot numerous units - fun toy, til the enemy sends one back.
+- Nuclear missilies have a new variant, the ICBM, with a strength and blast of 3.
+- The most destructive TSAR bomb has a blast of 6 - it is a civilization destroyer. Obtaining one of these is no easy task.
+- Clever use of tech discovery is needed to obtain powerful units/weapons.
+- Helicopter gunship has dual missile pods (can carry two guided missilies, think Apache) and-or also a bunker buster as payload. Strong attacker, can be smashed quickly by armored units. Does not embark (phew!!).
+- Anti-air units can carry a missile. They can also intercept missiles, making them quite important in defending against this modern onslaught of rocket-propelled weaponary.
+- There are conversion buildings for horse/iron/oil resources, making use of stale resources that never get used later in the game.
+- UnitTypes have been updated to better align logical interactions of units/weapons.
+- Modern Armor now receives triggered [modern] stealth upgrade.
+- Deep Ocean tiles create soft clips against general transit, and fast transit for carriers and nuclear subs.
+- Lots of other smaller updates, WIP.
+
+I have added much commenting to the json configs, including what could be perceived as story elements detailing how/why certain attributes are or came to be.
+
+Stay tuned for upcoming Z2 v0.9.
+
 
 ## Credits are due!
 
