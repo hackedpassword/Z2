@@ -2,7 +2,7 @@
 // uniques with map generation we're ignoring, probably remove those. Z2 is a map mod extension, not a TC ruleset.
 // to-do: Rebuild improvements to match Z2 theme. Work worthy of a branch.
 
-	{  // Specific for bridge found where Maze Island is actually physically East of Death Mountain (requires Game Genie to water walk)
+	{  // Specific for bridge found where Maze Island is actually physically East of Death Mountain (requires Game Genie for water walk to reveal)
 		"name": "Foundation",  // Improvement Bridge is built on Foundation
 		"resourceType": "Bonus",
 	        // only used on Ocean in Z2
@@ -20,19 +20,6 @@
 		"production": 1,
 		"improvement": "Mine",
 		"improvementStats": {"production": 1},
-		"uniques": ["Generated with weight [35] <in [Hill] tiles>",
-					"Generated with weight [30] <in [Jungle] tiles> <in tiles without [Hill]>",
-					"Generated with weight [30] <in [Forest] tiles> <in tiles without [Hill]>",
-					"Minor deposits generated with weight [10] <in [Marsh] tiles> <in tiles without [Hill]>",
-					"Minor deposits generated with weight [10] <in [Jungle] tiles>",
-					"Minor deposits generated with weight [10] <in [Forest] tiles>",
-					"Minor deposits generated with weight [20] <in [Grassland] [Hill] tiles>",
-					"Minor deposits generated with weight [20] <in [Plains] [Hill] tiles>",
-					"Minor deposits generated with weight [30] <in [Desert] [Hill] tiles>",
-					"Minor deposits generated with weight [30] <in [Tundra] [Hill] tiles>",
-					"Minor deposits generated with weight [30] <in [Snow] [Hill] tiles>"],
-		"majorDepositAmount": {"sparse": 5, "default": 7, "abundant": 10},
-		"minorDepositAmount": {"sparse": 2, "default": 3, "abundant": 3}
 	},
 	{ // Heart
 		"name": "Oil",
@@ -42,20 +29,6 @@
 		"production": 1,
 		"improvedBy": ["Oil well", "Offshore Platform"],
 		"improvementStats": {"production": 3},
-		"uniques": ["Deposits in [Coast] tiles always provide [4] resources",
-					"Guaranteed with Strategic Balance resource option",
-					"Generated with weight [65] <in [Marsh] tiles> <in tiles without [Hill]>",
-					"Generated with weight [40] <in [Featureless] [Tundra] tiles>",
-					"Generated with weight [60] <in [Featureless] [Snow] tiles>",
-					"Generated with weight [65] <in [Featureless] [Desert] tiles>",
-					"Generated with weight [100] <in [Featureless] [Coast] tiles>",
-					"Minor deposits generated with weight [20] <in [Marsh] tiles> <in tiles without [Hill]>",
-					"Minor deposits generated with weight [10] <in [Jungle] tiles> <in tiles without [Hill]>",
-					"Minor deposits generated with weight [10] <in [Featureless] [Desert] tiles>",
-					"Minor deposits generated with weight [20] <in [Featureless] [Tundra] tiles>",
-					"Minor deposits generated with weight [20] <in [Featureless] [Snow] tiles>"],
-		"majorDepositAmount": {"sparse": 5, "default": 7, "abundant": 9},
-		"minorDepositAmount": {"sparse": 2, "default": 3, "abundant": 3}
 	},
 	{ // Magic potion
 		"name": "Aluminum",
@@ -65,13 +38,6 @@
 		"production": 1,
 		"improvement": "Mine",
 		"improvementStats": {"production": 1},
-		"uniques": ["Generated with weight [15] <in [Featureless] [Tundra] tiles>",
-					"Generated with weight [15] <in [Featureless] [Snow] tiles>",
-					"Generated with weight [39] <in [Hill] tiles>",
-					"Minor deposits generated with weight [20] <in [Jungle] tiles>",
-					"Minor deposits generated with weight [10] <in [Featureless] [Desert] tiles>"],
-		"majorDepositAmount": {"sparse": 5, "default": 8, "abundant": 10},
-		"minorDepositAmount": {"sparse": 2, "default": 3, "abundant": 3}
 	},
 
 	{ // Trophy
@@ -80,17 +46,6 @@
 		"terrainsCanBeFoundOn": ["Hill","Forest","Jungle","Tundra","Grassland","Cave","Cavern"],
 		"gold": 2,
 		"improvement": "Smelter",
-		"uniques": ["Generated with weight [25] <in [Tundra] Regions>",
-					"Generated with weight [30] <in [Hill] Regions>",
-					"Generated with weight [20] <in [Grassland] Regions>",
-					"Generated with weight [10] <in [Hybrid] Regions>",
-					"Generated near City States with weight [10]",
-					"Doesn't generate naturally <in [Forest] tiles> <in tiles without [Hill]>",
-					"Doesn't generate naturally <in [Jungle] tiles> <in tiles without [Hill]>",
-					"Doesn't generate naturally <in [Tundra] [Hill] tiles>",
-					"Doesn't generate naturally <in [Grassland] [Fresh Water] tiles>",
-					"Doesn't generate naturally <in [Grassland] [Hill] tiles>"
-		]
 	},
 	{ // Medicine bottle
 		"name": "Citrus",
@@ -99,12 +54,6 @@
 		"food": 1,
 		"gold": 1,
 		"improvement": "Plantation",
-		"uniques": ["Generated with weight [35] <in [Jungle] Regions>",
-					"Generated with weight [5] <in [Forest] Regions>",
-					"Generated with weight [5] <in [Desert] Regions>",
-					"Generated with weight [5] <in [Hybrid] Regions>",
-					"Generated near City States with weight [15]",
-					"Doesn't generate naturally <in [Tundra] tiles>"]
 	},
 	{ // Hammer
 		"name": "Copper",
@@ -112,18 +61,6 @@
 		"terrainsCanBeFoundOn": ["Hill","Forest","Jungle","Grassland","Tundra","Cave","Cavern"],
 		"gold": 2,
 		"improvement": "Mine",
-		"uniques": ["Generated with weight [15] <in [Tundra] Regions>",
-					"Generated with weight [5] <in [Jungle] Regions>",
-					"Generated with weight [5] <in [Forest] Regions>",
-					"Generated with weight [10] <in [Desert] Regions>",
-					"Generated with weight [30] <in [Hill] Regions>",
-					"Generated with weight [20] <in [Grassland] Regions>",
-					"Generated with weight [20] <in [Hybrid] Regions>",
-					"Generated near City States with weight [10]",
-					"Doesn't generate naturally <in [Grassland] [Fresh Water] tiles>",
-					"Doesn't generate naturally <in [Jungle] tiles> <in tiles without [Hill]>",
-					"Doesn't generate naturally <in [Forest] tiles> <in tiles without [Hill]> <in tiles without [Tundra]>"]
-		
 	},
 	{  // Boot
 		"name": "Cotton",
@@ -131,11 +68,6 @@
 		"terrainsCanBeFoundOn": ["Grassland","Flood plains","Plains"],
 		"gold": 2,
 		"improvement": "Plantation",
-		"uniques": ["Generated with weight [15] <in [Desert] Regions>",
-					"Generated with weight [30] <in [Grassland] Regions>",
-					"Generated with weight [15] <in [Hybrid] Regions>",
-					"Generated near City States with weight [10]",
-					"Doesn't generate naturally <in [Hill] tiles>"]
 	},
 	{ // Triforce
 		"name": "Gold Ore",
@@ -145,12 +77,63 @@
 		"culture": 6,
 		"faith": 4,
 		"improvement": "Smelter",
-		"uniques": ["Generated with weight [25] <in [Desert] Regions>",
-					"Generated with weight [30] <in [Hill] Regions>",
-					"Generated with weight [5] <in [Plains] Regions>",
-					"Generated with weight [5] <in [Hybrid] Regions>",
-					"Generated near City States with weight [10]",
-					"Doesn't generate naturally <in [Forest] tiles> <in tiles without [Hill]>",
-					"Doesn't generate naturally <in [Jungle] tiles> <in tiles without [Hill]>"]
 	},
+
+// Strageic resources, including because they're needed to appease modchecker //
+
+	{
+		"name": "Horses",  // Fairy
+		"resourceType": "Strategic",
+		"revealedBy": "Animal Husbandry",
+		"terrainsCanBeFoundOn": ["Plains","Grassland","Hill"],
+		"production": 1,
+		"improvement": "Pasture",
+		"improvementStats": {"production": 2},  // All generated placement uniques removed for Z2
+	},
+	{
+		"name": "Iron",  // Magic refill jar
+		"resourceType": "Strategic",
+		"revealedBy": "Iron Working",
+		"terrainsCanBeFoundOn": ["Grassland","Plains","Desert","Tundra","Hill","Marsh"],
+		"production": 1,
+		"improvement": "Mine",
+		"improvementStats": {"production": 1},  // missing from original resource
+	},
+	{
+		"name": "Coal",  // Point/exp bag
+		"resourceType": "Strategic",
+		"revealedBy": "Industrialization",
+		"terrainsCanBeFoundOn": ["Grassland","Plains","Hill","Jungle","Forest","Marsh","Cave"],
+		"production": 1,
+		"improvement": "Mine",
+		"improvementStats": {"production": 2},
+	},
+	{
+		"name": "Oil",  // Heart container
+		"resourceType": "Strategic",
+		"revealedBy": "Biology",
+		"terrainsCanBeFoundOn": ["Desert","Coast","Tundra","Marsh","Jungle","Cave"],
+		"production": 1,
+		"improvedBy": ["Oil well", "Offshore Platform"],
+		"improvementStats": {"production": 3},
+	},
+	{
+		"name": "Aluminum",  // Magic container
+		"resourceType": "Strategic",
+		"revealedBy": "Electricity",
+		"terrainsCanBeFoundOn": ["Desert","Tundra","Hill","Jungle","Cave"],
+		"production": 1,
+		"improvement": "Mine",
+		"improvementStats": {"production": 1},
+	},
+	{
+		"name": "Uranium",  // Extra life Link doll
+		"resourceType": "Strategic",
+		"revealedBy": "Atomic Theory",
+		"terrainsCanBeFoundOn": ["Marsh","Jungle","Forest","Tundra"],
+		"production": 1,
+		"improvement": "Mine",
+		"improvementStats": {"production": 1},
+	},
+
 ]
