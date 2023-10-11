@@ -59,10 +59,32 @@
             "Cannot be intercepted <before discovering [Advanced Ballistics]>", 
         ]
     },
-    {  // needed for ruleset mod checker?
+
+// needed to appease ruleset mod checker //
+
+    {
         "name": "Submarine",
         "movementType": "Water",
         "uniques": ["Can enter ice tiles", "Invisible to non-adjacent units", "Can see invisible [Submarine] units"]
+    },
+    {
+        "name": "Melee Water",
+        "movementType": "Water"
+    },
+    {
+        "name": "Fighter",
+        "movementType": "Air",
+        "uniques": ["Aircraft", "[+4] Sight", "Can see over obstacles", "Can perform Air Sweep"]
+    },
+    {
+        "name": "Bomber",
+        "movementType": "Air",
+        "uniques": ["Aircraft"]
+    },
+    {
+        "name": "Atomic Bomber",
+        "movementType": "Air",
+        "uniques": ["Aircraft"]
     },
 
 ] 
