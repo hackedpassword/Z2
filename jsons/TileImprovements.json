@@ -4,11 +4,11 @@
 		"name": "Boulder",  // improvement, not terrainFeature, same name
 		"movementCost": 5, // hard to pass through
 		"turnsToBuild": 7,
-		"uniques": [
-			"Nullifies all other stats this tile provides",
-			"Units ending their turn on this terrain take [20] damage <with [50]% chance>",
-			"Has an elevation of [1] for visibility calculations",
-			"Rough terrain",
+		"uniques": [  // commented lines are desired but are not allowed :/
+			// "Nullifies all other stats this tile provides",
+			// "Units ending their turn on this terrain take [20] damage <with [50]% chance>",
+			// "Has an elevation of [1] for visibility calculations",
+			// "Rough terrain",
 			"Gives a defensive bonus of [25]%",
 			"Can be built outside your borders",
 		],
@@ -99,7 +99,6 @@
 		"culture": 6,
 		"uniques": [
 			"Great Improvement",
-		        "Grants [Combat] ([More combat abilities]) to adjacent [Land] units for the rest of the game",
 			"Removes removable features when built",
 			"Pillaging this improvement yields approximately [+20 Gold]",
 //			"[95]% Chance to be destroyed by nukes",
@@ -113,7 +112,6 @@
 		"techRequired": "Engineering",
 		"uniques": [
 			"Can be built outside your borders",
-			"Grants [Combat] ([More combat abilities]) to adjacent [Land] units for the rest of the game",  // testing
 			"Can be built just outside your borders",  // These aren't outposts
 			"Removes removable features when built",  // Needs clearing, features removed in parallel to building
 			"Adjacent enemy units ending their turn take [15] damage",  // Should be obvious why
