@@ -59,5 +59,10 @@
             "Cannot be intercepted <before discovering [Advanced Ballistics]>", 
         ]
     },
+    {  // needed for ruleset mod checker?
+        "name": "Submarine",
+        "movementType": "Water",
+        "uniques": ["Can enter ice tiles", "Invisible to non-adjacent units", "Can see invisible [Submarine] units"]
+    },
 
 ] 
