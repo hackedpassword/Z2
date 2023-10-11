@@ -12,25 +12,44 @@
 	        "revealedBy": "Astronomy",
 	},
 
-	{ // Exp bag
+// Strategic resources - Z2 replacements //
+
+	{  // Fairy
+		"name": "Horses",
+		"resourceType": "Strategic",
+		"revealedBy": "Animal Husbandry",
+		"terrainsCanBeFoundOn": ["Plains","Grassland","Hill"],
+		"production": 1,
+		"improvement": "Pasture",
+		"improvementStats": {"production": 1},
+	},
+	{  // Magic refill jar
+		"name": "Iron",
+		"resourceType": "Strategic",
+		"revealedBy": "Iron Working",
+		"terrainsCanBeFoundOn": ["Grassland","Plains","Desert","Tundra","Hill","Marsh"],
+		"production": 1,
+		"improvement": "Mine",
+	},
+	{  // Point/exp bag
 		"name": "Coal",
 		"resourceType": "Strategic",
 		"revealedBy": "Industrialization",
-		"terrainsCanBeFoundOn": ["Grassland","Plains","Hill","Jungle","Forest","Marsh","Cave","Cavern"],
+		"terrainsCanBeFoundOn": ["Grassland","Plains","Hill","Forest","Marsh","Cave","Cavern"],
 		"production": 1,
 		"improvement": "Mine",
 		"improvementStats": {"production": 1},
 	},
-	{ // Heart
+	{  // Heart
 		"name": "Oil",
 		"resourceType": "Strategic",
 		"revealedBy": "Biology",
-		"terrainsCanBeFoundOn": ["Desert","Coast","Tundra","Snow","Marsh","Jungle","Cave","Cavern"],
+		"terrainsCanBeFoundOn": ["Desert","Coast","Tundra","Marsh","Jungle","Cave","Cavern"],
 		"production": 1,
 		"improvedBy": ["Oil well", "Offshore Platform"],
 		"improvementStats": {"production": 3},
 	},
-	{ // Magic potion
+	{  // Magic potion
 		"name": "Aluminum",
 		"resourceType": "Strategic",
 		"revealedBy": "Electricity",
@@ -39,15 +58,26 @@
 		"improvement": "Mine",
 		"improvementStats": {"production": 1},
 	},
+	{  // Link doll
+		"name": "Uranium",
+		"resourceType": "Strategic",
+		"revealedBy": "Atomic Theory",
+		"terrainsCanBeFoundOn": ["Marsh","Forest","Tundra"],
+		"production": 1,
+		"improvement": "Mine",
+		"improvementStats": {"production": 1},
+	},
 
-	{ // Trophy
+// World bonus items //
+
+	{  // Trophy
 		"name": "Silver",
 		"resourceType": "Luxury",
 		"terrainsCanBeFoundOn": ["Hill","Forest","Jungle","Tundra","Grassland","Cave","Cavern"],
 		"gold": 2,
 		"improvement": "Smelter",
 	},
-	{ // Medicine bottle
+	{  // Medicine bottle
 		"name": "Citrus",
 		"resourceType": "Luxury",
 		"terrainsCanBeFoundOn": ["Jungle","Forest","Flood plains","Cave","Cavern"],
@@ -55,12 +85,37 @@
 		"gold": 1,
 		"improvement": "Plantation",
 	},
-	{ // Hammer
+	{  // Hammer
 		"name": "Copper",
 		"resourceType": "Luxury",
 		"terrainsCanBeFoundOn": ["Hill","Forest","Jungle","Grassland","Tundra","Cave","Cavern"],
 		"gold": 2,
 		"improvement": "Mine",
+	},
+
+// Palace luxury items
+
+	{  // Candle
+		"name": "Incense",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Plains","Desert","Flood plains"],
+		"gold": 2,
+		"improvement": "Plantation",
+	},
+	{  // Power glove
+		"name": "Silk",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Forest","Jungle"],
+		"gold": 2,
+		"improvement": "Plantation",
+	},
+	{  // Raft
+		"name": "Furs",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Forest","Tundra"],
+		"gold": 2,
+		"improvement": "Camp",
+		"improvementStats": {"gold": 1},
 	},
 	{  // Boot
 		"name": "Cotton",
@@ -68,6 +123,23 @@
 		"terrainsCanBeFoundOn": ["Grassland","Flood plains","Plains"],
 		"gold": 2,
 		"improvement": "Plantation",
+	},
+	{  // Flute
+		"name": "Ivory",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Plains","Grassland"],
+		"gold": 2,
+		"improvement": "Camp",
+		"improvementStats": {"gold": 1},
+	},
+	{  // Cross
+		"name": "Salt",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Desert","Tundra","Plains","Forest"],
+		"gold": 1,
+		"food": 1,
+		"improvement": "Mine",
+		"improvementStats": {"food": 1},
 	},
 	{ // Triforce
 		"name": "Gold Ore",
@@ -136,4 +208,61 @@
 		"improvementStats": {"production": 1},
 	},
 
+// Bonus resources, including because they're needed to appease modchecker //
+
+	{
+		"name": "Cattle",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Grassland"],
+		"food": 1,
+		"improvement": "Pasture",
+		"improvementStats": {"production": 1},
+	},
+	{
+		"name": "Sheep",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Hill"],
+		"food": 1,
+		"improvement": "Pasture",
+		"improvementStats": {"food": 1},
+	},
+	{
+		"name": "Deer",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Forest","Tundra"], // Tundra only if lowland
+		"food": 1,
+		"improvement": "Camp",
+		"improvementStats": {"production": 1},
+	},
+	{
+		"name": "Bananas",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Jungle"],
+		"food": 1,
+		"improvement": "Plantation",
+		"improvementStats": {"food": 2,"production": -1,"gold": -1},
+	},
+	{
+		"name": "Wheat",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Plains","Flood plains","Desert"], // Desert only if fresh water
+		"food": 1,
+		"improvement": "Farm",
+	},
+	{
+		"name": "Stone",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Grassland","Desert","Tundra"],
+		"production": 1,
+		"improvement": "Quarry",
+		"improvementStats": {"production": 1},
+	},
+	{
+		"name": "Fish",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Coast"],
+		"food": 1,
+		"improvement": "Fishing Boats",
+	},
+	
 ]
