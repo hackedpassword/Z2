@@ -182,7 +182,7 @@
 		"attackSound": "torpedo"
 	},
 	{
-		"name": "Carrier",
+		"name": "Carrier",  // Unciv appears to handle carrying units by the maximum number specified for all uniques is the max capacity, so here, 4 units any combo max
 		"unitType": "Aircraft Carrier",
 		"movement": 2,  // slow, +1 global, x2 ocean = fast on open water
 		"strength": 80,
@@ -190,7 +190,9 @@
 		"requiredTech": "Electronics",
 		"uniques": [
 			"Can only attack [Melee Water] units",  // better believe the Navy put a couple guns on these
-			"Can carry [4] [Aircraft] units",  // carrier.
+			"Can carry [4] [Fighter] units",
+			"Can carry [4] [Bomber] units", 
+			"Can carry [2] [Atomic Bomber] units", 
 			// "Can carry [2] [Gunpowder] units",  // doesn't work :/
 			"Can carry [1] [Missile] units",
 			"Double movement in [Ocean]",
@@ -229,7 +231,7 @@
 		"uniques": [
 			"Can see invisible [Submarine] units",
 			"[+3] Sight <in [Deep Ocean] tiles>",  // advanced oceanic detection systems
-			"[+1] sight <when adjacent to a [Destroyer] unit>",  // combined data enhances resolution
+			"[+1] Sight <when adjacent to a [Destroyer] unit>",  // combined data enhances resolution
 			"[60]% chance to intercept air attacks",  // AA
 			"May withdraw before melee ([80]%)",  // evasive
 			"Can carry [3] [Missile] units",  // how does a destroyer not have missile launch capabilities?
@@ -293,7 +295,7 @@
 	},
 	{
 		"name": "Nuclear Missile",
-		"unitType": "Atomic Payload",
+		"unitType": "Atomic Payload",  // vs old missile unittype, don't want these roving about without clearance
 		"movement": 1,
 		"strength": 50,
 		"rangedStrength": 300,
@@ -431,7 +433,7 @@
 			"Can carry [1] [Missile] units",  // LRM pod
 			"Can carry [0] [Nuclear Missile] units",  // too big
 			"Unit will heal every turn, even if it performs an action",  // Thanks to the MetalSweat active nanobot repair system
-			"[+2] Sight", "Can see over obstacles", "Indirect Fire",
+			"[+1] Sight", "Can see over obstacles",	"Ranged attacks may be performed over obstacles",  // advanced targeting
 			"[25]% chance to intercept air attacks",  // AA cannon
 			"Never appears as a Barbarian unit"
 		],
@@ -456,13 +458,13 @@
 			"May Paradrop up to [4] tiles from inside friendly territory",  // extended range plasma-lithium jump jets (ER-PL JJ)
 			"No defensive terrain bonus",
 			"Ignores Zone of Control",
-                        "Adjacent enemy units ending their turn take [40] damage",  // not for Units but know that the MK-III has optional automated proximity suppression pulse lasers
+                        // "Adjacent enemy units ending their turn take [40] damage",  // not for Units; but know that the MK-III has optional automated proximity suppression pulse lasers
 			"Destroys tile improvements when attacking",
 			"[+200]% Strength <vs cities> <when attacking>",
 			"[50]% chance to intercept air attacks",  // dual AA cannons
 			"Can carry [2] [Missile] units",  // dual LRM pods
 		        "Can carry [1] [Nuclear Missile] units",  // super heavy class can carry one nuke
-			"Can see over obstacles","[+3] Sight",  // New drone-based omni-LIDAR installed
+			"Can see over obstacles","[+3] Sight", "Ranged attacks may be performed over obstacles",  // New drone-based omni-LIDAR installed
 			"Self-destructs when attacking <upon being defeated>","Blast radius [1]","Nuclear weapon of Strength [1]",  // gonna try it
 			// "Never appears as a Barbarian unit"  // Surprise, rebels stole the plans
 		],
