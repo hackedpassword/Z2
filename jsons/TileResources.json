@@ -152,5 +152,5 @@
 					"Generated near City States with weight [10]",
 					"Doesn't generate naturally <in [Forest] tiles> <in tiles without [Hill]>",
 					"Doesn't generate naturally <in [Jungle] tiles> <in tiles without [Hill]>"]
-	}
+	},
 ]
