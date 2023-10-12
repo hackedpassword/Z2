@@ -1,0 +1,20 @@
+
+Constructions.png
+size: 2048, 2048
+format: RGBA8888
+filter: MipMapLinearLinear, MipMapLinearLinear
+repeat: none
+UnitIcons/Bunker Buster
+  rotate: false
+  xy: 4, 4
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+UnitIcons/Nuclear Bunker Buster
+  rotate: false
+  xy: 4, 140
+  size: 1024, 1024
+  orig: 1024, 1024
+  offset: 0, 0
+  index: -1
