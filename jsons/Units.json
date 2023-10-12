@@ -95,6 +95,7 @@
 		"movement": 5,
 		"strength": 70,
 		"range": 2,  // justify costly requirement of oil
+		"rangedStrength": 70,
 		"cost": 375,
 		"requiredTech": "Combined Arms",
 		"requiredResource": "Oil",
@@ -113,6 +114,7 @@
 		"unitType": "Armored",
 		"movement": 6,
 		"strength": 100,
+		"rangedStrength": 100,
 		"range": 3,
 		"cost": 425,
 		"requiredTech": "Lasers",
