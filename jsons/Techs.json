@@ -416,7 +416,7 @@
 			},
 			{
 				"name": "Dynamite",
-				"row": 10,
+				"row": 9,
 				"prerequisites": ["Fertilizer","Military Science"],
 				"quote": "'As soon as men decide that all means are permitted to fight an evil, then their good becomes indistinguishable from the evil that they set out to destroy.' - Christopher Dawson"
 			}
@@ -476,7 +476,7 @@
 			},
 			{
 				"name": "Ballistics",
-				"row": 6,
+				"row": 9,
 				"prerequisites": ["Flight"],
 				"quote": "'Men, like bullets, go farthest when they are smoothest.' - Jean Paul"
 			},
