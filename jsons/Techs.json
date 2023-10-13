@@ -471,13 +471,13 @@
 			{
 				"name": "Electronics",
 				"row": 5,
-				"prerequisites": ["Replaceable Parts", "Flight"],
+				"prerequisites": ["Replaceable Parts", "Radio"],
 				"quote": "'There's a basic principle about consumer electronics: it gets more powerful all the time and it gets cheaper all the time.' - Trip Hawkins"
 			},
 			{
 				"name": "Ballistics",
 				"row": 9,
-				"prerequisites": ["Flight"],
+				"prerequisites": ["Flight","Dynamite"],
 				"quote": "'Men, like bullets, go farthest when they are smoothest.' - Jean Paul"
 			},
 		]
@@ -491,16 +491,22 @@
 		"techs": [
 			{
 				"name": "Pharmaceuticals",
-				"row": 2,
+				"row": 1,
 				"prerequisites": ["Plastics","Refrigeration"],
 				"quote": "'In nothing do men more nearly approach the gods than in giving health to men.' - Cicero"
 			},
 			{
 				"name": "Atomic Theory",
-				"row": 4,
-				"prerequisites": ["Plastics","Electronics"],
+				"row": 5,
+				"prerequisites": ["Electronics","Ballistics"],
 				"quote": "'The unleashed power of the atom has changed everything save our modes of thinking, and we thus drift toward unparalleled catastrophes.' - Albert Einstein"
 			},
+			{
+				"name": "Computers",
+				"row": 8,
+				"prerequisites": ["Electronics"],
+				"quote": "'Computers are like Old Testament gods: lots of rules and no mercy.' - Joseph Campbell"
+			}
 			{
 				"name": "Radar",
 				"row": 6,
@@ -510,7 +516,7 @@
 			{
 				"name": "Combined Arms",
 				"row": 8,
-				"prerequisites": ["Ballistics"],
+				"prerequisites": ["Ballistics","Electronics"],
 				"quote": "'The root of the evil is not the construction of new, more dreadful weapons. It is the spirit of conquest.' - Ludwig von Mises"
 			}
 		]
@@ -530,22 +536,16 @@
 			},
 			{
 				"name": "Nuclear Fission",
-				"row": 4,
+				"row": 5,
 				"prerequisites": ["Atomic Theory","Radar"],
 				"quote": "'I am become Death, the destroyer of worlds.' - J. Robert Oppenheimer"
 			},
 			{
 				"name": "Rocketry",
-				"row": 6,
+				"row": 8,
 				"prerequisites": ["Radar"],
 				"quote": "'A good rule for rocket experimenters to follow is this: always assume that it will explode.' - Astronautics Magazine, 1937"
 			},
-			{
-				"name": "Computers",
-				"row": 8,
-				"prerequisites": ["Combined Arms","Radar"],
-				"quote": "'Computers are like Old Testament gods: lots of rules and no mercy.' - Joseph Campbell"
-			}
 		]
 	},
 	{
@@ -575,21 +575,21 @@
 			},
 			{
 				"name": "Satellites",
-				"row": 6,
-				"prerequisites": ["Rocketry"],
+				"row": 8,
+				"prerequisites": ["Rocketry","Computers"],
 				"uniques": ["Reveals the entire map"],
 				"quote": "'Now, somehow, in some new way, the sky seemed almost alien.' - Lyndon B. Johnson"
 			},
 			{
 				"name": "Robotics",
-				"row": 7,
-				"prerequisites": ["Rocketry","Computers"],
+				"row": 9,
+				"prerequisites": ["Computers"],
 				"quote": "'1. A robot may not injure a human being or, through inaction, allow a human being to come to harm. 2. A robot must obey any orders given to it by human beings, except when such orders would conflict with the First Law. 3. A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.' - Isaac Asimov"
 			},
 			{
 				"name": "Lasers",
-				"row": 8,
-				"prerequisites": ["Computers"],
+				"row": 4,
+				"prerequisites": ["Nuclear Fission"],
 				"quote": "'The night is far spent, the day is at hand: let us therefore cast off the works of darkness, and let us put on the armor of light.' - The Holy Bible: Romans, 13:12"
 			}
 		]
