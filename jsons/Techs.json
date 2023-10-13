@@ -563,13 +563,13 @@
 		"techs": [
 			{
 				"name": "Mobile Tactics",
-				"row": 4,
+				"row": 5,
 				"prerequisites": ["Ecology","Nuclear Fission","Telecommunications"],
 				"quote": "'All men can see these tactics whereby I conquer, but what none can see is the strategy out of which victory is evolved.' - Sun Tzu"
 			},
 			{
 				"name": "Advanced Ballistics",
-				"row": 7,
+				"row": 6,
 				"prerequisites": ["Nuclear Fission","Rocketry","Telecommunications"],
 				"quote": "'Our scientific power has outrun our spiritual power, we have guided missiles and misguided men.' – Martin Luther King Jr."
 			},
@@ -609,14 +609,14 @@
 			},
 			{
 				"name": "Particle Physics",
-				"row": 3,
+				"row": 2,
 				"prerequisites": ["Lasers","Ecology","Advanced Ballistics"],
 				"quote": "'Every particle of matter is attracted by or gravitates to every other particle of matter with a force inversely proportional to the squares of their distances.' - Isaac Newton"
 			},
 			{
 				"name": "Nuclear Fusion",
-				"row": 6,
-				"prerequisites": ["Advanced Ballistics", "Satellites", "Robotics"],
+				"row": 7,
+				"prerequisites": ["Advanced Ballistics", "Satellites", "Lasers"],
 				"quote": "'The release of atomic energy has not created a new problem. It has readily made more urgent the necessity of solving an existing one.' - Albert Einstein"
 			},
 			{
@@ -627,7 +627,7 @@
 			},
 			{
 				"name": "Stealth",
-				"row": 4,
+				"row": 5,
 				"prerequisites": ["Mobile Tactics", "Lasers","Satellites"],
 				"quote": "'Be extremely subtle, even to the point of formlessness, be extremely mysterious, even to the point of soundlessness. Thereby you can be the director of the opponent's fate.' - Sun Tzu"
 			}
