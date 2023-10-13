@@ -234,8 +234,8 @@
 				"name": "Chivalry",
 				"row": 6,
 				"prerequisites": ["Civil Service","Guilds"],
-                "uniques": ["Enables Defensive Pacts"],
-                "quote": "'Whoso pulleth out this sword of this stone and anvil, is rightwise king born of all England.' - Malory"
+				"uniques": ["Enables Defensive Pacts"],
+				"quote": "'Whoso pulleth out this sword of this stone and anvil, is rightwise king born of all England.' - Malory"
 			},
 			{
 				"name": "Machinery",
@@ -267,14 +267,14 @@
 		"techs": [
 			{
 				"name": "Astronomy",
-				"row": 2,
+				"row": 1,
 				"uniques": ["[+1] Movement <for [Embarked] units>","Enables [Embarked] units to enter ocean tiles"],
 				"prerequisites": ["Compass","Education"],
 				"quote": "'Joyfully to the breeze royal Odysseus spread his sail, and with his rudder skillfully he steered.' - Homer"
 			},
 			{
 				"name": "Acoustics",
-				"row": 4,
+				"row": 3,
 				"prerequisites": ["Education"],
 				"quote": "'Their rising all at once was as the sound of thunder heard remote' - Milton"
 			},
@@ -287,14 +287,20 @@
 			{
 				"name": "Printing Press",
 				"row": 8,
-				"prerequisites": ["Machinery","Physics","Chivalry"],
+				"prerequisites": ["Machinery"],
 				"quote": "'It is a newspaper's duty to print the news and raise hell.' - The Chicago Times"
 			},
 			{
-				"name": "Gunpowder",
+				"name": "Metallurgy",
+				"row": 9,
+				"prerequisites": ["Steel","Machinery"],
+				"quote": "'There never was a good knife made of bad steel.' - Benjamin Franklin"
+			},
+			{
+				"name": "Chemistry",
 				"row": 10,
 				"prerequisites": ["Physics","Steel"],
-				"quote": "'The day when two army corps can annihilate each other in one second, all civilized nations, it is to be hoped, will recoil from war and discharge their troops.' - Alfred Nobel"
+				"quote": "'Wherever we look, the work of the chemist has raised the level of our civilization and has increased the productive capacity of the nation.' - Calvin Coolidge"
 			}
 		]
 	},
@@ -307,13 +313,13 @@
 		"techs": [
 			{
 				"name": "Navigation",
-				"row": 2,
+				"row": 1,
 				"prerequisites": ["Astronomy"],
 				"quote": "'The winds and the waves are always on the side of the ablest navigators.' - Edward Gibbon"
 			},
 			{
 				"name": "Architecture",
-				"row": 4,
+				"row": 3,
 				"prerequisites": ["Acoustics","Banking"],
 				"quote": "'Architecture begins where engineering ends.' - Walter Gropius"
 			},
@@ -324,16 +330,10 @@
 				"quote": "'Compound interest is the most powerful force in the universe.' - Albert Einstein"
 			},
 			{
-				"name": "Metallurgy",
+				"name": "Gunpowder",
 				"row": 9,
-				"prerequisites": ["Printing Press","Gunpowder"],
-				"quote": "'There never was a good knife made of bad steel.' - Benjamin Franklin"
-			},
-			{
-				"name": "Chemistry",
-				"row": 10,
-				"prerequisites": ["Gunpowder"],
-				"quote": "'Wherever we look, the work of the chemist has raised the level of our civilization and has increased the productive capacity of the nation.' - Calvin Coolidge"
+				"prerequisites": ["Chemistry","Physics"],
+				"quote": "'The day when two army corps can annihilate each other in one second, all civilized nations, it is to be hoped, will recoil from war and discharge their troops.' - Alfred Nobel"
 			}
 		]
 	},
@@ -353,7 +353,7 @@
 			{
 				"name": "Scientific Theory",
 				"row": 3,
-				"prerequisites": ["Architecture","Economics"],
+				"prerequisites": ["Chemistry","Economics"],
 				"quote": "'Every great advance in science has issued from a new audacity of imagination.' - John Dewey"
 			},
 			{
@@ -376,7 +376,7 @@
 			},
 			{
 				"name": "Fertilizer",
-				"row": 10,
+				"row": 9,
 				"prerequisites": ["Chemistry"],
 				"quote": "'The nation that destroys its soil destroys itself.' - Franklin Delano Roosevelt"
 			}
@@ -403,13 +403,13 @@
 			},
 			{
 				"name": "Combustion",
-				"row": 6,
+				"row": 7,
 				"prerequisites": ["Railroads"],
 				"quote": "'Any man who can drive safely while kissing a pretty girl is simply not giving the kiss the attention it deserves.' - Albert Einstein"
 			}
 			{
 				"name": "Steam Power",
-				"row": 7,
+				"row": 6,
 				"uniques": ["[+1] Movement <for [Embarked] units>"],
 				"prerequisites": ["Industrialization","Scientific Theory","Railroads"],
 				"quote": "'The nations of the West hope that by means of steam communication all the world will become as one family.' - Townsend Harris"
