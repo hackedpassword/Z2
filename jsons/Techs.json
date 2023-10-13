@@ -476,7 +476,7 @@
 			},
 			{
 				"name": "Electronics",
-				"row": 4,
+				"row": 5,
 				"prerequisites": ["Replaceable Parts", "Radio"],
 				"quote": "'There's a basic principle about consumer electronics: it gets more powerful all the time and it gets cheaper all the time.' - Trip Hawkins"
 			},
@@ -515,7 +515,7 @@
 			}
 			{
 				"name": "Radar",
-				"row": 7,
+				"row": 6,
 				"prerequisites": ["Flight","Electronics"],
 				"quote": "'Vision is the art of seeing things invisible.' - Jonathan Swift"
 			},
@@ -542,13 +542,13 @@
 			},
 			{
 				"name": "Rocketry",
-				"row": 7,
+				"row": 6,
 				"prerequisites": ["Radar"],
 				"quote": "'A good rule for rocket experimenters to follow is this: always assume that it will explode.' - Astronautics Magazine, 1937"
 			},
 			{
 				"name": "Telecommunications",
-				"row": 4,
+				"row": 5,
 				"prerequisites": ["Electronics","Radar","Atomic Theory"],
 				"quote": "'The more we elaborate our means of communication, the less we communicate.' - J.B. Priestly"
 			},
@@ -569,7 +569,7 @@
 			},
 			{
 				"name": "Advanced Ballistics",
-				"row": 6,
+				"row": 7,
 				"prerequisites": ["Nuclear Fission","Rocketry","Telecommunications"],
 				"quote": "'Our scientific power has outrun our spiritual power, we have guided missiles and misguided men.' – Martin Luther King Jr."
 			},
@@ -588,7 +588,7 @@
 			},
 			{
 				"name": "Lasers",
-				"row": 5,
+				"row": 3,
 				"prerequisites": ["Nuclear Fission"],
 				"quote": "'The night is far spent, the day is at hand: let us therefore cast off the works of darkness, and let us put on the armor of light.' - The Holy Bible: Romans, 13:12"
 			}
@@ -610,7 +610,7 @@
 			{
 				"name": "Particle Physics",
 				"row": 3,
-				"prerequisites": ["Mobile Tactics","Lasers","Ecology","Advanced Ballistics"],
+				"prerequisites": ["Lasers","Ecology","Advanced Ballistics"],
 				"quote": "'Every particle of matter is attracted by or gravitates to every other particle of matter with a force inversely proportional to the squares of their distances.' - Isaac Newton"
 			},
 			{
