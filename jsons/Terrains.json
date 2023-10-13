@@ -648,8 +648,8 @@
 			"Grants [Shield] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Units ending their turn on this terrain take [-50] damage",  // healer
-			"[2] population <in capital>",
-			"[1] population <in all cities with a world wonder>",  // I want this to be "natural wonder", n/a
+			"[+2] population [in capital]",
+			"[+1] population [in all cities with a world wonder]",  // I want this to be "natural wonder", n/a
 		],
 		"turnsInto": "Grassland",
 		"impassable": false,
@@ -669,8 +669,8 @@
 			"Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Units ending their turn on this terrain take [-50] damage",  // healer
-			"[2] population <in capital>",
-			"[1] population <in all cities with a world wonder>",
+			"[+2] population [in capital]",
+			"[+1] population [in all cities with a world wonder]",
 		],
 		"turnsInto": "Plains",
 		"impassable": false,
@@ -690,8 +690,8 @@
 			"Grants [Life] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Units ending their turn on this terrain take [-50] damage",  // healer
-			"[2] population <in capital>",
-			"[1] population <in all cities with a world wonder>",
+			"[+2] population [in capital]",
+			"[+1] population [in all cities with a world wonder]",
 		],
 		"turnsInto": "Plains",
 		"impassable": false,
@@ -712,8 +712,8 @@
 			"Grants [Downward Thrust] ([Military/warrior training]) to adjacent [Land] units for the rest of the game <upon constructing [Military Academy] [in all cities]>",
 			"Tile provides yield without assigned population",
 			"Units ending their turn on this terrain take [-50] damage",  // healer
-			"[2] population <in capital>",
-			"[1] population <in all cities with a world wonder>",
+			"[+2] population [in capital]",
+			"[+1] population [in all cities with a world wonder]",
 		],
 		"turnsInto": "Desert",
 		"impassable": false,
@@ -733,8 +733,8 @@
 			"Grants [Fire] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Units ending their turn on this terrain take [-50] damage",  // healer
-			"[2] population <in capital>",
-			"[1] population <in all cities with a world wonder>",
+			"[+2] population [in capital]",
+			"[+1] population [in all cities with a world wonder]",
 		],
 		"turnsInto": "Plains",
 		"impassable": false,
@@ -756,8 +756,8 @@
 			"Grants [Upward Thrust] ([Military/warrior training]) to adjacent [Land] units for the rest of the game <upon constructing [Military Academy] [in all cities]>",
 			"Tile provides yield without assigned population",
 			"Units ending their turn on this terrain take [-50] damage",  // healer
-			"[2] population <in capital>",
-			"[1] population <in all cities with a world wonder>",
+			"[+2] population [in capital]",
+			"[+1] population [in all cities with a world wonder]",
 		],
 		"turnsInto": "Desert",
 		"impassable": false,
@@ -778,8 +778,8 @@
 			"Grants [Magic Key] ([Military/warrior training]) to adjacent [Land] units for the rest of the game <upon constructing [Military Academy] [in all cities]>",
 			"Tile provides yield without assigned population",
 			"Units ending their turn on this terrain take [-50] damage",  // healer
-			"[2] population <in capital>",
-			"[1] population <in all cities with a world wonder>",
+			"[+2] population [in capital]",
+			"[+1] population [in all cities with a world wonder]",
 		],
 		"turnsInto": "Grassland",
 		"impassable": false,
@@ -794,8 +794,8 @@
 		"uniques": [
 			"Grants [Thunder] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [25] damage",
-			"[2] population <in capital>",
-			"[1] population <in all cities with a world wonder>",
+			"[+2] population [in capital]",
+			"[+1] population [in all cities with a world wonder]",
 		],
 		"turnsInto": "Plains",
 		"impassable": false,
