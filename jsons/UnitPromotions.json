@@ -1,16 +1,96 @@
-[ // Will incorporate these/other individually as magic upgrades to towns. For now, get'm all!
+[  // Mostly representative abilities, good for now
 
-	{ // Split uniques into Combat
+	{  // Granted by Palaces
 		"name": "Adventurer",
-		"uniques": ["Can pass through impassable tiles",
-		"Can move after attacking",
-		"Can see over obstacles"]
-	}
-        { // Towns/Landmarks now grant Combat
+		"uniques": [
+			"Can pass through impassable tiles",
+			"Double movement in [Foreign Land] <when not at war>",
+		]
+	},
+        {  // Granted by generic towns and other events
 		"name": "Combat",
-		"uniques": ["Eliminates combat penalty for attacking over a river",
-		"Ranged attacks may be performed over obstacles",
-		"May attack when embarked"]
-	}
-
+		"uniques": [
+			"Eliminates combat penalty for attacking over a river",
+			"[+50]% Strength <vs cities>",
+		]
+	},
+        {
+		"name": "Shield",
+		"uniques": [
+			"[50]% Strength bonus for [All] units within [1] tiles",
+			"May withdraw before melee ([25]%)",
+		]
+	},
+        {
+		"name": "Jump",
+		"uniques": [
+			"Can see over obstacles",
+			"Can move after attacking",
+		]
+	},
+        {
+		"name": "Life",
+		"uniques": [
+			"Unit will heal every turn, even if it performs an action",
+			"All adjacent units heal [20] HP when healing",
+		]
+	},
+        {
+		"name": "Fairy",
+		"uniques": [
+			"Ignores terrain cost",
+			"Ignores Zone of Control",
+		]
+	},
+        {
+		"name": "Fire",
+		"uniques": [
+			"Ranged attacks may be performed over obstacles",
+			"May attack when embarked",
+		]
+	},
+        {
+		"name": "Reflect",
+		"uniques": [
+			"Can see invisible [All] units",
+			"No defensive terrain penalty",
+		]
+	},
+        {  // transformations, transmorphing
+		"name": "Spell",
+		"uniques": [
+			"May capture killed [Land] units <with [20]% chance>",
+			"Earn [50]% of killed [All] unit's [Cost] as [Gold]",
+		]
+	},
+        {
+		"name": "Thunder",
+		"uniques": [
+			"[+50]% Strength <vs [All] units> <when below [1] Happiness>",
+			"[+200]% Strength <vs cities> <if it hasn't used other actions yet> <during a Golden Age>",
+			"[+2] range <when above [3] [Aluminum]>", "[+80] rangedStrength <when above [80] HP>",
+		]
+	},
+        {
+		"name": "Downward Thrust",
+		"uniques": [
+			"[1] additional attacks per turn <if it hasn't used other actions yet>",
+			"Great General provides double combat bonus",
+			"[+50]% Strength <for units with [Jump]>",
+		]
+	},
+        {
+		"name": "Upward Thrust",
+		"uniques": [
+			"[50]% chance to intercept air attacks",
+			"[100]% XP gained from combat",
+		]
+	},
+        {
+		"name": "Magic Key",
+		"uniques": [
+			"May enter foreign tiles without open borders",
+			"Free Social Policy <upon conquering a city>",
+		]
+	},
 ]
