@@ -631,27 +631,11 @@
 		"impassable": false,
 		"unbuildable": false
 	},
+
+// Towns of the land //
+
 	{
-		"name": "Darunia Town", // Placeholder attributes
-		"type": "NaturalWonder",
-		"gold": 1,
-		"faith": 2,
-		"culture": 1,
-		"production": 1,
-		"movementCost": 3,
-		"occursOn": ["Desert"],
-		"uniques": [
-			// "Grants 500 Gold to the first civilization to discover it",
-			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
-			"Tile provides yield without assigned population",
-			"Units ending their turn on this terrain take [-50] damage",  // healer
-		],
-		"turnsInto": "Desert",
-		"impassable": false,
-		"unbuildable": false
-	},
-	{
-		"name": "Kasuto Town", // Placeholder attributes
+		"name": "Rauru Town", // Shield
 		"type": "NaturalWonder",
 		"gold": 1,
 		"faith": 2,
@@ -660,8 +644,8 @@
 		"movementCost": 3,
 		"occursOn": ["Grassland"],
 		"uniques": [
-			// "Grants 500 Gold to the first civilization to discover it",
-			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
+			"Grants 500 Gold to the first civilization to discover it",  // Want this to be 100G but only 500G is hardcoded
+			"Grants [Shield] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Units ending their turn on this terrain take [-50] damage",  // healer
 		],
@@ -670,7 +654,47 @@
 		"unbuildable": false
 	},
 	{
-		"name": "Mido Town", // Placeholder attributes
+		"name": "Ruto Town", // Jump
+		"type": "NaturalWonder",
+		"gold": 1,
+		"faith": 2,
+		"culture": 1,
+		"production": 1,
+		"movementCost": 3,
+		"occursOn": ["Plains"],
+		"uniques": [
+			"Grants 500 Gold to the first civilization to discover it",
+			"Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game",
+			"Tile provides yield without assigned population",
+			"Units ending their turn on this terrain take [-50] damage",  // healer
+		],
+		"turnsInto": "Plains",
+		"impassable": false,
+		"unbuildable": false
+	},
+	{
+		"name": "Saria Town", // Life
+		"type": "NaturalWonder",
+		"gold": 1,
+		"faith": 2,
+		"culture": 1,
+		"production": 1,
+		"movementCost": 3,
+		"occursOn": ["Plains"],
+		"uniques": [
+			"Grants 500 Gold to the first civilization to discover it",
+			"Grants [Life] ([Combat magic]) to adjacent [Land] units for the rest of the game",
+			"Tile provides yield without assigned population",
+			"Units ending their turn on this terrain take [-50] damage",  // healer
+			"[+2] population <in capital>",
+			"[+1] population <in all cities with a world wonder>",  // I want this to be "natural wonder", n/a
+		],
+		"turnsInto": "Plains",
+		"impassable": false,
+		"unbuildable": false
+	},
+	{
+		"name": "Mido Town", // Fairy, Downward Thrust
 		"type": "NaturalWonder",
 		"gold": 1,
 		"faith": 2,
@@ -679,17 +703,20 @@
 		"movementCost": 3,
 		"occursOn": ["Desert"],
 		"uniques": [
-			// "Grants 500 Gold to the first civilization to discover it",
-			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
+			"Grants 500 Gold to the first civilization to discover it",
+			"Grants [Fairy] ([Combat magic]) to adjacent [Land] units for the rest of the game",
+			"Grants [Downward Thrust] ([Military/warrior training]) to adjacent [Land] units for the rest of the game <upon constructing [Military Academy] [in all cities]>",
 			"Tile provides yield without assigned population",
 			"Units ending their turn on this terrain take [-50] damage",  // healer
+			"[+2] population <in capital>",
+			"[+1] population <in all cities with a world wonder>",
 		],
 		"turnsInto": "Desert",
 		"impassable": false,
 		"unbuildable": false
 	},
 	{
-		"name": "Nabooru Town", // Placeholder attributes
+		"name": "Nabooru Town", // Fire
 		"type": "NaturalWonder",
 		"gold": 1,
 		"faith": 2,
@@ -698,17 +725,42 @@
 		"movementCost": 3,
 		"occursOn": ["Plains"],
 		"uniques": [
-			// "Grants 500 Gold to the first civilization to discover it",
-			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
+			"Grants 500 Gold to the first civilization to discover it",
+			"Grants [Fire] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Units ending their turn on this terrain take [-50] damage",  // healer
+			"[+2] population <in capital>",
+			"[+1] population <in all cities with a world wonder>",
 		],
 		"turnsInto": "Plains",
 		"impassable": false,
 		"unbuildable": false
 	},
+
 	{
-		"name": "Rauru Town", // Placeholder attributes
+		"name": "Darunia Town", // Reflect, Upward Thrust
+		"type": "NaturalWonder",
+		"gold": 1,
+		"faith": 2,
+		"culture": 1,
+		"production": 1,
+		"movementCost": 3,
+		"occursOn": ["Desert"],
+		"uniques": [
+			"Grants 500 Gold to the first civilization to discover it",
+			"Grants [Reflect] ([Combat magic]) to adjacent [Land] units for the rest of the game",
+			"Grants [Upward Thrust] ([Military/warrior training]) to adjacent [Land] units for the rest of the game <upon constructing [Military Academy] [in all cities]>",
+			"Tile provides yield without assigned population",
+			"Units ending their turn on this terrain take [-50] damage",  // healer
+			"[+2] population <in capital>",
+			"[+1] population <in all cities with a world wonder>",
+		],
+		"turnsInto": "Desert",
+		"impassable": false,
+		"unbuildable": false
+	},
+	{
+		"name": "Kasuto Town", // Spell, Magic Key
 		"type": "NaturalWonder",
 		"gold": 1,
 		"faith": 2,
@@ -717,62 +769,29 @@
 		"movementCost": 3,
 		"occursOn": ["Grassland"],
 		"uniques": [
-			// "Grants 500 Gold to the first civilization to discover it",
-			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
+			"Grants 500 Gold to the first civilization to discover it",
+			"Grants [Spell] ([Combat magic]) to adjacent [Land] units for the rest of the game",
+			"Grants [Magic Key] ([Military/warrior training]) to adjacent [Land] units for the rest of the game <upon constructing [Military Academy] [in all cities]>",
 			"Tile provides yield without assigned population",
 			"Units ending their turn on this terrain take [-50] damage",  // healer
+			"[+2] population <in capital>",
+			"[+1] population <in all cities with a world wonder>",
 		],
 		"turnsInto": "Grassland",
 		"impassable": false,
 		"unbuildable": false
 	},
 	{
-		"name": "Ruto Town", // Placeholder attributes
-		"type": "NaturalWonder",
-		"gold": 1,
-		"faith": 2,
-		"culture": 1,
-		"production": 1,
-		"movementCost": 3,
-		"occursOn": ["Plains"],
-		"uniques": [
-			// "Grants 500 Gold to the first civilization to discover it",
-			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
-			"Tile provides yield without assigned population",
-			"Units ending their turn on this terrain take [-50] damage",  // healer
-		],
-		"turnsInto": "Plains",
-		"impassable": false,
-		"unbuildable": false
-	},
-	{
-		"name": "Saria Town", // Placeholder attributes
-		"type": "NaturalWonder",
-		"gold": 1,
-		"faith": 2,
-		"culture": 1,
-		"production": 1,
-		"movementCost": 3,
-		"occursOn": ["Plains"],
-		"uniques": [
-			// "Grants 500 Gold to the first civilization to discover it",
-			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
-			"Tile provides yield without assigned population",
-			"Units ending their turn on this terrain take [-50] damage",  // healer
-		],
-		"turnsInto": "Plains",
-		"impassable": false,
-		"unbuildable": false
-	},
-	{
-		"name": "Kasuto Ruins", // Placeholder attributes
+		"name": "Kasuto Ruins", // Thunder
 		"type": "NaturalWonder",
 		"faith": 1,
 		"movementCost": 4,
 		"occursOn": ["Plains"],
 		"uniques": [
-			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
+			"Grants [Thunder] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [25] damage",
+			"[+2] population <in capital>",
+			"[+1] population <in all cities with a world wonder>",
 		],
 		"turnsInto": "Plains",
 		"impassable": false,
