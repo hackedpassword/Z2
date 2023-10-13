@@ -431,7 +431,7 @@
 		"techs": [
 			{
 				"name": "Refrigeration",
-				"row": 2,
+				"row": 3,
 				"prerequisites": ["Biology", "Electricity"], //todo: offshore platform should need this
 				"quote": "'And homeless near a thousand homes I stood, and near a thousand tables pined and wanted food.' - William Wordsworth"
 			},
@@ -449,7 +449,7 @@
 			},
 			{
 				"name": "Flight",
-				"row": 8,
+				"row": 7,
 				"prerequisites": ["Steam Power","Combustion"],
 				"quote": "'Aeronautics was neither an industry nor a science. It was a miracle.' - Igor Sikorsky"
 			},
@@ -471,7 +471,7 @@
 			{
 				"name": "Plastics",
 				"row": 3,
-				"prerequisites": ["Radio","Replaceable Parts"],
+				"prerequisites": ["Refrigeration","Replaceable Parts"],
 				"quote": "'Ben, I want to say one word to you, just one word: plastics.' - Buck Henry and Calder Willingham, The Graduate"
 			},
 			{
@@ -482,7 +482,7 @@
 			},
 			{
 				"name": "Combined Arms",
-				"row": 7,
+				"row": 9,
 				"prerequisites": ["Ballistics","Replaceable Parts"],
 				"quote": "'The root of the evil is not the construction of new, more dreadful weapons. It is the spirit of conquest.' - Ludwig von Mises"
 			}
@@ -504,19 +504,19 @@
 			{
 				"name": "Atomic Theory",
 				"row": 5,
-				"prerequisites": ["Electronics","Ballistics"],
+				"prerequisites": ["Electronics","Radio"],
 				"quote": "'The unleashed power of the atom has changed everything save our modes of thinking, and we thus drift toward unparalleled catastrophes.' - Albert Einstein"
 			},
 			{
 				"name": "Computers",
-				"row": 8,
+				"row": 9,
 				"prerequisites": ["Electronics"],
 				"quote": "'Computers are like Old Testament gods: lots of rules and no mercy.' - Joseph Campbell"
 			}
 			{
 				"name": "Radar",
 				"row": 6,
-				"prerequisites": ["Ballistics","Electronics"],
+				"prerequisites": ["Flight","Electronics"],
 				"quote": "'Vision is the art of seeing things invisible.' - Jonathan Swift"
 			},
 		]
@@ -575,14 +575,14 @@
 			},
 			{
 				"name": "Satellites",
-				"row": 8,
+				"row": 9,
 				"prerequisites": ["Rocketry","Computers"],
 				"uniques": ["Reveals the entire map"],
 				"quote": "'Now, somehow, in some new way, the sky seemed almost alien.' - Lyndon B. Johnson"
 			},
 			{
 				"name": "Robotics",
-				"row": 9,
+				"row": 10,
 				"prerequisites": ["Computers"],
 				"quote": "'1. A robot may not injure a human being or, through inaction, allow a human being to come to harm. 2. A robot must obey any orders given to it by human beings, except when such orders would conflict with the First Law. 3. A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.' - Isaac Asimov"
 			},
