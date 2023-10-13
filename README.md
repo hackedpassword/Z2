@@ -3,6 +3,9 @@
 
 Looking for some NES nostalgia? With a Civ V twist? You’ve come to the right place.
 
+![](https://raw.githubusercontent.com/hackedpassword/Z2/main/preview.png)
+
+
 I’m a huge fan of the original Zelda 2, up to and including no-lives-lost vanila game completion. I run my own speedrun params for a currently ~27 min completion (w/o crystal exploit). I'll post a recording sometime.
 
 ### Z2 has some notable achievements:
