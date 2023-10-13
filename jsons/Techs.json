@@ -470,7 +470,7 @@
 		"techs": [
 			{
 				"name": "Plastics",
-				"row": 3,
+				"row": 2,
 				"prerequisites": ["Refrigeration","Replaceable Parts"],
 				"quote": "'Ben, I want to say one word to you, just one word: plastics.' - Buck Henry and Calder Willingham, The Graduate"
 			},
@@ -503,19 +503,19 @@
 			},
 			{
 				"name": "Atomic Theory",
-				"row": 5,
+				"row": 4,
 				"prerequisites": ["Electronics","Radio"],
 				"quote": "'The unleashed power of the atom has changed everything save our modes of thinking, and we thus drift toward unparalleled catastrophes.' - Albert Einstein"
 			},
 			{
 				"name": "Computers",
 				"row": 9,
-				"prerequisites": ["Electronics"],
+				"prerequisites": ["Electronics","Combined Arms"],
 				"quote": "'Computers are like Old Testament gods: lots of rules and no mercy.' - Joseph Campbell"
 			}
 			{
 				"name": "Radar",
-				"row": 6,
+				"row": 8,
 				"prerequisites": ["Flight","Electronics"],
 				"quote": "'Vision is the art of seeing things invisible.' - Jonathan Swift"
 			},
@@ -530,13 +530,13 @@
 		"techs": [
 			{
 				"name": "Ecology",
-				"row": 2,
+				"row": 1,
 				"prerequisites": ["Atomic Theory","Pharmaceuticals"],
 				"quote": "'Only within the moment of time represented by the present century has one species, man, acquired significant power to alter the nature of his world.' - Rachel Carson"
 			},
 			{
 				"name": "Nuclear Fission",
-				"row": 5,
+				"row": 4,
 				"prerequisites": ["Atomic Theory","Radar"],
 				"quote": "'I am become Death, the destroyer of worlds.' - J. Robert Oppenheimer"
 			},
@@ -545,6 +545,12 @@
 				"row": 8,
 				"prerequisites": ["Radar"],
 				"quote": "'A good rule for rocket experimenters to follow is this: always assume that it will explode.' - Astronautics Magazine, 1937"
+			},
+			{
+				"name": "Telecommunications",
+				"row": 6,
+				"prerequisites": ["Ecology"],
+				"quote": "'The more we elaborate our means of communication, the less we communicate.' - J.B. Priestly"
 			},
 		]
 	},
@@ -555,12 +561,6 @@
 		"buildingCost": 750,
 		"wonderCost": 1250,
 		"techs": [
-			{
-				"name": "Telecommunications",
-				"row": 2,
-				"prerequisites": ["Ecology"],
-				"quote": "'The more we elaborate our means of communication, the less we communicate.' - J.B. Priestly"
-			},
 			{
 				"name": "Mobile Tactics",
 				"row": 3,
@@ -603,8 +603,8 @@
 		"techs": [
 			{
 				"name": "Globalization",
-				"row": 2,
-				"prerequisites": ["Telecommunications"],
+				"row": 1,
+				"prerequisites": ["Ecology"],
 				"quote": "'The new electronic interdependence recreates the world in the image of a global village.' - Marshall McLuhan"
 			},
 			{
