@@ -1,0 +1,24 @@
+[
+	{  // Slides between Renaissance and Industrial eras.
+	   // Created due to an obviously missing time period with adjacent techs squeezed into misrepresented eras. Prob needs more work, good atm.
+	        "name": "Pioneer era",
+	        "researchAgreementCost": 275,
+	        "startingSettlerCount": 3,
+	        "startingWorkerCount": 2,
+	        "startingMilitaryUnitCount": 4,
+	        "startingMilitaryUnit": "Musketman",
+	        "startingGold": 75,
+	        "startingCulture": 350,
+	        "settlerPopulation": 3,
+	        "settlerBuildings": ["Monument","Granary","Lighthouse","Workshop","Barracks"],
+	        // Changing the below is too involved atm, will let this float until next era
+	        // "startingObsoleteWonders": ["Temple of Artemis", "Stonehenge", "The Great Library", "Mausoleum of Halicarnassus", "The Pyramids", "Statue of Zeus",
+	        //    "The Great Lighthouse", "Hanging Gardens", "Terracotta Army", "The Oracle", "Petra", "Great Wall", "Colossus"],
+	        "baseUnitBuyCost": 350,
+	        "embarkDefense": 9,
+	        "startPercent": 42,
+	        "citySound": "cityRenaissance",
+	        "uniques": ["Every major Civilization gains a spy once a civilization enters this era"],
+	        "iconRGB": [104, 58, 183]
+	},
+]
