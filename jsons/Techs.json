@@ -431,7 +431,7 @@
 		"techs": [
 			{
 				"name": "Refrigeration",
-				"row": 3,
+				"row": 1,
 				"prerequisites": ["Biology", "Electricity"], //todo: offshore platform should need this
 				"quote": "'And homeless near a thousand homes I stood, and near a thousand tables pined and wanted food.' - William Wordsworth"
 			},
@@ -503,13 +503,13 @@
 			},
 			{
 				"name": "Atomic Theory",
-				"row": 4,
+				"row": 3,
 				"prerequisites": ["Electronics","Radio"],
 				"quote": "'The unleashed power of the atom has changed everything save our modes of thinking, and we thus drift toward unparalleled catastrophes.' - Albert Einstein"
 			},
 			{
 				"name": "Computers",
-				"row": 8,
+				"row": 9,
 				"prerequisites": ["Electronics","Combined Arms"],
 				"quote": "'Computers are like Old Testament gods: lots of rules and no mercy.' - Joseph Campbell"
 			}
@@ -542,13 +542,13 @@
 			},
 			{
 				"name": "Rocketry",
-				"row": 8,
+				"row": 9,
 				"prerequisites": ["Radar"],
 				"quote": "'A good rule for rocket experimenters to follow is this: always assume that it will explode.' - Astronautics Magazine, 1937"
 			},
 			{
 				"name": "Telecommunications",
-				"row": 7,
+				"row": 6,
 				"prerequisites": ["Electronics","Radar","Atomic Theory"],
 				"quote": "'The more we elaborate our means of communication, the less we communicate.' - J.B. Priestly"
 			},
@@ -582,7 +582,7 @@
 			},
 			{
 				"name": "Robotics",
-				"row": 10,
+				"row": 9,
 				"prerequisites": ["Computers"],
 				"quote": "'1. A robot may not injure a human being or, through inaction, allow a human being to come to harm. 2. A robot must obey any orders given to it by human beings, except when such orders would conflict with the First Law. 3. A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.' - Isaac Asimov"
 			},
@@ -609,7 +609,7 @@
 			},
 			{
 				"name": "Particle Physics",
-				"row": 3,
+				"row": 2,
 				"prerequisites": ["Mobile Tactics","Lasers","Ecology","Advanced Ballistics"],
 				"quote": "'Every particle of matter is attracted by or gravitates to every other particle of matter with a force inversely proportional to the squares of their distances.' - Isaac Newton"
 			},
@@ -621,14 +621,14 @@
 			},
 			{
 				"name": "Nanotechnology",
-				"row": 7,
-				"prerequisites": ["Robotics"],
+				"row": 5,
+				"prerequisites": ["Robotics","Satellites","Robotics"],
 				"quote": "'The impact of nanotechnology is expected to exceed the impact that the electronics revolution has had on our lives.' - Richard Schwartz"
 			},
 			{
 				"name": "Stealth",
-				"row": 8,
-				"prerequisites": ["Robotics", "Lasers"],
+				"row": 7,
+				"prerequisites": ["Robotics", "Lasers","Satellites"],
 				"quote": "'Be extremely subtle, even to the point of formlessness, be extremely mysterious, even to the point of soundlessness. Thereby you can be the director of the opponent's fate.' - Sun Tzu"
 			}
 		]
