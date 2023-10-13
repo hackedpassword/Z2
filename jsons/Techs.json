@@ -509,13 +509,13 @@
 			},
 			{
 				"name": "Computers",
-				"row": 9,
+				"row": 8,
 				"prerequisites": ["Electronics","Combined Arms"],
 				"quote": "'Computers are like Old Testament gods: lots of rules and no mercy.' - Joseph Campbell"
 			}
 			{
 				"name": "Radar",
-				"row": 8,
+				"row": 7,
 				"prerequisites": ["Flight","Electronics"],
 				"quote": "'Vision is the art of seeing things invisible.' - Jonathan Swift"
 			},
@@ -548,8 +548,8 @@
 			},
 			{
 				"name": "Telecommunications",
-				"row": 6,
-				"prerequisites": ["Ecology"],
+				"row": 7,
+				"prerequisites": ["Electronics","Radar","Atomic Theory"],
 				"quote": "'The more we elaborate our means of communication, the less we communicate.' - J.B. Priestly"
 			},
 		]
@@ -575,8 +575,8 @@
 			},
 			{
 				"name": "Satellites",
-				"row": 9,
-				"prerequisites": ["Rocketry","Computers"],
+				"row": 7,
+				"prerequisites": ["Rocketry","Computers","Telecommunications"],
 				"uniques": ["Reveals the entire map"],
 				"quote": "'Now, somehow, in some new way, the sky seemed almost alien.' - Lyndon B. Johnson"
 			},
@@ -610,7 +610,7 @@
 			{
 				"name": "Particle Physics",
 				"row": 3,
-				"prerequisites": ["Telecommunications","Mobile Tactics","Advanced Ballistics"],
+				"prerequisites": ["Mobile Tactics","Lasers","Ecology","Advanced Ballistics"],
 				"quote": "'Every particle of matter is attracted by or gravitates to every other particle of matter with a force inversely proportional to the squares of their distances.' - Isaac Newton"
 			},
 			{
