@@ -68,7 +68,7 @@
 		"uniques": [
 			"[+50]% Strength <vs [All] units> <when below [1] Happiness>",
 			"[+200]% Strength <vs cities> <if it hasn't used other actions yet> <during a Golden Age>",
-			"[+2] range <when above [3] [Aluminum]>", "[+80] rangedStrength <when above [80] HP>",
+			"[2] range <when above [3] [Aluminum]>", "[80] rangedStrength <when above [80] HP>",
 		]
 	},
         {
