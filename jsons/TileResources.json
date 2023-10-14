@@ -34,7 +34,7 @@
 	{  // Point/exp bag
 		"name": "Coal",
 		"resourceType": "Strategic",
-		"revealedBy": "Industrialization",
+		"revealedBy": "Steam Power",
 		"terrainsCanBeFoundOn": ["Grassland","Plains","Hill","Forest","Marsh","Cave","Cavern"],
 		"production": 1,
 		"improvement": "Mine",
