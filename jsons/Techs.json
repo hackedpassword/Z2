@@ -238,8 +238,8 @@
 			},
 			{
 				"name": "Chivalry",
-				"row": 6,
-				"prerequisites": ["Civil Service","Guilds"],
+				"row": 4,
+				"prerequisites": ["Civil Service","Theology"],
 				"uniques": ["Enables Defensive Pacts"],
 				"quote": "'Whoso pulleth out this sword of this stone and anvil, is rightwise king born of all England.' - Malory"
 			},
@@ -266,13 +266,6 @@
 		"wonderCost": 500,
 		"techs": [
 			{
-				"name": "Astronomy",
-				"row": 1,
-				"uniques": ["[+1] Movement <for [Embarked] units>","Enables [Embarked] units to enter ocean tiles"],
-				"prerequisites": ["Compass","Education"],
-				"quote": "'Joyfully to the breeze royal Odysseus spread his sail, and with his rudder skillfully he steered.' - Homer"
-			},
-			{
 				"name": "Acoustics",
 				"row": 2,
 				"prerequisites": ["Theology"],
@@ -281,13 +274,13 @@
 			{
 				"name": "Banking",
 				"row": 5,
-				"prerequisites": ["Chivalry", "Education"],
+				"prerequisites": ["Guilds", "Education"],
 				"quote": "'Happiness: a good bank account, a good cook and a good digestion' - Jean Jacques Rousseau"
 			},
 			{
 				"name": "Printing Press",
 				"row": 7,
-				"prerequisites": ["Machinery"],
+				"prerequisites": ["Machinery","Guilds"],
 				"quote": "'It is a newspaper's duty to print the news and raise hell.' - The Chicago Times"
 			},
 			{
@@ -313,10 +306,11 @@
 		"wonderCost": 625,
 		"techs": [
 			{
-				"name": "Navigation",
+				"name": "Astronomy",
 				"row": 1,
-				"prerequisites": ["Astronomy"],
-				"quote": "'The winds and the waves are always on the side of the ablest navigators.' - Edward Gibbon"
+				"uniques": ["[+1] Movement <for [Embarked] units>","Enables [Embarked] units to enter ocean tiles"],
+				"prerequisites": ["Compass","Education"],
+				"quote": "'Joyfully to the breeze royal Odysseus spread his sail, and with his rudder skillfully he steered.' - Homer"
 			},
 			{
 				"name": "Economics",
@@ -340,6 +334,12 @@
 		"wonderCost": 650,
 		"techs": [
 			{
+				"name": "Navigation",
+				"row": 1,
+				"prerequisites": ["Astronomy"],
+				"quote": "'The winds and the waves are always on the side of the ablest navigators.' - Edward Gibbon"
+			},
+			{
 				"name": "Scientific Theory",
 				"row": 7,
 				"prerequisites": ["Chemistry","Printing Press"],
@@ -348,7 +348,7 @@
 			{
 				"name": "Gunpowder",
 				"row": 9,
-				"prerequisites": ["Chemistry","Physics"],
+				"prerequisites": ["Chemistry"],
 				"quote": "'The day when two army corps can annihilate each other in one second, all civilized nations, it is to be hoped, will recoil from war and discharge their troops.' - Alfred Nobel"
 			}
 			{
@@ -500,13 +500,13 @@
 			},
 			{
 				"name": "Electronics",
-				"row": 5,
+				"row": 4,
 				"prerequisites": ["Replaceable Parts", "Radio"],
 				"quote": "'There's a basic principle about consumer electronics: it gets more powerful all the time and it gets cheaper all the time.' - Trip Hawkins"
 			},
 			{
 				"name": "Combined Arms",
-				"row": 9,
+				"row": 7,
 				"prerequisites": ["Ballistics","Replaceable Parts","Combustion"],
 				"quote": "'The root of the evil is not the construction of new, more dreadful weapons. It is the spirit of conquest.' - Ludwig von Mises"
 			}
@@ -540,7 +540,7 @@
 			{
 				"name": "Radar",
 				"row": 6,
-				"prerequisites": ["Flight","Electronics"],
+				"prerequisites": ["Flight"],
 				"quote": "'Vision is the art of seeing things invisible.' - Jonathan Swift"
 			},
 		]
