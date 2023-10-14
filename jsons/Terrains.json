@@ -57,6 +57,7 @@
 		"RGB": [102, 102, 102],
 		"uniques": ["Rough terrain",
 		        "Has an elevation of [2] for visibility calculations",
+			"Blocks line-of-sight from tiles at same elevation",
 		        "Units ending their turn on this terrain take [50] damage <with [80]% chance>",  // get in get out
 			"Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
 //			"[5]% Chance to be destroyed by nukes",
