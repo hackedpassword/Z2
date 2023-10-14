@@ -161,7 +161,7 @@
 			},
 			{
 				"name": "Engineering",
-				"row": 9,
+				"row": 8,
 				"prerequisites": ["Mathematics","Construction"],
 				"uniques": ["Roads connect tiles across rivers"],
 				"quote": "'Instrumental or mechanical science is the noblest and, above all others, the most useful.' - Leonardo da Vinci"
@@ -210,7 +210,7 @@
 			{
 				"name": "Physics",
 				"row": 8,
-				"prerequisites": ["Metal Casting"],
+				"prerequisites": ["Engineering"],
 				"quote": "'Measure what is measurable, and make measurable what is not so.' - Galileo Galilei"
 			},
 		]
@@ -297,11 +297,12 @@
 				"quote": "'There never was a good knife made of bad steel.' - Benjamin Franklin"
 			},
 			{
-				"name": "Chemistry",
+				"name": "Education",
 				"row": 8,
-				"prerequisites": ["Physics","Steel"],
-				"quote": "'Wherever we look, the work of the chemist has raised the level of our civilization and has increased the productive capacity of the nation.' - Calvin Coolidge"
-			}
+				"prerequisites": ["Physics"],
+				"uniques": ["Enables conversion of city production to [Science]","Enables Research agreements"],
+				"quote": "'Education is the best provision for old age.' - Aristotle"
+			},
 		]
 	},
 	{
@@ -323,6 +324,12 @@
 				"prerequisites": ["Banking","Printing Press"],
 				"quote": "'Compound interest is the most powerful force in the universe.' - Albert Einstein"
 			},
+			{
+				"name": "Chemistry",
+				"row": 8,
+				"prerequisites": ["Education"],
+				"quote": "'Wherever we look, the work of the chemist has raised the level of our civilization and has increased the productive capacity of the nation.' - Calvin Coolidge"
+			}
 		]
 	},
 	{
@@ -473,7 +480,7 @@
 			{
 				"name": "Ballistics",
 				"row": 9,
-				"prerequisites": ["Dynamite"],
+				"prerequisites": ["Dynamite","Military Science"],
 				"quote": "'Men, like bullets, go farthest when they are smoothest.' - Jean Paul"
 			},
 		]
@@ -500,7 +507,7 @@
 			{
 				"name": "Combined Arms",
 				"row": 9,
-				"prerequisites": ["Ballistics","Replaceable Parts"],
+				"prerequisites": ["Ballistics","Replaceable Parts","Combustion"],
 				"quote": "'The root of the evil is not the construction of new, more dreadful weapons. It is the spirit of conquest.' - Ludwig von Mises"
 			}
 		]
