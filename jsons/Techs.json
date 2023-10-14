@@ -486,8 +486,8 @@
 			},
 			{
 				"name": "Replaceable Parts",
-				"row": 5,
-				"prerequisites": ["Electronics","Combustion","Railroads"],
+				"row": 6,
+				"prerequisites": ["Electronics","Combustion"],
 				"quote": "'Nothing is particularly hard if you divide it into small jobs.' - Henry Ford"
 			},
 
@@ -507,8 +507,14 @@
 				"quote": "'Ben, I want to say one word to you, just one word: plastics.' - Buck Henry and Calder Willingham, The Graduate"
 			},
 			{
+				"name": "Radar",
+				"row": 5,
+				"prerequisites": ["Radio"],
+				"quote": "'Vision is the art of seeing things invisible.' - Jonathan Swift"
+			},
+			{
 				"name": "Combined Arms",
-				"row": 7,
+				"row": 9,
 				"prerequisites": ["Ballistics","Replaceable Parts","Radio"],
 				"quote": "'The root of the evil is not the construction of new, more dreadful weapons. It is the spirit of conquest.' - Ludwig von Mises"
 			}
@@ -530,7 +536,7 @@
 			{
 				"name": "Atomic Theory",
 				"row": 3,
-				"prerequisites": ["Radio"],
+				"prerequisites": ["Radar"],
 				"quote": "'The unleashed power of the atom has changed everything save our modes of thinking, and we thus drift toward unparalleled catastrophes.' - Albert Einstein"
 			},
 			{
@@ -539,12 +545,6 @@
 				"prerequisites": ["Combined Arms"],
 				"quote": "'Computers are like Old Testament gods: lots of rules and no mercy.' - Joseph Campbell"
 			}
-			{
-				"name": "Radar",
-				"row": 5,
-				"prerequisites": ["Radio","Combined Arms"],
-				"quote": "'Vision is the art of seeing things invisible.' - Jonathan Swift"
-			},
 		]
 	},
 	{
@@ -595,7 +595,7 @@
 			},
 			{
 				"name": "Advanced Ballistics",
-				"row": 5,
+				"row": 4,
 				"prerequisites": ["Nuclear Fission","Rocketry","Telecommunications"],
 				"quote": "'Our scientific power has outrun our spiritual power, we have guided missiles and misguided men.' – Martin Luther King Jr."
 			},
@@ -620,7 +620,7 @@
 			},
 			{
 				"name": "Lasers",
-				"row": 4,
+				"row": 3,
 				"prerequisites": ["Nuclear Fission"],
 				"quote": "'The night is far spent, the day is at hand: let us therefore cast off the works of darkness, and let us put on the armor of light.' - The Holy Bible: Romans, 13:12"
 			}
