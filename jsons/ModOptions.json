@@ -5,11 +5,11 @@
 	"author":"hackedpassword",
 	"modSize":901,
 	"topics":["unciv-mod","unciv-mod-expansions","unciv-mod-fun","unciv-mod-maps"],
-	// "constants":{"unitUpgradeCost":{}},  // undocumented?
+	// "constants":{"unitUpgradeCost":{}},
 	"uniques":[
 		"Allow raze capital", "Allow raze holy city",  // All cities can be destroyed
 	],
-	"techsToRemove": ["Rifling","Industrialization"],
+	"techsToRemove": ["Rifling","Industrialization","Electricity"],  // Fixes to move resources?
 }
 
 
