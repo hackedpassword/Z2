@@ -494,7 +494,7 @@
 		"techs": [
 			{
 				"name": "Plastics",
-				"row": 2,
+				"row": 1,
 				"prerequisites": ["Refrigeration","Replaceable Parts"],
 				"quote": "'Ben, I want to say one word to you, just one word: plastics.' - Buck Henry and Calder Willingham, The Graduate"
 			},
@@ -506,7 +506,7 @@
 			},
 			{
 				"name": "Combined Arms",
-				"row": 8,
+				"row": 5,
 				"prerequisites": ["Ballistics","Replaceable Parts","Combustion"],
 				"quote": "'The root of the evil is not the construction of new, more dreadful weapons. It is the spirit of conquest.' - Ludwig von Mises"
 			}
@@ -528,19 +528,19 @@
 			{
 				"name": "Atomic Theory",
 				"row": 3,
-				"prerequisites": ["Electronics"],
+				"prerequisites": ["Radio"],
 				"quote": "'The unleashed power of the atom has changed everything save our modes of thinking, and we thus drift toward unparalleled catastrophes.' - Albert Einstein"
 			},
 			{
 				"name": "Computers",
-				"row": 9,
+				"row": 6,
 				"prerequisites": ["Electronics","Combined Arms"],
 				"quote": "'Computers are like Old Testament gods: lots of rules and no mercy.' - Joseph Campbell"
 			}
 			{
 				"name": "Radar",
 				"row": 5,
-				"prerequisites": ["Radio"],
+				"prerequisites": ["Radio","Combined Arms"],
 				"quote": "'Vision is the art of seeing things invisible.' - Jonathan Swift"
 			},
 		]
@@ -566,14 +566,14 @@
 			},
 			{
 				"name": "Rocketry",
-				"row": 6,
+				"row": 5,
 				"prerequisites": ["Radar"],
 				"quote": "'A good rule for rocket experimenters to follow is this: always assume that it will explode.' - Astronautics Magazine, 1937"
 			},
 			{
 				"name": "Telecommunications",
-				"row": 5,
-				"prerequisites": ["Radar","Atomic Theory"],
+				"row": 6,
+				"prerequisites": ["Radar","Computers"],
 				"quote": "'The more we elaborate our means of communication, the less we communicate.' - J.B. Priestly"
 			},
 		]
