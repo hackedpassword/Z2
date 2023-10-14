@@ -52,7 +52,7 @@
 	{  // Magic potion
 		"name": "Aluminum",
 		"resourceType": "Strategic",
-		"revealedBy": "Electricity",
+		"revealedBy": "Replaceable Parts",
 		"terrainsCanBeFoundOn": ["Desert","Tundra","Hill","Snow","Jungle","Cave","Cavern"],
 		"production": 1,
 		"improvement": "Mine",
