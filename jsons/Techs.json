@@ -267,7 +267,7 @@
 			{
 				"name": "Printing Press",
 				"row": 6,
-				"prerequisites": ["Machinery","Guilds"],
+				"prerequisites": ["Machinery","Guilds","Civil Service"],
 				"quote": "'It is a newspaper's duty to print the news and raise hell.' - The Chicago Times"
 			},
 			{
@@ -486,7 +486,7 @@
 			},
 			{
 				"name": "Replaceable Parts",
-				"row": 7,
+				"row": 5,
 				"prerequisites": ["Electronics","Combustion"],
 				"quote": "'Nothing is particularly hard if you divide it into small jobs.' - Henry Ford"
 			},
@@ -509,7 +509,7 @@
 			{
 				"name": "Radar",
 				"row": 5,
-				"prerequisites": ["Radio"],
+				"prerequisites": ["Radio","Replaceable Parts"],
 				"quote": "'Vision is the art of seeing things invisible.' - Jonathan Swift"
 			},
 			{
@@ -601,7 +601,7 @@
 			},
 			{
 				"name": "Mobile Tactics",
-				"row": 8,
+				"row": 7,
 				"prerequisites": ["Telecommunications","Nuclear Fission"],
 				"quote": "'All men can see these tactics whereby I conquer, but what none can see is the strategy out of which victory is evolved.' - Sun Tzu"
 			},
