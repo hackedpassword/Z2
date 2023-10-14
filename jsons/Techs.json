@@ -373,7 +373,7 @@
 			}
 			{
 				"name": "Steam Power",
-				"row": 7,
+				"row": 6,
 				"uniques": ["[+1] Movement <for [Embarked] units>"],
 				"prerequisites": ["Scientific Theory"],
 				"quote": "'The nations of the West hope that by means of steam communication all the world will become as one family.' - Townsend Harris"
@@ -453,7 +453,7 @@
 			{
 				"name": "Combustion",
 				"row": 5,
-				"prerequisites": ["Flight","Industrialization"],
+				"prerequisites": ["Flight","Industrialization","Railroads"],
 				"quote": "'Any man who can drive safely while kissing a pretty girl is simply not giving the kiss the attention it deserves.' - Albert Einstein"
 			}
 			{
@@ -541,7 +541,7 @@
 			},
 			{
 				"name": "Computers",
-				"row": 8,
+				"row": 9,
 				"prerequisites": ["Combined Arms","Radar"],
 				"quote": "'Computers are like Old Testament gods: lots of rules and no mercy.' - Joseph Campbell"
 			}
@@ -607,7 +607,7 @@
 			},
 			{
 				"name": "Satellites",
-				"row": 7,
+				"row": 6,
 				"prerequisites": ["Rocketry","Telecommunications"],
 				"uniques": ["Reveals the entire map"],
 				"quote": "'Now, somehow, in some new way, the sky seemed almost alien.' - Lyndon B. Johnson"
@@ -659,7 +659,7 @@
 			},
 			{
 				"name": "Stealth",
-				"row": 7,
+				"row": 6,
 				"prerequisites": ["Mobile Tactics","Lasers","Satellites"],
 				"quote": "'Be extremely subtle, even to the point of formlessness, be extremely mysterious, even to the point of soundlessness. Thereby you can be the director of the opponent's fate.' - Sun Tzu"
 			}
