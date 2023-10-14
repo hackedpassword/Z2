@@ -373,7 +373,7 @@
 			}
 			{
 				"name": "Steam Power",
-				"row": 6,
+				"row": 5,
 				"uniques": ["[+1] Movement <for [Embarked] units>"],
 				"prerequisites": ["Scientific Theory","Economics"],
 				"quote": "'The nations of the West hope that by means of steam communication all the world will become as one family.' - Townsend Harris"
@@ -392,6 +392,12 @@
 				"row": 1,
 				"prerequisites": ["Navigation","Architecture"],
 				"quote": "'Those who cannot remember the past are condemned to repeat it.' - George Santayana"
+			},
+			{
+				"name": "Electricity",
+				"row": 3,
+				"prerequisites": ["Steam Power"],
+				"quote": "'Is it a fact - or have I dreamt it - that, by means of electricity, the world of matter has become a great nerve, vibrating thousands of miles in a breathless point of time?' - Nathaniel Hawthorne"
 			},
 			{
 				"name": "Industrialization",
@@ -433,14 +439,8 @@
 				"quote": "'If the brain were so simple we could understand it, we would be so simple we couldn't.' - Lyall Watson"
 			},
 			{
-				"name": "Electricity",
-				"row": 3,
-				"prerequisites": ["Scientific Theory","Industrialization"],
-				"quote": "'Is it a fact - or have I dreamt it - that, by means of electricity, the world of matter has become a great nerve, vibrating thousands of miles in a breathless point of time?' - Nathaniel Hawthorne"
-			},
-			{
 				"name": "Combustion",
-				"row": 5,
+				"row": 6,
 				"prerequisites": ["Flight","Industrialization"],
 				"quote": "'Any man who can drive safely while kissing a pretty girl is simply not giving the kiss the attention it deserves.' - Albert Einstein"
 			}
@@ -473,7 +473,7 @@
 			},
 			{
 				"name": "Replaceable Parts",
-				"row": 5,
+				"row": 6,
 				"prerequisites": ["Electricity","Combustion"],
 				"quote": "'Nothing is particularly hard if you divide it into small jobs.' - Henry Ford"
 			},
@@ -506,7 +506,7 @@
 			},
 			{
 				"name": "Combined Arms",
-				"row": 7,
+				"row": 8,
 				"prerequisites": ["Ballistics","Replaceable Parts","Combustion"],
 				"quote": "'The root of the evil is not the construction of new, more dreadful weapons. It is the spirit of conquest.' - Ludwig von Mises"
 			}
