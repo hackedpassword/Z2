@@ -439,6 +439,12 @@
 				"quote": "'If the brain were so simple we could understand it, we would be so simple we couldn't.' - Lyall Watson"
 			},
 			{
+				"name": "Electronics",
+				"row": 3,
+				"prerequisites": ["Replaceable Parts", "Electricity"],
+				"quote": "'There's a basic principle about consumer electronics: it gets more powerful all the time and it gets cheaper all the time.' - Trip Hawkins"
+			},
+			{
 				"name": "Combustion",
 				"row": 6,
 				"prerequisites": ["Flight","Industrialization"],
@@ -462,19 +468,13 @@
 			{
 				"name": "Refrigeration",
 				"row": 1,
-				"prerequisites": ["Biology", "Electricity"], //todo: offshore platform should need this
+				"prerequisites": ["Biology", "Electronics"], //todo: offshore platform should need this
 				"quote": "'And homeless near a thousand homes I stood, and near a thousand tables pined and wanted food.' - William Wordsworth"
-			},
-			{
-				"name": "Electronics",
-				"row": 3,
-				"prerequisites": ["Replaceable Parts", "Electricity"],
-				"quote": "'There's a basic principle about consumer electronics: it gets more powerful all the time and it gets cheaper all the time.' - Trip Hawkins"
 			},
 			{
 				"name": "Replaceable Parts",
 				"row": 6,
-				"prerequisites": ["Electricity","Combustion"],
+				"prerequisites": ["Electronics","Combustion"],
 				"quote": "'Nothing is particularly hard if you divide it into small jobs.' - Henry Ford"
 			},
 			{
@@ -500,13 +500,13 @@
 			},
 			{
 				"name": "Radio",
-				"row": 3,
+				"row": 4,
 				"prerequisites": ["Electronics"],
 				"quote": "'The whole country was tied together by radio. We all experienced the same heroes and comedians and singers. They were giants.' - Woody Allen"
 			},
 			{
 				"name": "Combined Arms",
-				"row": 5,
+				"row": 6,
 				"prerequisites": ["Ballistics","Replaceable Parts","Combustion"],
 				"quote": "'The root of the evil is not the construction of new, more dreadful weapons. It is the spirit of conquest.' - Ludwig von Mises"
 			}
