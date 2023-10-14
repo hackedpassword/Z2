@@ -466,10 +466,10 @@
 				"quote": "'And homeless near a thousand homes I stood, and near a thousand tables pined and wanted food.' - William Wordsworth"
 			},
 			{
-				"name": "Radio",
+				"name": "Electronics",
 				"row": 3,
-				"prerequisites": ["Electricity"],
-				"quote": "'The whole country was tied together by radio. We all experienced the same heroes and comedians and singers. They were giants.' - Woody Allen"
+				"prerequisites": ["Replaceable Parts", "Electricity"],
+				"quote": "'There's a basic principle about consumer electronics: it gets more powerful all the time and it gets cheaper all the time.' - Trip Hawkins"
 			},
 			{
 				"name": "Replaceable Parts",
@@ -499,10 +499,10 @@
 				"quote": "'Ben, I want to say one word to you, just one word: plastics.' - Buck Henry and Calder Willingham, The Graduate"
 			},
 			{
-				"name": "Electronics",
-				"row": 4,
-				"prerequisites": ["Replaceable Parts", "Radio"],
-				"quote": "'There's a basic principle about consumer electronics: it gets more powerful all the time and it gets cheaper all the time.' - Trip Hawkins"
+				"name": "Radio",
+				"row": 3,
+				"prerequisites": ["Electronics"],
+				"quote": "'The whole country was tied together by radio. We all experienced the same heroes and comedians and singers. They were giants.' - Woody Allen"
 			},
 			{
 				"name": "Combined Arms",
@@ -539,8 +539,8 @@
 			}
 			{
 				"name": "Radar",
-				"row": 6,
-				"prerequisites": ["Flight"],
+				"row": 5,
+				"prerequisites": ["Radio"],
 				"quote": "'Vision is the art of seeing things invisible.' - Jonathan Swift"
 			},
 		]
