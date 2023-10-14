@@ -268,7 +268,7 @@
 		"rangedStrength": 150,
 		"range": 8,
 		"cost": 800,
-		"requiredTech": "Ballistics",
+		"requiredTech": "Radar",
 		"uniques": [
 			"[10]% maintenance costs <before discovering [Rocketry]>",  // a bit more expensive in earlier forms
 			"[45]% maintenance costs <after discovering [Rocketry]>",  // propulsion and navigation add cost
