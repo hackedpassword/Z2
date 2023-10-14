@@ -237,13 +237,6 @@
 				"quote": "'Education is the best provision for old age.' - Aristotle"
 			},
 			{
-				"name": "Chivalry",
-				"row": 4,
-				"prerequisites": ["Civil Service","Theology"],
-				"uniques": ["Enables Defensive Pacts"],
-				"quote": "'Whoso pulleth out this sword of this stone and anvil, is rightwise king born of all England.' - Malory"
-			},
-			{
 				"name": "Machinery",
 				"row": 9,
 				"prerequisites": ["Physics","Metal Casting"],
@@ -272,12 +265,6 @@
 				"quote": "'Their rising all at once was as the sound of thunder heard remote' - Milton"
 			},
 			{
-				"name": "Banking",
-				"row": 5,
-				"prerequisites": ["Guilds", "Education"],
-				"quote": "'Happiness: a good bank account, a good cook and a good digestion' - Jean Jacques Rousseau"
-			},
-			{
 				"name": "Printing Press",
 				"row": 7,
 				"prerequisites": ["Machinery","Guilds"],
@@ -296,6 +283,13 @@
 				"uniques": ["Enables conversion of city production to [Science]","Enables Research agreements"],
 				"quote": "'Education is the best provision for old age.' - Aristotle"
 			},
+			{
+				"name": "Chivalry",
+				"row": 10,
+				"prerequisites": ["Steel"],
+				"uniques": ["Enables Defensive Pacts"],
+				"quote": "'Whoso pulleth out this sword of this stone and anvil, is rightwise king born of all England.' - Malory"
+			},
 		]
 	},
 	{
@@ -313,10 +307,10 @@
 				"quote": "'Joyfully to the breeze royal Odysseus spread his sail, and with his rudder skillfully he steered.' - Homer"
 			},
 			{
-				"name": "Economics",
-				"row": 5,
-				"prerequisites": ["Banking","Printing Press"],
-				"quote": "'Compound interest is the most powerful force in the universe.' - Albert Einstein"
+				"name": "Banking",
+				"row": 4,
+				"prerequisites": ["Guilds", "Education"],
+				"quote": "'Happiness: a good bank account, a good cook and a good digestion' - Jean Jacques Rousseau"
 			},
 			{
 				"name": "Chemistry",
@@ -344,6 +338,12 @@
 				"row": 7,
 				"prerequisites": ["Chemistry","Printing Press"],
 				"quote": "'Every great advance in science has issued from a new audacity of imagination.' - John Dewey"
+			},
+			{
+				"name": "Economics",
+				"row": 4,
+				"prerequisites": ["Banking","Printing Press"],
+				"quote": "'Compound interest is the most powerful force in the universe.' - Albert Einstein"
 			},
 			{
 				"name": "Gunpowder",
@@ -375,7 +375,7 @@
 				"name": "Steam Power",
 				"row": 6,
 				"uniques": ["[+1] Movement <for [Embarked] units>"],
-				"prerequisites": ["Scientific Theory"],
+				"prerequisites": ["Scientific Theory","Economics"],
 				"quote": "'The nations of the West hope that by means of steam communication all the world will become as one family.' - Townsend Harris"
 			},
 		]
