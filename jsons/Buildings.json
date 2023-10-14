@@ -1,20 +1,13 @@
 [
-    {  // Experimenting - augment initial gameplay
-     "name": "Portal Gate", 
+    {  // Augment initial gameplay
+     "name": "Portal Gate",  // Our hero appears!
      "cost": 10,
      "uniques": [
-        "Can only be built [in capital]",
-        "Free [Worker] appears",
-          // might add something like this to placed cities - drop an artifact on the city that
-          // represents the cities' powerup feature. Need to decide how this works, i.e. Palace
-          // adjacency upgrades that could apply to cities also.
-        "Limited to [1] per Civilization", 
-        "[+1] population [in all cities]",
-// More dev experimentation
-//        "[4] free random researchable Tech(s) from the [Ancient era]", // works on ruins only?
-//        "Reveals the entire map",
-//        "[+10 Food, +10 Production, +10 Gold, +10 Science, +10 Culture, +10 Faith] from [Grassland] tiles [in this city]", 
-//        "[+1 Happiness] [in all cities]"
+	     "Can only be built [in capital]",
+	     "Free [Longswordsman] appears",  // Guess who!
+	     "Free [Worker] appears",  // squire, paige, whoever, brought your helper
+	     "Limited to [1] per Civilization", 
+	     "[+1] population [in all cities]",  // gain extra pop now for each 1st turn settlement
         ]
     },
    {
