@@ -347,7 +347,7 @@
 			},
 			{
 				"name": "Economics",
-				"row": 5,
+				"row": 4,
 				"prerequisites": ["Banking","Printing Press"],
 				"quote": "'Compound interest is the most powerful force in the universe.' - Albert Einstein"
 			},
@@ -447,7 +447,7 @@
 			{
 				"name": "Electronics",
 				"row": 3,
-				"prerequisites": ["Replaceable Parts", "Electricity"],
+				"prerequisites": ["Electricity"],
 				"quote": "'There's a basic principle about consumer electronics: it gets more powerful all the time and it gets cheaper all the time.' - Trip Hawkins"
 			},
 			{
