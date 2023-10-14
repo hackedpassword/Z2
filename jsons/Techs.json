@@ -347,7 +347,7 @@
 			},
 			{
 				"name": "Economics",
-				"row": 4,
+				"row": 6,
 				"prerequisites": ["Banking","Printing Press"],
 				"quote": "'Compound interest is the most powerful force in the universe.' - Albert Einstein"
 			},
@@ -413,7 +413,7 @@
 			},
 			{
 				"name": "Railroads",
-				"row": 6,
+				"row": 7,
 				"prerequisites": ["Economics","Steam Power"],
 				"quote": "'The introduction of so powerful an agent as steam to a carriage on wheels will make a great change in the situation of man.' - Thomas Jefferson"
 			}
@@ -446,7 +446,7 @@
 			},
 			{
 				"name": "Combustion",
-				"row": 5,
+				"row": 6,
 				"prerequisites": ["Flight","Industrialization"],
 				"quote": "'Any man who can drive safely while kissing a pretty girl is simply not giving the kiss the attention it deserves.' - Albert Einstein"
 			}
@@ -473,7 +473,7 @@
 			},
 			{
 				"name": "Radio",
-				"row": 4,
+				"row": 3,
 				"prerequisites": ["Electronics"],
 				"quote": "'The whole country was tied together by radio. We all experienced the same heroes and comedians and singers. They were giants.' - Woody Allen"
 			},
@@ -500,7 +500,7 @@
 		"techs": [
 			{
 				"name": "Plastics",
-				"row": 2,
+				"row": 1,
 				"prerequisites": ["Biology","Refrigeration"],
 				"quote": "'Ben, I want to say one word to you, just one word: plastics.' - Buck Henry and Calder Willingham, The Graduate"
 			},
@@ -566,7 +566,7 @@
 			},
 			{
 				"name": "Rocketry",
-				"row": 5,
+				"row": 6,
 				"prerequisites": ["Radar"],
 				"quote": "'A good rule for rocket experimenters to follow is this: always assume that it will explode.' - Astronautics Magazine, 1937"
 			},
@@ -598,9 +598,15 @@
 				"quote": "'Our scientific power has outrun our spiritual power, we have guided missiles and misguided men.' – Martin Luther King Jr."
 			},
 			{
-				"name": "Satellites",
+				"name": "Mobile Tactics",
 				"row": 8,
-				"prerequisites": ["Rocketry","Computers","Telecommunications"],
+				"prerequisites": ["Telecommunications","Nuclear Fission"],
+				"quote": "'All men can see these tactics whereby I conquer, but what none can see is the strategy out of which victory is evolved.' - Sun Tzu"
+			},
+			{
+				"name": "Satellites",
+				"row": 7,
+				"prerequisites": ["Rocketry","Telecommunications"],
 				"uniques": ["Reveals the entire map"],
 				"quote": "'Now, somehow, in some new way, the sky seemed almost alien.' - Lyndon B. Johnson"
 			},
@@ -651,7 +657,7 @@
 			},
 			{
 				"name": "Stealth",
-				"row": 6,
+				"row": 7,
 				"prerequisites": ["Mobile Tactics","Lasers","Satellites"],
 				"quote": "'Be extremely subtle, even to the point of formlessness, be extremely mysterious, even to the point of soundlessness. Thereby you can be the director of the opponent's fate.' - Sun Tzu"
 			}
