@@ -64,4 +64,17 @@
 		"Provides [1] [Uranium]",
 	]
     },
+
+// Modified
+
+	{
+		"name": "Arsenal",
+		"cost": 300,
+		"cityStrength": 9,
+		"cityHealth": 25,
+		"hurryCostModifier": 25,
+		"requiredBuilding": "Castle",
+		"requiredTech": "Gunpowder",
+		"uniques": ["Destroyed when the city is captured"]
+	},
 ]
