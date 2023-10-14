@@ -373,9 +373,9 @@
 			}
 			{
 				"name": "Steam Power",
-				"row": 5,
+				"row": 7,
 				"uniques": ["[+1] Movement <for [Embarked] units>"],
-				"prerequisites": ["Scientific Theory","Economics"],
+				"prerequisites": ["Scientific Theory"],
 				"quote": "'The nations of the West hope that by means of steam communication all the world will become as one family.' - Townsend Harris"
 			},
 			{
@@ -401,7 +401,7 @@
 			},
 			{
 				"name": "Electricity",
-				"row": 2,
+				"row": 3,
 				"prerequisites": ["Steam Power"],
 				"quote": "'Is it a fact - or have I dreamt it - that, by means of electricity, the world of matter has become a great nerve, vibrating thousands of miles in a breathless point of time?' - Nathaniel Hawthorne"
 			},
@@ -414,7 +414,7 @@
 			{
 				"name": "Flight",
 				"row": 7,
-				"prerequisites": ["Steam Power","Combustion"],
+				"prerequisites": ["Steam Power"],
 				"quote": "'Aeronautics was neither an industry nor a science. It was a miracle.' - Igor Sikorsky"
 			},
 			{
