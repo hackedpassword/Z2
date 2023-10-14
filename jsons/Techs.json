@@ -353,7 +353,7 @@
 			},
 			{
 				"name": "Gunpowder",
-				"row": 9,
+				"row": 10,
 				"prerequisites": ["Chemistry","Chivalry"],
 				"quote": "'The day when two army corps can annihilate each other in one second, all civilized nations, it is to be hoped, will recoil from war and discharge their troops.' - Alfred Nobel"
 			}
@@ -380,7 +380,7 @@
 			},
 			{
 				"name": "Military Science",
-				"row": 9,
+				"row": 10,
 				"prerequisites": ["Gunpowder"],
 				"quote": "'Wars may be fought with weapons, but they are won by men. It is the spirit of the men who follow and of the man who leads that gains the victory.' - George S. Patton"
 			},
@@ -458,7 +458,7 @@
 			}
 			{
 				"name": "Ballistics",
-				"row": 9,
+				"row": 10,
 				"prerequisites": ["Dynamite","Military Science"],
 				"quote": "'Men, like bullets, go farthest when they are smoothest.' - Jean Paul"
 			},
@@ -486,7 +486,7 @@
 			},
 			{
 				"name": "Replaceable Parts",
-				"row": 6,
+				"row": 7,
 				"prerequisites": ["Electronics","Combustion"],
 				"quote": "'Nothing is particularly hard if you divide it into small jobs.' - Henry Ford"
 			},
@@ -514,7 +514,7 @@
 			},
 			{
 				"name": "Combined Arms",
-				"row": 9,
+				"row": 10,
 				"prerequisites": ["Ballistics","Replaceable Parts","Radio"],
 				"quote": "'The root of the evil is not the construction of new, more dreadful weapons. It is the spirit of conquest.' - Ludwig von Mises"
 			}
@@ -541,8 +541,8 @@
 			},
 			{
 				"name": "Computers",
-				"row": 9,
-				"prerequisites": ["Combined Arms"],
+				"row": 8,
+				"prerequisites": ["Combined Arms","Radar"],
 				"quote": "'Computers are like Old Testament gods: lots of rules and no mercy.' - Joseph Campbell"
 			}
 		]
@@ -568,14 +568,14 @@
 			},
 			{
 				"name": "Rocketry",
-				"row": 6,
+				"row": 5,
 				"prerequisites": ["Radar"],
 				"quote": "'A good rule for rocket experimenters to follow is this: always assume that it will explode.' - Astronautics Magazine, 1937"
 			},
 			{
 				"name": "Telecommunications",
 				"row": 7,
-				"prerequisites": ["Radar","Computers"],
+				"prerequisites": ["Computers"],
 				"quote": "'The more we elaborate our means of communication, the less we communicate.' - J.B. Priestly"
 			},
 		]
@@ -595,7 +595,7 @@
 			},
 			{
 				"name": "Advanced Ballistics",
-				"row": 4,
+				"row": 5,
 				"prerequisites": ["Nuclear Fission","Rocketry","Telecommunications"],
 				"quote": "'Our scientific power has outrun our spiritual power, we have guided missiles and misguided men.' – Martin Luther King Jr."
 			},
@@ -647,7 +647,7 @@
 			},
 			{
 				"name": "Nuclear Fusion",
-				"row": 3,
+				"row": 5,
 				"prerequisites": ["Advanced Ballistics","Lasers"],
 				"quote": "'The release of atomic energy has not created a new problem. It has readily made more urgent the necessity of solving an existing one.' - Albert Einstein"
 			},
