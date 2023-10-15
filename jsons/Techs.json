@@ -458,7 +458,7 @@
 			}
 			{
 				"name": "Ballistics",
-				"row": 7,
+				"row": 8,
 				"prerequisites": ["Dynamite"],
 				"quote": "'Men, like bullets, go farthest when they are smoothest.' - Jean Paul"
 			},
@@ -508,13 +508,13 @@
 			},
 			{
 				"name": "Radar",
-				"row": 6,
+				"row": 7,
 				"prerequisites": ["Radio","Replaceable Parts"],
 				"quote": "'Vision is the art of seeing things invisible.' - Jonathan Swift"
 			},
 			{
 				"name": "Combined Arms",
-				"row": 7,
+				"row": 8,
 				"prerequisites": ["Ballistics","Replaceable Parts","Radio"],
 				"quote": "'The root of the evil is not the construction of new, more dreadful weapons. It is the spirit of conquest.' - Ludwig von Mises"
 			}
@@ -541,7 +541,7 @@
 			},
 			{
 				"name": "Computers",
-				"row": 7,
+				"row": 8,
 				"prerequisites": ["Combined Arms","Radar"],
 				"quote": "'Computers are like Old Testament gods: lots of rules and no mercy.' - Joseph Campbell"
 			}
@@ -601,13 +601,13 @@
 			},
 			{
 				"name": "Mobile Tactics",
-				"row": 7,
+				"row": 6,
 				"prerequisites": ["Telecommunications","Nuclear Fission"],
 				"quote": "'All men can see these tactics whereby I conquer, but what none can see is the strategy out of which victory is evolved.' - Sun Tzu"
 			},
 			{
 				"name": "Satellites",
-				"row": 6,
+				"row": 7,
 				"prerequisites": ["Rocketry","Telecommunications"],
 				"uniques": ["Reveals the entire map"],
 				"quote": "'Now, somehow, in some new way, the sky seemed almost alien.' - Lyndon B. Johnson"
@@ -648,19 +648,19 @@
 			{
 				"name": "Nuclear Fusion",
 				"row": 5,
-				"prerequisites": ["Advanced Ballistics","Lasers"],
+				"prerequisites": ["Advanced Ballistics","Robotics"],
 				"quote": "'The release of atomic energy has not created a new problem. It has readily made more urgent the necessity of solving an existing one.' - Albert Einstein"
 			},
 			{
 				"name": "Nanotechnology",
-				"row": 9,
+				"row": 8,
 				"prerequisites": ["Robotics","Mobile Tactics","Lasers"],
 				"quote": "'The impact of nanotechnology is expected to exceed the impact that the electronics revolution has had on our lives.' - Richard Schwartz"
 			},
 			{
 				"name": "Stealth",
 				"row": 6,
-				"prerequisites": ["Mobile Tactics","Lasers","Satellites"],
+				"prerequisites": ["Mobile Tactics","Satellites"],
 				"quote": "'Be extremely subtle, even to the point of formlessness, be extremely mysterious, even to the point of soundlessness. Thereby you can be the director of the opponent's fate.' - Sun Tzu"
 			}
 		]
