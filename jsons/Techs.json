@@ -1,4 +1,4 @@
-[
+[  // WIP! Actively sliding around techs - still honing ideas and positions
 	{
 		"columnNumber": 0,
 		"era": "Ancient era",
@@ -319,10 +319,10 @@
 				"quote": "'Happiness: a good bank account, a good cook and a good digestion' - Jean Jacques Rousseau"
 			},
 			{
-				"name": "Chemistry",
+				"name": "Gunpowder",
 				"row": 8,
-				"prerequisites": ["Education","Metallurgy"],
-				"quote": "'Wherever we look, the work of the chemist has raised the level of our civilization and has increased the productive capacity of the nation.' - Calvin Coolidge"
+				"prerequisites": ["Physics"],
+				"quote": "'The day when two army corps can annihilate each other in one second, all civilized nations, it is to be hoped, will recoil from war and discharge their troops.' - Alfred Nobel"
 			}
 		]
 	},
@@ -342,7 +342,7 @@
 			{
 				"name": "Scientific Theory",
 				"row": 7,
-				"prerequisites": ["Chemistry","Printing Press"],
+				"prerequisites": ["Chemistry","Education"],
 				"quote": "'Every great advance in science has issued from a new audacity of imagination.' - John Dewey"
 			},
 			{
@@ -352,10 +352,10 @@
 				"quote": "'Compound interest is the most powerful force in the universe.' - Albert Einstein"
 			},
 			{
-				"name": "Gunpowder",
-				"row": 10,
-				"prerequisites": ["Chemistry","Chivalry"],
-				"quote": "'The day when two army corps can annihilate each other in one second, all civilized nations, it is to be hoped, will recoil from war and discharge their troops.' - Alfred Nobel"
+				"name": "Chemistry",
+				"row": 9,
+				"prerequisites": ["Education","Metallurgy"],
+				"quote": "'Wherever we look, the work of the chemist has raised the level of our civilization and has increased the productive capacity of the nation.' - Calvin Coolidge"
 			}
 		]
 	},	{
@@ -368,7 +368,7 @@
 			{
 				"name": "Fertilizer",
 				"row": 8,
-				"prerequisites": ["Gunpowder","Scientific Theory"],
+				"prerequisites": ["Gunpowder","Chemistry"],
 				"quote": "'The nation that destroys its soil destroys itself.' - Franklin Delano Roosevelt"
 			}
 			{
