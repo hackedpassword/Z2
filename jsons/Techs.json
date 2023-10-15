@@ -395,7 +395,7 @@
 		"techs": [
 			{
 				"name": "Archaeology",
-				"row": 1,
+				"row": 2,
 				"prerequisites": ["Architecture"],
 				"quote": "'Those who cannot remember the past are condemned to repeat it.' - George Santayana"
 			},
