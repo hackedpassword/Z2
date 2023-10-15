@@ -21,7 +21,7 @@
 		"terrainsCanBeBuiltOn": ["Coast","CoastTile","Ocean","Lakes"],
 		"culture": 1,
 		"science": 5,
-		"techRequired": "Engineering",
+		"techRequired": "Navigation",
 		"uniques": [
 			"Can only be built on [Water] tiles",
 			"Can only be built to improve a resource",
