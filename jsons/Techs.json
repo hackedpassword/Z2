@@ -441,7 +441,7 @@
 			{
 				"name": "Biology",
 				"row": 1,
-				"prerequisites": ["Navigation","Railroads"],
+				"prerequisites": ["Navigation","Railroads","Archaeology"],
 				"quote": "'If the brain were so simple we could understand it, we would be so simple we couldn't.' - Lyall Watson"
 			},
 			{
@@ -452,7 +452,7 @@
 			},
 			{
 				"name": "Combustion",
-				"row": 3,
+				"row": 4,
 				"prerequisites": ["Flight","Industrialization","Railroads"],
 				"quote": "'Any man who can drive safely while kissing a pretty girl is simply not giving the kiss the attention it deserves.' - Albert Einstein"
 			},
@@ -486,7 +486,7 @@
 			},
 			{
 				"name": "Replaceable Parts",
-				"row": 3,
+				"row": 4,
 				"prerequisites": ["Electronics","Combustion"],
 				"quote": "'Nothing is particularly hard if you divide it into small jobs.' - Henry Ford"
 			},
@@ -508,7 +508,7 @@
 			},
 			{
 				"name": "Radar",
-				"row": 5,
+				"row": 6,
 				"prerequisites": ["Radio","Replaceable Parts"],
 				"quote": "'Vision is the art of seeing things invisible.' - Jonathan Swift"
 			},
@@ -536,13 +536,13 @@
 			{
 				"name": "Atomic Theory",
 				"row": 3,
-				"prerequisites": ["Radar"],
+				"prerequisites": ["Radar","Plastics"],
 				"quote": "'The unleashed power of the atom has changed everything save our modes of thinking, and we thus drift toward unparalleled catastrophes.' - Albert Einstein"
 			},
 			{
 				"name": "Computers",
 				"row": 8,
-				"prerequisites": ["Combined Arms","Radar"],
+				"prerequisites": ["Combined Arms"],
 				"quote": "'Computers are like Old Testament gods: lots of rules and no mercy.' - Joseph Campbell"
 			},
 		]
