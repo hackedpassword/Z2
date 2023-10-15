@@ -9,7 +9,7 @@
 		terrainsCanBeFoundOn: ["Coast","Ocean","Bridge1coast","Bridge2coast","Bridge3coast","Force"],  // Can't get this to place on CoastTile in the editor..
 		culture: 1,
 		improvement: "Bridge",
-	        "revealedBy": "Astronomy",	
+	        "revealedBy": "Architecture",	
 	},	
 		
 // Strategic resources - Z2 replacements //		
