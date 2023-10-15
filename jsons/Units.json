@@ -463,15 +463,25 @@
 				"header": 1,
 			},
 			{  // Each new line below inserts a \n. Prefixing a \t to the line for json formatting is retained in the civopedia text, not desired.
-				"text": "Class: Superheavy GDR, successor to the Giant Death Robot MK-II, redesigned as a Siege mech, the ultimate in war machines.
+				"text":  // multi-line isn't clean to implement
+"Class:
+Superheavy GDR, successor to the Giant Death Robot MK-II, redesigned as a Siege mech, the ultimate in war machines.
+
 Slower than previous designs yet a magnitude more deadly. Built with redundancy in mind, unparalleled in destructive capacity.
+
 Units surviving incursions with the hulking MK-III note only: 'Run.'",
 				"link": "Unit/Giant Death Robot MK-II",
 			},
 			{ "separator": true },
 
 			{  // not sure how to \n wrap in the json text while retaining formatting in civopedia. Wrapping here will insert an undesired \n there.
-				"text": "Equipment featured: Dual reactor powered with tiertiary Fusion Generator. Gen-2 nanotech more efficiently repairs external damage, significantly improved chassis and frame repair. Extended-range plasma-lithium jump jets (ER-PL JJ).",
+				"text": 
+"Equipment featured:
+Dual reactor powered with tiertiary Fusion Generator.
+
+Gen-2 nanotech more efficiently repairs external damage, significantly improved chassis and frame repair.
+
+Extended-range plasma-lithium jump jets (ER-PL JJ).",
 			},
 			{ "separator": true },
 
