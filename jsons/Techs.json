@@ -459,7 +459,7 @@
 			{
 				"name": "Ballistics",
 				"row": 10,
-				"prerequisites": ["Dynamite","Military Science"],
+				"prerequisites": ["Dynamite"],
 				"quote": "'Men, like bullets, go farthest when they are smoothest.' - Jean Paul"
 			},
 
@@ -503,7 +503,7 @@
 			{
 				"name": "Plastics",
 				"row": 1,
-				"prerequisites": ["Biology","Refrigeration"],
+				"prerequisites": ["Refrigeration"],
 				"quote": "'Ben, I want to say one word to you, just one word: plastics.' - Buck Henry and Calder Willingham, The Graduate"
 			},
 			{
@@ -530,7 +530,7 @@
 			{
 				"name": "Pharmaceuticals",
 				"row": 2,
-				"prerequisites": ["Refrigeration","Plastics"],
+				"prerequisites": ["Plastics"],
 				"quote": "'In nothing do men more nearly approach the gods than in giving health to men.' - Cicero"
 			},
 			{
