@@ -462,27 +462,23 @@
 				"text": "Project Last Hope",
 				"header": 1,
 			},
-			{ "separator": true },
-
-			{
+			{  // Each new line below inserts a \n. Prefixing a \t to the line for json formatting is retained in the civopedia text, not desired.
 				"text": "Class: Superheavy GDR, successor to the Giant Death Robot MK-II, redesigned as a Siege mech, the ultimate in war machines.
-					Slower than previous designs yet a magnitude more deadly. Built with redundancy in mind, unparalleled in destructive capacity.
-					Units surviving incursions with the hulking MK-III note only: 'Run.'",
+				Slower than previous designs yet a magnitude more deadly. Built with redundancy in mind, unparalleled in destructive capacity.
+				Units surviving incursions with the hulking MK-III note only: 'Run.'",
 				"link": "Unit/Giant Death Robot MK-II",
 			},
 			{ "separator": true },
 
-			{
-				"text": "Equipment featured: Dual reactor powered with tiertiary Fusion Generator. Gen-2 nanotech more efficiently repairs external damage,
-					significantly improved chassis and frame repair. Extended-range plasma-lithium jump jets (ER-PL JJ).",
+			{  // not sure how to \n wrap in the json text while retaining formatting in civopedia. Wrapping here will insert an undesired \n there.
+				"text": "Equipment featured: Dual reactor powered with tiertiary Fusion Generator. Gen-2 nanotech more efficiently repairs external damage, significantly improved chassis and frame repair. Extended-range plasma-lithium jump jets (ER-PL JJ).",
 			},
 			{ "separator": true },
 
 			{
-				"text": "Weapons loadout: Three 16-inch .416 cannons based on a prototype Mark 9 battleship barrel design using techniques borrowed from
-					the .416 rifle, making them lighter and wieldly for mobile corps. One is single mounted, and one is dual shotgun-style mounted.
-					The power tradeoff from 50-cal is a shorter ballistics range for higher effective damage with a hollowpoint shell. The MK-III carries
-					dual rear-mounted vertical-launch LRM pods for missile complements. Ariel attack mitigation is handled by dual AA autocannons.",
+				"text": "Weapons loadout: Three 16-inch .416 cannons based on a prototype Mark 9 battleship barrel design using techniques borrowed from the .416 rifle, making them lighter and wieldly for mobile corps.
+				One cannon is single mounted, and one is dual shotgun-style mounted. The power tradeoff from 50-cal is a shorter ballistics range for higher effective damage with a hollowpoint shell.
+				The MK-III carries dual rear-mounted vertical-launch LRM pods for missile complements. Ariel attack mitigation is handled by dual AA autocannons.",
 			},
 		],
 		"attackSound": "shipguns"
