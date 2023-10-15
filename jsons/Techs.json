@@ -342,7 +342,7 @@
 			{
 				"name": "Scientific Theory",
 				"row": 7,
-				"prerequisites": ["Chemistry","Education"],
+				"prerequisites": ["Education"],
 				"quote": "'Every great advance in science has issued from a new audacity of imagination.' - John Dewey"
 			},
 			{
