@@ -380,7 +380,7 @@
 			},
 			{
 				"name": "Steam Power",
-				"row": 6,
+				"row": 5,
 				"uniques": ["[+1] Movement <for [Embarked] units>"],
 				"prerequisites": ["Scientific Theory"],
 				"quote": "'The nations of the West hope that by means of steam communication all the world will become as one family.' - Townsend Harris"
@@ -408,31 +408,31 @@
 		"techs": [
 			{
 				"name": "Electricity",
-				"row": 6,
+				"row": 7,
 				"prerequisites": ["Steam Power"],
 				"quote": "'Is it a fact - or have I dreamt it - that, by means of electricity, the world of matter has become a great nerve, vibrating thousands of miles in a breathless point of time?' - Nathaniel Hawthorne"
 			},
 			{
 				"name": "Industrialization",
-				"row": 3,
+				"row": 4,
 				"prerequisites": ["Steam Power","Free Trade"],
 				"quote": "'Industrialization based on machinery, already referred to as a characteristic of our age, is but one aspect of the revolution that is being wrought by technology.' - Emily Greene Balch"
 			},
 			{
 				"name": "Flight",
-				"row": 5,
+				"row": 6,
 				"prerequisites": ["Steam Power"],
 				"quote": "'Aeronautics was neither an industry nor a science. It was a miracle.' - Igor Sikorsky"
 			},
 			{
 				"name": "Railroads",
-				"row": 4,
-				"prerequisites": ["Economics","Steam Power"],
+				"row": 5,
+				"prerequisites": ["Free Trade","Steam Power"],
 				"quote": "'The introduction of so powerful an agent as steam to a carriage on wheels will make a great change in the situation of man.' - Thomas Jefferson"
 			},
 			{
 				"name": "Dynamite",
-				"row": 8,
+				"row": 9,
 				"prerequisites": ["Fertilizer","Military Science"],
 				"quote": "'As soon as men decide that all means are permitted to fight an evil, then their good becomes indistinguishable from the evil that they set out to destroy.' - Christopher Dawson"
 			},
@@ -453,7 +453,7 @@
 			},
 			{
 				"name": "Electronics",
-				"row": 6,
+				"row": 7,
 				"prerequisites": ["Electricity"],
 				"quote": "'There's a basic principle about consumer electronics: it gets more powerful all the time and it gets cheaper all the time.' - Trip Hawkins"
 			},
@@ -465,7 +465,7 @@
 			},
 			{
 				"name": "Ballistics",
-				"row": 8,
+				"row": 9,
 				"prerequisites": ["Dynamite"],
 				"quote": "'Men, like bullets, go farthest when they are smoothest.' - Jean Paul"
 			},
@@ -487,7 +487,7 @@
 			},
 			{
 				"name": "Radio",
-				"row": 6,
+				"row": 7,
 				"prerequisites": ["Electronics"],
 				"quote": "'The whole country was tied together by radio. We all experienced the same heroes and comedians and singers. They were giants.' - Woody Allen"
 			},
