@@ -441,21 +441,49 @@
 			"[1000]% maintenance costs",  // not for the feint 
 			"Only available <if [Spaceship Factory] is constructed> <in this city>",  // requires advanced construction facilities
 			// "Only available <if [Nuclear Plant] is constructed> <in this city>",  // local materials handling
-			"[2] additional attacks per turn",  // massive firepower
+			"[2] additional attacks per turn",  // massive firepower, usage must be balanced against available movement points
 			"Consumes [3] [Uranium]",  // dual reactor, fusion generator
 			"May Paradrop up to [4] tiles from inside friendly territory",  // extended range plasma-lithium jump jets (ER-PL JJ)
 			"No defensive terrain bonus",
 			"Ignores Zone of Control",
                         // "Adjacent enemy units ending their turn take [40] damage",  // not for Units; but know that the MK-III has optional automated proximity suppression pulse lasers
 			"Destroys tile improvements when attacking",
-			"[+200]% Strength <vs cities> <when attacking>",
+			"[+200]% Strength <vs cities> <when attacking>",  // siege mech
 			"[50]% chance to intercept air attacks",  // dual AA cannons
 			"Can carry [2] [Missile] units",  // dual LRM pods
-		        "Can carry [1] [Nuclear Missile] units",  // super heavy class can carry one nuke
+		        // "Can carry [1] [Mini Nuclear Missile] units",  // super heavy class can carry one small nuke, not created yet
 			"Can see over obstacles","[+3] Sight", "Ranged attacks may be performed over obstacles",  // New drone-based omni-LIDAR installed
 			// "Self-destructs when attacking <upon being defeated>", "Blast radius [1]",  // LMAO experimental mech explodes when attacking, no blast radius either
 			// "Nuclear weapon of Strength [1]",  // gonna try it - tricks unciv into thinking it's a nuke, without a detonator.
 			// "Never appears as a Barbarian unit"  // Surprise, rebels stole the plans
+		],
+		"civilopediaText": [  // testing civopedia entry. Adds color to the game.
+			{
+				"text": "Project Last Hope",
+				"header": 1,
+			},
+			{ "separator": true },
+
+			{
+				"text": "Class: Superheavy GDR, successor to the Giant Death Robot MK-II, redesigned as a Siege mech, the ultimate in war machines.
+					Slower than previous designs yet a magnitude more deadly. Built with redundancy in mind, unparalleled in destructive capacity.
+					Units surviving incursions with the hulking MK-III note only: 'Run.'",
+				"link": "Unit/Giant Death Robot MK-II",
+			},
+			{ "separator": true },
+
+			{
+				"text": "Equipment featured: Dual reactor powered with tiertiary Fusion Generator. Gen-2 nanotech more efficiently repairs external damage,
+					significantly improved chassis and frame repair. Extended-range plasma-lithium jump jets (ER-PL JJ).",
+			},
+			{ "separator": true },
+
+			{
+				"text": "Weapons loadout: Three 16-inch .416 cannons based on a prototype Mark 9 battleship barrel design using techniques borrowed from
+					the .416 rifle, making them lighter and wieldly for mobile corps. One is single mounted, and one is dual shotgun-style mounted.
+					The power tradeoff from 50-cal is a shorter ballistics range for higher effective damage with a hollowpoint shell. The MK-III carries
+					dual rear-mounted vertical-launch LRM pods for missile complements. Ariel attack mitigation is handled by dual AA autocannons.",
+			},
 		],
 		"attackSound": "shipguns"
 	},
