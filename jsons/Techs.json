@@ -230,11 +230,11 @@
 				"quote": "'I find the great thing in this world is not so much where we stand, as in what direction we are moving.' - Oliver Wendell Holmes"
 			},
 			{
-				"name": "Education",
-				"row": 9,
-				"prerequisites": ["Theology","Civil Service"],
-				"uniques": ["Enables conversion of city production to [Science]","Enables Research agreements"],
-				"quote": "'Education is the best provision for old age.' - Aristotle"
+				"name": "Enterprising",
+				"row": 5,
+				"prerequisites": ["Civil Service","Guilds"],
+				"uniques": ["[+1 Gold, +1 Happiness] from each Trade Route"],
+				"quote": "I cannot tell where you should looke for me.' he wrote, 'because I live at the devotion of the winds and seas.' (Written by/about Captain James Lancaster)"
 			},
 			{
 				"name": "Machinery",
@@ -267,7 +267,7 @@
 			{
 				"name": "Printing Press",
 				"row": 5,
-				"prerequisites": ["Machinery","Guilds","Civil Service"],
+				"prerequisites": ["Machinery","Enterprising"],
 				"quote": "'It is a newspaper's duty to print the news and raise hell.' - The Chicago Times"
 			},
 			{
@@ -315,7 +315,7 @@
 			{
 				"name": "Banking",
 				"row": 3,
-				"prerequisites": ["Guilds"],
+				"prerequisites": ["Enterprising"],
 				"quote": "'Happiness: a good bank account, a good cook and a good digestion' - Jean Jacques Rousseau"
 			},
 			{
