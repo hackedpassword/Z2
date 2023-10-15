@@ -415,7 +415,7 @@
 			{
 				"name": "Industrialization",
 				"row": 3,
-				"prerequisites": ["Steam Power","Economics"],
+				"prerequisites": ["Steam Power","Free Trade"],
 				"quote": "'Industrialization based on machinery, already referred to as a characteristic of our age, is but one aspect of the revolution that is being wrought by technology.' - Emily Greene Balch"
 			},
 			{
