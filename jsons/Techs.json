@@ -414,7 +414,7 @@
 			},
 			{
 				"name": "Industrialization",
-				"row": 3,
+				"row": 4,
 				"prerequisites": ["Steam Power","Free Trade"],
 				"quote": "'Industrialization based on machinery, already referred to as a characteristic of our age, is but one aspect of the revolution that is being wrought by technology.' - Emily Greene Balch"
 			},
@@ -493,7 +493,7 @@
 			},
 			{
 				"name": "Replaceable Parts",
-				"row": 4,
+				"row": 6,
 				"prerequisites": ["Electronics","Combustion"],
 				"quote": "'Nothing is particularly hard if you divide it into small jobs.' - Henry Ford"
 			},
@@ -515,13 +515,13 @@
 			},
 			{
 				"name": "Radar",
-				"row": 5,
+				"row": 6,
 				"prerequisites": ["Radio","Replaceable Parts"],
 				"quote": "'Vision is the art of seeing things invisible.' - Jonathan Swift"
 			},
 			{
 				"name": "Combined Arms",
-				"row": 8,
+				"row": 9,
 				"prerequisites": ["Ballistics","Replaceable Parts","Radio"],
 				"quote": "'The root of the evil is not the construction of new, more dreadful weapons. It is the spirit of conquest.' - Ludwig von Mises"
 			},
@@ -548,7 +548,7 @@
 			},
 			{
 				"name": "Computers",
-				"row": 8,
+				"row": 9,
 				"prerequisites": ["Combined Arms"],
 				"quote": "'Computers are like Old Testament gods: lots of rules and no mercy.' - Joseph Campbell"
 			},
