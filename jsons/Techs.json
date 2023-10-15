@@ -189,7 +189,7 @@
 			},
 			{
 				"name": "Civil Service",
-				"row": 5,
+				"row": 4,
 				"prerequisites": ["Currency","Horseback Riding","Drama and Poetry"],
 				"uniques": ["Enables Open Borders agreements"],
 				"quote": "'The only thing that saves us from the bureaucracy is its inefficiency' - Eugene McCarthy"
@@ -231,7 +231,7 @@
 			},
 			{
 				"name": "Enterprising",
-				"row": 5,
+				"row": 4,
 				"prerequisites": ["Civil Service","Guilds"],
 				"uniques": ["[+1 Gold, +1 Happiness] from each Trade Route"],
 				"quote": "I cannot tell where you should looke for me.' he wrote, 'because I live at the devotion of the winds and seas.' (Written by/about Captain James Lancaster)"
@@ -396,7 +396,7 @@
 			{
 				"name": "Archaeology",
 				"row": 1,
-				"prerequisites": ["Navigation","Architecture"],
+				"prerequisites": ["Architecture"],
 				"quote": "'Those who cannot remember the past are condemned to repeat it.' - George Santayana"
 			},
 			{
@@ -441,7 +441,7 @@
 			{
 				"name": "Biology",
 				"row": 1,
-				"prerequisites": ["Archaeology"],
+				"prerequisites": ["Navigation","Railroads"],
 				"quote": "'If the brain were so simple we could understand it, we would be so simple we couldn't.' - Lyall Watson"
 			},
 			{
