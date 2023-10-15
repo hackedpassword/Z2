@@ -320,7 +320,7 @@
 			},
 			{
 				"name": "Gunpowder",
-				"row": 10,
+				"row": 9,
 				"prerequisites": ["Metallurgy"],
 				"quote": "'The day when two army corps can annihilate each other in one second, all civilized nations, it is to be hoped, will recoil from war and discharge their troops.' - Alfred Nobel"
 			},
@@ -354,7 +354,7 @@
 			{
 				"name": "Chemistry",
 				"row": 8,
-				"prerequisites": ["Education","Metallurgy"],
+				"prerequisites": ["Education","Gunpowder"],
 				"quote": "'Wherever we look, the work of the chemist has raised the level of our civilization and has increased the productive capacity of the nation.' - Calvin Coolidge"
 			},
 		]
