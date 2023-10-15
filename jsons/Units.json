@@ -463,9 +463,9 @@
 				"header": 1,
 			},
 			{  // Each new line below inserts a \n. Prefixing a \t to the line for json formatting is retained in the civopedia text, not desired.
-				"text": ["Class: Superheavy GDR, successor to the Giant Death Robot MK-II, redesigned as a Siege mech, the ultimate in war machines.",
-				"Slower than previous designs yet a magnitude more deadly. Built with redundancy in mind, unparalleled in destructive capacity.",
-				"Units surviving incursions with the hulking MK-III note only: 'Run.'"],
+				"text": "Class: Superheavy GDR, successor to the Giant Death Robot MK-II, redesigned as a Siege mech, the ultimate in war machines.
+Slower than previous designs yet a magnitude more deadly. Built with redundancy in mind, unparalleled in destructive capacity.
+Units surviving incursions with the hulking MK-III note only: 'Run.'",
 				"link": "Unit/Giant Death Robot MK-II",
 			},
 			{ "separator": true },
