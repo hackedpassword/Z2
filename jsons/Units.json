@@ -463,9 +463,9 @@
 				"header": 1,
 			},
 			{  // Each new line below inserts a \n. Prefixing a \t to the line for json formatting is retained in the civopedia text, not desired.
-				"text": "Class: Superheavy GDR, successor to the Giant Death Robot MK-II, redesigned as a Siege mech, the ultimate in war machines.
-				Slower than previous designs yet a magnitude more deadly. Built with redundancy in mind, unparalleled in destructive capacity.
-				Units surviving incursions with the hulking MK-III note only: 'Run.'",
+				"text": ["Class: Superheavy GDR, successor to the Giant Death Robot MK-II, redesigned as a Siege mech, the ultimate in war machines.",
+				"Slower than previous designs yet a magnitude more deadly. Built with redundancy in mind, unparalleled in destructive capacity.",
+				"Units surviving incursions with the hulking MK-III note only: 'Run.'"],
 				"link": "Unit/Giant Death Robot MK-II",
 			},
 			{ "separator": true },
@@ -476,7 +476,7 @@
 			{ "separator": true },
 
 			{
-				"text": "Weapons loadout: Three 16-inch .416 cannons based on a prototype Mark 9 battleship barrel design using techniques borrowed from the .416 rifle, making them lighter and wieldly for mobile corps.
+				"text": "Weapons loadout: Three 16-inch .416 cannons based on a prototype Mark 9 battleship barrel design using techniques borrowed from the .416 rifle, making them lighter and wieldly for mobile corps
 				One cannon is single mounted, and one is dual shotgun-style mounted. The power tradeoff from 50-cal is a shorter ballistics range for higher effective damage with a hollowpoint shell.
 				The MK-III carries dual rear-mounted vertical-launch LRM pods for missile complements. Ariel attack mitigation is handled by dual AA autocannons.",
 			},
