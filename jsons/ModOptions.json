@@ -10,7 +10,7 @@
 	"uniques":[
 		"Allow raze capital", "Allow raze holy city",  // All cities can be destroyed
 	],
-	"techsToRemove": ["Rifling","Industrialization","Electricity"],  // Fixes to move resources?
+	"techsToRemove": ["Rifling"],
 }
 
 
