@@ -364,7 +364,7 @@
 			"Triggers a global alert upon build start",
 			"Triggers a global alert upon completion",
 			"Cannot be carried by [Submarine] units",  // Air drop only via city
-			"Triggers the following global alert: [Man-made Armageddon has scorched the land. Is this the price octory?]",
+			"Triggers the following global alert: [Man-made Armageddon has scorched the land. Is this the price of Victory?]",
 			"Limited to [1] per Civilization",
 			"Only available <if [Manhattan Project] is constructed>",
 			"Only available <after discovering [Nuclear Fusion]>",
@@ -462,7 +462,7 @@
 
 
 
-// Everything here down is modded for compatibility, like removing Rifling from tech
+// Everything here down is modded for compatibility to the (reshuffled) tree tech, like removing Rifling from tech
 
 	{ // mod checker complaining "may upgrade to [Archer] doesn't fit base Unit Filter, so including here
 		"name": "Archer",
