@@ -1,349 +1,286 @@
-[
-// uniques with map generation we're ignoring, probably remove those. Z2 is a map mod extension, not a TC ruleset.
-// to-do: Rebuild improvements to match Z2 theme. Work worthy of a branch.
-
-	{  // Specific for bridge found where Maze Island is actually physically East of Death Mountain (requires Game Genie for water walk to reveal)
-		"name": "Foundation",  // Improvement Bridge is built on Foundation
-		"resourceType": "Bonus",
-	        // only used on Ocean in Z2
-		"terrainsCanBeFoundOn": ["Coast","Ocean","Bridge1coast","Bridge2coast","Bridge3coast","Force"],  // Can't get this to place on CoastTile in the editor..
-		"culture": 1,
-		"improvement": "Bridge",
-	        "revealedBy": "Astronomy",
-	},
-
-// Strategic resources - Z2 replacements //
-
-	{  // Fairy
-		"name": "Horses",
-		"resourceType": "Strategic",
-		"revealedBy": "Animal Husbandry",
-		"terrainsCanBeFoundOn": ["Plains","Grassland","Hill"],
-		"production": 1,
-		"improvement": "Pasture",
-		"improvementStats": {"production": 1},
-	},
-	{  // Magic refill jar
-		"name": "Iron",
-		"resourceType": "Strategic",
-		"revealedBy": "Iron Working",
-		"terrainsCanBeFoundOn": ["Grassland","Plains","Desert","Tundra","Hill","Marsh"],
-		"production": 1,
-		"improvement": "Mine",
-	},
-	{  // Point/exp bag
-		"name": "Coal",
-		"resourceType": "Strategic",
-		"revealedBy": "Steam Power",
-		"terrainsCanBeFoundOn": ["Grassland","Plains","Hill","Forest","Marsh","Cave","Cavern"],
-		"production": 1,
-		"improvement": "Mine",
-		"improvementStats": {"production": 1},
-	},
-	{  // Heart
-		"name": "Oil",
-		"resourceType": "Strategic",
-		"revealedBy": "Biology",
-		"terrainsCanBeFoundOn": ["Desert","Coast","Tundra","Marsh","Jungle","Cave","Cavern"],
-		"production": 1,
-		"improvedBy": ["Oil well", "Offshore Platform"],
-		"improvementStats": {"production": 3},
-	},
-	{  // Magic potion
-		"name": "Aluminum",
-		"resourceType": "Strategic",
-		"revealedBy": "Radio",
-		"terrainsCanBeFoundOn": ["Desert","Tundra","Hill","Snow","Jungle","Cave","Cavern"],
-		"production": 1,
-		"improvement": "Mine",
-		"improvementStats": {"production": 1},
-	},
-	{  // Link doll
-		"name": "Uranium",
-		"resourceType": "Strategic",
-		"revealedBy": "Atomic Theory",
-		"terrainsCanBeFoundOn": ["Marsh","Forest","Tundra"],
-		"production": 1,
-		"improvement": "Mine",
-		"improvementStats": {"production": 1},
-	},
-
-// World bonus items //
-
-	{  // Trophy
-		"name": "Silver",
-		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Hill","Forest","Jungle","Tundra","Grassland","Cave","Cavern"],
-		"gold": 2,
-		"improvement": "Smelter",
-	},
-	{  // Medicine bottle
-		"name": "Citrus",
-		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Jungle","Forest","Flood plains","Cave","Cavern"],
-		"food": 1,
-		"gold": 1,
-		"improvement": "Plantation",
-	},
-	{  // Hammer
-		"name": "Copper",
-		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Hill","Forest","Jungle","Grassland","Tundra","Cave","Cavern"],
-		"gold": 2,
-		"improvement": "Mine",
-	},
-
-// Palace luxury items
-
-	{  // Candle
-		"name": "Incense",
-		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Plains","Desert","Flood plains"],
-		"gold": 2,
-		"improvement": "Plantation",
-	},
-	{  // Power glove
-		"name": "Silk",
-		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Forest","Jungle"],
-		"gold": 2,
-		"improvement": "Plantation",
-	},
-	{  // Raft
-		"name": "Furs",
-		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Forest","Tundra"],
-		"gold": 2,
-		"improvement": "Camp",
-		"improvementStats": {"gold": 1},
-	},
-	{  // Boot
-		"name": "Cotton",
-		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Grassland","Flood plains","Plains"],
-		"gold": 2,
-		"improvement": "Plantation",
-	},
-	{  // Flute
-		"name": "Ivory",
-		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Plains","Grassland"],
-		"gold": 2,
-		"improvement": "Camp",
-		"improvementStats": {"gold": 1},
-	},
-	{  // Cross
-		"name": "Salt",
-		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Desert","Tundra","Plains","Forest"],
-		"gold": 1,
-		"food": 1,
-		"improvement": "Mine",
-		"improvementStats": {"food": 1},
-	},
-	{ // Triforce
-		"name": "Gold Ore",
-		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Desert","Hill","Forest","Jungle","Plains"],
-		"gold": 4,
-		"culture": 6,
-		"faith": 4,
-		"improvement": "Smelter",
-	},
-
-// Strageic resources, including because they're needed to appease modchecker //
-
-	{
-		"name": "Horses",  // Fairy
-		"resourceType": "Strategic",
-		"revealedBy": "Animal Husbandry",
-		"terrainsCanBeFoundOn": ["Plains","Grassland","Hill"],
-		"production": 1,
-		"improvement": "Pasture",
-		"improvementStats": {"production": 2},  // All generated placement uniques removed for Z2
-	},
-	{
-		"name": "Iron",  // Magic refill jar
-		"resourceType": "Strategic",
-		"revealedBy": "Iron Working",
-		"terrainsCanBeFoundOn": ["Grassland","Plains","Desert","Tundra","Hill","Marsh"],
-		"production": 1,
-		"improvement": "Mine",
-		"improvementStats": {"production": 1},  // missing from original resource
-	},
-	{
-		"name": "Coal",  // Point/exp bag
-		"resourceType": "Strategic",
-		"revealedBy": "Industrialization",
-		"terrainsCanBeFoundOn": ["Grassland","Plains","Hill","Jungle","Forest","Marsh","Cave"],
-		"production": 1,
-		"improvement": "Mine",
-		"improvementStats": {"production": 2},
-	},
-	{
-		"name": "Oil",  // Heart container
-		"resourceType": "Strategic",
-		"revealedBy": "Biology",
-		"terrainsCanBeFoundOn": ["Desert","Coast","Tundra","Marsh","Jungle","Cave"],
-		"production": 1,
-		"improvedBy": ["Oil well", "Offshore Platform"],
-		"improvementStats": {"production": 3},
-	},
-	{
-		"name": "Aluminum",  // Magic container
-		"resourceType": "Strategic",
-		"revealedBy": "Electricity",
-		"terrainsCanBeFoundOn": ["Desert","Tundra","Hill","Jungle","Cave"],
-		"production": 1,
-		"improvement": "Mine",
-		"improvementStats": {"production": 1},
-	},
-	{
-		"name": "Uranium",  // Extra life Link doll
-		"resourceType": "Strategic",
-		"revealedBy": "Atomic Theory",
-		"terrainsCanBeFoundOn": ["Marsh","Jungle","Forest","Tundra"],
-		"production": 1,
-		"improvement": "Mine",
-		"improvementStats": {"production": 1},
-	},
-
-// Bonus resources, including because they're needed to appease modchecker //
-
-	{
-		"name": "Cattle",
-		"resourceType": "Bonus",
-		"terrainsCanBeFoundOn": ["Grassland"],
-		"food": 1,
-		"improvement": "Pasture",
-		"improvementStats": {"production": 1},
-	},
-	{
-		"name": "Sheep",
-		"resourceType": "Bonus",
-		"terrainsCanBeFoundOn": ["Hill"],
-		"food": 1,
-		"improvement": "Pasture",
-		"improvementStats": {"food": 1},
-	},
-	{
-		"name": "Deer",
-		"resourceType": "Bonus",
-		"terrainsCanBeFoundOn": ["Forest","Tundra"], // Tundra only if lowland
-		"food": 1,
-		"improvement": "Camp",
-		"improvementStats": {"production": 1},
-	},
-	{
-		"name": "Bananas",
-		"resourceType": "Bonus",
-		"terrainsCanBeFoundOn": ["Jungle"],
-		"food": 1,
-		"improvement": "Plantation",
-		"improvementStats": {"food": 2,"production": -1,"gold": -1},
-	},
-	{
-		"name": "Wheat",
-		"resourceType": "Bonus",
-		"terrainsCanBeFoundOn": ["Plains","Flood plains","Desert"], // Desert only if fresh water
-		"food": 1,
-		"improvement": "Farm",
-	},
-	{
-		"name": "Stone",
-		"resourceType": "Bonus",
-		"terrainsCanBeFoundOn": ["Grassland","Desert","Tundra"],
-		"production": 1,
-		"improvement": "Quarry",
-		"improvementStats": {"production": 1},
-	},
-	{
-		"name": "Fish",
-		"resourceType": "Bonus",
-		"terrainsCanBeFoundOn": ["Coast"],
-		"food": 1,
-		"improvement": "Fishing Boats",
-	},
-
-// Massive appeasement to modchecker. All hail modchecker! It's actually quite useful but like a needy high maintenance gf.
-
-	{
-		"name": "Dyes",
-		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Jungle","Forest","Marsh"],
-		"gold": 2,
-		"improvement": "Plantation",
-	},
-	{
-		"name": "Gems",
-		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Jungle","Forest","Hill"],
-		"gold": 3,
-		"improvement": "Mine",
-	},
-	{
-		"name": "Spices",
-		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Jungle","Forest","Marsh"],
-		"gold": 2,
-		"improvement": "Plantation",
-	},
-	{
-		"name": "Wine",
-		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Grassland","Plains"],
-		"gold": 2,
-		"improvement": "Plantation",
-	},
-	{
-		"name": "Sugar",
-		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Flood plains","Grassland","Marsh"],
-		"gold": 2,
-		"improvement": "Plantation",
-	},
-	{
-		"name": "Whales",
-		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Coast"],
-		"food": 1,
-		"gold": 1,
-		"improvement": "Fishing Boats",
-	},
-	{
-		"name": "Pearls",
-		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Coast"],
-		"gold": 2,
-		"improvement": "Fishing Boats",
-	},
-	{
-		"name": "Jewelry",
-		"resourceType": "Luxury",
-		"gold": 2,
-	},
-	{
-		"name": "Porcelain",
-		"resourceType": "Luxury",
-		"gold": 2,
-	},
-	{
-		"name": "Crab",
-		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Coast"],
-		"food": 1,
-		"gold": 1,
-		"improvement": "Fishing Boats",
-	},
-	{
-		"name": "Truffles",
-		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Forest","Marsh","Jungle"],
-		"gold": 2,
-		"improvement": "Camp",
-		"improvementStats": {"gold": 1},
-	}
-
-
-	
+[		
+// uniques with map generation we're ignoring, probably remove those. Z2 is a map mod extension, not a TC ruleset.		
+// to-do: Rebuild improvements to match Z2 theme. Work worthy of a branch.		
+		
+	{  // Specific for bridge found where Maze Island is actually physically East of Death Mountain (requires Game Genie for water walk to reveal)	
+		name: "Foundation",  // Improvement Bridge is built on Foundation
+		resourceType: "Bonus",
+	        // only used on Ocean in Z2	
+		terrainsCanBeFoundOn: ["Coast","Ocean","Bridge1coast","Bridge2coast","Bridge3coast","Force"],  // Can't get this to place on CoastTile in the editor..
+		culture: 1,
+		improvement: "Bridge",
+	        "revealedBy": "Astronomy",	
+	},	
+		
+// Strategic resources - Z2 replacements //		
+		
+	{  // Fairy	
+		name: "Horses",
+		resourceType: "Strategic",
+		revealedBy: "Animal Husbandry",
+		terrainsCanBeFoundOn: ["Plains","Grassland","Hill"],
+		production: 1,
+		improvement: "Pasture",
+		improvementStats: {"production": 2},  // All generated placement uniques removed for Z2
+	},	
+	{  // Magic refill jar	
+		name: "Iron",
+		resourceType: "Strategic",
+		revealedBy: "Iron Working",
+		terrainsCanBeFoundOn: ["Grassland","Plains","Desert","Tundra","Hill","Marsh"],
+		production: 1,
+		improvement: "Mine",
+		improvementStats: {"production": 1},  // missing from original resource
+	},	
+	{  // Point/exp bag	
+		name: "Coal",
+		resourceType: "Strategic",
+		revealedBy: "Steam Power",
+		terrainsCanBeFoundOn: ["Grassland","Plains","Hill","Forest","Marsh","Cave","Cavern"],
+		production: 1,
+		improvement: "Mine",
+		improvementStats: {"production": 2},
+	},	
+	{  // Heart	
+		name: "Oil",
+		resourceType: "Strategic",
+		revealedBy: "Biology",
+		terrainsCanBeFoundOn: ["Desert","Coast","Tundra","Marsh","Jungle","Cave","Cavern"],
+		production: 1,
+		improvedBy: ["Oil well", "Offshore Platform"],
+		improvementStats: {"production": 3},
+	},	
+	{  // Magic potion	
+		name: "Aluminum",
+		resourceType: "Strategic",
+		revealedBy: "Radio",
+		terrainsCanBeFoundOn: ["Desert","Tundra","Hill","Snow","Jungle","Cave","Cavern"],
+		production: 1,
+		improvement: "Mine",
+		improvementStats: {"production": 1},
+	},	
+	{  // Link doll	
+		name: "Uranium",
+		resourceType: "Strategic",
+		revealedBy: "Atomic Theory",
+		terrainsCanBeFoundOn: ["Marsh","Forest","Tundra"],
+		production: 1,
+		improvement: "Mine",
+		improvementStats: {"production": 1},
+	},	
+		
+// World bonus items //		
+		
+	{  // Trophy	
+		name: "Silver",
+		resourceType: "Luxury",
+		terrainsCanBeFoundOn: ["Hill","Forest","Jungle","Tundra","Grassland","Cave","Cavern"],
+		gold: 2,
+		improvement: "Smelter",
+	},	
+	{  // Medicine bottle	
+		name: "Citrus",
+		resourceType: "Luxury",
+		terrainsCanBeFoundOn: ["Jungle","Forest","Flood plains","Cave","Cavern"],
+		food: 1,
+		gold: 1,
+		improvement: "Plantation",
+	},	
+	{  // Hammer	
+		name: "Copper",
+		resourceType: "Luxury",
+		terrainsCanBeFoundOn: ["Hill","Forest","Jungle","Grassland","Tundra","Cave","Cavern"],
+		gold: 2,
+		improvement: "Mine",
+	},	
+		
+// Palace luxury items		
+		
+	{  // Candle	
+		name: "Incense",
+		resourceType: "Luxury",
+		terrainsCanBeFoundOn: ["Plains","Desert","Flood plains"],
+		gold: 2,
+		improvement: "Plantation",
+	},	
+	{  // Power glove	
+		name: "Silk",
+		resourceType: "Luxury",
+		terrainsCanBeFoundOn: ["Forest","Jungle"],
+		gold: 2,
+		improvement: "Plantation",
+	},	
+	{  // Raft	
+		name: "Furs",
+		resourceType: "Luxury",
+		terrainsCanBeFoundOn: ["Forest","Tundra"],
+		gold: 2,
+		improvement: "Camp",
+		improvementStats: {"gold": 1},
+	},	
+	{  // Boot	
+		name: "Cotton",
+		resourceType: "Luxury",
+		terrainsCanBeFoundOn: ["Grassland","Flood plains","Plains"],
+		gold: 2,
+		improvement: "Plantation",
+	},	
+	{  // Flute	
+		name: "Ivory",
+		resourceType: "Luxury",
+		terrainsCanBeFoundOn: ["Plains","Grassland"],
+		gold: 2,
+		improvement: "Camp",
+		improvementStats: {"gold": 1},
+	},	
+	{  // Cross	
+		name: "Salt",
+		resourceType: "Luxury",
+		terrainsCanBeFoundOn: ["Desert","Tundra","Plains","Forest"],
+		gold: 1,
+		food: 1,
+		improvement: "Mine",
+		improvementStats: {"food": 1},
+	},	
+	{ // Triforce	
+		name: "Gold Ore",
+		resourceType: "Luxury",
+		terrainsCanBeFoundOn: ["Desert","Hill","Forest","Jungle","Plains"],
+		gold: 4,
+		culture: 6,
+		faith: 4,
+		improvement: "Smelter",
+	},	
+// Massive appeasement to modchecker. All hail modchecker! It's actually quite useful but like a needy high maintenance gf.		
+// Bonus resources, including because they're needed to appease modchecker //		
+	{	
+		name: "Cattle",
+		resourceType: "Bonus",
+		terrainsCanBeFoundOn: ["Grassland"],
+		food: 1,
+		improvement: "Pasture",
+		improvementStats: {"production": 1},
+	},	
+	{	
+		name: "Sheep",
+		resourceType: "Bonus",
+		terrainsCanBeFoundOn: ["Hill"],
+		food: 1,
+		improvement: "Pasture",
+		improvementStats: {"food": 1},
+	},	
+	{	
+		name: "Deer",
+		resourceType: "Bonus",
+		terrainsCanBeFoundOn: ["Forest","Tundra"], // Tundra only if lowland
+		food: 1,
+		improvement: "Camp",
+		improvementStats: {"production": 1},
+	},	
+	{	
+		name: "Dyes",
+		resourceType: "Luxury",
+		terrainsCanBeFoundOn: ["Jungle","Forest","Marsh"],
+		gold: 2,
+		improvement: "Plantation",
+	},	
+	{	
+		name: "Gems",
+		resourceType: "Luxury",
+		terrainsCanBeFoundOn: ["Jungle","Forest","Hill"],
+		gold: 3,
+		improvement: "Mine",
+	},	
+	{	
+		name: "Bananas",
+		resourceType: "Bonus",
+		terrainsCanBeFoundOn: ["Jungle"],
+		food: 1,
+		improvement: "Plantation",
+		improvementStats: {"food": 2,"production": -1,"gold": -1},
+	},	
+	{	
+		name: "Wheat",
+		resourceType: "Bonus",
+		terrainsCanBeFoundOn: ["Plains","Flood plains","Desert"], // Desert only if fresh water
+		food: 1,
+		improvement: "Farm",
+	},	
+	{	
+		name: "Stone",
+		resourceType: "Bonus",
+		terrainsCanBeFoundOn: ["Grassland","Desert","Tundra"],
+		production: 1,
+		improvement: "Quarry",
+		improvementStats: {"production": 1},
+	},	
+	{	
+		name: "Fish",
+		resourceType: "Bonus",
+		terrainsCanBeFoundOn: ["Coast"],
+		food: 1,
+		improvement: "Fishing Boats",
+	},	
+	{	
+		name: "Spices",
+		resourceType: "Luxury",
+		terrainsCanBeFoundOn: ["Jungle","Forest","Marsh"],
+		gold: 2,
+		improvement: "Plantation",
+	},	
+	{	
+		name: "Wine",
+		resourceType: "Luxury",
+		terrainsCanBeFoundOn: ["Grassland","Plains"],
+		gold: 2,
+		improvement: "Plantation",
+	},	
+	{	
+		name: "Sugar",
+		resourceType: "Luxury",
+		terrainsCanBeFoundOn: ["Flood plains","Grassland","Marsh"],
+		gold: 2,
+		improvement: "Plantation",
+	},	
+	{	
+		name: "Whales",
+		resourceType: "Luxury",
+		terrainsCanBeFoundOn: ["Coast"],
+		food: 1,
+		gold: 1,
+		improvement: "Fishing Boats",
+	},	
+	{	
+		name: "Pearls",
+		resourceType: "Luxury",
+		terrainsCanBeFoundOn: ["Coast"],
+		gold: 2,
+		improvement: "Fishing Boats",
+	},	
+	{	
+		name: "Jewelry",
+		resourceType: "Luxury",
+		gold: 2,
+	},	
+	{	
+		name: "Porcelain",
+		resourceType: "Luxury",
+		gold: 2,
+	},	
+	{	
+		name: "Crab",
+		resourceType: "Luxury",
+		terrainsCanBeFoundOn: ["Coast"],
+		food: 1,
+		gold: 1,
+		improvement: "Fishing Boats",
+	},	
+	{	
+		name: "Truffles",
+		resourceType: "Luxury",
+		terrainsCanBeFoundOn: ["Forest","Marsh","Jungle"],
+		gold: 2,
+		improvement: "Camp",
+		improvementStats: {"gold": 1},
+	}	
 ]
