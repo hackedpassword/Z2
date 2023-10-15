@@ -381,7 +381,7 @@
 			{
 				"name": "Military Science",
 				"row": 10,
-				"prerequisites": ["Gunpowder"],
+				"prerequisites": ["Gunpowder","Chivalry"],
 				"quote": "'Wars may be fought with weapons, but they are won by men. It is the spirit of the men who follow and of the man who leads that gains the victory.' - George S. Patton"
 			},
 		]
