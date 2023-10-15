@@ -366,10 +366,17 @@
 		"wonderCost": 700,
 		"techs": [
 			{
-				"name": "Fertilizer",
-				"row": 8,
-				"prerequisites": ["Chemistry","Scientific Theory"],
-				"quote": "'The nation that destroys its soil destroys itself.' - Franklin Delano Roosevelt"
+				"name": "Archaeology",
+				"row": 2,
+				"prerequisites": ["Architecture"],
+				"quote": "'Those who cannot remember the past are condemned to repeat it.' - George Santayana"
+			},
+			{
+				"name": "Free Trade",
+				"row": 3,
+				"uniques": ["[+2] Gold <in all coastal cities> <in all cities connected to capital>"],  // not sure if the logic will filter
+				"prerequisites": ["Economics","Navigation"],
+				"quote": "'A market is a law system. Without it, the only possible economy is the street robbery.' - Eugen von Böhm-Bawerk"
 			},
 			{
 				"name": "Steam Power",
@@ -377,6 +384,12 @@
 				"uniques": ["[+1] Movement <for [Embarked] units>"],
 				"prerequisites": ["Scientific Theory"],
 				"quote": "'The nations of the West hope that by means of steam communication all the world will become as one family.' - Townsend Harris"
+			},
+			{
+				"name": "Fertilizer",
+				"row": 8,
+				"prerequisites": ["Chemistry","Scientific Theory"],
+				"quote": "'The nation that destroys its soil destroys itself.' - Franklin Delano Roosevelt"
 			},
 			{
 				"name": "Military Science",
@@ -394,12 +407,6 @@
 		"wonderCost": 750,
 		"techs": [
 			{
-				"name": "Archaeology",
-				"row": 2,
-				"prerequisites": ["Architecture"],
-				"quote": "'Those who cannot remember the past are condemned to repeat it.' - George Santayana"
-			},
-			{
 				"name": "Electricity",
 				"row": 6,
 				"prerequisites": ["Steam Power"],
@@ -407,7 +414,7 @@
 			},
 			{
 				"name": "Industrialization",
-				"row": 4,
+				"row": 3,
 				"prerequisites": ["Steam Power","Economics"],
 				"quote": "'Industrialization based on machinery, already referred to as a characteristic of our age, is but one aspect of the revolution that is being wrought by technology.' - Emily Greene Balch"
 			},
@@ -419,7 +426,7 @@
 			},
 			{
 				"name": "Railroads",
-				"row": 3,
+				"row": 4,
 				"prerequisites": ["Economics","Steam Power"],
 				"quote": "'The introduction of so powerful an agent as steam to a carriage on wheels will make a great change in the situation of man.' - Thomas Jefferson"
 			},
@@ -441,7 +448,7 @@
 			{
 				"name": "Biology",
 				"row": 1,
-				"prerequisites": ["Navigation","Railroads","Archaeology"],
+				"prerequisites": ["Navigation","Industrialization","Archaeology"],
 				"quote": "'If the brain were so simple we could understand it, we would be so simple we couldn't.' - Lyall Watson"
 			},
 			{
@@ -474,7 +481,7 @@
 		"techs": [
 			{
 				"name": "Refrigeration",
-				"row": 1,
+				"row": 2,
 				"prerequisites": ["Biology", "Electronics"], //todo: offshore platform should need this
 				"quote": "'And homeless near a thousand homes I stood, and near a thousand tables pined and wanted food.' - William Wordsworth"
 			},
@@ -502,7 +509,7 @@
 		"techs": [
 			{
 				"name": "Plastics",
-				"row": 1,
+				"row": 2,
 				"prerequisites": ["Refrigeration"],
 				"quote": "'Ben, I want to say one word to you, just one word: plastics.' - Buck Henry and Calder Willingham, The Graduate"
 			},
