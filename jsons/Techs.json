@@ -401,13 +401,13 @@
 			},
 			{
 				"name": "Electricity",
-				"row": 3,
+				"row": 6,
 				"prerequisites": ["Steam Power"],
 				"quote": "'Is it a fact - or have I dreamt it - that, by means of electricity, the world of matter has become a great nerve, vibrating thousands of miles in a breathless point of time?' - Nathaniel Hawthorne"
 			},
 			{
 				"name": "Industrialization",
-				"row": 4,
+				"row": 2,
 				"prerequisites": ["Steam Power","Economics"],
 				"quote": "'Industrialization based on machinery, already referred to as a characteristic of our age, is but one aspect of the revolution that is being wrought by technology.' - Emily Greene Balch"
 			},
@@ -419,7 +419,7 @@
 			},
 			{
 				"name": "Railroads",
-				"row": 5,
+				"row": 3,
 				"prerequisites": ["Economics","Steam Power"],
 				"quote": "'The introduction of so powerful an agent as steam to a carriage on wheels will make a great change in the situation of man.' - Thomas Jefferson"
 			}
@@ -446,13 +446,13 @@
 			},
 			{
 				"name": "Electronics",
-				"row": 3,
+				"row": 6,
 				"prerequisites": ["Electricity"],
 				"quote": "'There's a basic principle about consumer electronics: it gets more powerful all the time and it gets cheaper all the time.' - Trip Hawkins"
 			},
 			{
 				"name": "Combustion",
-				"row": 5,
+				"row": 3,
 				"prerequisites": ["Flight","Industrialization","Railroads"],
 				"quote": "'Any man who can drive safely while kissing a pretty girl is simply not giving the kiss the attention it deserves.' - Albert Einstein"
 			}
@@ -474,19 +474,19 @@
 		"techs": [
 			{
 				"name": "Refrigeration",
-				"row": 2,
+				"row": 1,
 				"prerequisites": ["Biology", "Electronics"], //todo: offshore platform should need this
 				"quote": "'And homeless near a thousand homes I stood, and near a thousand tables pined and wanted food.' - William Wordsworth"
 			},
 			{
 				"name": "Radio",
-				"row": 3,
+				"row": 6,
 				"prerequisites": ["Electronics"],
 				"quote": "'The whole country was tied together by radio. We all experienced the same heroes and comedians and singers. They were giants.' - Woody Allen"
 			},
 			{
 				"name": "Replaceable Parts",
-				"row": 5,
+				"row": 3,
 				"prerequisites": ["Electronics","Combustion"],
 				"quote": "'Nothing is particularly hard if you divide it into small jobs.' - Henry Ford"
 			},
@@ -508,7 +508,7 @@
 			},
 			{
 				"name": "Radar",
-				"row": 5,
+				"row": 6,
 				"prerequisites": ["Radio","Replaceable Parts"],
 				"quote": "'Vision is the art of seeing things invisible.' - Jonathan Swift"
 			},
@@ -529,7 +529,7 @@
 		"techs": [
 			{
 				"name": "Pharmaceuticals",
-				"row": 2,
+				"row": 1,
 				"prerequisites": ["Plastics"],
 				"quote": "'In nothing do men more nearly approach the gods than in giving health to men.' - Cicero"
 			},
