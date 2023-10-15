@@ -1,64 +1,64 @@
 [
-    {  // Augment initial gameplay
-     "name": "Portal Gate",  // Our hero appears!
-     "cost": 10,
-     "uniques": [
-	     "Can only be built [in capital]",
-	     "Free [Longswordsman] appears",  // Guess who!
-	     "Free [Worker] appears",  // squire, paige, whoever, brought your helper
-	     "Limited to [1] per Civilization", 
-	     "[+1] population [in all cities]",  // gain extra pop now for each 1st turn settlement
-        ]
-    },
-   {
-        "name": "Horse Track",  // Do something with stale strategic resources, horses, coal, and iron
-        "cost": 180,
+	{  // Augment initial gameplay
+	 "name": "Portal Gate",  // Our hero appears!
+	 "cost": 10,
+	 "uniques": [
+		 "Can only be built [in capital]",
+		 "Free [Longswordsman] appears",  // Guess who!
+		 "Free [Worker] appears",  // squire, paige, whoever, brought your helper
+		 "Limited to [1] per Civilization", 
+		 "[+1] population [in all cities]",  // gain extra pop now for each 1st turn settlement
+		]
+	},
+	{
+	"name": "Horse Track",  // Do something with stale strategic resources, horses, coal, and iron
+	"cost": 180,
 	"maintenance": 2,
 	"requiredTech": "Economics",
 	"happiness": 1,
 	"gold": 4,
-        "uniques": [
+	"uniques": [
 		"Consumes [2] [Horses]",
 		"Provides 1 extra copy of each improved luxury resource near this City",
-	]
-    },
-    {
-        "name": "Coal Refinery",
-        "cost": 300,
+		]
+	},
+	{
+	"name": "Coal Refinery",
+	"cost": 300,
 	"maintenance": 2,
 	"requiredTech": "Plastics",
 	"production": 4,
 	"science": 2,
-        "uniques": [
+	"uniques": [
 		"Consumes [2] [Coal]",
 		"Provides [1] [Oil]",
-     	]
-    },
-    {
-        "name": "Metalworks Foundry",
-        "cost": 470,
+	 	]
+	},
+	{
+	"name": "Metalworks Foundry",
+	"cost": 470,
 	"maintenance": 3,
 	"requiredTech": "Metallurgy",
 	"production": 6,
 	"science": 2,
-        "uniques": [
+	"uniques": [
 		"Consumes [2] [Iron]",
 		"Provides [1] [Aluminum]",
-	]
-    },
-    {
-        "name": "Calutron Enrichment Lab",
-        "cost": 690,
+		]
+	},
+	{
+	"name": "Calutron Enrichment Lab",
+	"cost": 690,
 	"maintenance": 5,
 	"requiredTech": "Computers",
 	"science": 8,
-        "uniques": [
+	"uniques": [
 		"Consumes [4] [Oil]",
 		"Provides [1] [Uranium]",
-	]
-    },
+		]
+	},
 
-// Modified
+// Modified buildings
 
 	{
 		"name": "Arsenal",
@@ -69,5 +69,14 @@
 		"requiredBuilding": "Castle",
 		"requiredTech": "Gunpowder",
 		"uniques": ["Destroyed when the city is captured"]
+	},
+	{
+		"name": "Broadcast Tower",
+		"culture": 3,
+		"percentStatBonus": {"culture": 33},
+		"requiredBuilding": "Museum",
+		"maintenance": 3,
+		"requiredTech": "Radio",
+		"uniques": ["Destroyed when the city is captured","Triggers a global alert upon completion"]  // is this thing on?
 	},
 ]
