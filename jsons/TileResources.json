@@ -200,10 +200,10 @@
 		improvementStats: {"food": 2,"production": -1,"gold": -1},
 	},	
 	{	
-		name: "Wheat",
+		name: "Wheat",  // graves
 		resourceType: "Bonus",
 		terrainsCanBeFoundOn: ["Plains","Flood plains","Desert"], // Desert only if fresh water
-		food: 1,
+		faith: 1,
 		improvement: "Farm",
 	},	
 	{	
