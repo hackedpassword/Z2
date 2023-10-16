@@ -419,8 +419,7 @@
 			"Destroys tile improvements when attacking",
 			"[+150]% Strength <vs cities> <when attacking>",
 			"Can carry [1] [Missile] units",  // LRM pod
-			"Can carry [0] [Nuclear Missile] units",  // too big
-			"Unit will heal every turn, even if it performs an action",  // Thanks to the MetalSweat active nanobot repair system
+			"Unit will heal every turn, even if it performs an action",  // Thanks to the MANRS MetalSweat Active Nnanobot Repair System
 			"[+1] Sight", "Can see over obstacles",	"Ranged attacks may be performed over obstacles",  // advanced targeting
 			"[25]% chance to intercept air attacks",  // AA cannon
 			"Never appears as a Barbarian unit"
@@ -478,7 +477,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 			{  // not sure how to \n wrap in the json text while retaining formatting in civopedia. Wrapping here will insert an undesired \n there.
 				"text": 
 "Equipment featured:
- - Dual reactor powered with tiertiary Fusion Generator
+ - Dual reactor powered with tertiary Fusion Generator
  - Gen-2 nanotech more efficiently repairs external damage, significantly improved chassis and frame repair
  - Extended-range plasma-lithium jump jets (ER-PL JJ)
  - New stealth drone-based omni-LIDAR improves HUD resolution and reveals enemy stealth units",
@@ -489,8 +488,8 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 				"text": 
 "Weapons loadout: 
  - Three 16-inch 42-foot long cannons based on a prototype Mark 9 battleship barrel design using techniques borrowed from the .416 rifle, making them lighter and wieldly for mobile corps
-	- One cannon is single mounted, and one is dual shotgun-style mounted
-	- Power tradeoff from 50-cal to .416 is a shorter ballistics range for higher effective damage with a hollowpoint shell
+	> One cannon is single mounted, and one is dual shotgun-style mounted
+	> Power tradeoff from 50-cal to .416 is a shorter ballistics range for higher effective damage with a hollowpoint shell
  - The MK-III carries dual rear-mounted vertical-launch LRM pods for missile complements
  - Ariel attack mitigation is handled by dual AA autocannons",
 			},
