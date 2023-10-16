@@ -388,6 +388,7 @@
 		"requiredTech": "Nuclear Fusion",
 		"requiredResource": "Uranium",
 		"uniques": [
+			"Only available <after discovering [Robotics]>",  // Allows other tech to be discovered from Nuclear Fusion
 			"Can move after attacking",
 			"[+125]% Strength <vs cities> <when attacking>",  // GDR's are urban menaces 
 			"No defensive terrain bonus",
