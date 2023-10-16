@@ -74,6 +74,13 @@ TileSets/FantasyHex/Units/Worker-Generic era
   orig: 64, 56
   offset: 0, 0
   index: -1
+TileSets/FantasyHex/Units/Worker-Pioneer era
+  rotate: false
+  xy: 1348, 297
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
 TileSets/FantasyHex/Units/Worker-Industrial era
   rotate: false
   xy: 1420, 297
