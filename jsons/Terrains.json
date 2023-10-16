@@ -93,16 +93,18 @@
 		"name": "Plains",
 		"type": "Land",
 		"food": 1,
-		"production": 1,
 		"movementCost": 1,
 		"RGB": [153, 180, 51],
 		"uniques": [
+			"[-1] Food <in [Wheat] tiles>",
+			"[+1] Production <with [25]% chance>",
 //			"[98]% Chance to be destroyed by nukes",
 		],
 	},
 	{
 		"name": "Desert",
 		"type": "Land",
+		"production": 1,
 		"movementCost": 1,
 		"RGB": [230, 172, 0],
 		"uniques": [
