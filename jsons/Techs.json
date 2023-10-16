@@ -655,7 +655,7 @@
 			{
 				"name": "Nuclear Fusion",
 				"row": 5,
-				"prerequisites": ["Advanced Ballistics","Robotics"],
+				"prerequisites": ["Advanced Ballistics"],  // GDR also needs Robotics
 				"quote": "'The release of atomic energy has not created a new problem. It has readily made more urgent the necessity of solving an existing one.' - Albert Einstein"
 			},
 			{
