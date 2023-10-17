@@ -56,7 +56,7 @@
 	"uniques": [
 		"Consumes [4] [Oil]",
 		"Provides [1] [Uranium]",
-		]
+	]
 	},
 
 // Modified buildings
@@ -82,5 +82,15 @@
 			"Destroyed when the city is captured",
 			"Triggers a global alert upon completion",  // is this thing on?
 		]
+	},
+	{
+		"name": "Garden",
+		"uniques": [
+			"[+25]% Great Person generation [in this city]",
+			"Must be next to [Fresh water]",  // Lava?
+		],
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"requiredTech": "Aesthetics",
 	},
 ]
