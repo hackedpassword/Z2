@@ -80,18 +80,19 @@
 		"unitType": "Armored",
 		"movement": 5,
 		"strength": 70,
-		"range": 2,  // justify costly requirement of oil
-		"rangedStrength": 70,
+		"range": 2,  // justify costly requirement of oil, can't take cities
+		"rangedStrength": 80,
 		"cost": 375,
 		"requiredTech": "Combined Arms",
 		"requiredResource": "Oil",
-		"upgradesTo": "Modern Armor",
+		// "upgradesTo": "Modern Armor",  // No. These units have their own purpose, and consume oil instead of more valuable aluminum
 		"uniques": [
 			"Can move after attacking",
 			"[+75]% Strength <vs [Gunpowder] units> <when defending>",
-			"[+50]% Strength <vs [Armored] units> <when attacking>",
+			"[+50]% Strength <vs [Armored] units> <when attacking>",  // Armor piercing shells
+			"[+25]% Strength <vs cities>",
 			"No defensive terrain bonus",
-			"Never appears as a Barbarian unit"
+			// "Never appears as a Barbarian unit"  // deals were made - but do barbarians need oil? 
 		],
 		"attackSound": "tankshot"
 	},
@@ -105,7 +106,7 @@
 		"cost": 425,
 		"requiredTech": "Lasers",
 		"requiredResource": "Aluminum",
-		// "upgradesTo": "Giant Death Robot", // GDR is not a tank, it is a mech
+		// "upgradesTo": "Giant Death Robot",  // GDR is not a tank, it is a mech
 		"uniques": [
 			"Can move after attacking",
 			"[+150]% Strength <vs [Gunpowder] units> <when defending>",
@@ -122,14 +123,18 @@
 		"unitType": "Helicopter",
 		"movement": 7,
 		"strength": 60,
+		"range": 1,
+		"rangedStrength": 120,  // for the cost of an aluminum it better have power
 		"cost": 425,
 		"requiredTech": "Computers",
 		"requiredResource": "Aluminum",
 		"uniques": [
 			"[+100]% Strength <vs [Armored] units> <when attacking>",  // strength is attacking
-			"[1] additional attacks per turn <after discovering [Mobile Tactics]>",
+			"[1] additional attacks per turn <after discovering [Mobile Tactics]>",  // upgrade retrofit
 			"[-50]% Strength <vs [Armored] units> <when defending>",  // weakness against heavy arms
-			"[-100]% Strength <vs cities> <when defending>",  // hazardous
+			"[-75]% Strength <vs cities> <when defending>",  // hazardous
+			"[-50]% Strength <vs [Missile] units> <when defending>",
+		        "[+20] Strength <after discovering [Nanotechnology]>", // adaptive armor upgrade 
 			"No defensive terrain bonus",
 			"Can move after attacking",
 			"All tiles cost 1 movement",
