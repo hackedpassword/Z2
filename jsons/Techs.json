@@ -156,7 +156,7 @@
 			{
 				"name": "Currency",
 				"row": 6,
-				"prerequisites": ["Mathematics"],
+				"prerequisites": ["Mathematics","Horseback Riding"],
 				"quote": "'Better is bread with a happy heart than wealth with vexation.' - Amenemope"
 			},
 			{
@@ -169,7 +169,7 @@
 			{
 				"name": "Iron Working",
 				"row": 10,
-				"prerequisites": ["Bronze Working"],
+				"prerequisites": ["Bronze Working","Construction"],
 				"quote": "'Do not wait to strike til the iron is hot, but make it hot by striking.' - William Butler Yeats"
 			},
 		]
