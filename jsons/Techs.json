@@ -233,7 +233,7 @@
 				"name": "Aesthetics",
 				"row": 2,
 				"prerequisites": ["Civil Service","Theology"],
-				"uniques": ["[+1 Production, +1 Happiness] <when not at war>"],
+				"uniques": ["[+1 Production, +1 Happiness] <in this city> <when not at war>"],
 				"quote": "'Quaint, serene. Why didn't we think of this before?'"
 			},
 			{
