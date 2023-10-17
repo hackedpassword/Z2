@@ -44,7 +44,7 @@
 	{  // Heart	
 		name: "Oil",
 		resourceType: "Strategic",
-		revealedBy: "Biology",
+		revealedBy: "Petroleum",
 		terrainsCanBeFoundOn: ["Desert","Coast","Tundra","Marsh","Jungle","Cave","Cavern"],
 		production: 1,
 		improvedBy: ["Oil well", "Offshore Platform"],
