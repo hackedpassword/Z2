@@ -448,8 +448,14 @@
 			{
 				"name": "Biology",
 				"row": 1,
-				"prerequisites": ["Navigation","Industrialization","Archaeology"],
-				"quote": "'If the brain were so simple we could understand it, we would be so simple we couldn't.' - Lyall Watson"
+				"prerequisites": ["Navigation","Archaeology"],
+				"quote": "'If the brain were so simple we could understand it, we would be so simple we couldn't.' - Lyall Watson", 
+			},
+	        	{
+				"name": "Petroleum",
+				"row": 2,
+				"prerequisites": ["Industrialization","Archaeology"],
+				"quote": "'I love the smell of napalm in the morning.'", 
 			},
 			{
 				"name": "Electronics",
@@ -482,7 +488,7 @@
 			{
 				"name": "Refrigeration",
 				"row": 2,
-				"prerequisites": ["Biology", "Electronics"], //todo: offshore platform should need this
+				"prerequisites": ["Biology", "Petroleum"],
 				"quote": "'And homeless near a thousand homes I stood, and near a thousand tables pined and wanted food.' - William Wordsworth"
 			},
 			{
