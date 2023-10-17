@@ -93,4 +93,17 @@
 		"maintenance": 1,
 		"requiredTech": "Aesthetics",
 	},
-]
+	{
+		"name": "National College",
+		"cost": 125,
+		"science": 3,
+		"culture": 1,
+		"isNationalWonder": true,
+		"percentStatBonus": {"science": 50},
+		"uniques": [
+			"Requires a [Library] in all cities", 
+			"Cost increases by [30] per owned city",
+		],
+		"requiredTech": "Scientific Theory",  // was classical era? before education?? 
+	},
+] 
