@@ -2,12 +2,13 @@
 	{  // Augment initial gameplay
 	 "name": "Portal Gate",  // Our hero appears!
 	 "cost": 10,
-	 "uniques": [
+	 "uniques": [  // the 'once' is for when capitals are relocated - portal gate will trigger upon moving
 		 "Can only be built [in capital]",
-		 "Free [Longswordsman] appears",  // Guess who!
-		 "Free [Worker] appears",  // squire, paige, whoever, brought your helper
+		 "Free [Longswordsman] appears <once>",  // Guess who!
+		 "Instantly provides [1] [Iron] <once>", // Otherwise swordsman creates missing resource
+		 "Free [Worker] appears <once>",  // squire, paige, whoever, brought your helper
 		 "Limited to [1] per Civilization", 
-		 "[+1] population [in all cities]",  // gain extra pop now for each 1st turn settlement
+		 "[+1] population [in all cities] <once>",  // gain extra pop now for each 1st turn settlement
 		]
 	},
 	{
@@ -77,6 +78,9 @@
 		"requiredBuilding": "Museum",
 		"maintenance": 3,
 		"requiredTech": "Radio",
-		"uniques": ["Destroyed when the city is captured","Triggers a global alert upon completion"]  // is this thing on?
+		"uniques": [
+			"Destroyed when the city is captured",
+			"Triggers a global alert upon completion",  // is this thing on?
+		]
 	},
 ]
