@@ -268,7 +268,7 @@
 			{
 				"name": "Acoustics",
 				"row": 2,
-				"prerequisites": ["Theology"],
+				"prerequisites": ["Aesthetics"],
 				"quote": "'Their rising all at once was as the sound of thunder heard remote' - Milton"
 			},
 			{
