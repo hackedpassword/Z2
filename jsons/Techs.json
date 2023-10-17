@@ -230,6 +230,13 @@
 				"quote": "'I find the great thing in this world is not so much where we stand, as in what direction we are moving.' - Oliver Wendell Holmes"
 			},
 			{
+				"name": "Aesthetics",
+				"row": 2,
+				"prerequisites": ["Civil Service","Theology"],
+				"uniques": ["[+1 Production, +1 Happiness] <when not at war>"],
+				"quote": "'Quaint, serene. Why didn't we think of this before?'"
+			},
+			{
 				"name": "Enterprising",
 				"row": 4,
 				"prerequisites": ["Civil Service","Guilds"],
