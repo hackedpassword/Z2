@@ -34,10 +34,10 @@
 				"quote": "'Thou shalt not muzzle the ox when he treadeth out the corn.' - Bible Deuteronomy 25:4"
 			},
 			{
-				"name": "Archery",
+				"name": "The Wheel",
 				"row": 7,
 				"prerequisites": ["Agriculture"],
-				"quote": "'The haft of the arrow has been feathered with one of the eagle's own plumes, we often give our enemies the means of our own destruction' - Aesop"
+				"quote": "'Wisdom and virtue are like the two wheels of a cart.' - Japanese proverb"
 			},
 			{
 				"name": "Mining",
@@ -80,10 +80,10 @@
 				"quote": "'Even brute beasts and wandering birds do not fall into the same traps or nets twice.' - Saint Jerome"
 			},
 			{
-				"name": "The Wheel",
+				"name": "Archery",
 				"row": 7,
-				"prerequisites": ["Animal Husbandry", "Archery"],
-				"quote": "'Wisdom and virtue are like the two wheels of a cart.' - Japanese proverb"
+				"prerequisites": ["The Wheel","Animal Husbandry"],
+				"quote": "'The haft of the arrow has been feathered with one of the eagle's own plumes, we often give our enemies the means of our own destruction' - Aesop"
 			},
 			{
 				"name": "Masonry",
@@ -115,21 +115,28 @@
 				"quote": "'He made an instrument to know if the moon shine at full or no.' - Samuel Butler"
 			},
 			{
+				"name": "Tribalism",
+				"row": 4,
+				"prerequisites": ["Trapping","Writing"],
+				"uniques": ["Free Social Policy"],
+				"quote": "Men with bieeeg hats!"
+			},
+			{
 				"name": "Horseback Riding",
 				"row": 5,
-				"prerequisites": ["Trapping","The Wheel"],
+				"prerequisites": ["Trapping","Archery"],
 				"quote": "'A Horse! A Horse! My kingdom for a horse!' - Shakespeare (Richard III)"
 			},
 			{
 				"name": "Mathematics",
 				"row": 7,
-				"prerequisites": ["The Wheel"],
+				"prerequisites": ["Archery"],
 				"quote": "'Mathematics is the gate and key to the sciences.' - Roger Bacon"
 			},
 			{
 				"name": "Construction",
 				"row": 9,
-				"prerequisites": ["Masonry","The Wheel"],
+				"prerequisites": ["Masonry","Archery"],
 				"quote": "'Three things are to be looked to in a building: that it stands on the right spot; that it be securely founded; that it be successfully executed.' - Johann Wolfgang von Goethe"
 			},
 		]
@@ -150,7 +157,7 @@
 			{
 				"name": "Drama and Poetry",
 				"row": 3,
-				"prerequisites": ["Writing"],
+				"prerequisites": ["Tribalism"],
 				"quote": "'What is drama but life with the dull bits cut out.' - Alfred Hitchcock"
 			},
 			{
