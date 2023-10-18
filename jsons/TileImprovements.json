@@ -67,7 +67,7 @@
         {
 		"name": "Smelter",  // Specific to improve Gold Ore in plains tiles (triforce)
 		"turnsToBuild": 8,
-		"techRequired": "Mining",
+		"techRequired": "Bronze Working",
 		"uniques": [
 			"[+2 Production] <after discovering [Chemistry]>",
 			"Can only be built to improve a resource",
