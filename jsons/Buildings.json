@@ -106,4 +106,15 @@
 		],
 		"requiredTech": "Scientific Theory",  // was classical era? before education?? 
 	},
+	{
+		"name": "Courthouse",
+		"maintenance": 4,
+		"hurryCostModifier": 50,
+		"uniques": [
+			"Remove extra unhappiness from annexed cities",
+			"[+1 Happiness, +1 Gold] <in this city>",
+			"[+1 Culture] <in annexed cities>",
+		],
+		"requiredTech": "Tribalism"
+	},
 ] 
