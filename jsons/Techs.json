@@ -108,14 +108,14 @@
 		"techs": [
 			{
 				"name": "Agriculture",
-				"row": 5,
+				"row": 4,
 				"prerequisites": ["The Wheel","Pottery"],
 				"quote": "'Where tillage begins, other arts follow. The farmers therefore are the founders of human civilization.' - Daniel Webster",
 				"uniques": []
 			},
 			{
 				"name": "Writing",
-				"row": 1,
+				"row": 2,
 				"prerequisites": ["Language"],
 				"quote": "'He who destroys a good book kills reason itself.' - John Milton"
 			},
@@ -127,13 +127,13 @@
 			},
 			{
 				"name": "Fishing",
-				"row": 6,
+				"row": 1,
 				"prerequisites": ["Melee Weaponary"],
 				"quote": ""
 			},
 			{
 				"name": "Exploration",
-				"row": 7,
+				"row": 5,
 				"prerequisites": ["Language","Melee Weaponary"],
 				"quote": ""
 			},
