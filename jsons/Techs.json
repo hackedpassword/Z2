@@ -23,7 +23,7 @@
 		"techs": [
 			{
 				"name": "Shelter",
-				"row": 6,
+				"row": 5,
 				"prerequisites": ["Survival"],
 				"quote": "Give me a home where the buffalo roam and the deer and the antelope play...",
 				"uniques": ["Free [Settler] appears"],
@@ -51,7 +51,7 @@
 			},
 			{
 				"name": "Hunting",
-				"row": 4,
+				"row": 7,
 				"prerequisites": ["Survival"],
 				"quote": "SHHHHH! AAAAAAAAGGGH!!!",
 				"uniques": ["Free [Warrior] appears"],
@@ -202,13 +202,13 @@
 			{
 				"name": "Mathematics",
 				"row": 7,
-				"prerequisites": ["Calendar","Archery"],
+				"prerequisites": ["Calendar","Archery","Masonry"],
 				"quote": "'Mathematics is the gate and key to the sciences.' - Roger Bacon"
 			},
 			{
 				"name": "Construction",
 				"row": 9,
-				"prerequisites": ["Masonry","Archery"],
+				"prerequisites": ["Masonry","Bronze Working"],
 				"quote": "'Three things are to be looked to in a building: that it stands on the right spot; that it be securely founded; that it be successfully executed.' - Johann Wolfgang von Goethe"
 			},
 		]
