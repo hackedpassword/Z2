@@ -115,7 +115,7 @@
 			},
 			{
 				"name": "Writing",
-				"row": 7,
+				"row": 3,
 				"prerequisites": ["Language"],
 				"quote": "'He who destroys a good book kills reason itself.' - John Milton"
 			},
@@ -155,13 +155,13 @@
 
 			{
 				"name": "Calendar",
-				"row": 7,
+				"row": 3,
 				"prerequisites": ["Agriculture","Writing"],
 				"quote": "'So teach us to number our days, so that we may apply our hearts unto wisdom.' - Bible Psalms 90:12"
 			},
 			{
 				"name": "Trapping",
-				"row": 5,
+				"row": 4,
 				"prerequisites": ["Animal Husbandry","Melee Weaponary"],
 				"quote": "'Even brute beasts and wandering birds do not fall into the same traps or nets twice.' - Saint Jerome"
 			},
@@ -194,14 +194,14 @@
 			},
 			{
 				"name": "Politics",
-				"row": 4,
+				"row": 5,
 				"prerequisites": ["Masonry","Exploration"],
 				"uniques": ["Free Social Policy"],
 				"quote": "Men with bieeeg hats!"
 			},
 			{
 				"name": "Horseback Riding",
-				"row": 5,
+				"row": 4,
 				"prerequisites": ["Exploration","Trapping"],
 				"quote": "'A Horse! A Horse! My kingdom for a horse!' - Shakespeare (Richard III)"
 			},
@@ -242,7 +242,7 @@
 			},
 			{
 				"name": "Drama and Poetry",
-				"row": 4,
+				"row": 5,
 				"prerequisites": ["Politics","Horseback Riding"],
 				"quote": "'What is drama but life with the dull bits cut out.' - Alfred Hitchcock"
 			},
