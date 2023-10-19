@@ -671,7 +671,8 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"promotions": ["Drill I","Home Sweet Home"],
 		"attackSound": "shot"
 	},
-	{
+	{  
+		// Danish unique unit. Can attack from the sea without any penalty, and moves faster.
 		"name": "Berserker",
 		"unitType": "Sword",
 		"replaces": "Longswordsman",
@@ -685,8 +686,18 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"requiredResource": "Iron",
 		"promotions": ["Amphibious"],
 		"hurryCostModifier": 20,
-		"attackSound": "metalhit"
-		//Danish unique unit. Can attack from the sea without any penalty, and moves faster.
+		"attackSound": "metalhit",
 	},
-
+        {
+		"name": "Composite Bowman",
+		"unitType": "Archery",
+		"movement": 2,
+		"strength": 7,
+		"rangedStrength": 11,
+		"cost": 75,
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Machinery",
+		"upgradesTo": "Crossbowman",
+		"attackSound": "arrow"
+	},
 ]
