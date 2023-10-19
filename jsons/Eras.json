@@ -2,7 +2,7 @@
 	{
 		"name": "Prehistoric era",
 		"researchAgreementCost": 50,
-		"startingSettlerCount": 0,
+		"startingSettlerCount": 1,  // Desired 0, but without a city, no units can spawn after game start :(
 		"startingWorkerCount": 0,
 		"startingMilitaryUnitCount": 1,
 		"startingMilitaryUnit": "Scout",
