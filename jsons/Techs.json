@@ -188,7 +188,7 @@
 			},
 			{
 				"name": "Politics",
-				"row": 1,
+				"row": 5,
 				"prerequisites": ["Agriculture"],
 				"uniques": ["Free Social Policy"],
 				"quote": "Men with bieeeg hats!"
