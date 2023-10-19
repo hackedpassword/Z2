@@ -51,7 +51,7 @@
 			},
 			{
 				"name": "Clans",
-				"row": 3,
+				"row": 4,
 				"prerequisites": ["Survival"],
 				"quote": "Me like you. We here!",
 				"uniques": ["Adopt [Tradition]"],
@@ -122,7 +122,7 @@
 			},
 			{
 				"name": "Writing",
-				"row": 3,
+				"row": 2,
 				"prerequisites": ["Language"],
 				"quote": "'He who destroys a good book kills reason itself.' - John Milton"
 			},
@@ -140,7 +140,7 @@
 			},
 			{
 				"name": "Archery",
-				"row": 7,
+				"row": 2,
 				"prerequisites": ["Melee Weaponary"],
 				"quote": "'The haft of the arrow has been feathered with one of the eagle's own plumes, we often give our enemies the means of our own destruction' - Aesop"
 			},
@@ -157,12 +157,12 @@
 			{
 				"name": "Calendar",
 				"row": 2,
-				"prerequisites": ["Agriculture","Writing"],
+				"prerequisites": ["Agriculture","Writing","Archery"],
 				"quote": "'So teach us to number our days, so that we may apply our hearts unto wisdom.' - Bible Psalms 90:12"
 			},
 			{
 				"name": "Trapping",
-				"row": 6,
+				"row": 4,
 				"prerequisites": ["Agriculture","Archery"],
 				"quote": "'Even brute beasts and wandering birds do not fall into the same traps or nets twice.' - Saint Jerome"
 			},
@@ -209,7 +209,7 @@
 			{
 				"name": "Mathematics",
 				"row": 7,
-				"prerequisites": ["Calendar","Archery","Masonry"],
+				"prerequisites": ["Calendar","Masonry"],
 				"quote": "'Mathematics is the gate and key to the sciences.' - Roger Bacon"
 			},
 			{
