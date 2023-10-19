@@ -26,7 +26,7 @@
 		"techs": [
 			{
 				"name": "Shelter",
-				"row": 7,
+				"row": 8,
 				"prerequisites": ["Survival"],
 				"quote": "Give me a home where the buffalo roam and the deer and the antelope play...",
 				"uniques": [
@@ -51,7 +51,7 @@
 			},
 			{
 				"name": "Clans",
-				"row": 5,
+				"row": 4,
 				"prerequisites": ["Survival"],
 				"quote": "Me like you. We here!",
 				"uniques": ["Adopt [Tradition]"],
