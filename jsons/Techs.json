@@ -58,7 +58,7 @@
 			},
 			{
 				"name": "Hunting",
-				"row": 1,
+				"row": 2,
 				"prerequisites": ["Survival"],
 				"quote": "SHHHHH! AAAAAAAAGGGH!!!",
 				"uniques": ["Free [Warrior] appears"],
@@ -128,19 +128,19 @@
 			},
 			{
 				"name": "Mining",
-				"row": 10,
+				"row": 9,
 				"prerequisites": ["The Wheel"],
 				"quote": "'The meek shall inherit the Earth, but not its mineral rights.' - J. Paul Getty"
 			},
 			{
 				"name": "Fishing",
 				"row": 1,
-				"prerequisites": ["Hunting"],
+				"prerequisites": ["Melee Weaponary"],
 				"quote": ""
 			},
 			{
 				"name": "Archery",
-				"row": 2,
+				"row": 3,
 				"prerequisites": ["Melee Weaponary"],
 				"quote": "'The haft of the arrow has been feathered with one of the eagle's own plumes, we often give our enemies the means of our own destruction' - Aesop"
 			},
@@ -214,7 +214,7 @@
 			},
 			{
 				"name": "Construction",
-				"row": 9,
+				"row": 10,
 				"prerequisites": ["Masonry","Bronze Working"],
 				"quote": "'Three things are to be looked to in a building: that it stands on the right spot; that it be securely founded; that it be successfully executed.' - Johann Wolfgang von Goethe"
 			},
@@ -237,13 +237,13 @@
 			},
 			{
 				"name": "Philosophy",
-				"row": 3,
+				"row": 4,
 				"prerequisites": ["Calendar"],
 				"quote": "'There is only one good, knowledge, and one evil, ignorance.' - Socrates"
 			},
 			{
 				"name": "Drama and Poetry",
-				"row": 4,
+				"row": 3,
 				"prerequisites": ["Politics","Horseback Riding"],
 				"quote": "'What is drama but life with the dull bits cut out.' - Alfred Hitchcock"
 			},
