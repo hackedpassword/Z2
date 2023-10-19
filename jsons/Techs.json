@@ -23,7 +23,7 @@
 		"techs": [
 			{
 				"name": "Shelter",
-				"row": 10,
+				"row": 8,
 				"prerequisites": ["Survival"],
 				"quote": "Give me a home where the buffalo roam and the deer and the antelope play...",
 				"uniques": ["Free [Settler] appears"],
@@ -51,7 +51,7 @@
 			},
 			{
 				"name": "Hunting",
-				"row": 4,
+				"row": 6,
 				"prerequisites": ["Survival"],
 				"quote": "SHHHHH! AAAAAAAAGGGH!!!",
 				"uniques": ["Free [Warrior] appears"],
@@ -67,14 +67,14 @@
 		"techs": [
 			{
 				"name": "Language",
-				"row": 5,
+				"row": 4,
 				"prerequisites": ["Fire","Clans"],
 				"quote": "",
 				"uniques": []
 			},
 			{
 				"name": "Pottery",
-				"row": 10,
+				"row": 8,
 				"prerequisites": ["Fire","Shelter"],
 				"quote": "'Shall the clay say to him that fashioneth it, what makest thou?' - Bible Isaiah 45:9"
 			},
@@ -161,8 +161,8 @@
 			},
 			{
 				"name": "Trapping",
-				"row": 4,
-				"prerequisites": ["Animal Husbandry","Melee Weaponary"],
+				"row": 3,
+				"prerequisites": ["Agriculture","Exploration"],
 				"quote": "'Even brute beasts and wandering birds do not fall into the same traps or nets twice.' - Saint Jerome"
 			},
 			{
