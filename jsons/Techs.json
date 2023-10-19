@@ -11,7 +11,6 @@
 				"row": 5,
 				"quote": "'Wuuman Wuuaman Wuuman!!!!' -Animal",
 				"uniques": [
-					"Starting tech",
 					"Free Technology <upon discovering a Natural Wonder>",
 					"[+1 Science] for every known Natural Wonder",  // Need to have for initial progression
 				],
@@ -30,7 +29,10 @@
 				"row": 7,
 				"prerequisites": ["Survival"],
 				"quote": "Give me a home where the buffalo roam and the deer and the antelope play...",
-				"uniques": ["Free [Settler] appears"],
+				"uniques": [
+					"Starting tech",
+					"Free [Settler] appears",
+				],
 			},
 			{
 				"name": "Fire",
