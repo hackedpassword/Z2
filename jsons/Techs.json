@@ -51,7 +51,7 @@
 			},
 			{
 				"name": "Clans",
-				"row": 2,
+				"row": 3,
 				"prerequisites": ["Survival"],
 				"quote": "Me like you. We here!",
 				"uniques": ["Adopt [Tradition]"],
@@ -74,7 +74,7 @@
 		"techs": [
 			{
 				"name": "Language",
-				"row": 3,
+				"row": 4,
 				"prerequisites": ["Clans"],
 				"quote": "",
 				"uniques": []
@@ -122,7 +122,7 @@
 			},
 			{
 				"name": "Writing",
-				"row": 2,
+				"row": 3,
 				"prerequisites": ["Language"],
 				"quote": "'He who destroys a good book kills reason itself.' - John Milton"
 			},
