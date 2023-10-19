@@ -12,6 +12,7 @@
 				"quote": "'Wuuman Wuuaman Wuuman!!!!' -Animal",
 				"uniques": [
 					"Starting tech",
+					"Free Technology <upon discovering a Natural Wonder>",
 					"[+1 Science] for every known Natural Wonder",  // Need to have for initial progression
 				],
 			},
