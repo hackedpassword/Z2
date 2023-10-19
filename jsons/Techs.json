@@ -161,7 +161,7 @@
 			},
 			{
 				"name": "Masonry",
-				"row": 9,
+				"row": 8,
 				"prerequisites": ["Mining","Pottery"],
 				"quote": "'How happy are those whose walls already rise!' - Virgil"
 			},
@@ -189,7 +189,7 @@
 			{
 				"name": "Politics",
 				"row": 5,
-				"prerequisites": ["Masonry"],
+				"prerequisites": ["Agriculture"],
 				"uniques": ["Free Social Policy"],
 				"quote": "Men with bieeeg hats!"
 			},
@@ -202,7 +202,7 @@
 			{
 				"name": "Mathematics",
 				"row": 7,
-				"prerequisites": ["Calendar","Masonry"],
+				"prerequisites": ["Calendar","Archery"],
 				"quote": "'Mathematics is the gate and key to the sciences.' - Roger Bacon"
 			},
 			{
