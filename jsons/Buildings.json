@@ -107,7 +107,7 @@
 		"requiredTech": "Scientific Theory",  // was classical era? before education?? 
 	},
 	{
-		"name": "Courthouse",
+		"name": "Courthouse",  // can be built in all cities
 		"maintenance": 4,
 		"hurryCostModifier": 50,
 		"uniques": [
@@ -115,6 +115,6 @@
 			"[+1 Happiness, +1 Gold] <in this city>",
 			"[+1 Culture] <in annexed cities>",
 		],
-		"requiredTech": "Tribalism"
+		"requiredTech": "Politics",
 	},
 ] 
