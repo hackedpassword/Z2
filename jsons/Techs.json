@@ -122,7 +122,7 @@
 			},
 			{
 				"name": "Writing",
-				"row": 2,
+				"row": 4,
 				"prerequisites": ["Language"],
 				"quote": "'He who destroys a good book kills reason itself.' - John Milton"
 			},
