@@ -31,8 +31,8 @@
 				"quote": "Give me a home where the buffalo roam and the deer and the antelope play...",
 				"uniques": [
 					"Starting tech",
-					"Free Technology",
-					"Free [Settler] appears",
+					"Free Technology",  // Triggers tech tree
+					
 				],
 			},
 			{
