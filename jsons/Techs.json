@@ -163,7 +163,7 @@
 			{
 				"name": "Trapping",
 				"row": 2,
-				"prerequisites": ["Agriculture","Archery"],
+				"prerequisites": ["Fishing","Archery"],
 				"quote": "'Even brute beasts and wandering birds do not fall into the same traps or nets twice.' - Saint Jerome"
 			},
 			{
