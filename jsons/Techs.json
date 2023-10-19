@@ -132,12 +132,6 @@
 				"quote": ""
 			},
 			{
-				"name": "Exploration",
-				"row": 5,
-				"prerequisites": ["Language","Melee Weaponary"],
-				"quote": ""
-			},
-			{
 				"name": "Archery",
 				"row": 9,
 				"prerequisites": ["Melee Weaponary"],
@@ -162,7 +156,7 @@
 			{
 				"name": "Trapping",
 				"row": 3,
-				"prerequisites": ["Agriculture","Exploration"],
+				"prerequisites": ["Agriculture"],
 				"quote": "'Even brute beasts and wandering birds do not fall into the same traps or nets twice.' - Saint Jerome"
 			},
 			{
@@ -189,13 +183,13 @@
 			{
 				"name": "Sailing",
 				"row": 1,
-				"prerequisites": ["Exploration","Fishing"],
+				"prerequisites": ["Fishing"],
 				"quote": "'He who commands the sea has command of everything.' - Themistocles"
 			},
 			{
 				"name": "Politics",
 				"row": 5,
-				"prerequisites": ["Masonry","Exploration"],
+				"prerequisites": ["Masonry"],
 				"uniques": ["Free Social Policy"],
 				"quote": "Men with bieeeg hats!"
 			},
