@@ -121,7 +121,7 @@
 			},
 			{
 				"name": "Mining",
-				"row": 7,
+				"row": 5,
 				"prerequisites": ["The Wheel","Melee Weaponary"],
 				"quote": "'The meek shall inherit the Earth, but not its mineral rights.' - J. Paul Getty"
 			},
