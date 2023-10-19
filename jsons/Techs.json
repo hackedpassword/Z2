@@ -23,7 +23,7 @@
 		"techs": [
 			{
 				"name": "Shelter",
-				"row": 8,
+				"row": 6,
 				"prerequisites": ["Survival"],
 				"quote": "Give me a home where the buffalo roam and the deer and the antelope play...",
 				"uniques": ["Free [Settler] appears"],
@@ -74,7 +74,7 @@
 			},
 			{
 				"name": "Pottery",
-				"row": 7,
+				"row": 8,
 				"prerequisites": ["Fire","Shelter"],
 				"quote": "'Shall the clay say to him that fashioneth it, what makest thou?' - Bible Isaiah 45:9"
 			},
