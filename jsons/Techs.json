@@ -44,14 +44,14 @@
 			},
 			{
 				"name": "Clans",
-				"row": 3,
+				"row": 2,
 				"prerequisites": ["Survival"],
 				"quote": "Me like you. We here!",
 				"uniques": ["Adopt [Tradition]"],
 			},
 			{
 				"name": "Hunting",
-				"row": 6,
+				"row": 4,
 				"prerequisites": ["Survival"],
 				"quote": "SHHHHH! AAAAAAAAGGGH!!!",
 				"uniques": ["Free [Warrior] appears"],
@@ -67,14 +67,14 @@
 		"techs": [
 			{
 				"name": "Language",
-				"row": 4,
+				"row": 2,
 				"prerequisites": ["Fire","Clans"],
 				"quote": "",
 				"uniques": []
 			},
 			{
 				"name": "Pottery",
-				"row": 8,
+				"row": 7,
 				"prerequisites": ["Fire","Shelter"],
 				"quote": "'Shall the clay say to him that fashioneth it, what makest thou?' - Bible Isaiah 45:9"
 			},
@@ -108,7 +108,7 @@
 		"techs": [
 			{
 				"name": "Agriculture",
-				"row": 3,
+				"row": 6,
 				"prerequisites": ["The Wheel","Pottery"],
 				"quote": "'Where tillage begins, other arts follow. The farmers therefore are the founders of human civilization.' - Daniel Webster",
 				"uniques": []
@@ -121,7 +121,7 @@
 			},
 			{
 				"name": "Mining",
-				"row": 6,
+				"row": 10,
 				"prerequisites": ["The Wheel","Melee Weaponary"],
 				"quote": "'The meek shall inherit the Earth, but not its mineral rights.' - J. Paul Getty"
 			},
