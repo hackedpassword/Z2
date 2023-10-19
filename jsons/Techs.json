@@ -196,7 +196,7 @@
 			{
 				"name": "Horseback Riding",
 				"row": 4,
-				"prerequisites": ["Exploration","Trapping"],
+				"prerequisites": ["Trapping"],
 				"quote": "'A Horse! A Horse! My kingdom for a horse!' - Shakespeare (Richard III)"
 			},
 			{
