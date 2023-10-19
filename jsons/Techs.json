@@ -115,7 +115,7 @@
 			},
 			{
 				"name": "Writing",
-				"row": 3,
+				"row": 2,
 				"prerequisites": ["Language"],
 				"quote": "'He who destroys a good book kills reason itself.' - John Milton"
 			},
@@ -155,7 +155,7 @@
 
 			{
 				"name": "Calendar",
-				"row": 3,
+				"row": 2,
 				"prerequisites": ["Agriculture","Writing"],
 				"quote": "'So teach us to number our days, so that we may apply our hearts unto wisdom.' - Bible Psalms 90:12"
 			},
@@ -174,7 +174,7 @@
 			{
 				"name": "Bronze Working",
 				"row": 10,
-				"prerequisites": ["Mining","Pottery"],
+				"prerequisites": ["Mining"],
 				"quote": "'Here Hector entered, with a spear eleven cubits long in his hand; the bronze point gleamed in front of him, and was fastened to the shaft of the spear by a ring of gold.' - Homer"
 			},
 		]
@@ -242,7 +242,7 @@
 			},
 			{
 				"name": "Drama and Poetry",
-				"row": 5,
+				"row": 4,
 				"prerequisites": ["Politics","Horseback Riding"],
 				"quote": "'What is drama but life with the dull bits cut out.' - Alfred Hitchcock"
 			},
