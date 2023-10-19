@@ -10,7 +10,10 @@
 				"name": "Survival",
 				"row": 5,
 				"quote": "'Wuuman Wuuaman Wuuman!!!!' -Animal",
-				"uniques": ["Starting tech"],
+				"uniques": [
+					"Starting tech",
+					"[+1] Science",  // Need to have for initial progression
+				],
 			},
 		]
 	},
@@ -256,7 +259,7 @@
 			{
 				"name": "Iron Working",
 				"row": 10,
-				"prerequisites": ["Bronze Working","Construction"],
+				"prerequisites": ["Construction"],
 				"quote": "'Do not wait to strike til the iron is hot, but make it hot by striking.' - William Butler Yeats"
 			},
 		]
