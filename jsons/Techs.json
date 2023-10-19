@@ -44,14 +44,14 @@
 			},
 			{
 				"name": "Clans",
-				"row": 1,
+				"row": 3,
 				"prerequisites": ["Survival"],
 				"quote": "Me like you. We here!",
 				"uniques": ["Adopt [Tradition]"],
 			},
 			{
 				"name": "Hunting",
-				"row": 2,
+				"row": 1,
 				"prerequisites": ["Survival"],
 				"quote": "SHHHHH! AAAAAAAAGGGH!!!",
 				"uniques": ["Free [Warrior] appears"],
@@ -128,7 +128,7 @@
 			{
 				"name": "Fishing",
 				"row": 1,
-				"prerequisites": ["Melee Weaponary"],
+				"prerequisites": ["Hunting"],
 				"quote": ""
 			},
 			{
@@ -155,7 +155,7 @@
 			},
 			{
 				"name": "Trapping",
-				"row": 5,
+				"row": 3,
 				"prerequisites": ["Agriculture"],
 				"quote": "'Even brute beasts and wandering birds do not fall into the same traps or nets twice.' - Saint Jerome"
 			},
@@ -188,7 +188,7 @@
 			},
 			{
 				"name": "Politics",
-				"row": 6,
+				"row": 1,
 				"prerequisites": ["Agriculture"],
 				"uniques": ["Free Social Policy"],
 				"quote": "Men with bieeeg hats!"
