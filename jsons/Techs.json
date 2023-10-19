@@ -27,7 +27,7 @@
 			{
 				"name": "Shelter",
 				"row": 6,
-				"prerequisites": ["Survival","Shelter"],
+				"prerequisites": ["Survival"],
 				"quote": "Give me a home where the buffalo roam and the deer and the antelope play...",
 				"uniques": [
 					"Starting tech",
@@ -162,7 +162,7 @@
 			},
 			{
 				"name": "Trapping",
-				"row": 3,
+				"row": 2,
 				"prerequisites": ["Agriculture","Archery"],
 				"quote": "'Even brute beasts and wandering birds do not fall into the same traps or nets twice.' - Saint Jerome"
 			},
@@ -203,7 +203,7 @@
 			{
 				"name": "Horseback Riding",
 				"row": 2,
-				"prerequisites": ["Trapping"],
+				"prerequisites": ["Trapping","Calendar"],
 				"quote": "'A Horse! A Horse! My kingdom for a horse!' - Shakespeare (Richard III)"
 			},
 			{
