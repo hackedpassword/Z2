@@ -237,7 +237,7 @@
 			{
 				"name": "Philosophy",
 				"row": 2,
-				"prerequisites": ["Writing","Calendar"],
+				"prerequisites": ["Calendar"],
 				"quote": "'There is only one good, knowledge, and one evil, ignorance.' - Socrates"
 			},
 			{
@@ -283,7 +283,7 @@
 			{
 				"name": "Civil Service",
 				"row": 4,
-				"prerequisites": ["Horseback Riding","Drama and Poetry"],
+				"prerequisites": ["Drama and Poetry"],
 				"uniques": ["Enables Open Borders agreements"],
 				"quote": "'The only thing that saves us from the bureaucracy is its inefficiency' - Eugene McCarthy"
 			},
