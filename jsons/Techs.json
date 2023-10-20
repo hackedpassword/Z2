@@ -87,7 +87,7 @@
 			},
 			{
 				"name": "The Wheel",
-				"row": 10,
+				"row": 9,
 				"prerequisites": ["Tools"],
 				"quote": "'Wisdom and virtue are like the two wheels of a cart.' - Japanese proverb"
 			},
@@ -129,7 +129,7 @@
 			{
 				"name": "Mining",
 				"row": 9,
-				"prerequisites": ["The Wheel"],
+				"prerequisites": ["The Wheel","Pottery"],
 				"quote": "'The meek shall inherit the Earth, but not its mineral rights.' - J. Paul Getty"
 			},
 			{
@@ -169,7 +169,7 @@
 			{
 				"name": "Masonry",
 				"row": 8,
-				"prerequisites": ["Mining","Pottery"],
+				"prerequisites": ["Mining"],
 				"quote": "'How happy are those whose walls already rise!' - Virgil"
 			},
 			{
@@ -243,7 +243,7 @@
 			},
 			{
 				"name": "Drama and Poetry",
-				"row": 3,
+				"row": 2,
 				"prerequisites": ["Politics","Horseback Riding"],
 				"quote": "'What is drama but life with the dull bits cut out.' - Alfred Hitchcock"
 			},
