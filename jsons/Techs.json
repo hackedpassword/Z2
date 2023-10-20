@@ -277,13 +277,13 @@
 		"techs": [
 			{
 				"name": "Theology",
-				"row": 3,
+				"row": 4,
 				"prerequisites": ["Philosophy", "Drama and Poetry"],
 				"quote": "'Three things are necessary for the salvation of man: to know what he ought to believe; to know what he ought to desire; and to know what he ought to do' - St. Thomas Aquinas"
 			},
 			{
 				"name": "Civil Service",
-				"row": 4,
+				"row": 2,
 				"prerequisites": ["Drama and Poetry"],
 				"uniques": ["Enables Open Borders agreements"],
 				"quote": "'The only thing that saves us from the bureaucracy is its inefficiency' - Eugene McCarthy"
