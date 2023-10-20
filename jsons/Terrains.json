@@ -288,7 +288,7 @@
 		"uniques": ["Grants 500 Gold to the first civilization to discover it",
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
-			"Units ending their turn on this terrain take [75] damage",
+			"Units ending their turn on this terrain take [25] damage",
 			"Tile provides yield without assigned population"
 		],
 		"turnsInto": "Mountain",
@@ -306,7 +306,7 @@
 		"uniques": ["Grants 500 Gold to the first civilization to discover it",
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
-			"Units ending their turn on this terrain take [75] damage",
+			"Units ending their turn on this terrain take [25] damage",
 			"Tile provides yield without assigned population"],
 		"turnsInto": "Mountain",
 		"impassable": false,  // may be true when some "hero" ability is created
@@ -323,7 +323,7 @@
 		"uniques": ["Grants 500 Gold to the first civilization to discover it",
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
-			"Units ending their turn on this terrain take [75] damage",
+			"Units ending their turn on this terrain take [25] damage",
 			"Tile provides yield without assigned population"],
 		"turnsInto": "Mountain",
 		"impassable": false,  // may be true when some "hero" ability is created
@@ -340,7 +340,7 @@
 		"uniques": ["Grants 500 Gold to the first civilization to discover it",
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
-			"Units ending their turn on this terrain take [75] damage",
+			"Units ending their turn on this terrain take [25] damage",
 			"Tile provides yield without assigned population"],
 		"turnsInto": "Mountain",
 		"impassable": false,  // may be true when some "hero" ability is created
@@ -357,7 +357,7 @@
 		"uniques": ["Grants 500 Gold to the first civilization to discover it",
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
-			"Units ending their turn on this terrain take [75] damage",
+			"Units ending their turn on this terrain take [25] damage",
 			"Tile provides yield without assigned population"],
 		"turnsInto": "Mountain",
 		"impassable": false,  // may be true when some "hero" ability is created
@@ -374,7 +374,7 @@
 		"uniques": ["Grants 500 Gold to the first civilization to discover it",
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
-			"Units ending their turn on this terrain take [75] damage",
+			"Units ending their turn on this terrain take [25] damage",
 			"Tile provides yield without assigned population"],
 		"turnsInto": "Mountain",
 		"impassable": false,  // may be true when some "hero" ability is created
@@ -391,7 +391,7 @@
 		"uniques": ["Grants 500 Gold to the first civilization to discover it",
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
-			"Units ending their turn on this terrain take [75] damage",
+			"Units ending their turn on this terrain take [25] damage",
 			"Tile provides yield without assigned population"],
 		"turnsInto": "Mountain",
 		"impassable": false,  // may be true when some "hero" ability is created
@@ -408,7 +408,7 @@
 		"uniques": ["Grants 500 Gold to the first civilization to discover it",
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
-			"Units ending their turn on this terrain take [75] damage",
+			"Units ending their turn on this terrain take [25] damage",
 			"Tile provides yield without assigned population"],
 		"turnsInto": "Mountain",
 		"impassable": false,  // may be true when some "hero" ability is created
@@ -443,7 +443,7 @@
 		"uniques": ["Grants 500 Gold to the first civilization to discover it",
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
-			"Units ending their turn on this terrain take [75] damage",
+			"Units ending their turn on this terrain take [25] damage",
 			"Tile provides yield without assigned population"],
 		"turnsInto": "Mountain",
 		"impassable": false,  // may be true when some "hero" ability is created
@@ -460,7 +460,7 @@
 		"uniques": ["Grants 500 Gold to the first civilization to discover it",
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
-			"Units ending their turn on this terrain take [75] damage",
+			"Units ending their turn on this terrain take [25] damage",
 			"Tile provides yield without assigned population"],
 		"turnsInto": "Mountain",
 		"impassable": false,  // may be true when some "hero" ability is created
@@ -477,7 +477,7 @@
 		"uniques": ["Grants 500 Gold to the first civilization to discover it",
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
-			"Units ending their turn on this terrain take [75] damage",
+			"Units ending their turn on this terrain take [25] damage",
 			"Tile provides yield without assigned population"],
 		"turnsInto": "Mountain",
 		"impassable": false,  // may be true when some "hero" ability is created
@@ -494,7 +494,7 @@
 		"uniques": ["Grants 500 Gold to the first civilization to discover it",
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
-			"Units ending their turn on this terrain take [75] damage",
+			"Units ending their turn on this terrain take [25] damage",
 			"Tile provides yield without assigned population"],
 		"turnsInto": "Mountain",
 		"impassable": false,  // may be true when some "hero" ability is created
@@ -511,7 +511,7 @@
 		"uniques": ["Grants 500 Gold to the first civilization to discover it",
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
-			"Units ending their turn on this terrain take [75] damage",
+			"Units ending their turn on this terrain take [25] damage",
 			"Tile provides yield without assigned population"],
 		"turnsInto": "Mountain",
 		"impassable": false,  // may be true when some "hero" ability is created
@@ -528,7 +528,7 @@
 		"uniques": ["Grants 500 Gold to the first civilization to discover it",
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
-			"Units ending their turn on this terrain take [75] damage",
+			"Units ending their turn on this terrain take [25] damage",
 			"Tile provides yield without assigned population"],
 		"turnsInto": "Mountain",
 		"impassable": false,  // may be true when some "hero" ability is created
@@ -545,7 +545,7 @@
 		"uniques": ["Grants 500 Gold to the first civilization to discover it",
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
-			"Units ending their turn on this terrain take [75] damage",
+			"Units ending their turn on this terrain take [25] damage",
 			"Tile provides yield without assigned population"],
 		"turnsInto": "Mountain",
 		"impassable": false,  // may be true when some "hero" ability is created
