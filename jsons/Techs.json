@@ -715,7 +715,7 @@
 			},
 			{
 				"name": "Satellites",
-				"row": 6,
+				"row": 8,
 				"prerequisites": ["Rocketry","Telecommunications"],
 				"uniques": ["Reveals the entire map"],
 				"quote": "'Now, somehow, in some new way, the sky seemed almost alien.' - Lyndon B. Johnson"
@@ -755,7 +755,7 @@
 			},
 			{
 				"name": "Nuclear Fusion",
-				"row": 4,
+				"row": 5,
 				"prerequisites": ["Advanced Ballistics","Lasers"],  // GDR requires Robotics discovery
 				"quote": "'The release of atomic energy has not created a new problem. It has readily made more urgent the necessity of solving an existing one.' - Albert Einstein"
 			},
@@ -767,7 +767,7 @@
 			},
 			{
 				"name": "Stealth",
-				"row": 6,
+				"row": 8,
 				"prerequisites": ["Mobile Tactics","Satellites"],
 				"quote": "'Be extremely subtle, even to the point of formlessness, be extremely mysterious, even to the point of soundlessness. Thereby you can be the director of the opponent's fate.' - Sun Tzu"
 			},
