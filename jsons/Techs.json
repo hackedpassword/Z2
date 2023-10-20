@@ -704,7 +704,7 @@
 			{
 				"name": "Advanced Ballistics",
 				"row": 5,
-				"prerequisites": ["Nuclear Fission","Rocketry","Telecommunications"],
+				"prerequisites": ["Nuclear Fission","Rocketry"],
 				"quote": "'Our scientific power has outrun our spiritual power, we have guided missiles and misguided men.' – Martin Luther King Jr."
 			},
 			{
@@ -728,7 +728,7 @@
 			},
 			{
 				"name": "Lasers",
-				"row": 4,
+				"row": 3,
 				"prerequisites": ["Nuclear Fission"],
 				"quote": "'The night is far spent, the day is at hand: let us therefore cast off the works of darkness, and let us put on the armor of light.' - The Holy Bible: Romans, 13:12"
 			},
@@ -755,7 +755,7 @@
 			},
 			{
 				"name": "Nuclear Fusion",
-				"row": 5,
+				"row": 4,
 				"prerequisites": ["Advanced Ballistics","Lasers"],  // GDR requires Robotics discovery
 				"quote": "'The release of atomic energy has not created a new problem. It has readily made more urgent the necessity of solving an existing one.' - Albert Einstein"
 			},
@@ -767,7 +767,7 @@
 			},
 			{
 				"name": "Stealth",
-				"row": 7,
+				"row": 8,
 				"prerequisites": ["Mobile Tactics","Satellites"],
 				"quote": "'Be extremely subtle, even to the point of formlessness, be extremely mysterious, even to the point of soundlessness. Thereby you can be the director of the opponent's fate.' - Sun Tzu"
 			},
