@@ -277,13 +277,13 @@
 		"techs": [
 			{
 				"name": "Theology",
-				"row": 2,
+				"row": 3,
 				"prerequisites": ["Philosophy", "Drama and Poetry"],
 				"quote": "'Three things are necessary for the salvation of man: to know what he ought to believe; to know what he ought to desire; and to know what he ought to do' - St. Thomas Aquinas"
 			},
 			{
 				"name": "Civil Service",
-				"row": 3,
+				"row": 4,
 				"prerequisites": ["Drama and Poetry"],
 				"uniques": ["Enables Open Borders agreements"],
 				"quote": "'The only thing that saves us from the bureaucracy is its inefficiency' - Eugene McCarthy"
@@ -332,7 +332,7 @@
 			},
 			{
 				"name": "Enterprising",
-				"row": 3,
+				"row": 4,
 				"prerequisites": ["Civil Service","Guilds"],
 				"uniques": ["[+1 Gold, +1 Happiness] from each Trade Route"],
 				"quote": "I cannot tell where you should looke for me.' he wrote, 'because I live at the devotion of the winds and seas.' (Written by/about Captain James Lancaster)"
@@ -367,7 +367,7 @@
 			},
 			{
 				"name": "Printing Press",
-				"row": 5,
+				"row": 4,
 				"prerequisites": ["Machinery"],
 				"quote": "'It is a newspaper's duty to print the news and raise hell.' - The Chicago Times"
 			},
@@ -380,7 +380,7 @@
 			{
 				"name": "Education",
 				"row": 7,
-				"prerequisites": ["Physics"],
+				"prerequisites": ["Physics","Guilds"],
 				"uniques": ["Enables conversion of city production to [Science]","Enables Research agreements"],
 				"quote": "'Education is the best provision for old age.' - Aristotle"
 			},
@@ -415,7 +415,7 @@
 			},
 			{
 				"name": "Banking",
-				"row": 3,
+				"row": 4,
 				"prerequisites": ["Enterprising"],
 				"quote": "'Happiness: a good bank account, a good cook and a good digestion' - Jean Jacques Rousseau"
 			},
@@ -448,7 +448,7 @@
 			},
 			{
 				"name": "Economics",
-				"row": 5,
+				"row": 4,
 				"prerequisites": ["Banking","Printing Press"],
 				"quote": "'Compound interest is the most powerful force in the universe.' - Albert Einstein"
 			},
@@ -474,14 +474,14 @@
 			},
 			{
 				"name": "Free Trade",
-				"row": 4,
+				"row": 3,
 				"uniques": ["[+2] Gold <in all coastal cities> <in all cities connected to capital>"],  // not sure if the logic will filter
 				"prerequisites": ["Economics","Navigation"],
 				"quote": "'A market is a law system. Without it, the only possible economy is the street robbery.' - Eugen von Böhm-Bawerk"
 			},
 			{
 				"name": "Steam Power",
-				"row": 6,
+				"row": 5,
 				"uniques": ["[+1] Movement <for [Embarked] units>"],
 				"prerequisites": ["Scientific Theory"],
 				"quote": "'The nations of the West hope that by means of steam communication all the world will become as one family.' - Townsend Harris"
