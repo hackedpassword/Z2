@@ -250,14 +250,15 @@
 		"attackSound": "missile"
 	},
 	{
-		"name": "Cruise Missile",  // i.e. Tomahawk, shock-and-awe type destruction
+	// i.e. Tomahawk, shock-and-awe type destruction
+		"name": "Cruise Missile",
 		"unitType": "Missile",
 		"movement": 1,
 		"strength": 90,
 		"rangedStrength": 350,  // meant to one-shot most units, weak against Gunpowder units
 		"range": 16,  // Long range ordnance
 		"cost": 400,
-		"requiredTech": "Rocketry",
+		"requiredTech": "Advanced Ballistics",
 		"uniques": [
 			"[25]% maintenance costs",  // more expensive to maintain
 			"Destroys tile improvements when attacking",
