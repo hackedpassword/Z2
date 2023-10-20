@@ -20,7 +20,7 @@
 	{
 		"columnNumber": 1,
 		"era": "Prehistoric era",
-		"techCost": 2,
+		"techCost": 5,
 		"buildingCost": 8,
 		"wonderCost": 10,
 		"techs": [
@@ -28,7 +28,7 @@
 				"name": "Shelter",
 				"row": 6,
 				"prerequisites": ["Survival"],
-				"quote": "Give me a home where the buffalo roam and the deer and the antelope play...",
+				"quote": "Fully furnished with tree stump.",
 				"uniques": [
 					"Starting tech",
 					"Free Technology",  // Triggers tech tree
@@ -53,7 +53,7 @@
 				"name": "Clans",
 				"row": 4,
 				"prerequisites": ["Survival"],
-				"quote": "Me like you. We here!",
+				"quote": "Me like you. We here now!",
 				"uniques": ["Adopt [Tradition]"],
 			},
 			{
