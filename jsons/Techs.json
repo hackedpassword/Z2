@@ -325,7 +325,7 @@
 			},
 			{
 				"name": "Aesthetics",
-				"row": 2,
+				"row": 3,
 				"prerequisites": ["Civil Service","Theology"],
 				"uniques": ["[+1 Production, +1 Happiness] <in this city> <when not at war>"],
 				"quote": "'Quaint, serene. Why didn't we think of this before?'"
@@ -361,7 +361,7 @@
 		"techs": [
 			{
 				"name": "Acoustics",
-				"row": 2,
+				"row": 3,
 				"prerequisites": ["Aesthetics"],
 				"quote": "'Their rising all at once was as the sound of thunder heard remote' - Milton"
 			},
