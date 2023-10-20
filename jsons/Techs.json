@@ -2,9 +2,9 @@
 	{
 		"columnNumber": 0,
 		"era": "Prehistoric era",
-		"techCost": 1,
-		"buildingCost": 1,
-		"wonderCost": 3,
+		"techCost": 5,
+		"buildingCost": 4,
+		"wonderCost": 8,
 		"techs": [
 			{
 				"name": "Survival",
@@ -20,9 +20,9 @@
 	{
 		"columnNumber": 1,
 		"era": "Prehistoric era",
-		"techCost": 5,
+		"techCost": 10,
 		"buildingCost": 8,
-		"wonderCost": 10,
+		"wonderCost": 15,
 		"techs": [
 			{
 				"name": "Shelter",
@@ -68,7 +68,7 @@
 	{
 		"columnNumber": 2,
 		"era": "Prehistoric era",
-		"techCost": 10,
+		"techCost": 30,
 		"buildingCost": 15,
 		"wonderCost": 30,
 		"techs": [
@@ -109,7 +109,7 @@
 	{
 		"columnNumber": 3,
 		"era": "Ancient era",
-		"techCost": 30,
+		"techCost": 40,
 		"buildingCost": 50,
 		"wonderCost": 100,
 		"techs": [
