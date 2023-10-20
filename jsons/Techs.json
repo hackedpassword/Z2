@@ -594,13 +594,13 @@
 			},
 			{
 				"name": "Radio",
-				"row": 7,
+				"row": 8,
 				"prerequisites": ["Electronics"],
 				"quote": "'The whole country was tied together by radio. We all experienced the same heroes and comedians and singers. They were giants.' - Woody Allen"
 			},
 			{
 				"name": "Replaceable Parts",
-				"row": 5,
+				"row": 6,
 				"prerequisites": ["Electronics","Combustion"],
 				"quote": "'Nothing is particularly hard if you divide it into small jobs.' - Henry Ford"
 			},
@@ -688,7 +688,7 @@
 			},
 			{
 				"name": "Telecommunications",
-				"row": 7,
+				"row": 8,
 				"prerequisites": ["Computers","Radar"],
 				"quote": "'The more we elaborate our means of communication, the less we communicate.' - J.B. Priestly"
 			},
