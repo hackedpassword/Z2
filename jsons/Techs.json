@@ -474,14 +474,14 @@
 			},
 			{
 				"name": "Free Trade",
-				"row": 3,
+				"row": 4,
 				"uniques": ["[+2] Gold <in all coastal cities> <in all cities connected to capital>"],  // not sure if the logic will filter
 				"prerequisites": ["Economics","Navigation"],
 				"quote": "'A market is a law system. Without it, the only possible economy is the street robbery.' - Eugen von Böhm-Bawerk"
 			},
 			{
 				"name": "Steam Power",
-				"row": 5,
+				"row": 6,
 				"uniques": ["[+1] Movement <for [Embarked] units>"],
 				"prerequisites": ["Scientific Theory"],
 				"quote": "'The nations of the West hope that by means of steam communication all the world will become as one family.' - Townsend Harris"
@@ -600,7 +600,7 @@
 			},
 			{
 				"name": "Replaceable Parts",
-				"row": 6,
+				"row": 5,
 				"prerequisites": ["Electronics","Combustion"],
 				"quote": "'Nothing is particularly hard if you divide it into small jobs.' - Henry Ford"
 			},
@@ -761,19 +761,19 @@
 			},
 			{
 				"name": "Nuclear Fusion",
-				"row": 5,
-				"prerequisites": ["Advanced Ballistics"],  // GDR also needs Robotics
+				"row": 4,
+				"prerequisites": ["Advanced Ballistics","Lasers"],  // GDR requires Robotics discovery
 				"quote": "'The release of atomic energy has not created a new problem. It has readily made more urgent the necessity of solving an existing one.' - Albert Einstein"
 			},
 			{
 				"name": "Nanotechnology",
-				"row": 9,
+				"row": 6,
 				"prerequisites": ["Robotics","Mobile Tactics","Lasers"],
 				"quote": "'The impact of nanotechnology is expected to exceed the impact that the electronics revolution has had on our lives.' - Richard Schwartz"
 			},
 			{
 				"name": "Stealth",
-				"row": 6,
+				"row": 7,
 				"prerequisites": ["Mobile Tactics","Satellites"],
 				"quote": "'Be extremely subtle, even to the point of formlessness, be extremely mysterious, even to the point of soundlessness. Thereby you can be the director of the opponent's fate.' - Sun Tzu"
 			},
