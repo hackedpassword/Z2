@@ -734,7 +734,7 @@
 			},
 			{
 				"name": "Lasers",
-				"row": 3,
+				"row": 4,
 				"prerequisites": ["Nuclear Fission"],
 				"quote": "'The night is far spent, the day is at hand: let us therefore cast off the works of darkness, and let us put on the armor of light.' - The Holy Bible: Romans, 13:12"
 			},
@@ -761,19 +761,19 @@
 			},
 			{
 				"name": "Nuclear Fusion",
-				"row": 4,
+				"row": 5,
 				"prerequisites": ["Advanced Ballistics","Lasers"],  // GDR requires Robotics discovery
 				"quote": "'The release of atomic energy has not created a new problem. It has readily made more urgent the necessity of solving an existing one.' - Albert Einstein"
 			},
 			{
 				"name": "Nanotechnology",
-				"row": 6,
+				"row": 7,
 				"prerequisites": ["Robotics","Mobile Tactics","Lasers"],
 				"quote": "'The impact of nanotechnology is expected to exceed the impact that the electronics revolution has had on our lives.' - Richard Schwartz"
 			},
 			{
 				"name": "Stealth",
-				"row": 7,
+				"row": 9,
 				"prerequisites": ["Mobile Tactics","Satellites"],
 				"quote": "'Be extremely subtle, even to the point of formlessness, be extremely mysterious, even to the point of soundlessness. Thereby you can be the director of the opponent's fate.' - Sun Tzu"
 			},
