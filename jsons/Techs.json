@@ -87,7 +87,7 @@
 			},
 			{
 				"name": "The Wheel",
-				"row": 9,
+				"row": 10,
 				"prerequisites": ["Tools"],
 				"quote": "'Wisdom and virtue are like the two wheels of a cart.' - Japanese proverb"
 			},
@@ -283,7 +283,7 @@
 			},
 			{
 				"name": "Civil Service",
-				"row": 4,
+				"row": 3,
 				"prerequisites": ["Drama and Poetry"],
 				"uniques": ["Enables Open Borders agreements"],
 				"quote": "'The only thing that saves us from the bureaucracy is its inefficiency' - Eugene McCarthy"
@@ -303,7 +303,7 @@
 			},
 			{
 				"name": "Physics",
-				"row": 8,
+				"row": 7,
 				"prerequisites": ["Engineering"],
 				"quote": "'Measure what is measurable, and make measurable what is not so.' - Galileo Galilei"
 			},
@@ -332,14 +332,14 @@
 			},
 			{
 				"name": "Enterprising",
-				"row": 4,
+				"row": 3,
 				"prerequisites": ["Civil Service","Guilds"],
 				"uniques": ["[+1 Gold, +1 Happiness] from each Trade Route"],
 				"quote": "I cannot tell where you should looke for me.' he wrote, 'because I live at the devotion of the winds and seas.' (Written by/about Captain James Lancaster)"
 			},
 			{
 				"name": "Machinery",
-				"row": 9,
+				"row": 8,
 				"prerequisites": ["Physics","Metal Casting"],
 				"uniques": ["Improves movement speed on roads"],
 				"quote": "'The press is the best instrument for enlightening the mind of man, and improving him as a rational, moral and social being.' - Thomas Jefferson"
@@ -367,7 +367,7 @@
 			},
 			{
 				"name": "Printing Press",
-				"row": 5,
+				"row": 4,
 				"prerequisites": ["Machinery","Enterprising"],
 				"quote": "'It is a newspaper's duty to print the news and raise hell.' - The Chicago Times"
 			},
