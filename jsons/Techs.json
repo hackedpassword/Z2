@@ -682,7 +682,7 @@
 			},
 			{
 				"name": "Rocketry",
-				"row": 5,
+				"row": 6,
 				"prerequisites": ["Radar"],
 				"quote": "'A good rule for rocket experimenters to follow is this: always assume that it will explode.' - Astronautics Magazine, 1937"
 			},
@@ -702,12 +702,6 @@
 		"wonderCost": 1250,
 		"techs": [
 			{
-				"name": "Mobile Tactics",
-				"row": 4,
-				"prerequisites": ["Nuclear Fission","Telecommunications"],
-				"quote": "'All men can see these tactics whereby I conquer, but what none can see is the strategy out of which victory is evolved.' - Sun Tzu"
-			},
-			{
 				"name": "Advanced Ballistics",
 				"row": 5,
 				"prerequisites": ["Nuclear Fission","Rocketry","Telecommunications"],
@@ -715,7 +709,7 @@
 			},
 			{
 				"name": "Mobile Tactics",
-				"row": 6,
+				"row": 3,
 				"prerequisites": ["Telecommunications","Nuclear Fission"],
 				"quote": "'All men can see these tactics whereby I conquer, but what none can see is the strategy out of which victory is evolved.' - Sun Tzu"
 			},
