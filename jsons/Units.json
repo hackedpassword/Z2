@@ -3,8 +3,9 @@
 	// Rebuilt for Z2, eventual target is forked mod
 	
 	{
-		"name": "Worker",
+		"name": "Worker",  // Villager
 		"unitType": "Civilian",
+		"requiredTech": “Animal Husbandry”,
 		"movement": 2,
 		"uniques": [
 			"Automation is a primary action",
@@ -22,7 +23,7 @@
 		"unitType": "Civilian Water",
 		"movement": 3,
 		"cost": 10,
-		"requiredTech": "Sailing",
+		"requiredTech": "Fishing",
 		"uniques": ["Automation is a primary action",
 			"Cannot enter ocean tiles <before discovering [Astronomy]>",
 			"May create improvements on water resources",
@@ -34,6 +35,7 @@
 	{ // a bit cheaper and faster
 		"name": "Settler",
 		"unitType": "Civilian",
+		"requiredTech": “Pottery”,
 		"movement": 3,
 		"cost": 50,
 		"uniques": [
@@ -46,6 +48,7 @@
 	{
 		"name": "Scout",
 		"unitType": "Scout",
+		"requiredTech": “Fire”,
 		"movement": 3,
 		"strength": 5,
 		"cost": 25,
