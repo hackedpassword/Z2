@@ -62,6 +62,19 @@
 // Modified buildings
 
 	{
+		"name": "Monument",
+		"culture": 2,
+		"cost": 40,
+		"hurryCostModifier": 40,
+		"requiredTech": "Masonry",  // gained much later, takes people and skills to build a monument
+		"maintenance": 1,
+		"uniques": [
+			"Destroyed when the city is captured",
+			"[+1 Culture] for every known Natural Wonder",  // Increases value of exploring
+			"Requires at least [4] population",
+		],
+	},
+	{
 		"name": "Arsenal",
 		"cost": 300,
 		"cityStrength": 9,
