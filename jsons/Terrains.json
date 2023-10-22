@@ -11,7 +11,7 @@
 		// to-do: settlers shouldn't settle here
 		"uniques": [
 		        "Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
-			// "Has an elevation of [2] for visibility calculations",
+			"Has an elevation of [1] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation",
 			"Never receives any resources",
 //			"[5]% Chance to be destroyed by nukes",
