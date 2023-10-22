@@ -10,8 +10,9 @@
 		"RGB": [50, 58, 25],
 		// to-do: settlers shouldn't settle here
 		"uniques": [
+			"Rough terrain",
 		        "Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
-			// "Has an elevation of [1] for visibility calculations",
+			"Has an elevation of [1] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation",
 			"Never receives any resources",
 //			"[5]% Chance to be destroyed by nukes",
@@ -26,9 +27,10 @@
 		"RGB": [50, 58, 25],
 		// to-do: settlers shouldn't settle here - for now it's essentially a nuke safe haven
 		"uniques": [
+			"Rough terrain",
 			"Units ending their turn on this terrain take [15] damage <with [30]% chance>",  // enemies amidst
 			"Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
-		        // "Has an elevation of [2] for visibility calculations",
+		        "Has an elevation of [1] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation", 
 //			"[5]% Chance to be destroyed by nukes",  // base terrains transform this value to 0% - semi-bug
 			// "Population loss from nuclear attacks [-95]% [in this city]",  // disallowed, meant for buildings instead :/
@@ -57,7 +59,7 @@
 		"defenceBonus": 0.5,
 		"RGB": [102, 102, 102],
 		"uniques": ["Rough terrain",
-		        // "Has an elevation of [2] for visibility calculations",
+		        "Has an elevation of [2] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation",
 		        "Units ending their turn on this terrain take [50] damage <with [80]% chance>",  // get in get out
 			"Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
