@@ -27,8 +27,8 @@
 			{
 				"name": "Shelter",
 				"row": 6,
-				"prerequisites": ["Survival"],
-				"quote": "Fully furnished with tree stump.",
+				"prerequisites": ["Survival"],  // Will add game instructions to era quote.
+				"quote": "Survival is difficult in the Prehistoric era. Choose your path wisely! Use the Civopedia as a guide!",
 				"uniques": [
 					"Starting tech",
 				],
