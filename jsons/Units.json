@@ -132,12 +132,12 @@
 		"requiredTech": "Computers",
 		"requiredResource": "Aluminum",
 		"uniques": [
-			"[+100]% Strength <vs [Armored] units> <when attacking>",  // strength is attacking
+			"[+100]% Strength <vs [Armored] units> <when attacking>",  // strength is in attacking
 			"[1] additional attacks per turn <after discovering [Mobile Tactics]>",  // upgrade retrofit
 			"[-50]% Strength <vs [Armored] units> <when defending>",  // weakness against heavy arms
 			"[-75]% Strength <vs cities> <when defending>",  // hazardous
 			"[-50]% Strength <vs [Missile] units> <when defending>",
-		        "[+20] Strength <after discovering [Nanotechnology]>", // adaptive armor upgrade 
+		        "[+25]% Strength <after discovering [Nanotechnology]>", // adaptive armor upgrade 
 			"No defensive terrain bonus",
 			"Can move after attacking",
 			"All tiles cost 1 movement",
