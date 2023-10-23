@@ -552,7 +552,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"upgradesTo": "Swordsman",
 		"attackSound": "nonmetalhit"
 	},
-	{  // Allowing at start, the competition
+	{  // Allowing at start - they're the competition
 		"name": "Brute",
 		"unitType": "Sword",
 		"uniqueTo": "Barbarians",
@@ -573,8 +573,20 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"range": 1,  // reasonable and logical
 		"cost": 40,
 		"requiredTech": "Archery",
-		"obsoleteTech": "Construction",
+		"obsoleteTech": "Steel",
 		"upgradesTo": "Composite Bowman",
+		"attackSound": "arrow"
+	}, 
+        {
+		"name": "Composite Bowman",
+		"unitType": "Archery",
+		"movement": 2,
+		"strength": 7,
+		"rangedStrength": 11,
+		"cost": 75,
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Machinery",
+		"upgradesTo": "Crossbowman",
 		"attackSound": "arrow"
 	},
 	{
@@ -585,7 +597,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"rangedStrength": 9,
 		"cost": 40,
 		"requiredTech": "Archery",
-		"obsoleteTech": "Construction",
+		"obsoleteTech": "Steel",
 		"replaces": "Archer",
 		"uniqueTo": "Babylon",
 		"upgradesTo": "Composite Bowman",
@@ -601,7 +613,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"rangedStrength": 7,
 		"cost": 40,
 		"requiredTech": "Archery",
-		"obsoleteTech": "Construction",
+		"obsoleteTech": "Steel",
 		"upgradesTo": "Composite Bowman",
 		"promotions": ["Slinger Withdraw"],
 		"attackSound": "arrow"
@@ -614,35 +626,11 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"strength": 5,
 		"rangedStrength": 7,
 		"cost": 36,
-		"obsoleteTech": "Construction",
+		"obsoleteTech": "Steel",
 		"replaces": "Archer",
 		"uniqueTo": "The Maya",
 		"upgradesTo": "Composite Bowman",
 		"attackSound": "arrow"
-	},
-	{
-		"name": "Skirmisher",
-		"unitType": "Archery",
-		"uniqueTo": "Barbarians",
-		"replaces": "Archer",
-		"movement": 2,
-		"strength": 4,
-		"rangedStrength": 7,
-		"cost": 40,
-		"requiredTech": "Archery",
-		"obsoleteTech": "Machinery",
-		"upgradesTo": "Crossbowman",
-		"attackSound": "arrow"
-	},
-	{
-		"name": "Work Boats",
-		"unitType": "Civilian Water",
-		"movement": 4,
-		"cost": 30,
-		"requiredTech": "Fishing",
-		"uniques": [
-			"Cannot enter ocean tiles <before discovering [Astronomy]>", "May create improvements on water resources",
-			"Uncapturable", "Automation is a primary action"]
 	},
 	{
 		"name": "Trireme",
@@ -698,9 +686,8 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"cost": 40,
 		"uniques": ["Cannot enter ocean tiles"],
 		"upgradesTo": "Trireme",
-		"obsoleteTech": "Astronomy",
+		"obsoleteTech": "Navigation",
 		"attackSound": "nonmetalhit"
-		//Barbarian unique naval unit, weaker and slower than Trireme.
 	},
 	{
 		"name": "Chariot Archer",
@@ -899,6 +886,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"requiredTech": "Gunpowder",
 		"upgradesTo": "Rifleman",
 		"obsoleteTech": "Military Science",
+		"uniques": ["[-50]% Strength <vs [Armored] units>"],
 		"attackSound": "shot"
 	},
 	{
@@ -1015,7 +1003,6 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"attackSound": "shot"
 	},
 	{  
-		// Danish unique unit. Can attack from the sea without any penalty, and moves faster.
 		"name": "Berserker",
 		"unitType": "Sword",
 		"replaces": "Longswordsman",
@@ -1030,17 +1017,5 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"promotions": ["Amphibious"],
 		"hurryCostModifier": 20,
 		"attackSound": "metalhit",
-	},
-        {
-		"name": "Composite Bowman",
-		"unitType": "Archery",
-		"movement": 2,
-		"strength": 7,
-		"rangedStrength": 11,
-		"cost": 75,
-		"requiredTech": "Mathematics",
-		"obsoleteTech": "Machinery",
-		"upgradesTo": "Crossbowman",
-		"attackSound": "arrow"
 	},
 ]
