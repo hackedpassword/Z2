@@ -1,9 +1,5 @@
-[  // WIP! Actively sliding around techs - still honing ideas and positions
+[
 	{
-	// Game starts in column 1. First tech that can be researched is Survival, in column 0. Then, all column 1 techs are available, as if we started in column 0
-	// and first picked Shelter, then any other tech. We do this because starting in column 0 with only a Scout, zero settlers, no units can spawn because there's no
-	// city. We compromise by then starting in column 1 as if the previous action ocurred. I really wanted players to be able to choose their units selectively,
-	// in these prehistoric times before settlements, not just handing them a settler.
 		"columnNumber": 0,
 		"era": "Prehistoric era",
 		"techCost": 5,
@@ -14,9 +10,9 @@
 				"name": "Survival",
 				"row": 5,
 				"quote": "'Wuuman Wuuaman Wuuman!!!!' -Animal",
-				"uniques": [  // not starting tech
-					"Free Technology <upon discovering a Natural Wonder> <before the [Ancient] era>",  // encourages early exploration, finding civs
-					"[+1 Science] for every known Natural Wonder <before the [Classical] era>",  // Initial progression
+				"uniques": [
+					"Free Technology <upon discovering a Natural Wonder> <before the [Ancient] era>",
+					"[+1 Science] for every known Natural Wonder <before the [Classical] era>",
 				],
 			},
 		]
@@ -33,9 +29,8 @@
 				"row": 6,
 				"prerequisites": ["Survival"],
 				"quote": "Fully furnished with tree stump.",
-				"uniques": [  // game begins here
-					"Starting tech",  // beginning in this tech because this was supposed to provide a free settler, instead we research back a row then move forward (nifty!)
-					// "Free Technology",  // Triggers tech tree, needed for zero-settler start, can't do that					
+				"uniques": [
+					"Starting tech",
 				],
 			},
 			{
@@ -69,7 +64,6 @@
 		]
 	},
 	{
-	// Haven't done any work on uniques for the new eras yet.
 		"columnNumber": 2,
 		"era": "Prehistoric era",
 		"techCost": 30,
@@ -463,7 +457,8 @@
 				"quote": "'Wherever we look, the work of the chemist has raised the level of our civilization and has increased the productive capacity of the nation.' - Calvin Coolidge"
 			},
 		]
-	},	{
+	},
+	{
 		"columnNumber": 12,
 		"era": "Pioneer era",
 		"techCost": 1400,
@@ -506,7 +501,7 @@
 	},
 	{
 		"columnNumber": 13,
-		"era": "Industrial era",  // There should be an era before this one, suggested "Pioneer era"
+		"era": "Industrial era",
 		"techCost": 1600,
 		"buildingCost": 300,
 		"wonderCost": 750,
