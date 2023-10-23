@@ -1,24 +1,18 @@
 [
-	{
-	// Interesting and fun facts. A settler unit is required to start the game, otherwise no other units can spawn.
-	// So, we start with the Shelter tech, which would have given a settler if we started in Survival tech with only a Scout,
-	// then choose our base primitive techs which one would have supplied a settler. Instead, the first tech to be researched
-	// goes backwards one step, then forwards for primitive techs. Was trying to capture pre-settlement gameplay, compromised.
-		"name": "Prehistoric era",
-		"researchAgreementCost": 50,
-		"startingSettlerCount": 1,  // Desired 0, but without a city, no units can spawn after game start :(
-		"startingWorkerCount": 0,
-		"startingMilitaryUnitCount": 1,
-		"startingMilitaryUnit": "Scout",  // was thinking more Brute
-		"settlerPopulation": 1,
-		"baseUnitBuyCost": 50,
-		"embarkDefense": 1,
-		"startPercent": 0,
-		"citySound": "cityAncient",
-		"iconRGB": [255, 87, 35]
-	},
-// Adding default eras, up to Pioneer. The New Game screen shows custom eras in last place if all aren't specified here in order,
-// and creates a funky era order in the top bar of the tech tree.
+    {
+        "name": "Prehistoric era",
+        "researchAgreementCost": 50,
+        "startingSettlerCount": 1,
+        "startingWorkerCount": 0,
+        "startingMilitaryUnitCount": 1,
+        "startingMilitaryUnit": "Scout",
+        "settlerPopulation": 1,
+        "baseUnitBuyCost": 50,
+        "embarkDefense": 1,
+        "startPercent": 0,
+        "citySound": "cityAncient",
+        "iconRGB": [255, 87, 35]
+    },
     {
         "name": "Ancient era",
         "researchAgreementCost": 150,
@@ -87,29 +81,27 @@
         "uniques": ["Every major Civilization gains a spy once a civilization enters this era"],
         "iconRGB": [104, 58, 183]
     },
-	{  // Slides between Renaissance and Industrial eras.
-	   // Created due to an obviously missing time period with adjacent techs squeezed into misrepresented eras. Prob needs more work, good atm.
-	        "name": "Pioneer era",
-	        "researchAgreementCost": 275,
-	        "startingSettlerCount": 3,
-	        "startingWorkerCount": 2,
-	        "startingMilitaryUnitCount": 4,
-	        "startingMilitaryUnit": "Musketman",
-	        "startingGold": 75,
-	        "startingCulture": 350,
-	        "settlerPopulation": 3,
-	        "settlerBuildings": ["Monument","Granary","Lighthouse","Workshop","Barracks"],
-	        // Changing the below is too involved atm, will let this float until next era
-	        // "startingObsoleteWonders": ["Temple of Artemis", "Stonehenge", "The Great Library", "Mausoleum of Halicarnassus", "The Pyramids", "Statue of Zeus",
-	        //    "The Great Lighthouse", "Hanging Gardens", "Terracotta Army", "The Oracle", "Petra", "Great Wall", "Colossus"],
-	        "baseUnitBuyCost": 350,
-	        "embarkDefense": 9,
-	        "startPercent": 42,
-	        "citySound": "cityRenaissance",
-	        "uniques": ["Every major Civilization gains a spy once a civilization enters this era"],
-	        "iconRGB": [104, 58, 183]
-	},
-// Remaining default eras
+    {  // Slides between Renaissance and Industrial eras.
+       // Created due to an obviously missing time period with adjacent techs squeezed into misrepresented eras. Prob needs more work, good atm.
+            "name": "Pioneer era",
+            "researchAgreementCost": 275,
+            "startingSettlerCount": 3,
+            "startingWorkerCount": 2,
+            "startingMilitaryUnitCount": 4,
+            "startingMilitaryUnit": "Musketman",
+            "startingGold": 75,
+            "startingCulture": 350,
+            "settlerPopulation": 3,
+            "settlerBuildings": ["Monument","Granary","Lighthouse","Workshop","Barracks"],
+            "startingObsoleteWonders": ["Temple of Artemis", "Stonehenge", "The Great Library", "Mausoleum of Halicarnassus", "The Pyramids", "Statue of Zeus",
+                "The Great Lighthouse", "Hanging Gardens", "Terracotta Army", "The Oracle", "Petra", "Great Wall", "Colossus"],
+            "baseUnitBuyCost": 350,
+            "embarkDefense": 9,
+            "startPercent": 42,
+            "citySound": "cityRenaissance",
+            "uniques": ["Every major Civilization gains a spy once a civilization enters this era"],
+            "iconRGB": [104, 58, 183]
+    },
     {
         "name": "Industrial era",
         "researchAgreementCost": 300,
