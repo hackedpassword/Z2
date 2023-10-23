@@ -72,7 +72,7 @@ Here is a running list of WIP updates to v0.9 (with some augmentation from 0.8):
 - The most destructive TSAR bomb has a blast of 6 - it is a civilization destroyer. Obtaining one of these is no easy task.
 - Clever use of tech discovery is needed to obtain powerful units/weapons.
 - Helicopter gunship has dual missile pods (can carry two guided missilies, think Apache) and-or also a bunker buster as payload. Strong attacker, can be smashed quickly by armored units. Does not embark (phew!!).
-- Anti-air units can carry a missile. They can also intercept missiles, making them quite important in defending against this modern onslaught of rocket-propelled weaponary.
+- Anti-air units can carry a missile. They can also intercept missiles, making them quite important in defending against this modern onslaught of rocket-propelled weaponry.
 - There are conversion buildings for horse/iron/oil resources, making use of stale resources that never get used later in the game.
 - UnitTypes have been updated to better align logical interactions of units/weapons.
 - Modern Armor now receives triggered [modern] stealth upgrade.
