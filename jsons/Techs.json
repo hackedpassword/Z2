@@ -1,5 +1,5 @@
 [
-  {
+  {  // Current structure minus this comment, by https://www.jsonschemavalidator.net/, format checked, pass, then auto-formatted.
     "columnNumber": 0,
     "era": "Prehistoric era",
     "techCost": 5,
