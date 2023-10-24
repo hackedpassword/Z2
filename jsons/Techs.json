@@ -1,7 +1,7 @@
 [
   {  // Current structure minus this comment, by https://www.jsonschemavalidator.net/, format checked, pass, then auto-formatted.
     "columnNumber": 0,
-    "era": "Prehistoric era",
+    "era": "Ancient era",  // Test to merge Prehistoric era (here) with Ancient
     "techCost": 5,
     "buildingCost": 4,
     "wonderCost": 8,
@@ -11,7 +11,7 @@
         "row": 5,
         "quote": "'Wuuman Wuuaman Wuuman!!!!' -Animal",
         "uniques": [
-          "Free Technology <upon discovering a Natural Wonder> <before the [Ancient] era>",
+          // "Free Technology <upon discovering a Natural Wonder> <before the [Ancient] era>",
           "[+1 Science] for every known Natural Wonder <before the [Classical] era>"
         ]
       }
@@ -19,7 +19,7 @@
   },
   {
     "columnNumber": 1,
-    "era": "Prehistoric era",
+    "era": "Ancient era",
     "techCost": 10,
     "buildingCost": 8,
     "wonderCost": 15,
@@ -83,7 +83,7 @@
   },
   {
     "columnNumber": 2,
-    "era": "Prehistoric era",
+    "era": "Ancient era",
     "techCost": 30,
     "buildingCost": 15,
     "wonderCost": 30,
