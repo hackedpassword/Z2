@@ -1,22 +1,7 @@
 [    // Current structure minus this comment, by https://www.jsonschemavalidator.net/, format checked, pass, then auto-formatted.
-  {/* Interesting and fun facts. A settler unit is required to start the game, otherwise no other units can spawn.*//* So, we start with the Shelter tech, which would have given a settler if we started in Survival tech with only a Scout,*//* then choose our base primitive techs which one would have supplied a settler. Instead, the first tech to be researched*//* goes backwards one step, then forwards for primitive techs. Was trying to capture pre-settlement gameplay, compromised.*/
-    "name": "Prehistoric era",
-    "researchAgreementCost": 50,
-    "startingSettlerCount": 1/* Desired 0, but without a city, no units can spawn after game start :(*/,
-    "startingWorkerCount": 0,
-    "startingMilitaryUnitCount": 1,
-    "startingMilitaryUnit": "Scout"/* was thinking more Brute*/,
-    "settlerPopulation": 1,
-    "baseUnitBuyCost": 50,
-    "embarkDefense": 1,
-    "startPercent": 0,
-    "citySound": "cityAncient",
-    "iconRGB": [
-      255,
-      87,
-      35
-    ]
-  }
+
+  // pulling prehistoric era, test
+  
   /* Adding default eras, up to Pioneer. The New Game screen shows custom eras in last place if all aren't specified here in order,*/
   /* and creates a funky era order in the top bar of the tech tree.*/,
   {
