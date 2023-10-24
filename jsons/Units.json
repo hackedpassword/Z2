@@ -1,0 +1,1021 @@
+[
+
+	// Rebuilt for Z2, eventual target is forked mod
+	
+	{
+		"name": "Worker",  // Villager
+		"unitType": "Civilian",
+		"requiredTech": “Animal Husbandry”,
+		"movement": 2,
+		"uniques": [
+			"Automation is a primary action",
+			"Can build [Boulder] improvements on tiles",
+			"Can build [Land] improvements on tiles",
+			"Can build [Natural Wonder] improvements on tiles", // Hacky attempt at adding features/improvements for things like bridges, doesn't work atm
+			"Can build [Water] improvements on tiles", // Workers do water improvements ala AF, consumed tradeoff
+			"May create improvements on water resources", // create rice patty fields on lakes/freshwater coasts!
+		]
+		"cost": 25 // Cheap! Don't forget this is production cost, not gold cost!
+	},
+// 
+	{  // Needed for fish-less Z2 waters - consume to instantly fish
+		"name": "Work Boats",
+		"unitType": "Civilian Water",
+		"movement": 3,
+		"cost": 10,
+		"requiredTech": "Fishing",
+		"uniques": ["Automation is a primary action",
+			"Cannot enter ocean tiles <before discovering [Astronomy]>",
+			"May create improvements on water resources",
+			"Can instantly construct a [Fishing Boats] improvement <by consuming this unit>",
+        	    	// "Uncapturable",  // you fish for us now
+			"Automation is a primary action"
+		]
+	},
+	{ // a bit cheaper and faster
+		"name": "Settler",
+		"unitType": "Civilian",
+		"requiredTech": “Pottery”,
+		"movement": 3,
+		"cost": 50,
+		"uniques": [
+			"Founds a new city <by consuming this unit>",
+			"Excess Food converted to Production when under construction",
+			"Requires at least [2] population"
+		],
+		"hurryCostModifier": 20
+	},
+	{
+		"name": "Scout",
+		"unitType": "Scout",
+		"requiredTech": “Fire”,
+		"movement": 3,
+		"strength": 5,
+		"cost": 25,
+		"obsoleteTech": "Scientific Theory",
+		"uniques": [
+			"Can instantly construct a [Fort] improvement <by consuming this unit>",  // great upgrade
+			"May upgrade to [Archer] through ruins-like effects",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": ["Ignore terrain cost"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Mobile SAM",  // carries missiles. So carry one.
+		"unitType": "Gunpowder",
+		"movement": 3,
+		"interceptRange": 2,
+		"strength": 65,
+		"cost": 425,
+		"requiredTech": "Rocketry",
+		"uniques": [
+			"Can carry [1] [Missile] units",  // another obvious unit attribute
+			"[100]% chance to intercept air attacks",
+			"[+150]% Strength <vs [Air] units>",
+			"[+150]% Strength <vs [Helicopter] units>",
+			"Never appears as a Barbarian unit"
+		],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Tank",
+		"unitType": "Armored",
+		"movement": 5,
+		"strength": 70,
+		"range": 2,  // justify costly requirement of oil, can't take cities
+		"rangedStrength": 80,
+		"cost": 375,
+		"requiredTech": "Combined Arms",
+		"requiredResource": "Oil",
+		// "upgradesTo": "Modern Armor",  // No. These units have their own purpose, and consume oil instead of more valuable aluminum
+		"uniques": [
+			"Can move after attacking",
+			"[+75]% Strength <vs [Gunpowder] units> <when defending>",
+			"[+50]% Strength <vs [Armored] units> <when attacking>",  // Armor piercing shells
+			"[+25]% Strength <vs cities>",
+			"No defensive terrain bonus",
+			// "Never appears as a Barbarian unit"  // deals were made - but do barbarians need oil? 
+		],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Modern Armor",
+		"unitType": "Armored",
+		"movement": 6,
+		"strength": 100,
+		"rangedStrength": 100,
+		"range": 3,
+		"cost": 425,
+		"requiredTech": "Lasers",
+		"requiredResource": "Aluminum",
+		// "upgradesTo": "Giant Death Robot",  // GDR is not a tank, it is a mech
+		"uniques": [
+			"Can move after attacking",
+			"[+150]% Strength <vs [Gunpowder] units> <when defending>",
+			"[+100]% Strength <vs [Armored] units> <when attacking>",
+			"Invisible to non-adjacent units <after discovering [Stealth]>",  // modern camouflage
+			"No defensive terrain bonus",
+			"Never appears as a Barbarian unit",
+		],
+		"promotions": ["Indirect Fire"],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Helicopter Gunship",
+		"unitType": "Helicopter",
+		"movement": 7,
+		"strength": 60,
+		"range": 1,
+		"rangedStrength": 120,  // for the cost of an aluminum it better have power
+		"cost": 425,
+		"requiredTech": "Computers",
+		"requiredResource": "Aluminum",
+		"uniques": [
+			"[+100]% Strength <vs [Armored] units> <when attacking>",  // strength is in attacking
+			"[1] additional attacks per turn <after discovering [Mobile Tactics]>",  // upgrade retrofit
+			"[-50]% Strength <vs [Armored] units> <when defending>",  // weakness against heavy arms
+			"[-75]% Strength <vs cities> <when defending>",  // hazardous
+			"[-50]% Strength <vs [Missile] units> <when defending>",
+		        "[+25]% Strength <after discovering [Nanotechnology]>", // adaptive armor upgrade 
+			"No defensive terrain bonus",
+			"Can move after attacking",
+			"All tiles cost 1 movement",
+			"Ignores Zone of Control",
+			"Unable to capture cities",
+			"Can carry [1] [Payload] units",  // bunker buster delivery
+			"Can carry [2] [Guided Missile] units",  // Gun-ship, aluminum is a costly requirement
+			"Ranged attacks may be performed over obstacles",
+			"Never appears as a Barbarian unit"
+		],
+		"attackSound": "machinegun"
+	},
+
+// Water units //
+	
+	{  // Note that if Missile(s) are carried, they must be offloaded first to load Atomic Bombers
+		"name": "Nuclear Submarine",  // carries WMD's
+		"unitType": "Submarine",
+		"movement": 6,
+		"strength": 90,
+		"range": 3,
+		"rangedStrength": 85,
+		"cost": 475,
+		"requiredTech": "Mobile Tactics",
+		"requiredResource": "Uranium",  // how is this not in original G&K? asked every player
+		"uniques": [
+			"[75]% chance to intercept air attacks",
+			"Can see invisible [Submarine] units",
+			"[+75]% Strength <when attacking>",
+			"Can only attack [Water] tiles",
+			"[+2] Sight",
+			"Double movement in [Deep Ocean]",
+			"Can carry [2] [Missile] units",
+			"Can carry [1] [Payload] units <after discovering [Rocketry]>",  // can launch payload munitions at target
+			"Can carry [1] [Atomic Payload] units",
+			"Never appears as a Barbarian unit"
+		],
+		"attackSound": "torpedo"
+	},
+	{
+		"name": "Carrier",  // Unciv appears to handle carrying units by the maximum number specified for all uniques is the max capacity, so here, 4 units any combo max
+		"unitType": "Aircraft Carrier",
+		"movement": 2,  // slow, +1 global, x2 ocean = fast on open water
+		"strength": 80,
+		"cost": 505,
+		"requiredTech": "Electronics",
+		"uniques": [
+			"Can only attack [Melee Water] units",  // better believe the Navy put a couple guns on these
+			"Can carry [4] [Fighter] units",
+			"Can carry [4] [Bomber] units", 
+			"Can carry [2] [Atomic Bomber] units", 
+			// "Can carry [2] [Gunpowder] units",  // doesn't work :/
+			"Can carry [1] [Missile] units",
+			"Double movement in [Ocean]",
+			"Double movement in [Deep Ocean]",
+		]
+	},
+	{
+		"name": "Battleship",
+		"unitType": "Ranged Water",
+		"movement": 3,  // +1 global, x2 ocean
+		"strength": 75,
+		"rangedStrength": 55,
+		"range": 3,
+		"cost": 375,
+		"requiredResource": "Oil",
+		"requiredTech": "Electronics",
+		"uniques": [
+			"Never appears as a Barbarian unit",
+			"[+100]% Strength <vs [Ranged Water] units>",
+			"[+75]% Strength <with [15]% chance> <vs [Water] units>",  // critical hit
+			// "Can carry [1] [Gunpowder] units",  // doesn't work
+			"Can carry [1] [Missile] units", 
+			"Double movement in [Ocean]",
+		],
+		"promotions": ["Indirect Fire"],
+		"attackSound": "shipguns"
+	},
+	{
+		"name": "Destroyer",
+		"unitType": "Melee Water",
+		"movement": 6,
+		"strength": 55,
+		"interceptRange": 2,
+		"cost": 375,
+		"requiredTech": "Combustion",
+		"uniques": [
+			"Can see invisible [Submarine] units",
+			"[+3] Sight <in [Deep Ocean] tiles>",  // advanced oceanic detection systems
+			"[+1] Sight <when adjacent to a [Destroyer] unit>",  // combined data enhances resolution
+			"[60]% chance to intercept air attacks",  // AA
+			"May withdraw before melee ([80]%)",  // evasive
+			"Can carry [3] [Missile] units",  // how does a destroyer not have missile launch capabilities?
+			"Can carry [1] [Nuclear Missile] units",  // specific to and no more than one - required loading this unit before missile units
+			"[+100]% Strength <vs [Submarine] units>",
+			"[+50]% Strength <vs [Water] units>"
+		],
+		"attackSound": "shipguns"
+	},
+
+// Ordnance //
+	
+	{
+		"name": "Guided Missile",
+		"unitType": "Missile",
+		"movement": 1,
+		"strength": 60,
+		"rangedStrength": 125,  // not a C6-3, missiles blow stuff up
+		"range": 8,
+		"cost": 150,
+		"requiredTech": "Computers",  // Needs a computer to be guided
+		"uniques": ["[-75]% maintenance costs"],  // little maintenance needed
+		"attackSound": "missile"
+	},
+	{
+	// i.e. Tomahawk, shock-and-awe type destruction
+		"name": "Cruise Missile",
+		"unitType": "Missile",
+		"movement": 1,
+		"strength": 90,
+		"rangedStrength": 350,  // meant to one-shot most units, weak against Gunpowder units
+		"range": 16,  // Long range ordnance
+		"cost": 400,
+		"requiredTech": "Advanced Ballistics",
+		"uniques": [
+			"[25]% maintenance costs",  // more expensive to maintain
+			"Destroys tile improvements when attacking",
+			"[+100]% Strength <vs [Armored] units> <when attacking>",
+		],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Bunker Buster",
+		"unitType": "Payload",  // Can be carried/launched by Helicopter, Nuclear sub
+		"movement": 1,
+		"strength": 120,
+		"rangedStrength": 150,
+		"range": 8,
+		"cost": 800,
+		"requiredTech": "Radar",
+		"uniques": [
+			"[10]% maintenance costs <before discovering [Rocketry]>",  // a bit more expensive in earlier forms
+			"[45]% maintenance costs <after discovering [Rocketry]>",  // propulsion and navigation add cost
+			"Can only attack [Land] tiles",
+			"Destroys tile improvements when attacking",
+			"[+200]% Strength <vs cities> <when attacking> <before discovering [Rocketry]>",  // should generally do 50-66% dmg
+			"[+400]% Strength <vs cities> <when attacking> <after discovering [Rocketry]>",
+			"Self-destructs when attacking",
+			"Consumes [1] [Aluminum]",  // trade-off resource, can keep even without spare aluminum (won't cause missing resource penalty)
+		],
+		"attackSound": "torpedo"
+	},
+	{
+		"name": "Nuclear Missile",
+		"unitType": "Atomic Payload",  // vs old missile unittype, don't want these roving about without clearance
+		"movement": 1,
+		"strength": 50,
+		"rangedStrength": 300,
+		"range": 8,
+		"cost": 1500,
+		"requiredTech": "Advanced Ballistics",
+		"requiredResource": "Uranium",
+		"uniques": [
+			"Nuclear weapon of Strength [2]",
+			"[100]% maintenance costs",  // more expensive to maintain
+			"Triggers the following global alert: [A nuclear explosion was witnessed!]",
+			"Only available <if [Manhattan Project] is constructed>",
+			"Only available <after discovering [Computers]>",
+			"Destroys tile improvements when attacking",
+			"Blast radius [2]",
+			"Consumes [2] [Uranium]"
+		],
+		"attackSound": "nuke"
+	},
+	{
+		"name": "Nuclear Missile ICBM",
+		"unitType": "Atomic Payload",  // Can be carried by Nuclear sub
+		"movement": 1,
+		"strength": 75,
+		"rangedStrength": 300,
+		"range": 15,
+		"cost": 2500,
+		"requiredTech": "Nuclear Fusion",
+		"uniques": [
+			"Nuclear weapon of Strength [3]",
+			"[200]% maintenance costs",  // expensive
+			"Destroys tile improvements when attacking",
+			"Triggers the following global alert: [A large nuclear explosion was witnessed!]",  // no: <when attacking>",
+			"Limited to [3] per Civilization",
+			"Only available <if [Manhattan Project] is constructed>",
+			"Only available <after discovering [Telecommunications]>",
+			"Blast radius [3]",
+			"Consumes [3] [Uranium]",
+			"Consumes [1] [Aluminum]"
+		],
+		"attackSound": "nuke"
+	},
+	{
+		"name": "Nuclear Bunker Buster",
+		"unitType": "Atomic Payload",  // Can be carried by Nuclear sub
+		"movement": 1,
+		"strength": 120,
+		"rangedStrength": 500, // concentrated damage
+		"range": 8,
+		"cost": 3000,
+		"requiredTech": "Nuclear Fusion",
+		"requiredResource": "Uranium",
+		"uniques": [
+			"[150]% maintenance costs",  // expensive
+			"Can only attack [Land] tiles",
+			"Limited to [2] per Civilization",
+			"Triggers the following global alert: [A deeply resonating quake was felt!]",
+			"[+200]% Strength <vs cities>",  // meant to one-shot even hardened cities
+			"Blast radius [0]",  // single tile
+			"Nuclear weapon of Strength [3]",  // minimum needed to demolish city
+			"Consumes [2] [Uranium]",
+			"Consumes [1] [Aluminum]"
+		],
+		"attackSound": "torpedo"
+	},
+	{
+		"name": "TSAR Nuclear Bomb",  // ultimate WMD (til the orbital kinetic weapon platform is built...tbd) 
+		"unitType": "Atomic Payload",  // need to make a new unitType for heavy WMD's
+		"movement": 1,
+		"strength": 75,
+		"rangedStrength": 500,
+		"range": 15,
+		"cost": 4000,
+		"requiredTech": "Particle Physics",
+		"uniques": [
+			"Nuclear weapon of Strength [6]",
+			"[500]% maintenance costs",  // needs tlc
+			"Triggers a global alert upon build start",
+			"Triggers a global alert upon completion",
+			"Cannot be carried by [Submarine] units",  // Air drop only via city
+			"Triggers the following global alert: [Man-made Armageddon has scorched the land. Is this the price of Victory?]",
+			"Limited to [1] per Civilization",
+			"Only available <if [Manhattan Project] is constructed>",
+			"Only available <after discovering [Nuclear Fusion]>",
+			"Blast radius [6]",  // armageddon!
+			"Consumes [5] [Uranium]",  // slightly more efficient than 1:1
+			"Consumes [1] [Aluminum]",  // massive casing
+		],
+		"attackSound": "nuke"
+	},
+	// to-do: add Daisy Cutter, MOAB, FOAB, Patriot battery (anti-missile) 
+
+
+// GDR generations //
+	
+	{
+		"name": "Giant Death Robot",
+		"unitType": "Armored",
+		"movement": 5,
+		"strength": 150,
+		"cost": 425,
+		"requiredTech": "Nuclear Fusion",
+		"requiredResource": "Uranium",
+		"uniques": [
+			"Only available <after discovering [Robotics]>",  // Allows other tech to be discovered from Nuclear Fusion
+			"Can move after attacking",
+			"[+125]% Strength <vs cities> <when attacking>",  // GDR's are urban menaces 
+			"No defensive terrain bonus",
+			"Can see over obstacles",
+			"Never appears as a Barbarian unit"
+		],
+		"attackSound": "gdrAttack"
+	},
+	{
+		"name": "Giant Death Robot MK-II",  // Next gen GDR - btw art is experiential
+		"unitType": "Armored",
+		"movement": 4,  // heavier than GDR
+		"range": 3,
+		"strength": 225,
+		"cost": 805,
+		"requiredTech": "Nanotechnology",  // several other requirements below
+		"requiredResource": "Uranium",
+		"promotions": ["March"],  // Nanotech repair system
+		"uniques": [
+			"[450]% maintenance costs",  // very costly to operate
+			"Can move after attacking",
+			"Only available <if [Nuclear Plant] is constructed> <in this city>",  // needs special materials handling
+			"Only available <after discovering [Nuclear Fusion]>",
+			"Only available <after discovering [Particle Physics]>",
+			"Consumes [2] [Uranium]",
+			"No defensive terrain bonus",
+			"Ignores Zone of Control",  // more like disrespects ZoC
+			"[1] additional attacks per turn",  // dual cannons
+			"Destroys tile improvements when attacking",
+			"[+150]% Strength <vs cities> <when attacking>",
+			"Can carry [1] [Missile] units",  // LRM pod
+			"Unit will heal every turn, even if it performs an action",  // Thanks to the MANRS MetalSweat Active Nnanobot Repair System
+			"[+1] Sight", "Can see over obstacles",	"Ranged attacks may be performed over obstacles",  // advanced targeting
+			"[25]% chance to intercept air attacks",  // AA cannon
+			"Never appears as a Barbarian unit"
+		],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Giant Death Robot MK-III",  // Project Last Hope
+		"unitType": "Siege",  // Superheavy GDR
+		"movement": 3,  // slow, use rails to transport 
+		"range": 2,  // shorter range, more attack power
+		"strength": 375,
+		"cost": 1400,
+		"requiredTech": "Future Tech",  // the ultimate in war machine
+		"requiredResource": "Uranium",
+		"promotions": ["March","Rejuvenation"],  // Gen-2 nanotech
+		"uniques": [
+			"[1000]% maintenance costs",  // not for the feint 
+			"Only available <if [Spaceship Factory] is constructed> <in this city>",  // requires advanced construction facilities
+			// "Only available <if [Nuclear Plant] is constructed> <in this city>",  // local materials handling
+			"[2] additional attacks per turn",  // massive firepower, usage must be balanced against available movement points
+			"Consumes [3] [Uranium]",  // dual reactor, fusion generator
+			"May Paradrop up to [4] tiles from inside friendly territory",  // extended range plasma-lithium jump jets (ER-PL JJ)
+			"No defensive terrain bonus",
+			"Ignores Zone of Control",
+                        // "Adjacent enemy units ending their turn take [40] damage",  // not for Units; but know that the MK-III has optional automated proximity suppression pulse lasers
+			"Destroys tile improvements when attacking",
+			"[+200]% Strength <vs cities> <when attacking>",  // siege mech
+			"[50]% chance to intercept air attacks",  // dual AA cannons
+			"Can carry [2] [Missile] units",  // dual LRM pods
+		        // "Can carry [1] [Mini Nuclear Missile] units",  // super heavy class can carry one small nuke, not created yet
+			"Can see over obstacles", "[+3] Sight", "Can see invisible [Land] units",  // New drone-based omni-LIDAR installed
+			"Ranged attacks may be performed over obstacles",
+			// "Self-destructs when attacking <upon being defeated>", "Blast radius [1]",  // LMAO experimental mech explodes when attacking, no blast radius either
+			// "Nuclear weapon of Strength [1]",  // gonna try it - tricks unciv into thinking it's a nuke, without a detonator.
+			// "Never appears as a Barbarian unit"  // Surprise, rebels stole the plans
+		],
+		"civilopediaText": [  // testing civopedia entry. Adds color to the game.
+			{
+				"text": "Project Last Hope",
+				"header": 1,
+			},
+			{  // Each new line below inserts a \n. Prefixing a \t to the line for json formatting is retained in the civopedia text, not desired.
+				"text":  // multi-line isn't clean to implement
+"Class:
+Superheavy GDR, successor to the Giant Death Robot MK-II, redesigned as a Siege mech, the ultimate in war machines.
+
+Slower than previous designs yet a magnitude more deadly. Built with redundancy in mind, unparalleled in destructive capacity.
+
+Units surviving incursions with the hulking MK-III note only: 'Run.'",
+				"link": "Unit/Giant Death Robot MK-II",
+			},
+			{ "separator": true },
+
+			{  // not sure how to \n wrap in the json text while retaining formatting in civopedia. Wrapping here will insert an undesired \n there.
+				"text": 
+"Equipment featured:
+ - Dual reactor powered with tertiary Fusion Generator
+ - Gen-2 nanotech more efficiently repairs external damage, significantly improved chassis and frame repair
+ - Extended-range plasma-lithium jump jets (ER-PL JJ)
+ - New stealth drone-based omni-LIDAR improves HUD resolution and reveals enemy stealth units",
+			},
+			{ "separator": true },
+
+			{
+				"text": 
+"Weapons loadout: 
+ - Three 16-inch 42-foot long cannons based on a prototype Mark 9 battleship barrel design using techniques borrowed from the .416 rifle, making them lighter and wieldly for mobile corps
+	> One cannon is single mounted, and one is dual shotgun-style mounted
+	> Power tradeoff from 50-cal to .416 is a shorter ballistics range for higher effective damage with a hollowpoint shell
+ - The MK-III carries dual rear-mounted vertical-launch LRM pods for missile complements
+ - Ariel attack mitigation is handled by dual AA autocannons",
+			},
+		],
+		"attackSound": "shipguns"
+	},
+
+// Units adjusted to Prehistoric era
+
+	{
+		"name": "Warrior",
+		"unitType": "Sword",
+		"requiredTech": “Melee Weaponry”,
+		"movement": 2,
+		"strength": 8,
+		"cost": 40,
+		"obsoleteTech": "Metal Casting",
+		"upgradesTo": "Swordsman",
+		"uniques" : ["May upgrade to [Spearman] through ruins-like effects"],
+		"attackSound": "nonmetalhit",
+  	      "civilopediaText": [
+			{"text": "This is your basic, club-swinging fighter."}
+		]
+	},
+	{
+		"name": "Maori Warrior",
+		"unitType": "Sword",
+		"requiredTech": “Melee Weaponry”,
+		"uniqueTo": "Polynesia",
+		"replaces": "Warrior",
+		"movement": 2,
+		"strength": 8,
+		"cost": 40,
+		"obsoleteTech": "Metal Casting",
+		"promotions": ["Haka War Dance"],
+		"upgradesTo": "Swordsman",
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Jaguar",
+		"unitType": "Sword",
+		"requiredTech": “Melee Weaponary”,
+		"uniqueTo": "Aztecs",
+		"replaces": "Warrior",
+		"movement": 2,
+		"strength": 8,
+		"cost": 40,
+		"obsoleteTech": "Metal Casting",
+		"promotions": ["[Jaguar] ability","Woodsman"],
+		"upgradesTo": "Swordsman",
+		"attackSound": "nonmetalhit"
+	},
+	{  // Allowing at start - they're the competition
+		"name": "Brute",
+		"unitType": "Sword",
+		"uniqueTo": "Barbarians",
+		"replaces": "Warrior",
+		"movement": 2,
+		"strength": 8,
+		"cost": 20,
+		"obsoleteTech": "Metal Casting",
+		"upgradesTo": "Swordsman",
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Archer",
+		"unitType": "Archery",
+		"movement": 2,
+		"strength": 5,
+		"rangedStrength": 7,
+		"range": 1,  // reasonable and logical
+		"cost": 40,
+		"requiredTech": "Archery",
+		"obsoleteTech": "Steel",
+		"upgradesTo": "Composite Bowman",
+		"attackSound": "arrow"
+	}, 
+        {
+		"name": "Composite Bowman",
+		"unitType": "Archery",
+		"movement": 2,
+		"strength": 7,
+		"rangedStrength": 11,
+		"cost": 75,
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Machinery",
+		"upgradesTo": "Crossbowman",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Bowman",
+		"unitType": "Archery",
+		"movement": 2,
+		"strength": 7,
+		"rangedStrength": 9,
+		"cost": 40,
+		"requiredTech": "Archery",
+		"obsoleteTech": "Steel",
+		"replaces": "Archer",
+		"uniqueTo": "Babylon",
+		"upgradesTo": "Composite Bowman",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Slinger",
+		"unitType": "Archery",
+		"uniqueTo": "Inca",
+		"replaces": "Archer",
+		"movement": 2,
+		"strength": 4,
+		"rangedStrength": 7,
+		"cost": 40,
+		"requiredTech": "Archery",
+		"obsoleteTech": "Steel",
+		"upgradesTo": "Composite Bowman",
+		"promotions": ["Slinger Withdraw"],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Atlatlist",
+		"unitType": "Archery",
+		"movement": 2,
+		"requiredTech": “Archery”,
+		"strength": 5,
+		"rangedStrength": 7,
+		"cost": 36,
+		"obsoleteTech": "Steel",
+		"replaces": "Archer",
+		"uniqueTo": "The Maya",
+		"upgradesTo": "Composite Bowman",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Trireme",
+		"unitType": "Melee Water",
+		"requiredTech": “Fishing”,
+		"movement": 4,
+		"strength": 10,
+		"cost": 45,
+		"uniques": ["Cannot enter ocean tiles", "Never appears as a Barbarian unit"],
+		"upgradesTo": "Caravel",
+		"obsoleteTech": "Astronomy",
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Quinquereme",
+		"unitType": "Melee Water",
+		"uniqueTo": "Carthage",
+		"replaces": "Trireme",
+		"movement": 4,
+		"strength": 13,
+		"cost": 45,
+		"requiredTech": "Fishing",
+		"uniques": ["Cannot enter ocean tiles"],
+		"upgradesTo": "Caravel",
+		"obsoleteTech": "Astronomy",
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Dromon",
+		"unitType": "Ranged Water",
+		"uniqueTo": "Byzantium",
+		"replaces": "Trireme",
+		"movement": 4,
+		"strength": 8,
+		"rangedStrength": 10,
+		"cost": 56,
+		"requiredTech": "Fishing",
+		"uniques": [
+			"Cannot enter ocean tiles",
+			"[+50]% Strength <vs [Wounded] units>",
+			"Only available <after discovering [Archery]>",  // Ranged
+		],
+		"upgradesTo": "Galleass",
+		"obsoleteTech": "Astronomy",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Galley",
+		"unitType": "Melee Water",
+		"uniqueTo": "Barbarians",
+		"movement": 3,
+		"strength": 7,
+		"cost": 40,
+		"uniques": ["Cannot enter ocean tiles"],
+		"upgradesTo": "Trireme",
+		"obsoleteTech": "Navigation",
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Chariot Archer",
+		"unitType": "Archery",
+		"movement": 4,
+		"strength": 6,
+		"rangedStrength": 10,
+		"cost": 56,
+		"requiredTech": "The Wheel",
+		"requiredResource": "Horses",
+		"upgradesTo": "Knight",
+		"obsoleteTech": "Chivalry",
+		"uniques": [
+			"No defensive terrain bonus",
+			"Rough terrain penalty",
+			"Never appears as a Barbarian unit",
+			"Only available <after discovering [Archery]>",
+		],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "War Chariot",
+		"unitType": "Archery",
+		"uniqueTo": "Egypt",
+		"replaces": "Chariot Archer",
+		"movement": 5,
+		"strength": 6,
+		"rangedStrength": 10,
+		"cost": 56,
+		"requiredTech": "The Wheel",
+		"upgradesTo": "Knight",
+		"obsoleteTech": "Chivalry",
+		"uniques": [
+			"No defensive terrain bonus",
+			"Rough terrain penalty",
+			"Only available <after discovering [Archery]>",
+		],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Horse Archer",
+		"unitType": "Archery",
+		"uniqueTo": "The Huns",
+		"replaces": "Chariot Archer",
+		"movement": 4,
+		"strength": 7,
+		"rangedStrength": 10,
+		"cost": 56,
+		"requiredTech": "Archery",
+		"upgradesTo": "Knight",
+		"obsoleteTech": "Chivalry",
+		"uniques": ["No defensive terrain bonus"],
+		"promotions": ["Accuracy I"],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "War Elephant",
+		"unitType": "Archery",
+		"uniqueTo": "India",
+		"replaces": "Chariot Archer",
+		"movement": 3,
+		"strength": 9,
+		"rangedStrength": 11,
+		"cost": 70,
+		"requiredTech": "Animal Husbandry",
+		"upgradesTo": "Knight",
+		"obsoleteTech": "Chivalry",
+		"uniques": [
+			"No defensive terrain bonus",
+			"Only available <after discovering [Archery]>",
+		],
+		"attackSound": "elephant"
+	},
+	{
+		"name": "Spearman",
+		"unitType": "Sword",
+		"movement": 2,
+		"strength": 11,
+		"cost": 56,
+		"requiredTech": "Bronze Working",
+		"obsoleteTech": "Civil Service",
+		"upgradesTo": "Pikeman",
+		"uniques": ["[+50]% Strength <vs [Mounted] units>"],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Hoplite",
+		"unitType": "Sword",
+		"replaces": "Spearman",
+		"uniqueTo": "Greece",
+		"movement": 2,
+		"strength": 13,
+		"cost": 56,
+		"requiredTech": "Bronze Working",
+		"obsoleteTech": "Civil Service",
+		"upgradesTo": "Pikeman",
+		"uniques": ["[+50]% Strength <vs [Mounted] units>"],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Persian Immortal",
+		"unitType": "Sword",
+		"replaces": "Spearman",
+		"uniqueTo": "Persia",
+		"movement": 2,
+		"strength": 12,
+		"cost": 56,
+		"requiredTech": "Bronze Working",
+		"obsoleteTech": "Civil Service",
+		"upgradesTo": "Pikeman",
+		"uniques": ["[+50]% Strength <vs [Mounted] units>"],
+		"promotions":["[Persian Immortal] ability"],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Battering Ram",
+		"unitType": "Sword", // You might expect this to be a siege unit, but apparently it is not
+		"replaces": "Spearman",
+		"uniqueTo": "The Huns",
+		"movement": 2,
+		"strength": 10,
+		"cost": 75,
+		"requiredTech": "Bronze Working",
+		"obsoleteTech": "Physics",
+		"upgradesTo": "Trebuchet",
+		"uniques": ["[+300]% Strength <vs cities> <when attacking>", "No defensive terrain bonus", "[-33]% Strength <when defending>",
+		"[-1] Sight", "Can only attack [City] units"],
+		"promotions":  ["Cover I"],
+		"attackSound": "throw"
+	},
+	{
+		"name": "Pictish Warrior",
+		"unitType": "Sword",
+		"replaces": "Spearman",
+		"uniqueTo": "Celts",
+		"movement": 2,
+		"strength": 11,
+		"cost": 56,
+		"requiredTech": "Bronze Working",
+		"obsoleteTech": "Civil Service",
+		"upgradesTo": "Pikeman",
+		"uniques": ["Earn [50]% of killed [Military] unit's [Strength] as [Faith]"],
+		"promotions": ["Pictish Courage"],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Marauder",
+		"unitType": "Sword",
+		"replaces": "Spearman",
+		"uniqueTo": "Barbarians",
+		"movement": 2,
+		"strength": 10,
+		"cost": 56,
+		"requiredTech": "Bronze Working",
+		"obsoleteTech": "Civil Service",
+		"upgradesTo": "Pikeman",
+		"uniques": ["[+50]% Strength <vs [Mounted] units>"],
+		"attackSound": "metalhit"
+	},
+
+// Obsolete tech fixes
+
+	{  // Sliding into adjacent Military Science
+		"name": "Rifleman",
+		"unitType": "Gunpowder",
+		"movement": 2,
+		"strength": 34,
+		"rangedStrength": 38,
+		"range": 1,  // reasonable and logical
+		"cost": 225,
+		"requiredTech": "Military Science",
+		"obsoleteTech": "Replaceable Parts",
+		"upgradesTo": "Great War Infantry",
+		"uniques": ["[-30]% Strength <vs [Armored] units>"],  // All these soldier types are going to get moved to a soldier unitType
+		"attackSound": "shot"
+	},
+	{
+		"name": "Musketman",
+		"unitType": "Gunpowder",
+		"movement": 2,
+		"strength": 24,
+		"cost": 150,
+		"requiredTech": "Gunpowder",
+		"upgradesTo": "Rifleman",
+		"obsoleteTech": "Military Science",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Musketeer",
+		"unitType": "Gunpowder",
+		"replaces": "Musketman",
+		"uniqueTo": "France",
+		"movement": 2,
+		"strength": 28,
+		"cost": 150,
+		"requiredTech": "Gunpowder",
+		"upgradesTo": "Rifleman",
+		"obsoleteTech": "Military Science",
+		"uniques": ["[-50]% Strength <vs [Armored] units>"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Janissary",
+		"unitType": "Gunpowder",
+		"replaces": "Musketman",
+		"uniqueTo": "The Ottomans",
+		"movement": 2,
+		"strength": 24,
+		"cost": 150,
+		"requiredTech": "Gunpowder",
+		"upgradesTo": "Rifleman",
+		"obsoleteTech": "Military Science",
+		"promotions": ["[Janissary] ability"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Minuteman",
+		"unitType": "Gunpowder",
+		"replaces": "Musketman",
+		"uniqueTo": "America",
+		"movement": 2,
+		"strength": 24,
+		"cost": 150,
+		"requiredTech": "Gunpowder",
+		"upgradesTo": "Rifleman",
+		"obsoleteTech": "Military Science",
+		"uniques": ["Ignores terrain cost"],
+		"promotions": ["Drill I"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Tercio",
+		"unitType": "Gunpowder",
+		"replaces": "Musketman",
+		"uniqueTo": "Spain",
+		"movement": 2,
+		"strength": 26,
+		"cost": 160,
+		"requiredTech": "Gunpowder",
+		"upgradesTo": "Rifleman",
+		"obsoleteTech": "Military Science",
+		"uniques": ["[+50]% Strength <vs [Mounted] units>"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Caravel",
+		"unitType": "Melee Water",
+		"movement": 4,
+		"strength": 20,
+		"cost": 120,
+		"requiredTech": "Astronomy",
+		"upgradesTo": "Ironclad",
+		"obsoleteTech": "Electronics",
+		"uniques": ["[+1] Sight", "May withdraw before melee ([80]%)"],
+		"hurryCostModifier": 30,
+		"attackSound": "cannon"
+	},
+	{
+		"name": "Turtle Ship",
+		"unitType": "Melee Water",
+		"replaces": "Caravel",
+		"uniqueTo": "Korea",
+		"movement": 4,
+		"strength": 36,
+		"cost": 120,
+		"requiredTech": "Astronomy",
+		"upgradesTo": "Ironclad",
+		"obsoleteTech": "Electronics",
+		"uniques": ["Cannot enter ocean tiles"],
+		"hurryCostModifier": 30,
+		"attackSound": "cannon"
+	},
+	{
+		"name": "Norwegian Ski Infantry",
+		"unitType": "Gunpowder",
+		"replaces": "Rifleman",
+		"uniqueTo": "Denmark",
+		"movement": 2,
+		"strength": 34,
+		"cost": 225,
+		"requiredTech": "Military Science",
+		"obsoleteTech": "Replaceable Parts",
+		"upgradesTo": "Great War Infantry",
+		"promotions": ["[Norwegian Ski Infantry] ability"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Carolean",
+		"unitType": "Gunpowder",
+		"replaces": "Rifleman",
+		"uniqueTo": "Sweden",
+		"movement": 2,
+		"strength": 34,
+		"cost": 225,
+		"requiredTech": "Military Science",
+		"obsoleteTech": "Replaceable Parts",
+		"upgradesTo": "Great War Infantry",
+		"promotions": ["March"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Mehal Sefari",
+		"unitType": "Gunpowder",
+		"replaces": "Rifleman",
+		"uniqueTo": "Ethiopia",
+		"movement": 2,
+		"strength": 34,
+		"cost": 200,
+		"requiredTech": "Military Science",
+		"obsoleteTech": "Replaceable Parts",
+		"upgradesTo": "Great War Infantry",
+		"promotions": ["Drill I","Home Sweet Home"],
+		"attackSound": "shot"
+	},
+	{  
+		"name": "Berserker",
+		"unitType": "Sword",
+		"replaces": "Longswordsman",
+		"uniqueTo": "Denmark",
+		"movement": 3,
+		"strength": 21,
+		"cost": 120,
+		"requiredTech": "Metal Casting",
+		"upgradesTo": "Musketman",
+		"obsoleteTech": "Gunpowder",
+		"requiredResource": "Iron",
+		"promotions": ["Amphibious"],
+		"hurryCostModifier": 20,
+		"attackSound": "metalhit",
+	},
+]
