@@ -1,4 +1,4 @@
-[
+[    // Current structure minus this comment, by https://www.jsonschemavalidator.net/, format checked, pass, then auto-formatted.
   {/* Interesting and fun facts. A settler unit is required to start the game, otherwise no other units can spawn.*//* So, we start with the Shelter tech, which would have given a settler if we started in Survival tech with only a Scout,*//* then choose our base primitive techs which one would have supplied a settler. Instead, the first tech to be researched*//* goes backwards one step, then forwards for primitive techs. Was trying to capture pre-settlement gameplay, compromised.*/
     "name": "Prehistoric era",
     "researchAgreementCost": 50,
