@@ -510,6 +510,18 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 // Units adjusted to Prehistoric era
 
 	{
+		"name": "Longswordsman",  // Including to appease modchecker
+		"unitType": "Sword",
+		"movement": 2,
+		"strength": 21,
+		"cost": 120,
+		"requiredTech": "Steel",
+		"upgradesTo": "Musketman",
+		"obsoleteTech": "Gunpowder",
+		"requiredResource": "Iron",
+		"attackSound": "metalhit"
+	},
+	{
 		"name": "Warrior",
 		"unitType": "Sword",
 		"requiredTech": “Melee Weaponry”,
