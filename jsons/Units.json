@@ -698,7 +698,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"cost": 40,
 		"uniques": ["Cannot enter ocean tiles"],
 		"upgradesTo": "Trireme",
-		"obsoleteTech": "Compass",
+		"obsoleteTech": "Atronomy",
 		"attackSound": "nonmetalhit"
 	},
 	{
