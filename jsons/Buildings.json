@@ -4,10 +4,10 @@
 	 "cost": 10,
 	 "uniques": [  // the 'once' is for when capitals are relocated - portal gate will trigger upon moving
 		 "Can only be built [in capital]",
-		 "Free [Longswordsman] appears",  // Guess who!
-		 "Instantly provides [1] [Iron]", // Otherwise swordsman creates missing resource
+		 "Free [Longswordsman] appears",  // Guess who! Planning to more closely align this asset with the NES
+		 // "Instantly provides [1] [Iron]", // Otherwise swordsman creates missing resource. Culling for now due to needing a stockpiled resource container.
 		 // "Free [Worker] appears <once>",  // squire, paige, whoever, brought your helper
-		 "Limited to [1] per Civilization", 
+		 "Limited to [1] per Civilization",
 		 // "[+1] population [in all cities]",  // gain extra pop now for each 1st turn settlement
 		]
 	},
