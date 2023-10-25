@@ -1,9 +1,15 @@
-[  // WIP! Actively sliding around techs - still honing ideas and positions
+[
+	/* Modchecker notes. As noted in Eras.json, while Z2 remains an extension mod, versus a base ruleset, there are some limitations to the tech tree.
+		First, can't properly preceed the Ancient era with Prehistoric, so both are merged. Second, modchecker believes several techs here do not
+		exist, yet the tech tree shows them and are gameplay accessible. Modchecker also complains about Galley, which appears to be an artifact of
+		its belief that the required tech is absent. Only fix appears to be ascending Z2 to a base ruleset.
+	*/
+
 	{
-	// Game starts in column 1. First tech that can be researched is Survival, in column 0. Then, all column 1 techs are available, as if we started in column 0
-	// and first picked Shelter, then any other tech. We do this because starting in column 0 with only a Scout, zero settlers, no units can spawn because there's no
-	// city. We compromise by then starting in column 1 as if the previous action ocurred. I really wanted players to be able to choose their units selectively,
-	// in these prehistoric times before settlements, not just handing them a settler.
+	// Game starts in column 1. First tech that can be researched is Survival, in column 0. Then, all column 1 techs become available, as if we started in column 0 and
+	// first picked Shelter, then picked any other tech. We do this because starting in column 0 with only a Scout and zero settlers, no units can spawn because there's no
+	// city. We compromise by then starting in column 1 as if the previous action ocurred. I really wanted players to be able to choose their initial units selectively, in
+	// these prehistoric times before settlements, not just handing them a settler.
 		"columnNumber": 0,
 		"era": "Ancient era",
 		"techCost": 5,
@@ -14,10 +20,12 @@
 				"name": "Survival",
 				"row": 5,
 				"quote": "'Wuuman Wuuaman Wuuman!!!!' -Animal",
-				"uniques": [  // Not the starting tech, Shelter is
-					"Free Technology <upon discovering a Natural Wonder> <before the [Classical era]>",  // Encourages early exploration, finding civs
+				"uniques": [
+					// Not the starting tech, Shelter is
+					// "Free Technology <upon discovering a Natural Wonder> <before the [Classical era]>",  // Encourages early exploration, finding civs. Culling with OP consideration.
 					"[+1 Science] for every known Natural Wonder <before the [Classical era]>",  // More exploration tech acceleration
 				],
+			"quote": "Your journey begins here. Will you survive?",
 			},
 		]
 	},
@@ -33,8 +41,9 @@
 				"row": 6,
 				"prerequisites": ["Survival"],
 				"quote": "Fully furnished with tree stump.",
-				"uniques": [  // game begins here
-					"Starting tech",  // beginning in this tech because this was supposed to provide a free settler, instead we research back a row then move forward (nifty!)
+				"uniques": [
+					// game begins here
+					"Starting tech",  // beginning in this tech because this was supposed to provide a free settler, instead we research back a column then move forward (nifty!)
 					// "Free Technology",  // Triggers tech tree, needed for zero-settler start, can't do that					
 				],
 			},
@@ -64,7 +73,9 @@
 				"row": 2,
 				"prerequisites": ["Survival"],
 				"quote": "SHHHHH! AAAAAAAAGGGH!!!",
-				"uniques": ["Free [Warrior] appears"],
+				"uniques": [
+					"[+1 Food] [in capital]",
+				],
 			},
 		]
 	},
@@ -105,6 +116,9 @@
 				"name": "Melee Weaponry",
 				"row": 2,
 				"prerequisites": ["Hunting"],
+				"uniques": [
+					"Free [Warrior] appears",
+				],
 				"quote": ""
 			},
 
