@@ -5,7 +5,7 @@
 	// city. We compromise by then starting in column 1 as if the previous action ocurred. I really wanted players to be able to choose their units selectively,
 	// in these prehistoric times before settlements, not just handing them a settler.
 		"columnNumber": 0,
-		"era": "Prehistoric era",
+		"era": "Ancient era",
 		"techCost": 5,
 		"buildingCost": 4,
 		"wonderCost": 8,
@@ -14,16 +14,16 @@
 				"name": "Survival",
 				"row": 5,
 				"quote": "'Wuuman Wuuaman Wuuman!!!!' -Animal",
-				"uniques": [  // not starting tech
-					"Free Technology <upon discovering a Natural Wonder> <before the [Ancient] era>",  // encourages early exploration, finding civs
-					"[+1 Science] for every known Natural Wonder <before the [Classical] era>",  // Initial progression
+				"uniques": [  // Not the starting tech, Shelter is
+					"Free Technology <upon discovering a Natural Wonder> <before the [Classical era]>",  // Encourages early exploration, finding civs
+					"[+1 Science] for every known Natural Wonder <before the [Classical era]>",  // More exploration tech acceleration
 				],
 			},
 		]
 	},
 	{
 		"columnNumber": 1,
-		"era": "Prehistoric era",
+		"era": "Ancient era",
 		"techCost": 10,
 		"buildingCost": 8,
 		"wonderCost": 15,
@@ -71,7 +71,7 @@
 	{
 	// Haven't done any work on uniques for the new eras yet.
 		"columnNumber": 2,
-		"era": "Prehistoric era",
+		"era": "Ancient era",
 		"techCost": 30,
 		"buildingCost": 15,
 		"wonderCost": 30,
@@ -479,7 +479,9 @@
 			{
 				"name": "Free Trade",
 				"row": 4,
-				"uniques": ["[+2] Gold <in all coastal cities> <in all cities connected to capital>"],  // not sure if the logic will filter
+				"uniques": [
+					"[+2 Gold] from [City center] tiles [in all cities connected to capital] <in [Coastal] tiles>",  // Much appreciation to @SomeTroglodyte for redesigning this unique
+				],
 				"prerequisites": ["Economics","Navigation"],
 				"quote": "'A market is a law system. Without it, the only possible economy is the street robbery.' - Eugen von Böhm-Bawerk"
 			},
