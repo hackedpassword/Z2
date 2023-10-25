@@ -57,7 +57,7 @@
 				"row": 4,
 				"prerequisites": ["Survival"],
 				"quote": "Me like you. We here now!",
-				"uniques": ["Adopt [Tradition]"],
+				"uniques": ["Free Social Policy"],
 			},
 			{
 				"name": "Hunting",
@@ -480,7 +480,7 @@
 				"name": "Free Trade",
 				"row": 4,
 				"uniques": [
-					"[+2 Gold] from [City center] tiles [in all cities connected to capital] <in [Coastal] tiles>",  // Much appreciation to @SomeTroglodyte for redesigning this unique
+					"[+2 Gold] [in all cities connected to capital] <in [Coastal] tiles>",  // Much appreciation to @SomeTroglodyte for redesigning this unique
 				],
 				"prerequisites": ["Economics","Navigation"],
 				"quote": "'A market is a law system. Without it, the only possible economy is the street robbery.' - Eugen von Böhm-Bawerk"
