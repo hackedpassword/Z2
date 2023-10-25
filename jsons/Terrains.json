@@ -92,14 +92,14 @@
 		],
 	},
 	{
-		"name": "Plains",
+		"name": "Plains",  // Used mostly as path terrain
 		"type": "Land",
-		// "food": 1,
+		// "food": 1,  // Culled as plains will provide no food until later
 		"movementCost": 1,
 		"RGB": [153, 180, 51],
 		"uniques": [
-			"[+1] Food <in tiles without [Wheat]>",
-			"[+1] Production <with [1l to [1] neighboring [Grassland] tiles>",
+			"[+1 Food] <in tiles without [Wheat]>",  // The King's Tomb graveyard provides too much food
+			"[+1 Production] <with [1l to [1] neighboring [Grassland] tiles>",
 //			"[98]% Chance to be destroyed by nukes",
 		],
 	},
