@@ -100,7 +100,7 @@
 		"name": "Garden",
 		"uniques": [
 			"[+25]% Great Person generation [in this city]",
-			"Must be next to [Fresh water]",  // Lava?
+			"Must be next to [Water resource]",  // Lava?
 		],
 		"hurryCostModifier": 25,
 		"maintenance": 1,
@@ -125,9 +125,16 @@
 		"hurryCostModifier": 50,
 		"uniques": [
 			"Remove extra unhappiness from annexed cities",
-			"[+1 Happiness, +1 Gold] <in this city>",
-			"[+1 Culture] <in annexed cities>",
+			"[+1 Happiness, +1 Gold] [in this city]",
+			"[+1 Culture] [in annexed cities]",
 		],
 		"requiredTech": "Politics",
+	},
+	{
+		"name": "Library",  // appease modchecker?
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"uniques": ["[+1 Science] per [2] population [in this city]"],
+		"requiredTech": "Writing"
 	},
 ] 
