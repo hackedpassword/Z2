@@ -339,7 +339,7 @@
 				"cost": 375,
 				"row": 1,
 				"prerequisites": ["Optics","Theology"],
-				"uniques": [  // This may be a slight shortcut to ocean travel, basically the British tech route
+				"uniques": [  // This is a slight -3 tech shortcut to ocean travel, basically the British tech route
 					"Enables [Embarked] units to enter ocean tiles <upon discovery of [Enterprising]>",
 				],
 				"quote": "'I find the great thing in this world is not so much where we stand, as in what direction we are moving.' - Oliver Wendell Holmes"
@@ -380,11 +380,6 @@
 		"buildingCost": 200,
 		"wonderCost": 500,
 		"techs": [
-			{
-				"name": "Test tech",
-				"row": 2,
-				"prerequisites": ["Compass","Enterprising"],
-			},
 			{
 				"name": "Acoustics",
 				"row": 3,
