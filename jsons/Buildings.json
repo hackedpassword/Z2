@@ -138,6 +138,20 @@
 		"requiredTech": "Writing"
 	},
 	{
+		"name": "The Great Library",
+		"science": 3,
+		"culture": 1,
+		"greatPersonPoints": {"Great Scientist": 1},
+		"isWonder": true,
+		"requiredTech": "Writing",
+		"uniques": [
+			"Free Technology",
+			"Gain a free [Library] [in this city]",
+			"Destroyed when the city is captured",
+		],
+		"quote": "'Libraries are as the shrine where all the relics of the ancient saints, full of true virtue, and all that without delusion or imposture are preserved and reposed.' - Sir Francis Bacon"
+	},
+	{
 		"name": "Granary",
 		"food": 2,
 		"maintenance": 1,
@@ -145,7 +159,16 @@
 		"uniques": ["[+1 Food] from [Deer] tiles [in this city]",
 			"[+1 Food] from [Bananas] tiles [in this city]",
 			"[+1 Food] from [Wheat] tiles [in this city]"],
-		"requiredTech": "Calendar"
+		"requiredTech": "Calendar",
+	},
+	{
+		"name": "Observatory",
+		"maintenance": 0,
+		"hurryCostModifier": 15,
+		"percentStatBonus": {"science": 50},
+		"requiredBuilding": "University",  // eliminates Education tech req for Astronomy
+		"uniques": ["Must be next to [Mountain]"],
+		"requiredTech": "Astronomy",
 	},
 
 ] 
