@@ -228,7 +228,7 @@
 		"name": "Plantation",
 		"turnsToBuild": 6,
 		"gold": 1,
-		"techRequired": "Calendar",
+		"techRequired": "Horseback Riding",
 		"uniques": [
 			"[+1 Food] <after discovering [Fertilizer]>",
 			"Can only be built to improve a resource",
