@@ -381,6 +381,11 @@
 		"wonderCost": 500,
 		"techs": [
 			{
+				"name": "Test tech",
+				"row": 2,
+				"prerequisites": ["Compass","Enterprising"],
+			},
+			{
 				"name": "Acoustics",
 				"row": 3,
 				"prerequisites": ["Aesthetics"],
