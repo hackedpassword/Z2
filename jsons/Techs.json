@@ -399,7 +399,7 @@
 			},
 			{
 				"name": "Printing Press",
-				"row": 7,
+				"row": 8,
 				"prerequisites": ["Machinery"],
 				"quote": "'It is a newspaper's duty to print the news and raise hell.' - The Chicago Times"
 			},
@@ -487,7 +487,7 @@
 			{
 				"name": "Chemistry",
 				"row": 8,
-				"prerequisites": ["Education","Gunpowder"],
+				"prerequisites": ["Education","Printing Press"],
 				"quote": "'Wherever we look, the work of the chemist has raised the level of our civilization and has increased the productive capacity of the nation.' - Calvin Coolidge"
 			},
 		]
