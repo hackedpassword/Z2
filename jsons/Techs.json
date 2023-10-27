@@ -481,7 +481,7 @@
 			{
 				"name": "Economics",
 				"row": 5,
-				"prerequisites": ["Banking","Printing Press"],
+				"prerequisites": ["Banking","Education"],
 				"quote": "'Compound interest is the most powerful force in the universe.' - Albert Einstein"
 			},
 			{
