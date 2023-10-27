@@ -154,7 +154,7 @@
 		"terrainsCanBeBuiltOn": ["Forest"],
 		"production": 1,
 		"turnsToBuild": 7,
-		"techRequired": "Construction",
+		"techRequired": "Trapping",
 		"uniques": [
 			"[+1 Production] <after discovering [Scientific Theory]>",
 //			"[99]% Chance to be destroyed by nukes",
