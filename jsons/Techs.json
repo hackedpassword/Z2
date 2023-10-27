@@ -436,7 +436,7 @@
 			},
 			{
 				"name": "Architecture",
-				"row": 3,
+				"row": 2,
 				"prerequisites": ["Acoustics","Global Exploration"],
 				"quote": "'Architecture begins where engineering ends.' - Walter Gropius"
 			},
