@@ -353,7 +353,7 @@
 			},
 			{
 				"name": "Enterprising",
-				"row": 5,
+				"row": 4,
 				"prerequisites": ["Civil Service","Guilds"],
 				"uniques": ["[+1 Gold, +1 Happiness] from each Trade Route"],
 				"quote": "I cannot tell where you should looke for me.' he wrote, 'because I live at the devotion of the winds and seas.' (Written by/about Captain James Lancaster)"
@@ -436,7 +436,7 @@
 			},
 			{
 				"name": "Architecture",
-				"row": 3,
+				"row": 2,
 				"prerequisites": ["Acoustics","Global Exploration"],
 				"quote": "'Architecture begins where engineering ends.' - Walter Gropius"
 			},
@@ -496,12 +496,12 @@
 			{
 				"name": "Archaeology",
 				"row": 2,
-				"prerequisites": ["Architecture","Global Exploration"],
+				"prerequisites": ["Architecture"],
 				"quote": "'Those who cannot remember the past are condemned to repeat it.' - George Santayana"
 			},
 			{
 				"name": "Free Trade",
-				"row": 3,
+				"row": 4,
 				"uniques": [
 					"[+2 Gold] [in all cities connected to capital] <in [Coastal] tiles>",  // Much appreciation to @SomeTroglodyte for redesigning this unique
 				],
@@ -556,7 +556,7 @@
 			},
 			{
 				"name": "Railroads",
-				"row": 5,
+				"row": 4,
 				"prerequisites": ["Free Trade","Steam Power"],
 				"quote": "'The introduction of so powerful an agent as steam to a carriage on wheels will make a great change in the situation of man.' - Thomas Jefferson"
 			},
@@ -595,7 +595,7 @@
 			},
 			{
 				"name": "Combustion",
-				"row": 4,
+				"row": 5,
 				"prerequisites": ["Flight","Industrialization","Railroads"],
 				"quote": "'Any man who can drive safely while kissing a pretty girl is simply not giving the kiss the attention it deserves.' - Albert Einstein"
 			},
