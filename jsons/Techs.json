@@ -91,8 +91,8 @@
 				"name": "Language",
 				"row": 4,
 				"prerequisites": ["Clans"],
-				"quote": "",
-				"uniques": []
+				"quote": "GOT 'WORDS'!? WHERE?! SHOW WORDS!!",
+				"uniques": ["[+1 Culture] per [4] population [in all cities]"]
 			},
 			{
 				"name": "Pottery",
@@ -119,7 +119,7 @@
 				"uniques": [
 					"Free [Warrior] appears",
 				],
-				"quote": ""
+				"quote": "MEAT RUN FAST, USE TRICK MAKE CATCH!"
 			},
 
 		]
@@ -384,12 +384,17 @@
 				"name": "Global Exploration",
 				"row": 2,
 				"prerequisites": ["Compass","Aesthetics"],
+				"uniques": [
+					"Enables Defensive Pacts",
+					"When declaring friendship, both parties gain a [+25]% boost to great person generation",
+				],
 				"quote": "",
 			},
 			{
 				"name": "Acoustics",
 				"row": 3,
 				"prerequisites": ["Aesthetics"],
+				"uniques": [""],
 				"quote": "'Their rising all at once was as the sound of thunder heard remote' - Milton"
 			},
 			{
