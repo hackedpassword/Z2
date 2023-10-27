@@ -436,7 +436,7 @@
 			},
 			{
 				"name": "Architecture",
-				"row": 2,
+				"row": 3,
 				"prerequisites": ["Acoustics","Global Exploration"],
 				"quote": "'Architecture begins where engineering ends.' - Walter Gropius"
 			},
@@ -501,7 +501,7 @@
 			},
 			{
 				"name": "Free Trade",
-				"row": 4,
+				"row": 3,
 				"uniques": [
 					"[+2 Gold] [in all cities connected to capital] <in [Coastal] tiles>",  // Much appreciation to @SomeTroglodyte for redesigning this unique
 				],
@@ -557,7 +557,7 @@
 			{
 				"name": "Railroads",
 				"row": 4,
-				"prerequisites": ["Free Trade","Steam Power"],
+				"prerequisites": ["Steam Power"],
 				"quote": "'The introduction of so powerful an agent as steam to a carriage on wheels will make a great change in the situation of man.' - Thomas Jefferson"
 			},
 			{
