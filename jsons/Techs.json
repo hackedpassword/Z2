@@ -469,7 +469,7 @@
 			},
 			{
 				"name": "Scientific Theory",
-				"row": 7,
+				"row": 6,
 				"prerequisites": ["Education"],
 				"quote": "'Every great advance in science has issued from a new audacity of imagination.' - John Dewey"
 			},
@@ -501,7 +501,7 @@
 			},
 			{
 				"name": "Free Trade",
-				"row": 3,
+				"row": 4,
 				"uniques": [
 					"[+2 Gold] [in all cities connected to capital] <in [Coastal] tiles>",  // Much appreciation to @SomeTroglodyte for redesigning this unique
 				],
@@ -556,7 +556,7 @@
 			},
 			{
 				"name": "Railroads",
-				"row": 4,
+				"row": 5,
 				"prerequisites": ["Steam Power"],
 				"quote": "'The introduction of so powerful an agent as steam to a carriage on wheels will make a great change in the situation of man.' - Thomas Jefferson"
 			},
