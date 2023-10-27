@@ -388,7 +388,7 @@
 			},
 			{
 				"name": "Printing Press",
-				"row": 4,
+				"row": 6,
 				"prerequisites": ["Machinery"],
 				"quote": "'It is a newspaper's duty to print the news and raise hell.' - The Chicago Times"
 			},
@@ -430,13 +430,13 @@
 			},
 			{
 				"name": "Architecture",
-				"row": 2,
+				"row": 3,
 				"prerequisites": ["Acoustics"],
 				"quote": "'Architecture begins where engineering ends.' - Walter Gropius"
 			},
 			{
 				"name": "Banking",
-				"row": 5,
+				"row": 4,
 				"prerequisites": ["Enterprising"],
 				"quote": "'Happiness: a good bank account, a good cook and a good digestion' - Jean Jacques Rousseau"
 			},
@@ -469,7 +469,7 @@
 			},
 			{
 				"name": "Economics",
-				"row": 4,
+				"row": 5,
 				"prerequisites": ["Banking","Printing Press"],
 				"quote": "'Compound interest is the most powerful force in the universe.' - Albert Einstein"
 			},
@@ -495,7 +495,7 @@
 			},
 			{
 				"name": "Free Trade",
-				"row": 4,
+				"row": 5,
 				"uniques": [
 					"[+2 Gold] [in all cities connected to capital] <in [Coastal] tiles>",  // Much appreciation to @SomeTroglodyte for redesigning this unique
 				],
