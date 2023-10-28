@@ -9,5 +9,6 @@
 	// "Double movement in [Force] <for [All] units>", // This doesn't work.
 	"Allow raze capitol",  // Allow razing any city
 	"Allow raze holy city",
+	"100 Gold for discovering a Natural Wonder (bonus enhanced to 500 Gold if first to discover it)",  // promotes exploration
     ]
 }
