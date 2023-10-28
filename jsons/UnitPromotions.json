@@ -4,7 +4,7 @@
 		"name": "Adventurer",
 		"uniques": [
 			"Can pass through impassable tiles",
-			"Double movement in [Foreign Land] <when not at war>",
+			"Double movement in [Natural Wonder] <when not at war>",  // should allow one-pass bridge/water-path movement without resorting to sketch 0M params
 		]
 	},
         {  // Granted by generic towns and other events
