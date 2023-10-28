@@ -21,8 +21,8 @@
 		"production": 1,
 		"techRequired": "Shelter",
 		"uniques": [
-			"",
 		],
+		"terrainsCanBeBuiltOn": ["Land"],
 	},
 	{
 		"name": "Forage",
@@ -30,8 +30,8 @@
 		"food": 1,
 		"techRequired": "Shelter",
 		"uniques": [
-			"",
 		],
+		"terrainsCanBeBuiltOn": ["Land"],
 	},
 	{
 		"name": "Bridge",  // represents the hidden rift between Death Mountain and the Maze Island bridge
