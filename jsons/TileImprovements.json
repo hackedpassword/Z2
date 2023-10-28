@@ -16,7 +16,7 @@
 		"terrainsCanBeBuiltOn": ["Land"],
 	},
 	{
-		"name": "Dig mud",
+		"name": "Slog mud",
 		"turnsToBuild": 7,
 		"production": 1,
 		"techRequired": "Shelter",
