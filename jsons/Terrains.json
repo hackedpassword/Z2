@@ -271,7 +271,7 @@
 		"faith": 5,
 		"culture": 10,
 		"occursOn": ["Plains"],
-		"uniques": ["Grants 500 Gold to the first civilization to discover it",
+		"uniques": [
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population"
 		],
@@ -287,7 +287,7 @@
 		"faith": 10,
 		"culture": 5,
 		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
-		"uniques": ["Grants 500 Gold to the first civilization to discover it",
+		"uniques": [
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage",
@@ -305,7 +305,7 @@
 		"faith": 10,
 		"culture": 5,
 		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
-		"uniques": ["Grants 500 Gold to the first civilization to discover it",
+		"uniques": [
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage",
@@ -322,7 +322,7 @@
 		"faith": 10,
 		"culture": 5,
 		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
-		"uniques": ["Grants 500 Gold to the first civilization to discover it",
+		"uniques": [
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage",
@@ -339,7 +339,7 @@
 		"faith": 10,
 		"culture": 5,
 		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
-		"uniques": ["Grants 500 Gold to the first civilization to discover it",
+		"uniques": [
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage",
@@ -356,7 +356,7 @@
 		"faith": 10,
 		"culture": 5,
 		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
-		"uniques": ["Grants 500 Gold to the first civilization to discover it",
+		"uniques": [
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage",
@@ -373,7 +373,7 @@
 		"faith": 10,
 		"culture": 5,
 		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
-		"uniques": ["Grants 500 Gold to the first civilization to discover it",
+		"uniques": [
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage",
@@ -390,7 +390,7 @@
 		"faith": 10,
 		"culture": 5,
 		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
-		"uniques": ["Grants 500 Gold to the first civilization to discover it",
+		"uniques": [
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage",
@@ -407,7 +407,7 @@
 		"faith": 10,
 		"culture": 5,
 		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
-		"uniques": ["Grants 500 Gold to the first civilization to discover it",
+		"uniques": [
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage",
@@ -427,7 +427,7 @@
 		"faith": 5,
 		"culture": 10,
 		"occursOn": ["Plains"],
-		"uniques": ["Grants 500 Gold to the first civilization to discover it",
+		"uniques": [
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population"],
 		"turnsInto": "Plains",
@@ -442,7 +442,7 @@
 		"faith": 10,
 		"culture": 5,
 		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
-		"uniques": ["Grants 500 Gold to the first civilization to discover it",
+		"uniques": [
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage",
@@ -459,7 +459,7 @@
 		"faith": 10,
 		"culture": 5,
 		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
-		"uniques": ["Grants 500 Gold to the first civilization to discover it",
+		"uniques": [
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage",
@@ -476,7 +476,7 @@
 		"faith": 10,
 		"culture": 5,
 		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
-		"uniques": ["Grants 500 Gold to the first civilization to discover it",
+		"uniques": [
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage",
@@ -493,7 +493,7 @@
 		"faith": 10,
 		"culture": 5,
 		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
-		"uniques": ["Grants 500 Gold to the first civilization to discover it",
+		"uniques": [
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage",
@@ -510,7 +510,7 @@
 		"faith": 10,
 		"culture": 5,
 		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
-		"uniques": ["Grants 500 Gold to the first civilization to discover it",
+		"uniques": [
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage",
@@ -527,7 +527,7 @@
 		"faith": 10,
 		"culture": 5,
 		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
-		"uniques": ["Grants 500 Gold to the first civilization to discover it",
+		"uniques": [
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage",
@@ -544,7 +544,7 @@
 		"faith": 10,
 		"culture": 5,
 		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
-		"uniques": ["Grants 500 Gold to the first civilization to discover it",
+		"uniques": [
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage",
@@ -566,7 +566,7 @@
 		"culture": 25,
 		"occursOn": ["Plains","Mountain","Desert","Grassland"],
 		"uniques": [
-			"Grants 500 Gold to the first civilization to discover it",
+			
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population", "Doesn't generate naturally"],
 		"turnsInto": "Plains",
@@ -588,7 +588,7 @@
 		"movementCost": 3,
 		"occursOn": ["Plains"],
 		"uniques": [
-			// "Grants 500 Gold to the first civilization to discover it",  // can't make this unique value '50' so it'll be 500 
+			//   // can't make this unique value '50' so it'll be 500 
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			// [-50] results in regen instead of dmg:
@@ -609,7 +609,7 @@
 		"movementCost": 3,
 		"occursOn": ["Desert"],
 		"uniques": [
-			// "Grants 500 Gold to the first civilization to discover it",
+			// 
 			// "Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Units ending their turn on this terrain take [-50] damage",  // healer
@@ -628,7 +628,7 @@
 		"movementCost": 3,
 		"occursOn": ["Grassland"],
 		"uniques": [
-			// "Grants 500 Gold to the first civilization to discover it",
+			// 
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Units ending their turn on this terrain take [-50] damage",  // healer
@@ -650,7 +650,7 @@
 		"movementCost": 3,
 		"occursOn": ["Grassland"],
 		"uniques": [
-			"Grants 500 Gold to the first civilization to discover it",  // Want this to be 100G but only 500G is hardcoded
+			  // Want this to be 100G but only 500G is hardcoded
 			"Grants [Shield] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Units ending their turn on this terrain take [-50] damage",  // healer
@@ -671,7 +671,7 @@
 		"movementCost": 3,
 		"occursOn": ["Plains"],
 		"uniques": [
-			"Grants 500 Gold to the first civilization to discover it",
+			
 			"Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Units ending their turn on this terrain take [-50] damage",  // healer
@@ -690,7 +690,7 @@
 		"movementCost": 3,
 		"occursOn": ["Plains"],
 		"uniques": [
-			"Grants 500 Gold to the first civilization to discover it",
+			
 			"Grants [Life] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Units ending their turn on this terrain take [-50] damage",  // healer
@@ -709,7 +709,7 @@
 		"movementCost": 3,
 		"occursOn": ["Desert"],
 		"uniques": [
-			"Grants 500 Gold to the first civilization to discover it",
+			
 			"Grants [Fairy] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Grants [Downward Thrust] ([Military/warrior training]) to adjacent [Land] units for the rest of the game <upon constructing [Military Academy] [in all cities]>",
 			"Tile provides yield without assigned population",
@@ -729,7 +729,7 @@
 		"movementCost": 3,
 		"occursOn": ["Plains"],
 		"uniques": [
-			"Grants 500 Gold to the first civilization to discover it",
+			
 			"Grants [Fire] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Units ending their turn on this terrain take [-50] damage",  // healer
@@ -749,7 +749,7 @@
 		"movementCost": 3,
 		"occursOn": ["Desert"],
 		"uniques": [
-			"Grants 500 Gold to the first civilization to discover it",
+			
 			"Grants [Reflect] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Grants [Upward Thrust] ([Military/warrior training]) to adjacent [Land] units for the rest of the game <upon constructing [Military Academy] [in all cities]>",
 			"Tile provides yield without assigned population",
@@ -769,7 +769,7 @@
 		"movementCost": 3,
 		"occursOn": ["Grassland"],
 		"uniques": [
-			"Grants 500 Gold to the first civilization to discover it",
+			
 			"Grants [Spell] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Grants [Magic Key] ([Military/warrior training]) to adjacent [Land] units for the rest of the game <upon constructing [Military Academy] [in all cities]>",
 			"Tile provides yield without assigned population",
