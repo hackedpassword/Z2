@@ -10,6 +10,8 @@
 		"uniques": [
 			"Automation is a primary action",
 			"Can build [Boulder] improvements on tiles",
+			"Can build [Forage] improvements on tiles",
+			"Can build [Slog mud] improvements on tiles",
 			"Can build [Land] improvements on tiles",
 			"Can build [Natural Wonder] improvements on tiles", // Hacky attempt at adding features/improvements for things like bridges, doesn't work atm
 			"Can build [Water] improvements on tiles", // Workers do water improvements ala AF, consumed tradeoff
