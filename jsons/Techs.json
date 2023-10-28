@@ -154,7 +154,7 @@
 				"name": "Fishing",
 				"row": 1,
 				"prerequisites": ["Melee Weaponry"],
-				"quote": ""
+				"quote": "Gameplay note: There are no fish resource tiles in Z2, so you are allowed to utilize workboats as a placable resource. As usual, these are subject to working population limitations."
 			},
 			{
 				"name": "Archery",
