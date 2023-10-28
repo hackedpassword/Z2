@@ -16,7 +16,25 @@
 		"terrainsCanBeBuiltOn": ["Land"],
 	},
 	{
-		"name": "Bridge",  // experimental, not used. Will likely remove and send to Castles repo map mod
+		"name": "Dig mud",
+		"turnsToBuild": 7,
+		"production": 1,
+		"techRequired": "Shelter",
+		"uniques": [
+			"",
+		],
+	},
+	{
+		"name": "Forage",
+		"turnsToBuild": 7,
+		"food": 1,
+		"techRequired": "Shelter",
+		"uniques": [
+			"",
+		],
+	},
+	{
+		"name": "Bridge",  // represents the hidden rift between Death Mountain and the Maze Island bridge
 		"turnsToBuild": 7,
 		"terrainsCanBeBuiltOn": ["Coast","CoastTile","Ocean","Lakes"],
 		"culture": 1,
