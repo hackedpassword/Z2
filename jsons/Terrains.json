@@ -55,7 +55,7 @@
 	{
 		"name": "Mountain",
 		"type": "Land",
-		"movementCost": 2,
+		"movementCost": 3,
 		"defenceBonus": 0.5,
 		"RGB": [102, 102, 102],
 		"uniques": ["Rough terrain",
