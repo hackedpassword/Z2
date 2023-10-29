@@ -389,6 +389,13 @@ TileSets/HexaRealm/Tiles/Fallout4
   orig: 64, 64
   offset: 0, 0
   index: -1
+TileSets/HexaRealm/Tiles/Forage
+  rotate: false
+  xy: 1988, 985
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
 TileSets/HexaRealm/Tiles/Force
   rotate: false
   xy: 140, 140
@@ -884,6 +891,34 @@ TileSets/HexaRealm/Tiles/Silver
   xy: 556, 289
   size: 64, 64
   orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Slog mud
+  rotate: false
+  xy: 268, 285
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Slog mud2
+  rotate: false
+  xy: 1636, 425
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Slog mud3
+  rotate: false
+  xy: 1564, 325
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Slog mud4
+  rotate: false
+  xy: 1988, 945
+  size: 32, 32
+  orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Smelter
