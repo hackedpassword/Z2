@@ -171,11 +171,12 @@
 		"requiredTech": "Astronomy",
 	},
 	{
-		"name": "Festival",  // replace Circus
+		"name": "Festival",  // replaces Circus
 		"requiredNearbyImprovedResources": ["Ivory","Horses"],
 		"happiness": 2,
 		"hurryCostModifier": 25,
-		"requiredTech": "Trapping"
+		"requiredTech": "Trapping",
+		"uniques": ["[+2 Food, +2 Happiness] <in this city> <during a Golden Age> <when not at war>"],
 	},
 
 ] 
