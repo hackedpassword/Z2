@@ -170,5 +170,12 @@
 		"uniques": ["Must be next to [Mountain]"],
 		"requiredTech": "Astronomy",
 	},
+	{
+		"name": "Festival",  // replace Circus
+		"requiredNearbyImprovedResources": ["Ivory","Horses"],
+		"happiness": 2,
+		"hurryCostModifier": 25,
+		"requiredTech": "Trapping"
+	},
 
 ] 
