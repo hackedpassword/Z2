@@ -181,9 +181,6 @@
 
 // Base ruleset //
 
-[
-	// Ancient Era
-
 	// Always available
 	{
 		"name": "Palace",
@@ -196,6 +193,7 @@
 		"cost": 1,
 		"uniques": ["Indicates the capital city"]
 	},
+	// Ancient Era
 	{
 		"name": "Stele",
         "replaces": "Monument",
@@ -1268,5 +1266,3 @@
 		"uniques": ["Unbuildable", "Hidden when religion is disabled"]
 	}
 ]
-
-] 
