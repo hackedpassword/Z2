@@ -3,7 +3,7 @@
 	"modUrl":"https://github.com/hackedpassword/Z2",
 	"defaultBranch":"main",
 	"author":"hackedpassword",
-	"isBaseRuleset":"false",
+	"isBaseRuleset":"true",
 	"modSize":901,
 	"topics":["unciv-mod","unciv-mod-expansions","unciv-mod-fun","unciv-mod-maps"],
 	// "constants":{"unitUpgradeCost":{}},
