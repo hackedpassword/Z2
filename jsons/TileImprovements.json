@@ -97,17 +97,17 @@
 		"name": "Fishing Boats",
 		"terrainsCanBeBuiltOn": ["Coast"],
 		"food": 1,
-		"techRequired": "Sailing",
+		"techRequired": "Fishing",
 		"uniques": [  // the sea is a trove of resources
 			"[+1 Gold] <after discovering [Compass]>",
 			"[+1 Gold] <after discovering [Industrialization]>",
 			"[+1 Science] <after discovering [Biology]>",
 			"[+1 Food] <after discovering [Refrigeration]>",
 		// out // "Can only be built to improve a resource",  // Let's go fishing!
-		// This is the behavior of fishing boats I expected when first getting
+		// This tech mod is the behavior of fishing boats I expected when first getting
 		// into Unciv. Since there are no Fish resources in Z2, we allow coastal
-		// cities this bonus action. It helps food supply; not OP as one might suspect.
-		        "Pillaging this improvement yields approximately [+2 Gold]"
+		// cities this bonus action. It helps the scarce food supply.
+		        "Pillaging this improvement yields approximately [+2 Gold]", 
                 ],
 		"shortcutKey": "F"
 	},
