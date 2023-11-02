@@ -31,7 +31,7 @@
 			"May create improvements on water resources",
 			"Can instantly construct a [Fishing Boats] improvement <by consuming this unit>",
         	    	// "Uncapturable",  // you fish for us now
-			"Automation is a primary action"
+			"Automation is a primary action", 
 		],
 	},
 	{ // a bit cheaper and faster
@@ -45,22 +45,39 @@
 			"Excess Food converted to Production when under construction",
 			"Requires at least [2] population"
 		],
-		"hurryCostModifier": 20
+		"hurryCostModifier": 20, 
+	},
+	{
+		"name": "Nomad",  // first gen scout
+		"unitType": "Scout",
+		"requiredTech": "Survival",
+		"movement": 2,
+		"strength": 3,
+		"cost": 30,
+		"upgradesTo": "Scout",
+		"obsoleteTech": "Politics",
+		"uniques": [
+			"Can instantly construct a [Forage] improvement <by consuming this unit>",
+			"May upgrade to [Scout] through ruins-like effects",
+			"Never appears as a Barbarian unit",
+			"Ignore terrain cost <in [Plains] tiles>",
+		],
+		"attackSound": "nonmetalhit",
 	},
 	{
 		"name": "Scout",
 		"unitType": "Scout",
-		"requiredTech": "Fire",
+		"requiredTech": "Language",
 		"movement": 3,
 		"strength": 5,
-		"cost": 25,
+		"cost": 35,
 		"obsoleteTech": "Scientific Theory",
 		"uniques": [
 			"Can instantly construct a [Fort] improvement <by consuming this unit>",  // great upgrade
 			"May upgrade to [Archer] through ruins-like effects",
-			"Never appears as a Barbarian unit"
+			"Never appears as a Barbarian unit",
+			"Ignore terrain cost <in tiles without [Mountain]>", 
 		],
-		"promotions": ["Ignore terrain cost"],
 		"attackSound": "nonmetalhit",
 	},
 	{
