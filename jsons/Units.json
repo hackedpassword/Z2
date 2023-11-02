@@ -653,10 +653,10 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"movement": 4,
 		"strength": 10,
 		"cost": 45,
-		"uniques": ["Cannot enter ocean tiles", "Never appears as a Barbarian unit"],
+		"uniques": ["Cannot enter ocean tiles"], // "Never appears as a Barbarian unit" <-- contradicts Galley
 		"upgradesTo": "Caravel",
 		"obsoleteTech": "Astronomy",
-		"attackSound": "nonmetalhit"
+		"attackSound": "nonmetalhit",
 	},
 	{
 		"name": "Quinquereme",
@@ -670,7 +670,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"uniques": ["Cannot enter ocean tiles"],
 		"upgradesTo": "Caravel",
 		"obsoleteTech": "Astronomy",
-		"attackSound": "nonmetalhit"
+		"attackSound": "nonmetalhit",
 	},
 	{
 		"name": "Dromon",
@@ -689,19 +689,20 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		],
 		"upgradesTo": "Galleass",
 		"obsoleteTech": "Astronomy",
-		"attackSound": "arrow"
+		"attackSound": "arrow",
 	},
 	{
 		"name": "Galley",
 		"unitType": "Melee Water",
 		"uniqueTo": "Barbarians",
+		"requiredTech": "Survival",
 		"movement": 3,
 		"strength": 7,
 		"cost": 40,
 		"uniques": ["Cannot enter ocean tiles"],
 		"upgradesTo": "Trireme",
 		"obsoleteTech": "Astronomy",
-		"attackSound": "nonmetalhit"
+		"attackSound": "nonmetalhit",
 	},
 	{
 		"name": "Chariot Archer",
