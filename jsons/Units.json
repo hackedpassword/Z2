@@ -57,7 +57,7 @@
 		"upgradesTo": "Scout",
 		"obsoleteTech": "Politics",
 		"uniques": [
-			"Can instantly construct a [Forage] improvement <by consuming this unit>",
+			"Can instantly construct a [Forage] improvement <by consuming this unit> <with [50]% chance>",  // might get eaten by enemies instead
 			"May upgrade to [Scout] through ruins-like effects",
 			"Never appears as a Barbarian unit",
 			"Ignore terrain cost <in [Plains] tiles>",
