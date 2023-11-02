@@ -555,7 +555,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 	{
 		"name": "Jaguar",
 		"unitType": "Sword",
-		"requiredTech": "Melee Weaponary",
+		"requiredTech": "Melee Weaponry",
 		"uniqueTo": "Aztecs",
 		"replaces": "Warrior",
 		"movement": 2,
