@@ -64,7 +64,8 @@
 
     {
         "name": "Sword",
-        "movementType": "Land"
+        "movementType": "Land",
+        "uniques": ["Can build [Remove Trap] improvements on tiles"],  // fight enemies of the land
     },
     {
         "name": "Gunpowder",
