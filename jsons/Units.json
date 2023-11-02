@@ -1,4 +1,4 @@
-[
+0[
 
 	// Rebuilt for Z2
 	
@@ -9,6 +9,8 @@
 		"cost": 25, // Cheap! Don't forget this is production cost, not gold cost!
 		"movement": 2,
 		"uniques": [
+			"[-2] Sight <before the [Classical era]>",
+			"[-1] Sight <after the [Ancient era]>",
 			"Automation is a primary action",
 			"Can build [Boulder] improvements on tiles <after discovering [Engineering]>",
 			"Can build [Forage] improvements on tiles <before the [Pioneer era]>",
@@ -20,7 +22,8 @@
 		],
 	},
 // 
-	{  // Needed for fish-less Z2 waters - consume to instantly fish
+	{ 
+	// Needed for fish-less Z2 waters - consume to instantly fish
 		"name": "Work Boats",
 		"unitType": "Civilian Water",
 		"movement": 3,
@@ -34,16 +37,18 @@
 			"Automation is a primary action", 
 		],
 	},
-	{ // a bit cheaper and faster
+	{
+	// a bit cheaper and faster
 		"name": "Settler",
 		"unitType": "Civilian",
 		"requiredTech": "Pottery",
-		"movement": 3,
+		"movement": 2,
 		"cost": 50,
 		"uniques": [
+			"[+1] Movement <after discovering [Horseback Riding]>",
 			"Founds a new city <by consuming this unit>",
 			"Excess Food converted to Production when under construction",
-			"Requires at least [2] population"
+			"Requires at least [2] population", 
 		],
 		"hurryCostModifier": 20, 
 	},
@@ -57,6 +62,8 @@
 		"upgradesTo": "Scout",
 		"obsoleteTech": "Politics",
 		"uniques": [
+			"[-2] Sight <before the [Classical era]>",
+			"[-1] Sight <during the [Classical era]>",
 			"Can instantly construct a [Forage] improvement <by consuming this unit> <with [50]% chance>",  // might get eaten by enemies instead
 			"May upgrade to [Scout] through ruins-like effects",
 			"Never appears as a Barbarian unit",
@@ -73,6 +80,7 @@
 		"cost": 35,
 		"obsoleteTech": "Scientific Theory",
 		"uniques": [
+			"[-1] Sight <before the [Classical era]>",
 			"Can instantly construct a [Fort] improvement <by consuming this unit>",  // great upgrade
 			"May upgrade to [Archer] through ruins-like effects",
 			"Never appears as a Barbarian unit",
