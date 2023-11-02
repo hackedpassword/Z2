@@ -14,9 +14,10 @@
 		"name": "Prehistoric era",
 		"researchAgreementCost": 50,
 		"startingSettlerCount": 1,  // Desired 0, but without a city, no units can spawn after game start :(
+		                            // I am looking into possible City center uses/strategies/[exploits] that may make the above possible
 		"startingWorkerCount": 0,
 		"startingMilitaryUnitCount": 1,
-		"startingMilitaryUnit": "Scout",  // was thinking more Brute
+		"startingMilitaryUnit": "Nomad",  // was thinking more Brute
 		"settlerPopulation": 1,
 		"baseUnitBuyCost": 50,
 		"embarkDefense": 1,
@@ -40,7 +41,7 @@
 	"startingSettlerCount": 1,
 	"startingWorkerCount": 0,
 	"startingMilitaryUnitCount": 1,
-	"startingMilitaryUnit": "Scout",  // Rebuilt Ancient era utilizing Prehistoric era design
+	"startingMilitaryUnit": "Nomad",  // Rebuilt Ancient era utilizing Prehistoric era design (re-add Scout for ancient era after Prehistoric era activated) 
 	"settlerPopulation": 1,
 	"baseUnitBuyCost": 50,
 	"embarkDefense": 1,
