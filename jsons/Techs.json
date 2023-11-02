@@ -474,7 +474,7 @@
 			{
 				"name": "Scientific Theory",
 				"row": 6,
-				"prerequisites": ["Education"],
+				"prerequisites": ["Education","Printing Press"],
 				"quote": "'Every great advance in science has issued from a new audacity of imagination.' - John Dewey"
 			},
 			{
@@ -486,7 +486,7 @@
 			{
 				"name": "Chemistry",
 				"row": 8,
-				"prerequisites": ["Education","Printing Press"],
+				"prerequisites": ["Education","Gunpowder"],
 				"quote": "'Wherever we look, the work of the chemist has raised the level of our civilization and has increased the productive capacity of the nation.' - Calvin Coolidge"
 			},
 		]
