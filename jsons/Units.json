@@ -5,7 +5,7 @@
 	{
 		"name": "Worker",  // Villager
 		"unitType": "Civilian",
-		"requiredTech": “Animal Husbandry”,
+		"requiredTech": "Animal Husbandry",
 		"cost": 25, // Cheap! Don't forget this is production cost, not gold cost!
 		"movement": 2,
 		"uniques": [
@@ -37,7 +37,7 @@
 	{ // a bit cheaper and faster
 		"name": "Settler",
 		"unitType": "Civilian",
-		"requiredTech": “Pottery”,
+		"requiredTech": "Pottery",
 		"movement": 3,
 		"cost": 50,
 		"uniques": [
@@ -50,7 +50,7 @@
 	{
 		"name": "Scout",
 		"unitType": "Scout",
-		"requiredTech": “Fire”,
+		"requiredTech": "Fire",
 		"movement": 3,
 		"strength": 5,
 		"cost": 25,
@@ -526,7 +526,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 	{
 		"name": "Warrior",
 		"unitType": "Sword",
-		"requiredTech": “Melee Weaponry”,
+		"requiredTech": "Melee Weaponry",
 		"movement": 2,
 		"strength": 8,
 		"cost": 40,
@@ -541,7 +541,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 	{
 		"name": "Maori Warrior",
 		"unitType": "Sword",
-		"requiredTech": “Melee Weaponry”,
+		"requiredTech": "Melee Weaponry",
 		"uniqueTo": "Polynesia",
 		"replaces": "Warrior",
 		"movement": 2,
@@ -555,7 +555,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 	{
 		"name": "Jaguar",
 		"unitType": "Sword",
-		"requiredTech": “Melee Weaponary”,
+		"requiredTech": "Melee Weaponary",
 		"uniqueTo": "Aztecs",
 		"replaces": "Warrior",
 		"movement": 2,
@@ -636,7 +636,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"name": "Atlatlist",
 		"unitType": "Archery",
 		"movement": 2,
-		"requiredTech": “Archery”,
+		"requiredTech": "Archery",
 		"strength": 5,
 		"rangedStrength": 7,
 		"cost": 36,
@@ -649,7 +649,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 	{
 		"name": "Trireme",
 		"unitType": "Melee Water",
-		"requiredTech": “Fishing”,
+		"requiredTech": "Fishing",
 		"movement": 4,
 		"strength": 10,
 		"cost": 45,
