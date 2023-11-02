@@ -10,7 +10,7 @@
 		"movement": 2,
 		"uniques": [
 			"[-2] Sight <before the [Classical era]>",
-			"[-1] Sight <after the [Ancient era]>",
+			"[-1] Sight <starting from the [Classical era]>",
 			"Automation is a primary action",
 			"Can build [Boulder] improvements on tiles <after discovering [Engineering]>",
 			"Can build [Forage] improvements on tiles <before the [Pioneer era]>",
@@ -60,14 +60,14 @@
 		"strength": 3,
 		"cost": 30,
 		"upgradesTo": "Scout",
-		"obsoleteTech": "Politics",
+		"obsoleteTech": "Horseback Riding",
 		"uniques": [
 			"[-2] Sight <before the [Classical era]>",
 			"[-1] Sight <during the [Classical era]>",
 			"Can instantly construct a [Forage] improvement <by consuming this unit> <with [50]% chance>",  // might get eaten by enemies instead
 			"May upgrade to [Scout] through ruins-like effects",
 			"Never appears as a Barbarian unit",
-			"Ignore terrain cost <in [Plains] tiles>",
+			"Ignores terrain cost <in [Plains] tiles>",
 		],
 		"attackSound": "nonmetalhit",
 	},
@@ -84,7 +84,7 @@
 			"Can instantly construct a [Fort] improvement <by consuming this unit>",  // great upgrade
 			"May upgrade to [Archer] through ruins-like effects",
 			"Never appears as a Barbarian unit",
-			"Ignore terrain cost <in tiles without [Mountain]>", 
+			"Ignores terrain cost <in tiles without [Mountain]>", 
 		],
 		"attackSound": "nonmetalhit",
 	},
