@@ -37,6 +37,21 @@
 		"wonderCost": 15,
 		"techs": [
 			{
+				"name": "Hunting",
+				"row": 2,
+				"prerequisites": ["Survival"],
+				"quote": "SHHHHH! AAAAAAAAGGGH!!!",
+				"uniques": [
+					"[+1 Food] [in capital]",
+				],
+			},			{
+				"name": "Clans",
+				"row": 4,
+				"prerequisites": ["Survival"],
+				"quote": "Me like you. We here now!",
+				"uniques": ["Free Social Policy"],
+			},
+			{
 				"name": "Shelter",
 				"row": 6,
 				"prerequisites": ["Survival"],
@@ -60,22 +75,6 @@
 				"prerequisites": ["Survival"],
 				"quote": "Hrmmgh. Heh heh heh, can reach!",
 				"uniques": ["Free [Worker] appears"],
-			},
-			{
-				"name": "Clans",
-				"row": 4,
-				"prerequisites": ["Survival"],
-				"quote": "Me like you. We here now!",
-				"uniques": ["Free Social Policy"],
-			},
-			{
-				"name": "Hunting",
-				"row": 2,
-				"prerequisites": ["Survival"],
-				"quote": "SHHHHH! AAAAAAAAGGGH!!!",
-				"uniques": [
-					"[+1 Food] [in capital]",
-				],
 			},
 		]
 	},
