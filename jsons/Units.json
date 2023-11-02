@@ -6,6 +6,7 @@
 		"name": "Worker",  // Villager
 		"unitType": "Civilian",
 		"requiredTech": “Animal Husbandry”,
+		"cost": 25, // Cheap! Don't forget this is production cost, not gold cost!
 		"movement": 2,
 		"uniques": [
 			"Automation is a primary action",
@@ -16,8 +17,7 @@
 			"Can build [Natural Wonder] improvements on tiles", // Hacky attempt at adding features/improvements for things like bridges, doesn't work atm
 			"Can instantly construct a [Fishing Boats] improvement <by consuming this unit> <after discovering [Calendar]>", // Workers do water improvements ala AF, consumed tradeoff
 			"May create improvements on water resources <after discovering [Engineering]>", // create rice patty fields on lakes/freshwater coasts!
-		]
-		"cost": 25 // Cheap! Don't forget this is production cost, not gold cost!
+		],
 	},
 // 
 	{  // Needed for fish-less Z2 waters - consume to instantly fish
@@ -32,7 +32,7 @@
 			"Can instantly construct a [Fishing Boats] improvement <by consuming this unit>",
         	    	// "Uncapturable",  // you fish for us now
 			"Automation is a primary action"
-		]
+		],
 	},
 	{ // a bit cheaper and faster
 		"name": "Settler",
@@ -61,7 +61,7 @@
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": ["Ignore terrain cost"],
-		"attackSound": "nonmetalhit"
+		"attackSound": "nonmetalhit",
 	},
 	{
 		"name": "Mobile SAM",  // carries missiles. So carry one.
@@ -78,7 +78,7 @@
 			"[+150]% Strength <vs [Helicopter] units>",
 			"Never appears as a Barbarian unit"
 		],
-		"attackSound": "missile"
+		"attackSound": "missile",
 	},
 	{
 		"name": "Tank",
@@ -99,7 +99,7 @@
 			"No defensive terrain bonus",
 			// "Never appears as a Barbarian unit"  // deals were made - but do barbarians need oil? 
 		],
-		"attackSound": "tankshot"
+		"attackSound": "tankshot",
 	},
 	{
 		"name": "Modern Armor",
@@ -121,7 +121,7 @@
 			"Never appears as a Barbarian unit",
 		],
 		"promotions": ["Indirect Fire"],
-		"attackSound": "tankshot"
+		"attackSound": "tankshot",
 	},
 	{
 		"name": "Helicopter Gunship",
@@ -150,7 +150,7 @@
 			"Ranged attacks may be performed over obstacles",
 			"Never appears as a Barbarian unit"
 		],
-		"attackSound": "machinegun"
+		"attackSound": "machinegun",
 	},
 
 // Water units //
@@ -177,7 +177,7 @@
 			"Can carry [1] [Atomic Payload] units",
 			"Never appears as a Barbarian unit"
 		],
-		"attackSound": "torpedo"
+		"attackSound": "torpedo",
 	},
 	{
 		"name": "Carrier",  // Unciv appears to handle carrying units by the maximum number specified for all uniques is the max capacity, so here, 4 units any combo max
@@ -195,7 +195,7 @@
 			"Can carry [1] [Missile] units",
 			"Double movement in [Ocean]",
 			"Double movement in [Deep Ocean]",
-		]
+		],
 	},
 	{
 		"name": "Battleship",
@@ -216,7 +216,7 @@
 			"Double movement in [Ocean]",
 		],
 		"promotions": ["Indirect Fire"],
-		"attackSound": "shipguns"
+		"attackSound": "shipguns",
 	},
 	{
 		"name": "Destroyer",
@@ -237,7 +237,7 @@
 			"[+100]% Strength <vs [Submarine] units>",
 			"[+50]% Strength <vs [Water] units>"
 		],
-		"attackSound": "shipguns"
+		"attackSound": "shipguns",
 	},
 
 // Ordnance //
@@ -252,7 +252,7 @@
 		"cost": 150,
 		"requiredTech": "Computers",  // Needs a computer to be guided
 		"uniques": ["[-75]% maintenance costs"],  // little maintenance needed
-		"attackSound": "missile"
+		"attackSound": "missile",
 	},
 	{
 	// i.e. Tomahawk, shock-and-awe type destruction
@@ -269,7 +269,7 @@
 			"Destroys tile improvements when attacking",
 			"[+100]% Strength <vs [Armored] units> <when attacking>",
 		],
-		"attackSound": "missile"
+		"attackSound": "missile",
 	},
 	{
 		"name": "Bunker Buster",
@@ -290,7 +290,7 @@
 			"Self-destructs when attacking",
 			"Consumes [1] [Aluminum]",  // trade-off resource, can keep even without spare aluminum (won't cause missing resource penalty)
 		],
-		"attackSound": "torpedo"
+		"attackSound": "torpedo",
 	},
 	{
 		"name": "Nuclear Missile",
@@ -312,7 +312,7 @@
 			"Blast radius [2]",
 			"Consumes [2] [Uranium]"
 		],
-		"attackSound": "nuke"
+		"attackSound": "nuke",
 	},
 	{
 		"name": "Nuclear Missile ICBM",
@@ -333,9 +333,9 @@
 			"Only available <after discovering [Telecommunications]>",
 			"Blast radius [3]",
 			"Consumes [3] [Uranium]",
-			"Consumes [1] [Aluminum]"
+			"Consumes [1] [Aluminum]",
 		],
-		"attackSound": "nuke"
+		"attackSound": "nuke",
 	},
 	{
 		"name": "Nuclear Bunker Buster",
@@ -358,7 +358,7 @@
 			"Consumes [2] [Uranium]",
 			"Consumes [1] [Aluminum]"
 		],
-		"attackSound": "torpedo"
+		"attackSound": "torpedo",
 	},
 	{
 		"name": "TSAR Nuclear Bomb",  // ultimate WMD (til the orbital kinetic weapon platform is built...tbd) 
@@ -383,7 +383,7 @@
 			"Consumes [5] [Uranium]",  // slightly more efficient than 1:1
 			"Consumes [1] [Aluminum]",  // massive casing
 		],
-		"attackSound": "nuke"
+		"attackSound": "nuke",
 	},
 	// to-do: add Daisy Cutter, MOAB, FOAB, Patriot battery (anti-missile) 
 
@@ -406,7 +406,7 @@
 			"Can see over obstacles",
 			"Never appears as a Barbarian unit"
 		],
-		"attackSound": "gdrAttack"
+		"attackSound": "gdrAttack",
 	},
 	{
 		"name": "Giant Death Robot MK-II",  // Next gen GDR - btw art is experiential
@@ -436,7 +436,7 @@
 			"[25]% chance to intercept air attacks",  // AA cannon
 			"Never appears as a Barbarian unit"
 		],
-		"attackSound": "tankshot"
+		"attackSound": "tankshot",
 	},
 	{
 		"name": "Giant Death Robot MK-III",  // Project Last Hope
@@ -536,7 +536,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"attackSound": "nonmetalhit",
   	      "civilopediaText": [
 			{"text": "This is your basic, club-swinging fighter."}
-		]
+		],
 	},
 	{
 		"name": "Maori Warrior",
