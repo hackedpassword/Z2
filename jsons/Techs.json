@@ -260,7 +260,7 @@
 			},
 			{
 				"name": "Drama and Poetry",
-				"row": 2,
+				"row": 3,
 				"prerequisites": ["Politics","Horseback Riding"],
 				"quote": "'What is drama but life with the dull bits cut out.' - Alfred Hitchcock"
 			},
@@ -300,7 +300,7 @@
 			},
 			{
 				"name": "Civil Service",
-				"row": 3,
+				"row": 4,
 				"prerequisites": ["Drama and Poetry"],
 				"uniques": ["Enables Open Borders agreements"],
 				"quote": "'The only thing that saves us from the bureaucracy is its inefficiency' - Eugene McCarthy"
