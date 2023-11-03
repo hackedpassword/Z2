@@ -5,13 +5,13 @@
 	"author":"hackedpassword",
 	"isBaseRuleset":"true",
 	"modSize":901,
-	"topics":["unciv-mod","unciv-mod-expansions","unciv-mod-fun","unciv-mod-maps"],
+	"topics":["unciv-mod","unciv-mod-rulesets","unciv-mod-fun","unciv-mod-maps"],
 	// "constants":{"unitUpgradeCost":{}},
 	"uniques":[
-		"Allow raze capital", "Allow raze holy city",  // All cities can be destroyed
+		"Allow raze capital",
+		"Allow raze holy city",  // All cities can be destroyed
 	],
-	"techsToRemove": ["Rifling"],
-	"buildingsToRemove":["Circus"],
+
 }
 
 
