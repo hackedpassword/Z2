@@ -442,7 +442,7 @@
 		"cost": 805,
 		"requiredTech": "Nanotechnology",  // several other requirements below
 		"requiredResource": "Uranium",
-		"promotions": ["March"],  // Nanotech repair system
+		"promotions": [],
 		"uniques": [
 			"[450]% maintenance costs",  // very costly to operate
 			"Can move after attacking",
@@ -470,7 +470,7 @@
 		"range": 2,  // shorter range, more attack power
 		"strength": 375,
 		"cost": 1400,
-		"requiredTech": "Future Tech",  // the ultimate in war machine
+		"requiredTech": "Future Tech",  // the ultimate in war machines
 		"requiredResource": "Uranium",
 		"promotions": ["March","Rejuvenation"],  // Gen-2 nanotech
 		"uniques": [
@@ -491,7 +491,7 @@
 			"Can see over obstacles", "[+3] Sight", "Can see invisible [Land] units",  // New drone-based omni-LIDAR installed
 			"Ranged attacks may be performed over obstacles",
 			// "Self-destructs when attacking <upon being defeated>", "Blast radius [1]",  // LMAO experimental mech explodes when attacking, no blast radius either
-			// "Nuclear weapon of Strength [1]",  // gonna try it - tricks unciv into thinking it's a nuke, without a detonator.
+			// "Nuclear weapon of Strength [1]",  // tricks unciv into thinking it's a nuke, without a detonator.
 			// "Never appears as a Barbarian unit"  // Surprise, rebels stole the plans
 		],
 		"civilopediaText": [  // testing civopedia entry. Adds color to the game.
