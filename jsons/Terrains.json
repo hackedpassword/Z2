@@ -41,7 +41,7 @@
 		"name": "Deep Ocean",  // treacherous terrain used as a soft clip
 		"type": "Water",
 		"movementCost": 3,
-		"RGB": [3, 65, 84],
+		"RGB": [3, 65, 114],
 		"uniques": ["Rough terrain",
 			"Units ending their turn on this terrain take [10] damage <with [50]% chance>",  // choppy and dangerous
                         "Never receives any resources",
@@ -120,7 +120,7 @@
 		"food": 1,
 		"gold": 1,
 		"movementCost": 1,
-		"RGB": [43, 87, 151],
+		"RGB": [33, 97, 171],
 	},
 
 //// Terrain features ////
@@ -191,6 +191,7 @@
 			"Has an elevation of [0] for visibility calculations", // should not block vis
 			"[0]% Chance to be destroyed by nukes",
 		],
+		"RGB": [43, 97, 181],  // this is what the flat tile color will look like in map previews, not the overlying natural wonder color
 	},
 	{
 		"name": "Boulder",  // exists both this TerrainFeature, and improvement version. This one is map-baked.
@@ -276,7 +277,7 @@
 		"turnsInto": "Plains",
 		"impassable": false,  // will be true when some "hero" ability is created
 		"unbuildable": false, // allow PalaceGlow to enhance this tile
-		"RGB": [252, 252, 252],
+		"RGB": [252, 252, 252],  // ignored, references turnsInto tile RGB color instead
 	},
 	{  // palace 1
 		"name": "Parapa Palace",
@@ -293,7 +294,7 @@
 		"turnsInto": "Mountain",
 		"impassable": false,  // may be true when some "hero" ability is created
 		"unbuildable": false, // allow PalaceGlow to enhance this tile
-		"RGB": [186, 186, 186],
+		"RGB": [186, 186, 186],  // ignored, references turnsInto tile RGB color instead
 	},
 	{  // palace 2
 		"name": "Midoro Palace",
@@ -310,7 +311,7 @@
 		"turnsInto": "Mountain",
 		"impassable": false,  // may be true when some "hero" ability is created
 		"unbuildable": false, // allow PalaceGlow to enhance this tile
-		"RGB": [0, 126, 134],
+		"RGB": [0, 126, 134],  // ignored, references turnsInto tile RGB color instead
 	},
 	{  // palace 3
 		"name": "Island Palace",
@@ -327,7 +328,7 @@
 		"turnsInto": "Mountain",
 		"impassable": false,  // may be true when some "hero" ability is created
 		"unbuildable": false, // allow PalaceGlow to enhance this tile
-		"RGB": [162, 0, 0],
+		"RGB": [162, 0, 0],  // ignored, references turnsInto tile RGB color instead
 	},
 	{  // palace 4
 		"name": "Maze Palace",
@@ -344,7 +345,7 @@
 		"turnsInto": "Mountain",
 		"impassable": false,  // may be true when some "hero" ability is created
 		"unbuildable": false, // allow PalaceGlow to enhance this tile
-		"RGB": [67, 0, 154],
+		"RGB": [67, 0, 154],  // ignored, references turnsInto tile RGB color instead
 	},
 	{  // palace 5
 		"name": "Sea Palace",
@@ -361,7 +362,7 @@
 		"turnsInto": "Mountain",
 		"impassable": false,  // may be true when some "hero" ability is created
 		"unbuildable": false, // allow PalaceGlow to enhance this tile
-		"RGB": [0, 79, 0],
+		"RGB": [0, 79, 0],  // ignored, references turnsInto tile RGB color instead
 	},
 	{  // palace 6
 		"name": "ThreeEye Rock Palace",
@@ -378,7 +379,7 @@
 		"turnsInto": "Mountain",
 		"impassable": false,  // may be true when some "hero" ability is created
 		"unbuildable": false, // allow PalaceGlow to enhance this tile
-		"RGB": [249, 115, 178],
+		"RGB": [249, 115, 178],  // ignored, references turnsInto tile RGB color instead
 	},
 	{  // palace 7
 		"name": "Great Palace",
@@ -395,7 +396,7 @@
 		"turnsInto": "Mountain",
 		"impassable": false,  // may be true when some "hero" ability is created
 		"unbuildable": false, // allow PalaceGlow to enhance this tile
-		"RGB": [249, 150, 55],
+		"RGB": [249, 150, 55],  // ignored, references turnsInto tile RGB color instead
 	},
 
 	
@@ -505,7 +506,7 @@
 		"turnsInto": "Grassland",
 		"impassable": false,
 		"unbuildable": false,
-		"RGB": [116, 116, 116],
+		"RGB": [116, 116, 116],  // ignored, references turnsInto tile RGB color instead
 	},
 	{
 		"name": "Ruto Town", // Jump
@@ -525,7 +526,7 @@
 		"turnsInto": "Plains",
 		"impassable": false,
 		"unbuildable": false,
-		"RGB": [116, 116, 116],
+		"RGB": [116, 116, 116],  // ignored, references turnsInto tile RGB color instead
 	},
 	{
 		"name": "Saria Town", // Life
@@ -545,7 +546,7 @@
 		"turnsInto": "Plains",
 		"impassable": false,
 		"unbuildable": false,
-		"RGB": [116, 116, 116],
+		"RGB": [116, 116, 116],  // ignored, references turnsInto tile RGB color instead
 	},
 	{
 		"name": "Mido Town", // Fairy, Downward Thrust
@@ -566,7 +567,7 @@
 		"turnsInto": "Desert",
 		"impassable": false,
 		"unbuildable": false,
-		"RGB": [116, 116, 116],
+		"RGB": [116, 116, 116],  // ignored, references turnsInto tile RGB color instead
 	},
 	{
 		"name": "Nabooru Town", // Fire
@@ -586,7 +587,7 @@
 		"turnsInto": "Plains",
 		"impassable": false,
 		"unbuildable": false,
-		"RGB": [116, 116, 116],
+		"RGB": [116, 116, 116],  // ignored, references turnsInto tile RGB color instead
 	},
 
 	{
@@ -608,7 +609,7 @@
 		"turnsInto": "Desert",
 		"impassable": false,
 		"unbuildable": false,
-		"RGB": [116, 116, 116],
+		"RGB": [116, 116, 116],  // ignored, references turnsInto tile RGB color instead
 	},
 	{
 		"name": "Kasuto Town", // Spell, Magic Key
@@ -629,7 +630,7 @@
 		"turnsInto": "Grassland",
 		"impassable": false,
 		"unbuildable": false,
-		"RGB": [116, 116, 116],
+		"RGB": [116, 116, 116],  // ignored, references turnsInto tile RGB color instead
 	},
 	{
 		"name": "Kasuto Ruins", // Thunder
@@ -644,7 +645,7 @@
 		"turnsInto": "Plains",
 		"impassable": false,
 		"unbuildable": false,
-		"RGB": [87, 87, 87],
+		"RGB": [87, 87, 87],  // ignored, references turnsInto tile RGB color instead
 	},
 
 
@@ -669,7 +670,7 @@
 		"turnsInto": "Force",
 		"unbuildable": true,
 		"impassable": false,
-		"RGB": [80, 138, 226],
+		"RGB": [80, 138, 226],  // ignored, references turnsInto tile RGB color instead
 	},
 	{
 		"name": "OceanTile",
@@ -685,7 +686,7 @@
 		"turnsInto": "Force",
 		"unbuildable": true,
 		"impassable": false,
-		"RGB": [53, 87, 161],
+		"RGB": [53, 87, 161],  // ignored, references turnsInto tile RGB color instead
 	},
 	{
 		"name": "Bridge1ocean",
@@ -697,7 +698,7 @@
 		"turnsInto": "Force",
 		"unbuildable": true,
 		"impassable": false,
-		"RGB": [240, 188, 60],
+		"RGB": [240, 188, 60],  // ignored, references turnsInto tile RGB color instead
 	},
 	{
 		"name": "Bridge2ocean",
@@ -709,7 +710,7 @@
 		"turnsInto": "Force",
 		"unbuildable": true,
 		"impassable": false,
-		"RGB": [240, 188, 60],
+		"RGB": [240, 188, 60],  // ignored, references turnsInto tile RGB color instead
 	},	
 	{
 		"name": "Bridge1coast",
@@ -722,7 +723,7 @@
 		"turnsInto": "Force",
 		"unbuildable": false,
 		"impassable": false,
-		"RGB": [240, 188, 60],
+		"RGB": [240, 188, 60],  // ignored, references turnsInto tile RGB color instead
 	},
 	{
 		"name": "Bridge2coast",
@@ -735,7 +736,7 @@
 		"turnsInto": "Force",
 		"unbuildable": false,
 		"impassable": false,
-		"RGB": [240, 188, 60],
+		"RGB": [240, 188, 60],  // ignored, references turnsInto tile RGB color instead
 	},	
 	{  // Vertical bridge with Coast
 		"name": "Bridge3coast",
@@ -750,7 +751,7 @@
 		"turnsInto": "Force",
 		"unbuildable": false,
 		"impassable": false,
-		"RGB": [240, 188, 60],
+		"RGB": [240, 188, 60],  // ignored, references turnsInto tile RGB color instead
 	},
 	{  // Vertical bridge with Lake
 		"name": "Bridge3",
@@ -764,7 +765,7 @@
 		"turnsInto": "Force",
 		"unbuildable": false,
 		"impassable": false,
-		"RGB": [240, 188, 60],
+		"RGB": [240, 188, 60],  // ignored, references turnsInto tile RGB color instead
 	},
 
 
