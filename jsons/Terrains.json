@@ -7,7 +7,7 @@
 		"name": "Cave",  // mountain entrance of caverns
 		"type": "Land",
 		"movementCost": 2,
-		"RGB": [50, 58, 25],
+		"RGB": [63, 27, 8],
 		// to-do: settlers shouldn't settle here
 		"uniques": [
 			"Rough terrain",
@@ -24,7 +24,7 @@
 		"type": "Land",
 		"movementCost": 2,
 		"gold": 3,
-		"RGB": [50, 58, 25],
+		"RGB": [200, 76, 12],
 		// to-do: settlers shouldn't settle here - for now it's essentially a nuke safe haven
 		"uniques": [
 			"Rough terrain",
@@ -41,7 +41,7 @@
 		"name": "Deep Ocean",  // treacherous terrain used as a soft clip
 		"type": "Water",
 		"movementCost": 3,
-		"RGB": [43, 87, 151],
+		"RGB": [3, 65, 84],
 		"uniques": ["Rough terrain",
 			"Units ending their turn on this terrain take [10] damage <with [50]% chance>",  // choppy and dangerous
                         "Never receives any resources",
@@ -57,7 +57,7 @@
 		"type": "Land",
 		"movementCost": 3,
 		"defenceBonus": 0.5,
-		"RGB": [102, 102, 102],
+		"RGB": [99, 40, 7],
 		"uniques": ["Rough terrain",
 		        "Has an elevation of [2] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation",
@@ -69,13 +69,14 @@
 		], 
 	        "impassable": true,  // unless unit received Adventurer training/promotion 
 	},
-	{  // to be replaced by a similar terrain, more volcanic
+	{
+	// to be replaced by a similar terrain, more volcanic
 		"name": "Tundra",
 		"type": "Land",
 		"food": 1,
 	        "science": 1,
 		"movementCost": 1,
-		"RGB": [30, 113, 69],
+		"RGB": [200, 76, 12],
 		"uniques": [
 			"Rough terrain",
 //			"[95]% Chance to be destroyed by nukes",
@@ -86,7 +87,7 @@
 		"type": "Land",
 		"food": 2,
 		"movementCost": 1,
-		"RGB": [0, 163, 0],
+		"RGB": [128, 208, 16],
 		"uniques": [
 //			"[98]% Chance to be destroyed by nukes",
 		],
@@ -96,7 +97,7 @@
 		"type": "Land",
 		// "food": 1,  // Culled as plains will provide no food until later
 		"movementCost": 1,
-		"RGB": [153, 180, 51],
+		"RGB": [240, 188, 60],
 		"uniques": [
 			"[+1 Food] <in tiles without [Wheat]>",  // The King's Tomb graveyard provides too much food
 			"[+1 Production] <with [1] to [1] neighboring [Grassland] tiles>",
@@ -108,7 +109,7 @@
 		"type": "Land",
 		"production": 1,
 		"movementCost": 1,
-		"RGB": [230, 172, 0],
+		"RGB": [252, 188, 176],
 		"uniques": [
 //			"[90]% Chance to be destroyed by nukes",
 		],
@@ -119,7 +120,7 @@
 		"food": 1,
 		"gold": 1,
 		"movementCost": 1,
-		"RGB": [43, 87, 151]
+		"RGB": [43, 87, 151],
 	},
 
 //// Terrain features ////
@@ -159,7 +160,6 @@
 		"movementCost": 2,
 		"overrideStats": true,
 		"defenceBonus": 0.25,
-		"RGB": [105,125,72],
 		"occursOn": ["Tundra","Plains","Grassland","Desert","Snow"],
 		"uniques": ["Rough terrain",
 			"[+10] Strength for cities built on this terrain",
@@ -174,7 +174,6 @@
 		"movementCost": 2,
 		"overrideStats": true,
 		"defenceBonus": 0.25,
-		"RGB": [105,125,72],
 		"occursOn": ["Tundra","Plains","Grassland","Desert","Snow"],
 		"uniques": ["Rough terrain",
 			"[+5] Strength for cities built on this terrain",
@@ -187,7 +186,6 @@
 		"movementCost": 1,
 		"overrideStats": true,
 		"defenceBonus": 0,
-		"RGB": [105,125,72],
 		"occursOn": ["Tundra","Plains","Grassland","Desert","Snow"],
 		"uniques": ["Rough terrain",  // intangible distortion effect makes this rough
 			"Has an elevation of [0] for visibility calculations", // should not block vis
@@ -262,161 +260,6 @@
 		"type": "TerrainFeature",
 	},
 
-// Palaces // to be decommissioned - all named palaces are now in v7 //
-	
-	{
-		"name": "NorthCastle",
-		"type": "NaturalWonder",
-		"gold": 10,
-		"faith": 5,
-		"culture": 10,
-		"occursOn": ["Plains"],
-		"uniques": [
-			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
-			"Tile provides yield without assigned population"
-		],
-		"turnsInto": "Plains",
-		"impassable": false,  // will be true when some "hero" ability is created
-		"unbuildable": false, // allow PalaceGlow to enhance this tile
-		"weight": 10
-	},
-	{
-		"name": "GreatPalace", // General GreatPalace, will randomly select other palaces
-		"type": "NaturalWonder",
-		"gold": 10,
-		"faith": 10,
-		"culture": 5,
-		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
-		"uniques": [
-			"Rough terrain",
-			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
-			"Units ending their turn on this terrain take [10] damage",
-			"Tile provides yield without assigned population"
-		],
-		"turnsInto": "Mountain",
-		"impassable": false,  // may be true when some "hero" ability is created
-		"unbuildable": false, // allow PalaceGlow to enhance this tile
-		"weight": 10
-	},
-	{
-		"name": "GreatPalace1",
-		"type": "NaturalWonder",
-		"gold": 10,
-		"faith": 10,
-		"culture": 5,
-		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
-		"uniques": [
-			"Rough terrain",
-			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
-			"Units ending their turn on this terrain take [10] damage",
-			"Tile provides yield without assigned population"],
-		"turnsInto": "Mountain",
-		"impassable": false,  // may be true when some "hero" ability is created
-		"unbuildable": false, // allow PalaceGlow to enhance this tile
-		"weight": 10
-	},
-	{
-		"name": "GreatPalace2",
-		"type": "NaturalWonder",
-		"gold": 10,
-		"faith": 10,
-		"culture": 5,
-		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
-		"uniques": [
-			"Rough terrain",
-			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
-			"Units ending their turn on this terrain take [10] damage",
-			"Tile provides yield without assigned population"],
-		"turnsInto": "Mountain",
-		"impassable": false,  // may be true when some "hero" ability is created
-		"unbuildable": false, // allow PalaceGlow to enhance this tile
-		"weight": 10
-	},
-	{
-		"name": "GreatPalace3",
-		"type": "NaturalWonder",
-		"gold": 10,
-		"faith": 10,
-		"culture": 5,
-		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
-		"uniques": [
-			"Rough terrain",
-			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
-			"Units ending their turn on this terrain take [10] damage",
-			"Tile provides yield without assigned population"],
-		"turnsInto": "Mountain",
-		"impassable": false,  // may be true when some "hero" ability is created
-		"unbuildable": false, // allow PalaceGlow to enhance this tile
-		"weight": 10
-	},
-	{
-		"name": "GreatPalace4",
-		"type": "NaturalWonder",
-		"gold": 10,
-		"faith": 10,
-		"culture": 5,
-		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
-		"uniques": [
-			"Rough terrain",
-			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
-			"Units ending their turn on this terrain take [10] damage",
-			"Tile provides yield without assigned population"],
-		"turnsInto": "Mountain",
-		"impassable": false,  // may be true when some "hero" ability is created
-		"unbuildable": false, // allow PalaceGlow to enhance this tile
-		"weight": 10
-	},
-	{
-		"name": "GreatPalace5",
-		"type": "NaturalWonder",
-		"gold": 10,
-		"faith": 10,
-		"culture": 5,
-		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
-		"uniques": [
-			"Rough terrain",
-			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
-			"Units ending their turn on this terrain take [10] damage",
-			"Tile provides yield without assigned population"],
-		"turnsInto": "Mountain",
-		"impassable": false,  // may be true when some "hero" ability is created
-		"unbuildable": false, // allow PalaceGlow to enhance this tile
-		"weight": 10
-	},
-	{
-		"name": "GreatPalace6",
-		"type": "NaturalWonder",
-		"gold": 10,
-		"faith": 10,
-		"culture": 5,
-		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
-		"uniques": [
-			"Rough terrain",
-			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
-			"Units ending their turn on this terrain take [10] damage",
-			"Tile provides yield without assigned population"],
-		"turnsInto": "Mountain",
-		"impassable": false,  // may be true when some "hero" ability is created
-		"unbuildable": false, // allow PalaceGlow to enhance this tile
-		"weight": 10
-	},
-	{
-		"name": "GreatPalace7",
-		"type": "NaturalWonder",
-		"gold": 10,
-		"faith": 10,
-		"culture": 5,
-		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
-		"uniques": [
-			"Rough terrain",
-			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
-			"Units ending their turn on this terrain take [10] damage",
-			"Tile provides yield without assigned population"],
-		"turnsInto": "Mountain",
-		"impassable": false,  // may be true when some "hero" ability is created
-		"unbuildable": false, // allow PalaceGlow to enhance this tile
-		"weight": 10
-	},
 
 // Named Palaces //
 	
@@ -433,7 +276,7 @@
 		"turnsInto": "Plains",
 		"impassable": false,  // will be true when some "hero" ability is created
 		"unbuildable": false, // allow PalaceGlow to enhance this tile
-		"weight": 10
+		"RGB": [252, 252, 252],
 	},
 	{  // palace 1
 		"name": "Parapa Palace",
@@ -450,7 +293,7 @@
 		"turnsInto": "Mountain",
 		"impassable": false,  // may be true when some "hero" ability is created
 		"unbuildable": false, // allow PalaceGlow to enhance this tile
-		"weight": 10
+		"RGB": [186, 186, 186],
 	},
 	{  // palace 2
 		"name": "Midoro Palace",
@@ -467,7 +310,7 @@
 		"turnsInto": "Mountain",
 		"impassable": false,  // may be true when some "hero" ability is created
 		"unbuildable": false, // allow PalaceGlow to enhance this tile
-		"weight": 10
+		"RGB": [0, 126, 134],
 	},
 	{  // palace 3
 		"name": "Island Palace",
@@ -484,7 +327,7 @@
 		"turnsInto": "Mountain",
 		"impassable": false,  // may be true when some "hero" ability is created
 		"unbuildable": false, // allow PalaceGlow to enhance this tile
-		"weight": 10
+		"RGB": [162, 0, 0],
 	},
 	{  // palace 4
 		"name": "Maze Palace",
@@ -501,7 +344,7 @@
 		"turnsInto": "Mountain",
 		"impassable": false,  // may be true when some "hero" ability is created
 		"unbuildable": false, // allow PalaceGlow to enhance this tile
-		"weight": 10
+		"RGB": [67, 0, 154],
 	},
 	{  // palace 5
 		"name": "Sea Palace",
@@ -518,7 +361,7 @@
 		"turnsInto": "Mountain",
 		"impassable": false,  // may be true when some "hero" ability is created
 		"unbuildable": false, // allow PalaceGlow to enhance this tile
-		"weight": 10
+		"RGB": [0, 79, 0],
 	},
 	{  // palace 6
 		"name": "ThreeEye Rock Palace",
@@ -535,7 +378,7 @@
 		"turnsInto": "Mountain",
 		"impassable": false,  // may be true when some "hero" ability is created
 		"unbuildable": false, // allow PalaceGlow to enhance this tile
-		"weight": 10
+		"RGB": [249, 115, 178],
 	},
 	{  // palace 7
 		"name": "Great Palace",
@@ -552,7 +395,7 @@
 		"turnsInto": "Mountain",
 		"impassable": false,  // may be true when some "hero" ability is created
 		"unbuildable": false, // allow PalaceGlow to enhance this tile
-		"weight": 10
+		"RGB": [249, 150, 55],
 	},
 
 	
@@ -572,7 +415,6 @@
 		"turnsInto": "Plains",
 		"impassable": false,  // will be true when some "hero" ability is created
 		"unbuildable": false,
-		"weight": 10
 	},
 
 // Towns //
@@ -598,6 +440,7 @@
 		"turnsInto": "Plains",
 		"impassable": false,
 		"unbuildable": false, // Can't build natural wonders anyway
+		"RGB": [116, 116, 116],
 	},
 	{
 		"name": "Desert Town", // Generic town
@@ -616,7 +459,8 @@
 		],
 		"turnsInto": "Desert",
 		"impassable": false,
-		"unbuildable": false
+		"unbuildable": false,
+		"RGB": [116, 116, 116],
 	},
 	{
 		"name": "Grassland Town", // Generic town
@@ -635,7 +479,8 @@
 		],
 		"turnsInto": "Grassland",
 		"impassable": false,
-		"unbuildable": false
+		"unbuildable": false,
+		"RGB": [116, 116, 116],
 	},
 
 // Towns of the land //
@@ -659,7 +504,8 @@
 		],
 		"turnsInto": "Grassland",
 		"impassable": false,
-		"unbuildable": false
+		"unbuildable": false,
+		"RGB": [116, 116, 116],
 	},
 	{
 		"name": "Ruto Town", // Jump
@@ -678,7 +524,8 @@
 		],
 		"turnsInto": "Plains",
 		"impassable": false,
-		"unbuildable": false
+		"unbuildable": false,
+		"RGB": [116, 116, 116],
 	},
 	{
 		"name": "Saria Town", // Life
@@ -697,7 +544,8 @@
 		],
 		"turnsInto": "Plains",
 		"impassable": false,
-		"unbuildable": false
+		"unbuildable": false,
+		"RGB": [116, 116, 116],
 	},
 	{
 		"name": "Mido Town", // Fairy, Downward Thrust
@@ -717,7 +565,8 @@
 		],
 		"turnsInto": "Desert",
 		"impassable": false,
-		"unbuildable": false
+		"unbuildable": false,
+		"RGB": [116, 116, 116],
 	},
 	{
 		"name": "Nabooru Town", // Fire
@@ -736,7 +585,8 @@
 		],
 		"turnsInto": "Plains",
 		"impassable": false,
-		"unbuildable": false
+		"unbuildable": false,
+		"RGB": [116, 116, 116],
 	},
 
 	{
@@ -757,7 +607,8 @@
 		],
 		"turnsInto": "Desert",
 		"impassable": false,
-		"unbuildable": false
+		"unbuildable": false,
+		"RGB": [116, 116, 116],
 	},
 	{
 		"name": "Kasuto Town", // Spell, Magic Key
@@ -777,7 +628,8 @@
 		],
 		"turnsInto": "Grassland",
 		"impassable": false,
-		"unbuildable": false
+		"unbuildable": false,
+		"RGB": [116, 116, 116],
 	},
 	{
 		"name": "Kasuto Ruins", // Thunder
@@ -791,7 +643,8 @@
 		],
 		"turnsInto": "Plains",
 		"impassable": false,
-		"unbuildable": false
+		"unbuildable": false,
+		"RGB": [87, 87, 87],
 	},
 
 
@@ -802,109 +655,117 @@
  // Bridges using hybrid tile tech //
 ////////////////////////////////////
 	{
-	    "name": "CoastTile",
-	    "type": "NaturalWonder",
-	    "movementCost": 1,
-	    "occursOn": ["Coast"],
-	    "uniques": ["Rare feature",
+		"name": "CoastTile",
+		"type": "NaturalWonder",
+		"movementCost": 1,
+		"occursOn": ["Coast"],
+		"uniques": ["Rare feature",
 			"Units ending their turn on this terrain take [10] damage", // won't trigger: <for [land units] units>
-		        "[-50] Strength for cities built on this terrain", // not a good place to settle
-		        "Never receives any resources <in [Force] tiles>",
+			    "[-50] Strength for cities built on this terrain", // not a good place to settle
+			    "Never receives any resources <in [Force] tiles>",
                         "Tile provides yield without assigned population",
 			"Always Fertility [-1] for Map Generation"
-	                ]
-	    "turnsInto": "Force",
-	    "unbuildable": true,
-	    "impassable": false
+		            ]
+		"turnsInto": "Force",
+		"unbuildable": true,
+		"impassable": false,
+		"RGB": [80, 138, 226],
 	},
 	{
-	    "name": "OceanTile",
-	    "type": "NaturalWonder",
-	    "movementCost": 0.1,
-	    "occursOn": ["Ocean"],
-	    "uniques": ["Rare feature",
-		    "Units ending their turn on this terrain take [10] damage", // won't trigger: <for [land units] units>
-		    "Never receives any resources <in [Force] tiles>", // Force bakes into the map upon game start, important design aspect
-		    "Always Fertility [-1] for Map Generation",
-		    "[-50] Strength for cities built on this terrain", // not a good place to settle
-		    "Only [Great] improvements may be built on this tile"], // floating great improvements
-	    "turnsInto": "Force",
-	    "unbuildable": true,
-	    "impassable": false
+		"name": "OceanTile",
+		"type": "NaturalWonder",
+		"movementCost": 0.1,
+		"occursOn": ["Ocean"],
+		"uniques": ["Rare feature",
+			"Units ending their turn on this terrain take [10] damage", // won't trigger: <for [land units] units>
+			"Never receives any resources <in [Force] tiles>", // Force bakes into the map upon game start, important design aspect
+			"Always Fertility [-1] for Map Generation",
+			"[-50] Strength for cities built on this terrain", // not a good place to settle
+			"Only [Great] improvements may be built on this tile"], // floating great improvements
+		"turnsInto": "Force",
+		"unbuildable": true,
+		"impassable": false,
+		"RGB": [53, 87, 161],
 	},
 	{
-	    "name": "Bridge1ocean",
-	    "type": "NaturalWonder",
-	    "movementCost": 0.1,  // We want water walkers to effectively teleport across these tiles. Primarily/only for the raft path atm.
-	    "occursOn": ["Ocean"],
-	    "uniques": ["Never receives any resources <in [Force] tiles>",
+		"name": "Bridge1ocean",
+		"type": "NaturalWonder",
+		"movementCost": 0.1,  // We want water walkers to effectively teleport across these tiles. Primarily/only for the raft path atm.
+		"occursOn": ["Ocean"],
+		"uniques": ["Never receives any resources <in [Force] tiles>",
 			"[-20] Strength for cities built on this terrain"],
-	    "turnsInto": "Force",
-	    "unbuildable": true,
-	    "impassable": false
+		"turnsInto": "Force",
+		"unbuildable": true,
+		"impassable": false,
+		"RGB": [240, 188, 60],
 	},
 	{
-	    "name": "Bridge2ocean",
-	    "type": "NaturalWonder",
-	    "movementCost": 0.1,
-	    "occursOn": ["Ocean"],
-	    "uniques": ["Never receives any resources <in [Force] tiles>",
+		"name": "Bridge2ocean",
+		"type": "NaturalWonder",
+		"movementCost": 0.1,
+		"occursOn": ["Ocean"],
+		"uniques": ["Never receives any resources <in [Force] tiles>",
 			"[-20] Strength for cities built on this terrain"],
-	    "turnsInto": "Force",
-	    "unbuildable": true,
-	    "impassable": false
+		"turnsInto": "Force",
+		"unbuildable": true,
+		"impassable": false,
+		"RGB": [240, 188, 60],
 	},	
 	{
-	    "name": "Bridge1coast",
-	    "type": "NaturalWonder",
-	    "movementCost": 0.1,
-	    "occursOn": ["Coast"],
-	    "uniques": ["Never receives any resources <in [Force] tiles>",  // removing still doesn't allow placement of Foundation resource 
-		    	// "Provides [1] [Foundation]",  // doesn't work
+		"name": "Bridge1coast",
+		"type": "NaturalWonder",
+		"movementCost": 0.1,
+		"occursOn": ["Coast"],
+		"uniques": ["Never receives any resources <in [Force] tiles>",  // removing still doesn't allow placement of Foundation resource 
+				// "Provides [1] [Foundation]",  // doesn't work
 			"[-10] Strength for cities built on this terrain"],
-	    "turnsInto": "Force",
-	    "unbuildable": false,
-	    "impassable": false
+		"turnsInto": "Force",
+		"unbuildable": false,
+		"impassable": false,
+		"RGB": [240, 188, 60],
 	},
 	{
-	    "name": "Bridge2coast",
-	    "type": "NaturalWonder",
-	    "movementCost": 0.1,
-	    "occursOn": ["Coast"],
-	    "uniques": ["Never receives any resources <in [Force] tiles>",
-		    	// "Provides [1] [Foundation]",
+		"name": "Bridge2coast",
+		"type": "NaturalWonder",
+		"movementCost": 0.1,
+		"occursOn": ["Coast"],
+		"uniques": ["Never receives any resources <in [Force] tiles>",
+				// "Provides [1] [Foundation]",
 			"[-10] Strength for cities built on this terrain"],
-	    "turnsInto": "Force",
-	    "unbuildable": false,
-	    "impassable": false
+		"turnsInto": "Force",
+		"unbuildable": false,
+		"impassable": false,
+		"RGB": [240, 188, 60],
 	},	
 	{  // Vertical bridge with Coast
-	    "name": "Bridge3coast",
-	    "type": "NaturalWonder",
-	    "movementCost": 0.1,
-	    "culture": 1,
-	    "food": 1,
-	    "occursOn": ["Coast"],
-	    "uniques": ["Never receives any resources <in [Force] tiles>",
-		    	// "Provides [1] [Foundation]",
+		"name": "Bridge3coast",
+		"type": "NaturalWonder",
+		"movementCost": 0.1,
+		"culture": 1,
+		"food": 1,
+		"occursOn": ["Coast"],
+		"uniques": ["Never receives any resources <in [Force] tiles>",
+				// "Provides [1] [Foundation]",
 			"[-10] Strength for cities built on this terrain"],
-	    "turnsInto": "Force",
-	    "unbuildable": false,
-	    "impassable": false
+		"turnsInto": "Force",
+		"unbuildable": false,
+		"impassable": false,
+		"RGB": [240, 188, 60],
 	},
 	{  // Vertical bridge with Lake
-	    "name": "Bridge3",
-	    "type": "NaturalWonder",
-	    "movementCost": 0.1,
-	    "culture": 1,
-	    "food": 1,
-	    "occursOn": ["Lakes"],
-	    "uniques": ["Never receives any resources <in [Force] tiles>",
+		"name": "Bridge3",
+		"type": "NaturalWonder",
+		"movementCost": 0.1,
+		"culture": 1,
+		"food": 1,
+		"occursOn": ["Lakes"],
+		"uniques": ["Never receives any resources <in [Force] tiles>",
 			"[-5] Strength for cities built on this terrain"],
-	    "turnsInto": "Force",
-	    "unbuildable": false,
-	    "impassable": false
-	},	
+		"turnsInto": "Force",
+		"unbuildable": false,
+		"impassable": false,
+		"RGB": [240, 188, 60],
+	},
 
 
 ////////////////////////////////
