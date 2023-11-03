@@ -7,8 +7,8 @@
         "[+1] Movement <for [All] units>", // Yes. Proven great by Alpha Frontier, anti-crawl
         "[-90]% maintenance on road & railroads" // Not trying to penalize player for establishing movement paths
 	// "Double movement in [Force] <for [All] units>", // This doesn't work.
-	"Allow raze capitol",  // Allow razing any city
-	"Allow raze holy city",
+	// "Allow raze capitol",  // Allow razing any city
+	// "Allow raze holy city",
 	"100 Gold for discovering a Natural Wonder (bonus enhanced to 500 Gold if first to discover it)",  // promotes exploration
 	"Aircraft",  // needed for validator
     ]
