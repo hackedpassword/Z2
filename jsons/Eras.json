@@ -1,10 +1,8 @@
 // json validated by https://www.jsonschemavalidator.net <-- allows json comments however converts/merges `//` comments into `/* */`
 
-/*  Adding default eras, up to Pioneer. The New Game screen shows custom eras in last place due to sortless hash maps. No workaround.
-    A related issue creates a funky era order in the top bar of the tech tree. End result, Prehistoric and Ancient eras have
-    been merged to compensate until a code fix may be implemented. The first section here has been isolated for preservation.
-
-    Next step to get this era back in would be to ascend Z2 from extention mod to baseruleset. Discussion on the matter of eras in Unciv/issues/10332.
+/*  
+    Prehistoric and Ancient eras have been merged, to be unmerged now that Z2 is a base ruleset mod. 
+    The first section here has been isolated for preservation.
 
 	{
 	// Interesting and fun facts. A settler unit is required to start the game, otherwise no other units can spawn.
@@ -32,16 +30,13 @@
 
 [
 
-// Adding default eras, up to Pioneer. The New Game screen shows custom eras in last place if all aren't specified here in order,
-// and creates a funky era order in the top bar of the tech tree, apparently due to being an extension mod.
-  
     {
 	"name": "Ancient era",  // Merging Prehistoric era makes this era 5 columns wide
 	"researchAgreementCost": 50,  // is this even necessary?
 	"startingSettlerCount": 1,
 	"startingWorkerCount": 0,
 	"startingMilitaryUnitCount": 1,
-	"startingMilitaryUnit": "Scout",  // Rebuilt Ancient era utilizing Prehistoric era design (re-add Scout for ancient era after Prehistoric era activated) 
+	"startingMilitaryUnit": "Nomad",  // Rebuilt Ancient era utilizing Prehistoric era design (re-add Scout for ancient era after Prehistoric era activated) 
 	"settlerPopulation": 1,
 	"baseUnitBuyCost": 50,
 	"embarkDefense": 1,
