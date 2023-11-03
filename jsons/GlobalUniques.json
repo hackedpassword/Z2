@@ -10,6 +10,6 @@
 	// "Allow raze capitol",  // Allow razing any city
 	// "Allow raze holy city",
 	"100 Gold for discovering a Natural Wonder (bonus enhanced to 500 Gold if first to discover it)",  // promotes exploration
-	"Aircraft",  // needed for validator
+	// "Aircraft",  // needed for validator
     ]
 }
