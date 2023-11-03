@@ -67,7 +67,7 @@
 			"Can instantly construct a [Forage] improvement <with [50]% chance> <by consuming this unit>",  // might get eaten by enemies instead
 			"May upgrade to [Scout] through ruins-like effects",
 			"Never appears as a Barbarian unit",
-			"Ignores terrain cost <in [Plains] tiles>",
+			// "Ignores terrain cost <in [Plains] tiles>",
 		],
 		"attackSound": "nonmetalhit",
 	},
