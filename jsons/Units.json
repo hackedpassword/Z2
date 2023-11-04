@@ -58,7 +58,7 @@
 		"requiredTech": "Survival",
 		"movement": 1,
 		"strength": 2,
-		"cost": 25,
+		"cost": 30,
 		"upgradesTo": "Nomad",
 		"obsoleteTech": "Shelter",
 		"uniques": [
@@ -74,7 +74,7 @@
 		"requiredTech": "Shelter",
 		"movement": 2,
 		"strength": 3,
-		"cost": 30,
+		"cost": 35,
 		"upgradesTo": "Scout",
 		"obsoleteTech": "Horseback Riding",
 		"uniques": [
@@ -93,7 +93,7 @@
 		"requiredTech": "Language",
 		"movement": 3,
 		"strength": 5,
-		"cost": 35,
+		"cost": 40,
 		"obsoleteTech": "Scientific Theory",
 		"uniques": [
 			"[-1] Sight <before the [Classical era]>",
