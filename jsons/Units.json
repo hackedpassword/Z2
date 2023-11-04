@@ -64,6 +64,7 @@
 		"uniques": [
 			"[-2] Sight <starting from the [Ancient era]>",
 			"May upgrade to [Nomad] through ruins-like effects",
+			"Founds a new city <by consuming this unit>",
 		],
 		"attackSound": "nonmetalhit",
 	},
