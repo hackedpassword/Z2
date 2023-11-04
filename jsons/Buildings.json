@@ -9,7 +9,7 @@
 			 // "Free [Worker] appears <once>",  // squire, paige, whoever, brought your helper
 			 "Limited to [1] per Civilization",
 			 // "[+1] population [in all cities]",  // gain extra pop now for each 1st turn settlement
-			 "Reveals the entire map",  // for debugging map/tech
+			 // "Reveals the entire map",  // for debugging map/tech
 		]
 	},
 	{
