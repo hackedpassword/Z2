@@ -41,7 +41,7 @@
 		"name": "Forage",
 		"turnsToBuild": 7,
 		"food": 1,
-		"techRequired": "Shelter",
+		"techRequired": "Survival",
 		"uniques": [
 		],
 		"terrainsCanBeBuiltOn": ["Land"],
