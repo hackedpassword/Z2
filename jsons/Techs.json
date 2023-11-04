@@ -68,7 +68,7 @@
 				"row": 8,
 				"prerequisites": ["Survival"],
 				"quote": "Fire! Burn!",
-				"uniques": [[+1 Culture] [in capital]],
+				"uniques": [+1 Culture] [in capital],
 			},
 			{
 				"name": "Tools",
