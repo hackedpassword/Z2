@@ -65,8 +65,8 @@
 			"[-2] Sight <starting from the [Ancient era]>",
 			"May upgrade to [Nomad] through ruins-like effects",
 			"Founds a new city <by consuming this unit>",  // critical gameplay element, explore or found colony?
-			"[+100]% Strength in [Cave] tiles",  // should be obvious
-			"[+100]% Strength in [Cavern] tiles", 
+			"[+100]% Strength <in [Cave] tiles>",  // should be obvious
+			"[+100]% Strength <in [Cavern] tiles>", 
 		],
 		"attackSound": "nonmetalhit",
 	},
