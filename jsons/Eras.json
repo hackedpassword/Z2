@@ -33,7 +33,7 @@
     {
 	"name": "Ancient era",  // Merging Prehistoric era makes this era 5 columns wide
 	"researchAgreementCost": 50,  // is this even necessary?
-	"startingSettlerCount": 1,
+	"startingSettlerCount": 0,  // caveman only
 	"startingWorkerCount": 0,
 	"startingMilitaryUnitCount": 1,
 	"startingMilitaryUnit": "Caveman",  // Rebuilt Ancient era utilizing Prehistoric era design (re-add Scout for ancient era after Prehistoric era activated) 
