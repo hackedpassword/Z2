@@ -1,21 +1,14 @@
-// json validated by https://www.jsonschemavalidator.net <-- allows json comments however converts/merges `//` comments into `/* */`
+// json validated by https://www.jsonschemavalidator.net
 
-/*  
-    Prehistoric and Ancient eras have been merged, to be unmerged now that Z2 is a base ruleset mod. 
-    The first section here has been isolated for preservation.
-
+[
+	
 	{
-	// Interesting and fun facts. A settler unit is required to start the game, otherwise no other units can spawn.
-	// So, we start with the Shelter tech, which would have given a settler if we started in Survival tech with only a Scout,
-	// then choose our base primitive techs which one would have supplied a settler. Instead, the first tech to be researched
-	// goes backwards one step, then forwards for primitive techs. Was trying to capture pre-settlement gameplay, compromised.
-		"name": "Prehistoric era",
-		"researchAgreementCost": 50,
-		"startingSettlerCount": 1,  // Desired 0, but without a city, no units can spawn after game start :(
-		                            // I am looking into possible City center uses/strategies/[exploits] that may make the above possible
-		"startingWorkerCount": 0,
+		"name": "Prehistoric era",  // wayback machine ran out of gas
+		"researchAgreementCost": 50,  // is this even necessary?
+		"startingSettlerCount": 0,  // Caveman only
+		"startingWorkerCount": 0,  // really, that's it
 		"startingMilitaryUnitCount": 1,
-		"startingMilitaryUnit": "Nomad",  // was thinking more Brute
+		"startingMilitaryUnit": "Caveman",
 		"settlerPopulation": 1,
 		"baseUnitBuyCost": 50,
 		"embarkDefense": 1,
@@ -24,19 +17,14 @@
 		"iconRGB": [255, 87, 35]
 	},
 
-*/ // end of Prehistoric era block
-
-//// Eras begin here ////
-
-[
-
     {
-	"name": "Ancient era",  // Merging Prehistoric era makes this era 5 columns wide
-	"researchAgreementCost": 50,  // is this even necessary?
+	"name": "Ancient era",
+	"researchAgreementCost": 50,
 	"startingSettlerCount": 0,  // caveman only
-	"startingWorkerCount": 0,
+	"startingWorkerCount": 1,  // 
 	"startingMilitaryUnitCount": 1,
-	"startingMilitaryUnit": "Caveman",  // Rebuilt Ancient era utilizing Prehistoric era design (re-add Scout for ancient era after Prehistoric era activated) 
+	"startingMilitaryUnit": "Caveman",
+        "startingCulture": 100,
 	"settlerPopulation": 1,
 	"baseUnitBuyCost": 50,
 	"embarkDefense": 1,
@@ -45,7 +33,7 @@
 	"iconRGB": [255, 87, 35]
     },
     {
-        "name": "Classical era",  // Some adjustment coming here also
+        "name": "Classical era",
         "researchAgreementCost": 150,
         "startingSettlerCount": 1,
         "startingWorkerCount": 0,
