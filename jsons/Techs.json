@@ -1,17 +1,8 @@
 [
-	/* Modchecker notes. As noted in Eras.json, while Z2 remains an extension mod, versus a base ruleset, there are some limitations to the tech tree.
-		First, can't properly preceed the Ancient era with Prehistoric, so both are merged. Second, modchecker believes several techs here do not
-		exist, yet the tech tree shows them and are gameplay accessible. Modchecker also complains about Galley, which appears to be an artifact of
-		its belief that the required tech is absent. Only fix appears to be ascending Z2 to a base ruleset.
-	*/
 
 	{
-	// Game starts in column 1. First tech that can be researched is Survival, in column 0. Then, all column 1 techs become available, as if we started in column 0 and
-	// first picked Shelter, then picked any other tech. We do this because starting in column 0 with only a Scout and zero settlers, no units can spawn because there's no
-	// city. We compromise by then starting in column 1 as if the previous action ocurred. I really wanted players to be able to choose their initial units selectively, in
-	// these prehistoric times before settlements, not just handing them a settler.
 		"columnNumber": 0,
-		"era": "Ancient era",
+		"era": "Prehistoric era",
 		"techCost": 5,
 		"buildingCost": 4,
 		"wonderCost": 8,
@@ -21,18 +12,16 @@
 				"row": 5,
 				"quote": "'Wuuman Wuuaman Wuuman!!!!' -Animal",
 				"uniques": [
-					// Not the starting tech, Shelter is
-				        "Starting tech", // ruleset mod update test
-					// "Free Technology <upon discovering a Natural Wonder> <before the [Classical era]>",  // Encourages early exploration, finding civs. Culling with OP consideration.
-					"[+1 Science] for every known Natural Wonder <before the [Classical era]>",  // More exploration tech acceleration
+				        "Starting tech",
+					"[+1 Science] for every known Natural Wonder",  // More exploration tech acceleration
 				],
-			"quote": "Your journey begins here. Will you survive?",
+			"quote": "Your journey begins here. Will you survive?",  // Intending on updating G&K quotes to fit mod better
 			},
 		]
 	},
 	{
 		"columnNumber": 1,
-		"era": "Ancient era",
+		"era": "Prehistoric era",
 		"techCost": 10,
 		"buildingCost": 8,
 		"wonderCost": 15,
@@ -56,12 +45,8 @@
 				"name": "Shelter",
 				"row": 6,
 				"prerequisites": ["Survival"],
-				"quote": "Fully furnished with tree stump.",
-				"uniques": [
-					// game begins here
-					// "Starting tech",  // beginning in this tech because this was supposed to provide a free settler, instead we research back a column then move forward (nifty!)
-					// "Free Technology",  // Triggers tech tree, needed for zero-settler start, can't do that					
-				],
+				"quote": "Ahh put stuff, stop wind!",
+				"uniques": ["[+1 Happiness] [in capital]"],
 			},
 			{
 				"name": "Fire",
@@ -75,14 +60,14 @@
 				"row": 10,
 				"prerequisites": ["Survival"],
 				"quote": "Hrmmgh. Heh heh heh, can reach!",
-				"uniques": ["Free [Worker] appears"],
+				"uniques": ["Free [Worker] appears"],  // Villager isn't available until Animal Husbandry (req Clans, Shelter) making this unit unique for its pop (vs automatically granted as buildable)
 			},
 		]
 	},
 	{
 	// Haven't done any work on uniques for the new eras yet.
 		"columnNumber": 2,
-		"era": "Ancient era",
+		"era": "Prehistoric era",
 		"techCost": 30,
 		"buildingCost": 15,
 		"wonderCost": 30,
@@ -98,19 +83,19 @@
 				"name": "Pottery",
 				"row": 8,
 				"prerequisites": ["Fire","Shelter","Tools"],
-				"quote": "'Shall the clay say to him that fashioneth it, what makest thou?' - Bible Isaiah 45:9"
+				"quote": "'Shall the clay say to him that fashioneth it, what makest thou?' - Bible Isaiah 45:9",
 			},
 			{
 				"name": "The Wheel",
 				"row": 10,
 				"prerequisites": ["Tools"],
-				"quote": "'Wisdom and virtue are like the two wheels of a cart.' - Japanese proverb"
+				"quote": "'Wisdom and virtue are like the two wheels of a cart.' - Japanese proverb",
 			},
 			{
 				"name": "Animal Husbandry",
 				"row": 5,
 				"prerequisites": ["Shelter","Clans"],
-				"quote": "'Thou shalt not muzzle the ox when he treadeth out the corn.' - Bible Deuteronomy 25:4"
+				"quote": "'Thou shalt not muzzle the ox when he treadeth out the corn.' - Bible Deuteronomy 25:4",
 			},
 			{
 				"name": "Melee Weaponry",
@@ -119,11 +104,14 @@
 				"uniques": [
 					"Free [Warrior] appears",
 				],
-				"quote": "MEAT RUN FAST, USE TRICK MAKE CATCH!"
+				"quote": "MEAT RUN FAST, USE TRICK MAKE CATCH!",
 			},
 
 		]
 	},
+
+//// Ancient era ////
+	
 	{
 		"columnNumber": 3,
 		"era": "Ancient era",
@@ -136,31 +124,31 @@
 				"row": 5,
 				"prerequisites": ["Pottery","Animal Husbandry"],
 				"quote": "'Where tillage begins, other arts follow. The farmers therefore are the founders of human civilization.' - Daniel Webster",
-				"uniques": []
+				"uniques": [],
 			},
 			{
 				"name": "Writing",
 				"row": 4,
 				"prerequisites": ["Language"],
-				"quote": "'He who destroys a good book kills reason itself.' - John Milton"
+				"quote": "'He who destroys a good book kills reason itself.' - John Milton",
 			},
 			{
 				"name": "Mining",
 				"row": 9,
 				"prerequisites": ["The Wheel","Pottery"],
-				"quote": "'The meek shall inherit the Earth, but not its mineral rights.' - J. Paul Getty"
+				"quote": "'The meek shall inherit the Earth, but not its mineral rights.' - J. Paul Getty",
 			},
 			{
 				"name": "Fishing",
 				"row": 1,
 				"prerequisites": ["Melee Weaponry"],
-				"quote": "Gameplay note: There are no fish resource tiles in Z2, so you are allowed to utilize workboats as a placable resource. As usual, these are subject to working population limitations."
+				"quote": "Gameplay note: There are no fish resource tiles in Z2, so you are allowed to utilize workboats as a placable resource. As usual, these are subject to working population limitations.",
 			},
 			{
 				"name": "Archery",
 				"row": 3,
 				"prerequisites": ["Melee Weaponry"],
-				"quote": "'The haft of the arrow has been feathered with one of the eagle's own plumes, we often give our enemies the means of our own destruction' - Aesop"
+				"quote": "'The haft of the arrow has been feathered with one of the eagle's own plumes, we often give our enemies the means of our own destruction' - Aesop",
 			},
 		]
 	},
