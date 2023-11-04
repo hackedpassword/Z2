@@ -53,6 +53,21 @@
 		"hurryCostModifier": 20, 
 	},
 	{
+		"name": "Caveman",  // Starting military unit
+		"unitType": "Scout",
+		"requiredTech": "Survival",
+		"movement": 1,
+		"strength": 2,
+		"cost": 25,
+		"upgradesTo": "Nomad",
+		"obsoleteTech": "Shelter",
+		"uniques": [
+			"[-2] Sight <starting from the [Ancient era]>",
+			"May upgrade to [Nomad] through ruins-like effects",
+		],
+		"attackSound": "nonmetalhit",
+	},
+	{
 		"name": "Nomad",  // first gen scout
 		"unitType": "Scout",
 		"requiredTech": "Survival",
@@ -67,8 +82,7 @@
 			"Can instantly construct a [Forage] improvement <with [50]% chance> <by consuming this unit>",  // might get eaten by enemies instead
 			"May upgrade to [Scout] through ruins-like effects",
 			"Never appears as a Barbarian unit",
-			// "Ignores terrain cost",
-			"Ignores terrain cost <in [Plains] tiles>",
+			"Ignores terrain cost <in [Plains] tiles>",  // the conditional here will break unciv when starting in the Ancient era, adding Caveman!
 		],
 		"attackSound": "nonmetalhit",
 	},
