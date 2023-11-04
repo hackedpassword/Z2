@@ -36,7 +36,7 @@
 	"startingSettlerCount": 1,
 	"startingWorkerCount": 0,
 	"startingMilitaryUnitCount": 1,
-	"startingMilitaryUnit": "Nomad",  // Rebuilt Ancient era utilizing Prehistoric era design (re-add Scout for ancient era after Prehistoric era activated) 
+	"startingMilitaryUnit": "Caveman",  // Rebuilt Ancient era utilizing Prehistoric era design (re-add Scout for ancient era after Prehistoric era activated) 
 	"settlerPopulation": 1,
 	"baseUnitBuyCost": 50,
 	"embarkDefense": 1,
