@@ -1,62 +1,63 @@
 [
 	{  // Augment initial gameplay
-	 "name": "Portal Gate",  // Our hero appears!
-	 "cost": 10,
-	 "uniques": [  // the 'once' is for when capitals are relocated - portal gate will trigger upon moving
-		 "Can only be built [in capital]",
-		 "Free [Longswordsman] appears",  // Guess who! Planning to more closely align this asset with the NES
-		 // "Instantly provides [1] [Iron]", // Otherwise swordsman creates missing resource. Culling for now due to needing a stockpiled resource container.
-		 // "Free [Worker] appears <once>",  // squire, paige, whoever, brought your helper
-		 "Limited to [1] per Civilization",
-		 // "[+1] population [in all cities]",  // gain extra pop now for each 1st turn settlement
+		 "name": "Portal Gate",  // Our hero appears!
+		 "cost": 10,
+		 "uniques": [  // the 'once' is for when capitals are relocated - portal gate will trigger upon moving
+			 "Can only be built [in capital]",
+			 "Free [Longswordsman] appears",  // Guess who! Planning to more closely align this asset with the NES
+			 // "Instantly provides [1] [Iron]", // Otherwise swordsman creates missing resource. Culling for now due to needing a stockpiled resource container.
+			 // "Free [Worker] appears <once>",  // squire, paige, whoever, brought your helper
+			 "Limited to [1] per Civilization",
+			 // "[+1] population [in all cities]",  // gain extra pop now for each 1st turn settlement
+			 "Reveals the entire map",  // for debugging map/tech
 		]
 	},
 	{
-	"name": "Horse Track",  // Do something with stale strategic resources, horses, coal, and iron
-	"cost": 180,
-	"maintenance": 2,
-	"requiredTech": "Economics",
-	"happiness": 1,
-	"gold": 4,
-	"uniques": [
-		"Consumes [2] [Horses]",
-		"Provides 1 extra copy of each improved luxury resource near this City",
+		"name": "Horse Track",  // Do something with stale strategic resources, horses, coal, and iron
+		"cost": 180,
+		"maintenance": 2,
+		"requiredTech": "Economics",
+		"happiness": 1,
+		"gold": 4,
+		"uniques": [
+			"Consumes [2] [Horses]",
+			"Provides 1 extra copy of each improved luxury resource near this City",
 		]
 	},
 	{
-	"name": "Coal Refinery",
-	"cost": 300,
-	"maintenance": 2,
-	"requiredTech": "Plastics",
-	"production": 4,
-	"science": 2,
-	"uniques": [
-		"Consumes [2] [Coal]",
-		"Provides [1] [Oil]",
-	 	]
-	},
-	{
-	"name": "Metalworks Foundry",
-	"cost": 470,
-	"maintenance": 3,
-	"requiredTech": "Metallurgy",
-	"production": 6,
-	"science": 2,
-	"uniques": [
-		"Consumes [2] [Iron]",
-		"Provides [1] [Aluminum]",
+		"name": "Coal Refinery",
+		"cost": 300,
+		"maintenance": 2,
+		"requiredTech": "Plastics",
+		"production": 4,
+		"science": 2,
+		"uniques": [
+			"Consumes [2] [Coal]",
+			"Provides [1] [Oil]",
 		]
 	},
 	{
-	"name": "Calutron Enrichment Lab",
-	"cost": 690,
-	"maintenance": 5,
-	"requiredTech": "Computers",
-	"science": 8,
-	"uniques": [
-		"Consumes [4] [Oil]",
-		"Provides [1] [Uranium]",
-	]
+		"name": "Metalworks Foundry",
+		"cost": 470,
+		"maintenance": 3,
+		"requiredTech": "Metallurgy",
+		"production": 6,
+		"science": 2,
+		"uniques": [
+			"Consumes [2] [Iron]",
+			"Provides [1] [Aluminum]",
+		]
+	},
+	{
+		"name": "Calutron Enrichment Lab",
+		"cost": 690,
+		"maintenance": 5,
+		"requiredTech": "Computers",
+		"science": 8,
+		"uniques": [
+			"Consumes [4] [Oil]",
+			"Provides [1] [Uranium]",
+		]
 	},
 
 // Modified buildings
