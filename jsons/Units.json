@@ -53,7 +53,7 @@
 		"hurryCostModifier": 20, 
 	},
 	{
-		"name": "Caveman",  // Starting military unit
+		"name": "Caveman",  // Starting unit - no settler!
 		"unitType": "Scout",
 		"requiredTech": "Survival",
 		"movement": 1,
@@ -64,7 +64,9 @@
 		"uniques": [
 			"[-2] Sight <starting from the [Ancient era]>",
 			"May upgrade to [Nomad] through ruins-like effects",
-			"Founds a new city <by consuming this unit>",
+			"Founds a new city <by consuming this unit>",  // critical gameplay element, explore or found colony?
+			"[+2] Strength in [Cave] tiles",  // should be obvious
+			"[+2] Strength in [Cavern] tiles", 
 		],
 		"attackSound": "nonmetalhit",
 	},
@@ -83,7 +85,7 @@
 			"Can instantly construct a [Forage] improvement <with [50]% chance> <by consuming this unit>",  // might get eaten by enemies instead
 			"May upgrade to [Scout] through ruins-like effects",
 			"Never appears as a Barbarian unit",
-			"Ignores terrain cost <in [Plains] tiles>",  // the conditional here will break unciv when starting in the Ancient era, adding Caveman!
+			// "Ignores terrain cost <in [Plains] tiles>",  // the conditional here will break unciv when starting in the Ancient era, adding Caveman!
 		],
 		"attackSound": "nonmetalhit",
 	},
@@ -100,7 +102,8 @@
 			"Can instantly construct a [Fort] improvement <by consuming this unit>",  // great upgrade
 			"May upgrade to [Archer] through ruins-like effects",
 			"Never appears as a Barbarian unit",
-			"Ignores terrain cost <in tiles without [Mountain]>", 
+			// "Ignores terrain cost <in tiles without [Mountain]>",
+			"Ignores terrain cost",  // we'll default til the above is fixed
 		],
 		"attackSound": "nonmetalhit",
 	},
