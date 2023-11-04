@@ -71,7 +71,7 @@
 	{
 		"name": "Nomad",  // first gen scout
 		"unitType": "Scout",
-		"requiredTech": "Survival",
+		"requiredTech": "Shelter",
 		"movement": 2,
 		"strength": 3,
 		"cost": 30,
