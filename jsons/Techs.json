@@ -399,7 +399,7 @@
 			},
 			{
 				"name": "Education",
-				"row": 7,
+				"row": 6,
 				"prerequisites": ["Physics","Guilds"],
 				"uniques": ["Enables conversion of city production to [Science]","Enables Research agreements"],
 				"quote": "'Education is the best provision for old age.' - Aristotle"
