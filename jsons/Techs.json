@@ -249,7 +249,7 @@
 			},
 			{
 				"name": "Drama and Poetry",
-				"row": 2,
+				"row": 3,
 				"prerequisites": ["Politics","Horseback Riding"],
 				"quote": "'What is drama but life with the dull bits cut out.' - Alfred Hitchcock"
 			},
