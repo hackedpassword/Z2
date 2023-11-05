@@ -221,7 +221,7 @@
 			},
 			{
 				"name": "Construction",
-				"row": 10,
+				"row": 9,
 				"prerequisites": ["Masonry","Bronze Working"],
 				"quote": "'Three things are to be looked to in a building: that it stands on the right spot; that it be securely founded; that it be successfully executed.' - Johann Wolfgang von Goethe"
 			},
@@ -303,7 +303,7 @@
 			},
 			{
 				"name": "Metal Casting",
-				"row": 10,
+				"row": 9,
 				"prerequisites": ["Engineering","Iron Working"],
 				"quote": "'When pieces of bronze or gold or iron break, the metal-smith welds them together again in the fire, and the bond is established.' - Sri Guru Granth Sahib"
 			},
