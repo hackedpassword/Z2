@@ -59,7 +59,8 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"type": "Water",
 		"movementCost": 3,
 		"RGB": [3, 65, 114],
-		"uniques": ["Rough terrain",
+		"uniques": [
+			"Rough terrain",
 			"Units ending their turn on this terrain take [10] damage <with [50]% chance>",  // choppy and dangerous
                         "Never receives any resources",
 	        	"Has an elevation of [1] for visibility calculations",  // should generally dissuade transit in these areas
@@ -75,7 +76,8 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"movementCost": 3,
 		"defenceBonus": 0.5,
 		"RGB": [99, 40, 7],
-		"uniques": ["Rough terrain",
+		"uniques": [
+			"Rough terrain",
 		        "Has an elevation of [2] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation",
 		        "Units ending their turn on this terrain take [50] damage <with [80]% chance>",  // get in get out
@@ -152,7 +154,8 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"unbuildable": true,
 		"defenceBonus": 0.35,
 		"occursOn": ["Grassland","Hill"],
-		"uniques": ["Rough terrain", "Vegetation",
+		"uniques": [
+			"Rough terrain", "Vegetation",
 			"Provides a one-time Production bonus to the closest city when cut down",
 			"Blocks line-of-sight from tiles at same elevation",
 			"[99]% Chance to be destroyed by nukes",  // this works, can set values to TerrainFeatures
@@ -178,7 +181,8 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"overrideStats": true,
 		"defenceBonus": 0.25,
 		"occursOn": ["Tundra","Plains","Grassland","Desert","Snow"],
-		"uniques": ["Rough terrain",
+		"uniques": [
+			"Rough terrain",
 			"[+10] Strength for cities built on this terrain",
 			"Has an elevation of [1] for visibility calculations",
 			"Occurs in groups around high elevations",
@@ -192,7 +196,8 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"overrideStats": true,
 		"defenceBonus": 0.25,
 		"occursOn": ["Tundra","Plains","Grassland","Desert","Snow"],
-		"uniques": ["Rough terrain",
+		"uniques": [
+			"Rough terrain",
 			"[+5] Strength for cities built on this terrain",
 			"Has an elevation of [1] for visibility calculations",
 		],
@@ -204,7 +209,8 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"overrideStats": true,
 		"defenceBonus": 0,
 		"occursOn": ["Tundra","Plains","Grassland","Desert","Snow"],
-		"uniques": ["Rough terrain",  // intangible distortion effect makes this rough
+		"uniques": [
+			"Rough terrain",  // intangible distortion effect makes this rough
 			"Has an elevation of [0] for visibility calculations", // should not block vis
 			"[0]% Chance to be destroyed by nukes",
 		],
@@ -216,7 +222,8 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"movementCost": 5, // hard to pass through - if this works
 		"unbuildable": false,  // can be built by villagers - offensive improvement/TF destroyer - buildable boulder is improvement though
 		"turnsToBuild": 7,
-		"uniques": ["Rare feature",
+		"uniques": [
+			"Rare feature",
 			"Nullifies all other stats this tile provides",
 			"Doesn't generate naturally",
 			"Units ending their turn on this terrain take [20] damage <with [50]% chance>",
@@ -233,7 +240,8 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"type": "TerrainFeature",
 		"movementCost": 4,
 		"unbuildable": true,
-		"uniques": ["Rare feature",
+		"uniques": [
+			"Rare feature",
 			"Nullifies all other stats this tile provides",
 			"Doesn't generate naturally",
 			"Units ending their turn on this terrain take [35] damage",
@@ -246,7 +254,8 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 	},
 
 // Corner patches for Bridge //
-	{  // Feature-Left patch
+	{
+	// Feature-Left patch
 		"name": "BridgeFL",
 		"type": "TerrainFeature",
 		"movementCost": 2,
@@ -256,7 +265,8 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 			"[0]% Chance to be destroyed by nukes",  // Can't destroy bridges
 		]
 	},
-	{  // Feature-Right patch
+	{
+	// Feature-Right patch
 		"name": "BridgeFR",
 		"type": "TerrainFeature",
 		"movementCost": 2,
@@ -290,10 +300,11 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"occursOn": ["Plains"],
 		"uniques": [
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
-			"Tile provides yield without assigned population"],
+			"Tile provides yield without assigned population",
+		],
 		"turnsInto": "Plains",
-		"impassable": false,  // will be true when some "hero" ability is created
-		"unbuildable": false, // allow PalaceGlow to enhance this tile
+		"impassable": false,
+		"unbuildable": false,
 		"RGB": [252, 252, 252],  // ignored, references turnsInto tile RGB color instead
 	},
 	{  // palace 1
@@ -302,15 +313,16 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"gold": 10,
 		"faith": 10,
 		"culture": 5,
-		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
+		"occursOn": ["Plains","Grassland","Desert"],
 		"uniques": [
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage",
-			"Tile provides yield without assigned population"],
+			"Tile provides yield without assigned population",
+		],
 		"turnsInto": "Mountain",
-		"impassable": false,  // may be true when some "hero" ability is created
-		"unbuildable": false, // allow PalaceGlow to enhance this tile
+		"impassable": false,
+		"unbuildable": false,
 		"RGB": [186, 186, 186],  // ignored, references turnsInto tile RGB color instead
 	},
 	{  // palace 2
@@ -319,15 +331,16 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"gold": 10,
 		"faith": 10,
 		"culture": 5,
-		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
+		"occursOn": ["Plains","Grassland","Desert"],
 		"uniques": [
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage",
-			"Tile provides yield without assigned population"],
+			"Tile provides yield without assigned population",
+		],
 		"turnsInto": "Mountain",
-		"impassable": false,  // may be true when some "hero" ability is created
-		"unbuildable": false, // allow PalaceGlow to enhance this tile
+		"impassable": false,
+		"unbuildable": false,
 		"RGB": [0, 126, 134],  // ignored, references turnsInto tile RGB color instead
 	},
 	{  // palace 3
@@ -336,15 +349,17 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"gold": 10,
 		"faith": 10,
 		"culture": 5,
-		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
+		"occursOn": ["Plains","Grassland","Desert"],
 		"uniques": [
+			"Enables embarkation for land units <after discovering [Fishing]>",  // A civ spawning here should be considered an island civ. This allows early access to leave the island
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage",
-			"Tile provides yield without assigned population"],
+			"Tile provides yield without assigned population",
+		],
 		"turnsInto": "Mountain",
-		"impassable": false,  // may be true when some "hero" ability is created
-		"unbuildable": false, // allow PalaceGlow to enhance this tile
+		"impassable": false,
+		"unbuildable": false,
 		"RGB": [162, 0, 0],  // ignored, references turnsInto tile RGB color instead
 	},
 	{  // palace 4
@@ -353,15 +368,16 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"gold": 10,
 		"faith": 10,
 		"culture": 5,
-		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
+		"occursOn": ["Plains","Grassland","Desert"],
 		"uniques": [
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage",
-			"Tile provides yield without assigned population"],
+			"Tile provides yield without assigned population",
+		],
 		"turnsInto": "Mountain",
-		"impassable": false,  // may be true when some "hero" ability is created
-		"unbuildable": false, // allow PalaceGlow to enhance this tile
+		"impassable": false,
+		"unbuildable": false,
 		"RGB": [67, 0, 154],  // ignored, references turnsInto tile RGB color instead
 	},
 	{  // palace 5
@@ -370,15 +386,17 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"gold": 10,
 		"faith": 10,
 		"culture": 5,
-		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
+		"occursOn": ["Plains","Grassland","Desert"],
 		"uniques": [
+			"Enables embarkation for land units <after discovering [Fishing]>",  // A civ spawning here should be considered an island civ. This allows early access to leave the island
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage",
-			"Tile provides yield without assigned population"],
+			"Tile provides yield without assigned population",
+		],
 		"turnsInto": "Mountain",
-		"impassable": false,  // may be true when some "hero" ability is created
-		"unbuildable": false, // allow PalaceGlow to enhance this tile
+		"impassable": false,
+		"unbuildable": false,
 		"RGB": [0, 79, 0],  // ignored, references turnsInto tile RGB color instead
 	},
 	{  // palace 6
@@ -387,15 +405,16 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"gold": 10,
 		"faith": 10,
 		"culture": 5,
-		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
+		"occursOn": ["Plains","Grassland","Desert"],
 		"uniques": [
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage",
-			"Tile provides yield without assigned population"],
+			"Tile provides yield without assigned population",
+		],
 		"turnsInto": "Mountain",
-		"impassable": false,  // may be true when some "hero" ability is created
-		"unbuildable": false, // allow PalaceGlow to enhance this tile
+		"impassable": false,
+		"unbuildable": false,
 		"RGB": [249, 115, 178],  // ignored, references turnsInto tile RGB color instead
 	},
 	{  // palace 7
@@ -404,12 +423,13 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"gold": 10,
 		"faith": 10,
 		"culture": 5,
-		"occursOn": ["Plains","Grassland","Desert"], // Only Plains in Z2, other terrains maybe later
+		"occursOn": ["Plains","Grassland","Desert"],
 		"uniques": [
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage",
-			"Tile provides yield without assigned population"],
+			"Tile provides yield without assigned population",
+		],
 		"turnsInto": "Mountain",
 		"impassable": false,  // may be true when some "hero" ability is created
 		"unbuildable": false, // allow PalaceGlow to enhance this tile
@@ -419,7 +439,9 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 	
 /// Special Wonder-buildings
 
-	{  // Create some resource like 'magic' that appears in some era to allow enhancements. Can be applied to Z2/Citadel for now.
+	{
+	// Create some resource like 'magic' that appears in some era to allow enhancements. Can be applied to Z2/Citadel for now.
+		// Town and palace promotions - check
 		"name": "PalaceGlow",  // experimental feature, not in use
 		"type": "TerrainFeature",
 		"gold": 40,
@@ -427,15 +449,17 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"culture": 25,
 		"occursOn": ["Plains","Mountain","Desert","Grassland"],
 		"uniques": [
-			
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
-			"Tile provides yield without assigned population", "Doesn't generate naturally"],
+			"Tile provides yield without assigned population",
+		],
 		"turnsInto": "Plains",
 		"impassable": false,  // will be true when some "hero" ability is created
 		"unbuildable": false,
 	},
 
-// Towns //
+
+//// Generic Towns ////
+
 
 	{  // Towns are natural wonders because they can grant promotions, whereas improvements cannot
 	   // Also makes the town permanent - no means to remove/destroy
@@ -452,8 +476,7 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			// [-50] results in regen instead of dmg:
-			"Units ending their turn on this terrain take [-50] damage",
-			// 2/t max heal - consistent with towns' healer house
+			"Units ending their turn on this terrain take [-50] damage",  // 2/t max heal - consistent with towns' healer house
 		],
 		"turnsInto": "Plains",
 		"impassable": false,
@@ -501,7 +524,9 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"RGB": [116, 116, 116],
 	},
 
-// Towns of the land //
+///////////////////////////
+//// Towns of the land ////
+///////////////////////////
 
 	{
 		"name": "Rauru Town", // Shield
@@ -535,7 +560,6 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"movementCost": 3,
 		"occursOn": ["Plains"],
 		"uniques": [
-			
 			"Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Units ending their turn on this terrain take [-50] damage",  // healer
@@ -555,7 +579,6 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"movementCost": 3,
 		"occursOn": ["Plains"],
 		"uniques": [
-			
 			"Grants [Life] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Units ending their turn on this terrain take [-50] damage",  // healer
@@ -566,6 +589,7 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"RGB": [116, 116, 116],  // ignored, references turnsInto tile RGB color instead
 	},
 	{
+	// bug alert! Currently, both up and down thrust are automatically granted - the conditional is not being factored. This is quite OP for early units.
 		"name": "Mido Town", // Fairy, Downward Thrust
 		"type": "NaturalWonder",
 		"gold": 1,
@@ -575,7 +599,6 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"movementCost": 3,
 		"occursOn": ["Desert"],
 		"uniques": [
-			
 			"Grants [Fairy] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Grants [Downward Thrust] ([Military/warrior training]) to adjacent [Land] units for the rest of the game <upon constructing [Military Academy] [in all cities]>",
 			"Tile provides yield without assigned population",
@@ -596,7 +619,6 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"movementCost": 3,
 		"occursOn": ["Plains"],
 		"uniques": [
-			
 			"Grants [Fire] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Units ending their turn on this terrain take [-50] damage",  // healer
@@ -608,6 +630,7 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 	},
 
 	{
+	// bug alert! Currently, both up and down thrust are automatically granted - the conditional is not being factored. This is quite OP for early units.
 		"name": "Darunia Town", // Reflect, Upward Thrust
 		"type": "NaturalWonder",
 		"gold": 1,
@@ -617,7 +640,6 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"movementCost": 3,
 		"occursOn": ["Desert"],
 		"uniques": [
-			
 			"Grants [Reflect] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Grants [Upward Thrust] ([Military/warrior training]) to adjacent [Land] units for the rest of the game <upon constructing [Military Academy] [in all cities]>",
 			"Tile provides yield without assigned population",
@@ -638,7 +660,6 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"movementCost": 3,
 		"occursOn": ["Grassland"],
 		"uniques": [
-			
 			"Grants [Spell] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Grants [Magic Key] ([Military/warrior training]) to adjacent [Land] units for the rest of the game <upon constructing [Military Academy] [in all cities]>",
 			"Tile provides yield without assigned population",
@@ -679,11 +700,11 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"occursOn": ["Coast"],
 		"uniques": ["Rare feature",
 			"Units ending their turn on this terrain take [10] damage", // won't trigger: <for [land units] units>
-			    "[-50] Strength for cities built on this terrain", // not a good place to settle
-			    "Never receives any resources <in [Force] tiles>",
+			"[-50] Strength for cities built on this terrain", // not a good place to settle
+			"Never receives any resources <in [Force] tiles>",
                         "Tile provides yield without assigned population",
 			"Always Fertility [-1] for Map Generation"
-		            ]
+		]
 		"turnsInto": "Force",
 		"unbuildable": true,
 		"impassable": false,
@@ -699,7 +720,8 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 			"Never receives any resources <in [Force] tiles>", // Force bakes into the map upon game start, important design aspect
 			"Always Fertility [-1] for Map Generation",
 			"[-50] Strength for cities built on this terrain", // not a good place to settle
-			"Only [Great] improvements may be built on this tile"], // floating great improvements
+			"Only [Great] improvements may be built on this tile",  // floating great improvements
+		], 
 		"turnsInto": "Force",
 		"unbuildable": true,
 		"impassable": false,
@@ -710,8 +732,10 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"type": "NaturalWonder",
 		"movementCost": 0.1,  // We want water walkers to effectively teleport across these tiles. Primarily/only for the raft path atm.
 		"occursOn": ["Ocean"],
-		"uniques": ["Never receives any resources <in [Force] tiles>",
-			"[-20] Strength for cities built on this terrain"],
+		"uniques": [
+			"Never receives any resources <in [Force] tiles>",
+			"[-20] Strength for cities built on this terrain",
+		],
 		"turnsInto": "Force",
 		"unbuildable": true,
 		"impassable": false,
@@ -722,8 +746,10 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"type": "NaturalWonder",
 		"movementCost": 0.1,
 		"occursOn": ["Ocean"],
-		"uniques": ["Never receives any resources <in [Force] tiles>",
-			"[-20] Strength for cities built on this terrain"],
+		"uniques": [
+			"Never receives any resources <in [Force] tiles>",
+			"[-20] Strength for cities built on this terrain",
+		],
 		"turnsInto": "Force",
 		"unbuildable": true,
 		"impassable": false,
@@ -734,9 +760,11 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"type": "NaturalWonder",
 		"movementCost": 0.1,
 		"occursOn": ["Coast"],
-		"uniques": ["Never receives any resources <in [Force] tiles>",  // removing still doesn't allow placement of Foundation resource 
-				// "Provides [1] [Foundation]",  // doesn't work
-			"[-10] Strength for cities built on this terrain"],
+		"uniques": [
+			"Never receives any resources <in [Force] tiles>",  // removing still doesn't allow placement of Foundation resource 
+			// "Provides [1] [Foundation]",  // doesn't work
+			"[-10] Strength for cities built on this terrain",
+		],
 		"turnsInto": "Force",
 		"unbuildable": false,
 		"impassable": false,
@@ -747,9 +775,11 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"type": "NaturalWonder",
 		"movementCost": 0.1,
 		"occursOn": ["Coast"],
-		"uniques": ["Never receives any resources <in [Force] tiles>",
-				// "Provides [1] [Foundation]",
-			"[-10] Strength for cities built on this terrain"],
+		"uniques": [
+			"Never receives any resources <in [Force] tiles>",
+			// "Provides [1] [Foundation]",
+			"[-10] Strength for cities built on this terrain",
+		],
 		"turnsInto": "Force",
 		"unbuildable": false,
 		"impassable": false,
@@ -762,9 +792,11 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"culture": 1,
 		"food": 1,
 		"occursOn": ["Coast"],
-		"uniques": ["Never receives any resources <in [Force] tiles>",
-				// "Provides [1] [Foundation]",
-			"[-10] Strength for cities built on this terrain"],
+		"uniques": [
+			"Never receives any resources <in [Force] tiles>",
+			// "Provides [1] [Foundation]",
+			"[-10] Strength for cities built on this terrain",
+		],
 		"turnsInto": "Force",
 		"unbuildable": false,
 		"impassable": false,
@@ -777,8 +809,10 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"culture": 1,
 		"food": 1,
 		"occursOn": ["Lakes"],
-		"uniques": ["Never receives any resources <in [Force] tiles>",
-			"[-5] Strength for cities built on this terrain"],
+		"uniques": [
+			"Never receives any resources <in [Force] tiles>",
+			"[-5] Strength for cities built on this terrain",
+		],
 		"turnsInto": "Force",
 		"unbuildable": false,
 		"impassable": false,
