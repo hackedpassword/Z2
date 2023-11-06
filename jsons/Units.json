@@ -81,8 +81,7 @@
 		"upgradesTo": "Scout",
 		"obsoleteTech": "Horseback Riding",
 		"uniques": [
-			"[-2] Sight <before the [Classical era]>",
-			"[-1] Sight <during the [Classical era]>",
+			"[-1] Sight <before the [Classical era]>",
 			"Can instantly construct a [Forage] improvement <with [50]% chance> <by consuming this unit>",  // might get eaten by enemies instead
 			"May upgrade to [Scout] through ruins-like effects",
 			"Never appears as a Barbarian unit",
