@@ -8,7 +8,7 @@
 		"uniques": [
 			"Ensures a minimum tile yield of [+1 Food, +1 Production] <during the [Ancient era]>",
 			"Ensures a minimum tile yield of [+2 Food, +1 Production] <during the [Classical era]>",
-			"Ensures a minimum tile yield of [+2 Food, +2 Production] <starting at the [Medieval era]>",  // will build upon this
+			"Ensures a minimum tile yield of [+2 Food, +2 Production] <starting from the [Medieval era]>",  // will build upon this
 			"Unpillagable", "Irremovable", "Unbuildable",  // Sōdesu ka? Wareware wa mirudearou.
 			"Blocks line-of-sight from tiles at same elevation",  // This should be a city center default unique
 		],
