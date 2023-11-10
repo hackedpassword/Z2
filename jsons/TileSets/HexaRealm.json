@@ -1,9 +1,13 @@
 {
     "useColorAsBaseTerrain": "false",
 //    "fallbackTileSet": "FantasyHex",  // don't want a fallback
+    "fallbackTileSet": "",  // don't want a fallback
 
     "ruleVariants": {
 
+	"Desert": ["Desert"],
+	"Desert3": ["Desert2"],  // removing Z2 desert3 sprite somehow defaults/forces hexarealm desert sprite
+	    
 //	"Plains+NorthCastle": ["Plains","NorthCastleGlow"],  // Seems this works on Wonders as seen above, but don't want it atm
 
 	// to-do: cites and city ruins plus bridges
