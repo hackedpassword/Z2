@@ -2,11 +2,16 @@
 // Z2 improvements
 
 	{
-	// Going to try several experiments here. Default for now.
+	// City center will be modified for an improved gameplay experience in Z2!
 		"name": "City center",
-		"terrainsCanBeBuiltOn": ["Land"],
-		"uniques": ["Ensures a minimum tile yield of [+2 Food, +1 Production]",
-            "Unpillagable", "Irremovable", "Unbuildable"],
+		"terrainsCanBeBuiltOn": ["Land"],  // also allowed to be built on hybrid tiles though desired to disable that somehow
+		"uniques": [
+			"Ensures a minimum tile yield of [+1 Food, +1 Production] <during the [Ancient era]>",
+			"Ensures a minimum tile yield of [+2 Food, +1 Production] <during the [Classical era]>",
+			"Ensures a minimum tile yield of [+2 Food, +2 Production] <starting at the [Medieval era]>",  // will build upon this
+			"Unpillagable", "Irremovable", "Unbuildable",  // Sōdesu ka? Wareware wa mirudearou.
+			"Blocks line-of-sight from tiles at same elevation",  // This should be a city center default unique
+		],
         "civilopediaText": [
 			{"text":"Marks the center of a city"},
 			{"text":"Appearance changes with the technological era of the owning civilization"}
@@ -14,17 +19,21 @@
 	},
 
 	{
-		"name": "Boulder",  // improvement, not terrainFeature, same name
-		"movementCost": 5, // hard to pass through
-		"turnsToBuild": 7,
+	// This boulder is an improvement, not a terrainFeature, has the same name. The difference is in what uniques can be attributed.
+	// You'll see below that a number of desired gameplay effects are not available when constructing a boulder.
+		"name": "Boulder",
+		"movementCost": 5, // hard to pass through, does this even work?
+		"turnsToBuild": 5,
 		"uniques": [  // commented lines are desired but are not allowed :/
 			// "Nullifies all other stats this tile provides",
 			// "Units ending their turn on this terrain take [20] damage <with [50]% chance>",
 			// "Has an elevation of [1] for visibility calculations",
 			// "Rough terrain",
+			"Removes removable features when built",  // pepper an opponents' land with boulders, pillage tiles and roll em in
 			"Gives a defensive bonus of [25]%",
 			"Can be built outside your borders",
 		],
+		// "impassable": true,
 		"techRequired": "Engineering",
 		"terrainsCanBeBuiltOn": ["Land"],
 	},
@@ -62,18 +71,20 @@
 		],
 	},
 	{
+	// Can be removed by Villagers only
 		"name": "Remove Boulder",
-		"turnsToBuild": 3,
+		"turnsToBuild": 4,
 		"uniques": ["Can be built outside your borders"],
 	},
 	{
+	// Can only be removed by UnitType: Sword, and is called "Fight enemy!" via translations
 		"name": "Remove Trap",
-		"turnsToBuild": 2,
+		"turnsToBuild": 2,  // usually one turn, at least on King difficulty atm
 		"uniques": ["Can be built outside your borders"],
 	},
 	{
 		"name": "Remove Fort",  // Permanence not required
-		"turnsToBuild": 4,
+		"turnsToBuild": 5,
 		"uniques": ["Can be built outside your borders"],
 		// Removing Forts and Citadels are weaponizable.
 	},
