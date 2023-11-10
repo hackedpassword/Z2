@@ -202,9 +202,9 @@
 	{	
 		name: "Wheat",  // graves
 		resourceType: "Bonus",
-		terrainsCanBeFoundOn: ["Plains","Flood plains","Desert"], // Desert only if fresh water
+		terrainsCanBeFoundOn: ["Plains","Desert","Mound"],
 		faith: 1,
-		improvement: "Farm",
+		improvement: "Ancient ruins",  // grave robbers??
 	},	
 	{	
 		name: "Stone",
