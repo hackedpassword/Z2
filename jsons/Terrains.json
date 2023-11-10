@@ -180,7 +180,7 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"movementCost": 2,
 		"overrideStats": true,
 		"defenceBonus": 0.25,
-		"occursOn": ["Tundra","Plains","Grassland","Desert","Snow"],
+		"occursOn": ["Tundra","Plains","Grassland","Desert"],
 		"uniques": [
 			"Rough terrain",
 			"[+10] Strength for cities built on this terrain",
@@ -195,7 +195,7 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"movementCost": 2,
 		"overrideStats": true,
 		"defenceBonus": 0.25,
-		"occursOn": ["Tundra","Plains","Grassland","Desert","Snow"],
+		"occursOn": ["Tundra","Plains","Grassland","Desert"],
 		"uniques": [
 			"Rough terrain",
 			"[+5] Strength for cities built on this terrain",
@@ -208,7 +208,7 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"movementCost": 1,
 		"overrideStats": true,
 		"defenceBonus": 0,
-		"occursOn": ["Tundra","Plains","Grassland","Desert","Snow"],
+		"occursOn": ["Plains","Grassland","Desert"],  // nowhere really, this is the foundation of hybrid tiles
 		"uniques": [
 			"Rough terrain",  // intangible distortion effect makes this rough
 			"Has an elevation of [0] for visibility calculations", // should not block vis
@@ -217,23 +217,22 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"RGB": [43, 97, 181],  // this is what the flat tile color will look like in map previews, not the overlying natural wonder color
 	},
 	{
-		"name": "Boulder",  // exists both this TerrainFeature, and improvement version. This one is map-baked.
+		"name": "Boulder",  // exists both this TerrainFeature, and improvement version. This one is map-baked as a TerrainFeature.
 		"type": "TerrainFeature",
-		"movementCost": 5, // hard to pass through - if this works
-		"unbuildable": false,  // can be built by villagers - offensive improvement/TF destroyer - buildable boulder is improvement though
+		"occursOn": ["Grassland","Plains","Desert","Marsh","Cave"],
+		"movementCost": 5, // hard to pass through
+		"unbuildable": false,  // can be built by villagers as an TileImprovement, no idea how this parameter affects building #TODO
 		"turnsToBuild": 7,
 		"uniques": [
 			"Rare feature",
 			"Nullifies all other stats this tile provides",
-			"Doesn't generate naturally",
 			"Units ending their turn on this terrain take [20] damage <with [50]% chance>",
-			"Provides a one-time Production bonus to the closest city when cut down",  // cut down = removed
+			"Provides a one-time Production bonus to the closest city when cut down",  // cut down = removed  .. add to translations #TODO
 			"Has an elevation of [1] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation", 
 			"Rough terrain",
 		],
-		"occursOn": ["Grassland","Plains","Desert","Marsh","Cave"],
-		"defenceBonus": 0.10
+		"defenceBonus": 0.10  // what does this do anyway? #TODO
 	},
 	{
 		"name": "Trap",
@@ -243,13 +242,12 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"uniques": [
 			"Rare feature",
 			"Nullifies all other stats this tile provides",
-			"Doesn't generate naturally",
 			"Units ending their turn on this terrain take [35] damage",
 			"Rough terrain",
 			"Blocks line-of-sight from tiles at same elevation", 
 //			"[99]% Chance to be destroyed by nukes",
 		],
-		"occursOn": ["Grassland","Plains","Forest","Desert","Tundra","Hill"],
+		"occursOn": ["Grassland","Plains","Forest","Desert","Tundra","Hill","Mound","Cavern","Cave"],
 		"defenceBonus": -0.30
 	},
 
@@ -261,7 +259,8 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"movementCost": 2,
 		"defenceBonus": -0.1,
 		"occursOn": ["Desert","Plains","Coast","Ocean","Grassland","Tundra","CoastTile","OceanTile"],
-		"uniques": ["Never receives any resources",
+		"uniques": [
+			"Never receives any resources",
 			"[0]% Chance to be destroyed by nukes",  // Can't destroy bridges
 		]
 	},
@@ -272,7 +271,8 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"movementCost": 2,
 		"defenceBonus": -0.1,
 		"occursOn": ["Desert","Plains","Coast","Ocean","Grassland","CoastTile"],
-		"uniques": ["Never receives any resources",
+		"uniques": [
+			"Never receives any resources",
 			"[0]% Chance to be destroyed by nukes",
 		]
 	},
@@ -290,7 +290,7 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 
 
 // Named Palaces //
-	
+
 	{
 		"name": "North Castle",
 		"type": "NaturalWonder",
