@@ -1,7 +1,6 @@
 {
     "useColorAsBaseTerrain": "false",
 //    "fallbackTileSet": "FantasyHex",  // don't want a fallback
-    "fallbackTileSet": "",  // don't want a fallback
 
     "ruleVariants": {
 
