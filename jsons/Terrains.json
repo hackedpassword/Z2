@@ -179,7 +179,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 2,
 		"overrideStats": true,
 		"defenceBonus": 0.25,
-		"occursOn": ["Tundra","Plains","Grassland","Desert"],
+		"occursOn": ["Tundra","Plains","Grassland","Desert","Mountain"],
 		"uniques": [
 			"Rough terrain",
 			"[+10] Strength for cities built on this terrain",
@@ -194,7 +194,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 2,
 		"overrideStats": true,
 		"defenceBonus": 0.25,
-		"occursOn": ["Tundra","Plains","Grassland","Desert"],
+		"occursOn": ["Tundra","Plains","Grassland","Desert","Mountain"],
 		"uniques": [
 			"Rough terrain",
 			"[+5] Strength for cities built on this terrain",
@@ -207,7 +207,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 1,
 		"overrideStats": true,
 		"defenceBonus": 0,
-		"occursOn": ["Plains","Grassland","Desert"],  // nowhere really, this is the foundation of hybrid tiles
+		"occursOn": ["Plains","Grassland","Desert","Mountain"],  // nowhere really, this is the foundation of hybrid tiles
 		"uniques": [
 			"Rough terrain",  // intangible distortion effect makes this rough
 			"Has an elevation of [0] for visibility calculations", // should not block vis
