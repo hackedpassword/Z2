@@ -351,7 +351,6 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"culture": 5,
 		"occursOn": ["Plains","Grassland","Desert"],
 		"uniques": [
-			"Enables embarkation for land units <after discovering [Fishing]>",  // A civ spawning here should be considered an island civ. This allows early access to leave the island
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage",
@@ -388,7 +387,6 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 		"culture": 5,
 		"occursOn": ["Plains","Grassland","Desert"],
 		"uniques": [
-			"Enables embarkation for land units <after discovering [Fishing]>",  // A civ spawning here should be considered an island civ. This allows early access to leave the island
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage",
@@ -440,8 +438,6 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 /// Special Wonder-buildings
 
 	{
-	// Create some resource like 'magic' that appears in some era to allow enhancements. Can be applied to Z2/Citadel for now.
-		// Town and palace promotions - check
 		"name": "PalaceGlow",  // experimental feature, not in use
 		"type": "TerrainFeature",
 		"gold": 40,
