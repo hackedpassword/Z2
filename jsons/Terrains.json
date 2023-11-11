@@ -3,19 +3,18 @@
 
 /*
 These mod checker warnings cannot currently be suppressed. All derive from hybrid tiles. 
-	
-CoastTile turns into terrain Force which is not a base terrain!
-OceanTile turns into terrain Force which is not a base terrain!
-Bridge1ocean turns into terrain Force which is not a base terrain!
-Bridge2ocean turns into terrain Force which is not a base terrain!
-Bridge1coast turns into terrain Force which is not a base terrain!
-Bridge2coast turns into terrain Force which is not a base terrain!
-Bridge3coast turns into terrain Force which is not a base terrain!
-Bridge3 turns into terrain Force which is not a base terrain!
-BridgeFL occurs on natural wonder CoastTile: Unsupported.
-BridgeFL occurs on natural wonder OceanTile: Unsupported.
-BridgeFR occurs on natural wonder CoastTile: Unsupported.
 
+	CoastTile turns into terrain Force which is not a base terrain!
+	OceanTile turns into terrain Force which is not a base terrain!
+	Bridge1ocean turns into terrain Force which is not a base terrain!
+	Bridge2ocean turns into terrain Force which is not a base terrain!
+	Bridge1coast turns into terrain Force which is not a base terrain!
+	Bridge2coast turns into terrain Force which is not a base terrain!
+	Bridge3coast turns into terrain Force which is not a base terrain!
+	Bridge3 turns into terrain Force which is not a base terrain!
+	BridgeFL occurs on natural wonder CoastTile: Unsupported.
+	BridgeFL occurs on natural wonder OceanTile: Unsupported.
+	BridgeFR occurs on natural wonder CoastTile: Unsupported.
 */
 	
 
@@ -63,7 +62,7 @@ BridgeFR occurs on natural wonder CoastTile: Unsupported.
 			"Rough terrain",
 			"Units ending their turn on this terrain take [10] damage <with [50]% chance>",  // choppy and dangerous
                         "Never receives any resources",
-	        	"Has an elevation of [1] for visibility calculations",  // should generally dissuade transit in these areas
+	        	// "Has an elevation of [1] for visibility calculations",  // should generally dissuade transit in these areas
 			"Blocks line-of-sight from tiles at same elevation",  // waves and swells
 		],
 	},
