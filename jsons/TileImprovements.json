@@ -299,27 +299,31 @@
 
 	// Transportation
 	{
+	// Name: Path
 		"name": "Road",
 		"terrainsCanBeBuiltOn": ["Land"],
 		"turnsToBuild": 4,
 		"techRequired": "The Wheel",
 		"uniques": ["Can be built outside your borders", "Costs [1] [Gold] per turn"],
 		"shortcutKey": "R",
-        "civilopediaText": [
-            {"text":"Reduces movement cost to ½ if the other tile also has a Road or Railroad"},
-            {"text":"Reduces movement cost to ⅓ with Machinery", "link":"Technology/Machinery"},
-            {"text":"Requires Engineering to bridge rivers", "link":"Technology/Engineering"}
-        ]
+	        "civilopediaText": [
+	            {"text":"Paths double movement between tiles. Adjacent Fast travel tiles also count for 2x movement."},
+	            {"text":"Increases movement 3x after discovering Machinery.", "link":"Technology/Machinery"},
+	            {"text":"Requires Engineering to build bridges over lava flows.", "link":"Technology/Engineering"}
+	        ]
 	},
 	{
+	// Name: Fast travel
 		"name": "Railroad",
 		"terrainsCanBeBuiltOn": ["Land"],
 		"turnsToBuild": 4,
 		"techRequired": "Railroads",
 		"uniques": ["Can be built outside your borders", "Costs [2] [Gold] per turn"],
 		"shortcutKey": "R",
-        "civilopediaText": [{"text":"Reduces movement cost to ⅒ if the other tile also has a Railroad"}]
-	},
+	        "civilopediaText": [
+			{"text":"Movement increases 10x on Fast travel paths."}
+		]
+		},
 
 	// Removals
 	// Any improvement that starts with 'Remove ' is automatically changed into
