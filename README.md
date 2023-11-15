@@ -14,6 +14,8 @@ I’m a huge fan of the original Zelda 2, up to and including no-lives-lost vani
 2. Thanks to hybrid tiles, three specific Zelda 2 gameplay elements have been preserved: raft crossing, boot water walking, and the bridge to Maze Island.
 3. Unciv modder/mappers are going to have a field day tearing apart Z2! Have at it! Share what you learned, this is a huge opportunity!
 
+I track development notes in the [Issues](https://github.com/hackedpassword/Z2/issues) section, seen at the top menu.
+
 ## Before:
 
 ![](https://raw.githubusercontent.com/hackedpassword/Unciv-Assets/main/Images/Z2/Z2_before.png)
