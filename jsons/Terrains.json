@@ -595,7 +595,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"occursOn": ["Desert"],
 		"uniques": [
 			"Grants [Fairy] ([Combat magic]) to adjacent [Land] units for the rest of the game",
-			"Grants [Downward Thrust] ([Military/warrior training]) to adjacent [Land] units for the rest of the game <upon constructing [Military Academy] [in all cities]>",
+			"Grants [Downward Thrust] ([Warrior training]) to adjacent [Land] units for the rest of the game <upon constructing [Military Academy] [in all cities]>",
 			"Tile provides yield without assigned population",
 			"Units ending their turn on this terrain take [-50] damage",  // healer
 		],
