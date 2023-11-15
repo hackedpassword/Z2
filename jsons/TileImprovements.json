@@ -51,9 +51,11 @@
 	{
 		"name": "Forage",
 		"turnsToBuild": 7,
-		"food": 1,
+		// "food": 1,
 		"techRequired": "Survival",
 		"uniques": [
+			"[+1 Food] <with [30]% chance>",  // not a guaranteed food source
+			"[+1 Food] <with [60]% chance> <after discovering <Hunting>",
 		],
 		"terrainsCanBeBuiltOn": ["Land"],
 	},
@@ -61,15 +63,16 @@
 		"name": "Bridge",  // represents the hidden rift between Death Mountain and the Maze Island bridge
 		"turnsToBuild": 7,
 		"terrainsCanBeBuiltOn": ["Coast","CoastTile","Ocean","Lakes"],
-		"culture": 1,
+		"culture": 3,
 		"science": 5,
+                "happiness": 1,
 		"techRequired": "Navigation",
 		"uniques": [
 			"Can only be built on [Water] tiles",
 			"Can only be built to improve a resource",
                         "Can be built outside your borders",
 			"Tile provides yield without assigned population",  // Foundation resource found outside 3-tile range
-	                "Removes removable features when built"
+	                "Removes removable features when built",
 		],
 	},
 	{
