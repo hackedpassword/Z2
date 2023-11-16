@@ -1,4 +1,16 @@
 [
+	{
+	// This building is supposed to enable Downward and Upward Thrust, for now
+		"name": "Military HQ",
+		// "requiredTech": "?",
+		"cost": 10,  // experiment getting this promo working
+		"uniques": [
+			"Requires a [Military Academy] in all cities",
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			// other uniques
+		],
+	},	
 	{  // Augment initial gameplay
 		 "name": "Portal Gate",  // Our hero appears!
 		 "cost": 10,
