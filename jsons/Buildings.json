@@ -9,6 +9,8 @@
 			"Can only be built [in capital]",
 			"Destroyed when the city is captured",
 			// other uniques
+			"[All] units gain the [Downward Thrust] promotion <for units with [Jump]> <upon ending a turn in a [Mido Town] tile>",
+			"[All] units gain the [Upward Thrust] promotion <for units with [Jump]> <upon ending a turn in a [Kasuto Town] tile>",
 		],
 	},	
 	{  // Augment initial gameplay
