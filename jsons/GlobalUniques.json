@@ -11,7 +11,7 @@
 	// "Allow raze holy city",
 	"100 Gold for discovering a Natural Wonder (bonus enhanced to 500 Gold if first to discover it)",  // promotes exploration
 	"Aircraft",  // needed for validator says G&K ruleset
-	"[Military] units gain the [Downward Thrust] promotion <upon ending a turn in a [Mido Town] tile> <in cities with a [Military HQ]> <for units with [Jump]>",
-	"[Military] units gain the [Upward Thrust] promotion <upon ending a turn in a [Kasuto Town] tile> <in cities with a [Military HQ]> <for units with [Jump]>",
+	"[All] units gain the [Downward Thrust] promotion <in cities with a [Military HQ]> <for units with [Jump]> <upon ending a turn in a [Mido Town] tile>",
+	"[All] units gain the [Upward Thrust] promotion <in cities with a [Military HQ]> <for units with [Jump]> <upon ending a turn in a [Kasuto Town] tile>",
     ]
 }
