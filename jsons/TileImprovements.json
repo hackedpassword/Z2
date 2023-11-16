@@ -55,7 +55,7 @@
 		"techRequired": "Survival",
 		"uniques": [
 			"[+1 Food] <with [30]% chance>",  // not a guaranteed food source
-			"[+1 Food] <with [60]% chance> <after discovering <Hunting>",
+			"[+1 Food] <with [60]% chance> <after discovering [Hunting]>",
 		],
 		"terrainsCanBeBuiltOn": ["Land"],
 	},
