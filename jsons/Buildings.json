@@ -1,6 +1,9 @@
 [
+
+/*
 	{
 	// This building is supposed to enable Downward and Upward Thrust, for now
+	// Didn't work, back to the drawing board
 		"name": "Military HQ",
 		// "requiredTech": "?",
 		"cost": 10,  // experiment getting this promo working
@@ -12,7 +15,9 @@
 			"[All] units gain the [Downward Thrust] promotion <upon ending a turn in a [Mido Town] tile> <for units with [Jump]>",
 			"[All] units gain the [Upward Thrust] promotion <upon ending a turn in a [Kasuto Town] tile> <for units with [Jump]>",
 		],
-	},	
+	},
+*/
+
 	{  // Augment initial gameplay
 		 "name": "Portal Gate",  // Our hero appears!
 		 "cost": 10,
