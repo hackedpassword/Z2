@@ -597,7 +597,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"Grants [Fairy] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 		// Attempting to reconstruct this powerup by having a building constructed, applying from there .. Military HQ - doesn't work
 		// The conditional on this doesn't seem to trigger. Code limitation. Meaning the promotion is granted without a conditional. Way overpowered atm.
-			"Grants [Downward Thrust] ([Warrior training]) to adjacent [Land] units for the rest of the game <upon constructing [Military Academy] [in all cities]>",
+			"Grants [Downward Thrust] ([Warrior training]) to adjacent [Land] units for the rest of the game",  // moving the following to the promotion unique: <upon constructing [Military Academy] [in all cities]>",
 			"Tile provides yield without assigned population",
 			"Units ending their turn on this terrain take [-50] damage",  // healer
 		],
