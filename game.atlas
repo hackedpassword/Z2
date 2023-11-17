@@ -1138,7 +1138,7 @@ UnitPromotionIcons/Life
   orig: 512, 512
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Magic key
+UnitPromotionIcons/Magic Key
   rotate: false
   xy: 1444, 1936
   size: 100, 100
