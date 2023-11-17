@@ -31,7 +31,6 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"Has an elevation of [1] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation",
 			"Never receives any resources",
-//			"[5]% Chance to be destroyed by nukes",
 			"Units ending their turn on this terrain take [10] damage <with [20]% chance>",  // enemies amidst
 		],
 	},
@@ -39,7 +38,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"name": "Cavern",
 		"type": "Land",
 		"movementCost": 2,
-		"gold": 3,
+		// "gold": 3,
 		"RGB": [200, 76, 12],
 		// to-do: settlers shouldn't settle here - for now it's essentially a nuke safe haven
 		"uniques": [
@@ -48,7 +47,27 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
 		        "Has an elevation of [1] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation", 
-//			"[5]% Chance to be destroyed by nukes",  // base terrains transform this value to 0% - semi-bug
+			"[+1 Gold] <with [15]% chance> <before discovering [Fire]>",
+			"[+1 Gold] <with [25]% chance> <after discovering [Fire]>",  // From here down, gaining gold from Cavern can reap big rewards
+			"[+1 Gold] <with [25]% chance> <after discovering [Tools]>",
+			"[+1 Gold] <with [25]% chance> <after discovering [Mining]>",
+			"[+1 Gold] <with [20]% chance> <after discovering [Construction]>",
+			"[+1 Gold] <with [20]% chance> <after discovering [Guilds]>",
+			"[+1 Gold] <with [15]% chance> <after discovering [Metallurgy]>",
+			"[+1 Gold] <with [15]% chance> <after discovering [Chemistry]>",
+			"[+1 Gold] <with [10]% chance> <after discovering [Dynamite]>",
+			"[+1 Gold] <with [10]% chance> <after discovering [Radar]>",
+			"[+1 Gold] <with [25]% chance> <after discovering [Ecology]>",  // smarter earthlings means better earth
+			"[+1 Gold] <with [15]% chance> <after discovering [Lasers]>",
+			"[+1 Food] <with [10]% chance>",  // same output as desert
+			"[+1 Gold] <with [10]% chance>",
+			"[+1 Culture] <with [10]% chance>",
+			"[+1 Happiness] <with [10]% chance>",
+			"[+1 Faith] <with [10]% chance>",
+			"Tile provides yield without assigned population <with [5]% chance>",  // jackpot resource provides all currently available
+
+		// Why can't I have it? Neeeeeed more control over uniques! ;)
+			// "[5]% Chance to be destroyed by nukes",  // base terrains transform this value to 0% - semi-bug
 			// "Population loss from nuclear attacks [-95]% [in this city]",  // disallowed, meant for buildings instead :/
 			// "Damage to garrison from nuclear attacks [-95]% [in this city]",
 		],
@@ -77,11 +96,10 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"RGB": [99, 40, 7],
 		"uniques": [
 			"Rough terrain",
-		        "Has an elevation of [2] for visibility calculations",
+		        "Has an elevation of [1] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation",
 		        "Units ending their turn on this terrain take [50] damage <with [80]% chance>",  // get in get out
 			"Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
-//			"[5]% Chance to be destroyed by nukes",
 			// "Population loss from nuclear attacks [-50]% [in this city]",  // in case a city is settled here
 			// "Damage to garrison from nuclear attacks [-75]% [in this city]",  // these two lines disallowed, meant for buildings instead :/
 		], 
@@ -90,23 +108,47 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 	{
 		"name": "Grassland",
 		"type": "Land",
-		"food": 2,
+		// "food": 2,
 		"movementCost": 1,
 		"RGB": [128, 208, 16],
 		"uniques": [
-//			"[98]% Chance to be destroyed by nukes",
+		// base tiles providing scaling and dynamic resources
+			"[+1 Food] <with [30]% chance> <before discovering [Tools]>",  // poor food source initially
+			"[+1 Food] <with [60]% chance> <after discovering [Tools]> <before discovering [Animal Husbandry]>",
+			"[+1 Food] <with [90]% chance> <after discovering [Animal Husbandry]>",
+			"[+1 Food] <with [50]% chance> <after discovering [Calendar]>",  // bonus
+			"[+1 Production] <with [10]% chance>",
+			"[+1 Gold] <with [10]% chance>",
+			"[+1 Culture] <with [10]% chance>",
+			"[+1 Happiness] <with [10]% chance>",
+			"[+1 Faith] <with [10]% chance>",
+			"Tile provides yield without assigned population <with [5]% chance>",  // jackpot resource provides all currently available
 		],
 	},
 	{
-		"name": "Plains",  // Used mostly as path terrain
+	// Used mostly as path terrain
+		"name": "Plains",
 		"type": "Land",
-		// "food": 1,  // Culled as plains will provide no food until later
+		// "food": 1,
 		"movementCost": 1,
 		"RGB": [240, 188, 60],
 		"uniques": [
-			"[+1 Food] <in tiles without [Wheat]>",  // The King's Tomb graveyard provides too much food
-			"[+1 Production] <with [1] to [1] neighboring [Grassland] tiles>",
-//			"[98]% Chance to be destroyed by nukes",
+			"[+1 Food] <with [25]% chance> <in tiles without [Wheat]>",  // The King's Tomb graveyard provides too much food, baseline food supply
+			"[+1 Production] <with [50]% chance> <with [2] to [2] neighboring [Grassland] tiles>",
+		// base tiles providing scaling and dynamic resources
+		// plains resources will be more diverse
+			"[+1 Food] <with [25]% chance> <before discovering [Clans]>",  // poor production source initially
+			"[+1 Food] <with [50]% chance> <after discovering [Clans]>",
+			"[+1 Production] <with [25]% chance> <before discovering [Fire]>",  // poor production source initially
+			"[+1 Production] <with [50]% chance> <after discovering [Fire]>",
+			"[+1 Culture] <with [15]% chance> <after discovering [Calendar]>",
+			"[+1 Food] <with [50]% chance> <after discovering [Machinery]>",  // bonus
+			"[+1 Gold] <with [15]% chance> <before discovering [Metal Casting]>",  // bonus
+			"[+1 Gold] <with [10]% chance>",
+			"[+1 Culture] <with [10]% chance>",
+			"[+1 Happiness] <with [10]% chance>",
+			"[+1 Faith] <with [10]% chance>",
+			"Tile provides yield without assigned population <with [5]% chance>",  // jackpot resource provides all currently available
 		],
 	},
 	{
@@ -116,8 +158,8 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 1,
 		"RGB": [252, 188, 176],
 		"uniques": [
-		// we're going to try making desert tiles provide scaling and dynamic resources
-			"[+1 Production] <with [30]% chance> <before discovering [The Wheel]>",  // poor production source
+		// base tiles providing scaling and dynamic resources
+			"[+1 Production] <with [30]% chance> <before discovering [The Wheel]>",  // poor production source initially
 			"[+1 Production] <with [60]% chance> <after discovering [The Wheel]> <before discovering [Mining]>",
 			"[+1 Production] <with [90]% chance> <after discovering [Mining]>",
 			"[+1 Production] <with [50]% chance> <after discovering [Engineering]>",
@@ -147,7 +189,6 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"RGB": [200, 76, 12],
 		"uniques": [
 			"Rough terrain",
-//			"[95]% Chance to be destroyed by nukes",
 		],
 	},
 //////////////////////////
@@ -174,7 +215,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 	{
 		"name": "Marsh",
 		"type": "TerrainFeature",
-		"food": -1,
+		"food": -1,  // does this even work? lol
 		"movementCost": 3,
 		"unbuildable": true,
 		"defenceBonus": -0.15,
@@ -712,7 +753,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"Never receives any resources <in [Force] tiles>",
                         "Tile provides yield without assigned population",
 			"Always Fertility [-1] for Map Generation"
-		]
+		],
 		"turnsInto": "Force",
 		"unbuildable": true,
 		"impassable": false,
