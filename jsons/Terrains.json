@@ -137,7 +137,19 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 1,
 		"RGB": [33, 97, 171],
 	},
-
+	{
+	// to be replaced by a similar terrain, more volcanic
+		"name": "Tundra",
+		"type": "Land",
+		"food": 1,
+	        "science": 1,
+		"movementCost": 1,
+		"RGB": [200, 76, 12],
+		"uniques": [
+			"Rough terrain",
+//			"[95]% Chance to be destroyed by nukes",
+		],
+	},
 //////////////////////////
 //// Terrain features ////
 //////////////////////////
