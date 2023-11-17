@@ -88,19 +88,6 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 	        "impassable": true,  // unless unit received Adventurer training/promotion 
 	},
 	{
-	// to be replaced by a similar terrain, more volcanic
-		"name": "Tundra",
-		"type": "Land",
-		"food": 1,
-	        "science": 1,
-		"movementCost": 1,
-		"RGB": [200, 76, 12],
-		"uniques": [
-			"Rough terrain",
-//			"[95]% Chance to be destroyed by nukes",
-		],
-	},
-	{
 		"name": "Grassland",
 		"type": "Land",
 		"food": 2,
@@ -125,11 +112,21 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 	{
 		"name": "Desert",
 		"type": "Land",
-		"production": 1,
+		// "production": 1,
 		"movementCost": 1,
 		"RGB": [252, 188, 176],
 		"uniques": [
-//			"[90]% Chance to be destroyed by nukes",
+		// we're going to try making desert tiles provide scaling and dynamic resources
+			"[+1 Production] <with [30]% chance> <before discovering [The Wheel]>",  // poor production source
+			"[+1 Production] <with [60]% chance> <after discovering [The Wheel]> <before discovering [Mining]>",
+			"[+1 Production] <with [90]% chance> <after discovering [Mining]>",
+			"[+1 Production] <with [50]% chance> <after discovering [Engineering]>",
+			"[+1 Food] <with [10]% chance>",
+			"[+1 Gold] <with [10]% chance>",
+			"[+1 Culture] <with [10]% chance>",
+			"[+1 Happiness] <with [10]% chance>",
+			"[+1 Faith] <with [10]% chance>",
+			"Tile provides yield without assigned population <with [5]% chance>",  // jackpot resource provides all currently available
 		],
 	},
 	{
@@ -141,8 +138,10 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"RGB": [33, 97, 171],
 	},
 
+//////////////////////////
 //// Terrain features ////
-
+//////////////////////////
+	
 	{
 		"name": "Forest",
 		"type": "TerrainFeature",
