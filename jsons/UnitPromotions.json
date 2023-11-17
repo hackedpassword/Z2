@@ -70,12 +70,17 @@
 			"[+200]% Strength <vs cities> <if it hasn't used other actions yet> <during a Golden Age>",
 		]
 	},
+
+// The following 3 promotions are supposed to be difficult to obtain, and very powerful. 
+// Problem is I can't find a way to trigger them at the desired time. Still looking! 
+	
         {
 		"name": "Downward Thrust",
 		"uniques": [
 			"[1] additional attacks per turn <if it hasn't used other actions yet>",
 			"Great General provides double combat bonus",
 			"[+50]% Strength <for units with [Jump]>",
+			"Only available <upon constructing [Military Academy] [in all cities]>",  // promotion test
 		]
 	},
         {
