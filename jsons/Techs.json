@@ -626,6 +626,13 @@
 				"prerequisites": ["Electronics","Combustion"],
 				"quote": "'Nothing is particularly hard if you divide it into small jobs.' - Henry Ford"
 			},
+			{
+			// special tech, to be developed
+				"name": "Steampunk Tech",
+				"row": 10,
+				"prerequisites": ["Ballistics"],
+				"quote": "special tech",
+			},
 
 		]
 	},
