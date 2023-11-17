@@ -40,11 +40,14 @@
 		"terrainsCanBeBuiltOn": ["Land"],
 	},
 	{
-		"name": "Slog mud",
+		"name": "Slog mud",  // nasty peasant work
 		"turnsToBuild": 7,
-		"production": 1,
+		// "production": 1,  // with the uniques below, icon will only show up on the tile by chance, though others may amend later through bonuses
 		"techRequired": "Shelter",
+		"obsoleteTech": "Construction",  // experiment, will this work on an improvement? 
 		"uniques": [
+			"[+1 Production] <with [30]% chance>",  // poor production source
+			"[+1 Production] <with [60]% chance> <after discovering [Pottery]>",
 		],
 		"terrainsCanBeBuiltOn": ["Land"],
 	},
