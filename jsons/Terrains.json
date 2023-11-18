@@ -122,7 +122,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"[+1 Culture] <with [10]% chance>",
 			"[+1 Happiness] <with [10]% chance>",
 			"[+1 Faith] <with [10]% chance>",
-			"Tile provides yield without assigned population <with [5]% chance>",  // jackpot resource provides all currently available
+			// "Tile provides yield without assigned population <with [5]% chance>",  // jackpot resource provides all currently available
 		],
 	},
 	{
@@ -148,7 +148,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"[+1 Culture] <with [10]% chance>",
 			"[+1 Happiness] <with [10]% chance>",
 			"[+1 Faith] <with [10]% chance>",
-			"Tile provides yield without assigned population <with [5]% chance>",  // jackpot resource provides all currently available
+			// "Tile provides yield without assigned population <with [5]% chance>",  // jackpot resource provides all currently available
 		],
 	},
 	{
@@ -168,7 +168,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"[+1 Culture] <with [10]% chance>",
 			"[+1 Happiness] <with [10]% chance>",
 			"[+1 Faith] <with [10]% chance>",
-			"Tile provides yield without assigned population <with [5]% chance>",  // jackpot resource provides all currently available
+			// "Tile provides yield without assigned population <with [5]% chance>",  // jackpot resource provides all currently available
 		],
 	},
 	{
