@@ -263,7 +263,10 @@
 				"name": "Engineering",
 				"row": 8,
 				"prerequisites": ["Mathematics","Construction"],
-				"uniques": ["Roads connect tiles across rivers"],
+				"uniques": [
+				// Since rivers are lava in Z2, bridging rivers is not available. It's possible Fast travel tech could be the enabler - TBD. 
+					// "Roads connect tiles across rivers",
+				],
 				"quote": "'Instrumental or mechanical science is the noblest and, above all others, the most useful.' - Leonardo da Vinci"
 			},
 			{
