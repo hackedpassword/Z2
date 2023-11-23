@@ -40,25 +40,30 @@
 		"terrainsCanBeBuiltOn": ["Land"],
 	},
 	{
+	// needs follow up improvement
 		"name": "Slog mud",  // nasty peasant work
-		"turnsToBuild": 7,
+		"turnsToBuild": 5,
 		// "production": 1,  // with the uniques below, icon will only show up on the tile by chance, though others may amend later through bonuses
 		"techRequired": "Shelter",
-		"obsoleteTech": "Construction",  // experiment, will this work on an improvement? 
+		"obsoleteTech": "Construction",  // experiment, will this work on an improvement? looks like not
 		"uniques": [
 			"[+1 Production] <with [30]% chance>",  // poor production source
 			"[+1 Production] <with [60]% chance> <after discovering [Pottery]>",
+			"[-1 Production] <after discovering [Iron Working]>",
+			"[-1 Production] <after discovering [Aesthetics]>",
 		],
 		"terrainsCanBeBuiltOn": ["Land"],
 	},
 	{
 		"name": "Forage",
-		"turnsToBuild": 7,
+		"turnsToBuild": 5,
 		// "food": 1,
 		"techRequired": "Survival",
 		"uniques": [
 			"[+1 Food] <with [30]% chance>",  // not a guaranteed food source
 			"[+1 Food] <with [60]% chance> <after discovering [Hunting]>",
+			"[-1 Food] <with [2] to [5] neighboring [Forage] tiles>",  // This food resource is not too compete with farms nor itself
+			"[-1 Food] <with [3] to [5] neighboring [Forage] tiles>",
 		],
 		"terrainsCanBeBuiltOn": ["Land"],
 	},
