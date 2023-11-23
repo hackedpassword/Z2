@@ -762,7 +762,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 	{
 		"name": "OceanTile",
 		"type": "NaturalWonder",
-		"movementCost": 0.1,
+		"movementCost": 1,
 		"occursOn": ["Ocean"],
 		"uniques": ["Rare feature",
 			"Units ending their turn on this terrain take [10] damage", // won't trigger: <for [land units] units>
@@ -779,7 +779,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 	{
 		"name": "Bridge1ocean",
 		"type": "NaturalWonder",
-		"movementCost": 0.1,  // We want water walkers to effectively teleport across these tiles. Primarily/only for the raft path atm.
+		"movementCost": 1,  // We want water walkers to effectively teleport across these tiles. Primarily/only for the raft path atm.
 		"occursOn": ["Ocean"],
 		"uniques": [
 			"Never receives any resources <in [Force] tiles>",
@@ -793,7 +793,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 	{
 		"name": "Bridge2ocean",
 		"type": "NaturalWonder",
-		"movementCost": 0.1,
+		"movementCost": 1,
 		"occursOn": ["Ocean"],
 		"uniques": [
 			"Never receives any resources <in [Force] tiles>",
@@ -807,7 +807,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 	{
 		"name": "Bridge1coast",
 		"type": "NaturalWonder",
-		"movementCost": 0.1,
+		"movementCost": 1,
 		"occursOn": ["Coast"],
 		"uniques": [
 			"Never receives any resources <in [Force] tiles>",  // removing still doesn't allow placement of Foundation resource 
@@ -822,7 +822,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 	{
 		"name": "Bridge2coast",
 		"type": "NaturalWonder",
-		"movementCost": 0.1,
+		"movementCost": 1,
 		"occursOn": ["Coast"],
 		"uniques": [
 			"Never receives any resources <in [Force] tiles>",
@@ -837,7 +837,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 	{  // Vertical bridge with Coast
 		"name": "Bridge3coast",
 		"type": "NaturalWonder",
-		"movementCost": 0.1,
+		"movementCost": 1,
 		"culture": 1,
 		"food": 1,
 		"occursOn": ["Coast"],
@@ -854,7 +854,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 	{  // Vertical bridge with Lake
 		"name": "Bridge3",
 		"type": "NaturalWonder",
-		"movementCost": 0.1,
+		"movementCost": 1,
 		"culture": 1,
 		"food": 1,
 		"occursOn": ["Lakes"],
