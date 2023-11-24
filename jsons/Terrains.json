@@ -895,10 +895,10 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 1,
 		"RGB": [70, 138, 216],
 		"uniques": [
-			"[+1 Food] <in this city> <with [30]% chance> <within [3] tiles of a [City center]>,
-			"[+1 Food] <in this city> <with [50]% chance> <within [3] tiles of a [City center]>,
-			"[+1 Gold] <in this city> <with [25]% chance> <within [3] tiles of a [City center]>,
-			"[+1 Gold] <in this city> <with [50]% chance> <within [3] tiles of a [City center]>,
+			"[+1 Food] <in this city> <with [30]% chance> <within [3] tiles of a [City center]>",
+			"[+1 Food] <in this city> <with [50]% chance> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <in this city> <with [25]% chance> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <in this city> <with [50]% chance> <within [3] tiles of a [City center]>",
 		],
 
 	},
