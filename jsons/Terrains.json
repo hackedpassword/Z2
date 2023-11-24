@@ -134,17 +134,16 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"RGB": [240, 188, 60],
 		"uniques": [
 			"[+1 Food] <with [25]% chance> <in tiles without [Wheat]>",  // The King's Tomb graveyard provides too much food, baseline food supply
-			"[+1 Production] <with [50]% chance> <with [2] to [2] neighboring [Grassland] tiles>",
+			"[+1 Production] <with [50]% chance> <with [2] to [5] neighboring [Grassland] tiles>",
 		// base tiles providing scaling and dynamic resources
 		// plains resources will be more diverse
-			"[+1 Food] <with [25]% chance> <before discovering [Clans]>",  // poor production source initially
-			"[+1 Food] <with [50]% chance> <after discovering [Clans]>",
-			"[+1 Production] <with [25]% chance> <before discovering [Fire]>",  // poor production source initially
-			"[+1 Production] <with [50]% chance> <after discovering [Fire]>",
-			"[+1 Culture] <with [5]% chance> <after discovering [Calendar]>",
-			"[+1 Food] <with [10]% chance> <after discovering [Machinery]>",  // bonus
-			// "[+1 Gold] <with [15]% chance> <before discovering [Metal Casting]>",  // bonus
-			"[+1 Gold] <with [5]% chance>",
+			"[+1 Food] <with [25]% chance> <before discovering [Clans]> <in tiles without [Wheat]>",  // poor production source initially
+			"[+1 Food] <with [50]% chance> <after discovering [Clans]> <in tiles without [Wheat]>",
+			"[+1 Production] <with [25]% chance> <before discovering [Fire]> <in tiles without [Wheat]>",  // poor production source initially
+			"[+1 Production] <with [50]% chance> <after discovering [Fire]> <in tiles without [Wheat]>",
+			"[+1 Culture] <with [5]% chance> <after discovering [Calendar]> <in tiles without [Wheat]>",
+			"[+1 Food] <with [15]% chance> <after discovering [Machinery]> <in tiles without [Wheat]>",  // bonus
+			"[+1 Gold] <with [2]% chance>",  // drop something? found something? 
 		// This would be for promoting cultural exchanges, with a unique and filter that doesn't exist
 			// "[+1 Culture] <with [10]% chance>  // <when occupied by a [Player] unit> <when adjacent to a non-[Player] unit>
 			// "[+1 Happiness] <with [10]% chance>",
