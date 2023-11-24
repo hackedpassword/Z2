@@ -174,9 +174,15 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 	{
 		"name": "Ocean",
 		"type": "Water",
-		"food": 1,
-		"gold": 1,
+		// "food": 1,
+		// "gold": 1,
 		"movementCost": 1,
+		"uniques": [
+			"[+3 Food] <in this city> <with [30]% chance>",
+			"[+1 Food] <in this city> <with [50]% chance>",
+			"[+3 Gold] <in this city> <with [25]% chance>",
+			"[+1 Gold] <in this city> <with [50]% chance>",
+		],
 		"RGB": [33, 97, 171],
 	},
 	{
@@ -887,10 +893,14 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"type": "Water",
 		"food": 1,
 		"movementCost": 1,
-		"RGB": [70, 138, 216], //Darker87, 139, 199  Lighter59, 137, 227
-		"uniques": ["[+2] to Fertility for Map Generation",
-            "Considered [Desirable] when determining start locations <on water maps>",
-            "Every [60] tiles with this terrain will receive a major deposit of a strategic resource."]
+		"RGB": [70, 138, 216],
+		"uniques": [
+			"[+1 Food] <in this city> <with [30]% chance>",
+			"[+1 Food] <in this city> <with [50]% chance>",
+			"[+1 Gold] <in this city> <with [25]% chance>",
+			"[+1 Gold] <in this city> <with [50]% chance>",
+		],
+
 	},
 	{
 		"name": "Lakes",
@@ -899,8 +909,11 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"gold": 1,
 		"RGB": [0, 171, 169],
 		"uniques": ["Fresh water",
-					"Considered [Food] when determining start locations",
-					"Considered [Desirable] when determining start locations"]
+			"[+1 Food] <in this city> <with [25]% chance>",
+			"[+1 Food] <in this city> <with [50]% chance>",
+			"[+1 Gold] <in this city> <with [25]% chance>",
+			"[+1 Gold] <in this city> <with [50]% chance>",
+		],
 	},
 	{
 		"name": "Snow",
