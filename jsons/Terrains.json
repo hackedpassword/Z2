@@ -43,27 +43,27 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		// to-do: settlers shouldn't settle here - for now it's essentially a nuke safe haven
 		"uniques": [
 			"Rough terrain",
-			"Units ending their turn on this terrain take [15] damage <with [30]% chance>",  // enemies amidst
+			"Units ending their turn on this terrain take [15] damage <with [20]% chance>",  // enemies amidst
 			"Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
 		        "Has an elevation of [1] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation", 
-			"[+1 Gold] <with [15]% chance> <before discovering [Fire]>",
-			"[+1 Gold] <with [25]% chance> <after discovering [Fire]>",  // From here down, gaining gold from Cavern can reap big rewards
-			"[+1 Gold] <with [25]% chance> <after discovering [Tools]>",
-			"[+1 Gold] <with [25]% chance> <after discovering [Mining]>",
-			"[+1 Gold] <with [20]% chance> <after discovering [Construction]>",
-			"[+1 Gold] <with [20]% chance> <after discovering [Guilds]>",
+			"[+1 Gold] <with [5]% chance> <before discovering [Fire]>",
+			"[+1 Gold] <with [5]% chance> <after discovering [Fire]>",  // From here down, gaining gold from Cavern can reap big rewards
+			"[+1 Gold] <with [10]% chance> <after discovering [Tools]>",
+			"[+1 Gold] <with [20]% chance> <after discovering [Mining]>",
+			"[+1 Gold] <with [15]% chance> <after discovering [Construction]>",
+			"[+1 Gold] <with [10]% chance> <after discovering [Guilds]>",
 			"[+1 Gold] <with [15]% chance> <after discovering [Metallurgy]>",
-			"[+1 Gold] <with [15]% chance> <after discovering [Chemistry]>",
+			"[+1 Gold] <with [20]% chance> <after discovering [Chemistry]>",
 			"[+1 Gold] <with [10]% chance> <after discovering [Dynamite]>",
-			"[+1 Gold] <with [10]% chance> <after discovering [Radar]>",
-			"[+1 Gold] <with [25]% chance> <after discovering [Ecology]>",  // smarter earthlings means better earth
+			"[+1 Gold] <with [15]% chance> <after discovering [Radar]>",
+			"[+1 Gold] <with [10]% chance> <after discovering [Ecology]>",  // smarter earthlings means better earth
 			"[+1 Gold] <with [15]% chance> <after discovering [Lasers]>",
-			"[+1 Food] <with [10]% chance>",  // same output as desert
-			"[+1 Gold] <with [10]% chance>",
-			"[+1 Culture] <with [10]% chance>",
-			"[+1 Happiness] <with [10]% chance>",
-			"[+1 Faith] <with [10]% chance>",
+			"[+1 Food] <with [5]% chance>",  // same output as desert
+			// "[+1 Gold] <with [5]% chance>",
+			// "[+1 Culture] <with [10]% chance>",
+			// "[+1 Happiness] <with [10]% chance>",
+			// "[+1 Faith] <with [10]% chance>",
 			// "Tile provides yield without assigned population <with [5]% chance>",  // jackpot resource provides all currently available
 
 		// Why can't I have it? Neeeeeed more control over uniques! ;)
@@ -113,16 +113,16 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"RGB": [128, 208, 16],
 		"uniques": [
 		// base tiles providing scaling and dynamic resources
-			"[+1 Food] <with [30]% chance> <before discovering [Tools]>",  // poor food source initially
-			"[+1 Food] <with [60]% chance> <after discovering [Tools]> <before discovering [Animal Husbandry]>",
-			"[+1 Food] <with [90]% chance> <after discovering [Animal Husbandry]>",
-			"[+1 Food] <with [50]% chance> <after discovering [Calendar]>",  // bonus
+			"[+1 Food] <with [25]% chance> <before discovering [Tools]>",  // poor food source initially
+			"[+1 Food] <with [50]% chance> <after discovering [Tools]> <before discovering [Animal Husbandry]>",
+			"[+1 Food] <with [50]% chance> <after discovering [Animal Husbandry]>",
+			"[+1 Food] <with [50]% chance> <after discovering [Calendar]>",  // up to +4 food at this point
 			"[+1 Production] <with [10]% chance>",
-			"[+1 Gold] <with [10]% chance>",
-			"[+1 Culture] <with [10]% chance>",
-			"[+1 Happiness] <with [10]% chance>",
-			"[+1 Faith] <with [10]% chance>",
-			// "Tile provides yield without assigned population <with [5]% chance>",  // jackpot resource provides all currently available
+			"[+1 Gold] <with [10]% chance>",  // For some reason all these (here down) hit at once
+			// "[+1 Culture] <with [10]% chance>",
+			// "[+1 Happiness] <with [10]% chance>",
+			// "[+1 Faith] <with [10]% chance>",
+			// "Tile provides yield without assigned population <with [5]% chance>",  // jackpot resource provides all currently available - doesn't trigger
 		],
 	},
 	{
@@ -141,13 +141,14 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"[+1 Food] <with [50]% chance> <after discovering [Clans]>",
 			"[+1 Production] <with [25]% chance> <before discovering [Fire]>",  // poor production source initially
 			"[+1 Production] <with [50]% chance> <after discovering [Fire]>",
-			"[+1 Culture] <with [15]% chance> <after discovering [Calendar]>",
-			"[+1 Food] <with [50]% chance> <after discovering [Machinery]>",  // bonus
-			"[+1 Gold] <with [15]% chance> <before discovering [Metal Casting]>",  // bonus
-			"[+1 Gold] <with [10]% chance>",
-			"[+1 Culture] <with [10]% chance>",
-			"[+1 Happiness] <with [10]% chance>",
-			"[+1 Faith] <with [10]% chance>",
+			"[+1 Culture] <with [5]% chance> <after discovering [Calendar]>",
+			"[+1 Food] <with [10]% chance> <after discovering [Machinery]>",  // bonus
+			// "[+1 Gold] <with [15]% chance> <before discovering [Metal Casting]>",  // bonus
+			"[+1 Gold] <with [5]% chance>",
+		// This would be for promoting cultural exchanges, with a unique and filter that doesn't exist
+			// "[+1 Culture] <with [10]% chance>  // <when occupied by a [Player] unit> <when adjacent to a non-[Player] unit>
+			// "[+1 Happiness] <with [10]% chance>",
+			// "[+1 Faith] <with [10]% chance>",
 			// "Tile provides yield without assigned population <with [5]% chance>",  // jackpot resource provides all currently available
 		],
 	},
@@ -159,15 +160,15 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"RGB": [252, 188, 176],
 		"uniques": [
 		// base tiles providing scaling and dynamic resources
-			"[+1 Production] <with [30]% chance> <before discovering [The Wheel]>",  // poor production source initially
-			"[+1 Production] <with [60]% chance> <after discovering [The Wheel]> <before discovering [Mining]>",
-			"[+1 Production] <with [90]% chance> <after discovering [Mining]>",
+			"[+1 Production] <with [10]% chance> <before discovering [The Wheel]>",  // poor production source initially
+			"[+1 Production] <with [25]% chance> <after discovering [The Wheel]> <before discovering [Mining]>",
+			// "[+1 Production] <with [90]% chance> <after discovering [Mining]>",
 			"[+1 Production] <with [50]% chance> <after discovering [Engineering]>",
 			"[+1 Food] <with [10]% chance>",
-			"[+1 Gold] <with [10]% chance>",
-			"[+1 Culture] <with [10]% chance>",
-			"[+1 Happiness] <with [10]% chance>",
-			"[+1 Faith] <with [10]% chance>",
+			"[+10 Gold] <with [1]% chance>",  // treasure
+			// "[+1 Culture] <with [10]% chance>",
+			// "[+1 Happiness] <with [10]% chance>",
+			"[+1 Faith] <with [5]% chance>",
 			// "Tile provides yield without assigned population <with [5]% chance>",  // jackpot resource provides all currently available
 		],
 	},
