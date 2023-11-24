@@ -200,7 +200,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"name": "Forest",
 		"type": "TerrainFeature",
 		"production": 2,
-		"food": 1,
+		// "food": 1,
 		"movementCost": 2,
 		"overrideStats": true,
 		"unbuildable": true,
@@ -211,6 +211,9 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"Provides a one-time Production bonus to the closest city when cut down",
 			"Blocks line-of-sight from tiles at same elevation",
 			"[99]% Chance to be destroyed by nukes",  // this works, can set values to TerrainFeatures
+			"[+1 Food] <with [25]% chance> <before discovering [Hunting]>",  // poor food source initially
+			"[+1 Food] <with [50]% chance> <after discovering [Hunting]> <before discovering [Mining]>",
+			"[+1 Food] <with [50]% chance> <after discovering [Mining]>",
 		],
 	},
 	{
@@ -222,10 +225,12 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"defenceBonus": -0.15,
 		"occursOn": ["Grassland"],
 		"uniques": [
+			"Rough terrain", "Vegetation",
 			"[40]% Chance to be destroyed by nukes",
 		],
-	},	
-	{  // also to make mods to this later. There's only 2 hills in the map, so not a big deal
+	},
+	{
+	// make mods to this later. There's only 2 hills in the map, so not a big deal
 		"name": "Hill",
 		"type": "TerrainFeature",
 		"production": 5,
@@ -236,8 +241,8 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"uniques": [
 			"Rough terrain",
 			"[+10] Strength for cities built on this terrain",
-			"Has an elevation of [1] for visibility calculations",
-			"Occurs in groups around high elevations",
+			"Blocks line-of-sight from tiles at same elevation",
+			// "Has an elevation of [1] for visibility calculations",
 		],
 	},
 	{  // mirrors Hill, different sprite, could have different resources than Hill
@@ -251,7 +256,8 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"uniques": [
 			"Rough terrain",
 			"[+5] Strength for cities built on this terrain",
-			"Has an elevation of [1] for visibility calculations",
+			"Blocks line-of-sight from tiles at same elevation",
+			// "Has an elevation of [1] for visibility calculations",
 		],
 	},
 	{
