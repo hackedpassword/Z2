@@ -126,9 +126,26 @@
 			"[100]% chance to intercept air attacks",
 			"[+150]% Strength <vs [Air] units>",
 			"[+150]% Strength <vs [Helicopter] units>",
-			"Never appears as a Barbarian unit"
+			"[+200]% Strength <vs [Missile] units>",  // enough to take down a cruise missile
+			"Never appears as a Barbarian unit",
+			"Comment [Carries one missile and counters incoming air attacks, including missile strikes.]", 
 		],
 		"attackSound": "missile",
+	},
+	{
+	// Why can't rifleman take cities, but tank can? order of rangedStrength and range? duplicating tank's order
+		"name": "Rifleman",
+		"unitType": "Gunpowder",
+		"movement": 2,
+		"strength": 34,
+		"range": 1,  // reasonable and logical
+		"rangedStrength": 38,
+		"cost": 225,
+		"requiredTech": "Military Science",
+		"obsoleteTech": "Replaceable Parts",
+		"upgradesTo": "Great War Infantry",
+		"uniques": ["[-30]% Strength <vs [Armored] units>"],  // All these soldier types are going to get moved to a soldier unitType
+		"attackSound": "shot", 
 	},
 	{
 		"name": "Tank",
@@ -562,13 +579,13 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 // Units adjusted to Prehistoric era
 
 	{
-		"name": "Longswordsman",  // Including to appease modchecker
+		"name": "Longswordsman",  // To be migrated into an elven hero type
 		"unitType": "Sword",
 		"movement": 2,
 		"strength": 21,
 		"cost": 120,
 		"requiredTech": "Steel",
-		"upgradesTo": "Musketman",
+		"upgradesTo": "Musketman",  // no. #todo
 		"obsoleteTech": "Gunpowder",
 		"requiredResource": "Iron",
 		"attackSound": "metalhit"
@@ -918,22 +935,8 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"attackSound": "metalhit"
 	},
 
-// Obsolete tech fixes
+// Obsolete tech fixes from before converting to base ruleset
 
-	{  // Sliding into adjacent Military Science
-		"name": "Rifleman",
-		"unitType": "Gunpowder",
-		"movement": 2,
-		"strength": 34,
-		"rangedStrength": 38,
-		"range": 1,  // reasonable and logical
-		"cost": 225,
-		"requiredTech": "Military Science",
-		"obsoleteTech": "Replaceable Parts",
-		"upgradesTo": "Great War Infantry",
-		"uniques": ["[-30]% Strength <vs [Armored] units>"],  // All these soldier types are going to get moved to a soldier unitType
-		"attackSound": "shot"
-	},
 	{
 		"name": "Musketman",
 		"unitType": "Gunpowder",
