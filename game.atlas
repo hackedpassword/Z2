@@ -6,35 +6,35 @@ filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
 BuildingIcons/Festival
   rotate: false
-  xy: 412, 100
+  xy: 1000, 400
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Boulder
   rotate: false
-  xy: 108, 28
+  xy: 1772, 736
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 ImprovementIcons/Forage
   rotate: false
-  xy: 784, 400
+  xy: 1216, 400
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Railroad
   rotate: false
-  xy: 1432, 400
+  xy: 784, 292
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Remove Boulder
   rotate: false
-  xy: 1404, 40
+  xy: 1420, 12
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
@@ -48,9 +48,16 @@ ImprovementIcons/Road
   index: -1
 ImprovementIcons/Slog mud
   rotate: false
-  xy: 784, 292
+  xy: 1108, 292
   size: 100, 100
   orig: 100, 100
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Work district
+  rotate: false
+  xy: 1564, 600
+  size: 200, 200
+  orig: 200, 200
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Highlight
@@ -76,7 +83,7 @@ TileSets/FantasyHex/Road
   index: -1
 TileSets/FantasyHex/Units/Caveman
   rotate: false
-  xy: 1204, 76
+  xy: 1964, 784
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
@@ -104,154 +111,154 @@ TileSets/FantasyHex/Units/Giant Death Robot MK-III
   index: -1
 TileSets/FantasyHex/Units/Nomad
   rotate: false
-  xy: 1260, 4
+  xy: 1736, 204
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker
   rotate: false
-  xy: 1792, 284
+  xy: 1828, 368
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Atomic era
   rotate: false
-  xy: 1708, 76
+  xy: 1828, 304
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Classical era
   rotate: false
-  xy: 1792, 220
+  xy: 1900, 368
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Future era
   rotate: false
-  xy: 1864, 284
+  xy: 1828, 240
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Generic era
   rotate: false
-  xy: 1864, 220
+  xy: 1900, 304
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Pioneer era
   rotate: false
-  xy: 1864, 220
+  xy: 1900, 304
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Industrial era
   rotate: false
-  xy: 1548, 4
+  xy: 1900, 240
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Information era
   rotate: false
-  xy: 1620, 4
+  xy: 1780, 176
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Medieval era
   rotate: false
-  xy: 1692, 4
+  xy: 1780, 112
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Modern era
   rotate: false
-  xy: 1808, 720
+  xy: 1852, 176
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Prehistoric era
   rotate: false
-  xy: 1880, 720
+  xy: 1780, 48
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Renaissance era
   rotate: false
-  xy: 1844, 656
+  xy: 1852, 112
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Aluminum
   rotate: false
-  xy: 1216, 328
+  xy: 412, 108
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Boulder
   rotate: false
-  xy: 1288, 328
+  xy: 108, 28
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Bridge
   rotate: false
-  xy: 180, 28
+  xy: 1772, 664
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Bridge1
   rotate: false
-  xy: 1360, 328
+  xy: 180, 28
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/BridgeHigh
   rotate: false
-  xy: 1360, 328
+  xy: 180, 28
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Bridge1coast
   rotate: false
-  xy: 1432, 328
+  xy: 324, 28
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Bridge1ocean
   rotate: false
-  xy: 324, 28
+  xy: 484, 108
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Bridge2coast
   rotate: false
-  xy: 396, 28
+  xy: 1844, 712
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Bridge2ocean
   rotate: false
-  xy: 468, 28
+  xy: 656, 220
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
@@ -265,196 +272,196 @@ TileSets/HexaRealm/Tiles/Bridge3
   index: -1
 TileSets/HexaRealm/Tiles/Bridge3coast
   rotate: false
-  xy: 540, 28
+  xy: 728, 220
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/BridgeFL
   rotate: false
-  xy: 1564, 492
+  xy: 800, 220
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/BridgeFR
   rotate: false
-  xy: 1540, 420
+  xy: 872, 220
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/BridgeLow
   rotate: false
-  xy: 1216, 256
+  xy: 944, 220
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Cave
   rotate: false
-  xy: 1288, 256
+  xy: 1016, 220
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Cavern
   rotate: false
-  xy: 1360, 256
+  xy: 1088, 220
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Cavern2
   rotate: false
-  xy: 1432, 256
+  xy: 1160, 220
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Citadel
   rotate: false
-  xy: 1504, 328
+  xy: 1232, 220
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/NorthCastleF
   rotate: false
-  xy: 1504, 328
+  xy: 1232, 220
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Citrus
   rotate: false
-  xy: 1504, 256
+  xy: 1304, 220
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Coal
   rotate: false
-  xy: 1636, 492
+  xy: 1376, 220
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Coast Waves
   rotate: false
-  xy: 1612, 428
+  xy: 1772, 600
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/CoastTile
   rotate: false
-  xy: 1700, 636
+  xy: 1844, 648
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Copper
   rotate: false
-  xy: 1672, 564
+  xy: 1448, 220
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Cotton
   rotate: false
-  xy: 1708, 492
+  xy: 1780, 528
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Darunia Town
   rotate: false
-  xy: 1684, 420
+  xy: 1540, 420
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Desert Town
   rotate: false
-  xy: 1684, 420
+  xy: 1540, 420
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Mido Town
   rotate: false
-  xy: 1684, 420
+  xy: 1540, 420
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Deep Ocean
   rotate: false
-  xy: 1772, 636
+  xy: 1540, 356
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Desert
   rotate: false
-  xy: 1744, 564
+  xy: 1612, 420
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Desert+Hill
   rotate: false
-  xy: 1816, 564
+  xy: 1612, 348
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Desert+Hill2
   rotate: false
-  xy: 1816, 564
+  xy: 1612, 348
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Desert2
   rotate: false
-  xy: 1780, 492
+  xy: 1684, 420
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Desert3
   rotate: false
-  xy: 1756, 420
+  xy: 1540, 284
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Fallout
   rotate: false
-  xy: 1852, 492
+  xy: 1684, 348
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Fallout2
   rotate: false
-  xy: 1828, 420
+  xy: 1612, 276
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Fallout3
   rotate: false
-  xy: 1964, 820
+  xy: 1684, 276
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Fallout4
   rotate: false
-  xy: 1964, 748
+  xy: 1916, 712
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
@@ -468,217 +475,217 @@ TileSets/HexaRealm/Tiles/Forage
   index: -1
 TileSets/HexaRealm/Tiles/Force
   rotate: false
-  xy: 628, 228
+  xy: 1916, 648
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/ForestG
   rotate: false
-  xy: 628, 156
+  xy: 556, 136
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Foundation
   rotate: false
-  xy: 700, 220
+  xy: 1520, 212
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Furs
   rotate: false
-  xy: 772, 220
+  xy: 1592, 204
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Gems
   rotate: false
-  xy: 844, 220
+  xy: 1664, 204
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Gold Ore
   rotate: false
-  xy: 916, 220
+  xy: 1780, 456
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Grassland
   rotate: false
-  xy: 988, 220
+  xy: 1756, 384
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Grassland2
   rotate: false
-  xy: 988, 220
+  xy: 1756, 384
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Grassland3
   rotate: false
-  xy: 988, 220
+  xy: 1756, 384
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Grassland Town
   rotate: false
-  xy: 1060, 220
+  xy: 1756, 312
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Kasuto Town
   rotate: false
-  xy: 1060, 220
+  xy: 1756, 312
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Rauru Town
   rotate: false
-  xy: 1060, 220
+  xy: 1756, 312
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Great Palace
   rotate: false
-  xy: 1132, 220
+  xy: 1756, 240
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/GreatPalace7
   rotate: false
-  xy: 1132, 220
+  xy: 1756, 240
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/GreatPalace
   rotate: false
-  xy: 700, 148
+  xy: 1964, 820
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/GreatPalace1
   rotate: false
-  xy: 700, 148
+  xy: 1964, 820
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Parapa Palace
   rotate: false
-  xy: 700, 148
+  xy: 1964, 820
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/GreatPalace2
   rotate: false
-  xy: 772, 148
+  xy: 556, 64
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Midoro Palace
   rotate: false
-  xy: 772, 148
+  xy: 556, 64
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/GreatPalace3
   rotate: false
-  xy: 844, 148
+  xy: 628, 136
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Island Palace
   rotate: false
-  xy: 844, 148
+  xy: 628, 136
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/GreatPalace4
   rotate: false
-  xy: 916, 148
+  xy: 628, 64
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Maze Palace
   rotate: false
-  xy: 916, 148
+  xy: 628, 64
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/GreatPalace5
   rotate: false
-  xy: 988, 148
+  xy: 700, 148
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Sea Palace
   rotate: false
-  xy: 988, 148
+  xy: 700, 148
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/GreatPalace6
   rotate: false
-  xy: 1060, 148
+  xy: 772, 148
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/ThreeEye Rock Palace
   rotate: false
-  xy: 1060, 148
+  xy: 772, 148
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/GreatPalaceF
   rotate: false
-  xy: 1132, 148
+  xy: 700, 76
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/GreatPalaceF1
   rotate: false
-  xy: 1132, 148
+  xy: 700, 76
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/GreatPalaceF2
   rotate: false
-  xy: 628, 84
+  xy: 700, 4
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/GreatPalaceF3
   rotate: false
-  xy: 700, 76
+  xy: 844, 148
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
@@ -692,511 +699,511 @@ TileSets/HexaRealm/Tiles/GreatPalaceF4
   index: -1
 TileSets/HexaRealm/Tiles/GreatPalaceF5
   rotate: false
-  xy: 844, 76
+  xy: 772, 4
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/GreatPalaceF6
   rotate: false
-  xy: 916, 76
+  xy: 916, 148
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/GreatPalaceF7
   rotate: false
-  xy: 988, 76
+  xy: 844, 76
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Hill
   rotate: false
-  xy: 1060, 76
+  xy: 844, 4
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Horses
   rotate: false
-  xy: 1132, 76
+  xy: 988, 148
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Incense
   rotate: false
-  xy: 1204, 184
+  xy: 916, 76
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Iron
   rotate: false
-  xy: 1204, 112
+  xy: 916, 4
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Ivory
   rotate: false
-  xy: 1276, 184
+  xy: 1060, 148
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Kasuto Ruins
   rotate: false
-  xy: 1276, 112
+  xy: 988, 76
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Landmark
   rotate: false
-  xy: 1348, 184
+  xy: 988, 4
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Town
   rotate: false
-  xy: 1348, 184
+  xy: 988, 4
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Marble
   rotate: false
-  xy: 1348, 112
+  xy: 1132, 148
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Marsh
   rotate: false
-  xy: 1420, 184
+  xy: 1060, 76
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Marsh2
   rotate: false
-  xy: 1420, 112
+  xy: 1060, 4
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Marsh3
   rotate: false
-  xy: 1492, 184
+  xy: 1204, 148
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Mound
   rotate: false
-  xy: 1492, 112
+  xy: 1132, 76
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Mountain
   rotate: false
-  xy: 612, 4
+  xy: 1132, 4
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Mountain2
   rotate: false
-  xy: 684, 4
+  xy: 1276, 148
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Nabooru Town
   rotate: false
-  xy: 756, 4
+  xy: 1204, 76
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Plains Town
   rotate: false
-  xy: 756, 4
+  xy: 1204, 76
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Ruto Town
   rotate: false
-  xy: 756, 4
+  xy: 1204, 76
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Saria Town
   rotate: false
-  xy: 756, 4
+  xy: 1204, 76
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/North Castle
   rotate: false
-  xy: 828, 4
+  xy: 1204, 4
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/NorthCastle
   rotate: false
-  xy: 828, 4
+  xy: 1204, 4
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/NorthCastleFGlow
   rotate: false
-  xy: 900, 4
+  xy: 1348, 148
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/NorthCastleGlow
   rotate: false
-  xy: 972, 4
+  xy: 1276, 76
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/OceanTile
   rotate: false
-  xy: 1044, 12
+  xy: 1420, 156
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Oil
   rotate: false
-  xy: 1116, 4
+  xy: 1276, 4
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/OilS
   rotate: false
-  xy: 1188, 4
+  xy: 1348, 76
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/PalaceGlow
   rotate: false
-  xy: 1260, 40
+  xy: 1348, 4
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Plains
   rotate: false
-  xy: 1332, 40
+  xy: 1420, 84
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Plains2
   rotate: false
-  xy: 1332, 40
+  xy: 1420, 84
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Plains3
   rotate: false
-  xy: 1332, 40
+  xy: 1420, 84
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/River-Bottom
   rotate: false
-  xy: 1476, 48
+  xy: 1492, 148
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/River-BottomLeft
   rotate: false
-  xy: 1612, 364
+  xy: 1492, 84
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/River-BottomRight
   rotate: false
-  xy: 1684, 356
+  xy: 1492, 20
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Salt
   rotate: false
-  xy: 1756, 348
+  xy: 1564, 132
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Silk
   rotate: false
-  xy: 1828, 348
+  xy: 1564, 60
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Silver
   rotate: false
-  xy: 1576, 292
+  xy: 1636, 132
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Slog mud
   rotate: false
-  xy: 1992, 948
+  xy: 1564, 20
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Slog mud2
   rotate: false
-  xy: 1992, 908
+  xy: 1924, 200
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Slog mud3
   rotate: false
-  xy: 1916, 680
+  xy: 1780, 8
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Slog mud4
   rotate: false
-  xy: 1900, 452
+  xy: 1852, 72
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Smelter
   rotate: false
-  xy: 1576, 220
+  xy: 1636, 60
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Stone
   rotate: false
-  xy: 1564, 156
+  xy: 1708, 140
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Trap
   rotate: false
-  xy: 1564, 84
+  xy: 1708, 68
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Trap2
   rotate: false
-  xy: 1648, 284
+  xy: 1852, 576
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Tundra
   rotate: false
-  xy: 1648, 212
+  xy: 1852, 504
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Tundra2
   rotate: false
-  xy: 1648, 212
+  xy: 1852, 504
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Tundra3
   rotate: false
-  xy: 1648, 212
+  xy: 1852, 504
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Uranium
   rotate: false
-  xy: 1636, 140
+  xy: 1924, 576
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Wheat
   rotate: false
-  xy: 1636, 68
+  xy: 1924, 504
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Work district
   rotate: false
-  xy: 1720, 284
+  xy: 1708, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Work district-Industrial era
   rotate: false
-  xy: 1720, 212
+  xy: 1852, 432
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Work district-Pillaged
   rotate: false
-  xy: 1708, 140
+  xy: 1924, 432
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 UnitIcons/Bunker Buster
   rotate: false
-  xy: 1564, 672
+  xy: 1856, 892
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 UnitIcons/Caveman
   rotate: false
-  xy: 676, 400
+  xy: 548, 208
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Giant Death Robot MK-II
   rotate: false
-  xy: 520, 100
+  xy: 1324, 400
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Giant Death Robot MK-III
   rotate: false
-  xy: 892, 400
+  xy: 1432, 400
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Nomad
   rotate: false
-  xy: 1324, 400
+  xy: 676, 292
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Nuclear Bunker Buster
   rotate: false
-  xy: 1856, 892
+  xy: 412, 180
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Adventurer
   rotate: false
-  xy: 412, 208
+  xy: 676, 400
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Downward Thrust
   rotate: false
-  xy: 1564, 564
+  xy: 784, 400
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Fairy
   rotate: false
-  xy: 1700, 700
+  xy: 892, 400
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Fire
   rotate: false
-  xy: 520, 208
+  xy: 1108, 400
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Jump
   rotate: false
-  xy: 1000, 400
+  xy: 1564, 492
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Life
   rotate: false
-  xy: 1108, 400
+  xy: 1672, 492
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Magic Key
   rotate: false
-  xy: 1216, 400
+  xy: 1856, 784
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Reflect
   rotate: false
-  xy: 1856, 784
+  xy: 892, 292
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Shield
   rotate: false
-  xy: 676, 292
+  xy: 1000, 292
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Spell
   rotate: false
-  xy: 892, 292
+  xy: 1216, 292
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Thunder
   rotate: false
-  xy: 1000, 292
+  xy: 1324, 292
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Upward Thrust
   rotate: false
-  xy: 1108, 292
+  xy: 1432, 292
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
