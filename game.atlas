@@ -111,84 +111,84 @@ TileSets/FantasyHex/Units/Nomad
   index: -1
 TileSets/FantasyHex/Units/Worker
   rotate: false
-  xy: 1792, 212
+  xy: 1792, 284
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Atomic era
   rotate: false
-  xy: 1864, 284
+  xy: 1708, 76
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Classical era
   rotate: false
-  xy: 1864, 220
+  xy: 1792, 220
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Future era
   rotate: false
-  xy: 1548, 4
+  xy: 1864, 284
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Generic era
   rotate: false
-  xy: 1620, 4
+  xy: 1864, 220
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Pioneer era
   rotate: false
-  xy: 1620, 4
+  xy: 1864, 220
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Industrial era
   rotate: false
-  xy: 1692, 4
+  xy: 1548, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Information era
   rotate: false
-  xy: 1808, 720
+  xy: 1620, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Medieval era
   rotate: false
-  xy: 1880, 720
+  xy: 1692, 4
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Modern era
   rotate: false
-  xy: 1844, 656
+  xy: 1808, 720
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Prehistoric era
   rotate: false
-  xy: 1916, 656
+  xy: 1880, 720
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Renaissance era
   rotate: false
-  xy: 1888, 592
+  xy: 1844, 656
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
@@ -979,7 +979,7 @@ TileSets/HexaRealm/Tiles/Slog mud2
   index: -1
 TileSets/HexaRealm/Tiles/Slog mud3
   rotate: false
-  xy: 1960, 616
+  xy: 1916, 680
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
@@ -1061,16 +1061,16 @@ TileSets/HexaRealm/Tiles/Work district
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Work district-Industrial-era
+TileSets/HexaRealm/Tiles/Work district-Industrial era
   rotate: false
-  xy: 1720, 220
-  size: 64, 56
-  orig: 64, 56
+  xy: 1720, 212
+  size: 64, 64
+  orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Work district-Pillaged
   rotate: false
-  xy: 1792, 276
+  xy: 1708, 140
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
