@@ -306,7 +306,26 @@
 		],
 		"attackSound": "shipguns",
 	},
-
+	{
+		"name": "Missile Cruiser",
+		"unitType": "Ranged Water",
+		"movement": 7,
+		"strength": 80,
+		"rangedStrength": 100,
+		"range": 3,
+		"interceptRange": 2,
+		"cost": 425,
+		"requiredTech": "Robotics",
+		"uniques": [
+			"[100]% chance to intercept air attacks",
+			"Can see invisible [Submarine] units",
+			"Can carry [3] [Missile] units",
+			"[+100]% Strength <vs [Submarine] units>",
+			"Never appears as a Barbarian unit", 
+		],
+		"promotions": ["Indirect Fire"],
+		"attackSound": "missile"
+	},
 // Ordnance //
 	
 	{
@@ -360,6 +379,27 @@
 		"attackSound": "torpedo",
 	},
 	{
+		"name": "Atomic Bomb",
+		"unitType": "Atomic Bomber",
+		"movement": 1,
+		"strength": 150,
+		"rangedStrength": 150,
+		"range": 10,
+		"cost": 600,
+		"requiredTech": "Nuclear Fission",
+		"requiredResource": "Uranium",
+		"promotions" : [], // "Evasion"
+		"uniques": [
+			"Nuclear weapon of Strength [1]",
+			"Only available <if [Manhattan Project] is constructed>",
+			"Self-destructs when attacking",
+			"Blast radius [2]", 
+		],
+		"attackSound": "nuke"
+		// Plane rather than a missile - can be based in city or Carrier only.
+		// Can be intercepted, but must die for it not to take effect.
+	},
+	{
 		"name": "Nuclear Missile",
 		"unitType": "Atomic Payload",  // vs old missile unittype, don't want these roving about without clearance
 		"movement": 1,
@@ -377,7 +417,7 @@
 			"Only available <after discovering [Computers]>",
 			"Destroys tile improvements when attacking",
 			"Blast radius [2]",
-			"Consumes [2] [Uranium]"
+			"Consumes [2] [Uranium]", 
 		],
 		"attackSound": "nuke",
 	},
@@ -429,7 +469,7 @@
 	},
 	{
 		"name": "TSAR Nuclear Bomb",  // ultimate WMD (til the orbital kinetic weapon platform is built...tbd) 
-		"unitType": "Atomic Payload",  // need to make a new unitType for heavy WMD's
+		"unitType": "Atomic Bomber",  // need to make a new unitType for heavy WMD's
 		"movement": 1,
 		"strength": 75,
 		"rangedStrength": 500,
@@ -1635,12 +1675,19 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"unitType": "Siege",
 		"movement": 2,
 		"strength": 14,
-		"rangedStrength": 20,
+		"rangedStrength": 36,
 		"cost": 185,
 		"requiredTech": "Chemistry",
+		"requiredResource": "Iron",
 		"upgradesTo": "Artillery",
 		"obsoleteTech": "Dynamite",
-		"uniques": ["[+200]% Strength <vs cities> <when attacking>","No defensive terrain bonus","Must set up to ranged attack","[-1] Sight","Never appears as a Barbarian unit"],
+		"uniques": [
+			"[+150]% Strength <vs cities> <when attacking>",
+			"No defensive terrain bonus",
+			"Must set up to ranged attack",
+			"[-1] Sight",
+			"Never appears as a Barbarian unit",
+		],
 		"attackSound": "cannon"
 	},
 
@@ -1652,7 +1699,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"range": 1,
 		"movement": 2,
 		"strength": 30,
-		"rangedStrength": 30,
+		"rangedStrength": 40,
 		"cost": 225,
 		"requiredTech": "Industrialization",
 		"upgradesTo": "Machine Gun",
@@ -1723,15 +1770,21 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"unitType": "Siege",
 		"movement": 2,
 		"strength": 21,
-		"rangedStrength": 28,
+		"rangedStrength": 60,
 		"range": 3,
 		"cost": 320,
+		"requiredResource": "Iron",
 		"requiredTech": "Dynamite",
-		"upgradesTo": "Rocket Artillery",
-		"uniques": ["[+200]% Strength <vs cities> <when attacking>","No defensive terrain bonus",
-			"Must set up to ranged attack","[-1] Sight", "Never appears as a Barbarian unit"],
+		// "upgradesTo": "Rocket Artillery",
+		"uniques": [
+			"[+150]% Strength <vs cities> <when attacking>",
+			"No defensive terrain bonus",
+			"Must set up to ranged attack",
+			"[-1] Sight",
+			"Never appears as a Barbarian unit",
+		],
 		"promotions": ["Indirect Fire"],
-		"attackSound": "artillery"
+		"attackSound": "artillery",
 	},
 
 	// Modern era
@@ -1743,10 +1796,16 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"strength": 35,
 		"rangedStrength": 60,
 		"cost": 325,
+		"requiredResource": "Iron",
 		"requiredTech": "Refrigeration",
 		"upgradesTo": "Nuclear Submarine",
-		"uniques": ["[+75]% Strength <when attacking>", "Can only attack [Water] tiles", "Never appears as a Barbarian unit"],
-		"attackSound": "torpedo"
+		"uniques": [
+			"[+75]% Strength <when attacking>",
+			"Can only attack [Water] tiles", 
+			"Never appears as a Barbarian unit",
+			"May withdraw before melee ([30]%)",
+		],
+		"attackSound": "torpedo",
 	},
 	{
 		"name": "Great War Infantry",
@@ -1757,7 +1816,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"requiredTech": "Replaceable Parts",
 		"upgradesTo": "Infantry",
 		"obsoleteTech": "Plastics",
-		"attackSound": "shot"
+		"attackSound": "shot",
 	},
 	{
 		"name": "Foreign Legion",
@@ -1815,30 +1874,6 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"attackSound": "shot"
 	},
 	{
-		"name": "Carrier",
-		"unitType": "Aircraft Carrier",
-		"movement": 5,
-		"strength": 40,
-		"cost": 375,
-		"requiredTech": "Electronics",
-		"uniques": ["Cannot attack", "Can carry [2] [Aircraft] units"]
-	},
-	{
-		"name": "Battleship",
-		"unitType": "Ranged Water",
-		"movement": 5,
-		"strength": 55,
-		"rangedStrength": 55,
-		"range": 3,
-		"cost": 375,
-		"requiredResource": "Oil",
-		"requiredTech": "Electronics",
-		"uniques": ["Never appears as a Barbarian unit"],
-		"promotions": ["Indirect Fire"],
-		"attackSound": "shipguns"
-		// Does not actually upgrade to Missile Cruisers
-	},
-	{
 		"name": "Machine Gun",
 		"unitType": "Ranged Gunpowder",
 		"range": 1,
@@ -1847,7 +1882,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"rangedStrength": 60,
 		"cost": 350,
 		"requiredTech": "Ballistics",
-		"upgradesTo": "Mechanized Infantry",
+		// "upgradesTo": "Mechanized Infantry",
 		"attackSound": "machinegun"
 		// Upgrades to Bazooka in BNW
 	},
@@ -1871,23 +1906,11 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"strength": 60,
 		"cost": 350,
 		"requiredTech": "Combustion",
-		"requiredResource": "Oil",
+		"requiredResource": "Iron",
 		"upgradesTo": "Tank",
 		"obsoleteTech": "Combined Arms",
 		"uniques": ["Can move after attacking","No defensive terrain bonus", "Never appears as a Barbarian unit"],
 		"attackSound": "tankshot"
-	},
-	{
-		"name": "Destroyer",
-		"unitType": "Melee Water",
-		"movement": 6,
-		"strength": 55,
-		"interceptRange": 2,
-		"cost": 375,
-		"requiredTech": "Combustion",
-		"uniques": ["Can see invisible [Submarine] units", "[40]% chance to intercept air attacks",
-			"May withdraw before melee ([80]%)", "[+100]% Strength <vs [Submarine] units>"],
-		"attackSound": "shipguns"
 	},
 
 	// Atomic Era
@@ -1912,7 +1935,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"range": 8,
 		"interceptRange": 8,
 		"cost": 375,
-		"requiredTech": "Radar",
+		"requiredTech": "Rdar",
 		"requiredResource": "Oil",
 		"upgradesTo": "Jet Fighter",
 		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>"],
@@ -1976,18 +1999,6 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		// upgradesTo "XCOM Squad", "No Movement Cost to Pillage" in BNW
 	},
 	{
-		"name": "Tank",
-		"unitType": "Armored",
-		"movement": 5,
-		"strength": 70,
-		"cost": 375,
-		"requiredTech": "Combined Arms",
-		"requiredResource": "Oil",
-		"upgradesTo": "Modern Armor",
-		"uniques": ["Can move after attacking","No defensive terrain bonus", "Never appears as a Barbarian unit"],
-		"attackSound": "tankshot"
-	},
-	{
 		"name": "Panzer",
 		"unitType": "Armored",
 		"uniqueTo": "Germany",
@@ -2014,23 +2025,6 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"attackSound": "machinegun"
 	},
 	{
-		"name": "Atomic Bomb",
-		"unitType": "Atomic Bomber",
-		"movement": 1,
-		"strength": 150,
-		"rangedStrength": 150,
-		"range": 10,
-		"cost": 600,
-		"requiredTech": "Nuclear Fission",
-		"requiredResource": "Uranium",
-		"promotions" : ["Evasion"],
-		"uniques": ["Nuclear weapon of Strength [1]", "Only available <if [Manhattan Project] is constructed>", "Self-destructs when attacking",
-			"Blast radius [2]"],
-		"attackSound": "nuke"
-		// Plane rather than a missile - can be based in city or Carrier only.
-		// Can be intercepted, but must die for it not to take effect.
-	},
-	{
 		"name": "Rocket Artillery",
 		"unitType": "Siege",
 		"movement": 2,
@@ -2045,71 +2039,8 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"promotions": ["Indirect Fire"],
 		"attackSound": "artillery"
 	},
-	{
-		"name": "Mobile SAM",
-		"unitType": "Gunpowder",
-		"movement": 3,
-		"interceptRange": 2,
-		"strength": 65,
-		"cost": 425,
-		"requiredTech": "Rocketry",
-		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Air] units>",
-			"[+150]% Strength <vs [Helicopter] units>", "Never appears as a Barbarian unit"],
-		"attackSound": "missile"
-	},
-	{
-		"name": "Guided Missile",
-		"unitType": "Missile",
-		"movement": 1,
-		"strength": 60,
-		"rangedStrength": 60,
-		"range": 8,
-		"cost": 150,
-		"requiredTech": "Advanced Ballistics",
-		"uniques": ["[-100]% maintenance costs"],
-		"attackSound": "missile"
-	},
-	{
-		"name": "Nuclear Missile",
-		"unitType": "Missile",
-		"movement": 1,
-		"strength": 300,
-		"rangedStrength": 300,
-		"range": 12,
-		"cost": 1000,
-		"requiredTech": "Advanced Ballistics",
-		"uniques": ["Nuclear weapon of Strength [2]", "Only available <if [Manhattan Project] is constructed>",
-			"Blast radius [2]", "Consumes [2] [Uranium]"],
-		"attackSound": "nuke"
-	},
-	{
-		// "Hovering unit" unique gives ability to get into impassable tiles - and only that (no vision bonus or flying over ocean)
-		// Unit embarks like any other ground unit and has penalty for attacking over river or from embarked state
-		"name": "Helicopter Gunship",
-		"unitType": "Helicopter",
-		"movement": 6,
-		"strength": 60,
-		"cost": 425,
-		"requiredTech": "Computers",
-		"requiredResource": "Aluminum",
-		"uniques": ["[+100]% Strength <vs [Armored] units>", "No defensive terrain bonus", "Can move after attacking",
-			"All tiles cost 1 movement", "Ignores Zone of Control", "Unable to capture cities", "Never appears as a Barbarian unit"],
-		"attackSound": "machinegun"
-	},
 
 	// Information Era
-	{
-		"name": "Nuclear Submarine",
-		"unitType": "Submarine",
-		"movement": 6,
-		"strength": 50,
-		"range": 3,
-		"rangedStrength": 85,
-		"cost": 425,
-		"requiredTech": "Telecommunications",
-		"uniques": ["[+75]% Strength <when attacking>", "Can only attack [Water] tiles", "[+1] Sight", "Can carry [2] [Missile] units", "Never appears as a Barbarian unit"],
-		"attackSound": "torpedo"
-	},
 	{
 		"name": "Mechanized Infantry",
 		"unitType": "Gunpowder",
@@ -2121,56 +2052,18 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"attackSound": "tankshot"
 	},
 	{
-		"name": "Missile Cruiser",
-		"unitType": "Ranged Water",
-		"movement": 7,
-		"strength": 80,
-		"rangedStrength": 100,
-		"range": 3,
-		"interceptRange": 2,
-		"cost": 425,
-		"requiredTech": "Robotics",
-		"uniques": ["[100]% chance to intercept air attacks", "Can see invisible [Submarine] units",
-			"Can carry [3] [Missile] units", "[+100]% Strength <vs [Submarine] units>", "Never appears as a Barbarian unit"],
-		"promotions": ["Indirect Fire"],
-		"attackSound": "shipguns"
-	},
-	{
-		"name": "Modern Armor",
-		"unitType": "Armored",
-		"movement": 5,
-		"strength": 100,
-		"cost": 425,
-		"requiredTech": "Lasers",
-		"requiredResource": "Aluminum",
-		"upgradesTo": "Giant Death Robot",
-		"uniques": ["Can move after attacking", "No defensive terrain bonus", "Never appears as a Barbarian unit"],
-		"attackSound": "tankshot"
-	},
-	{
 		"name": "Jet Fighter",
 		"unitType": "Fighter",
 		"movement": 1,
 		"strength": 75,
 		"rangedStrength": 75,
 		"range": 10,
-		"interceptRange": 10,
+		"interceptRange":10,
 		"cost": 425,
 		"requiredTech": "Lasers",
 		"requiredResource": "Aluminum",
 		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>"],
 		"attackSound": "jetgun"
-	},
-	{
-		"name": "Giant Death Robot",
-		"unitType": "Armored",
-		"movement": 5,
-		"strength": 150,
-		"cost": 425,
-		"requiredTech": "Nuclear Fusion",
-		"requiredResource": "Uranium",
-		"uniques": ["Can move after attacking", "No defensive terrain bonus", "Never appears as a Barbarian unit"],
-		"attackSound": "gdrAttack"
 	},
 	{
 		"name": "Stealth Bomber",
