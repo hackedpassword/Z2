@@ -462,6 +462,7 @@
 			"[+200]% Strength <vs cities>",  // meant to one-shot even hardened cities
 			"Blast radius [0]",  // single tile
 			"Nuclear weapon of Strength [3]",  // minimum needed to demolish city
+			"Only available <if [Manhattan Project] is constructed>",
 			"Consumes [2] [Uranium]",
 			"Consumes [1] [Aluminum]"
 		],
