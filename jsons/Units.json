@@ -524,7 +524,7 @@
 		"strength": 225,
 		"cost": 805,
 		"requiredTech": "Nanotechnology",  // several other requirements below
-		"requiredResource": "Uranium",
+		"requiredResource": "Uranium",  // civopedia is confused: reqRes(1) + Consumes(2) = 3U? Must decipher correct usage.
 		"promotions": [],
 		"uniques": [
 			"[450]% maintenance costs",  // very costly to operate
