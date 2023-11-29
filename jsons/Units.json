@@ -190,7 +190,7 @@
 		"promotions": ["Indirect Fire"],
 		"attackSound": "tankshot",
 	},
-	{
+	{  // #todo build an Osprey 
 		"name": "Helicopter Gunship",
 		"unitType": "Helicopter",
 		"movement": 7,
