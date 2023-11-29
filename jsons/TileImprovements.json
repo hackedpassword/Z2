@@ -63,7 +63,7 @@
 		"techRequired": "Construction",
 		"uniques": [
 			"[+1 Production] <with [25]% chance>",  // bonus baseline
-			// "[+1 Production] <with [50]% chance> <after discovering [Iron Working]>",
+			"[+1 Production] <after discovering [Iron Working]> <with [1] to [6] neighboring [Work district] tiles>",
 			"[+1 Production] <with [50]% chance> <after discovering [Machinery]> <with [2] to [6] neighboring [Work district] tiles>",
 			"[+1 Production] <with [50]% chance> <after discovering [Industrialization]> <with [3] to [6] neighboring [Work district] tiles>",
 			"[-2 Production] <when at war>",
