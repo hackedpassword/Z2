@@ -1,9 +1,21 @@
 [
-// Notes: Z2 is not currently meant for random map generation and has all map-gen uniques removed.
 
 /*
-These mod checker warnings cannot currently be suppressed. All derive from hybrid tiles. 
+Design Notes:
 
+Z2 is not currently meant for random map generation and has all map-gen uniques removed.
+
+Ruleset base originates in G&K.
+	
+You'll see <within [3] tiles of a [City center]> on most resources.
+Visually, this retains the clean presentation of the Z2 map by not spamming the landscape with resource icons. 
+
+Most resources also have <with [X]% chance> because I am not guaranteeing per-tile resources.
+The motivation here is per year(turn) conditions change, thus a resource may be more/less plentiful next year. 
+Also, allows for bonus resources including rare bonuses, like Gold in grasslands (2% chance), or
+stacking bonuses as seen in Caverns.
+
+These mod checker warnings cannot currently be suppressed. All derive from hybrid tiles. 
 	CoastTile turns into terrain Force which is not a base terrain!
 	OceanTile turns into terrain Force which is not a base terrain!
 	Bridge1ocean turns into terrain Force which is not a base terrain!
@@ -15,6 +27,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 	BridgeFL occurs on natural wonder CoastTile: Unsupported.
 	BridgeFL occurs on natural wonder OceanTile: Unsupported.
 	BridgeFR occurs on natural wonder CoastTile: Unsupported.
+
 */
 	
 
@@ -45,21 +58,21 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"Rough terrain",
 			"Units ending their turn on this terrain take [15] damage <with [20]% chance>",  // enemies amidst
 			"Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
-		        "Has an elevation of [1] for visibility calculations",
+		        "Has an elevation of [-1] for visibility calculations",  // testing negative vis
 			"Blocks line-of-sight from tiles at same elevation", 
-			"[+1 Gold] <with [5]% chance> <before discovering [Fire]>",
-			"[+1 Gold] <with [5]% chance> <after discovering [Fire]>",  // From here down, gaining gold from Cavern can reap big rewards
-			"[+1 Gold] <with [10]% chance> <after discovering [Tools]>",
-			"[+1 Gold] <with [20]% chance> <after discovering [Mining]>",
-			"[+1 Gold] <with [15]% chance> <after discovering [Construction]>",
-			"[+1 Gold] <with [10]% chance> <after discovering [Guilds]>",
-			"[+1 Gold] <with [15]% chance> <after discovering [Metallurgy]>",
-			"[+1 Gold] <with [20]% chance> <after discovering [Chemistry]>",
-			"[+1 Gold] <with [10]% chance> <after discovering [Dynamite]>",
-			"[+1 Gold] <with [15]% chance> <after discovering [Radar]>",
-			"[+1 Gold] <with [10]% chance> <after discovering [Ecology]>",  // smarter earthlings means better earth
-			"[+1 Gold] <with [15]% chance> <after discovering [Lasers]>",
-			"[+1 Food] <with [5]% chance>",  // same output as desert
+			"[+1 Gold] <with [5]% chance> <before discovering [Fire]> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <with [5]% chance> <after discovering [Fire]> <within [3] tiles of a [City center]>",  // From here down, gaining gold from Cavern can reap big rewards
+			"[+1 Gold] <with [10]% chance> <after discovering [Tools]> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <with [20]% chance> <after discovering [Mining]> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <with [15]% chance> <after discovering [Construction]> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <with [10]% chance> <after discovering [Guilds]> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <with [15]% chance> <after discovering [Metallurgy]> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <with [20]% chance> <after discovering [Chemistry]> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <with [10]% chance> <after discovering [Dynamite]> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <with [15]% chance> <after discovering [Radar]> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <with [10]% chance> <after discovering [Ecology]> <within [3] tiles of a [City center]>",  // smarter earthlings means better earth
+			"[+1 Gold] <with [15]% chance> <after discovering [Lasers]> <within [3] tiles of a [City center]>",
+			"[+1 Food] <with [5]% chance> <within [3] tiles of a [City center]>",  // same output as desert
 			// "[+1 Gold] <with [5]% chance>",
 			// "[+1 Culture] <with [10]% chance>",
 			// "[+1 Happiness] <with [10]% chance>",
@@ -113,12 +126,12 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"RGB": [128, 208, 16],
 		"uniques": [
 		// base tiles providing scaling and dynamic resources
-			"[+1 Food] <with [25]% chance> <before discovering [Tools]>",  // poor food source initially
-			"[+1 Food] <with [50]% chance> <after discovering [Tools]> <before discovering [Animal Husbandry]>",
-			"[+1 Food] <with [50]% chance> <after discovering [Animal Husbandry]>",
-			"[+1 Food] <with [50]% chance> <after discovering [Calendar]>",  // up to +4 food at this point
-			"[+1 Production] <with [10]% chance>",
-			"[+1 Gold] <with [10]% chance>",  // For some reason all these (here down) hit at once
+			"[+1 Food] <with [25]% chance> <before discovering [Tools]> <within [3] tiles of a [City center]>",  // poor food source initially
+			"[+1 Food] <with [50]% chance> <after discovering [Tools]> <before discovering [Animal Husbandry]> <within [3] tiles of a [City center]>",
+			"[+1 Food] <with [50]% chance> <after discovering [Animal Husbandry]> <within [3] tiles of a [City center]>",
+			"[+1 Food] <with [50]% chance> <after discovering [Calendar]> <within [3] tiles of a [City center]>",  // up to +4 food at this point
+			"[+1 Production] <with [10]% chance> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <with [2]% chance> <within [3] tiles of a [City center]>",  // For some reason all these (here down) hit at once
 			// "[+1 Culture] <with [10]% chance>",
 			// "[+1 Happiness] <with [10]% chance>",
 			// "[+1 Faith] <with [10]% chance>",
@@ -159,16 +172,16 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"RGB": [252, 188, 176],
 		"uniques": [
 		// base tiles providing scaling and dynamic resources
-			"[+1 Production] <with [10]% chance> <before discovering [The Wheel]>",  // poor production source initially
-			"[+1 Production] <with [25]% chance> <after discovering [The Wheel]> <before discovering [Mining]>",
-			// "[+1 Production] <with [90]% chance> <after discovering [Mining]>",
-			"[+1 Production] <with [50]% chance> <after discovering [Engineering]>",
-			"[+1 Food] <with [10]% chance>",
-			"[+10 Gold] <with [1]% chance>",  // treasure
+			"[+1 Production] <with [10]% chance> <before discovering [The Wheel]> <within [3] tiles of a [City center]>",  // poor production source initially
+			"[+1 Production] <with [25]% chance> <after discovering [The Wheel]> <before discovering [Mining]> <within [3] tiles of a [City center]>",
+			// "[+1 Production] <with [90]% chance> <after discovering [Mining]> <within [3] tiles of a [City center]>",
+			"[+1 Production] <with [50]% chance> <after discovering [Engineering]> <within [3] tiles of a [City center]>",
+			"[+1 Food] <with [10]% chance> <within [3] tiles of a [City center]>",
+			"[+10 Gold] <with [1]% chance> <within [3] tiles of a [City center]>",  // treasure
 			// "[+1 Culture] <with [10]% chance>",
 			// "[+1 Happiness] <with [10]% chance>",
 			"[+1 Faith] <with [5]% chance>",
-			// "Tile provides yield without assigned population <with [5]% chance>",  // jackpot resource provides all currently available
+			// "Tile provides yield without assigned population <with [5]% chance>",  // glitch: circumvents chance, provides all. Purpose: jackpot resource provides all currently available
 		],
 	},
 	{
@@ -190,12 +203,12 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"name": "Tundra",
 		"type": "Land",
 		"movementCost": 1,
-		"RGB": [200, 76, 12],
 		"uniques": [
 			"Rough terrain",
 			"[+1 Science] <with [20]% chance> <within [3] tiles of a [City center]>",
 			"[+1 Food] <with [20]% chance> <within [3] tiles of a [City center]>",
 		],
+		"RGB": [200, 76, 12],
 	},
 
 //////////////////////////
@@ -205,8 +218,6 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 	{
 		"name": "Forest",
 		"type": "TerrainFeature",
-		// "production": 2,
-		// "food": 1,
 		"movementCost": 2,
 		"overrideStats": true,
 		"unbuildable": true,
@@ -231,15 +242,14 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"defenceBonus": -0.15,
 		"occursOn": ["Grassland"],
 		"uniques": [
-			"Rough terrain", "Vegetation",
-			"[40]% Chance to be destroyed by nukes",
+			"Rough terrain", "Vegetation",  // the heck does vegetation even do? 
 		],
 	},
 	{
 	// make mods to this later. There's only 2 hills in the map, so not a big deal
 		"name": "Hill",
 		"type": "TerrainFeature",
-		"production": 5,
+		// "production": 5,
 		"movementCost": 2,
 		"overrideStats": true,
 		"defenceBonus": 0.25,
@@ -248,21 +258,23 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"Rough terrain",
 			"[+10] Strength for cities built on this terrain",
 			"Blocks line-of-sight from tiles at same elevation",
+			"[+5 Production] <within [3] tiles of a [City center]>",
 			// "Has an elevation of [1] for visibility calculations",
 		],
 	},
 	{  // mirrors Hill, different sprite, could have different resources than Hill
 		"name": "Mound",
 		"type": "TerrainFeature",
-		"gold": 5,
+		// "gold": 5,
 		"movementCost": 2,
 		"overrideStats": true,
 		"defenceBonus": 0.25,
-		"occursOn": ["Tundra","Plains","Grassland","Desert","Mountain"],
+		"occursOn": ["Tundra","Plains","Grassland","Desert"],
 		"uniques": [
 			"Rough terrain",
-			"[+5] Strength for cities built on this terrain",
+			"[+10] Strength for cities built on this terrain",
 			"Blocks line-of-sight from tiles at same elevation",
+			"[+1 Gold] <within [3] tiles of a [City center]>",
 			// "Has an elevation of [1] for visibility calculations",
 		],
 	},
@@ -288,11 +300,11 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"unbuildable": false,  // can be built by villagers as an TileImprovement, no idea how this parameter affects building #TODO
 		"turnsToBuild": 7,
 		"uniques": [
-			"Rare feature",
+			"Rare feature",  // map gen unique blah
 			"Nullifies all other stats this tile provides",
 			"Units ending their turn on this terrain take [20] damage <with [50]% chance>",
 			"Provides a one-time Production bonus to the closest city when cut down",  // cut down = removed  .. add to translations #TODO
-			"Has an elevation of [1] for visibility calculations",
+			// "Has an elevation of [1] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation", 
 			"Rough terrain",
 		],
@@ -317,7 +329,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 
 // Corner patches for Bridge //
 	{
-	// Feature-Left patch
+	// Feature-Left (FL) patch
 		"name": "BridgeFL",
 		"type": "TerrainFeature",
 		"movementCost": 2,
@@ -329,7 +341,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		]
 	},
 	{
-	// Feature-Right patch
+	// Feature-Right (FR) patch
 		"name": "BridgeFR",
 		"type": "TerrainFeature",
 		"movementCost": 2,
@@ -341,7 +353,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		]
 	},
 
-// Nullifying unused terrains/features //
+// Nullifying unused terrains/features til removed completely //
 
 	{
 		"name": "Snow",
