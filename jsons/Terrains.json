@@ -935,14 +935,15 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 	{
 		"name": "Flood plains",
 		"type": "TerrainFeature",
+	},
 	{
 		"name": "Ice",
 		"type": "TerrainFeature",
+	},
 	{
 		"name": "Atoll",
 		"type": "TerrainFeature",
-		"
-
+	},
 	// Natural Wonders  #todo Remove these
 	{
 		"name": "Great Barrier Reef",
