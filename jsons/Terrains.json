@@ -133,16 +133,16 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 1,
 		"RGB": [240, 188, 60],
 		"uniques": [
-			"[+1 Food] <with [25]% chance> <in tiles without [Wheat]>",  // The King's Tomb graveyard provides too much food, baseline food supply
-			"[+1 Production] <with [50]% chance> <with [2] to [5] neighboring [Grassland] tiles>",
+			"[+1 Food] <with [25]% chance> <in tiles without [Wheat]> <within [3] tiles of a [City center]>",  // The King's Tomb graveyard provides too much food, baseline food supply
+			"[+1 Production] <with [50]% chance> <with [2] to [5] neighboring [Grassland] tiles> <within [3] tiles of a [City center]>",
 		// base tiles providing scaling and dynamic resources
 		// plains resources will be more diverse
-			"[+1 Food] <with [25]% chance> <before discovering [Clans]> <in tiles without [Wheat]>",  // poor production source initially
-			"[+1 Food] <with [50]% chance> <after discovering [Clans]> <in tiles without [Wheat]>",
-			"[+1 Production] <with [25]% chance> <before discovering [Fire]> <in tiles without [Wheat]>",  // poor production source initially
-			"[+1 Production] <with [50]% chance> <after discovering [Fire]> <in tiles without [Wheat]>",
+			"[+1 Food] <with [25]% chance> <before discovering [Clans]> <in tiles without [Wheat]> <within [3] tiles of a [City center]>",  // poor food source initially
+			"[+1 Food] <with [25]% chance> <after discovering [Clans]> <in tiles without [Wheat]> <within [3] tiles of a [City center]>",  // bonus chance
+			// "[+1 Production] <with [20]% chance> <before discovering [Fire]> <in tiles without [Wheat]>",  // poor production source initially
+			// "[+1 Production] <with [20]% chance> <after discovering [Fire]> <in tiles without [Wheat]>",
 			"[+1 Culture] <with [5]% chance> <after discovering [Calendar]> <in tiles without [Wheat]>",
-			"[+1 Food] <with [15]% chance> <after discovering [Machinery]> <in tiles without [Wheat]>",  // bonus
+			"[+1 Food] <with [15]% chance> <after discovering [Machinery]> <in tiles without [Wheat]> <within [3] tiles of a [City center]>",  // bonus
 			"[+1 Gold] <with [2]% chance>",  // dropped something? found something!
 		// This would be for promoting cultural exchanges, with a unique and filter that doesn't exist
 			// "[+1 Culture] <with [10]% chance>  // <when occupied by a [Player] unit> <when adjacent to a non-[Player] unit>
@@ -197,6 +197,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"[+1 Food] <with [20]% chance> <within [3] tiles of a [City center]>",
 		],
 	},
+
 //////////////////////////
 //// Terrain features ////
 //////////////////////////
@@ -204,7 +205,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 	{
 		"name": "Forest",
 		"type": "TerrainFeature",
-		"production": 2,
+		// "production": 2,
 		// "food": 1,
 		"movementCost": 2,
 		"overrideStats": true,
@@ -891,7 +892,6 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 	{
 		"name": "Coast",
 		"type": "Water",
-		// "food": 1,
 		"movementCost": 1,
 		"RGB": [70, 138, 216],
 		"uniques": [
@@ -905,8 +905,6 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 	{
 		"name": "Lakes",
 		"type": "Water",
-		"food": 2,
-		"gold": 1,
 		"RGB": [0, 171, 169],
 		"uniques": [
 			"Fresh water",
@@ -922,9 +920,10 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"type": "TerrainFeature",
 		"movementCost": 2,
 		"unbuildable": true,
-		"uniques": ["Nullifies all other stats this tile provides", "Doesn't generate naturally"],
-		// For map editor only - the generator won't place it without code or enabling uniques
-		// If the map generator is ever updated to always take these into account, it should also take the "Doesn't generate naturally" unique into account
+		"uniques": [
+			"Nullifies all other stats this tile provides",
+			"Doesn't generate naturally", 
+		],
 		"occursOn": ["Land"],
 		"defenceBonus": -0.15,
 	},
