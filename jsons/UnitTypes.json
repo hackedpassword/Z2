@@ -43,14 +43,23 @@
         ]
     }, 
     {
-        "name": "Atomic Payload",  // For partitioning nukes
+        "name": "Atomic Payload",  // Atomic deployment weapons - launched, guided, etc
         "movementType": "Air",
         "uniques": [
             "Self-destructs when attacking", 
-            "Cannot be intercepted <before discovering [Satellites]>",
+            "Cannot be intercepted <before discovering [Radar]>",
             "Destroys tile improvements when attacking",  // nuke based weapons will always
         ]
-    }, 
+    },
+    {
+    // #todo Find a way to require a specific unit present in the same city as this unit, representing the deployment medium
+        "name": "Atomic Ordinance",  // Atomic bombs, dropped bombs.
+        "movementType": "Air",
+        "uniques": [
+            "Self-destructs when attacking", 
+            "Cannot be intercepted <before discovering [Radar]>",
+            "Destroys tile improvements when attacking",  // nuke based weapons will always
+        ]
     {
         "name": "Missile",
         "movementType": "Air",
