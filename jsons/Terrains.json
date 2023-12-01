@@ -936,7 +936,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"Nullifies all other stats this tile provides",
 			"Doesn't generate naturally", 
 		],
-		"occursOn": ["Land"],
+		"occursOn": ["Grassland","Plains","Forest","Desert","Tundra","Hill","Mound","Cavern","Cave"],  // fun fact: enter "Land" and unciv will crash when going to civopedia to view the terrain from the world screen
 		"defenceBonus": -0.15,
 	},
 	{
