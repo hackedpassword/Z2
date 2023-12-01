@@ -138,8 +138,9 @@
 		"unitType": "Gunpowder",
 		"movement": 2,
 		"strength": 34,
-		"range": 1,  // reasonable and logical
-		"rangedStrength": 38,
+		// keeping more infantry
+		// "range": 1,  // reasonable and logical
+		// "rangedStrength": 38,
 		"cost": 225,
 		"requiredTech": "Military Science",
 		"obsoleteTech": "Replaceable Parts",
@@ -150,7 +151,7 @@
 	{
 		"name": "Tank",
 		"unitType": "Armored",
-		"movement": 5,
+		"movement": 4,  // not too quick
 		"strength": 70,
 		"range": 2,  // justify costly requirement of oil, can't take cities
 		"rangedStrength": 80,
@@ -159,12 +160,13 @@
 		"requiredResource": "Oil",
 		// "upgradesTo": "Modern Armor",  // No. These units have their own purpose, and consume oil instead of more valuable aluminum
 		"uniques": [
-			"Can move after attacking",
+			"Can move after attacking <if it hasn't used other actions yet>",
 			"[+75]% Strength <vs [Gunpowder] units> <when defending>",
 			"[+50]% Strength <vs [Armored] units> <when attacking>",  // Armor piercing shells
 			"[+25]% Strength <vs cities>",
+			"[-25]% Strength <vs [Missile] units>",
 			"No defensive terrain bonus",
-			// "Never appears as a Barbarian unit"  // deals were made - but do barbarians need oil? 
+			// does "Never appears as a Barbarian unit"  // deals were made - but do barbarians need oil resource? 
 		],
 		"attackSound": "tankshot",
 	},
@@ -173,14 +175,14 @@
 		"unitType": "Armored",
 		"movement": 6,
 		"strength": 100,
-		"rangedStrength": 100,
+		"rangedStrength": 120,
 		"range": 3,
 		"cost": 425,
 		"requiredTech": "Lasers",
-		"requiredResource": "Aluminum",
-		// "upgradesTo": "Giant Death Robot",  // GDR is not a tank, it is a mech
+		"requiredResource": "Aluminum",  // #todo rename to titanium
+		// "upgradesTo": "Giant Death Robot",  // GDR is not a tank it is a mech, sorry Steel Battalion 
 		"uniques": [
-			"Can move after attacking",
+			"Can move after attacking <if it hasn't used other actions yet>",
 			"[+150]% Strength <vs [Gunpowder] units> <when defending>",
 			"[+100]% Strength <vs [Armored] units> <when attacking>",
 			"Invisible to non-adjacent units <after discovering [Stealth]>",  // modern camouflage
@@ -343,7 +345,7 @@
 		"uniques": ["[-75]% maintenance costs"],  // little maintenance needed
 		"attackSound": "missile",
 	},
-	{
+	{  // #todo build a Patriot missile
 	// i.e. Tomahawk, shock-and-awe type destruction
 		"name": "Cruise Missile",
 		"unitType": "Missile",
@@ -511,7 +513,7 @@
 		"requiredResource": "Uranium",
 		"uniques": [
 			"Only available <after discovering [Robotics]>",  // Allows other tech to be discovered from Nuclear Fusion
-			"Can move after attacking",
+			// "Can move after attacking",  // first gen not agile 
 			"[+125]% Strength <vs cities> <when attacking>",  // GDR's are urban menaces 
 			"No defensive terrain bonus",
 			"Can see over obstacles",
@@ -530,12 +532,12 @@
 		"requiredResource": "Uranium",  // civopedia is confused: reqRes(1) + Consumes(2) = 3U? Must decipher correct usage.
 		"promotions": [],
 		"uniques": [
+			"Consumes [2] [Uranium]",
 			"[450]% maintenance costs",  // very costly to operate
-			"Can move after attacking",
+			"Can move after attacking",  //
 			"Only available <if [Nuclear Plant] is constructed> <in this city>",  // needs special materials handling
 			"Only available <after discovering [Nuclear Fusion]>",
 			"Only available <after discovering [Particle Physics]>",
-			"Consumes [2] [Uranium]",
 			"No defensive terrain bonus",
 			"Ignores Zone of Control",  // more like disrespects ZoC
 			"[1] additional attacks per turn",  // dual cannons
