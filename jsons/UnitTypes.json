@@ -51,8 +51,7 @@
             "Destroys tile improvements when attacking",  // nuke based weapons will always
         ]
     },
-    {
-    // #todo Find a way to require a specific unit present in the same city as this unit, representing the deployment medium
+    {  // #todo Find a way to require a specific unit present in the same city as this unit, representing the deployment medium
         "name": "Atomic Ordinance",  // Atomic bombs, dropped bombs.
         "movementType": "Air",
         "uniques": [
@@ -60,6 +59,7 @@
             "Cannot be intercepted <before discovering [Radar]>",
             "Destroys tile improvements when attacking",  // nuke based weapons will always
         ]
+    },
     {
         "name": "Missile",
         "movementType": "Air",
