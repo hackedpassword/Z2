@@ -249,18 +249,20 @@
 	{
 		"name": "Carrier",  // Unciv appears to handle carrying units by the maximum number specified for all uniques is the max capacity, so here, 4 units any combo max
 		"unitType": "Aircraft Carrier",
-		"movement": 2,  // slow, +1 global, x2 ocean = fast on open water
+		"movement": 2,  // slow, +1 global, x2 deep ocean = fast on open water
 		"strength": 80,
 		"cost": 505,
 		"requiredTech": "Electronics",
 		"uniques": [
 			"Can only attack [Melee Water] units",  // better believe the Navy put a couple guns on these
 			"Can carry [4] [Fighter] units",
-			"Can carry [4] [Bomber] units", 
-			"Can carry [2] [Atomic Bomber] units", 
-			// "Can carry [2] [Gunpowder] units",  // doesn't work :/
+			"Can carry [4] [Bomber] units",
+			"Can carry [1] [Helicopter] units",
+			"Can carry [2] [Atomic Bomber] units",
 			"Can carry [1] [Missile] units",
-			"Double movement in [Ocean]",
+			// 2nd try, testing
+			"Can carry [2] [Land] units",  // [Gunpowder] didn't work :/
+			"[+1] Movement <in [Ocean] tiles>",
 			"Double movement in [Deep Ocean]",
 		],
 	},
@@ -326,6 +328,7 @@
 		"promotions": ["Indirect Fire"],
 		"attackSound": "missile"
 	},
+
 // Ordnance //
 	
 	{
@@ -380,7 +383,7 @@
 	},
 	{
 		"name": "Atomic Bomb",
-		"unitType": "Atomic Bomber",
+		"unitType": "Atomic Ordinance",  // G&K's atomic bomber unit type purposed only to machine units
 		"movement": 1,
 		"strength": 150,
 		"rangedStrength": 150,
@@ -470,7 +473,7 @@
 	},
 	{
 		"name": "TSAR Nuclear Bomb",  // ultimate WMD (til the orbital kinetic weapon platform is built...tbd) 
-		"unitType": "Atomic Bomber",  // need to make a new unitType for heavy WMD's
+		"unitType": "Atomic Ordinance",  // need to make a new unitType for heavy WMD's
 		"movement": 1,
 		"strength": 75,
 		"rangedStrength": 500,
