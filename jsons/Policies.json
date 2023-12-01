@@ -485,7 +485,9 @@
         "uniques": [
             "[+25]% Great Person generation [in all cities]",
             "Only available <before adopting [Autocracy]>",
-            "Only available <before adopting [Order]>"
+            "Only available <before adopting [Order]>",
+            "Only available <after adopting [Total War]",  // testing chaining
+            "Only available <after adopting [Democracy]",
         ],
         "policies": [
             {
