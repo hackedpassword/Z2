@@ -143,7 +143,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"[+1 Production] <with [50]% chance> <after discovering [Fire]> <in tiles without [Wheat]>",
 			"[+1 Culture] <with [5]% chance> <after discovering [Calendar]> <in tiles without [Wheat]>",
 			"[+1 Food] <with [15]% chance> <after discovering [Machinery]> <in tiles without [Wheat]>",  // bonus
-			"[+1 Gold] <with [2]% chance>",  // drop something? found something? 
+			"[+1 Gold] <with [2]% chance>",  // dropped something? found something!
 		// This would be for promoting cultural exchanges, with a unique and filter that doesn't exist
 			// "[+1 Culture] <with [10]% chance>  // <when occupied by a [Player] unit> <when adjacent to a non-[Player] unit>
 			// "[+1 Happiness] <with [10]% chance>",
@@ -189,12 +189,12 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 	// to be replaced by a similar terrain, more volcanic
 		"name": "Tundra",
 		"type": "Land",
-		"food": 1,
-	        "science": 1,
 		"movementCost": 1,
 		"RGB": [200, 76, 12],
 		"uniques": [
 			"Rough terrain",
+			"[+1 Science] <with [20]% chance> <within [3] tiles of a [City center]>",
+			"[+1 Food] <with [20]% chance> <within [3] tiles of a [City center]>",
 		],
 	},
 //////////////////////////
@@ -216,9 +216,9 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"Provides a one-time Production bonus to the closest city when cut down",
 			"Blocks line-of-sight from tiles at same elevation",
 			"[99]% Chance to be destroyed by nukes",  // this works, can set values to TerrainFeatures
-			"[+1 Food] <with [25]% chance> <before discovering [Hunting]>",  // poor food source initially
-			"[+1 Food] <with [50]% chance> <after discovering [Hunting]> <before discovering [Mining]>",
-			"[+1 Food] <with [50]% chance> <after discovering [Mining]>",
+			"[+1 Food] <with [25]% chance> <before discovering [Hunting]> <within [3] tiles of a [City center]>",  // poor food source initially
+			"[+1 Food] <with [25]% chance> <after discovering [Hunting]> <before discovering [Mining]> <within [3] tiles of a [City center]>",
+			"[+1 Food] <with [50]% chance> <after discovering [Mining]> <within [3] tiles of a [City center]>",
 		],
 	},
 	{
@@ -897,8 +897,8 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"uniques": [
 			"[+1 Food] <with [30]% chance> <within [3] tiles of a [City center]>",
 			"[+1 Food] <with [50]% chance> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <with [10]% chance> <within [3] tiles of a [City center]>",
 			"[+1 Gold] <with [25]% chance> <within [3] tiles of a [City center]>",
-			"[+1 Gold] <with [50]% chance> <within [3] tiles of a [City center]>",
 		],
 
 	},
@@ -908,45 +908,13 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"food": 2,
 		"gold": 1,
 		"RGB": [0, 171, 169],
-		"uniques": ["Fresh water",
-			"[+1 Food] <in this city> <with [25]% chance>",
-			"[+1 Food] <in this city> <with [50]% chance>",
-			"[+1 Gold] <in this city> <with [25]% chance>",
-			"[+1 Gold] <in this city> <with [50]% chance>",
+		"uniques": [
+			"Fresh water",
+			"[+1 Food] <with [25]% chance> <within [3] tiles of a [City center]>",  // two chances at each resource
+			"[+1 Food] <with [25]% chance> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <with [25]% chance> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <with [25]% chance> <within [3] tiles of a [City center]>",
 		],
-	},
-	{
-		"name": "Snow",
-		"type": "Land",
-		"movementCost": 1,
-		"RGB": [230, 238, 255], //Darker229, 229, 255
-		"uniques": [
-            "Occurs at temperature between [-1] and [-0.9] and humidity between [0] and [1]",
-            "Occurs at temperature between [-0.9] and [-0.8] and humidity between [0] and [0.8]",
-            "Occurs at temperature between [-0.8] and [-0.7] and humidity between [0] and [0.6]",
-            "Occurs at temperature between [-0.7] and [-0.6] and humidity between [0] and [0.4]",
-            "Occurs at temperature between [-0.6] and [-0.5] and humidity between [0] and [0.2]",
-            "Always Fertility [-1] for Map Generation",
-            "Considered [Undesirable] when determining start locations",
-            "Becomes [Tundra] when adjacent to [River]",
-            "Every [17] tiles with this terrain will receive a major deposit of a strategic resource.",
-            "Never receives any resources <in [Hill] tiles>"]
-	},
-
-	{
-		"name": "Jungle",
-		"type": "TerrainFeature",
-		"food": 2,
-		"movementCost": 2,
-		"overrideStats": true,
-		"unbuildable": true,
-		"defenceBonus": 0.25,
-		"occursOn": ["Plains","Grassland"],
-		"uniques": [
-			"Rough terrain", "Vegetation",
-			"Blocks line-of-sight from tiles at same elevation",
-			"[25]% Chance to be destroyed by nukes",
-		]
 	},
 
 	{
@@ -957,56 +925,25 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"uniques": ["Nullifies all other stats this tile provides", "Doesn't generate naturally"],
 		// For map editor only - the generator won't place it without code or enabling uniques
 		// If the map generator is ever updated to always take these into account, it should also take the "Doesn't generate naturally" unique into account
-		"occursOn": ["Grassland","Plains","Desert","Tundra","Snow","Forest","Jungle","Hill","Flood plains","Marsh","Oasis"],
-		"defenceBonus": -0.15
+		"occursOn": ["Land"],
+		"defenceBonus": -0.15,
 	},
 	{
 		"name": "Oasis",
 		"type": "TerrainFeature",
-		"food": 3,
-		"gold": 1,
-		"movementCost": 1,
-		"unbuildable": true,
-		"defenceBonus": -0.1,
-		"occursOn": ["Desert"],
-		"uniques": ["Fresh water", "Rare feature",
-					"Only [All Road] improvements may be built on this tile",
-					"Always Fertility [4] for Map Generation",
-					"Considered [Food] when determining start locations",
-					"Considered [Desirable] when determining start locations"]
 	},
 	{
 		"name": "Flood plains",
 		"type": "TerrainFeature",
-		"food": 2,
-		"movementCost": 1,
-		"defenceBonus": -0.1,
-		"occursOn": ["Desert"],
-		"uniques": ["Always Fertility [5] for Map Generation",
-					"Considered [Food] when determining start locations",
-					"Considered [Desirable] when determining start locations"]
-	},
 	{
 		"name": "Ice",
 		"type": "TerrainFeature",
-		"impassable": true,
-		"overrideStats": true,
-		"occursOn": ["Ocean", "Coast"],
-		"uniques": ["Occurs at temperature between [-1] and [-0.8] and humidity between [0] and [1]",
-					"[-1] to Fertility for Map Generation",
-					"Considered [Undesirable] when determining start locations"]
-	},
 	{
 		"name": "Atoll",
 		"type": "TerrainFeature",
-		"movementCost": 1,
-		"food": 1,
-		"production": 1,
-		"occursOn": ["Coast"],
-		"uniques": ["Rare feature"]
-	},
+		"
 
-	// Natural Wonders
+	// Natural Wonders  #todo Remove these
 	{
 		"name": "Great Barrier Reef",
 		"type": "NaturalWonder",
@@ -1015,10 +952,8 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"gold": 1,
 		"science": 2,
 		"occursOn": ["Ocean"],
-		"uniques": ["Must be adjacent to [1] to [6] [Coast] tiles",
-			"Must be adjacent to [6] [Water] tiles",
-			"Occurs on latitudes from [10] to [70] percent of distance equator to pole",
-			"Occurs in groups of [2] to [2] tiles"],
+		"uniques": [
+		],
 		"turnsInto": "Coast",
 		"impassable": true,
 		"unbuildable": true,
