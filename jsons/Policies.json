@@ -219,7 +219,7 @@
         "uniques": [
             "[+100]% Production when constructing [Shrine] buildings [in all cities]",
             "[+100]% Production when constructing [Temple] buildings [in all cities]",
-            "Only available <before adopting [Rationalism]>"
+            "Only available <after enhancing a religion>",
         ],
         "policies": [
             {
@@ -256,7 +256,7 @@
             },
             {
                 "name": "Free Religion",
-                "uniques": ["[-10]% Culture cost of adopting new Policies"],
+                "uniques": ["[-10]% Culture cost of adopting new Policies","[+2500 Faith]"],
                 "requires": ["Mandate Of Heaven", "Reformation"],
                 "row": 3,
                 "column": 4
@@ -265,7 +265,8 @@
                 "name": "Piety Complete",
                 "uniques": [
                     "[Faith] cost of purchasing items in cities [-20]%",
-                    "[+3 Gold, +3 Culture] from every [Holy site]"
+                    "[+3 Gold, +3 Culture] from every [Holy site]", 
+                    "May buy [All] units with [Faith] [in all cities]", 
                 ]
             }
         ]
@@ -345,7 +346,10 @@
             "Domination": 10,
             "Scientific": 10
         },
-        "uniques": ["[+25]% [Gold] [in capital]"],
+        "uniques": [
+            "[+25]% [Gold] [in capital]",
+            "Only available <during a Golden Age>",
+        ],
         "policies": [
             {
                 "name": "Naval Tradition",
@@ -353,8 +357,7 @@
                     "[+1] Movement <for [{Military} {Water}] units>",
                     "[+1] Sight <for [{Military} {Water}] units>",
                     "Free [Great General] appears"
-                    // "[+2] Movement <for [Great Admiral] units>"
-                    // ToDo: Should be "Free [Great Admiral] appears"
+                     
                 ],
                 "row": 1,
                 "column": 2
@@ -418,7 +421,7 @@
         },
         "uniques": [
             "[+15]% [Science] <while the empire is happy>",
-            "Only available <before adopting [Piety]>"
+            "Only available <while the empire is happy>"
         ],
         "policies": [
             {
@@ -485,6 +488,7 @@
             "Scientific": 50
         },
         "uniques": [
+            "Comment [Requires competing policy: Commerce]",
             "[+25]% Great Person generation [in all cities]",
             "Only available <after adopting [Protectionism]",
         ],
@@ -548,10 +552,10 @@
             "Scientific": 40
         },
         "uniques": [
+            "Comment [Requires completing policy: Honor]",
             "[-33]% maintenance costs <for [All] units>",
             "Upon capturing a city, receive [10] times its [Culture] production as [Culture] immediately",
             "Only available <after adopting [Professional Army]>",
-            "Comment [Complete Honor]",
         ],
         "policies": [
             {
@@ -619,6 +623,7 @@
             "Scientific": 50
         },
         "uniques": [
+            "Comment [Requires completing policy: Rationalism]",
             "[+1 Happiness] [in all cities]",
             "Only available <after adopting [Scientific Revolution]>",
         ],
