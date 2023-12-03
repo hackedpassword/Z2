@@ -490,7 +490,7 @@
         "uniques": [
             "Comment [Requires competing policy: Commerce]",
             "[+25]% Great Person generation [in all cities]",
-            "Only available <after adopting [Protectionism]",
+            "Only available <after adopting [Protectionism]>",
         ],
         "policies": [
             {
