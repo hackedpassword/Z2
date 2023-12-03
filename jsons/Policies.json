@@ -472,6 +472,8 @@
             }
         ]
     },
+
+////
     {
         "name": "Freedom",
         "era": "Industrial era",
@@ -485,9 +487,7 @@
         "uniques": [
             "[+25]% Great Person generation [in all cities]",
             "Only available <after adopting [Order]> <after adopting [Autocracy]> <before adopting [Freedom]>",
-            // "Only available <before adopting [Order]>",
-            // "Only available <after adopting [Total War]",  // testing chaining
-            // "Only available <after adopting [Democracy]",
+            "Only available <after adopting [Protectionism]",
         ],
         "policies": [
             {
@@ -536,6 +536,8 @@
             }
         ]
     },
+    
+////
     {
         "name": "Autocracy",
         "era": "Industrial era",
@@ -549,8 +551,8 @@
         "uniques": [
             "[-33]% maintenance costs <for [All] units>",
             "Upon capturing a city, receive [10] times its [Culture] production as [Culture] immediately",
-            "Only available <after adopting [Order]> <after adopting [Freedom]> <before adopting [Autocracy]>",
-            // "Only available <before adopting [Freedom]>"
+            "Only available <before adopting [Professional Army]>",
+            "Comment [Complete Honor]",
         ],
         "policies": [
             {
@@ -605,6 +607,8 @@
             }
         ]
     },
+    
+////
     {
         "name": "Order",
         "era": "Industrial era",
@@ -617,8 +621,7 @@
         },
         "uniques": [
             "[+1 Happiness] [in all cities]",
-            // "Only available <before adopting [Autocracy]>",
-            "Only available <after adopting [Freedom]> <after adopting [Autocracy]> <before adopting [Order]>",
+            "Only available <after adopting [Scientific Revolution]>",
         ],
         "policies": [
             {
