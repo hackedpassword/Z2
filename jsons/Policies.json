@@ -470,6 +470,7 @@
                 "name": "Rationalism Complete",
                 "uniques": [
                     "[2] Free Technologies",
+                    "Receive a tech boost when scientific buildings/wonders are built in capital",
                     "May buy [Great Scientist] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>"
                 ]
             }
