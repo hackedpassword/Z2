@@ -288,6 +288,8 @@
 				"name": "Theology",
 				"row": 3,
 				"prerequisites": ["Philosophy", "Drama and Poetry"],
+				"Gain enough Faith for a Pantheon",
+				"Gain enough Faith for [80]% of a Great Prophet",
 				"quote": "'Three things are necessary for the salvation of man: to know what he ought to believe; to know what he ought to desire; and to know what he ought to do' - St. Thomas Aquinas"
 			},
 			{
