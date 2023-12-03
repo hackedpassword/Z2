@@ -79,8 +79,9 @@
 		"uniques": [
 			"[1] additional attacks per turn <if it hasn't used other actions yet>",
 			"Great General provides double combat bonus",
-			"[+50]% Strength <for units with [Jump]>",
-			"Only available <upon constructing [Military Academy] [in all cities]>",  // promotion test
+			"[+50]% Strength <for units with [{Shield} {Jump} {Life}]>",
+			"Comment [Requires visiting all West Hyrule towns to activate]",
+			// "Only available <upon constructing [Military Academy] [in all cities]>",  // promotion test
 		]
 	},
         {
