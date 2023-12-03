@@ -18,7 +18,7 @@
 	},
 */
 
-	{  // Augment initial gameplay
+	{  // Augment initial gameplay and any tests
 		 "name": "Portal Gate",  // Our hero appears!
 		 "cost": 10,
 		 "uniques": [  // the 'once' is for when capitals are relocated - portal gate will trigger upon moving
@@ -29,6 +29,7 @@
 			 "Limited to [1] per Civilization",
 			 // "[+1] population [in all cities]",  // gain extra pop now for each 1st turn settlement
 			 // "Reveals the entire map",  // for debugging map/tech
+			 "[+1000000 Culture]", // testing policy updates
 		]
 	},
 	{
