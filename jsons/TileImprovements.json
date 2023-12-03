@@ -68,7 +68,7 @@
 			"[-2 Production] <when at war>",
 			"[+1 Production] <with [25]% chance>",  // bonus baseline
 		],
-		"terrainsCanBeBuiltOn": ["Grassland","Plains","Desert"],
+		"terrainsCanBeBuiltOn": ["Grassland","Plains","Desert","BridgeFR","BridgeLR"],
 	},
 	{
 		"name": "Forage",
@@ -85,7 +85,7 @@
 	},
 	{
 		"name": "Farm",
-		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert"],
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","BridgeFR","BridgeLR"],
 		"food": 1,
 		"turnsToBuild": 7,
 		"techRequired": "Agriculture",
