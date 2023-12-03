@@ -30,7 +30,8 @@
 			 // "[+1] population [in all cities]",  // gain extra pop now for each 1st turn settlement
 			 "Reveals the entire map",  // for debugging map/tech
 			 "[+1000000 Culture]", // testing policy updates
-			 "[+100] Movement <for [Civilian] units>", 
+			 "[+100] Movement <for [Civilian] units>",
+			 "[+100] Movement <for [Military] units>",
 		]
 	},
 	{
