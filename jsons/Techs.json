@@ -392,6 +392,13 @@
 				"name": "Printing Press",
 				"row": 8,
 				"prerequisites": ["Machinery"],
+				"uniques": [
+					"[+100 Faith]",
+					"[+500 Faith] <after adopting [Piety]>",
+					"Comment [First used to print bibles]",
+					"[+4 Production] <in capital> <after adopting [Rationalism]>",
+					"Triggers the following global alert [Read all about it!]",
+				],
 				"quote": "'It is a newspaper's duty to print the news and raise hell.' - The Chicago Times"
 			},
 			{
