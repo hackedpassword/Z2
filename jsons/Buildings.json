@@ -1,7 +1,7 @@
 [
 
 /*
-	{
+	{  // experimental //
 	// This test building is supposed to enable Downward and Upward Thrust, for now
 	// Didn't work, back to the drawing board
 		"name": "Military HQ",
@@ -27,11 +27,16 @@
 			 // "Instantly provides [1] [Iron]", // Otherwise swordsman creates missing resource. Culling for now due to needing a stockpiled resource container.
 			 // "Free [Worker] appears <once>",  // squire, paige, whoever, brought your helper
 			 "Limited to [1] per Civilization",
-			 // "[+1] population [in all cities]",  // gain extra pop now for each 1st turn settlement
+			 // "[+1] population [in all cities] <for [Human player]",  // gain extra pop now for each 1st turn settlement
 			 "Reveals the entire map",  // for debugging map/tech
-			 "[+1000000 Culture]", // testing policy updates
-			 "[+100] Movement <for [Civilian] units>",
-			 "[+100] Movement <for [Military] units>",
+			 "[+1000000 Culture] <for [Human player]>", // testing policy updates
+			 "[+1000000 Gold] <for [Human player]>", // blank check
+			 "[+1000000 Faith] <for [Human player]>",  // can you BELIEVE that
+			 // "[+1000000 Science] <for [Human player]>",  // have a tardis
+			 // "[+1000000 Production] <for [Human player]>",  // and a sonic screwdriver
+			 // "[+1000000 Happiness] <for [Human player]>",  // mmm kings special kool-aid
+			 "[+100] Movement <for [Civilian] units> <for [Human player]>",  // personal site to site transporter
+			 "[+100] Movement <for [Military] units> <for [Human player]>",
 		]
 	},
 	{
