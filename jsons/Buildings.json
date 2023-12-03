@@ -2,7 +2,7 @@
 
 /*
 	{
-	// This building is supposed to enable Downward and Upward Thrust, for now
+	// This test building is supposed to enable Downward and Upward Thrust, for now
 	// Didn't work, back to the drawing board
 		"name": "Military HQ",
 		// "requiredTech": "?",
@@ -30,6 +30,7 @@
 			 // "[+1] population [in all cities]",  // gain extra pop now for each 1st turn settlement
 			 // "Reveals the entire map",  // for debugging map/tech
 			 "[+1000000 Culture]", // testing policy updates
+			 "[+100] Movement <for [Civilian] units>", 
 		]
 	},
 	{
