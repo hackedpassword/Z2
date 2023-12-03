@@ -486,7 +486,6 @@
         },
         "uniques": [
             "[+25]% Great Person generation [in all cities]",
-            "Only available <after adopting [Order]> <after adopting [Autocracy]> <before adopting [Freedom]>",
             "Only available <after adopting [Protectionism]",
         ],
         "policies": [
@@ -551,7 +550,7 @@
         "uniques": [
             "[-33]% maintenance costs <for [All] units>",
             "Upon capturing a city, receive [10] times its [Culture] production as [Culture] immediately",
-            "Only available <before adopting [Professional Army]>",
+            "Only available <after adopting [Professional Army]>",
             "Comment [Complete Honor]",
         ],
         "policies": [
