@@ -735,7 +735,10 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"occursOn": ["Grassland"],
 		"uniques": [
 			"Grants [Spell] ([Combat magic]) to adjacent [Land] units for the rest of the game",
-			"Grants [Magic Key] ([Military/warrior training]) to adjacent [Land] units for the rest of the game <upon constructing [Military Academy] [in all cities]>",
+			"Grants [Magic Key] ([Military/warrior training]) to adjacent [Land] units for the rest of the game <for units with [Upward Thrust]>",
+		// Units looking to take advantage will be on mission to visit the needed towns.
+		// Magic Key is a very powerful upgrade. DT doesn't need to be activated, while UT will be inherently. 
+			"Comment [Magic Key promotion requires both Thrusts to activate.]", 
 			"Tile provides yield without assigned population",
 			"Units ending their turn on this terrain take [-50] damage",  // healer
 		],
