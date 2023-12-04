@@ -43,7 +43,9 @@
 		 "cost": 10,
 		 "uniques": [
 			 "Can only be built [in capital]",
+			 // this will set you back one iron, causing a resource shortage
 			 "Free [Longswordsman] appears",  // Guess who! Planning to more closely align this asset with the NES
+			 "Provides [2] [Iron]",  // how can we offset that iron shortage? 
 			 "Limited to [1] per Civilization",
 		 ], 
 	},
