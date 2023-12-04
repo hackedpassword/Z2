@@ -77,26 +77,30 @@
         {
 		"name": "Downward Thrust",
 		"uniques": [
-			"Comment [Requires visiting all West Hyrule towns to activate]",
-			"[1] additional attacks per turn <if it hasn't used other actions yet> <for units with [Shield]> <for units with [Jump]> <for units with [Life]>",
-			"Great General provides double combat bonus <for units with [Shield]> <for units with [Jump]> <for units with [Life]>",
-		// The below should work, does register in game, but does not trigger. Underneath the multi conditional does work. 
+			"Comment [Requires visiting Ruto town to activate - requirement may change]",
+			"[1] additional attacks per turn <if it hasn't used other actions yet> <for units with [Jump]>",
+			"Great General provides double combat bonus <for units with [Jump]>",
+		// The below should work, does register in game, but does not trigger.
 			// "[+50]% Strength <for units with [{Shield} {Jump} {Life}]>",
-			"[+50]% Strength <for units with [Shield]> <for units with [Jump]> <for units with [Life]>",
+		// and this line only recognizes the last conditional. 
+			// "[+50]% Strength <for units with [Shield]> <for units with [Jump]> <for units with [Life]>",
+			"[+50]% Strength <for units with [Jump]>", // For now the req will be easy
 		]
 	},
         {
 		"name": "Upward Thrust",
 		"uniques": [
-			"[50]% chance to intercept air attacks",
-			"[100]% XP gained from combat",
+			"Comment [Requires visiting Kasuto town to activate]",
+			"[50]% chance to intercept air attacks <for units with [Spell]>",
+			"May Paradrop up to [4] tiles from inside friendly territory <for units with [Spell]>",
 		]
 	},
         {
 		"name": "Magic Key",
 		"uniques": [
-			"May enter foreign tiles without open borders",
-			"Free Social Policy <upon conquering a city>",
+			"Comment [Requires both Thrust promotions to activate]", 
+			"May enter foreign tiles without open borders <for units with [Downward Thrust]>",
+			"Free Social Policy <upon conquering a city> <for units with [Downward Thrust]>",
 		]
 	},
 
