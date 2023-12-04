@@ -41,6 +41,20 @@
 		"terrainsCanBeBuiltOn": ["Land"],
 	},
 	{
+		"name": "Work district",  // universal productivity
+		"turnsToBuild": 7,
+		"production": 1,  // this baseline amount hopefully will trigger villagers to replace Slog mud improvements
+		"techRequired": "Construction",
+		"uniques": [
+			"[+2 Production] <after discovering [Iron Working]> <with [1] to [6] neighboring [Work district] tiles>",
+			"[+1 Production] <with [50]% chance> <after discovering [Machinery]> <with [2] to [6] neighboring [Work district] tiles>",
+			"[+1 Production] <with [50]% chance> <after discovering [Industrialization]> <with [3] to [6] neighboring [Work district] tiles>",
+			"[-2 Production] <when at war>",
+			"[+1 Production] <with [25]% chance>",  // bonus baseline
+		],
+		"terrainsCanBeBuiltOn": ["Grassland","Plains","Desert","BridgeFR","BridgeLR"],
+	},
+        {
 	// needs follow up improvement
 		"name": "Slog mud",  // nasty peasant work
 		"turnsToBuild": 5,
@@ -57,33 +71,6 @@
 		"terrainsCanBeBuiltOn": ["Grassland","Plains","Desert"],
 	},
 	{
-		"name": "Work district",  // universal productivity
-		"turnsToBuild": 7,
-		"production": 1,  // this baseline amount hopefully will trigger villagers to replace Slog mud improvements
-		"techRequired": "Construction",
-		"uniques": [
-			"[+2 Production] <after discovering [Iron Working]> <with [1] to [6] neighboring [Work district] tiles>",
-			"[+1 Production] <with [50]% chance> <after discovering [Machinery]> <with [2] to [6] neighboring [Work district] tiles>",
-			"[+1 Production] <with [50]% chance> <after discovering [Industrialization]> <with [3] to [6] neighboring [Work district] tiles>",
-			"[-2 Production] <when at war>",
-			"[+1 Production] <with [25]% chance>",  // bonus baseline
-		],
-		"terrainsCanBeBuiltOn": ["Grassland","Plains","Desert","BridgeFR","BridgeLR"],
-	},
-	{
-		"name": "Forage",
-		"turnsToBuild": 5,
-		"techRequired": "Survival",
-		"uniques": [
-			"[+1 Food] <with [30]% chance>",  // not a guaranteed food source
-			"[+1 Food] <with [60]% chance> <after discovering [Hunting]>",
-			"[-1 Food] <with [1] to [6] neighboring [Forage] tiles>",  // This food resource is not too compete with farms nor itself
-			"[-1 Food] <with [3] to [6] neighboring [Forage] tiles>",
-			"[-1 Food] <with [5] to [6] neighboring [Forage] tiles>",  // Diminishing returns, upgrade to farm!
-		],
-		"terrainsCanBeBuiltOn": ["Land"],
-	},
-	{
 		"name": "Farm",
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","BridgeFR","BridgeLR"],
 		"food": 1,
@@ -98,6 +85,19 @@
 			"Comment [This is a farm. It has better food production than foraging.]",  // testing new comment unique
 		],
 		"shortcutKey": "F"
+	},
+        {
+		"name": "Forage",
+		"turnsToBuild": 5,
+		"techRequired": "Survival",
+		"uniques": [
+			"[+1 Food] <with [30]% chance>",  // not a guaranteed food source
+			"[+1 Food] <with [60]% chance> <after discovering [Hunting]>",
+			"[-1 Food] <with [1] to [6] neighboring [Forage] tiles>",  // This food resource is not too compete with farms nor itself
+			"[-1 Food] <with [3] to [6] neighboring [Forage] tiles>",
+			"[-1 Food] <with [5] to [6] neighboring [Forage] tiles>",  // Diminishing returns, upgrade to farm!
+		],
+		"terrainsCanBeBuiltOn": ["Land"],
 	},
 	{
 		"name": "Bridge",  // represents the hidden rift between Death Mountain and the Maze Island bridge
