@@ -18,16 +18,11 @@
 	},
 */
 
-	{  // Augment initial gameplay and any tests
-		 "name": "Portal Gate",  // Our hero appears!
-		 "cost": 10,
-		 "uniques": [  // the 'once' is for when capitals are relocated - portal gate will trigger upon moving
-			 "Can only be built [in capital]",
-			 "Free [Longswordsman] appears",  // Guess who! Planning to more closely align this asset with the NES
-			 // "Instantly provides [1] [Iron]", // Otherwise swordsman creates missing resource. Culling for now due to needing a stockpiled resource container.
-			 // "Free [Worker] appears <once>",  // squire, paige, whoever, brought your helper
-			 "Limited to [1] per Civilization",
-			 // "[+1] population [in all cities] <for [Human player]",  // gain extra pop now for each 1st turn settlement
+	{
+	// For tests, experiments, etc. If not using, block comment or sell this building
+		 "name": "Hax Hut",
+		 "cost": 1,
+	         "uniques": [
 			 "Reveals the entire map",  // for debugging map/tech
 			 "[+1000000 Culture] <for [Human player]>", // testing policy updates
 			 "[+1000000 Gold] <for [Human player]>", // blank check
@@ -35,9 +30,22 @@
 			 // "[+1000000 Science] <for [Human player]>",  // have a tardis
 			 // "[+1000000 Production] <for [Human player]>",  // and a sonic screwdriver
 			 // "[+1000000 Happiness] <for [Human player]>",  // mmm kings special kool-aid
-			 "[+100] Movement <for [Civilian] units> <for [Human player]>",  // personal site to site transporter
-			 "[+100] Movement <for [Military] units> <for [Human player]>",
-		]
+			 "[+250] Movement <for [Civilian] units> <for [Human player]>",  // personal site to site transporter
+			 "[+250] Movement <for [Military] units> <for [Human player]>",
+			 // "Instantly provides [1] [Iron]", // Otherwise swordsman creates missing resource. Culling for now due to needing a stockpiled resource container.
+                         // the 'once' is for when capitals are relocated - portal gate will trigger upon moving
+			 // "Free [Worker] appears <once>",  // squire, paige, whoever, brought your helper
+			 // "[+1] population [in all cities] <for [Human player]",  // gain extra pop now for each 1st turn settlement
+                 ],
+	},
+	{  // Augment initial gameplay and any tests
+		 "name": "Portal Gate",  // Our hero appears!
+		 "cost": 10,
+		 "uniques": [
+			 "Can only be built [in capital]",
+			 "Free [Longswordsman] appears",  // Guess who! Planning to more closely align this asset with the NES
+			 "Limited to [1] per Civilization",
+		 ], 
 	},
 	{
 		"name": "Horse Track",  // Do something with stale strategic resources, horses, coal, and iron
