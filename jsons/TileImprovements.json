@@ -7,7 +7,7 @@
 		"terrainsCanBeBuiltOn": ["Land"],  // also allowed to be built on hybrid tiles though desired to disable that somehow
 		"uniques": [
 		// info message
-		"Mod Checker note: 'turns into terrain Force' and 'Unsupported' mod checker warnings are expected, disregard!",  // soft suppression
+		"Mod Checker note: 'turns into terrain Force' and 'Unsupported' mod checker warnings are expected, as is this one, disregard!",  // soft suppression
 			"Ensures a minimum tile yield of [+1 Food, +1 Production] <during the [Ancient era]>",
 			"Ensures a minimum tile yield of [+2 Food, +1 Production] <during the [Classical era]>",
 			"Ensures a minimum tile yield of [+2 Food, +2 Production] <starting from the [Medieval era]>",  // will build upon this
@@ -34,7 +34,7 @@
 			"Removes removable features when built",  // pepper an opponents' land with boulders, pillage tiles and roll em in
 			"Gives a defensive bonus of [25]%",
 			"Can be built outside your borders",
-			"[-3] Movement",
+			// "[-3] Movement",  // I really want movement modifiers on improvements
 		],
 		// "impassable": true,
 		"techRequired": "Engineering",
@@ -52,7 +52,7 @@
 			"[-2 Production] <when at war>",
 			"[+1 Production] <with [25]% chance>",  // bonus baseline
 		],
-		"terrainsCanBeBuiltOn": ["Grassland","Plains","Desert","BridgeFR","BridgeLR"],
+		"terrainsCanBeBuiltOn": ["Grassland","Plains","Desert","BridgeFL","BridgeFR"],
 	},
         {
 	// needs follow up improvement
@@ -72,7 +72,7 @@
 	},
 	{
 		"name": "Farm",
-		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","BridgeFR","BridgeLR"],
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","BridgeFL","BridgeFR"],
 		"food": 1,
 		"turnsToBuild": 7,
 		"techRequired": "Agriculture",
