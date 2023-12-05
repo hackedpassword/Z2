@@ -635,7 +635,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"occursOn": ["Plains"],
 		"uniques": [
 			"Comment [Must possess the Trophy to gain the magic!]",
-			"Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game <with [Silver]>",
+			"Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game <when above [0] [Silver]>",
 			"Tile provides yield without assigned population",
 			"Units ending their turn on this terrain take [-50] damage",  // healer house
 		],
