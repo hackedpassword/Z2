@@ -41,9 +41,9 @@
         {
 		"name": "Fairy",
 		"uniques": [
-			"Only available <for [Military] units>",
-			"Only available <with [Citrus]>",			
-			"Ignores terrain cost",
+			"Only available <for [Military] units> <with [Citrus]>",
+			// "Only available <with [Citrus]>",		
+			"Ignores terrain cost <for [Military] units> <with [Citrus]>",
 			"Ignores Zone of Control",
 		]
 	},
