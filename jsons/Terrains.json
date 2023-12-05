@@ -675,7 +675,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"occursOn": ["Desert"],
 		"uniques": [
 			"Comment [A mighty Jump will gain you audience with the towns' Knight!]",
-			"Grants [Downward Thrust] ([Learned from the town's Hylian Knight]) to adjacent [Land] units for the rest of the game <for units with [Jump]",
+			"Grants [Downward Thrust] ([Learned from the town's Hylian Knight]) to adjacent [Land] units for the rest of the game <for units with [Jump]>",
 			"Comment [You must obtain the Water of Life to gain audience with the town's Wise Man!]",
 			"Grants [Fairy] ([Combat magic]) to adjacent [Land] units for the rest of the game <with [Citrus]>",
 			"Tile provides yield without assigned population",
