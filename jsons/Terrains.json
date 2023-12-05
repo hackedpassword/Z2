@@ -635,10 +635,10 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"occursOn": ["Plains"],
 		"uniques": [
 			"Comment [Must possess the Trophy to gain the magic!]",
-			"Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game <when above [0] [Silver]>",
-			"Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game <with [Silver]>",
-			"Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game <for [Military] units>",  // trying several methods, conditionals above won't trigger
-			"Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game <upon building a [Smelter] improvement>",  // trigger condition maybe?
+			// "Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game <when above [0] [Silver]>",
+			// "Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game <with [Silver]>",
+			// "Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game <for [Military] units>",  // trying several methods, conditionals above won't trigger
+			"Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game",  // <upon building a [Smelter] improvement>",  // trigger condition maybe?
 			"Tile provides yield without assigned population",
 			"Units ending their turn on this terrain take [-50] damage",  // healer house
 		],
