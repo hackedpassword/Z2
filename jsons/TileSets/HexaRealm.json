@@ -4,20 +4,29 @@
 
     "ruleVariants": {
 
+	"River+Road": ["Road", "River"],  // Attempting to resort river/lava render layers
+	"River+Railroad": ["Railroad", "River"],
+
 	"Desert": ["Desert"],
 	"Desert3": ["Desert2"],  // removing Z2 desert3 sprite somehow defaults/forces hexarealm desert sprite
-	    
+
 //	"Plains+NorthCastle": ["Plains","NorthCastleGlow"],  // Seems this works on Wonders as seen above, but don't want it atm
 
-	// to-do: cites and city ruins plus bridges
-	// and: make new fallout tile
-	// and: experiment with alpha on crosshatch tile
-
 	"Coast+Oil": ["Coast", "Oil", "Coast Waves"],
+
+	"Plains+Forest": ["Plains", "ForestG"],
+	
 	"Grassland+Marsh+Uranium": ["Grassland", "Marsh", "Uranium"],
 	"Grassland+Marsh+Iron": ["Grassland", "Marsh", "Iron"],
 	"Grassland+Forest+Coal": ["Grassland", "ForestG", "Coal"],
 	"Grassland+Forest+Trap": ["Grassland", "ForestG", "Trap"],
+
+	"Bridge1ocean+City center": ["Bridge1ocean","City center"],
+	"Bridge1coast+City center": ["Bridge1coast","City center"],
+	"Bridge2ocean+City center": ["Bridge2ocean","City center"],
+	"Bridge2coast+City center": ["Bridge2coast","City center"],
+	"Bridge3+City center": ["Bridge3","City center"],
+	"Bridge3coast+City center": ["Bridge3coast","City center"],
 
 	"Bridge1ocean+City ruins": ["Bridge1ocean","City ruins"],
 	"Bridge1coast+City ruins": ["Bridge1coast","City ruins"],
@@ -27,15 +36,24 @@
 	"Bridge3coast+City ruins": ["Bridge3coast","City ruins"],
 	"BridgeLow+City ruins": ["BridgeLow","City ruins"],
 	"BridgeHigh+City ruins": ["BridgeHigh","City ruins"],
-	
 	"Plains+City ruins": ["Plains","City ruins"],
-	"Plains+City ruins+Trap": ["Plains","City ruins","Trap"]
-
     	"Cavern+City ruins": ["Cavern","City ruins"],
-    	"Cavern+Trap": ["Cavern","Trap"],
 
+	"Plains+City ruins+Trap": ["Plains","City ruins","Trap"]
+    	"Cavern+Trap": ["Cavern","Trap"],
     	"Desert+Trap": ["Desert","Trap"],
     	"Tundra+Trap": ["Tundra","Trap"],
 
+// Unit experiment - can we render watercraft under bridges?
+	    
+	"Bridge1ocean+Destroyer": ["Bridge1ocean","Destroyer"],
+	"Bridge1coast+Destroyer": ["Bridge1coast","Destroyer"],
+	"Bridge2ocean+Destroyer": ["Bridge2ocean","Destroyer"],
+	"Bridge2coast+Destroyer": ["Bridge2coast","Destroyer"],
+	"Bridge3+Destroyer": ["Bridge3","Destroyer"],
+	"Bridge3coast+Destroyer": ["Bridge3coast","Destroyer"],
+
+
+	    
     }
 } 
