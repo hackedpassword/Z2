@@ -375,7 +375,8 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"culture": 10,
 		"occursOn": ["Plains"],
 		"uniques": [
-			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
+			"Comment [Requires Shield to gain Adventurer promotion]",
+			"Grants [Adventurer] ([Overcome difficult terrain!]) to adjacent [Land] units for the rest of the game <for units with [Shield]>",
 			"Tile provides yield without assigned population",
 		],
 		"turnsInto": "Plains",
@@ -392,7 +393,8 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"occursOn": ["Plains","Grassland","Desert"],
 		"uniques": [
 			"Rough terrain",
-			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
+			"Comment [Requires Shield to gain Adventurer promotion]",
+			"Grants [Adventurer] ([Overcome difficult terrain!]) to adjacent [Land] units for the rest of the game <for units with [Shield]>",
 			"Units ending their turn on this terrain take [10] damage",
 			"Tile provides yield without assigned population",
 		],
@@ -613,7 +615,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			  // Want this to be 100G but only 500G is hardcoded
 			"Grants [Shield] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
-			"Units ending their turn on this terrain take [-50] damage",  // healer
+			"Units ending their turn on this terrain take [-50] damage",  // healer house
 			// "[+2] population [in capital]",  // not working
 			// "[+1] population [in all cities with a world wonder]",  // I want this to be "natural wonder", n/a
 		],
@@ -632,9 +634,10 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 3,
 		"occursOn": ["Plains"],
 		"uniques": [
-			"Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game",
+			"Comment [Must possess the Trophy to gain the magic!]",
+			"Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game <with [Silver]>",
 			"Tile provides yield without assigned population",
-			"Units ending their turn on this terrain take [-50] damage",  // healer
+			"Units ending their turn on this terrain take [-50] damage",  // healer house
 		],
 		"turnsInto": "Plains",
 		"impassable": false,
@@ -653,7 +656,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"uniques": [
 			"Grants [Life] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
-			"Units ending their turn on this terrain take [-50] damage",  // healer
+			"Units ending their turn on this terrain take [-50] damage",  // healer house
 		],
 		"turnsInto": "Plains",
 		"impassable": false,
@@ -671,12 +674,12 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 3,
 		"occursOn": ["Desert"],
 		"uniques": [
-			"Grants [Fairy] ([Combat magic]) to adjacent [Land] units for the rest of the game",
-		// Attempting to reconstruct this powerup by having a building constructed, applying from there .. Military HQ - doesn't work
-		// The conditional on this doesn't seem to trigger. Code limitation. Meaning the promotion is granted without a conditional. Way overpowered atm.
-			"Grants [Downward Thrust] ([Warrior training]) to adjacent [Land] units for the rest of the game",  // moving the following to the promotion unique: <upon constructing [Military Academy] [in all cities]>",
+			"Comment [A mighty Jump will gain you audience with the towns' Knight!]",
+			"Grants [Downward Thrust] ([Learned from the town's Hylian Knight]) to adjacent [Land] units for the rest of the game <for units with [Jump]",
+			"Comment [You must obtain the Water of Life to gain audience with the town's Wise Man!]",
+			"Grants [Fairy] ([Combat magic]) to adjacent [Land] units for the rest of the game <with [Citrus]>",
 			"Tile provides yield without assigned population",
-			"Units ending their turn on this terrain take [-50] damage",  // healer
+			"Units ending their turn on this terrain take [-50] damage",  // healer house
 		],
 		"turnsInto": "Desert",
 		"impassable": false,
@@ -695,7 +698,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"uniques": [
 			"Grants [Fire] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
-			"Units ending their turn on this terrain take [-50] damage",  // healer
+			"Units ending their turn on this terrain take [-50] damage",  // healer house
 		],
 		"turnsInto": "Plains",
 		"impassable": false,
@@ -714,10 +717,12 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 3,
 		"occursOn": ["Desert"],
 		"uniques": [
-			"Grants [Reflect] ([Combat magic]) to adjacent [Land] units for the rest of the game",
-			"Grants [Upward Thrust] ([Military/warrior training]) to adjacent [Land] units for the rest of the game <upon constructing [Military Academy] [in all cities]>",
+			"Comment [A mighty Jump will gain you audience with the towns' Knight!]",
+			"Grants [Upward Thrust] ([Learned from the town's Hylian Knight]) to adjacent [Land] units for the rest of the game <for units with [Jump]>",
+			"Comment [You must save the Lost Child to gain audience with the town's Wise Man!]",
+			"Grants [Reflect] ([Combat magic]) to adjacent [Land] units for the rest of the game <with [Marble]>",
 			"Tile provides yield without assigned population",
-			"Units ending their turn on this terrain take [-50] damage",  // healer
+			"Units ending their turn on this terrain take [-50] damage",  // healer house
 		],
 		"turnsInto": "Desert",
 		"impassable": false,
@@ -740,7 +745,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		// Magic Key is a very powerful upgrade. DT doesn't need to be activated, while UT will be inherently. 
 			"Comment [Magic Key promotion requires both Thrusts to activate.]", 
 			"Tile provides yield without assigned population",
-			"Units ending their turn on this terrain take [-50] damage",  // healer
+			"Units ending their turn on this terrain take [-50] damage",  // healer house
 		],
 		"turnsInto": "Grassland",
 		"impassable": false,
