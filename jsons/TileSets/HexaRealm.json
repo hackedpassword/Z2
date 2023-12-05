@@ -45,9 +45,9 @@
 	    	"Tundra+Trap": ["Tundra","Trap"],
 
 		// Owned world items
-		"Cavern+Citrus+Plantation": ["Cavern","Citrus","Flash"],
-		"Plains+Marble+Quarry": ["Plains","Marble","Flash"],
-		"Cave+Copper+Mine": ["Cave","Copper","Flash"],
+		"Cavern+Citrus+Plantation": ["Cavern","Flash","Citrus"],
+		"Plains+Marble+Quarry": ["Plains","Flash","Marble"],
+		"Cave+Copper+Mine": ["Cave","Flash","Copper"],
 
 		
 // Unit experiment - can we render watercraft under bridges?
