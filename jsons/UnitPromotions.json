@@ -43,7 +43,7 @@
 		"uniques": [
 			"Only available <for [Military] units>",
 			// "Only available <with [Citrus]>",		
-			"Ignores terrain cost <with [Citrus]>", //<for [Military] units>",
+			"Ignores terrain cost <for [Military] units> <with [Citrus]>",
 			"Ignores Zone of Control",
 		]
 	},
