@@ -139,6 +139,10 @@
 		"uniques": ["Can be built outside your borders"],
 	},
 	{
+		"name": "Flash",  // for world items
+		"uniques": ["Can only be built to improve a resource"],  // it's deco for resource items when built
+	},
+	{
 		"name": "Mine",  // This leads to production improvements w/ Mountains as resources in Z2 are scarce
 				 // don't forget workers are taking 50 dmg/t/Mountain so building these are tricky
 		"terrainsCanBeBuiltOn": ["Hill","Mound","Mountain"],
