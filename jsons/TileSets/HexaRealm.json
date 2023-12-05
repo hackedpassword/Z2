@@ -1,59 +1,64 @@
 {
-    "useColorAsBaseTerrain": "false",
-//    "fallbackTileSet": "FantasyHex",  // don't want a fallback
+	"useColorAsBaseTerrain": "false",
+	// "fallbackTileSet": "FantasyHex",  // don't want a fallback
 
-    "ruleVariants": {
+	"ruleVariants": {
 
-	"River+Road": ["Road", "River"],  // Attempting to resort river/lava render layers
-	"River+Railroad": ["Railroad", "River"],
+		"River+Road": ["Road", "River"],  // Attempting to resort river/lava render layers
+		"River+Railroad": ["Railroad", "River"],
 
-	"Desert": ["Desert"],
-	"Desert3": ["Desert2"],  // removing Z2 desert3 sprite somehow defaults/forces hexarealm desert sprite
+		"Desert": ["Desert"],
+		"Desert3": ["Desert2"],  // removing Z2 desert3 sprite somehow defaults/forces hexarealm desert sprite
 
-//	"Plains+NorthCastle": ["Plains","NorthCastleGlow"],  // Seems this works on Wonders as seen above, but don't want it atm
+		// "Plains+NorthCastle": ["Plains","NorthCastleGlow"],  // Seems this works on Wonders as seen above, but don't want it atm
 
-	"Coast+Oil": ["Coast", "Oil", "Coast Waves"],
+		"Coast+Oil": ["Coast", "Oil", "Coast Waves"],
 
-	"Plains+Forest": ["Plains", "ForestG"],
-	
-	"Grassland+Marsh+Uranium": ["Grassland", "Marsh", "Uranium"],
-	"Grassland+Marsh+Iron": ["Grassland", "Marsh", "Iron"],
-	"Grassland+Forest+Coal": ["Grassland", "ForestG", "Coal"],
-	"Grassland+Forest+Trap": ["Grassland", "ForestG", "Trap"],
+		"Plains+Forest": ["Plains", "ForestG"],
 
-	"Bridge1ocean+City center": ["Bridge1ocean","City center"],
-	"Bridge1coast+City center": ["Bridge1coast","City center"],
-	"Bridge2ocean+City center": ["Bridge2ocean","City center"],
-	"Bridge2coast+City center": ["Bridge2coast","City center"],
-	"Bridge3+City center": ["Bridge3","City center"],
-	"Bridge3coast+City center": ["Bridge3coast","City center"],
+		"Grassland+Marsh+Uranium": ["Grassland", "Marsh", "Uranium"],
+		"Grassland+Marsh+Iron": ["Grassland", "Marsh", "Iron"],
+		"Grassland+Forest+Coal": ["Grassland", "ForestG", "Coal"],
+		"Grassland+Forest+Trap": ["Grassland", "ForestG", "Trap"],
 
-	"Bridge1ocean+City ruins": ["Bridge1ocean","City ruins"],
-	"Bridge1coast+City ruins": ["Bridge1coast","City ruins"],
-	"Bridge2ocean+City ruins": ["Bridge2ocean","City ruins"],
-	"Bridge2coast+City ruins": ["Bridge2coast","City ruins"],
-	"Bridge3+City ruins": ["Bridge3","City ruins"], // lakes
-	"Bridge3coast+City ruins": ["Bridge3coast","City ruins"],
-	"BridgeLow+City ruins": ["BridgeLow","City ruins"],
-	"BridgeHigh+City ruins": ["BridgeHigh","City ruins"],
-	"Plains+City ruins": ["Plains","City ruins"],
-    	"Cavern+City ruins": ["Cavern","City ruins"],
+		"Bridge1ocean+City center": ["Bridge1ocean","City center"],
+		"Bridge1coast+City center": ["Bridge1coast","City center"],
+		"Bridge2ocean+City center": ["Bridge2ocean","City center"],
+		"Bridge2coast+City center": ["Bridge2coast","City center"],
+		"Bridge3+City center": ["Bridge3","City center"],
+		"Bridge3coast+City center": ["Bridge3coast","City center"],
 
-	"Plains+City ruins+Trap": ["Plains","City ruins","Trap"]
-    	"Cavern+Trap": ["Cavern","Trap"],
-    	"Desert+Trap": ["Desert","Trap"],
-    	"Tundra+Trap": ["Tundra","Trap"],
+		"Bridge1ocean+City ruins": ["Bridge1ocean","City ruins"],
+		"Bridge1coast+City ruins": ["Bridge1coast","City ruins"],
+		"Bridge2ocean+City ruins": ["Bridge2ocean","City ruins"],
+		"Bridge2coast+City ruins": ["Bridge2coast","City ruins"],
+		"Bridge3+City ruins": ["Bridge3","City ruins"], // lakes
+		"Bridge3coast+City ruins": ["Bridge3coast","City ruins"],
+		"BridgeLow+City ruins": ["BridgeLow","City ruins"],
+		"BridgeHigh+City ruins": ["BridgeHigh","City ruins"],
+		"Plains+City ruins": ["Plains","City ruins"],
+	    	"Cavern+City ruins": ["Cavern","City ruins"],
 
+		"Plains+City ruins+Trap": ["Plains","City ruins","Trap"]
+	    	"Cavern+Trap": ["Cavern","Trap"],
+	    	"Desert+Trap": ["Desert","Trap"],
+	    	"Tundra+Trap": ["Tundra","Trap"],
+
+		// Owned world items
+		"Cavern+Citrus+Plantation": ["Cavern","Citrus","Flash"],
+		"Cave+Silver+Mine": ["Cave","Silver","Flash"],
+		"Plains+Marble+Quarry": ["Plains","Marble","Flash"],
+		"Cave+Copper+Mine": ["Cave","Copper","Flash"],
+
+		
 // Unit experiment - can we render watercraft under bridges?
-	    
-	"Bridge1ocean+Destroyer": ["Bridge1ocean","Destroyer"],
-	"Bridge1coast+Destroyer": ["Bridge1coast","Destroyer"],
-	"Bridge2ocean+Destroyer": ["Bridge2ocean","Destroyer"],
-	"Bridge2coast+Destroyer": ["Bridge2coast","Destroyer"],
-	"Bridge3+Destroyer": ["Bridge3","Destroyer"],
-	"Bridge3coast+Destroyer": ["Bridge3coast","Destroyer"],
 
+		"Bridge1ocean+Destroyer": ["Bridge1ocean","Destroyer"],
+		"Bridge1coast+Destroyer": ["Bridge1coast","Destroyer"],
+		"Bridge2ocean+Destroyer": ["Bridge2ocean","Destroyer"],
+		"Bridge2coast+Destroyer": ["Bridge2coast","Destroyer"],
+		"Bridge3+Destroyer": ["Bridge3","Destroyer"],
+		"Bridge3coast+Destroyer": ["Bridge3coast","Destroyer"],
 
-	    
-    }
+	}
 } 
