@@ -638,6 +638,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			// "Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game <when above [0] [Silver]>",
 			// "Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game <with [Silver]>",
 			// "Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game <for [Military] units>",  // trying several methods, conditionals above won't trigger
+			// moved reqs to unitpromotions, trying there
 			"Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game",  // <upon building a [Smelter] improvement>",  // trigger condition maybe?
 			"Tile provides yield without assigned population",
 			"Units ending their turn on this terrain take [-50] damage",  // healer house
@@ -743,7 +744,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"occursOn": ["Grassland"],
 		"uniques": [
 			"Grants [Spell] ([Combat magic]) to adjacent [Land] units for the rest of the game",
-			"Grants [Magic Key] ([Military/warrior training]) to adjacent [Land] units for the rest of the game <for units with [Upward Thrust]>",
+			"Grants [Magic Key] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 		// Units looking to take advantage will be on mission to visit the needed towns.
 		// Magic Key is a very powerful upgrade. DT doesn't need to be activated, while UT will be inherently. 
 			"Comment [Magic Key promotion requires both Thrusts to activate.]", 
