@@ -46,7 +46,6 @@
 
 		// Owned world items
 		"Cavern+Citrus+Plantation": ["Cavern","Citrus","Flash"],
-		"Cave+Silver+Mine": ["Cave","Silver","Flash"],
 		"Plains+Marble+Quarry": ["Plains","Marble","Flash"],
 		"Cave+Copper+Mine": ["Cave","Copper","Flash"],
 
