@@ -17,7 +17,7 @@
         {
 		"name": "Shield",
 		"uniques": [
-			"Only available for [Military] units",
+			"Only available <for [Military] units>",
 			"[25]% Strength bonus for [All] units within [1] tiles",
 			"May withdraw before melee ([25]%)",
 		]
@@ -25,7 +25,7 @@
         {
 		"name": "Jump",
 		"uniques": [
-			"Only available for [Military] units",
+			"Only available <for [Military] units>",
 			"Can see over obstacles",
 			"Can move after attacking",
 		]
@@ -33,7 +33,7 @@
         {
 		"name": "Life",
 		"uniques": [
-			"Only available for [Military] units",
+			"Only available <for [Military] units>",
 			"Unit will heal every turn, even if it performs an action",
 			"All adjacent units heal [20] HP when healing",
 		]
@@ -41,7 +41,8 @@
         {
 		"name": "Fairy",
 		"uniques": [
-			"Only available for [Military] units",
+			"Only available <for [Military] units>",
+			"Only available <with [Citrus]>",			
 			"Ignores terrain cost",
 			"Ignores Zone of Control",
 		]
@@ -49,7 +50,7 @@
         {
 		"name": "Fire",
 		"uniques": [
-			"Only available for [Military] units",
+			"Only available <for [Military] units>",
 			"Ranged attacks may be performed over obstacles",
 			"May attack when embarked",
 		]
@@ -57,7 +58,8 @@
         {
 		"name": "Reflect",
 		"uniques": [
-			"Only available for [Military] units",
+			"Only available <for [Military] units>",
+			"Only available <with [Marble]>",
 			"Can see invisible [All] units",
 			"No defensive terrain penalty",
 		]
@@ -65,7 +67,7 @@
         {  // transformations, transmorphing
 		"name": "Spell",
 		"uniques": [
-			"Only available for [Military] units",
+			"Only available <for [Military] units>",
 			"May capture killed [Land] units <with [20]% chance>",
 			"Earn [50]% of killed [All] unit's [Cost] as [Gold]",
 		]
@@ -73,7 +75,7 @@
         {
 		"name": "Thunder",
 		"uniques": [
-			"Only available for [Military] units",
+			"Only available <for [Military] units>",
 			"[+50]% Strength <vs [All] units> <when below [1] Happiness>",
 			"[+200]% Strength <vs cities> <if it hasn't used other actions yet> <during a Golden Age>",
 		]
@@ -85,6 +87,7 @@
         {
 		"name": "Downward Thrust",
 		"uniques": [
+			"Only available <for [Military] units>",
 			"Only available <for units with [Jump]>",
 			"Comment [Requires visiting Ruto town to activate - requirement may change]",
 			"[1] additional attacks per turn <if it hasn't used other actions yet>",
@@ -100,6 +103,7 @@
 		"name": "Upward Thrust",
 		"uniques": [
 		// Quite limited with Unciv uniques as to how I want to have DT, UT, and Magic Key unlocked. Chaining upgrades is not well supported, at all.
+			"Only available <for [Military] units>",
 			"Only available <for units with [Fire]>",
 			// "Comment [Requires visiting Kasuto town to activate]",
 			"[50]% chance to intercept air attacks <for units with [Spell]>",
@@ -109,7 +113,7 @@
         {
 		"name": "Magic Key",
 		"uniques": [
-			"Only available for [Military] units",
+			"Only available <for [Military] units>",
 			"Only available <when above [1] [Uranium]>",  // For now we're going with a simple unlock that's sensible
 			// "Comment [Requires both Thrust promotions to activate]", 
 			"May enter foreign tiles without open borders <for units with [Downward Thrust]>",
