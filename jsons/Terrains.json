@@ -413,7 +413,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"uniques": [
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
-			"Units ending their turn on this terrain take [10] damage <for [All] units> <without [Silk]>",  // experiment
+			"Units ending their turn on this terrain take [10] damage <for units without [Jump]>",  // experiment
 			"Tile provides yield without assigned population",
 		],
 		"turnsInto": "Mountain",
