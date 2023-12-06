@@ -40,8 +40,9 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		// to-do: settlers shouldn't settle here
 		"uniques": [
 			"Rough terrain",
+			"[+200]% Strength <vs [Air] units> <when defending>", 
 		        "Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
-			"Has an elevation of [1] for visibility calculations",
+			// "Has an elevation of [1] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation",
 			"Never receives any resources",
 			"Units ending their turn on this terrain take [10] damage <with [20]% chance>",  // enemies amidst
@@ -56,6 +57,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		// to-do: settlers shouldn't settle here - for now it's essentially a nuke safe haven
 		"uniques": [
 			"Rough terrain",
+                        "[+1000]% Strength <vs [Air] units> <when defending>",  // very protected from air attacks
 			"Units ending their turn on this terrain take [15] damage <with [20]% chance>",  // enemies amidst
 			"Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
 		        "Has an elevation of [-1] for visibility calculations",  // testing negative vis
@@ -95,7 +97,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"Units ending their turn on this terrain take [10] damage <with [50]% chance>",  // choppy and dangerous
                         "Never receives any resources",
 	        	// "Has an elevation of [1] for visibility calculations",  // should generally dissuade transit in these areas
-			"Blocks line-of-sight from tiles at same elevation",  // waves and swells
+			"Blocks line-of-sight from tiles at same elevation",  // waves and swells - great movement strategy maker 
 		],
 	},
 
@@ -109,6 +111,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"RGB": [99, 40, 7],
 		"uniques": [
 			"Rough terrain",
+			"[+75]% Strength <vs [Air] units> <when defending>", 
 		        "Has an elevation of [1] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation",
 		        "Units ending their turn on this terrain take [50] damage <with [80]% chance>",  // get in get out
