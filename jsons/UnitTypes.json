@@ -12,6 +12,9 @@
         "uniques": [
             "Double movement in [Plains]",
             "Double movement in [Grassland]",
+            "Double movement in [Force]",
+            "Double movement in [OceanTile]",  // should require Raft 
+            "Double movement in [CoastTile]",
         ]
     },
     {
@@ -74,31 +77,72 @@
     {
         "name": "Sword",
         "movementType": "Land",
-        "uniques": ["Can build [Remove Trap] improvements on tiles"],  // fight enemies of the land
+        "uniques": [
+            "Can build [Remove Trap] improvements on tiles",  // fight enemies of the land
+            "Double movement in [Force]",
+            "Double movement in [OceanTile]", 
+            "Double movement in [CoastTile]",
+        ],
     },
     {
         "name": "Gunpowder",
-        "movementType": "Land"
+        "movementType": "Land", 
+        "uniques": [
+            "Can build [Remove Trap] improvements on tiles",
+            "Double movement in [Force]",
+            "Double movement in [OceanTile]", 
+            "Double movement in [CoastTile]",
+        ],
     },
     {
         "name": "Archery",
-        "movementType": "Land"
+        "movementType": "Land", 
+        "uniques": [
+            "Can build [Remove Trap] improvements on tiles",
+            "Double movement in [Force]",
+            "Double movement in [OceanTile]", 
+            "Double movement in [CoastTile]",
+        ],
     },
     {
         "name": "Ranged Gunpowder",
-        "movementType": "Land"
+        "movementType": "Land", 
+        "uniques": [
+            "Can build [Remove Trap] improvements on tiles",
+            "Double movement in [Force]",
+            "Double movement in [OceanTile]", 
+            "Double movement in [CoastTile]",
+        ],
     },
     {
         "name": "Mounted",
-        "movementType": "Land"
+        "movementType": "Land", 
+        "uniques": [
+            "Can build [Remove Trap] improvements on tiles",
+            "Double movement in [Force]",
+            "Double movement in [OceanTile]", 
+            "Double movement in [CoastTile]",
+        ],
     },
     {
         "name": "Armored",
-        "movementType": "Land"
+        "movementType": "Land", 
+        "uniques": [
+            "Can build [Remove Trap] improvements on tiles",
+            "Double movement in [Force]",
+            "Double movement in [OceanTile]", 
+            "Double movement in [CoastTile]",
+        ],
     },
     {
         "name": "Siege",
-        "movementType": "Land"
+        "movementType": "Land", 
+        "uniques": [
+            "Can build [Remove Trap] improvements on tiles",
+            "Double movement in [Force]",
+            "Double movement in [OceanTile]", 
+            "Double movement in [CoastTile]",
+        ],
     },
     {
         "name": "Civilian Water",
