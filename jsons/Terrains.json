@@ -618,8 +618,8 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			  // Want this to be 100G but only 500G is hardcoded
 			"Grants [Shield] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
+			"Comment [Healer house recovers 50HP per turn as minus 50 damage]",
 			"Units ending their turn on this terrain take [-50] damage",  // healer house
-			// "[+2] population [in capital]",  // not working
 			// "[+1] population [in all cities with a world wonder]",  // I want this to be "natural wonder", n/a
 		],
 		"turnsInto": "Grassland",
@@ -644,6 +644,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			// moved reqs to unitpromotions, trying there
 			"Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game",  // <upon building a [Smelter] improvement>",  // trigger condition maybe?
 			"Tile provides yield without assigned population",
+			"Comment [Healer house recovers 50HP per turn as minus 50 damage]",
 			"Units ending their turn on this terrain take [-50] damage",  // healer house
 		],
 		"turnsInto": "Plains",
@@ -663,6 +664,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"uniques": [
 			"Grants [Life] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
+			"Comment [Healer house recovers 50HP per turn as minus 50 damage]",
 			"Units ending their turn on this terrain take [-50] damage",  // healer house
 		],
 		"turnsInto": "Plains",
@@ -686,6 +688,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"Comment [You must obtain the Water of Life to gain audience with the town's Wise Man!]",
 			"Grants [Fairy] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
+			"Comment [Healer house recovers 50HP per turn as minus 50 damage]",
 			"Units ending their turn on this terrain take [-50] damage",  // healer house
 		],
 		"turnsInto": "Desert",
@@ -705,6 +708,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"uniques": [
 			"Grants [Fire] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
+			"Comment [Healer house recovers 50HP per turn as minus 50 damage]",
 			"Units ending their turn on this terrain take [-50] damage",  // healer house
 		],
 		"turnsInto": "Plains",
@@ -726,9 +730,10 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"uniques": [
 			"Comment [A mighty Jump will gain you audience with the towns' Knight!]",
 			"Grants [Upward Thrust] ([Learned from the town's Hylian Knight]) to adjacent [Land] units for the rest of the game",
-			"Comment [You must save the Lost Child to gain audience with the town's Wise Man!]",
-			"Grants [Reflect] ([Combat magic]) to adjacent [Land] units for the rest of the game>",
+			"Comment [You must save the Lost Child to speak with the town's Wise Man!]",
+			"Grants [Reflect] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
+			"Comment [Healer house recovers 50HP per turn as minus 50 damage]", 
 			"Units ending their turn on this terrain take [-50] damage",  // healer house
 		],
 		"turnsInto": "Desert",
@@ -749,9 +754,10 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"Grants [Spell] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Grants [Magic Key] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 		// Units looking to take advantage will be on mission to visit the needed towns.
-		// Magic Key is a very powerful upgrade. DT doesn't need to be activated, while UT will be inherently. 
-			"Comment [Magic Key promotion requires both Thrusts to activate.]", 
+		// Magic Key is a very powerful upgrade. For now the req is uranium. 
+			// "Comment [Magic Key promotion requires both Thrusts to activate.]", 
 			"Tile provides yield without assigned population",
+			"Comment [Healer house recovers 50HP per turn as minus 50 damage]",
 			"Units ending their turn on this terrain take [-50] damage",  // healer house
 		],
 		"turnsInto": "Grassland",
@@ -767,7 +773,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"occursOn": ["Plains"],
 		"uniques": [
 			"Grants [Thunder] ([Combat magic]) to adjacent [Land] units for the rest of the game",
-			"Units ending their turn on this terrain take [10] damage",
+			"Units ending their turn on this terrain take [20] damage",
 		],
 		"turnsInto": "Plains",
 		"impassable": false,
