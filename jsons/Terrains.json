@@ -376,7 +376,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"occursOn": ["Plains"],
 		"uniques": [
 			"Comment [Requires Shield to gain Adventurer promotion]",
-			"Grants [Adventurer] ([Overcome difficult terrain!]) to adjacent [Land] units for the rest of the game <for units with [Shield]>",
+			"Grants [Adventurer] ([Overcome difficult terrain!]) to adjacent [Land] units for the rest of the game",  // doesn't trigger: <for units with [Shield]>
 			"Tile provides yield without assigned population",
 		],
 		"turnsInto": "Plains",
@@ -393,9 +393,9 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"occursOn": ["Plains","Grassland","Desert"],
 		"uniques": [
 			"Rough terrain",
-			"Comment [Requires Shield to gain Adventurer promotion]",
-			"Grants [Adventurer] ([Overcome difficult terrain!]) to adjacent [Land] units for the rest of the game <for units with [Shield]>",
-			"Units ending their turn on this terrain take [10] damage",
+			// "Comment [Requires Shield to gain Adventurer promotion]",
+			"Grants [Adventurer] ([Overcome difficult terrain!]) to adjacent [Land] units for the rest of the game", 
+			"Units ending their turn on this terrain take [10] damage <without incense>",
 			"Tile provides yield without assigned population",
 		],
 		"turnsInto": "Mountain",
@@ -413,7 +413,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"uniques": [
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
-			"Units ending their turn on this terrain take [10] damage",
+			"Units ending their turn on this terrain take [10] damage <for [All] units> <without [Silk]>",  // experiment
 			"Tile provides yield without assigned population",
 		],
 		"turnsInto": "Mountain",
