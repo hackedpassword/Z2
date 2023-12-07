@@ -79,7 +79,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			// "[+1 Culture] <with [10]% chance>",
 			// "[+1 Happiness] <with [10]% chance>",
 			// "[+1 Faith] <with [10]% chance>",
-			"[-2 Gold] <in [River] tiles>",  // turn down resource noise
+			"[-2 Gold] <in [River] tiles>",  // turn down resource noise - still unable to find what is granting 2 gold to river tiles
 			// "Tile provides yield without assigned population <with [5]% chance>",  // jackpot resource provides all currently available
 
 		// Why can't I have it? Neeeeeed more control over uniques! ;)
@@ -159,9 +159,9 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"[+1 Food] <with [25]% chance> <after discovering [Clans]> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // bonus chance
 			// "[+1 Production] <with [20]% chance> <before discovering [Fire]> <in tiles without [Wheat]>",  // poor production source initially
 			// "[+1 Production] <with [20]% chance> <after discovering [Fire]> <in tiles without [Wheat]>",
-			"[+1 Culture] <with [5]% chance> <after discovering [Calendar]> <in tiles without [Wheat]>",
+			"[+1 Culture] <with [5]% chance> <after discovering [Calendar]> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			"[+1 Food] <with [15]% chance> <after discovering [Machinery]> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // bonus
-			"[+1 Gold] <with [2]% chance>",  // dropped something? found something!
+			"[+1 Gold] <with [2]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // dropped something? found something!
 		// This would be for promoting cultural exchanges, with a unique and filter that doesn't exist
 			// "[+1 Culture] <with [10]% chance>  // <when occupied by a [Player] unit> <when adjacent to a non-[Player] unit>
 			// "[+1 Happiness] <with [10]% chance>",
@@ -185,7 +185,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"[+10 Gold] <with [1]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // treasure
 			// "[+1 Culture] <with [10]% chance>",
 			// "[+1 Happiness] <with [10]% chance>",
-			"[+1 Faith] <with [5]% chance>",
+			"[+1 Faith] <with [5]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			// "Tile provides yield without assigned population <with [5]% chance>",  // glitch: circumvents chance, provides all. Purpose: jackpot resource provides all currently available
 		],
 	},
