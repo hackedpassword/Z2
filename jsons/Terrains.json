@@ -618,9 +618,9 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"occursOn": ["Grassland"],
 		"uniques": [
 			  // Want this to be 100G but only 500G is hardcoded
-			"Grants [Shield] ([Combat magic]) to adjacent [Land] units for the rest of the game",
+			"Grants [Shield] ([Combat magic]) to adjacent [Military] units for the rest of the game",
 			"Tile provides yield without assigned population",
-			"Comment [Healer house recovers 50HP per turn as minus 50 damage]",
+			"Comment [Healer house recovers 50HP per turn (as minus 50 damage)]",
 			"Units ending their turn on this terrain take [-50] damage",  // healer house
 			// "[+1] population [in all cities with a world wonder]",  // I want this to be "natural wonder", n/a
 		],
@@ -639,14 +639,15 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 3,
 		"occursOn": ["Plains"],
 		"uniques": [
-			"Comment [Must possess the Trophy to gain the magic!]",
+			// "Comment [Must possess the Trophy to gain the magic!]",
 			// "Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game <when above [0] [Silver]>",
 			// "Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game <with [Silver]>",
 			// "Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game <for [Military] units>",  // trying several methods, conditionals above won't trigger
+			// "Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game <upon building a [Smelter] improvement>",  // trigger condition maybe?
 			// moved reqs to unitpromotions, trying there
-			"Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game",  // <upon building a [Smelter] improvement>",  // trigger condition maybe?
+			"Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
-			"Comment [Healer house recovers 50HP per turn as minus 50 damage]",
+			"Comment [Healer house recovers 50HP per turn (as minus 50 damage)]",
 			"Units ending their turn on this terrain take [-50] damage",  // healer house
 		],
 		"turnsInto": "Plains",
@@ -666,7 +667,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"uniques": [
 			"Grants [Life] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
-			"Comment [Healer house recovers 50HP per turn as minus 50 damage]",
+			"Comment [Healer house recovers 50HP per turn (as minus 50 damage)]",
 			"Units ending their turn on this terrain take [-50] damage",  // healer house
 		],
 		"turnsInto": "Plains",
@@ -685,12 +686,12 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 3,
 		"occursOn": ["Desert"],
 		"uniques": [
-			"Comment [A mighty Jump will gain you audience with the towns' Knight!]",
-			"Grants [Downward Thrust] ([Learned from the town's Hylian Knight]) to adjacent [Land] units for the rest of the game",
-			"Comment [You must obtain the Water of Life to gain audience with the town's Wise Man!]",
+			// "Comment [A mighty Jump will gain you audience with the towns' Knight!]",
+			"Grants [Downward Thrust] ([Learned from the town's Hylian Knight]) to adjacent [Land] units for the rest of the game",  // supposed to use a <conditional> but won't accept any
+			// "Comment [You must obtain the Water of Life to gain audience with the town's Wise Man!]",
 			"Grants [Fairy] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
-			"Comment [Healer house recovers 50HP per turn as minus 50 damage]",
+			"Comment [Healer house recovers 50HP per turn (as minus 50 damage)]",
 			"Units ending their turn on this terrain take [-50] damage",  // healer house
 		],
 		"turnsInto": "Desert",
@@ -710,7 +711,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"uniques": [
 			"Grants [Fire] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
-			"Comment [Healer house recovers 50HP per turn as minus 50 damage]",
+			"Comment [Healer house recovers 50HP per turn (as minus 50 damage)]",
 			"Units ending their turn on this terrain take [-50] damage",  // healer house
 		],
 		"turnsInto": "Plains",
@@ -720,7 +721,6 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 	},
 
 	{
-	// bug alert! Currently, both up and down thrust are automatically granted - the conditional is not being factored. This is quite OP for early units.
 		"name": "Darunia Town", // Reflect, Upward Thrust
 		"type": "NaturalWonder",
 		"gold": 1,
@@ -730,12 +730,12 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 3,
 		"occursOn": ["Desert"],
 		"uniques": [
-			"Comment [A mighty Jump will gain you audience with the towns' Knight!]",
-			"Grants [Upward Thrust] ([Learned from the town's Hylian Knight]) to adjacent [Land] units for the rest of the game",
-			"Comment [You must save the Lost Child to speak with the town's Wise Man!]",
-			"Grants [Reflect] ([Combat magic]) to adjacent [Land] units for the rest of the game",
+			// "Comment [A mighty Jump will gain you audience with the towns' Knight!]",
+			"Grants [Upward Thrust] ([Learned from the town's Hylian Knight]) to adjacent [Land] units for the rest of the game",  // supposed to use a <conditional> but won't accept any
+			// "Comment [You must save the Lost Child to speak with the town's Wise Man!]",
+			"Grants [Reflect] ([Combat magic]) to adjacent [Land] units for the rest of the game",  // supposed to use a <conditional> but won't accept any
 			"Tile provides yield without assigned population",
-			"Comment [Healer house recovers 50HP per turn as minus 50 damage]", 
+			"Comment [Healer house recovers 50HP per turn (as minus 50 damage)]", 
 			"Units ending their turn on this terrain take [-50] damage",  // healer house
 		],
 		"turnsInto": "Desert",
@@ -754,12 +754,12 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"occursOn": ["Grassland"],
 		"uniques": [
 			"Grants [Spell] ([Combat magic]) to adjacent [Land] units for the rest of the game",
-			"Grants [Magic Key] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
+			"Grants [Magic Key] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",  // supposed to use a <conditional> but won't accept any
 		// Units looking to take advantage will be on mission to visit the needed towns.
-		// Magic Key is a very powerful upgrade. For now the req is uranium. 
+		// Magic Key is a very powerful upgrade. For now the req is uranium.
 			// "Comment [Magic Key promotion requires both Thrusts to activate.]", 
 			"Tile provides yield without assigned population",
-			"Comment [Healer house recovers 50HP per turn as minus 50 damage]",
+			"Comment [Healer house recovers 50HP per turn (as minus 50 damage)]",
 			"Units ending their turn on this terrain take [-50] damage",  // healer house
 		],
 		"turnsInto": "Grassland",
@@ -775,7 +775,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"occursOn": ["Plains"],
 		"uniques": [
 			"Grants [Thunder] ([Combat magic]) to adjacent [Land] units for the rest of the game",
-			"Units ending their turn on this terrain take [20] damage",
+			"Units ending their turn on this terrain take [20] damage <without [Salt]>",  // conditional prob doesn't work anyway
 		],
 		"turnsInto": "Plains",
 		"impassable": false,
@@ -959,8 +959,8 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"Nullifies all other stats this tile provides",
 			"Doesn't generate naturally", 
 		],
-		"occursOn": ["Grassland","Plains","Forest","Desert","Tundra","Hill","Mound","Cavern","Cave"],  // fun fact: enter "Land" and unciv will crash when going to civopedia to view the terrain from the world screen
-		"defenceBonus": -0.15,
+		"occursOn": ["Grassland","Plains","Forest","Desert","Tundra","Hill","Mound","Mountain","Cave"],  // fun fact: enter "Land" and unciv will crash when going to civopedia to view the terrain from the world screen
+		"defenceBonus": -0.25,
 	},
 	{
 		"name": "Oasis",
