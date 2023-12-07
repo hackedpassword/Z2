@@ -10,14 +10,14 @@
         {  // Granted by generic towns and other events
 		"name": "Combat",
 		"uniques": [
-			"Eliminates combat penalty for attacking over a river",
+			"Eliminates combat penalty for attacking across a coast",
 			"[+50]% Strength <vs cities>",
 		]
 	},
         {
 		"name": "Shield",
 		"uniques": [
-			"Only available <for [Military] units>",
+			"Only available <for [Military] units>",  // if a Villager does receive the promotion, this will, should, keep the effect deactivated, though the promo will still show
 			"[25]% Strength bonus for [All] units within [1] tiles",
 			"May withdraw before melee ([25]%)",
 		]
@@ -43,7 +43,7 @@
 		"uniques": [
 			"Only available <for [Military] units>",
 			// "Only available <with [Citrus]>",		
-			"Ignores terrain cost <for [Military] units> <with [Citrus]>",
+			"Ignores terrain cost <for [Military] units> <with [Citrus]>",  // current bug makes this delayed by one unit action (self) per turn, see: https://github.com/yairm210/Unciv/issues/10674
 			"Ignores Zone of Control",
 		]
 	},
@@ -51,6 +51,7 @@
 		"name": "Fire",
 		"uniques": [
 			"Only available <for [Military] units>",
+			"Can carry [1] [Guided Missile] units",  // bazooka? rpg? prob should make a rocket unit
 			"Ranged attacks may be performed over obstacles",
 			"May attack when embarked",
 		]
@@ -59,9 +60,9 @@
 		"name": "Reflect",
 		"uniques": [
 			"Only available <for [Military] units>",
-			"Only available <with [Marble]>",
+			// "Only available <with [Marble]>",  // can't double down on Only Available's :p
 			"Can see invisible [All] units",
-			"No defensive terrain penalty",
+			"Ignores Zone of Control",
 		]
 	},
         {  // transformations, transmorphing
@@ -70,14 +71,15 @@
 			"Only available <for [Military] units>",
 			"May capture killed [Land] units <with [20]% chance>",
 			"Earn [50]% of killed [All] unit's [Cost] as [Gold]",
+			"Can transform to [Scout]",  // gonna try it
 		]
 	},
         {
 		"name": "Thunder",
 		"uniques": [
 			"Only available <for [Military] units>",
-			"[+50]% Strength <vs [All] units> <when below [1] Happiness>",
-			"[+200]% Strength <vs cities> <if it hasn't used other actions yet> <during a Golden Age>",
+			"[+100]% Strength <when attacking> <in [Enemy land] tiles>",
+			"[+200]% Strength <when attacking> <if it hasn't used other actions yet> <during a Golden Age>",  // bezerker rally mode
 		]
 	},
 
@@ -87,12 +89,13 @@
         {
 		"name": "Downward Thrust",
 		"uniques": [
-			"Only available <for [Military] units>",
+			// "Only available <for [Military] units>",
 			"Only available <for units with [Jump]>",
-			"Comment [Requires visiting Ruto town to activate - requirement may change]",
+			"Comment [Requires visiting Ruto town to activate (requirement may change)",  // supposed to have the trophy but can't <with [Silver]>
 			"[1] additional attacks per turn <if it hasn't used other actions yet>",
-			"[+25]% Strength",
+			"[+50]% Strength <when attacking> <if it hasn't used other actions yet>",
 			"Great General provides double combat bonus",
+
 		// The below should work, does register in game, but does not trigger.
 			// "[+50]% Strength <for units with [{Shield} {Jump} {Life}]>",
 		// and this line only recognizes the last conditional. 
@@ -103,21 +106,21 @@
 		"name": "Upward Thrust",
 		"uniques": [
 		// Quite limited with Unciv uniques as to how I want to have DT, UT, and Magic Key unlocked. Chaining upgrades is not well supported, at all.
-			"Only available <for [Military] units>",
+			// "Only available <for [Military] units>",
 			"Only available <for units with [Fire]>",
 			// "Comment [Requires visiting Kasuto town to activate]",
-			"[50]% chance to intercept air attacks <for units with [Spell]>",
-			"May Paradrop up to [4] tiles from inside friendly territory <for units with [Spell]>",
+			"[50]% chance to intercept air attacks <for units with [Jump]>",
+			"May Paradrop up to [6] tiles from inside friendly territory <for units with [Spell]>",  // teleport
 		]
 	},
         {
 		"name": "Magic Key",
 		"uniques": [
-			"Only available <for [Military] units>",
+			// "Only available <for [Military] units>",
 			"Only available <when above [1] [Uranium]>",  // For now we're going with a simple unlock that's sensible
 			// "Comment [Requires both Thrust promotions to activate]", 
-			"May enter foreign tiles without open borders <for units with [Downward Thrust]>",
-			"Free Social Policy <upon conquering a city> <for units with [Downward Thrust]>",
+			"May enter foreign tiles without open borders",  // the key to the land
+			"Free Social Policy <upon conquering a city>",  // the key to the city
 		]
 	},
 
