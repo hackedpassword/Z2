@@ -46,13 +46,13 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"Blocks line-of-sight from tiles at same elevation",
 			"Never receives any resources",
 			"Units ending their turn on this terrain take [10] damage <with [20]% chance>",  // enemies amidst
+			"[-2 Gold] <in [River] tiles>",  // turn down resource noise
 		],
 	},
 	{
 		"name": "Cavern",
 		"type": "Land",
 		"movementCost": 2,
-		// "gold": 3,
 		"RGB": [200, 76, 12],
 		// to-do: settlers shouldn't settle here - for now it's essentially a nuke safe haven
 		"uniques": [
@@ -79,6 +79,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			// "[+1 Culture] <with [10]% chance>",
 			// "[+1 Happiness] <with [10]% chance>",
 			// "[+1 Faith] <with [10]% chance>",
+			"[-2 Gold] <in [River] tiles>",  // turn down resource noise
 			// "Tile provides yield without assigned population <with [5]% chance>",  // jackpot resource provides all currently available
 
 		// Why can't I have it? Neeeeeed more control over uniques! ;)
@@ -118,6 +119,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
 			// "Population loss from nuclear attacks [-50]% [in this city]",  // in case a city is settled here
 			// "Damage to garrison from nuclear attacks [-75]% [in this city]",  // these two lines disallowed, meant for buildings instead :/
+			"[-2 Gold] <in [River] tiles>",  // turn down resource noise
 		], 
 	        "impassable": true,  // unless unit received Adventurer training/promotion 
 	},
