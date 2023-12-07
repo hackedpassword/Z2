@@ -48,16 +48,28 @@
 		"Cavern+Citrus+Plantation": ["Cavern","Flash","Citrus"],
 		"Plains+Marble+Quarry": ["Plains","Flash","Marble"],
 		"Cave+Copper+Mine": ["Cave","Flash","Copper"],
+		"Cavern+Silver+Smelter": ["Cavern","Smelter","Flash","Silver"],
+		"Cave+Silver+Smelter": ["Cave","Smelter","Flash","Silver"],
+
+		// Powerups
+		"Desert+Incense+Plantation": ["Desert","Flash","Incense"],
+		"Grassland+Silk+Plantation": ["Grassland","Flash","Silk"],
+		"Desert+Furs+Camp": ["Desert","Flash","Furs"],
+		"Plains+Cotton+Plantation": ["Plains","Flash","Cotton"],
+		"Plains+Ivory+Camp": ["Plains","Flash","Ivory"],
+		"Desert+Salt+Mine": ["Desert","Flash","Salt"],
+		"Plains+Gold Ore+Smelter": ["Plains","Smelter","Flash","Gold Ore"],
+		
 
 		
 // Unit experiment - can we render watercraft under bridges?
 
-		"Bridge1ocean+Destroyer": ["Bridge1ocean","Destroyer"],
-		"Bridge1coast+Destroyer": ["Bridge1coast","Destroyer"],
-		"Bridge2ocean+Destroyer": ["Bridge2ocean","Destroyer"],
-		"Bridge2coast+Destroyer": ["Bridge2coast","Destroyer"],
-		"Bridge3+Destroyer": ["Bridge3","Destroyer"],
-		"Bridge3coast+Destroyer": ["Bridge3coast","Destroyer"],
+		"Bridge1ocean+Destroyer": ["Destroyer","Bridge1ocean"],
+		"Bridge1coast+Destroyer": ["Destroyer","Bridge1coast"],
+		"Bridge2ocean+Destroyer": ["Destroyer","Bridge2ocean",],
+		"Bridge2coast+Destroyer": ["Destroyer","Bridge2coast"],
+		"Bridge3+Destroyer": ["Destroyer","Bridge3"],
+		"Bridge3coast+Destroyer": ["Destroyer","Bridge3coast"],
 
 	}
 } 
