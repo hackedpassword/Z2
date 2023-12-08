@@ -400,7 +400,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"Rough terrain",
 			// "Comment [Requires Shield to gain Adventurer promotion]",
 			"Grants [Adventurer] ([Overcome difficult terrain!]) to adjacent [Land] units for the rest of the game", 
-			"Units ending their turn on this terrain take [10] damage <without incense>",
+			"Units ending their turn on this terrain take [10] damage",  // intended: <without incense>
 			"Tile provides yield without assigned population",
 		],
 		"turnsInto": "Mountain",
