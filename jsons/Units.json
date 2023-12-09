@@ -76,13 +76,12 @@
 		"upgradesTo": "Nomad",
 		"obsoleteTech": "Shelter",
 		"uniques": [
+			// The idea here is players cannot immediately settle and must explore a bit first. 
+			"Founds a new city <after [2] turns> <upon discovering a Natural Wonder> <[3] times> <by consuming this unit>",  // critical gameplay element, explore or found colony?
 			"[-3] Sight <during the [Prehistoric era]>",
 			"[-2] Sight <starting from the [Ancient era]>",
 			"May upgrade to [Nomad] through ruins-like effects",
 		// testing the following - will the logic hold? 
-			// The idea here is players cannot immediately settle and must explore a little. 
-			// Still needs testing, might work?
-			"Founds a new city <after [2] turns> <upon discovering a Natural Wonder> <by consuming this unit>",  // critical gameplay element, explore or found colony?
 			// Second method. Attempting to engineer a means of needing to find a second wonder before allowing founding. 
 			//// "Founds a new city <upon discovering a Natural Wonder> ... 
 			////     "<upon ending a turn in a non-[Natural Wonder] tile>"
