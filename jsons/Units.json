@@ -77,7 +77,9 @@
 		"obsoleteTech": "Shelter",
 		"uniques": [
 			// The idea here is players cannot immediately settle and must explore a bit first. 
-			"Founds a new city <after [2] turns> <upon discovering a Natural Wonder> <[3] times> <by consuming this unit>",  // critical gameplay element, explore or found colony?
+			//"Founds a new city <after [2] turns> <upon discovering a Natural Wonder> <[3] times> <by consuming this unit>",  // critical gameplay element, explore or found colony?
+			"Founds a new city <upon discovering a Natural Wonder> <[3] times> <by consuming this unit>",
+			
 			"[-3] Sight <during the [Prehistoric era]>",
 			"[-2] Sight <starting from the [Ancient era]>",
 			"May upgrade to [Nomad] through ruins-like effects",
