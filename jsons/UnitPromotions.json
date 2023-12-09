@@ -88,22 +88,27 @@
 	
         {
 		"name": "Downward Thrust",
+		"prerequisites": ["Jump"],
 		"uniques": [
 			// "Only available <for [Military] units>",
-			"Only available <for units with [Jump]>",
+			// "Only available <for units with [Jump]>",
 			"Comment [Requires visiting Ruto town to activate (requirement may change)",  // supposed to have the trophy but can't <with [Silver]>
 			"[1] additional attacks per turn <if it hasn't used other actions yet>",
 			"[+50]% Strength <when attacking> <if it hasn't used other actions yet>",
 			"Great General provides double combat bonus",
 
 		// The below should work, does register in game, but does not trigger.
-			// "[+50]% Strength <for units with [{Shield} {Jump} {Life}]>",
+			// "[+50]% Strength <for units with [{Shield} {Jump} {Life}]>",  // use prerequisites instead
 		// and this line only recognizes the last conditional. 
-			// "[+50]% Strength <for units with [Shield]> <for units with [Jump]> <for units with [Life]>",
-		]
+			// "[+50]% Strength <for units with [Shield]> <for units with [Jump]> <for units with [Life]>",  // ditto 
+		],
+	"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
+        "column": 1,
+        "row": 5, 
 	},
         {
 		"name": "Upward Thrust",
+		"prerequisites": ["Jump"],
 		"uniques": [
 		// Quite limited with Unciv uniques as to how I want to have DT, UT, and Magic Key unlocked. Chaining upgrades is not well supported, at all.
 			// "Only available <for [Military] units>",
@@ -111,7 +116,10 @@
 			// "Comment [Requires visiting Kasuto town to activate]",
 			"[50]% chance to intercept air attacks <for units with [Jump]>",
 			"May Paradrop up to [6] tiles from inside friendly territory <for units with [Spell]>",  // teleport
-		]
+		],
+		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
+        "column": 1,
+        "row": 6, 
 	},
         {
 		"name": "Magic Key",
