@@ -15,6 +15,5 @@
 	// "[All] units gain the [Downward Thrust] promotion <in cities with a [Military HQ]> <for units with [Jump]> <upon ending a turn in a [Mido Town] tile>",
 	// "[All] units gain the [Upward Thrust] promotion <in cities with a [Military HQ]> <for units with [Jump]> <upon ending a turn in a [Kasuto Town] tile>",
 	"[500]% Strength <for [Land] units> <when defending> <vs [Air] units> <in [Cavern] tiles>", 
-	"May withdraw before melee ([75]%) <for [Land] units> <when defending> <vs [Air] units> <in [Cavern] tiles>", 
     ]
 }
