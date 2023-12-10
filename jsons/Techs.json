@@ -1,4 +1,12 @@
 [
+/*
+	Tech notes:
+	The foundation of this tech tree is G&K, though there are several huge differences now.
+		1. Complete tree reshuffle. Very careful attention to rebuilding it.
+		2. Two additional eras.
+		3. Rebuilt minding logical progression, for ex. techs that previously were unsensibly out-of-order now restructured
+	All G&K quotes are slated to be removed. Game notes and hints will guide the player instead.
+*/
 
 	{
 		"columnNumber": 0,
@@ -65,7 +73,6 @@
 		]
 	},
 	{
-	// Haven't done any work on uniques for the new eras yet.
 		"columnNumber": 2,
 		"era": "Prehistoric era",
 		"techCost": 30,
@@ -89,6 +96,9 @@
 				"name": "The Wheel",
 				"row": 10,
 				"prerequisites": ["Tools"],
+				"uniques": [
+					"[+1] Movement <for [All] units>", // Yes. Proven great by Alpha Frontier, anti-crawl
+				],
 				"quote": "'Wisdom and virtue are like the two wheels of a cart.' - Japanese proverb",
 			},
 			{
@@ -142,7 +152,10 @@
 				"name": "Fishing",
 				"row": 1,
 				"prerequisites": ["Melee Weaponry"],
-				"quote": "Gameplay note: There are no fish resource tiles in Z2, so you are allowed to utilize workboats as a placable resource. As usual, these are subject to working population limitations.",
+				"uniques": [
+					"Enables embarkation for land units",
+				],
+				"quote": "Gameplay note: There are no fish resource tiles in Z2, so you are allowed to utilize Workboats or Villagers to fish off coasts as desired.",
 			},
 			{
 				"name": "Archery",
@@ -186,6 +199,9 @@
 			},
 		]
 	},
+	
+// Classical era //
+	
 	{
 		"columnNumber": 5,
 		"era": "Classical era",
@@ -197,7 +213,7 @@
 				"name": "Sailing",
 				"row": 1,
 				"prerequisites": ["Fishing"],
-				"uniques": ["Enables embarkation for land units"],
+				"uniques": ["[+1] Movement <for [Water] units> <in [Coast] tiles>"],
 				"quote": "'He who commands the sea has command of everything.' - Themistocles"
 			},
 			{
@@ -239,6 +255,9 @@
 				"cost": 85,
 				"row": 1,
 				"prerequisites": ["Sailing"],
+				"uniques": [
+					"[1] Movement point cost to disembark",
+				],
 				"quote": "'He made an instrument to know if the moon shine at full or no.' - Samuel Butler"
 			},
 			{
@@ -277,6 +296,9 @@
 			},
 		]
 	},
+
+// Medieval era //
+	
 	{
 		"columnNumber": 7,
 		"era": "Medieval era",
@@ -334,8 +356,10 @@
 				"cost": 375,
 				"row": 1,
 				"prerequisites": ["Optics","Theology"],
-				"uniques": [  // This is a slight -3 (31t) tech shortcut to ocean travel, basically the British tech route
+				"uniques": [
+					// This is a slight tech shortcut to ocean travel, basically the British tech route
 					"Enables [Embarked] units to enter ocean tiles <upon discovering [Enterprising]>",
+					"[1] Movement point cost to embark",
 				],
 				"quote": "'I find the great thing in this world is not so much where we stand, as in what direction we are moving.' - Oliver Wendell Holmes"
 			},
@@ -368,6 +392,9 @@
 			},
 		]
 	},
+
+// Renaissance era //
+	
 	{
 		"columnNumber": 9,
 		"era": "Renaissance era",
@@ -437,7 +464,9 @@
 			{
 				"name": "Astronomy",
 				"row": 1,
-				"uniques": ["[+1] Movement <for [Embarked] units>","Enables [Embarked] units to enter ocean tiles"],
+				"uniques": [
+					"Enables [Embarked] units to enter ocean tiles",
+				],
 				"prerequisites": ["Global Exploration"],  // only Observatory requires Education
 				"quote": "'Joyfully to the breeze royal Odysseus spread his sail, and with his rudder skillfully he steered.' - Homer"
 			},
@@ -461,6 +490,9 @@
 			},
 		]
 	},
+
+// Pioneer era //
+
 	{
 		"columnNumber": 11,
 		"era": "Pioneer era",
@@ -472,6 +504,9 @@
 				"name": "Navigation",
 				"row": 1,
 				"prerequisites": ["Astronomy"],
+				"uniques": [
+					"[+1] Movement <for [Embarked] units>",
+				],
 				"quote": "'The winds and the waves are always on the side of the ablest navigators.' - Edward Gibbon"
 			},
 			{
@@ -510,7 +545,10 @@
 				"name": "Free Trade",
 				"row": 4,
 				"uniques": [
+					"[+50]% [Gold] from Trade Routes",  // Big trade bonus, with a secondary specific to coastal cities next
 					"[+2 Gold] [in all cities connected to capital] <in [Coastal] tiles>",  // Much appreciation to @SomeTroglodyte for redesigning this unique
+					"[+1] Movement <for [Civilian] units> <in [Coast] tiles>",
+					// #todo: add CS trade improvements, maybe other trade improvements
 				],
 				"prerequisites": ["Economics","Navigation"],
 				"quote": "'A market is a law system. Without it, the only possible economy is the street robbery.' - Eugen von Böhm-Bawerk"
@@ -518,7 +556,10 @@
 			{
 				"name": "Steam Power",
 				"row": 6,
-				"uniques": ["[+1] Movement <for [Embarked] units>"],
+				"uniques": [
+					"[+1] Movement <for [Embarked] units>",
+					"[+1] Movement <for non-[Embarked] units> <in [Ocean] tiles>",
+				],
 				"prerequisites": ["Scientific Theory"],
 				"quote": "'The nations of the West hope that by means of steam communication all the world will become as one family.' - Townsend Harris"
 			},
@@ -536,6 +577,9 @@
 			},
 		]
 	},
+
+// Industrial era //
+
 	{
 		"columnNumber": 13,
 		"era": "Industrial era",  // There should be an era before this one, suggested "Pioneer era"
@@ -615,6 +659,9 @@
 
 		]
 	},
+
+// Modern era //
+
 	{
 		"columnNumber": 15,
 		"era": "Modern era",
@@ -677,6 +724,9 @@
 			},
 		]
 	},
+
+// Atomic era //
+
 	{
 		"columnNumber": 17,
 		"era": "Atomic era",
@@ -737,6 +787,9 @@
 			},
 		]
 	},
+
+// Information era //
+
 	{
 		"columnNumber": 19,
 		"era": "Information era",
@@ -816,6 +869,9 @@
 			},
 		]
 	},
+
+// Future era //
+
 	{
 		"columnNumber": 21,
 		"era": "Future era",
@@ -827,8 +883,12 @@
 				"name": "Future Tech",
 				"row": 5,
 				"prerequisites": ["Globalization","Particle Physics","Nuclear Fusion","Nanotechnology","Stealth"],
-				"uniques": ["Can be continually researched"],
-				"quote": "'I think we agree, the past is over.' - George W. Bush",
+				"uniques": [
+					"[+50]% Great Person generation [in all cities]",
+					"Quantity of strategic resources produced by the empire [+25]%",
+					"Can be continually researched",
+				],
+				"quote": "",
               		   	"civilopediaText": [{"text": "The future only exists in the present. Ask any time traveller."}]
 			},
 		]
