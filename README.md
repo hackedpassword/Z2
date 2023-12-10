@@ -15,12 +15,9 @@ I’m a huge fan of the original Zelda 2, up to and including no-lives-lost vani
 
 Feedback: [Issues](https://github.com/hackedpassword/Z2/issues) (dev-related) and [Discussions](https://github.com/hackedpassword/Z2/discussions) (game-related) at the top of the page.
 
-## Before:
+## Before and After:
 
-![](https://raw.githubusercontent.com/hackedpassword/Unciv-Assets/main/Images/Z2/Z2_before.png)
-
-## After:
-![](https://raw.githubusercontent.com/hackedpassword/Unciv-Assets/main/Images/Z2/Screenshot_20231006_182203.jpg)
+![](https://raw.githubusercontent.com/hackedpassword/Unciv-Assets/main/Images/Z2/z12%20comparison.png)
 
 Take a closer look at the above and you'll see the **hidden water paths** using [Force](https://github.com/hackedpassword/Z2/blob/a28fc4ceebfa023fb7481dfcedd35cacc9fe58d3/jsons/Terrains.json#L282) (a TerrainFeature) via [customized ocean Hybrid tiles](https://github.com/hackedpassword/Z2/blob/a28fc4ceebfa023fb7481dfcedd35cacc9fe58d3/jsons/Terrains.json#L791) that makes the special features of the Hyrule overworld map possible! 
 
