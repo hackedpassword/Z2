@@ -1,7 +1,7 @@
 [
     {
         "name": "Tradition",
-        "era": "Ancient era",
+        "era": "Prehistoric era",
         "priorities": {
             "Neutral": 0,
             "Cultural": 10,
@@ -480,7 +480,7 @@
 ////
     {
         "name": "Freedom",
-        "era": "Industrial era",
+        "era": "Pioneer era",
         "priorities": {
             "Neutral": 50,
             "Cultural": 50,
@@ -544,7 +544,7 @@
 ////
     {
         "name": "Autocracy",
-        "era": "Industrial era",
+        "era": "Pioneer era",
         "priorities": {
             "Neutral": 50,
             "Cultural": 40,
@@ -615,7 +615,7 @@
 ////
     {
         "name": "Order",
-        "era": "Industrial era",
+        "era": "Pioneer era",
         "priorities": {
             "Neutral": 50,
             "Cultural": 40,
