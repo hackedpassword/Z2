@@ -44,12 +44,12 @@
 	{  // Augment initial gameplay and any tests
 		"name": "Portal Gate",  // Our hero appears!
 		"cost": 10,
-		"isWonder": true,
+		"isWonder": false,
 		"uniques": [
 			 "Can only be built [in capital]",
 			 // this will set you back one iron, causing a resource shortage
 			 "Free [Longswordsman] appears",  // Guess who! Planning to more closely align this asset with the NES
-			 "Provides [2] [Iron]",  // how can we offset that iron shortage? 
+			 "Provides [1] [Iron]",  // Offset for Longswordsman
 			 "Limited to [1] per Civilization",
 		 ], 
 	},
@@ -114,6 +114,23 @@
 			"Destroyed when the city is captured",
 			"[+1 Culture] for every known Natural Wonder",  // Increases value of exploring
 			"Requires at least [4] population",
+		],
+	},
+	{
+		"name": "Supreme Monument",
+		"culture": 10,
+		"cost": 2000,
+		"requiredTech": "Enterprising",
+		"maintenance": 3,
+		"uniques": [
+			"Destroyed when the city is captured",
+			"[+2 Culture] for every known Natural Wonder",
+			"Requires at least [12] population",
+			"Cannot be hurried", "Cannot be purchased",
+			"Can only be built [in capital]",
+			"Doubles Gold given to enemy if city is captured", 
+			"Triggers a global alert upon completion",
+			"[+20]% Great Person generation [in all cities]", 
 		],
 	},
 	{
