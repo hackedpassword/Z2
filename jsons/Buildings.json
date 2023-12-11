@@ -18,14 +18,27 @@
 	},
 */
 
+	{  // Augment initial gameplay and any tests
+		"name": "Portal Gate",  // Our hero appears!
+		"cost": 10,
+		"isWonder": false,
+		"uniques": [
+			"cheatsOn",
+			"Can only be built [in capital]",
+			// this will set you back one iron, causing a resource shortage
+			"Free [Longswordsman] appears",  // Guess who! Planning to more closely align this asset with the NES
+			"Provides [1] [Iron]",  // Offset for Longswordsman
+			"Limited to [1] per Civilization",
+		 ], 
+	},
 	{
 	// For tests, experiments, etc. If not using, block comment or sell this building
 		"name": "Hax Hut",
 		"cost": 1,
 		"isWonder": true,
 	        "uniques": [
-			"Can only be built [in capital]",
 			"Only available <when [cheatsOn]> <for [Human player]>", // not sure if this works
+			"Can only be built [in capital]",
 			"Reveals the entire map",  // for debugging map/tech
 			"[+1000000 Culture] <for [Human player]>",  // testing policy updates
 			"[+1000000 Gold] <for [Human player]>",  // blank check
@@ -40,18 +53,6 @@
 			// "Free [Worker] appears <once>",  // squire, paige, whoever, brought your helper
 			// "[+1] population [in all cities] <for [Human player]",  // gain extra pop now for each 1st turn settlement
                 ],
-	},
-	{  // Augment initial gameplay and any tests
-		"name": "Portal Gate",  // Our hero appears!
-		"cost": 10,
-		"isWonder": false,
-		"uniques": [
-			 "Can only be built [in capital]",
-			 // this will set you back one iron, causing a resource shortage
-			 "Free [Longswordsman] appears",  // Guess who! Planning to more closely align this asset with the NES
-			 "Provides [1] [Iron]",  // Offset for Longswordsman
-			 "Limited to [1] per Civilization",
-		 ], 
 	},
 	{
 		"name": "Horse Track",  // Do something with stale strategic resources, horses, coal, and iron
