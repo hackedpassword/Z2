@@ -1984,6 +1984,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 			"Eliminates combat penalty for attacking over a river",
 			"Can move immediately once bought",
                         // "Can carry [1] [Payload] units <for [Human player]>",  // For testing
+			"Can transform into [Fairy] <for [Human player]> <by consuming this unit>", 
                 ],
 		"attackSound": "shot"
 	},
