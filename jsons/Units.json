@@ -1,4 +1,6 @@
 [
+
+// #todo: review Atomic Theory position. Needs to align with Curry and looks way too far out atm. Destroyer might require the tech but not uranium (nuclear destroyer upgrade?)
 	
 	{
 		"name": "Worker",  // Villager
@@ -19,7 +21,7 @@
 	},
 
 	{
-	// Test only unit for experiments 
+	// Unit for experiments, not for normal games as you will very clearly see :D
 		"name": "Fairy",
 		"unitType": "Civilian",  // use map promotions for additional upgrades, test civ v military activations
 		"cost": 1,
@@ -1626,7 +1628,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"strength": 25,
 		"cost": 150,
 		"requiredTech": "Navigation",
-		"obsoleteTech": "Electronics",
+		"obsoleteTech": "Industrialization",
 		"upgradesTo": "Destroyer",
 		"promotions": ["Coastal Raider I"],
 		"uniques": ["May capture killed [Water] units"],
@@ -1642,7 +1644,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"cost": 150,
 		"requiredTech": "Navigation",
 		"obsoleteTech": "Electronics",
-		"upgradesTo": "Destroyer",
+		"upgradesTo": "Industrialization",
 		"promotions": ["Coastal Raider I", "Coastal Raider II", "Supply"],
 		"uniques": ["May capture killed [Water] units"],
 		"attackSound": "cannon"
