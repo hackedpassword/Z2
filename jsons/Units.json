@@ -49,20 +49,20 @@
 			"Can speed up the construction of a wonder", 
 			"Can hurry technology research", 
 			"Uncapturable", 
-			"May withdraw before melee ([100]%)",
-			"[+1000] Strength <when defending>", 
-			"Can move immediately once bought",  // applies maybe to transform action? 
+			"May withdraw before melee ([100]%)",  // 2 fast 4 u
+			"[+1000]% Strength <when defending>",  // fairy shield
+			"Can move immediately once bought",  // applies maybe to transform action? don't think so
 			"All adjacent units heal [100] HP when healing",
+			"Can see invisible [All] units",
 			"Invisible to others",
 			// "Invisible to non-adjacent units", 
-			"Can see invisible [All] units",
-			"All tiles cost 1 movement",
 			"May travel on Water tiles without embarking", 
+			"All tiles cost 1 movement",  // flying
 			// "Ignores terrain cost",  // this should be conditionally available to test M challenges
 			"Ignores Zone of Control", 
 			// "May enter foreign tiles without open borders", // magic key should be doing this
-			"Can undertake a trade mission with City-State, giving a large sum of gold and [500] Influence",
-			"[+3] Sight <with [0] to [3] neighboring [Natural Wonder] tiles>", 
+			"Can undertake a trade mission with City-State, giving a large sum of gold and [500] Influence",  // mind tricks
+			"[+3] Sight <with [0] to [3] neighboring [Natural Wonder] tiles>",  // kinda test, should be interesting if it works
 			"[+10] Movement <in [Natural Wonder] tiles>",  // re-up M 
 		],
 	}, 
