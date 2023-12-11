@@ -1,6 +1,4 @@
 [
-
-	// Rebuilt for Z2
 	
 	{
 		"name": "Worker",  // Villager
@@ -16,11 +14,20 @@
 			"Can build [Forage] improvements on tiles <with [30]% chance> <before the [Pioneer era]>",  // foraging is not a guaranteed improvement
 			"Can build [Slog mud] improvements on tiles <before the [Pioneer era]>",
 			"Can build [Land] improvements on tiles",
-			// "Can build [Natural Wonder] improvements on tiles", // Hacky attempt at adding features/improvements for things like bridges, doesn't work atm
-			"Can instantly construct a [Fishing Boats] improvement <by consuming this unit> <after discovering [Calendar]>", // Workers do water improvements ala AF, consumed tradeoff
-			"May create improvements on water resources <after discovering [Engineering]>", // create rice patty fields on lakes/freshwater coasts!
-			/* Hax 4 tests/experiments -> #todo create a new civilian that does all this
-			"Can instantly construct a [Farm] improvement <for [Human player]>",
+			"Can transform into [Fairy] <for [Human player]>", 
+		],
+	},
+
+	{
+	// Test only unit for experiments 
+		"name": "Fairy",
+		"unitType": "Civilian",  // use map promotions for additional upgrades, test civ v military activations
+		"cost": 1,
+		"movement": 15,  // limited to test M limits, use paradrop for big movement
+		"uniques": [
+			"Cannot be built",
+			"May Paradrop up to [200] tiles from inside friendly territory",  // fairy portal
+			"Can instantly construct a [Farm] improvement <for [Human player]>",  // can drop human player conditional now
 			"Can instantly construct a [Work district] improvement <for [Human player]>",
 			"Can instantly construct a [Trading post] improvement <for [Human player]>",
 			"Can instantly construct a [Plantation] improvement <for [Human player]>",
@@ -30,12 +37,36 @@
 			"Can instantly construct a [Remove Marsh] improvement <for [Human player]>",
 			"Can instantly construct a [Remove Forest] improvement <for [Human player]>",
 			// "Can instantly construct a [Road] improvement <for [Human player]>",
-			// "Can instantly construct a [Railroad] improvement <for [Human player]>",
+			"Can instantly construct a [Railroad] improvement <for [Human player]>",
 			"Can instantly construct a [Boulder] improvement <for [Human player]> <by consuming this unit>",
-			*/ // cheat off
+			"May create improvements on water resources",
+			"Can instantly construct a [Fishing Boats] improvement",
+			"Founds a new city", 
+			"Can transform to [Giant Death Robot MK-III]",
+			"Can carry [10] [All] units",  // bag of holding
+			"Can carry [5] extra [All] units",  // back pocket of holding
+			"Can speed up construction of a building",
+			"Can speed up the construction of a wonder", 
+			"Can hurry technology research", 
+			"Uncapturable", 
+			"May withdraw before melee ([100]%)",
+			"[+1000] Strength <when defending>", 
+			"Can move immediately once bought",  // applies maybe to transform action? 
+			"All adjacent units heal [100] HP when healing",
+			"Invisible to others",
+			// "Invisible to non-adjacent units", 
+			"Can see invisible [All] units",
+			"All tiles cost 1 movement",
+			"May travel on Water tiles without embarking", 
+			// "Ignores terrain cost",  // this should be conditionally available to test M challenges
+			"Ignores Zone of Control", 
+			// "May enter foreign tiles without open borders", // magic key should be doing this
+			"Can undertake a trade mission with City-State, giving a large sum of gold and [500] Influence",
+			"[+3] Sight <with [0] to [3] neighboring [Natural Wonder] tiles>", 
+			"[+10] Movement <in [Natural Wonder] tiles>",  // re-up M 
 		],
-	},
-// 
+	}, 
+
 	{ 
 	// Needed for fish-less Z2 waters - consume to instantly fish
 		"name": "Work Boats",
