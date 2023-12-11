@@ -90,9 +90,8 @@
 		"name": "Downward Thrust",
 		"prerequisites": ["Jump"],
 		"uniques": [
-			// "Only available <for [Military] units>",
-			// "Only available <for units with [Jump]>",
-			"Comment [Requires visiting Ruto town to activate (requirement may change)",  // supposed to have the trophy but can't <with [Silver]>
+			// "Only available <for units with [Jump]>",  // made prereq attrib above
+			"Comment [Requires visiting Ruto town to activate (requirement may change)]",  // supposed to have the trophy but can't <with [Silver]>
 			"[1] additional attacks per turn <if it hasn't used other actions yet>",
 			"[+50]% Strength <when attacking> <if it hasn't used other actions yet>",
 			"Great General provides double combat bonus",
@@ -111,11 +110,10 @@
 		"prerequisites": ["Jump"],
 		"uniques": [
 		// Quite limited with Unciv uniques as to how I want to have DT, UT, and Magic Key unlocked. Chaining upgrades is not well supported, at all.
-			// "Only available <for [Military] units>",
 			"Only available <for units with [Fire]>",
 			// "Comment [Requires visiting Kasuto town to activate]",
 			"[50]% chance to intercept air attacks <for units with [Jump]>",
-			"May Paradrop up to [6] tiles from inside friendly territory <for units with [Spell]>",  // teleport
+			"May Paradrop up to [6] tiles from inside friendly territory <for units with [Spell]>",  // teleport .. still not the best unique for UT
 		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
         "column": 1,
