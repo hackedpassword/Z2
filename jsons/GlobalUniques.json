@@ -3,16 +3,22 @@
 	"uniques": [
 		"cheatsOn",  // flags conditional <when [cheatsOn]>
 		
-		"[-90]% maintenance on road & railroads",  // Not trying to penalize player for establishing movement paths
-		"Allow raze capitol", "Allow raze holy city",  // Allow razing any city or CS
 		"100 Gold for discovering a Natural Wonder (bonus enhanced to 500 Gold if first to discover it)",  // promotes exploration
-		"[500]% Strength <for [Land] units> <when defending> <vs [Air] units> <in [Cavern] tiles>",  // Underground protection
-		// "Aircraft",  // needed for validator says G&K ruleset, will check and prune later
+		"[500]% Strength <for [Land] units> <when defending> <vs [Air] units> <in [Cavern] tiles>",  // Underground protection - applied here, not to base terrains
+		"[200]% Strength <for [Land] units> <when defending> <vs [Air] units> <in [Cave] tiles>",
+		"[100]% Strength <for [Land] units> <when defending> <vs [Air] units> <in [Mountain] tiles>",
 
+		// move to Techs
+		"[-90]% maintenance on road & railroads",  // Not trying to penalize player for establishing movement paths
+		
 		// test to trigger promotions
 		// "[All] units gain the [Downward Thrust] promotion <in cities with a [Military HQ]> <for units with [Jump]> <upon ending a turn in a [Mido Town] tile>",
 		// "[All] units gain the [Upward Thrust] promotion <in cities with a [Military HQ]> <for units with [Jump]> <upon ending a turn in a [Kasuto Town] tile>",
-		// other tests
-		// "Double movement in [Force] <for [All] units>", // This doesn't work.
+
+		// other tests etc
+		// "Aircraft",  // needed for validator says G&K ruleset, will check and prune later
+		// "Double movement in [Force] <for [All] units>", // This doesn't work
+		// "Allow raze capitol", "Allow raze holy city",  // Both must be in ModOptions.json not here
+
 	]
 }
