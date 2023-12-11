@@ -25,7 +25,7 @@
 		"cost": 1,
 		"movement": 15,  // limited to test M limits, use paradrop for big movement
 		"uniques": [
-			"Cannot be built",
+			"Only available <for [Human player]> <when [cheatsOn]>",  // established in globalUniques
 			"May Paradrop up to [200] tiles from inside friendly territory",  // fairy portal
 			"Can instantly construct a [Farm] improvement <for [Human player]>",  // can drop human player conditional now
 			"Can instantly construct a [Work district] improvement <for [Human player]>",
@@ -93,7 +93,8 @@
 			"[+1] Movement <after discovering [Horseback Riding]>",
 			"Founds a new city <by consuming this unit>",
 			"Excess Food converted to Production when under construction",
-			"Requires at least [2] population", 
+			"Requires at least [2] population",
+			"Can instantly construct a [Landmark] improvement <for [Human player]> <when [cheatsOn]>",  // test
 		],
 		"hurryCostModifier": 20, 
 	},
