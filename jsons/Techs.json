@@ -885,7 +885,7 @@
 				"prerequisites": ["Globalization","Particle Physics","Nuclear Fusion","Nanotechnology","Stealth"],
 				"uniques": [
 					"[+50]% Great Person generation [in all cities]",
-					"Quantity of strategic resources produced by the empire [+25]%",
+					"Quantity of strategic resources produced by the empire +[+25]%",  // inconsistent implementation "+[+N]" should be "[+N]" unless "+[" denotes guaranteed positive value
 					"Can be continually researched",
 				],
 				"quote": "",
