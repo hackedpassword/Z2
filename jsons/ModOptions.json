@@ -10,6 +10,9 @@
 	"uniques":[
 		"Allow raze capital",
 		"Allow raze holy city",  // All cities can be destroyed
+	// info message
+		"Mod Checker note: 'turns into terrain Force' and 'Unsupported' mod checker warnings are expected, as is this one, disregard!",  // soft suppression
+		"Comment [Mod Checker note: 'turns into terrain Force' and 'Unsupported' mod checker warnings are expected, as is this one, disregard!]",  // test use of comment, where would this show up?
 	],
 
 }
