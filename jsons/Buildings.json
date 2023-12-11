@@ -23,21 +23,21 @@
 		"cost": 10,
 		"isWonder": false,
 		"uniques": [
-			"cheatsOn",
 			"Can only be built [in capital]",
-			// this will set you back one iron, causing a resource shortage
+			// this unit will set you back 1 iron, causing a resource shortage, compensating
 			"Free [Longswordsman] appears",  // Guess who! Planning to more closely align this asset with the NES
 			"Provides [1] [Iron]",  // Offset for Longswordsman
 			"Limited to [1] per Civilization",
+			// thinking about applying heavy promotions for this one unit
 		 ], 
 	},
 	{
 	// For tests, experiments, etc. If not using, block comment or sell this building
 		"name": "Hax Hut",
 		"cost": 1,
-		"isWonder": true,
+		"isWonder": false,  // needs to be sellable
 	        "uniques": [
-			"Only available <when [cheatsOn]> <for [Human player]>", // not sure if this works
+			"Only available <for [Human player]>", // works, but globalUnique <when [cheatsOn]> doesn't. For now, just disable when not in use. SomeTrog I seriously can't thank you enough for implementing that build menu.
 			"Can only be built [in capital]",
 			"Reveals the entire map",  // for debugging map/tech
 			"[+1000000 Culture] <for [Human player]>",  // testing policy updates
