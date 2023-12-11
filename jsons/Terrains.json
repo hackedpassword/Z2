@@ -3,12 +3,13 @@
 /*
 Design Notes:
 
-Z2 is not currently meant for random map generation and has all map-gen uniques removed.
+Z2 is not currently meant for random map generation and has (almost) all map-gen uniques removed. The Z2 Hyrule overworld is a static terrain.
 
-Ruleset base originates in G&K.
+Ruleset base originates in G&K. As dev progresses, more G&K will be gutted, Zelda 2 injected. Since this is my first ruleset mod, lots of experimenting.
+Probably should make a -stable version of the mod. #todo make -stable Z2 version
 	
-You'll see <in [Friendly Land] tiles> <within [3] tiles of a [City center]> on most resources. Visually, this retains a clean presentation
-of the Z2 map by not spamming the landscape with resource icons. Resource will populate (per chance) upon purchase of tile.
+You'll see this unique combo: <in [Friendly Land] tiles> <within [3] tiles of a [City center]> on most resources. Visually, this retains a super clean map presentation
+by not spamming the landscape with resource icons. See Plains tile, more info there.
 
 Most resources also have <with [X]% chance> because I am not guaranteeing per-tile resources.
 The motivation here is per year(turn) conditions change, thus a resource may be more/less plentiful next year. 
@@ -28,21 +29,17 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 	BridgeFL occurs on natural wonder OceanTile: Unsupported.
 	BridgeFR occurs on natural wonder CoastTile: Unsupported.
 
+#todo: Migrate many json comment notes into civopedia entries
 */
-	
 
-// Z2 base terrains //
-	{
+	{  // #todo: settlers shouldn't settle here
 		"name": "Cave",  // mountain entrance of caverns
 		"type": "Land",
 		"movementCost": 2,
 		"RGB": [63, 27, 8],
-		// to-do: settlers shouldn't settle here
 		"uniques": [
 			"Rough terrain",
-			"[+200]% Strength <vs [Air] units> <when defending>", 
 		        "Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
-			// "Has an elevation of [1] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation",
 			"Never receives any resources",
 			"Units ending their turn on this terrain take [10] damage <with [20]% chance>",  // enemies amidst
@@ -57,7 +54,6 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		// to-do: settlers shouldn't settle here - for now it's essentially a nuke safe haven
 		"uniques": [
 			"Rough terrain",
-                        "[+1000]% Strength <vs [Air] units> <when defending>",  // very protected from air attacks
 			"Units ending their turn on this terrain take [15] damage <with [20]% chance>",  // enemies amidst
 			"Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
 		        "Has an elevation of [-1] for visibility calculations",  // testing negative vis
@@ -75,53 +71,68 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"[+1 Gold] <with [10]% chance> <after discovering [Ecology]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // smarter earthlings means better earth
 			"[+1 Gold] <with [15]% chance> <after discovering [Lasers]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			"[+1 Food] <with [5]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // same output as desert
+			"[-2 Gold] <in [River] tiles>",  // turn down resource noise - still unable to find what is granting 2 gold to river tiles
+			// balancing tweaks
 			// "[+1 Gold] <with [5]% chance>",
 			// "[+1 Culture] <with [10]% chance>",
 			// "[+1 Happiness] <with [10]% chance>",
 			// "[+1 Faith] <with [10]% chance>",
-			"[-2 Gold] <in [River] tiles>",  // turn down resource noise - still unable to find what is granting 2 gold to river tiles
-			// "Tile provides yield without assigned population <with [5]% chance>",  // jackpot resource provides all currently available
+                        // "[+1000]% Strength <vs [Air] units> <when defending>",  // not for base terrain, put into globalUniques
 
-		// Why can't I have it? Neeeeeed more control over uniques! ;)
+		// #todo: figure out ways to implement these
 			// "[5]% Chance to be destroyed by nukes",  // base terrains transform this value to 0% - semi-bug
 			// "Population loss from nuclear attacks [-95]% [in this city]",  // disallowed, meant for buildings instead :/
 			// "Damage to garrison from nuclear attacks [-95]% [in this city]",
 		],
 	},
 	{
-		"name": "Deep Ocean",  // treacherous terrain used as a soft clip
-		"type": "Water",
-		"movementCost": 3,
-		"RGB": [3, 65, 114],
-		"uniques": [
-			"Rough terrain",
-			"Units ending their turn on this terrain take [10] damage <with [50]% chance>",  // choppy and dangerous
-                        "Never receives any resources",
-	        	// "Has an elevation of [1] for visibility calculations",  // should generally dissuade transit in these areas
-			"Blocks line-of-sight from tiles at same elevation",  // waves and swells - great movement strategy maker 
-		],
-	},
-
-// Usual terrains - some here specifically because modchecker doesn't get that Z2 is a mod and should backreference to G&K json's //
-	
-	{
 		"name": "Mountain",
 		"type": "Land",
 		"movementCost": 3,
 		"defenceBonus": 0.5,
+	        "impassable": true,  // unless unit received Adventurer training/promotion 
 		"RGB": [99, 40, 7],
 		"uniques": [
 			"Rough terrain",
-			"[+75]% Strength <vs [Air] units> <when defending>", 
-		        "Has an elevation of [1] for visibility calculations",
-			"Blocks line-of-sight from tiles at same elevation",
+		        "Has an elevation of [1] for visibility calculations",  // not too tall, wanting limited tile reveal
+			"Blocks line-of-sight from tiles at same elevation",  // cull vis
 		        "Units ending their turn on this terrain take [50] damage <with [80]% chance>",  // get in get out
 			"Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
-			// "Population loss from nuclear attacks [-50]% [in this city]",  // in case a city is settled here
-			// "Damage to garrison from nuclear attacks [-75]% [in this city]",  // these two lines disallowed, meant for buildings instead :/
-			"[-2 Gold] <in [River] tiles>",  // turn down resource noise
+			"[-2 Gold] <in [River] tiles>",  // turn down resource noise - #todo: figure out how river tiles get gold assigned .. does not appear to be json/mod configured (atm)
 		], 
-	        "impassable": true,  // unless unit received Adventurer training/promotion 
+	},
+
+////  Z2 feature: dynmamic tile resources  ////
+/*
+	Base tiles provide scaling and dynamic resources that update per turn, within city borders only. Statically designated base resources are intentionally absent.
+	Auto-assigned pop will follow/reassign to selected resource Focus when turn starts, optimizing returns for that year.
+		Meaning: You will ONLY see food, production, etc, resource icons:
+		    + inside city borders
+		    + in work range
+		    + amounts per tile change every year (turn)
+	This is quite useful in when pop is thin, as pop takes advantage of chance terrain resource peaks and bonuses.
+	Resources will auto populate upon purchase of tile as chance dictates. Note, haxycheatx0rz, hitting Undo will regen terrain resources so it's possible to tilt the field.
+*/
+	{
+		"name": "Plains",  // Plains resources will be more resource diverse. Used mostly as path terrain.
+		"type": "Land",
+		// "food": 1,  // We're foresaking base resource attributes for dynamic unique-provisioned resources.
+		"movementCost": 1,
+		"RGB": [240, 188, 60],
+		"uniques": [
+		// Remember that each roll of chance below aggregates an additional resource, on top of any other modifying resource bonuses
+			"[+1 Food] <with [25]% chance> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // The King's Tomb graveyard provides too much food (wheat), reduce baseline food supply
+			"[+1 Production] <with [50]% chance> <with [2] to [5] neighboring [Grassland] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",     // more food at some edges
+			"[+1 Food] <with [25]% chance> <before discovering [Clans]> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // poor food source initially, community pooling
+			"[+1 Food] <with [25]% chance> <after discovering [Clans]> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // bonus chance for 2x food
+			"[+1 Culture] <with [5]% chance> <after discovering [Calendar]> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // farming incurs a bit of lore
+			"[+1 Food] <with [15]% chance> <after discovering [Machinery]> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // farming machines appearing
+			"[+1 Gold] <with [2]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // dropped something? found something!
+		// This would be for promoting cultural exchanges
+			// "[+1 Culture] <with [10]% chance>  // something like <when occupied by a [Player] unit> <when adjacent to a non-[Player] unit>
+			// "[+1 Happiness] <with [10]% chance>",
+			// "[+1 Faith] <with [10]% chance>",
+		],
 	},
 	{
 		"name": "Grassland",
@@ -136,37 +147,10 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"[+1 Food] <with [50]% chance> <after discovering [Animal Husbandry]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			"[+1 Food] <with [50]% chance> <after discovering [Calendar]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // up to +4 food at this point
 			"[+1 Production] <with [10]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Gold] <with [2]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // For some reason all these (here down) hit at once
+			"[+1 Gold] <with [2]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			// "[+1 Culture] <with [10]% chance>",
 			// "[+1 Happiness] <with [10]% chance>",
 			// "[+1 Faith] <with [10]% chance>",
-			// "Tile provides yield without assigned population <with [5]% chance>",  // jackpot resource provides all currently available - doesn't trigger
-		],
-	},
-	{
-	// Used mostly as path terrain
-		"name": "Plains",
-		"type": "Land",
-		// "food": 1,
-		"movementCost": 1,
-		"RGB": [240, 188, 60],
-		"uniques": [
-			"[+1 Food] <with [25]% chance> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // The King's Tomb graveyard provides too much food, baseline food supply
-			"[+1 Production] <with [50]% chance> <with [2] to [5] neighboring [Grassland] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-		// base tiles providing scaling and dynamic resources
-		// plains resources will be more diverse
-			"[+1 Food] <with [25]% chance> <before discovering [Clans]> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // poor food source initially
-			"[+1 Food] <with [25]% chance> <after discovering [Clans]> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // bonus chance
-			// "[+1 Production] <with [20]% chance> <before discovering [Fire]> <in tiles without [Wheat]>",  // poor production source initially
-			// "[+1 Production] <with [20]% chance> <after discovering [Fire]> <in tiles without [Wheat]>",
-			"[+1 Culture] <with [5]% chance> <after discovering [Calendar]> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Food] <with [15]% chance> <after discovering [Machinery]> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // bonus
-			"[+1 Gold] <with [2]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // dropped something? found something!
-		// This would be for promoting cultural exchanges, with a unique and filter that doesn't exist
-			// "[+1 Culture] <with [10]% chance>  // <when occupied by a [Player] unit> <when adjacent to a non-[Player] unit>
-			// "[+1 Happiness] <with [10]% chance>",
-			// "[+1 Faith] <with [10]% chance>",
-			// "Tile provides yield without assigned population <with [5]% chance>",  // jackpot resource provides all currently available
 		],
 	},
 	{
@@ -182,18 +166,40 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			// "[+1 Production] <with [90]% chance> <after discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			"[+1 Production] <with [50]% chance> <after discovering [Engineering]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			"[+1 Food] <with [10]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+10 Gold] <with [1]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // treasure
+			"[+10 Gold] <with [1]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // treasure unburied
+			"[+1 Faith] <with [5]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			// "[+1 Culture] <with [10]% chance>",
 			// "[+1 Happiness] <with [10]% chance>",
-			"[+1 Faith] <with [5]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			// "Tile provides yield without assigned population <with [5]% chance>",  // glitch: circumvents chance, provides all. Purpose: jackpot resource provides all currently available
 		],
+	},
+	{
+		"name": "Lakes",
+		"type": "Water",
+		"RGB": [0, 171, 169],
+		"uniques": [
+			"Fresh water",
+			"[+1 Food] <with [25]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // two chances at each resource
+			"[+1 Food] <with [25]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <with [25]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <with [25]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+		],
+	},
+	{
+		"name": "Coast",
+		"type": "Water",
+		"movementCost": 1,
+		"RGB": [70, 138, 216],
+		"uniques": [
+			"[+1 Food] <with [30]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Food] <with [50]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <with [10]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <with [25]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+		],
+
 	},
 	{
 		"name": "Ocean",
 		"type": "Water",
-		// "food": 1,
-		// "gold": 1,
 		"movementCost": 1,
 		"uniques": [
 			"[+2 Food] <with [20]% chance> <in [Friendly Land] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
@@ -204,7 +210,20 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"RGB": [33, 97, 171],
 	},
 	{
-	// to be replaced by a similar terrain, more volcanic
+		"name": "Deep Ocean",  // treacherous terrain used as a soft clip
+		"type": "Water",
+		"movementCost": 3,
+		"RGB": [3, 65, 114],
+		"uniques": [
+			"Rough terrain",
+			"Blocks line-of-sight from tiles at same elevation",  // waves and swells. <3 this! GREAT ocean movement strategy maker! Map tiles placed with intent, awesome tactical concept
+			"Units ending their turn on this terrain take [10] damage <with [50]% chance>",  // choppy and dangerous
+                        "Never receives any resources",
+	        	// "Has an elevation of [1] for visibility calculations",  // keep vis down by retaining default elevation, so viewing to/through ocean is reduced with navigation channels
+		],
+	},
+	{
+	// #todo: replace by a similar terrain, more volcanic (basically rename)
 		"name": "Tundra",
 		"type": "Land",
 		"movementCost": 1,
@@ -343,7 +362,12 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"uniques": [
 			"Never receives any resources",
 			"[0]% Chance to be destroyed by nukes",  // Can't destroy bridges
-		]
+		],
+		"civilopediaText": [
+			{
+				"text": "Feature-Left terrain patch for horizontal bridges. Building improvements here are limited.",
+			},
+		],
 	},
 	{
 	// Feature-Right (FR) patch
@@ -355,8 +379,27 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"uniques": [
 			"Never receives any resources",
 			"[0]% Chance to be destroyed by nukes",
-		]
+		],
+		"civilopediaText": [
+			{
+				"text": "Feature-Right terrain patch for horizontal bridges. Building improvements here are limited.",
+			},
+		],
+
 	},
+	{
+		"name": "Fallout",
+		"type": "TerrainFeature",
+		"movementCost": 2,
+		"unbuildable": true,
+		"uniques": [
+			"Nullifies all other stats this tile provides",
+			"Doesn't generate naturally", 
+		],
+		"occursOn": ["Grassland","Plains","Forest","Desert","Tundra","Hill","Mound","Mountain","Cave"],  // fun fact: enter "Land" and unciv will crash when going to civopedia to view the terrain from the world screen
+		"defenceBonus": -0.25,
+	},
+
 
 // Nullifying unused terrains/features til removed completely //
 
@@ -368,7 +411,22 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"name": "Jungle",
 		"type": "TerrainFeature",
 	},
-
+	{
+		"name": "Oasis",
+		"type": "TerrainFeature",
+	},
+	{
+		"name": "Flood plains",
+		"type": "TerrainFeature",
+	},
+	{
+		"name": "Ice",
+		"type": "TerrainFeature",
+	},
+	{
+		"name": "Atoll",
+		"type": "TerrainFeature",
+	},
 
 // Named Palaces //
 
@@ -924,60 +982,6 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 ////////////////////////////////
 
 
-	{
-		"name": "Coast",
-		"type": "Water",
-		"movementCost": 1,
-		"RGB": [70, 138, 216],
-		"uniques": [
-			"[+1 Food] <with [30]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Food] <with [50]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Gold] <with [10]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Gold] <with [25]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-		],
-
-	},
-	{
-		"name": "Lakes",
-		"type": "Water",
-		"RGB": [0, 171, 169],
-		"uniques": [
-			"Fresh water",
-			"[+1 Food] <with [25]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // two chances at each resource
-			"[+1 Food] <with [25]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Gold] <with [25]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Gold] <with [25]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-		],
-	},
-
-	{
-		"name": "Fallout",
-		"type": "TerrainFeature",
-		"movementCost": 2,
-		"unbuildable": true,
-		"uniques": [
-			"Nullifies all other stats this tile provides",
-			"Doesn't generate naturally", 
-		],
-		"occursOn": ["Grassland","Plains","Forest","Desert","Tundra","Hill","Mound","Mountain","Cave"],  // fun fact: enter "Land" and unciv will crash when going to civopedia to view the terrain from the world screen
-		"defenceBonus": -0.25,
-	},
-	{
-		"name": "Oasis",
-		"type": "TerrainFeature",
-	},
-	{
-		"name": "Flood plains",
-		"type": "TerrainFeature",
-	},
-	{
-		"name": "Ice",
-		"type": "TerrainFeature",
-	},
-	{
-		"name": "Atoll",
-		"type": "TerrainFeature",
-	},
 	// Natural Wonders  #todo Remove these
 	{
 		"name": "Great Barrier Reef",
