@@ -558,7 +558,8 @@
 				"row": 6,
 				"uniques": [
 					"[+1] Movement <for [Embarked] units>",
-					"[+1] Movement <for non-[Embarked] units> <in [Ocean] tiles>",
+					"[+1] Movement <for [Water] units> <in [Ocean] tiles>",  // thinking of creating a steam power promotion as a ship retrofit
+					// "[+1] Movement <for non-[Embarked] units> <in [Ocean] tiles>",  // MC complaint: contains the conditional "for non-[Embarked] units", which is of an unknown type!
 				],
 				"prerequisites": ["Scientific Theory"],
 				"quote": "'The nations of the West hope that by means of steam communication all the world will become as one family.' - Townsend Harris"
