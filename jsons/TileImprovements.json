@@ -6,8 +6,6 @@
 		"name": "City center",
 		"terrainsCanBeBuiltOn": ["Land"],  // also allowed to be built on hybrid tiles though desired to disable that somehow
 		"uniques": [
-		// info message
-		"Mod Checker note: 'turns into terrain Force' and 'Unsupported' mod checker warnings are expected, as is this one, disregard!",  // soft suppression
 			"Ensures a minimum tile yield of [+1 Food, +1 Production] <during the [Ancient era]>",
 			"Ensures a minimum tile yield of [+2 Food, +1 Production] <during the [Classical era]>",
 			"Ensures a minimum tile yield of [+2 Food, +2 Production] <starting from the [Medieval era]>",  // will build upon this
