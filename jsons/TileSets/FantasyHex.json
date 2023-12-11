@@ -1,0 +1,8 @@
+{
+	"useColorAsBaseTerrain": "false",
+	// "fallbackTileSet": "HexaRealm",  // don't want a fallback
+
+	"ruleVariants": {
+    
+  },
+}
