@@ -14,7 +14,7 @@
 			"Can build [Forage] improvements on tiles <with [30]% chance> <before the [Pioneer era]>",  // foraging is not a guaranteed improvement
 			"Can build [Slog mud] improvements on tiles <before the [Pioneer era]>",
 			"Can build [Land] improvements on tiles",
-			"Can transform into [Fairy] <for [Human player]> <by consuming this unit>", 
+			"Can transform to [Fairy] <for [Human player]> <by consuming this unit>", 
 		],
 	},
 
@@ -1984,7 +1984,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 			"Eliminates combat penalty for attacking over a river",
 			"Can move immediately once bought",
                         // "Can carry [1] [Payload] units <for [Human player]>",  // For testing
-			"Can transform into [Fairy] <for [Human player]> <by consuming this unit>", 
+			"Can transform to [Fairy] <for [Human player]> <by consuming this unit>", 
                 ],
 		"attackSound": "shot"
 	},
