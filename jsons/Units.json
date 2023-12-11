@@ -1969,22 +1969,21 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 
 	// Atomic Era
 
-	{
+	{  // #todo: create marine sniper
+	// Disappointing, the weak implementation of Marine in G&K. Let's improve these units with some better military accuracy.
+	// The idea here is these units come pre-trained. Not just Soldier, no, Marine, and thus better trained on deployment for front-line combat.
 		"name": "Marine",
 		"unitType": "Gunpowder",
 		"movement": 2,
 		"strength": 65,
 		"cost": 400,
 		"requiredTech": "Pharmaceuticals",
-		"promotions": ["Amphibious"],
+		"promotions": ["Amphibious","Medic","Woodsman","Cover I","Ambush I"],
 		"uniques": [
 			"[+1] Sight <when [Embarked]>",
-                        "Defense bonus when embarked",
-			"Eliminates combat penalty for attacking across a coast",
-			"Eliminates combat penalty for attacking over a river",
 			"Can move immediately once bought",
-                        // "Can carry [1] [Payload] units <for [Human player]>",  // For testing
-			"Can transform to [Fairy] <for [Human player]> <by consuming this unit>", 
+			"Can move after attacking",
+			"Defense bonus when embarked",
                 ],
 		"attackSound": "shot"
 	},
