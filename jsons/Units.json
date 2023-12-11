@@ -16,7 +16,7 @@
 			"Can build [Forage] improvements on tiles <with [30]% chance> <before the [Pioneer era]>",  // foraging is not a guaranteed improvement
 			"Can build [Slog mud] improvements on tiles <before the [Pioneer era]>",
 			"Can build [Land] improvements on tiles",
-			"Can transform to [Fairy] <for [Human player]>",  // <by consuming this unit> ?
+			"Can transform to [Fairy] <when [cheatsOn]> <for [Human player]>",  // established in globalUniques  .. <by consuming this unit> ?
 		],
 	},
 
@@ -27,20 +27,20 @@
 		"cost": 1,
 		"movement": 15,  // limited to test M limits, use paradrop for big movement
 		"uniques": [
-			"Only available <for [Human player]> <when [cheatsOn]>",  // established in globalUniques
+			"Only available <for [Human player]>",
 			"May Paradrop up to [200] tiles from inside friendly territory",  // fairy portal
-			"Can instantly construct a [Farm] improvement <for [Human player]>",  // can drop human player conditional now
-			"Can instantly construct a [Work district] improvement <for [Human player]>",
-			"Can instantly construct a [Trading post] improvement <for [Human player]>",
-			"Can instantly construct a [Plantation] improvement <for [Human player]>",
-			"Can instantly construct a [Quarry] improvement <for [Human player]>",
-			"Can instantly construct a [Mine] improvement <for [Human player]>",
-			"Can instantly construct a [Smelter] improvement <for [Human player]>",
-			"Can instantly construct a [Remove Marsh] improvement <for [Human player]>",
-			"Can instantly construct a [Remove Forest] improvement <for [Human player]>",
-			// "Can instantly construct a [Road] improvement <for [Human player]>",
-			"Can instantly construct a [Railroad] improvement <for [Human player]>",
-			"Can instantly construct a [Boulder] improvement <for [Human player]> <by consuming this unit>",
+			"Can instantly construct a [Farm] improvement",
+			"Can instantly construct a [Work district] improvement",
+			"Can instantly construct a [Trading post] improvement",
+			"Can instantly construct a [Plantation] improvement",
+			"Can instantly construct a [Quarry] improvement",
+			"Can instantly construct a [Mine] improvement",
+			"Can instantly construct a [Smelter] improvement",
+			"Can instantly construct a [Remove Marsh] improvement",
+			"Can instantly construct a [Remove Forest] improvement",
+			// "Can instantly construct a [Road] improvement",
+			"Can instantly construct a [Railroad] improvement",
+			"Can instantly construct a [Boulder] improvement <by consuming this unit>",
 			"May create improvements on water resources",
 			"Can instantly construct a [Fishing Boats] improvement",
 			"Founds a new city", 
@@ -67,7 +67,7 @@
 			"[+3] Sight <with [0] to [3] neighboring [Natural Wonder] tiles>",  // kinda test, should be interesting if it works
 			"[+10] Movement <in [Natural Wonder] tiles>",  // re-up M 
 		],
-	}, 
+	},
 
 	{ 
 	// Needed for fish-less Z2 waters - consume to instantly fish
