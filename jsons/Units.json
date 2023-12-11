@@ -14,7 +14,7 @@
 			"Can build [Forage] improvements on tiles <with [30]% chance> <before the [Pioneer era]>",  // foraging is not a guaranteed improvement
 			"Can build [Slog mud] improvements on tiles <before the [Pioneer era]>",
 			"Can build [Land] improvements on tiles",
-			"Can transform into [Fairy] <for [Human player]>", 
+			"Can transform into [Fairy] <for [Human player]> <by consuming this unit>", 
 		],
 	},
 
