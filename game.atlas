@@ -125,9 +125,16 @@ TileSets/FantasyHex/Units/Giant Death Robot MK-III
   index: -1
 TileSets/FantasyHex/Units/Nomad
   rotate: false
-  xy: 1992, 956
+  xy: 484, 72
   size: 32, 28
   orig: 32, 28
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Sprite
+  rotate: false
+  xy: 1780, 140
+  size: 64, 64
+  orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker
@@ -139,49 +146,35 @@ TileSets/FantasyHex/Units/Worker
   index: -1
 TileSets/FantasyHex/Units/Worker-Atomic era
   rotate: false
-  xy: 1864, 396
+  xy: 1936, 468
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Classical era
   rotate: false
-  xy: 1828, 332
+  xy: 1864, 396
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Future era
   rotate: false
-  xy: 1900, 332
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/FantasyHex/Units/Worker-Generic era
-  rotate: false
-  xy: 1924, 540
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/FantasyHex/Units/Worker-Pioneer era
-  rotate: false
-  xy: 1924, 540
+  xy: 1936, 404
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Industrial era
   rotate: false
-  xy: 1936, 476
+  xy: 1828, 332
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Information era
   rotate: false
-  xy: 1936, 412
+  xy: 1900, 332
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
@@ -200,16 +193,23 @@ TileSets/FantasyHex/Units/Worker-Modern era
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Units/Worker-Prehistoric era
+TileSets/FantasyHex/Units/Worker-Pioneer era
   rotate: false
   xy: 1852, 20
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
+TileSets/FantasyHex/Units/Worker-Prehistoric era
+  rotate: false
+  xy: 1972, 340
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
 TileSets/FantasyHex/Units/Worker-Renaissance era
   rotate: false
-  xy: 1972, 348
+  xy: 412, 44
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
@@ -986,28 +986,28 @@ TileSets/HexaRealm/Tiles/Silver
   index: -1
 TileSets/HexaRealm/Tiles/Slog mud
   rotate: false
-  xy: 1868, 292
+  xy: 396, 4
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Slog mud2
   rotate: false
-  xy: 1992, 916
+  xy: 436, 4
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Slog mud3
   rotate: false
-  xy: 1908, 292
+  xy: 476, 4
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Slog mud4
   rotate: false
-  xy: 1880, 252
+  xy: 1992, 952
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
@@ -1028,49 +1028,49 @@ TileSets/HexaRealm/Tiles/Stone
   index: -1
 TileSets/HexaRealm/Tiles/Trap
   rotate: false
-  xy: 1780, 140
+  xy: 1780, 68
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Trap2
   rotate: false
-  xy: 1780, 68
+  xy: 1780, 578
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Tundra
   rotate: false
-  xy: 1780, 578
+  xy: 1780, 506
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Tundra2
   rotate: false
-  xy: 1780, 578
+  xy: 1780, 506
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Tundra3
   rotate: false
-  xy: 1780, 578
+  xy: 1780, 506
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Uranium
   rotate: false
-  xy: 1780, 506
+  xy: 1792, 434
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Wheat
   rotate: false
-  xy: 1792, 434
+  xy: 1852, 532
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
@@ -1084,14 +1084,14 @@ TileSets/HexaRealm/Tiles/Work district
   index: -1
 TileSets/HexaRealm/Tiles/Work district-Industrial era
   rotate: false
-  xy: 1852, 532
+  xy: 1864, 460
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Work district-Pillaged
   rotate: false
-  xy: 1864, 460
+  xy: 1924, 532
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
