@@ -24,6 +24,7 @@
 
 	{
 	// Unit for experiments, not for normal games as you will very clearly see :D
+	// Using transform to divide actions, fairy and sprite tranform between each other 
 		"name": "Fairy",
 		"unitType": "Civilian",  // use map promotions for additional upgrades, test civ v military activations
 		"cost": 1,
@@ -31,28 +32,63 @@
 		"uniques": [
 			"Only available <for [Human player]>",
 			"May Paradrop up to [200] tiles from inside friendly territory",  // fairy portal
+	        // action set 1
 			"Can instantly construct a [Farm] improvement",
 			"Can instantly construct a [Work district] improvement",
 			"Can instantly construct a [Trading post] improvement",
 			"Can instantly construct a [Plantation] improvement",
-			"Can instantly construct a [Quarry] improvement",
 			"Can instantly construct a [Mine] improvement",
-			"Can instantly construct a [Smelter] improvement",
 			"Can instantly construct a [Remove Marsh] improvement",
 			"Can instantly construct a [Remove Forest] improvement",
-			// "Can instantly construct a [Road] improvement",
 			"Can instantly construct a [Railroad] improvement",
-			"Can instantly construct a [Boulder] improvement <by consuming this unit>",
-			"May create improvements on water resources",
-			"Can instantly construct a [Fishing Boats] improvement",
-			"Founds a new city", 
+			// two transforms? let's find out
 			"Can transform to [Giant Death Robot MK-III]",
+			"Can transform to [Sprite]",
+		// all other attributes
 			"Can carry [10] [All] units",  // bag of holding
 			"Can carry [5] extra [All] units",  // back pocket of holding
+			"Uncapturable", 
+			"May withdraw before melee ([100]%)",  // 2 fast 4 u
+			"[+1000]% Strength <when defending>",  // fairy shield
+			"Can move immediately once bought",  // applies maybe to transform action? don't think so
+			"All adjacent units heal [100] HP when healing",
+			"Can see invisible [All] units",
+			"Invisible to others",  // "Invisible to non-adjacent units", 
+			"May travel on Water tiles without embarking", 
+			"All tiles cost 1 movement",  // flying
+			// "Ignores terrain cost",  // this should be conditionally available to test M challenges
+			"Ignores Zone of Control", 
+			// "May enter foreign tiles without open borders", // magic key should be doing this
+			"[+3] Sight <with [0] to [3] neighboring [Natural Wonder] tiles>",  // kinda test, should be interesting if it works
+			"[+10] Movement <in [Natural Wonder] tiles>",  // re-up M 
+		],
+	},
+
+	{
+	// Clone of fairy, purpose is to divide actions cause all those uniques stack way too tall in the UI
+		"name": "Sprite",
+		"unitType": "Civilian",  // use map promotions for additional upgrades, test civ v military activations
+		"cost": 1,
+		"movement": 15,  // limited to test M limits, use paradrop for big movement
+		"uniques": [
+			"Only available <for [Human player]>",
+			"May Paradrop up to [200] tiles from inside friendly territory",  // fairy portal
+		// action set 2
+			"Can instantly construct a [Quarry] improvement",
+			"Can instantly construct a [Smelter] improvement",
+			"Can instantly construct a [Road] improvement",
+			"Can instantly construct a [Boulder] improvement <by consuming this unit>",
+			"Can instantly construct a [Fishing Boats] improvement",
+			"Founds a new city", 
+			"Can transform to [Fairy]",
 			"Can speed up construction of a building",
 			"Can speed up the construction of a wonder", 
-			"Can hurry technology research", 
-			"Uncapturable", 
+			"Can hurry technology research",
+		// all other attributes
+			"Uncapturable",
+			"May create improvements on water resources",
+			"Can carry [10] [All] units",  // bag of holding
+			"Can carry [5] extra [All] units",  // back pocket of holding
 			"May withdraw before melee ([100]%)",  // 2 fast 4 u
 			"[+1000]% Strength <when defending>",  // fairy shield
 			"Can move immediately once bought",  // applies maybe to transform action? don't think so
@@ -69,8 +105,6 @@
 			"[+3] Sight <with [0] to [3] neighboring [Natural Wonder] tiles>",  // kinda test, should be interesting if it works
 			"[+10] Movement <in [Natural Wonder] tiles>",  // re-up M 
 		],
-	},
-
 	{ 
 	// Needed for fish-less Z2 waters - consume to instantly fish
 		"name": "Work Boats",
