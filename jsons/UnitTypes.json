@@ -2,9 +2,9 @@
     {
         "name": "Civilian",
         "movementType": "Land", 
-        "uniques": [
-            "Double movement in [Plains]",
-        ] 
+        // "uniques": [
+        //    "Double movement in [Plains]",
+        //] 
     },
     {
         "name": "Scout",
