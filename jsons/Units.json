@@ -13,7 +13,7 @@
 			//"[-1] Sight <starting from the [Classical era]>",
 			//"Automation is a primary action",
 			"Can build [Boulder] improvements on tiles <after discovering [Engineering]>",
-			"Can build [Forage] improvements on tiles <with [30]% chance> <before the [Pioneer era]>",  // foraging is not a guaranteed improvement
+			// "Can build [Forage] improvements on tiles <with [30]% chance> <before the [Pioneer era]>",  // foraging is not a guaranteed improvement
 			"Can build [Forage] improvements on tiles <before the [Pioneer era]>",  // maybe the chance is causing the crash 
 			"Can build [Slog mud] improvements on tiles <before the [Pioneer era]>",
 			//"Can build [Land] improvements on tiles",
