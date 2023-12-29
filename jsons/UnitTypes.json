@@ -1,14 +1,14 @@
 [
     {
         "name": "Civilian",
-        "movementType": "Land"
+        "movementType": "Land", 
         "uniques": [
             "Double movement in [Plains]",
         ] 
     },
     {
         "name": "Scout",
-        "movementType": "Land"
+        "movementType": "Land", 
         "uniques": [
             "Double movement in [Plains]",
             "Double movement in [Grassland]",
