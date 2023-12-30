@@ -78,7 +78,7 @@
         "name": "Sword",
         "movementType": "Land",
         "uniques": [
-            "Can build [Remove Trap] improvements on tiles",  // fight enemies of the land
+            "Can build [Remove Trap] improvements on tiles <in [Trap] tiles>",  // fight enemies of the land
             "Double movement in [Force]",
             "Double movement in [OceanTile]", 
             "Double movement in [CoastTile]",
