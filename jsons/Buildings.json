@@ -18,6 +18,8 @@
 	},
 */
 
+/* crash fix test 
+
 	{  // Augment initial gameplay and any tests
 		"name": "Portal Gate",  // Our hero appears!
 		"cost": 10,
@@ -31,6 +33,7 @@
 			// thinking about applying heavy promotions for this one unit
 		 ], 
 	},
+*/
 	{
 	// For tests, experiments, etc. If not using, block comment or sell this building
 		"name": "Hax Hut",
