@@ -37,7 +37,7 @@
 		"cost": 1,
 		"movement": 15,  // limited to test M limits, use paradrop for big movement
 		"uniques": [
-                	"Unbuildable",
+                	"Only available <if [Hax Hut] is constructed>", 
 			"Only available <for [Human player]>",
 			"May Paradrop up to [200] tiles from inside friendly territory",  // fairy portal
 	        // action set 1
@@ -78,7 +78,7 @@
 		"cost": 1,
 		"movement": 15,  // limited to test M limits, use paradrop for big movement
 		"uniques": [
-			"Unbuildable", 
+			"Only available <if [Hax Hut] is constructed>", 
 			"Only available <for [Human player]>",
 			"May Paradrop up to [200] tiles from inside friendly territory",  // fairy portal
 		// action set 2
