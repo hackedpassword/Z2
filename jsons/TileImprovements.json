@@ -45,8 +45,10 @@
 		"techRequired": "Construction",
 		"uniques": [
 			"[+2 Production] <after discovering [Iron Working]> <with [1] to [6] neighboring [Work district] tiles>",
-			"[+1 Production] <with [50]% chance> <after discovering [Machinery]> <with [2] to [6] neighboring [Work district] tiles>",
-			"[+1 Production] <with [50]% chance> <after discovering [Industrialization]> <with [3] to [6] neighboring [Work district] tiles>",
+			//"[+1 Production] <with [50]% chance> <after discovering [Machinery]> <with [2] to [6] neighboring [Work district] tiles>",
+			//"[+1 Production] <with [50]% chance> <after discovering [Industrialization]> <with [3] to [6] neighboring [Work district] tiles>",
+			"[+1 Production] <after discovering [Machinery]> <with [2] to [6] neighboring [Work district] tiles>",
+			"[+1 Production] <after discovering [Industrialization]> <with [3] to [6] neighboring [Work district] tiles>",
 			"[-2 Production] <when at war>",
 			"[+1 Production] <with [25]% chance>",  // bonus baseline
 		],
@@ -60,8 +62,10 @@
 		"techRequired": "Shelter",
 		// "obsoleteTech": "Construction",  // experiment, will this work on an improvement? looks like not - curse you accurate documentation! https://yairm210.github.io/Unciv/Modders/Mod-file-structure/3-Map-related-JSON-files/#tileimprovementsjson
 		"uniques": [
-			"[+1 Production] <with [20]% chance>",  // baseline, poor production source
-			"[+1 Production] <with [50]% chance> <after discovering [Pottery]>",
+			//"[+1 Production] <with [20]% chance>",  // baseline, poor production source
+			//"[+1 Production] <with [50]% chance> <after discovering [Pottery]>",
+			"[+1 Production]",  // baseline, poor production source
+			"[+1 Production] <after discovering [Pottery]>",
 			"[-1 Production] <after discovering [Iron Working]>",
 			"[-1 Production] <after discovering [Aesthetics]>",
 			"Comment [Nasty peasant work gathering mud, clay, stones, and other earthy muck needed to supplement building materials.]",
