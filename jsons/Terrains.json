@@ -252,6 +252,9 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"Provides a one-time Production bonus to the closest city when cut down",
 			"Blocks line-of-sight from tiles at same elevation",
 			"[99]% Chance to be destroyed by nukes",  // this works, can set values to TerrainFeatures
+			//"[+1 Food] <before discovering [Hunting]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // poor food source initially
+			//"[+1 Food] <after discovering [Hunting]> <before discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			//"[+1 Food] <after discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			"[+1 Food] <with [25]% chance> <before discovering [Hunting]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // poor food source initially
 			"[+1 Food] <with [25]% chance> <after discovering [Hunting]> <before discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			"[+1 Food] <with [50]% chance> <after discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
