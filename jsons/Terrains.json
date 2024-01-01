@@ -58,19 +58,19 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
 		        "Has an elevation of [-1] for visibility calculations",  // testing negative vis
 			"Blocks line-of-sight from tiles at same elevation", 
-			"[+1 Gold] <with [5]% chance> <before discovering [Fire]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Gold] <with [5]% chance> <after discovering [Fire]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // From here down, gaining gold from Cavern can reap big rewards
-			"[+1 Gold] <with [10]% chance> <after discovering [Tools]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Gold] <with [20]% chance> <after discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Gold] <with [15]% chance> <after discovering [Construction]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Gold] <with [10]% chance> <after discovering [Guilds]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Gold] <with [15]% chance> <after discovering [Metallurgy]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Gold] <with [20]% chance> <after discovering [Chemistry]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Gold] <with [10]% chance> <after discovering [Dynamite]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Gold] <with [15]% chance> <after discovering [Radar]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Gold] <with [10]% chance> <after discovering [Ecology]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // smarter earthlings means better earth
-			"[+1 Gold] <with [15]% chance> <after discovering [Lasers]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Food] <with [5]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // same output as desert
+			"[+1 Gold] <before discovering [Fire]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <after discovering [Fire]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // From here down, gaining gold from Cavern can reap big rewards
+			"[+1 Gold] <after discovering [Tools]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <after discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <after discovering [Construction]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <after discovering [Guilds]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <after discovering [Metallurgy]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <after discovering [Chemistry]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <after discovering [Dynamite]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <after discovering [Radar]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <after discovering [Ecology]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // smarter earthlings means better earth
+			"[+1 Gold] <after discovering [Lasers]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // same output as desert
 			"[-2 Gold] <in [River] tiles>",  // turn down resource noise - still unable to find what is granting 2 gold to river tiles
 			// balancing tweaks
 			// "[+1 Gold] <with [5]% chance>",
@@ -121,15 +121,15 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"RGB": [240, 188, 60],
 		"uniques": [
 		// Remember that each roll of chance below aggregates an additional resource, on top of any other modifying resource bonuses
-			"[+1 Food] <with [25]% chance> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // The King's Tomb graveyard provides too much food (wheat), reduce baseline food supply
-			"[+1 Production] <with [50]% chance> <with [2] to [5] neighboring [Grassland] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",     // more food at some edges
-			"[+1 Food] <with [25]% chance> <before discovering [Clans]> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // poor food source initially, community pooling
-			"[+1 Food] <with [25]% chance> <after discovering [Clans]> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // bonus chance for 2x food
-			"[+1 Culture] <with [5]% chance> <after discovering [Calendar]> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // farming incurs a bit of lore
-			"[+1 Food] <with [15]% chance> <after discovering [Machinery]> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // farming machines appearing
-			"[+1 Gold] <with [2]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // dropped something? found something!
+			"[+1 Food] <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // The King's Tomb graveyard provides too much food (wheat), reduce baseline food supply
+			"[+1 Production] <with [2] to [5] neighboring [Grassland] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",     // more food at some edges
+			"[+1 Food] <before discovering [Clans]> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // poor food source initially, community pooling
+			"[+1 Food] <after discovering [Clans]> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // bonus chance for 2x food
+			"[+1 Culture] <after discovering [Calendar]> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // farming incurs a bit of lore
+			"[+1 Food] <after discovering [Machinery]> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // farming machines appearing
+			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // dropped something? found something!
 		// This would be for promoting cultural exchanges
-			// "[+1 Culture] <with [10]% chance>  // something like <when occupied by a [Player] unit> <when adjacent to a non-[Player] unit>
+			// "[+1 Culture]  // something like <when occupied by a [Player] unit> <when adjacent to a non-[Player] unit>
 			// "[+1 Happiness] <with [10]% chance>",
 			// "[+1 Faith] <with [10]% chance>",
 		],
@@ -142,12 +142,12 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"RGB": [128, 208, 16],
 		"uniques": [
 		// base tiles providing scaling and dynamic resources
-			"[+1 Food] <with [25]% chance> <before discovering [Tools]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // poor food source initially
-			"[+1 Food] <with [50]% chance> <after discovering [Tools]> <before discovering [Animal Husbandry]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Food] <with [50]% chance> <after discovering [Animal Husbandry]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Food] <with [50]% chance> <after discovering [Calendar]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // up to +4 food at this point
-			"[+1 Production] <with [10]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Gold] <with [2]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Food] <before discovering [Tools]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // poor food source initially
+			"[+1 Food] <after discovering [Tools]> <before discovering [Animal Husbandry]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Food] <after discovering [Animal Husbandry]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Food] <after discovering [Calendar]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // up to +4 food at this point
+			"[+1 Production] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			// "[+1 Culture] <with [10]% chance>",
 			// "[+1 Happiness] <with [10]% chance>",
 			// "[+1 Faith] <with [10]% chance>",
@@ -161,13 +161,13 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"RGB": [252, 188, 176],
 		"uniques": [
 		// base tiles providing scaling and dynamic resources
-			"[+1 Production] <with [10]% chance> <before discovering [The Wheel]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // poor production source initially
-			"[+1 Production] <with [25]% chance> <after discovering [The Wheel]> <before discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			// "[+1 Production] <with [90]% chance> <after discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Production] <with [50]% chance> <after discovering [Engineering]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Food] <with [10]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+10 Gold] <with [1]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // treasure unburied
-			"[+1 Faith] <with [5]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Production] <before discovering [The Wheel]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // poor production source initially
+			"[+1 Production] <after discovering [The Wheel]> <before discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			// "[+1 Production] <after discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Production] <after discovering [Engineering]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+10 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // treasure unburied
+			"[+1 Faith] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			// "[+1 Culture] <with [10]% chance>",
 			// "[+1 Happiness] <with [10]% chance>",
 		],
@@ -178,10 +178,10 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"RGB": [0, 171, 169],
 		"uniques": [
 			"Fresh water",
-			"[+1 Food] <with [25]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // two chances at each resource
-			"[+1 Food] <with [25]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Gold] <with [25]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Gold] <with [25]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // two chances at each resource
+			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 		],
 	},
 	{
@@ -190,10 +190,10 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 1,
 		"RGB": [70, 138, 216],
 		"uniques": [
-			"[+1 Food] <with [30]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Food] <with [50]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Gold] <with [10]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Gold] <with [25]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 		],
 
 	},
@@ -202,10 +202,10 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"type": "Water",
 		"movementCost": 1,
 		"uniques": [
-			"[+2 Food] <with [20]% chance> <in [Friendly Land] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Food] <with [50]% chance> <in [Friendly Land] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+2 Gold] <with [10]% chance> <in [Friendly Land] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Gold] <with [40]% chance> <in [Friendly Land] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+2 Food] <in [Friendly Land] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Food] <in [Friendly Land] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+2 Gold] <in [Friendly Land] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <in [Friendly Land] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 		],
 		"RGB": [33, 97, 171],
 	},
@@ -229,8 +229,8 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 1,
 		"uniques": [
 			"Rough terrain",
-			"[+1 Science] <with [20]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Food] <with [20]% chance> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Science] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 		],
 		"RGB": [200, 76, 12],
 	},
@@ -401,34 +401,10 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 	},
 
 
-// Nullifying unused terrains/features til removed completely //
 
-	{
-		"name": "Snow",
-		"type": "Land",
-	},
-	{
-		"name": "Jungle",
-		"type": "TerrainFeature",
-	},
-	{
-		"name": "Oasis",
-		"type": "TerrainFeature",
-	},
-	{
-		"name": "Flood plains",
-		"type": "TerrainFeature",
-	},
-	{
-		"name": "Ice",
-		"type": "TerrainFeature",
-	},
-	{
-		"name": "Atoll",
-		"type": "TerrainFeature",
-	},
-
-// Named Palaces //
+///////////////////////
+//// Named Palaces ////
+///////////////////////
 
 	{
 		"name": "North Castle",
@@ -595,8 +571,9 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 	},
 
 
+///////////////////////
 //// Generic Towns ////
-
+///////////////////////
 
 	{  // Towns are natural wonders because they can grant promotions, whereas improvements cannot
 	   // Also makes the town permanent - no means to remove/destroy
@@ -660,6 +637,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"unbuildable": false,
 		"RGB": [116, 116, 116],
 	},
+
 
 ///////////////////////////
 //// Towns of the land ////
@@ -972,226 +950,6 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"unbuildable": false,
 		"impassable": false,
 		"RGB": [240, 188, 60],  // ignored, references turnsInto tile RGB color instead
-	},
-
-
-////////////////////////////////
-
-//// G&K merge base ruleset ////
-
-////////////////////////////////
-
-
-	// Natural Wonders  #todo Remove these
-	{
-		"name": "Great Barrier Reef",
-		"type": "NaturalWonder",
-		"food": 2,
-		"production": 1,
-		"gold": 1,
-		"science": 2,
-		"occursOn": ["Ocean"],
-		"uniques": [
-		],
-		"turnsInto": "Coast",
-		"impassable": true,
-		"unbuildable": true,
-		"weight": 10
-	},
-	{
-		"name": "Old Faithful",
-		"type": "NaturalWonder",
-		"science": 2,
-		"happiness": 3,
-		"occursOn": ["Grassland","Plains","Tundra","Mountain"],
-		"uniques": ["Must be adjacent to [0] [Coast] tiles",
-			"Must be adjacent to [0] to [4] [Mountain] tiles",
-			"Must be adjacent to [3] to [6] [Elevated] tiles",
-			"Must be adjacent to [0] to [3] [Desert] tiles",
-			"Must be adjacent to [0] to [3] [Tundra] tiles"],
-		"turnsInto": "Mountain",
-		"impassable": true,
-		"unbuildable": true,
-		"weight": 10
-	},
-	{
-		"name": "El Dorado",
-		"type": "NaturalWonder",
-		"culture": 5,
-		"overrideStats": true,
-		"occursOn": ["Plains"],
-		"turnsInto": "Plains",
-		"impassable": true,
-		"unbuildable": true,
-		"uniques": ["Must be adjacent to [0] [Coast] tiles",
-			"Must be adjacent to [1] to [6] [Jungle] tiles",
-			"Grants 500 Gold to the first civilization to discover it"],
-		"weight": 2
-	},
-	{ // This will count as "Fresh water" in civ 6
-		"name": "Fountain of Youth",
-		"type": "NaturalWonder",
-		"happiness": 10,
-		"overrideStats": true,
-		"occursOn": ["Plains"],
-		"turnsInto": "Plains",
-		"impassable": true,
-		"unbuildable": true,
-		"uniques": ["Must be adjacent to [0] [Coast] tiles",
-			"Grants [Rejuvenation] ([all healing effects doubled]) to adjacent [{Military} {Land}] units for the rest of the game",
-			"Tile provides yield without assigned population"],
-		"weight": 1
-	},
-	{
-		"name": "Grand Mesa",
-		"type": "NaturalWonder",
-		"production": 2,
-		"gold": 3,
-		"occursOn": ["Plains","Desert","Tundra"],
-		"uniques": ["Must be adjacent to [0] [Coast] tiles",
-			"Must be adjacent to [0] [Grassland] tiles",
-			"Must be adjacent to [2] to [6] [Hill] tiles",
-			"Must be adjacent to [0] to [2] [Mountain] tiles"],
-		"turnsInto": "Mountain",
-		"impassable": true,
-		"unbuildable": true,
-		"weight": 10
-	},
-	{
-		"name": "Mount Fuji",
-		"type": "NaturalWonder",
-		"gold": 2,
-		"culture": 3,
-		"faith": 3,
-		"occursOn": ["Grassland","Plains"],
-		"uniques": ["Must be adjacent to [0] [Coast] tiles",
-			"Must be adjacent to [0] [Tundra] tiles",
-			"Must be adjacent to [0] [Desert] tiles",
-			"Must be adjacent to [0] [Mountain] tiles",
-			"Must be adjacent to [0] [Marsh] tiles",
-			"Must be adjacent to [0] to [2] [Hill] tiles",
-			"Must not be on [1] largest landmasses"],
-		"turnsInto": "Mountain",
-		"impassable": true,
-		"unbuildable": true,
-		"weight": 10
-	},
-	{
-		"name": "Krakatoa",
-		"type": "NaturalWonder",
-		"science": 5,
-		"occursOn": ["Ocean"],
-		"uniques": ["Must be adjacent to [1] to [6] [Coast] tiles",
-			"Must be adjacent to [0] [Ice] tiles",
-			"Neighboring tiles will convert to [Coast]"],
-		"turnsInto": "Mountain",
-		"impassable": true,
-		"unbuildable": true,
-		"weight": 10
-	},
-	{
-		"name": "Rock of Gibraltar",
-		"type": "NaturalWonder",
-		"food": 2,
-		"gold": 5,
-		"occursOn": ["Grassland"],
-		"uniques": ["Must be adjacent to [1] to [5] [Coast] tiles",
-			"Must be adjacent to [1] [Mountain] tiles",
-			"Neighboring tiles except [Mountain] will convert to [Coast]"],
-		"turnsInto": "Mountain",
-		"impassable": true,
-		"unbuildable": true,
-		"weight": 10
-	},
-	{
-		"name": "Cerro de Potosi",
-		"type": "NaturalWonder",
-		"gold": 10,
-		"occursOn": ["Plains","Mountain"],
-		"uniques": ["Must be adjacent to [0] [Coast] tiles",
-			"Must be adjacent to [1] to [6] [Hill] tiles"],
-		"turnsInto": "Mountain",
-		"impassable": true,
-		"unbuildable": true,
-		"weight": 5
-	},
-	{
-		"name": "Barringer Crater",
-		"type": "NaturalWonder",
-		"gold": 2,
-		"science": 3,
-		"occursOn": ["Desert","Tundra"],
-		"uniques": ["Must be adjacent to [0] [Coast] tiles",
-			"Must be adjacent to [0] [Grassland] tiles",
-			"Must be adjacent to [0] to [2] [Mountain] tiles",
-			"Must be adjacent to [0] to [4] [Elevated] tiles"],
-		"turnsInto": "Mountain",
-		"impassable": true,
-		"unbuildable": true,
-		"weight": 10
-	},
-	// G&K Wonders
-	{
-		"name": "Mount Kailash",
-		"type": "NaturalWonder",
-		"faith": 6,
-		"happiness": 2,
-		"occursOn": ["Plains","Grassland"],
-		"uniques": ["Must be adjacent to [0] [Coast] tiles",
-			"Must be adjacent to [0] [Marsh] tiles",
-			"Must be adjacent to [0] to [1] [Desert] tiles",
-			"Must be adjacent to [4] to [6] [Elevated] tiles"],
-		"turnsInto": "Mountain",
-		"impassable": true,
-		"unbuildable": true,
-		"weight": 10
-	},
-	{
-		"name": "Mount Sinai",
-		"type": "NaturalWonder",
-		"faith": 8,
-		"occursOn": ["Desert","Plains"],
-		"uniques": ["Must be adjacent to [0] [Coast] tiles",
-			"Must be adjacent to [0] [Grassland] tiles",
-			"Must be adjacent to [0] [Tundra] tiles",
-			"Must be adjacent to [0] [Marsh] tiles",
-			"Must be adjacent to [3] to [6] [Desert] tiles"],
-		"turnsInto": "Mountain",
-		"impassable": true,
-		"unbuildable": true,
-		"weight": 10
-	},
-	{
-		"name": "Sri Pada",
-		"type": "NaturalWonder",
-		"food": 2,
-		"faith": 4,
-		"happiness": 2,
-		"occursOn": ["Plains","Grassland"],
-		"uniques": ["Must be adjacent to [0] [Tundra] tiles",
-			"Must be adjacent to [0] [Desert] tiles",
-			"Must be adjacent to [0] [Marsh] tiles",
-			"Must not be on [1] largest landmasses"],
-		"turnsInto": "Mountain",
-		"impassable": true,
-		"unbuildable": true,
-		"weight": 10
-	},
-	{
-		"name": "Uluru",
-		"type": "NaturalWonder",
-		"food": 2,
-		"faith": 6,
-		"occursOn": ["Plains","Desert"],
-		"uniques": ["Must be adjacent to [0] [Coast] tiles",
-			"Must be adjacent to [0] [Grassland] tiles",
-			"Must be adjacent to [0] [Tundra] tiles",
-			"Must be adjacent to [0] [Marsh] tiles",
-			"Must be adjacent to [3] to [6] [Plains] tiles"],
-		"turnsInto": "Mountain",
-		"impassable": true,
-		"unbuildable": true,
-		"weight": 10
 	},
 
 ]
