@@ -50,6 +50,7 @@
 			"[+1 Production] <after discovering [Machinery]> <with [2] to [6] neighboring [Work district] tiles>",
 			"[+1 Production] <after discovering [Industrialization]> <with [3] to [6] neighboring [Work district] tiles>",
 			"[-2 Production] <when at war>",
+			//"[+1 Production] <with [25]% chance>",  // bonus baseline
 			"[+1 Production] <with [25]% chance>",  // bonus baseline
 		],
 		"terrainsCanBeBuiltOn": ["Grassland","Plains","Desert","BridgeFL","BridgeFR"],
