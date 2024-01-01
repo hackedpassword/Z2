@@ -89,8 +89,10 @@
 		"turnsToBuild": 5,
 		"techRequired": "Survival",
 		"uniques": [
-			"[+1 Food] <with [30]% chance>",  // not a guaranteed food source
-			"[+1 Food] <with [60]% chance> <after discovering [Hunting]>",
+			//"[+1 Food] <with [30]% chance>",  // not a guaranteed food source
+			//"[+1 Food] <with [60]% chance> <after discovering [Hunting]>",
+			"[+1 Food]",  // not a guaranteed food source
+			"[+1 Food] <after discovering [Hunting]>",
 			"[-1 Food] <with [1] to [6] neighboring [Forage] tiles>",  // This food resource is not too compete with farms nor itself
 			"[-1 Food] <with [3] to [6] neighboring [Forage] tiles>",
 			"[-1 Food] <with [5] to [6] neighboring [Forage] tiles>",  // Diminishing returns, upgrade to farm!
