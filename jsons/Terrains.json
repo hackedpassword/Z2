@@ -42,7 +42,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		        "Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
 			"Blocks line-of-sight from tiles at same elevation",
 			"Never receives any resources",
-			"Units ending their turn on this terrain take [10] damage <with [20]% chance>",  // enemies amidst
+			//"Units ending their turn on this terrain take [10] damage <with [20]% chance>",  // enemies amidst
 			"[-2 Gold] <in [River] tiles>",  // turn down resource noise
 		],
 	},
@@ -54,7 +54,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		// to-do: settlers shouldn't settle here - for now it's essentially a nuke safe haven
 		"uniques": [
 			"Rough terrain",
-			"Units ending their turn on this terrain take [15] damage <with [20]% chance>",  // enemies amidst
+			//"Units ending their turn on this terrain take [15] damage <with [20]% chance>",  // enemies amidst
 			"Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
 		        "Has an elevation of [-1] for visibility calculations",  // testing negative vis
 			"Blocks line-of-sight from tiles at same elevation", 
@@ -96,7 +96,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"Rough terrain",
 		        "Has an elevation of [1] for visibility calculations",  // not too tall, wanting limited tile reveal
 			"Blocks line-of-sight from tiles at same elevation",  // cull vis
-		        "Units ending their turn on this terrain take [50] damage <with [80]% chance>",  // get in get out
+		        //"Units ending their turn on this terrain take [50] damage <with [80]% chance>",  // get in get out
 			"Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
 			"[-2 Gold] <in [River] tiles>",  // turn down resource noise - #todo: figure out how river tiles get gold assigned .. does not appear to be json/mod configured (atm)
 		], 
