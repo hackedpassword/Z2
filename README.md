@@ -32,14 +32,3 @@ Z2 is essentially in beta. While in active development, expect anything could ch
 Feel free to review/reuse the json’s. There's tons of commentary, especially towards learning what Unciv can/can't do. 
 
 [Unciv Z2 discord](https://discord.com/channels/586194543280390151/1138883296835682324)
-
-
-## Credits are due!
-
-- [The Spriters Resource]( https://www.spriters-resource.com/) for fantastic sprite sheets.
-- Included are credits to the sprite rippers: [Mister Mike](https://www.spriters-resource.com/submitter/MisterMike/), Obreck, [Bruice Juice](https://retrogamezone.co.uk/zelda2.htm), [Rick N. Bruns](https://www.pinterest.com/snesmaster/) (that partial original map above) - huge thanks for creating that map!
-- Ninendo including my NES and my copy of Zelda 2.
-- Yairm210 for Unciv and Unciv assets and amazing documentation.
-- SomeTroglodyte for his massive contributions including debugging complex Z2 issues.
-- SeventhM for all the assistance he's contributed in straightening out my mod glitches. 
-- [A1y0sh4](https://github.com/A1y0sh4/The-Great-Unciv-Rework) and [Indonesian Gentleman](https://github.com/carriontrooper/Alpha-Frontier) for the relentless references I made to understand Unciv modding via their mods.
