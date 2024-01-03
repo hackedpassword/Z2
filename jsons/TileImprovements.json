@@ -44,14 +44,14 @@
 		"production": 1,  // this baseline amount hopefully will trigger villagers to replace Slog mud improvements
 		"techRequired": "Construction",
 		"uniques": [
-			"[+2 Production] <after discovering [Iron Working]> <with [1] to [6] neighboring [Work district] tiles>",
+			"[+2 Production] <after discovering [Iron Working]>",
+			//"[+2 Production] <after discovering [Iron Working]> <with [1] to [6] neighboring [Work district] tiles>",
 			//"[+1 Production] <with [50]% chance> <after discovering [Machinery]> <with [2] to [6] neighboring [Work district] tiles>",
 			//"[+1 Production] <with [50]% chance> <after discovering [Industrialization]> <with [3] to [6] neighboring [Work district] tiles>",
-			"[+1 Production] <after discovering [Machinery]> <with [2] to [6] neighboring [Work district] tiles>",
-			"[+1 Production] <after discovering [Industrialization]> <with [3] to [6] neighboring [Work district] tiles>",
-			"[-2 Production] <when at war>",
+			//"[+1 Production] <after discovering [Machinery]> <with [2] to [6] neighboring [Work district] tiles>",
+			//"[+1 Production] <after discovering [Industrialization]> <with [3] to [6] neighboring [Work district] tiles>",
+			//"[-2 Production] <when at war>",
 			//"[+1 Production] <with [25]% chance>",  // bonus baseline
-			"[+1 Production] <with [25]% chance>",  // bonus baseline
 		],
 		"terrainsCanBeBuiltOn": ["Grassland","Plains","Desert","BridgeFL","BridgeFR"],
 	},
@@ -97,15 +97,15 @@
 			//"[+1 Food] <with [30]% chance>",  // not a guaranteed food source
 			//"[+1 Food] <with [60]% chance> <after discovering [Hunting]>",
 			"[+1 Food]",  // not a guaranteed food source
-			"[+1 Food] <after discovering [Hunting]>",
-			"[-1 Food] <with [1] to [6] neighboring [Forage] tiles>",  // This food resource is not too compete with farms nor itself
-			"[-1 Food] <with [3] to [6] neighboring [Forage] tiles>",
-			"[-1 Food] <with [5] to [6] neighboring [Forage] tiles>",  // Diminishing returns, upgrade to farm!
+			//"[+1 Food] <after discovering [Hunting]>",
+			//"[-1 Food] <with [1] to [6] neighboring [Forage] tiles>",  // This food resource is not too compete with farms nor itself
+			//"[-1 Food] <with [3] to [6] neighboring [Forage] tiles>",
+			//"[-1 Food] <with [5] to [6] neighboring [Forage] tiles>",  // Diminishing returns, upgrade to farm!
 		],
 		"terrainsCanBeBuiltOn": ["Land"],
 	},
 	{
-		"name": "Bridge",  // represents the hidden rift between Death Mountain and the Maze Island bridge
+		"name": "Bridge",  // represents the secret rift between Death Mountain and the Maze Island bridge
 		"turnsToBuild": 7,
 		"terrainsCanBeBuiltOn": ["Coast","CoastTile","Ocean","Lakes"],
 		"culture": 3,
