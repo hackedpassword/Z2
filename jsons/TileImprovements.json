@@ -233,6 +233,7 @@
 			"Removes removable features when built"
 		]
 	},
+*/
 	{
 		"name": "Lumber mill",
 		"terrainsCanBeBuiltOn": ["Forest"],
@@ -246,6 +247,7 @@
 		],
 		"shortcutKey": "L"
 	},
+/*
 	{
 		"name": "Trading post",
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Forest"],
