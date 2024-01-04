@@ -149,6 +149,7 @@
 		"name": "Flash",  // for world items
 		"uniques": ["Can only be built to improve a resource"],  // it's deco for resource items when built
 	},
+*/
 	{
 		"name": "Mine",  // This leads to production improvements w/ Mountains as resources in Z2 are scarce
 				 // don't forget workers are taking 50 dmg/t/Mountain so building these are tricky
@@ -162,6 +163,7 @@
 		],
 		"shortcutKey": "M"
 	},
+/*
         {
 		"name": "Smelter",  // Specific to improve Gold Ore in plains tiles (triforce)
 		"turnsToBuild": 8,
@@ -446,13 +448,14 @@
 		"gold": 4,
 		"uniques": ["Great Improvement", "[+1 Gold] <after discovering [Economics]>", "Removes removable features when built", "Pillaging this improvement yields approximately [+20 Gold]"]
 	},
+*/
 	{
 		"name": "Holy site",
 		"terrainsCanBeBuiltOn": ["Land"],
 		"faith": 6,
 		"uniques": ["Great Improvement", "Removes removable features when built", "Pillaging this improvement yields approximately [+20 Gold]"]
 	},
-
+/*
 	//Civilization unique improvements
 	{
 		"name": "Moai",
@@ -488,7 +491,7 @@
 		"techRequired": "Guilds",
 		"shortcutKey": "F"
 	},
-
+*/
 	// Unbuildable improvements
 	{
 		"name": "Ancient ruins",
