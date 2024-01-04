@@ -1,6 +1,6 @@
 [
 // Z2 improvements
-
+/*
 	{
 	// City center will be modified for an improved gameplay experience in Z2!
 		"name": "City center",
@@ -73,6 +73,7 @@
 		],
 		"terrainsCanBeBuiltOn": ["Grassland","Plains","Desert"],
 	},
+*/
 	{
 		"name": "Farm",
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","BridgeFL","BridgeFR"],
@@ -89,6 +90,7 @@
 		],
 		"shortcutKey": "F"
 	},
+/*
         {
 		"name": "Forage",
 		"turnsToBuild": 5,
@@ -505,4 +507,5 @@
 		"uniques": ["Unpillagable", "Unbuildable"],
         "civilopediaText": [{"text":"Home to uncivilized barbarians, will spawn a hostile unit from time to time"}]
 	}
+*/
 ]
