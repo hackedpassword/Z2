@@ -1,6 +1,6 @@
 [
 // Z2 improvements
-/*
+
 	{
 	// City center will be modified for an improved gameplay experience in Z2!
 		"name": "City center",
@@ -25,10 +25,10 @@
 		"movementCost": 5, // hard to pass through, does this even work on improvements? I don't think so :(
 		"turnsToBuild": 5,
 		"uniques": [  // commented lines are desired but are not allowed :/
-			// "Nullifies all other stats this tile provides",
-			// "Units ending their turn on this terrain take [20] damage <with [50]% chance>",
-			// "Has an elevation of [1] for visibility calculations",
-			// "Rough terrain",
+			"Nullifies all other stats this tile provides",
+			"Units ending their turn on this terrain take [20] damage <with [50]% chance>",
+			"Has an elevation of [1] for visibility calculations",
+			"Rough terrain",
 			"Removes removable features when built",  // pepper an opponents' land with boulders, pillage tiles and roll em in
 			"Gives a defensive bonus of [25]%",
 			"Can be built outside your borders",
@@ -45,13 +45,13 @@
 		"techRequired": "Construction",
 		"uniques": [
 			"[+2 Production] <after discovering [Iron Working]>",
-			//"[+2 Production] <after discovering [Iron Working]> <with [1] to [6] neighboring [Work district] tiles>",
-			//"[+1 Production] <with [50]% chance> <after discovering [Machinery]> <with [2] to [6] neighboring [Work district] tiles>",
-			//"[+1 Production] <with [50]% chance> <after discovering [Industrialization]> <with [3] to [6] neighboring [Work district] tiles>",
-			//"[+1 Production] <after discovering [Machinery]> <with [2] to [6] neighboring [Work district] tiles>",
-			//"[+1 Production] <after discovering [Industrialization]> <with [3] to [6] neighboring [Work district] tiles>",
-			//"[-2 Production] <when at war>",
-			//"[+1 Production] <with [25]% chance>",  // bonus baseline
+			"[+2 Production] <after discovering [Iron Working]> <with [1] to [6] neighboring [Work district] tiles>",
+			"[+1 Production] <with [50]% chance> <after discovering [Machinery]> <with [2] to [6] neighboring [Work district] tiles>",
+			"[+1 Production] <with [50]% chance> <after discovering [Industrialization]> <with [3] to [6] neighboring [Work district] tiles>",
+			"[+1 Production] <after discovering [Machinery]> <with [2] to [6] neighboring [Work district] tiles>",
+			"[+1 Production] <after discovering [Industrialization]> <with [3] to [6] neighboring [Work district] tiles>",
+			"[-2 Production] <when at war>",
+			"[+1 Production] <with [25]% chance>",  // bonus baseline
 		],
 		"terrainsCanBeBuiltOn": ["Grassland","Plains","Desert","BridgeFL","BridgeFR"],
 	},
@@ -63,8 +63,8 @@
 		"techRequired": "Shelter",
 		// "obsoleteTech": "Construction",  // experiment, will this work on an improvement? looks like not - curse you accurate documentation! https://yairm210.github.io/Unciv/Modders/Mod-file-structure/3-Map-related-JSON-files/#tileimprovementsjson
 		"uniques": [
-			//"[+1 Production] <with [20]% chance>",  // baseline, poor production source
-			//"[+1 Production] <with [50]% chance> <after discovering [Pottery]>",
+			"[+1 Production] <with [20]% chance>",  // baseline, poor production source
+			"[+1 Production] <with [50]% chance> <after discovering [Pottery]>",
 			"[+1 Production]",  // baseline, poor production source
 			"[+1 Production] <after discovering [Pottery]>",
 			"[-1 Production] <after discovering [Iron Working]>",
@@ -73,7 +73,7 @@
 		],
 		"terrainsCanBeBuiltOn": ["Grassland","Plains","Desert"],
 	},
-*/
+
 	{
 		"name": "Farm",
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","BridgeFL","BridgeFR"],
@@ -90,19 +90,19 @@
 		],
 		"shortcutKey": "F"
 	},
-/*
+
         {
 		"name": "Forage",
 		"turnsToBuild": 5,
 		"techRequired": "Survival",
 		"uniques": [
-			//"[+1 Food] <with [30]% chance>",  // not a guaranteed food source
-			//"[+1 Food] <with [60]% chance> <after discovering [Hunting]>",
+			"[+1 Food] <with [30]% chance>",  // not a guaranteed food source
+			"[+1 Food] <with [60]% chance> <after discovering [Hunting]>",
 			"[+1 Food]",  // not a guaranteed food source
-			//"[+1 Food] <after discovering [Hunting]>",
-			//"[-1 Food] <with [1] to [6] neighboring [Forage] tiles>",  // This food resource is not too compete with farms nor itself
-			//"[-1 Food] <with [3] to [6] neighboring [Forage] tiles>",
-			//"[-1 Food] <with [5] to [6] neighboring [Forage] tiles>",  // Diminishing returns, upgrade to farm!
+			"[+1 Food] <after discovering [Hunting]>",
+			"[-1 Food] <with [1] to [6] neighboring [Forage] tiles>",  // This food resource is not too compete with farms nor itself
+			"[-1 Food] <with [3] to [6] neighboring [Forage] tiles>",
+			"[-1 Food] <with [5] to [6] neighboring [Forage] tiles>",  // Diminishing returns, upgrade to farm!
 		],
 		"terrainsCanBeBuiltOn": ["Land"],
 	},
@@ -149,7 +149,7 @@
 		"name": "Flash",  // for world items
 		"uniques": ["Can only be built to improve a resource"],  // it's deco for resource items when built
 	},
-*/
+
 	{
 		"name": "Mine",  // This leads to production improvements w/ Mountains as resources in Z2 are scarce
 				 // don't forget workers are taking 50 dmg/t/Mountain so building these are tricky
@@ -163,7 +163,7 @@
 		],
 		"shortcutKey": "M"
 	},
-/*
+
         {
 		"name": "Smelter",  // Specific to improve Gold Ore in plains tiles (triforce)
 		"turnsToBuild": 8,
@@ -233,7 +233,7 @@
 			"Removes removable features when built"
 		]
 	},
-*/
+
 	{
 		"name": "Lumber mill",
 		"terrainsCanBeBuiltOn": ["Forest"],
@@ -247,7 +247,7 @@
 		],
 		"shortcutKey": "L"
 	},
-/*
+
 	{
 		"name": "Trading post",
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Forest"],
@@ -450,14 +450,14 @@
 		"gold": 4,
 		"uniques": ["Great Improvement", "[+1 Gold] <after discovering [Economics]>", "Removes removable features when built", "Pillaging this improvement yields approximately [+20 Gold]"]
 	},
-*/
+
 	{
 		"name": "Holy site",
 		"terrainsCanBeBuiltOn": ["Land"],
 		"faith": 6,
 		"uniques": ["Great Improvement", "Removes removable features when built", "Pillaging this improvement yields approximately [+20 Gold]"]
 	},
-/*
+
 	//Civilization unique improvements
 	{
 		"name": "Moai",
@@ -493,7 +493,7 @@
 		"techRequired": "Guilds",
 		"shortcutKey": "F"
 	},
-*/
+
 	// Unbuildable improvements
 	{
 		"name": "Ancient ruins",
