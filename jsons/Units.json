@@ -2096,6 +2096,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"uniques": [
 			"May Paradrop up to [5] tiles from inside friendly territory",
 			"Cannot enter ocean tiles", // may be temporary
+			"Can move immediately once bought",  // bonus for buying, air delivery
                         "Never appears as a Barbarian unit"],
 		"attackSound": "shot"
 		// upgradesTo "XCOM Squad", "No Movement Cost to Pillage" in BNW
