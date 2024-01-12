@@ -43,14 +43,14 @@
 			"Only available <for [Human player]>", // works, but globalUnique <when [cheatsOn]> doesn't. For now, just disable when not in use. SomeTrog I seriously can't thank you enough for implementing that build menu.
 			"Can only be built [in capital]",
 			"Reveals the entire map",  // for debugging map/tech
-			"[+1000000 Culture] <for [Human player]>",  // testing policy updates
-			"[+1000000 Gold] <for [Human player]>",  // blank check
-			"[+1000000 Faith] <for [Human player]>",  // can you BELIEVE that
+			"[+1000000 Culture] <for [Human player]> <if [Hax Hut] is constructed>",  // testing policy updates
+			"[+1000000 Gold] <for [Human player]> <if [Hax Hut] is constructed>",  // blank check
+			"[+1000000 Faith] <for [Human player]> <if [Hax Hut] is constructed>",  // can you BELIEVE that
 			// "[+1000000 Science] <for [Human player]>",  // have a tardis
 			// "[+1000000 Production] <for [Human player]>",  // and a sonic screwdriver
 			// "[+1000000 Happiness] <for [Human player]>",  // mmm kings special kool-aid
-			"[+250] Movement <for [Civilian] units> <for [Human player]>",  // personal site to site transporter
-			"[+250] Movement <for [Military] units> <for [Human player]>",
+			"[+250] Movement <for [Civilian] units> <for [Human player]> <if [Hax Hut] is constructed>",  // personal site to site transporter
+			"[+250] Movement <for [Military] units> <for [Human player]> <if [Hax Hut] is constructed>",
 			// "Instantly provides [1] [Iron]", // Otherwise swordsman creates missing resource. Culling for now due to needing a stockpiled resource container.
                         // the 'once' is for when capitals are relocated - portal gate will trigger upon moving
 			// "Free [Worker] appears <once>",  // squire, paige, whoever, brought your helper
