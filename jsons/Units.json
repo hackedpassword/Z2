@@ -29,7 +29,8 @@
 
 	{
 	// Unit for experiments, not for normal games as you will very clearly see :D
-	// Using transform to divide actions, fairy and sprite tranform between each other 
+	// Using transform to divide actions, fairy and sprite tranform between each other.
+	// Set display mode to Portrait so left menu can be seen, else it'll go off screen. 
 		"name": "Fairy",
 		"unitType": "Civilian",  // use map promotions for additional upgrades, test civ v military activations
 		"cost": 1,
@@ -42,7 +43,7 @@
 			"Can instantly construct a [Farm] improvement",
 			"Can instantly construct a [Work district] improvement",
 			"Can instantly construct a [Trading post] improvement",
-			"Can instantly construct a [Plantation] improvement",
+			
 			"Can instantly construct a [Mine] improvement",
 			"Can instantly construct a [Remove Marsh] improvement",
 			"Can instantly construct a [Remove Forest] improvement",
@@ -80,6 +81,8 @@
 			"Only available <for [Human player]>",
 			"May Paradrop up to [200] tiles from inside friendly territory",  // fairy portal
 		// action set 2
+			"Can instantly construct a [Plantation] improvement",
+			"Can instantly construct a [Pasture] improvement",
 			"Can instantly construct a [Quarry] improvement",
 			"Can instantly construct a [Smelter] improvement",
 			"Can instantly construct a [Road] improvement",
@@ -661,7 +664,7 @@
 			"Only available <if [Spaceship Factory] is constructed> <in this city>",  // requires advanced construction facilities
 			// "Only available <if [Nuclear Plant] is constructed> <in this city>",  // local materials handling
 			"[2] additional attacks per turn",  // massive firepower, usage must be balanced against available movement points
-			"Consumes [3] [Uranium]",  // dual reactor, fusion generator
+			"Consumes [2] [Uranium]",  // dual reactor, fusion generator, 3 U total
 			"May Paradrop up to [4] tiles from inside friendly territory",  // extended range plasma-lithium jump jets (ER-PL JJ)
 			"No defensive terrain bonus",
 			"Ignores Zone of Control",
