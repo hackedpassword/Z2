@@ -268,7 +268,7 @@
 			},
 			{
 				"name": "Drama and Poetry",
-				"row": 3,
+				"row": 2,
 				"prerequisites": ["Politics","Horseback Riding"],
 				"quote": "'What is drama but life with the dull bits cut out.' - Alfred Hitchcock"
 			},
@@ -511,7 +511,7 @@
 			},
 			{
 				"name": "Scientific Theory",
-				"row": 7,
+				"row": 6,
 				"prerequisites": ["Education","Printing Press"],
 				"quote": "'Every great advance in science has issued from a new audacity of imagination.' - John Dewey"
 			},
