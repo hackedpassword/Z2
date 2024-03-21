@@ -206,6 +206,7 @@
 		faith: 0,
 		"uniques": [
 			"[+1 Faith] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // purge icon spamming
+		],
 		improvement: "Ancient ruins",  // grave robbers??
 	},	
 	{	
