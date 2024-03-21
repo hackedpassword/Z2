@@ -203,6 +203,7 @@
 		"uniques": [
 			// "[-1] Sight <before the [Classical era]>",
 			"Can instantly construct a [Fort] improvement <by consuming this unit>",  // great upgrade
+			"Can instantly construct a [Ancient ruins] improvement <in [Wheat] tiles> <by consuming this unit>",
 			"May upgrade to [Archer] through ruins-like effects",
 			"Never appears as a Barbarian unit",
 			// "Ignores terrain cost <in tiles without [Mountain]>",
