@@ -203,7 +203,11 @@
 		name: "Wheat",  // graves
 		resourceType: "Bonus",
 		terrainsCanBeFoundOn: ["Plains","Desert","Mound"],
-		faith: 1,
+		// faith: 0,
+		"uniques": [
+			// appears this needs to be applied to the terrain
+			// "[+2 Faith] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // purge icon spamming
+		],
 		improvement: "Ancient ruins",  // grave robbers??
 	},	
 	{	
