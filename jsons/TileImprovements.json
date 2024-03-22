@@ -41,11 +41,11 @@
 	{
 		"name": "Work district",  // universal productivity
 		"turnsToBuild": 7,
-		"production": 2,  // this baseline amount hopefully will trigger villagers to replace Slog mud improvements
+		"production": 1,  // this baseline amount hopefully will trigger villagers to replace Slog mud improvements
 		"techRequired": "Construction",
 		"uniques": [
-			"[+1 Production] <after discovering [Iron Working]>",
-			"[+1 Production] <after discovering [Iron Working]> <with [1] to [6] neighboring [Work district] tiles>",  // cluster resourcing
+			"[+2 Production] <after discovering [Iron Working]>",
+			"[+2 Production] <after discovering [Iron Working]> <with [1] to [6] neighboring [Work district] tiles>",
 			"[+1 Production] <with [50]% chance> <after discovering [Machinery]> <with [2] to [6] neighboring [Work district] tiles>",
 			"[+1 Production] <with [50]% chance> <after discovering [Industrialization]> <with [3] to [6] neighboring [Work district] tiles>",
 			"[+1 Production] <after discovering [Machinery]> <with [2] to [6] neighboring [Work district] tiles>",
@@ -59,14 +59,14 @@
 	// needs follow up improvement
 		"name": "Slog mud",  // nasty peasant work
 		"turnsToBuild": 5,
-		"production": 0,  // with the uniques below, icon will only show up on the tile by chance, though others may amend later through bonuses
+		// "production": 1,  // with the uniques below, icon will only show up on the tile by chance, though others may amend later through bonuses
 		"techRequired": "Shelter",
 		// "obsoleteTech": "Construction",  // experiment, will this work on an improvement? looks like not - curse you accurate documentation! https://yairm210.github.io/Unciv/Modders/Mod-file-structure/3-Map-related-JSON-files/#tileimprovementsjson
 		"uniques": [
-			"[+1 Production] <with [50]% chance>",  // baseline, poor production source, sometimes produces nothing
-			"[+1 Production] <with [30]% chance> <after discovering [Mining]>",
+			"[+1 Production] <with [20]% chance>",  // baseline, poor production source
+			"[+1 Production] <with [50]% chance> <after discovering [Pottery]>",
+			"[+1 Production]",  // baseline, poor production source
 			"[+1 Production] <after discovering [Pottery]>",
-		// need to improve away from slog mud in mid ages
 			"[-1 Production] <after discovering [Iron Working]>",
 			"[-1 Production] <after discovering [Aesthetics]>",
 			"Comment [Nasty peasant work gathering mud, clay, stones, and other earthy muck needed to supplement building materials.]",
@@ -77,15 +77,13 @@
 	{
 		"name": "Farm",
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","BridgeFL","BridgeFR"],
-		"food": 2,
+		"food": 1,
 		"turnsToBuild": 7,
 		"techRequired": "Agriculture",
 		"uniques": [
 			"Can also be built on tiles adjacent to fresh water",
-			"[+1 Food] from [Fresh water] tiles <after discovering [Calendar]>",
-			"[+1 Food] <after discovering [Machinery]>",
-			"[+1 Food] <after discovering [Fertilizer]>",
-			"[+1 Food] <after discovering [Refrigeration]>",
+			"[+1 Food] from [Fresh water] tiles <after discovering [Civil Service]>",
+			"[+1 Food] from [non-fresh water] tiles <after discovering [Fertilizer]>",
 			// "[99]% Chance to be destroyed by nukes",
                         "Pillaging this improvement yields approximately [+18 Gold]",
 			"Comment [This is a farm. It has better food production than foraging.]",  // testing new comment unique
@@ -96,12 +94,12 @@
         {
 		"name": "Forage",
 		"turnsToBuild": 5,
-		"food": 0,
 		"techRequired": "Survival",
 		"uniques": [
-			"[+1 Food] <with [50]% chance> <after discovering [Language]>",
-			"[+1 Food] <with [40]% chance> <after discovering [Hunting]>",
-			"[+1 Food] <with [60]% chance> <after discovering [Clans]>",
+			"[+1 Food] <with [30]% chance>",  // not a guaranteed food source
+			"[+1 Food] <with [60]% chance> <after discovering [Hunting]>",
+			"[+1 Food]",  // not a guaranteed food source
+			"[+1 Food] <after discovering [Hunting]>",
 			"[-1 Food] <with [1] to [6] neighboring [Forage] tiles>",  // This food resource is not too compete with farms nor itself
 			"[-1 Food] <with [3] to [6] neighboring [Forage] tiles>",
 			"[-1 Food] <with [5] to [6] neighboring [Forage] tiles>",  // Diminishing returns, upgrade to farm!
@@ -333,7 +331,6 @@
 		"name": "Road",
 		"terrainsCanBeBuiltOn": ["Land"],
 		"turnsToBuild": 4,
-		"production": 1,  // roads make cities more productive
 		"techRequired": "The Wheel",
 		"uniques": ["Can be built outside your borders", "Costs [1] [Gold] per turn"],
 		"shortcutKey": "R",
@@ -348,7 +345,6 @@
 		"name": "Railroad",
 		"terrainsCanBeBuiltOn": ["Land"],
 		"turnsToBuild": 4,
-		"production": 2,
 		"techRequired": "Railroads",
 		"uniques": ["Can be built outside your borders", "Costs [2] [Gold] per turn"],
 		"shortcutKey": "R",
@@ -502,11 +498,7 @@
 	{
 		"name": "Ancient ruins",
 		"terrainsCanBeBuiltOn": ["Land"],
-		"uniques": [
-			"Unpillagable", 
-			"Provides a random bonus when entered", 
-			// "Unbuildable", 
-		]
+		"uniques": ["Unpillagable", "Provides a random bonus when entered", "Unbuildable"]
 	},
 	{
 		"name": "City ruins",
