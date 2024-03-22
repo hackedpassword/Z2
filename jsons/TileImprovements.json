@@ -128,6 +128,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"[+1 Culture] <after discovering [Calendar]> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // farming incurs a bit of lore
 			"[+1 Food] <after discovering [Machinery]> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // farming machines appearing
 			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // dropped something? found something!
+		        "[+1 Faith] <in [Wheat] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 		// This would be for promoting cultural exchanges
 			// "[+1 Culture]  // something like <when occupied by a [Player] unit> <when adjacent to a non-[Player] unit>
 			// "[+1 Happiness] <with [10]% chance>",
@@ -161,12 +162,13 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"RGB": [252, 188, 176],
 		"uniques": [
 		// base tiles providing scaling and dynamic resources
-			"[+1 Production] <before discovering [The Wheel]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // poor production source initially
+			// "[+1 Production] <before discovering [The Wheel]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // poor production source initially
+			// 
 			"[+1 Production] <after discovering [The Wheel]> <before discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			// "[+1 Production] <after discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			"[+1 Production] <after discovering [Engineering]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+10 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // treasure unburied
+			// "[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // treasure unburied
 			"[+1 Faith] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			// "[+1 Culture] <with [10]% chance>",
 			// "[+1 Happiness] <with [10]% chance>",
