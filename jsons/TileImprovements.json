@@ -1,524 +1,958 @@
 [
-// Z2 improvements
 
-	{
-	// City center will be modified for an improved gameplay experience in Z2!
-		"name": "City center",
-		"terrainsCanBeBuiltOn": ["Land"],  // also allowed to be built on hybrid tiles though desired to disable that somehow
+/*
+Design Notes:
+
+Z2 is not currently meant for random map generation and has (almost) all map-gen uniques removed. The Z2 Hyrule overworld is a static terrain.
+
+Ruleset base originates in G&K. As dev progresses, more G&K will be gutted, Zelda 2 injected. Since this is my first ruleset mod, lots of experimenting.
+Probably should make a -stable version of the mod. #todo make -stable Z2 version
+	
+You'll see this unique combo: <in [Friendly Land] tiles> <within [3] tiles of a [City center]> on most resources. Visually, this retains a super clean map presentation
+by not spamming the landscape with resource icons. See Plains tile, more info there.
+
+Most resources also have <with [X]% chance> because I am not guaranteeing per-tile resources.
+The motivation here is per year(turn) conditions change, thus a resource may be more/less plentiful next year. 
+Also, allows for bonus resources including rare bonuses, like Gold in grasslands (2% chance), or
+stacking bonuses as seen in Caverns.
+
+These mod checker warnings cannot currently be suppressed. All derive from hybrid tiles. 
+	CoastTile turns into terrain Force which is not a base terrain!
+	OceanTile turns into terrain Force which is not a base terrain!
+	Bridge1ocean turns into terrain Force which is not a base terrain!
+	Bridge2ocean turns into terrain Force which is not a base terrain!
+	Bridge1coast turns into terrain Force which is not a base terrain!
+	Bridge2coast turns into terrain Force which is not a base terrain!
+	Bridge3coast turns into terrain Force which is not a base terrain!
+	Bridge3 turns into terrain Force which is not a base terrain!
+	BridgeFL occurs on natural wonder CoastTile: Unsupported.
+	BridgeFL occurs on natural wonder OceanTile: Unsupported.
+	BridgeFR occurs on natural wonder CoastTile: Unsupported.
+
+#todo: Migrate many json comment notes into civopedia entries
+*/
+
+	{  // #todo: settlers shouldn't settle here
+		"name": "Cave",  // mountain entrance of caverns
+		"type": "Land",
+		"movementCost": 2,
+		"RGB": [63, 27, 8],
 		"uniques": [
-			"Ensures a minimum tile yield of [+1 Food, +1 Production] <during the [Ancient era]>",
-			"Ensures a minimum tile yield of [+2 Food, +1 Production] <during the [Classical era]>",
-			"Ensures a minimum tile yield of [+2 Food, +2 Production] <starting from the [Medieval era]>",  // will build upon this
-			"Unpillagable", "Irremovable", "Unbuildable",  // Sōdesu ka? Wareware wa mirudearou.
-			// "Blocks line-of-sight from tiles at same elevation",  // This should be a city center default unique - doesn't work
+			"Rough terrain",
+		        "Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
+			"Blocks line-of-sight from tiles at same elevation",
+			"Never receives any resources",
+			//"Units ending their turn on this terrain take [10] damage <with [20]% chance>",  // enemies amidst
+			"[-2 Gold] <in [River] tiles>",  // turn down resource noise
 		],
-        "civilopediaText": [
-			{"text":"Marks the center of a city"},
-			{"text":"Appearance changes with the technological era of the owning civilization"}
-		]
+	},
+	{
+		"name": "Cavern",
+		"type": "Land",
+		"movementCost": 2,
+		"RGB": [200, 76, 12],
+		// to-do: settlers shouldn't settle here - for now it's essentially a nuke safe haven
+		"uniques": [
+			"Rough terrain",
+			//"Units ending their turn on this terrain take [15] damage <with [20]% chance>",  // enemies amidst
+			"Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
+		        "Has an elevation of [-1] for visibility calculations",  // testing negative vis
+			"Blocks line-of-sight from tiles at same elevation", 
+			"[+1 Gold] <before discovering [Fire]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <after discovering [Fire]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // From here down, gaining gold from Cavern can reap big rewards
+			"[+1 Gold] <after discovering [Tools]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <after discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <after discovering [Construction]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <after discovering [Guilds]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <after discovering [Metallurgy]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <after discovering [Chemistry]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <after discovering [Dynamite]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <after discovering [Radar]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <after discovering [Ecology]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // smarter earthlings means better earth
+			"[+1 Gold] <after discovering [Lasers]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // same output as desert
+			"[-2 Gold] <in [River] tiles>",  // turn down resource noise - still unable to find what is granting 2 gold to river tiles
+			// balancing tweaks
+			// "[+1 Gold] <with [5]% chance>",
+			// "[+1 Culture] <with [10]% chance>",
+			// "[+1 Happiness] <with [10]% chance>",
+			// "[+1 Faith] <with [10]% chance>",
+                        // "[+1000]% Strength <vs [Air] units> <when defending>",  // not for base terrain, put into globalUniques
+
+		// #todo: figure out ways to implement these
+			// "[5]% Chance to be destroyed by nukes",  // base terrains transform this value to 0% - semi-bug
+			// "Population loss from nuclear attacks [-95]% [in this city]",  // disallowed, meant for buildings instead :/
+			// "Damage to garrison from nuclear attacks [-95]% [in this city]",
+		],
+	},
+	{
+		"name": "Mountain",
+		"type": "Land",
+		"movementCost": 3,
+		"defenceBonus": 0.5,
+	        "impassable": true,  // unless unit received Adventurer training/promotion 
+		"RGB": [99, 40, 7],
+		"uniques": [
+			"Rough terrain",
+		        "Has an elevation of [1] for visibility calculations",  // not too tall, wanting limited tile reveal
+			"Blocks line-of-sight from tiles at same elevation",  // cull vis
+		        //"Units ending their turn on this terrain take [50] damage <with [80]% chance>",  // get in get out
+			"Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
+			"[-2 Gold] <in [River] tiles>",  // turn down resource noise - #todo: figure out how river tiles get gold assigned .. does not appear to be json/mod configured (atm)
+		], 
 	},
 
+////  Z2 feature: dynmamic tile resources  ////
+/*
+	Base tiles provide scaling and dynamic resources that update per turn, within city borders only. Statically designated base resources are intentionally absent.
+	Auto-assigned pop will follow/reassign to selected resource Focus when turn starts, optimizing returns for that year.
+		Meaning: You will ONLY see food, production, etc, resource icons:
+		    + inside city borders
+		    + in work range
+		    + amounts per tile change every year (turn)
+	This is quite useful in when pop is thin, as pop takes advantage of chance terrain resource peaks and bonuses.
+	Resources will auto populate upon purchase of tile as chance dictates. Note, haxycheatx0rz, hitting Undo will regen terrain resources so it's possible to tilt the field.
+*/
 	{
-	// This boulder is an improvement, not a terrainFeature, has the same name. The difference is in what uniques can be attributed.
-	// You'll see below that a number of desired gameplay effects are not available when constructing a boulder.
-		"name": "Boulder",
-		"movementCost": 5, // hard to pass through, does this even work on improvements? I don't think so :(
-		"turnsToBuild": 5,
-		"uniques": [  // commented lines are desired but are not allowed :/
+		"name": "Plains",  // Plains resources will be more resource diverse. Used mostly as path terrain.
+		"type": "Land",
+		// "food": 1,  // We're foresaking base resource attributes for dynamic unique-provisioned resources.
+		"movementCost": 1,
+		"RGB": [240, 188, 60],
+		"uniques": [
+		// Remember that each roll of chance below aggregates an additional resource, on top of any other modifying resource bonuses
+			"[+1 Food] <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // The King's Tomb graveyard provides too much food (wheat), reduce baseline food supply
+			"[+1 Production] <with [2] to [5] neighboring [Grassland] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",     // more food at some edges
+			"[+1 Food] <before discovering [Clans]> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // poor food source initially, community pooling
+			"[+1 Food] <after discovering [Clans]> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // bonus chance for 2x food
+			"[+1 Culture] <after discovering [Calendar]> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // farming incurs a bit of lore
+			"[+1 Food] <after discovering [Machinery]> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // farming machines appearing
+			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // dropped something? found something!
+		// This would be for promoting cultural exchanges
+			// "[+1 Culture]  // something like <when occupied by a [Player] unit> <when adjacent to a non-[Player] unit>
+			// "[+1 Happiness] <with [10]% chance>",
+			// "[+1 Faith] <with [10]% chance>",
+		],
+	},
+	{
+		"name": "Grassland",
+		"type": "Land",
+		// "food": 2,
+		"movementCost": 1,
+		"RGB": [128, 208, 16],
+		"uniques": [
+		// base tiles providing scaling and dynamic resources
+			"[+1 Food] <before discovering [Tools]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // poor food source initially
+			"[+1 Food] <after discovering [Tools]> <before discovering [Animal Husbandry]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Food] <after discovering [Animal Husbandry]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Food] <after discovering [Calendar]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // up to +4 food at this point
+			"[+1 Production] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			// "[+1 Culture] <with [10]% chance>",
+			// "[+1 Happiness] <with [10]% chance>",
+			// "[+1 Faith] <with [10]% chance>",
+		],
+	},
+	{
+		"name": "Desert",
+		"type": "Land",
+		// "production": 1,
+		"movementCost": 1,
+		"RGB": [252, 188, 176],
+		"uniques": [
+		// base tiles providing scaling and dynamic resources
+			"[+1 Production] <before discovering [The Wheel]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // poor production source initially
+			"[+1 Production] <after discovering [The Wheel]> <before discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			// "[+1 Production] <after discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Production] <after discovering [Engineering]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+10 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // treasure unburied
+			"[+1 Faith] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			// "[+1 Culture] <with [10]% chance>",
+			// "[+1 Happiness] <with [10]% chance>",
+		],
+	},
+	{
+		"name": "Lakes",
+		"type": "Water",
+		"RGB": [0, 171, 169],
+		"uniques": [
+			"Fresh water",
+			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // two chances at each resource
+			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+		],
+	},
+	{
+		"name": "Coast",
+		"type": "Water",
+		"movementCost": 1,
+		"RGB": [70, 138, 216],
+		"uniques": [
+			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+		],
+
+	},
+	{
+		"name": "Ocean",
+		"type": "Water",
+		"movementCost": 1,
+		"uniques": [
+			"[+2 Food] <in [Friendly Land] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Food] <in [Friendly Land] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+2 Gold] <in [Friendly Land] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <in [Friendly Land] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+		],
+		"RGB": [33, 97, 171],
+	},
+	{
+		"name": "Deep Ocean",  // treacherous terrain used as a soft clip
+		"type": "Water",
+		"movementCost": 3,
+		"RGB": [3, 65, 114],
+		"uniques": [
+			"Rough terrain",
+			"Blocks line-of-sight from tiles at same elevation",  // waves and swells. <3 this! GREAT ocean movement strategy maker! Map tiles placed with intent, awesome tactical concept
+			"Units ending their turn on this terrain take [10] damage <with [50]% chance>",  // choppy and dangerous
+                        "Never receives any resources",
+	        	// "Has an elevation of [1] for visibility calculations",  // keep vis down by retaining default elevation, so viewing to/through ocean is reduced with navigation channels
+		],
+	},
+	{
+	// #todo: replace by a similar terrain, more volcanic (basically rename)
+		"name": "Tundra",
+		"type": "Land",
+		"movementCost": 1,
+		"uniques": [
+			"Rough terrain",
+			"[+1 Science] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+		],
+		"RGB": [200, 76, 12],
+	},
+
+//////////////////////////
+//// Terrain features ////
+//////////////////////////
+	
+	{
+		"name": "Forest",
+		"type": "TerrainFeature",
+		"movementCost": 2,
+		"overrideStats": true,
+		"unbuildable": true,
+		"defenceBonus": 0.35,
+		"occursOn": ["Grassland","Hill"],
+		"uniques": [
+			"Rough terrain", "Vegetation",
+			"Provides a one-time Production bonus to the closest city when cut down",
+			"Blocks line-of-sight from tiles at same elevation",
+			"[99]% Chance to be destroyed by nukes",  // this works, can set values to TerrainFeatures
+			//"[+1 Food] <before discovering [Hunting]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // poor food source initially
+			//"[+1 Food] <after discovering [Hunting]> <before discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			//"[+1 Food] <after discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Food] <with [25]% chance> <before discovering [Hunting]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // poor food source initially
+			"[+1 Food] <with [25]% chance> <after discovering [Hunting]> <before discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Food] <with [50]% chance> <after discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+		],
+	},
+	{
+		"name": "Marsh",
+		"type": "TerrainFeature",
+		"food": -1,  // does this even work? lol
+		"movementCost": 3,
+		"unbuildable": true,
+		"defenceBonus": -0.15,
+		"occursOn": ["Grassland"],
+		"uniques": [
+			"Rough terrain", "Vegetation",  // the heck does vegetation even do? 
+		],
+	},
+	{
+	// make mods to this later. There's only 2 hills in the map, so not a big deal
+		"name": "Hill",
+		"type": "TerrainFeature",
+		// "production": 5,
+		"movementCost": 2,
+		"overrideStats": true,
+		"defenceBonus": 0.25,
+		"occursOn": ["Tundra","Plains","Grassland","Desert","Mountain"],
+		"uniques": [
+			"Rough terrain",
+			"[+10] Strength for cities built on this terrain",
+			"Blocks line-of-sight from tiles at same elevation",
+			"[+5 Production] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			// "Has an elevation of [1] for visibility calculations",
+		],
+	},
+	{  // mirrors Hill, different sprite, could have different resources than Hill
+		"name": "Mound",
+		"type": "TerrainFeature",
+		// "gold": 5,
+		"movementCost": 2,
+		"overrideStats": true,
+		"defenceBonus": 0.25,
+		"occursOn": ["Tundra","Plains","Grassland","Desert"],
+		"uniques": [
+			"Rough terrain",
+			"[+10] Strength for cities built on this terrain",
+			"Blocks line-of-sight from tiles at same elevation",
+			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			// "Has an elevation of [1] for visibility calculations",
+		],
+	},
+	{
+		"name": "Force",  // switching from Hill to Force for hybrid tile bases
+		"type": "TerrainFeature",
+		"movementCost": 1,
+		"overrideStats": true,
+		"defenceBonus": 0,
+		"occursOn": ["Plains","Grassland","Desert","Mountain"],  // nowhere really, this is the foundation of hybrid tiles
+		"uniques": [
+			"Rough terrain",  // intangible distortion effect makes this rough
+			"Has an elevation of [0] for visibility calculations", // should not block vis
+			"[0]% Chance to be destroyed by nukes",
+		],
+		"RGB": [43, 97, 181],  // this is what the flat tile color will look like in map previews, not the overlying natural wonder color
+	},
+	{
+		"name": "Boulder",  // exists both this TerrainFeature, and improvement version. This one is map-baked as a TerrainFeature.
+		"type": "TerrainFeature",
+		"occursOn": ["Grassland","Plains","Desert","Marsh","Cave"],
+		"movementCost": 5, // hard to pass through
+		"unbuildable": false,  // can be built by villagers as an TileImprovement, no idea how this parameter affects building #TODO
+		"turnsToBuild": 7,
+		"uniques": [
+			"Rare feature",  // map gen unique blah
 			"Nullifies all other stats this tile provides",
 			"Units ending their turn on this terrain take [20] damage <with [50]% chance>",
-			"Has an elevation of [1] for visibility calculations",
+			"Provides a one-time Production bonus to the closest city when cut down",  // cut down = removed  .. add to translations #TODO
+			// "Has an elevation of [1] for visibility calculations",
+			"Blocks line-of-sight from tiles at same elevation", 
 			"Rough terrain",
-			"Removes removable features when built",  // pepper an opponents' land with boulders, pillage tiles and roll em in
-			"Gives a defensive bonus of [25]%",
-			"Can be built outside your borders",
-			// "[-3] Movement",  // I really want movement modifiers on improvements
 		],
-		// "impassable": true,
-		"techRequired": "Engineering",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"defenceBonus": 0.10  // what does this do anyway? #TODO
 	},
 	{
-		"name": "Work district",  // universal productivity
-		"turnsToBuild": 7,
-		"production": 2,  // this baseline amount hopefully will trigger villagers to replace Slog mud improvements
-		"techRequired": "Construction",
+		"name": "Trap",
+		"type": "TerrainFeature",
+		"movementCost": 4,
+		"unbuildable": true,
 		"uniques": [
-			"[+1 Production] <after discovering [Iron Working]>",
-			"[+1 Production] <after discovering [Iron Working]> <with [1] to [6] neighboring [Work district] tiles>",  // cluster resourcing
-			"[+1 Production] <with [50]% chance> <after discovering [Machinery]> <with [2] to [6] neighboring [Work district] tiles>",
-			"[+1 Production] <with [50]% chance> <after discovering [Industrialization]> <with [3] to [6] neighboring [Work district] tiles>",
-			"[+1 Production] <after discovering [Machinery]> <with [2] to [6] neighboring [Work district] tiles>",
-			"[+1 Production] <after discovering [Industrialization]> <with [3] to [6] neighboring [Work district] tiles>",
-			"[-2 Production] <when at war>",
-			"[+1 Production] <with [25]% chance>",  // bonus baseline
+			"Rare feature",
+			"Nullifies all other stats this tile provides",
+			"Units ending their turn on this terrain take [35] damage",
+			"Rough terrain",
+			"Blocks line-of-sight from tiles at same elevation", 
+//			"[99]% Chance to be destroyed by nukes",
 		],
-		"terrainsCanBeBuiltOn": ["Grassland","Plains","Desert","BridgeFL","BridgeFR"],
-	},
-        {
-	// needs follow up improvement
-		"name": "Slog mud",  // nasty peasant work
-		"turnsToBuild": 5,
-		"production": 0,  // with the uniques below, icon will only show up on the tile by chance, though others may amend later through bonuses
-		"techRequired": "Shelter",
-		// "obsoleteTech": "Construction",  // experiment, will this work on an improvement? looks like not - curse you accurate documentation! https://yairm210.github.io/Unciv/Modders/Mod-file-structure/3-Map-related-JSON-files/#tileimprovementsjson
-		"uniques": [
-			"[+1 Production] <with [50]% chance>",  // baseline, poor production source, sometimes produces nothing
-			"[+1 Production] <with [30]% chance> <after discovering [Mining]>",
-			"[+1 Production] <after discovering [Pottery]>",
-		// need to improve away from slog mud in mid ages
-			"[-1 Production] <after discovering [Iron Working]>",
-			"[-1 Production] <after discovering [Aesthetics]>",
-			"Comment [Nasty peasant work gathering mud, clay, stones, and other earthy muck needed to supplement building materials.]",
-		],
-		"terrainsCanBeBuiltOn": ["Grassland","Plains","Desert"],
+		"occursOn": ["Grassland","Plains","Forest","Desert","Tundra","Hill","Mound","Cavern","Cave"],
+		"defenceBonus": -0.30
 	},
 
+// Corner patches for Bridge //
 	{
-		"name": "Farm",
-		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","BridgeFL","BridgeFR"],
-		"food": 2,
-		"turnsToBuild": 7,
-		"techRequired": "Agriculture",
+	// Feature-Left (FL) patch
+		"name": "BridgeFL",
+		"type": "TerrainFeature",
+		"movementCost": 2,
+		"defenceBonus": -0.1,
+		"occursOn": ["Desert","Plains","Coast","Ocean","Grassland","Tundra","CoastTile","OceanTile"],
 		"uniques": [
-			"Can also be built on tiles adjacent to fresh water",
-			"[+1 Food] from [Fresh water] tiles <after discovering [Calendar]>",
-			"[+1 Food] <after discovering [Machinery]>",
-			"[+1 Food] <after discovering [Fertilizer]>",
-			"[+1 Food] <after discovering [Refrigeration]>",
-			// "[99]% Chance to be destroyed by nukes",
-                        "Pillaging this improvement yields approximately [+18 Gold]",
-			"Comment [This is a farm. It has better food production than foraging.]",  // testing new comment unique
+			"Never receives any resources",
+			"[0]% Chance to be destroyed by nukes",  // Can't destroy bridges
 		],
-		"shortcutKey": "F"
+		"civilopediaText": [
+			{
+				"text": "Feature-Left terrain patch for horizontal bridges. Building improvements here are limited.",
+			},
+		],
+	},
+	{
+	// Feature-Right (FR) patch
+		"name": "BridgeFR",
+		"type": "TerrainFeature",
+		"movementCost": 2,
+		"defenceBonus": -0.1,
+		"occursOn": ["Desert","Plains","Coast","Ocean","Grassland","CoastTile"],
+		"uniques": [
+			"Never receives any resources",
+			"[0]% Chance to be destroyed by nukes",
+		],
+		"civilopediaText": [
+			{
+				"text": "Feature-Right terrain patch for horizontal bridges. Building improvements here are limited.",
+			},
+		],
+
+	},
+	{
+		"name": "Fallout",
+		"type": "TerrainFeature",
+		"movementCost": 2,
+		"unbuildable": true,
+		"uniques": [
+			"Nullifies all other stats this tile provides",
+			"Doesn't generate naturally", 
+		],
+		"occursOn": ["Grassland","Plains","Forest","Desert","Tundra","Hill","Mound","Mountain","Cave"],  // fun fact: enter "Land" and unciv will crash when going to civopedia to view the terrain from the world screen
+		"defenceBonus": -0.25,
 	},
 
-        {
-		"name": "Forage",
-		"turnsToBuild": 5,
-		"food": 0,
-		"techRequired": "Survival",
-		"uniques": [
-			"[+1 Food] <with [50]% chance> <after discovering [Language]>",
-			"[+1 Food] <with [40]% chance> <after discovering [Hunting]>",
-			"[+1 Food] <with [60]% chance> <after discovering [Clans]>",
-			"[-1 Food] <with [1] to [6] neighboring [Forage] tiles>",  // This food resource is not too compete with farms nor itself
-			"[-1 Food] <with [3] to [6] neighboring [Forage] tiles>",
-			"[-1 Food] <with [5] to [6] neighboring [Forage] tiles>",  // Diminishing returns, upgrade to farm!
-		],
-		"terrainsCanBeBuiltOn": ["Land"],
-	},
-	{
-		"name": "Bridge",  // represents the secret rift between Death Mountain and the Maze Island bridge
-		"turnsToBuild": 7,
-		"terrainsCanBeBuiltOn": ["Coast","CoastTile","Ocean","Lakes"],
-		"culture": 3,
-		"science": 5,
-                "happiness": 1,
-		"techRequired": "Navigation",
-		"uniques": [
-			"Can only be built on [Water] tiles",
-			"Can only be built to improve a resource",
-                        "Can be built outside your borders",
-			"Tile provides yield without assigned population",  // Foundation resource found outside 3-tile range
-	                "Removes removable features when built",
-		],
-	},
-	{
-	// Can be removed by Villagers only
-		"name": "Remove Boulder",
-		"turnsToBuild": 4,
-		"uniques": ["Can be built outside your borders"],
-	},
-	{
-	// Can only be removed by UnitType: Sword, and is called "Fight enemy!" via translations
-		"name": "Remove Trap",
-		"turnsToBuild": 2,  // usually one turn, at least on King difficulty atm
-		"uniques": ["Can be built outside your borders"],
-	},
-	{
-		"name": "Remove Fort",  // Permanence not required
-		"turnsToBuild": 5,
-		"uniques": ["Can be built outside your borders"],
-		// Removing Forts and Citadels are weaponizable.
-	},
-        {
-		"name": "Remove Citadel",  // Also not required.
-		"turnsToBuild": 7,
-		"uniques": ["Can be built outside your borders"],
-	},
-	{
-		"name": "Flash",  // for world items
-		"uniques": ["Can only be built to improve a resource"],  // it's deco for resource items when built
-	},
+
+
+///////////////////////
+//// Named Palaces ////
+///////////////////////
 
 	{
-		"name": "Mine",  // This leads to production improvements w/ Mountains as resources in Z2 are scarce
-				 // don't forget workers are taking 50 dmg/t/Mountain so building these are tricky
-		"terrainsCanBeBuiltOn": ["Hill","Mound","Mountain"],
-		"production": 2,
-		"turnsToBuild": 7,
-		"techRequired": "Mining",  // ..and requires the worker unit to have learned Adventurer promotion
+		"name": "North Castle",
+		"type": "NaturalWonder",
+		"gold": 10,
+		"faith": 5,
+		"culture": 10,
+		"occursOn": ["Plains"],
 		"uniques": [
-			"[+1 Production] <after discovering [Chemistry]>",
-		        "Pillaging this improvement yields approximately [+20 Gold]"
+			"Comment [Requires Shield to gain Adventurer promotion]",
+			"Grants [Adventurer] ([Overcome difficult terrain!]) to adjacent [Land] units for the rest of the game",  // doesn't trigger: <for units with [Shield]>
+			"Tile provides yield without assigned population",
 		],
-		"shortcutKey": "M"
+		"turnsInto": "Plains",
+		"impassable": false,
+		"unbuildable": false,
+		"RGB": [252, 252, 252],  // ignored, references turnsInto tile RGB color instead
+	},
+	{  // palace 1
+		"name": "Parapa Palace",  // treasure: candle (incense) 
+		"type": "NaturalWonder",
+		"gold": 10,
+		"faith": 10,
+		"culture": 5,
+		"occursOn": ["Plains","Grassland","Desert"],
+		"uniques": [
+			"Rough terrain",
+			// "Comment [Requires Shield to gain Adventurer promotion]",
+			"Grants [Adventurer] ([Overcome difficult terrain!]) to adjacent [Land] units for the rest of the game", 
+			"Units ending their turn on this terrain take [10] damage",  // intended: <without incense>
+			"Tile provides yield without assigned population",
+		],
+		"turnsInto": "Mountain",
+		"impassable": false,
+		"unbuildable": false,
+		"RGB": [186, 186, 186],  // ignored, references turnsInto tile RGB color instead
+	},
+	{  // palace 2
+		"name": "Midoro Palace",  // treasure: handy glove (silk) 
+		"type": "NaturalWonder",
+		"gold": 10,
+		"faith": 10,
+		"culture": 5,
+		"occursOn": ["Plains","Grassland","Desert"],
+		"uniques": [
+			"Rough terrain",
+			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
+			"Units ending their turn on this terrain take [10] damage <for units without [Jump]>",  // experiment
+			"Tile provides yield without assigned population",
+		],
+		"turnsInto": "Mountain",
+		"impassable": false,
+		"unbuildable": false,
+		"RGB": [0, 126, 134],  // ignored, references turnsInto tile RGB color instead
+	},
+	{  // palace 3
+		"name": "Island Palace",  // treasure: Raft (furs) 
+		"type": "NaturalWonder",
+		"gold": 10,
+		"faith": 10,
+		"culture": 5,
+		"occursOn": ["Plains","Grassland","Desert"],
+		"uniques": [
+			"Rough terrain",
+			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
+			"Units ending their turn on this terrain take [10] damage",
+			"Tile provides yield without assigned population",
+		],
+		"turnsInto": "Mountain",
+		"impassable": false,
+		"unbuildable": false,
+		"RGB": [162, 0, 0],  // ignored, references turnsInto tile RGB color instead
+	},
+	{  // palace 4
+		"name": "Maze Palace",  // treasure: boots (cotton) 
+		"type": "NaturalWonder",
+		"gold": 10,
+		"faith": 10,
+		"culture": 5,
+		"occursOn": ["Plains","Grassland","Desert"],
+		"uniques": [
+			"Rough terrain",
+			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
+			"Units ending their turn on this terrain take [10] damage",
+			"Tile provides yield without assigned population",
+		],
+		"turnsInto": "Mountain",
+		"impassable": false,
+		"unbuildable": false,
+		"RGB": [67, 0, 154],  // ignored, references turnsInto tile RGB color instead
+	},
+	{  // palace 5
+		"name": "Sea Palace",  // treasure: flute (ivory) 
+		"type": "NaturalWonder",
+		"gold": 10,
+		"faith": 10,
+		"culture": 5,
+		"occursOn": ["Plains","Grassland","Desert"],
+		"uniques": [
+			"Rough terrain",
+			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
+			"Units ending their turn on this terrain take [10] damage",
+			"Tile provides yield without assigned population",
+		],
+		"turnsInto": "Mountain",
+		"impassable": false,
+		"unbuildable": false,
+		"RGB": [0, 79, 0],  // ignored, references turnsInto tile RGB color instead
+	},
+	{  // palace 6
+		"name": "ThreeEye Rock Palace",  // treasure: cross (salt) 
+		"type": "NaturalWonder",
+		"gold": 10,
+		"faith": 10,
+		"culture": 5,
+		"occursOn": ["Plains","Grassland","Desert"],
+		"uniques": [
+			"Rough terrain",
+			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
+			"Units ending their turn on this terrain take [10] damage",
+			"Tile provides yield without assigned population",
+		],
+		"turnsInto": "Mountain",
+		"impassable": false,
+		"unbuildable": false,
+		"RGB": [249, 115, 178],  // ignored, references turnsInto tile RGB color instead
+	},
+	{  // palace 7
+		"name": "Great Palace",  // treasure: triforce (gold ore)
+		"type": "NaturalWonder",
+		"gold": 10,
+		"faith": 10,
+		"culture": 5,
+		"occursOn": ["Plains","Grassland","Desert"],
+		"uniques": [
+			"Rough terrain",
+			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
+			"Units ending their turn on this terrain take [10] damage",
+			"Tile provides yield without assigned population",
+		],
+		"turnsInto": "Mountain",
+		"impassable": false,  // may be true when some "hero" ability is created
+		"unbuildable": false, // allow PalaceGlow to enhance this tile
+		"RGB": [249, 150, 55],  // ignored, references turnsInto tile RGB color instead
 	},
 
-        {
-		"name": "Smelter",  // Specific to improve Gold Ore in plains tiles (triforce)
-		"turnsToBuild": 8,
-		"techRequired": "Bronze Working",
-		"uniques": [
-			"[+2 Production] <after discovering [Chemistry]>",
-			"Can only be built to improve a resource",
-//			"[95]% Chance to be destroyed by nukes",
-			"Pillaging this improvement yields approximately [+20 Gold]"
-		],
-	},
-	{
-		"name": "Fishing Boats",
-		"terrainsCanBeBuiltOn": ["Coast"],
-		"food": 1,
-		"techRequired": "Fishing",
-		"uniques": [  // the sea is a trove of resources
-			"[+1 Gold] <after discovering [Compass]>",
-			"[+1 Gold] <after discovering [Industrialization]>",
-			"[+1 Science] <after discovering [Biology]>",
-			"[+1 Food] <after discovering [Refrigeration]>",
-		// out: // "Can only be built to improve a resource",  // Let's go fishing!
-		// This tech mod is the behavior of fishing boats I expected when first getting
-		// into Unciv. Since there are no Fish resources in Z2, we allow coastal
-		// cities this bonus action. It helps the scarce food supply.
-		        "Pillaging this improvement yields approximately [+2 Gold]", 
-                ],
-		"shortcutKey": "F"
-	},
-	{
-		"name": "Landmark",  // Town atm, supposed to grant skills/magic, hitting improvement unique limitations
-		"terrainsCanBeBuiltOn": ["Land"],
-		"culture": 6,
-		"uniques": [
-			"Great Improvement",
-			"Removes removable features when built",
-			"Pillaging this improvement yields approximately [+20 Gold]",
-			// "[95]% Chance to be destroyed by nukes",
-			"Gives a defensive bonus of [25]%"
-		] 
-	},
-	{
-		"name": "Fort",
-		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Forest"],
-		"turnsToBuild": 6,  // Scouts can create forts instantly
-		"techRequired": "Engineering",
-		"uniques": [
-			"Can be built outside your borders",
-			"Can be built just outside your borders",  // These aren't outposts
-		// Trying allowing fortifying improvements
-			// "Removes removable features when built",  // Needs clearing, features removed in parallel to building
-			"Adjacent enemy units ending their turn take [15] damage",  // Should be obvious why - this makes forts actually useful to defend the empire
-			"Ensures a minimum tile yield of [+1 Culture]",  // Remember the Alamo? Or was that a '!'
-			"[+1 Faith] for each adjacent [Fort]",  // There's belief in security
-			"Gives a defensive bonus of [100]%"  // it's a Fort, not a Shelter
-		]
-	},
-	{
-		"name": "Citadel",
-		"terrainsCanBeBuiltOn": ["Land"],
-		"uniques": [
-			"Great Improvement",
-			"Gives a defensive bonus of [100]%",
-			"Adjacent enemy units ending their turn take [50] damage",  // To be feared
-			"Can be built just outside your borders",
-                	"Constructing it will take over the tiles around it and assign them to your closest city",
-			"Removes removable features when built"
-		]
-	},
+	
+/// Special Wonder-buildings
 
 	{
-		"name": "Lumber mill",
-		"terrainsCanBeBuiltOn": ["Forest"],
-		"production": 1,
-		"turnsToBuild": 7,
-		"techRequired": "Trapping",
+		"name": "PalaceGlow",  // experimental feature, not in use
+		"type": "TerrainFeature",
+		"gold": 40,
+		"faith": 20,
+		"culture": 25,
+		"occursOn": ["Plains","Mountain","Desert","Grassland"],
 		"uniques": [
-			"[+1 Production] <after discovering [Scientific Theory]>",
-			// "[99]% Chance to be destroyed by nukes",
-			"Pillaging this improvement yields approximately [+10 Gold]"
+			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
+			"Tile provides yield without assigned population",
 		],
-		"shortcutKey": "L"
+		"turnsInto": "Plains",
+		"impassable": false,  // will be true when some "hero" ability is created
+		"unbuildable": false,
 	},
 
-	{
-		"name": "Trading post",
-		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Forest"],
+
+///////////////////////
+//// Generic Towns ////
+///////////////////////
+
+	{  // Towns are natural wonders because they can grant promotions, whereas improvements cannot
+	   // Also makes the town permanent - no means to remove/destroy
+		"name": "Plains Town", // Generic town
+		"type": "NaturalWonder",
 		"gold": 1,
-		"turnsToBuild": 7,
-		"techRequired": "Guilds",
-		"uniques": [
-			"[+1 Gold] <after discovering [Economics]>",
-			// "[99]% Chance to be destroyed by nukes",
-			"Pillaging this improvement yields approximately [+20 Gold]"
-		],
-		"shortcutKey": "T"
-	},
-	{
-		"name": "Camp",
-		"turnsToBuild": 7,
-		"techRequired": "Trapping",
-		"uniques": [
-			"Does not need removal of [Forest]",
-			"Does not need removal of [Jungle]",
-			"[+1 Gold] <after discovering [Economics]>",
-			"Can only be built to improve a resource",
-			// "[99]% Chance to be destroyed by nukes",
-			"Pillaging this improvement yields approximately [+10 Gold]"
-		],
-		"shortcutKey": "C"
-	},
-	{
-		"name": "Oil well",
-		"turnsToBuild": 9,
-		"techRequired": "Biology",
-		"uniques": [
-			"Can only be built to improve a resource",
-			"Cannot be built on [Water] tiles",
-			// "[99]% Chance to be destroyed by nukes",
-			"Pillaging this improvement yields approximately [+20 Gold]"
-		],
-		"shortcutKey": "W"
-	},
-	{
-		"name": "Offshore Platform",
-		"techRequired": "Petroleum",
-		"uniques": [
-			"Can only be built to improve a resource",
-			"Can only be built on [Water] tiles",
-			// "[99]% Chance to be destroyed by nukes",
-			"Pillaging this improvement yields approximately [+20 Gold]"
-		],
-		"shortcutKey": "P"
-	},
-	{
-		"name": "Pasture",
-		"turnsToBuild": 8,
-		"techRequired": "Animal Husbandry",
-		"uniques": [
-			"[+1 Food] <after discovering [Fertilizer]>",
-			"Can only be built to improve a resource",
-			// "[99]% Chance to be destroyed by nukes",
-			"Pillaging this improvement yields approximately [+10 Gold]"
-		],
-		"shortcutKey": "P"
-	},
-	{
-		"name": "Plantation",
-		"turnsToBuild": 6,
-		"gold": 1,
-		"techRequired": "Horseback Riding",
-		"uniques": [
-			"[+1 Food] <after discovering [Fertilizer]>",
-			"Can only be built to improve a resource",
-			// "[99]% Chance to be destroyed by nukes",
-			"Pillaging this improvement yields approximately [+10 Gold]"
-		],
-		"shortcutKey": "P"
-	},
-
-	// Transportation
-
-	{
-	// Name: Path
-		"name": "Road",
-		"terrainsCanBeBuiltOn": ["Land"],
-		"turnsToBuild": 4,
-		"production": 1,  // roads make cities more productive
-		"techRequired": "The Wheel",
-		"uniques": ["Can be built outside your borders", "Costs [1] [Gold] per turn"],
-		"shortcutKey": "R",
-	        "civilopediaText": [
-	        	{"text":"Paths double movement between tiles. Adjacent Fast travel tiles also count for 2x movement."},
-	        	{"text":"Increases movement 3x after discovering Machinery.", "link":"Technology/Machinery"},
-	        	{"text":"Unable to build bridges over lava flows."}
-	        ]
-	},
-	{
-	// Name: Fast travel
-		"name": "Railroad",
-		"terrainsCanBeBuiltOn": ["Land"],
-		"turnsToBuild": 4,
-		"production": 2,
-		"techRequired": "Railroads",
-		"uniques": ["Can be built outside your borders", "Costs [2] [Gold] per turn"],
-		"shortcutKey": "R",
-	        "civilopediaText": [
-			{"text":"Movement increases 10x on Fast travel paths."}
-	        	{"text":"Unable to build bridges over lava flows."}
-		]
-		},
-
-
-////////////////////////////////
-
-//// G&K merged base ruleset ////
-
-////////////////////////////////
-
-	{
-		"name": "Quarry",
-		"turnsToBuild": 8,
-		"techRequired": "Masonry",
-		"uniques": ["[+1 Production] <after discovering [Chemistry]>", "Can only be built to improve a resource", "Pillaging this improvement yields approximately [+20 Gold]"],
-		"shortcutKey": "Q"
-	},
-
-
-
-	// Removals
-	// Any improvement that starts with 'Remove ' is automatically changed into
-	// the improvement that removes the terrainfeature after it.
-	{
-		"name": "Remove Forest",
-		"turnsToBuild": 4,
-		"techRequired": "Mining",
-		"uniques": ["Can be built outside your borders"],
-		"shortcutKey": "X",
-        "civilopediaText": [{"text":"Provides a one-time Production bonus depending on distance to the closest city once finished"}]
-	},
-	{
-		"name": "Remove Jungle",
-		"turnsToBuild": 7,
-		"techRequired": "Bronze Working",
-		"uniques": ["Can be built outside your borders"],
-		"shortcutKey": "X"
-	},
-	{
-		"name": "Remove Fallout",
-		"turnsToBuild": 2,
-		// Has no tech requirements as it can always be built
-		"uniques": ["Can be built outside your borders"],
-		"shortcutKey": "X"
-	},
-	{
-		"name": "Remove Marsh",
-		"turnsToBuild": 6,
-		"techRequired": "Masonry",
-		"uniques": ["Can be built outside your borders"],
-		"shortcutKey": "X"
-	},
-
-	// These are unique and have unique in-game checks related to them
-	{
-		"name": "Remove Road",
-		"turnsToBuild": 2,
-		"uniques": ["Can be built outside your borders"]
-	},
-	{
-		"name": "Remove Railroad",
-		"turnsToBuild": 2,
-		"uniques": ["Can be built outside your borders"]
-	},
-	{
-		"name": "Cancel improvement order",
-		"uniques": ["Can be built outside your borders"],
-		"shortcutKey": "."
-	},
-    // Purely for turnsToBuild and civilopediaText. Unbuildable so it doesn't show in ImprovementPicker
-    {
-        "name": "Repair",
-        "terrainsCanBeBuiltOn": ["Land"],
-        "turnsToBuild": 2,
-        "shortcutKey": "E",
-        "uniques": ["Unbuildable"],
-        "civilopediaText": [{"text":"Repairs a pillaged Improvement or Route"}]
-    },
-
-
-    // Great Person improvements
-	{
-		"name": "Academy",
-		"terrainsCanBeBuiltOn": ["Land"],
-		"science": 8,
-		"uniques": ["Great Improvement", "[+2 Science] <after discovering [Scientific Theory]>", "[+2 Science] <after discovering [Atomic Theory]>", "Removes removable features when built", "Pillaging this improvement yields approximately [+20 Gold]"]
-	},
-	{
-		"name": "Manufactory",
-		"terrainsCanBeBuiltOn": ["Land"],
-		"production": 4,
-		"uniques": ["Great Improvement", "[+1 Production] <after discovering [Chemistry]>", "Removes removable features when built", "Pillaging this improvement yields approximately [+20 Gold]"]
-	},
-	{
-		"name": "Customs house",
-		"terrainsCanBeBuiltOn": ["Land"],
-		"gold": 4,
-		"uniques": ["Great Improvement", "[+1 Gold] <after discovering [Economics]>", "Removes removable features when built", "Pillaging this improvement yields approximately [+20 Gold]"]
-	},
-
-	{
-		"name": "Holy site",
-		"terrainsCanBeBuiltOn": ["Land"],
-		"faith": 6,
-		"uniques": ["Great Improvement", "Removes removable features when built", "Pillaging this improvement yields approximately [+20 Gold]"]
-	},
-
-	//Civilization unique improvements
-	{
-		"name": "Moai",
-		"uniqueTo": "Polynesia",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"faith": 2,
 		"culture": 1,
-		"turnsToBuild": 4,
-		"uniques": ["Can only be built on [Coastal] tiles", "[+1 Culture] for each adjacent [Moai]", "[+1 Gold] <after discovering [Flight]>", "Pillaging this improvement yields approximately [+10 Gold]"],
-		"techRequired": "Construction",
-		"shortcutKey": "M"
+		"production": 1,
+		"movementCost": 3,
+		"occursOn": ["Plains"],
+		"uniques": [
+			//   // can't make this unique value '50' so it'll be 500 
+			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
+			"Tile provides yield without assigned population",
+			// [-50] results in regen instead of dmg:
+			"Units ending their turn on this terrain take [-50] damage",  // 2/t max heal - consistent with towns' healer house
+		],
+		"turnsInto": "Plains",
+		"impassable": false,
+		"unbuildable": false, // Can't build natural wonders anyway
+		"RGB": [116, 116, 116],
 	},
 	{
-		"name": "Terrace farm",
-		"uniqueTo": "Inca",
-		"terrainsCanBeBuiltOn": ["Hill"],
-		"food": 1,
-		"turnsToBuild": 7,
-		"uniques": ["Cannot be built on [Bonus resource] tiles",
-			"[+1 Food] for each adjacent [Mountain]",
-			"[+1 Food] from [Fresh water] tiles <after discovering [Civil Service]>",
-			"[+1 Food] from [non-fresh water] tiles <after discovering [Fertilizer]>",
-            "Pillaging this improvement yields approximately [+18 Gold]"],
-		"techRequired": "Construction",
-		"shortcutKey": "F"
+		"name": "Desert Town", // Generic town
+		"type": "NaturalWonder",
+		"gold": 1,
+		"faith": 2,
+		"culture": 1,
+		"production": 1,
+		"movementCost": 3,
+		"occursOn": ["Desert"],
+		"uniques": [
+			// 
+			// "Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
+			"Tile provides yield without assigned population",
+			"Units ending their turn on this terrain take [-50] damage",  // healer
+		],
+		"turnsInto": "Desert",
+		"impassable": false,
+		"unbuildable": false,
+		"RGB": [116, 116, 116],
 	},
 	{
-		"name": "Polder",
-		"uniqueTo": "The Netherlands",
-		"food": 3,
-		"terrainsCanBeBuiltOn": ["Marsh", "Flood plains"],
-		"turnsToBuild": 7,
-		"uniques": ["[+1 Production, +2 Gold] <after discovering [Economics]>", "Pillaging this improvement yields approximately [+18 Gold]"],
-		"techRequired": "Guilds",
-		"shortcutKey": "F"
+		"name": "Grassland Town", // Generic town
+		"type": "NaturalWonder",
+		"gold": 1,
+		"faith": 2,
+		"culture": 1,
+		"production": 1,
+		"movementCost": 3,
+		"occursOn": ["Grassland"],
+		"uniques": [
+			// 
+			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
+			"Tile provides yield without assigned population",
+			"Units ending their turn on this terrain take [-50] damage",  // healer
+		],
+		"turnsInto": "Grassland",
+		"impassable": false,
+		"unbuildable": false,
+		"RGB": [116, 116, 116],
 	},
 
-	// Unbuildable improvements
+
+///////////////////////////
+//// Towns of the land ////
+///////////////////////////
+
 	{
-		"name": "Ancient ruins",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"name": "Rauru Town", // Shield
+		"type": "NaturalWonder",
+		"gold": 1,
+		"faith": 2,
+		"culture": 1,
+		"production": 1,
+		"movementCost": 3,
+		"occursOn": ["Grassland"],
 		"uniques": [
-			"Unpillagable", 
-			"Provides a random bonus when entered", 
-			// "Unbuildable", 
-		]
+			  // Want this to be 100G but only 500G is hardcoded
+			"Grants [Shield] ([Combat magic]) to adjacent [Military] units for the rest of the game",
+			"Tile provides yield without assigned population",
+			"Comment [Healer house recovers 50HP per turn (as minus 50 damage)]",
+			"Units ending their turn on this terrain take [-50] damage",  // healer house
+			// "[+1] population [in all cities with a world wonder]",  // I want this to be "natural wonder", n/a
+		],
+		"turnsInto": "Grassland",
+		"impassable": false,
+		"unbuildable": false,
+		"RGB": [116, 116, 116],  // ignored, references turnsInto tile RGB color instead
 	},
 	{
-		"name": "City ruins",
-		"terrainsCanBeBuiltOn": ["Land"],
-		"uniques": ["Unpillagable", "Unbuildable", "Will be replaced by automated workers"],
-        "civilopediaText": [{"text":"A bleak reminder of the destruction wreaked by War"}]
+		"name": "Ruto Town", // Jump
+		"type": "NaturalWonder",
+		"gold": 1,
+		"faith": 2,
+		"culture": 1,
+		"production": 1,
+		"movementCost": 3,
+		"occursOn": ["Plains"],
+		"uniques": [
+			// "Comment [Must possess the Trophy to gain the magic!]",
+			// "Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game <when above [0] [Silver]>",
+			// "Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game <with [Silver]>",
+			// "Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game <for [Military] units>",  // trying several methods, conditionals above won't trigger
+			// "Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game <upon building a [Smelter] improvement>",  // trigger condition maybe?
+			// moved reqs to unitpromotions, trying there
+			"Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game",
+			"Tile provides yield without assigned population",
+			"Comment [Healer house recovers 50HP per turn (as minus 50 damage)]",
+			"Units ending their turn on this terrain take [-50] damage",  // healer house
+		],
+		"turnsInto": "Plains",
+		"impassable": false,
+		"unbuildable": false,
+		"RGB": [116, 116, 116],  // ignored, references turnsInto tile RGB color instead
 	},
 	{
-		"name": "Barbarian encampment",
-		"terrainsCanBeBuiltOn": ["Land"],
-		"uniques": ["Unpillagable", "Unbuildable"],
-        "civilopediaText": [{"text":"Home to uncivilized barbarians, will spawn a hostile unit from time to time"}]
-	}
+		"name": "Saria Town", // Life
+		"type": "NaturalWonder",
+		"gold": 1,
+		"faith": 2,
+		"culture": 1,
+		"production": 1,
+		"movementCost": 3,
+		"occursOn": ["Plains"],
+		"uniques": [
+			"Grants [Life] ([Combat magic]) to adjacent [Land] units for the rest of the game",
+			"Tile provides yield without assigned population",
+			"Comment [Healer house recovers 50HP per turn (as minus 50 damage)]",
+			"Units ending their turn on this terrain take [-50] damage",  // healer house
+		],
+		"turnsInto": "Plains",
+		"impassable": false,
+		"unbuildable": false,
+		"RGB": [116, 116, 116],  // ignored, references turnsInto tile RGB color instead
+	},
+	{
+	// bug alert! Currently, both up and down thrust are automatically granted - the conditional is not being factored. This is quite OP for early units.
+		"name": "Mido Town", // Fairy, Downward Thrust
+		"type": "NaturalWonder",
+		"gold": 1,
+		"faith": 2,
+		"culture": 1,
+		"production": 1,
+		"movementCost": 3,
+		"occursOn": ["Desert"],
+		"uniques": [
+			// "Comment [A mighty Jump will gain you audience with the towns' Knight!]",
+			"Grants [Downward Thrust] ([Learned from the town's Hylian Knight]) to adjacent [Land] units for the rest of the game",  // supposed to use a <conditional> but won't accept any
+			// "Comment [You must obtain the Water of Life to gain audience with the town's Wise Man!]",
+			"Grants [Fairy] ([Combat magic]) to adjacent [Land] units for the rest of the game",
+			"Tile provides yield without assigned population",
+			"Comment [Healer house recovers 50HP per turn (as minus 50 damage)]",
+			"Units ending their turn on this terrain take [-50] damage",  // healer house
+		],
+		"turnsInto": "Desert",
+		"impassable": false,
+		"unbuildable": false,
+		"RGB": [116, 116, 116],  // ignored, references turnsInto tile RGB color instead
+	},
+	{
+		"name": "Nabooru Town", // Fire
+		"type": "NaturalWonder",
+		"gold": 1,
+		"faith": 2,
+		"culture": 1,
+		"production": 1,
+		"movementCost": 3,
+		"occursOn": ["Plains"],
+		"uniques": [
+			"Grants [Fire] ([Combat magic]) to adjacent [Land] units for the rest of the game",
+			"Tile provides yield without assigned population",
+			"Comment [Healer house recovers 50HP per turn (as minus 50 damage)]",
+			"Units ending their turn on this terrain take [-50] damage",  // healer house
+		],
+		"turnsInto": "Plains",
+		"impassable": false,
+		"unbuildable": false,
+		"RGB": [116, 116, 116],  // ignored, references turnsInto tile RGB color instead
+	},
+
+	{
+		"name": "Darunia Town", // Reflect, Upward Thrust
+		"type": "NaturalWonder",
+		"gold": 1,
+		"faith": 2,
+		"culture": 1,
+		"production": 1,
+		"movementCost": 3,
+		"occursOn": ["Desert"],
+		"uniques": [
+			// "Comment [A mighty Jump will gain you audience with the towns' Knight!]",
+			"Grants [Upward Thrust] ([Learned from the town's Hylian Knight]) to adjacent [Land] units for the rest of the game",  // supposed to use a <conditional> but won't accept any
+			// "Comment [You must save the Lost Child to speak with the town's Wise Man!]",
+			"Grants [Reflect] ([Combat magic]) to adjacent [Land] units for the rest of the game",  // supposed to use a <conditional> but won't accept any
+			"Tile provides yield without assigned population",
+			"Comment [Healer house recovers 50HP per turn (as minus 50 damage)]", 
+			"Units ending their turn on this terrain take [-50] damage",  // healer house
+		],
+		"turnsInto": "Desert",
+		"impassable": false,
+		"unbuildable": false,
+		"RGB": [116, 116, 116],  // ignored, references turnsInto tile RGB color instead
+	},
+	{
+		"name": "Kasuto Town", // Spell, Magic Key
+		"type": "NaturalWonder",
+		"gold": 1,
+		"faith": 2,
+		"culture": 1,
+		"production": 1,
+		"movementCost": 3,
+		"occursOn": ["Grassland"],
+		"uniques": [
+			"Grants [Spell] ([Combat magic]) to adjacent [Land] units for the rest of the game",
+			"Grants [Magic Key] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",  // supposed to use a <conditional> but won't accept any
+		// Units looking to take advantage will be on mission to visit the needed towns.
+		// Magic Key is a very powerful upgrade. For now the req is uranium.
+			// "Comment [Magic Key promotion requires both Thrusts to activate.]", 
+			"Tile provides yield without assigned population",
+			"Comment [Healer house recovers 50HP per turn (as minus 50 damage)]",
+			"Units ending their turn on this terrain take [-50] damage",  // healer house
+		],
+		"turnsInto": "Grassland",
+		"impassable": false,
+		"unbuildable": false,
+		"RGB": [116, 116, 116],  // ignored, references turnsInto tile RGB color instead
+	},
+	{
+		"name": "Kasuto Ruins", // Thunder
+		"type": "NaturalWonder",
+		"faith": 1,
+		"movementCost": 4,
+		"occursOn": ["Plains"],
+		"uniques": [
+			"Grants [Thunder] ([Combat magic]) to adjacent [Land] units for the rest of the game",
+			"Units ending their turn on this terrain take [20] damage <without [Salt]>",  // conditional prob doesn't work anyway
+		],
+		"turnsInto": "Plains",
+		"impassable": false,
+		"unbuildable": false,
+		"RGB": [87, 87, 87],  // ignored, references turnsInto tile RGB color instead
+	},
+
+
+
+
+
+  ////////////////////////////////////
+ // Bridges using hybrid tile tech //
+////////////////////////////////////
+	{
+		"name": "CoastTile",
+		"type": "NaturalWonder",
+		"movementCost": 1,
+		"occursOn": ["Coast"],
+		"uniques": ["Rare feature",
+			"Units ending their turn on this terrain take [10] damage", // won't trigger: <for [land units] units>
+			"[-50] Strength for cities built on this terrain", // not a good place to settle
+			"Never receives any resources <in [Force] tiles>",
+                        "Tile provides yield without assigned population",
+			"Always Fertility [-1] for Map Generation"
+		],
+		"turnsInto": "Force",
+		"unbuildable": true,
+		"impassable": false,
+		"RGB": [80, 138, 226],  // ignored, references turnsInto tile RGB color instead
+	},
+	{
+		"name": "OceanTile",
+		"type": "NaturalWonder",
+		"movementCost": 1,
+		"occursOn": ["Ocean"],
+		"uniques": ["Rare feature",
+			"Units ending their turn on this terrain take [10] damage", // won't trigger: <for [land units] units>
+			"Never receives any resources <in [Force] tiles>", // Force bakes into the map upon game start, important design aspect
+			"Always Fertility [-1] for Map Generation",
+			"[-50] Strength for cities built on this terrain", // not a good place to settle
+			"Only [Great] improvements may be built on this tile",  // floating great improvements
+		], 
+		"turnsInto": "Force",
+		"unbuildable": true,
+		"impassable": false,
+		"RGB": [53, 87, 161],  // ignored, references turnsInto tile RGB color instead
+	},
+	{
+		"name": "Bridge1ocean",
+		"type": "NaturalWonder",
+		"movementCost": 1,  // We want water walkers to effectively teleport across these tiles. Primarily/only for the raft path atm.
+		"occursOn": ["Ocean"],
+		"uniques": [
+			"Never receives any resources <in [Force] tiles>",
+			"[-20] Strength for cities built on this terrain",
+		],
+		"turnsInto": "Force",
+		"unbuildable": true,
+		"impassable": false,
+		"RGB": [240, 188, 60],  // ignored, references turnsInto tile RGB color instead
+	},
+	{
+		"name": "Bridge2ocean",
+		"type": "NaturalWonder",
+		"movementCost": 1,
+		"occursOn": ["Ocean"],
+		"uniques": [
+			"Never receives any resources <in [Force] tiles>",
+			"[-20] Strength for cities built on this terrain",
+		],
+		"turnsInto": "Force",
+		"unbuildable": true,
+		"impassable": false,
+		"RGB": [240, 188, 60],  // ignored, references turnsInto tile RGB color instead
+	},	
+	{
+		"name": "Bridge1coast",
+		"type": "NaturalWonder",
+		"movementCost": 1,
+		"occursOn": ["Coast"],
+		"uniques": [
+			"Never receives any resources <in [Force] tiles>",  // removing still doesn't allow placement of Foundation resource 
+			// "Provides [1] [Foundation]",  // doesn't work
+			"[-10] Strength for cities built on this terrain",
+		],
+		"turnsInto": "Force",
+		"unbuildable": false,
+		"impassable": false,
+		"RGB": [240, 188, 60],  // ignored, references turnsInto tile RGB color instead
+	},
+	{
+		"name": "Bridge2coast",
+		"type": "NaturalWonder",
+		"movementCost": 1,
+		"occursOn": ["Coast"],
+		"uniques": [
+			"Never receives any resources <in [Force] tiles>",
+			// "Provides [1] [Foundation]",
+			"[-10] Strength for cities built on this terrain",
+		],
+		"turnsInto": "Force",
+		"unbuildable": false,
+		"impassable": false,
+		"RGB": [240, 188, 60],  // ignored, references turnsInto tile RGB color instead
+	},	
+	{  // Vertical bridge with Coast
+		"name": "Bridge3coast",
+		"type": "NaturalWonder",
+		"movementCost": 1,
+		"culture": 1,
+		"food": 1,
+		"occursOn": ["Coast"],
+		"uniques": [
+			"Never receives any resources <in [Force] tiles>",
+			// "Provides [1] [Foundation]",
+			"[-10] Strength for cities built on this terrain",
+		],
+		"turnsInto": "Force",
+		"unbuildable": false,
+		"impassable": false,
+		"RGB": [240, 188, 60],  // ignored, references turnsInto tile RGB color instead
+	},
+	{  // Vertical bridge with Lake
+		"name": "Bridge3",
+		"type": "NaturalWonder",
+		"movementCost": 1,
+		"culture": 1,
+		"food": 1,
+		"occursOn": ["Lakes"],
+		"uniques": [
+			"Never receives any resources <in [Force] tiles>",
+			"[-5] Strength for cities built on this terrain",
+		],
+		"turnsInto": "Force",
+		"unbuildable": false,
+		"impassable": false,
+		"RGB": [240, 188, 60],  // ignored, references turnsInto tile RGB color instead
+	},
 
 ]
