@@ -126,8 +126,7 @@
 		"uniques": ["Automation is a primary action",
 			"Cannot enter ocean tiles <before discovering [Astronomy]>",
 			"May create improvements on water resources",
-			// "Can instantly construct a [Fishing Boats] improvement <with [50]% chance> <by consuming this unit>",  // is the fishing good today? 
-			"Can instantly construct a [Fishing Boats] improvement <by consuming this unit>",
+			"Can instantly construct a [Fishing Boats] improvement <with [50]% chance> <by consuming this unit>",  // is the fishing good today? 
         	    	// "Uncapturable",  // you fish for us now
 			"Automation is a primary action", 
 		],
@@ -162,9 +161,9 @@
 			"Founds a new city <after [5] turns> <upon discovering a Natural Wonder> <by consuming this unit>",  // critical gameplay element, explore or found colony?
 			// "Founds a new city <upon discovering a Natural Wonder> <[3] times> <by consuming this unit>",
 
-			"[-2] Sight <during the [Prehistoric era]>",
-			"[-1] Sight <starting from the [Ancient era]>",
-			"May upgrade to [Nomad] through ruins-like effects",
+			//"[-3] Sight <during the [Prehistoric era]>",
+			//"[-2] Sight <starting from the [Ancient era]>",
+			//"May upgrade to [Nomad] through ruins-like effects",
 		// testing the following - will the logic hold? 
 			// Second method. Attempting to engineer a means of needing to find a second wonder before allowing founding. 
 			//// "Founds a new city <upon discovering a Natural Wonder> ... 
@@ -185,10 +184,10 @@
 		"obsoleteTech": "Horseback Riding",
 		"uniques": [
 			"[-1] Sight <before the [Classical era]>",
-			"Can instantly construct a [Forage] improvement <with [30]% chance> <by consuming this unit>",  // might get eaten by enemies instead
+			"Can instantly construct a [Forage] improvement <with [50]% chance> <by consuming this unit>",  // might get eaten by enemies instead
 			"May upgrade to [Scout] through ruins-like effects",
 			"Never appears as a Barbarian unit",
-			"Ignores terrain cost <in [Plains] tiles>",  // the conditional here will break unciv when this is a starting unit
+			// "Ignores terrain cost <in [Plains] tiles>",  // the conditional here will break unciv when this is a starting unit
 		],
 		"attackSound": "nonmetalhit",
 	},
@@ -201,9 +200,8 @@
 		"cost": 40,
 		"obsoleteTech": "Scientific Theory",
 		"uniques": [
-			// "[-1] Sight <before the [Classical era]>",
+			"[-1] Sight <before the [Classical era]>",
 			"Can instantly construct a [Fort] improvement <by consuming this unit>",  // great upgrade
-			"Can instantly construct a [Ancient ruins] improvement <in [Wheat] tiles> <by consuming this unit>",
 			"May upgrade to [Archer] through ruins-like effects",
 			"Never appears as a Barbarian unit",
 			// "Ignores terrain cost <in tiles without [Mountain]>",
