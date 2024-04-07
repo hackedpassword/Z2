@@ -96,7 +96,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"Rough terrain",
 		        "Has an elevation of [1] for visibility calculations",  // not too tall, wanting limited tile reveal
 			"Blocks line-of-sight from tiles at same elevation",  // cull vis
-		        //"Units ending their turn on this terrain take [50] damage <with [80]% chance>",  // get in get out
+		        "Units ending their turn on this terrain take [50] damage <with [80]% chance>",  // get in get out
 			"Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
 			"[-2 Gold] <in [River] tiles>",  // turn down resource noise - #todo: figure out how river tiles get gold assigned .. does not appear to be json/mod configured (atm)
 		], 
@@ -164,13 +164,13 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		// base tiles providing scaling and dynamic resources
 			// "[+1 Production] <before discovering [The Wheel]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // poor production source initially
 			// 
-			"[+1 Production] <after discovering [The Wheel]> <before discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Production] <after discovering [The Wheel]> <before discovering [Mining]> <in [Friendly Land] tiles> <within [1] tiles of a [City center]>", // must be adjacent to city
 			// "[+1 Production] <after discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Production] <after discovering [Engineering]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Production] <after discovering [Engineering]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <in tiles adjacent to [Mountain]>",
 			// "[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // treasure unburied
+			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [10%] chance>",  // treasure unburied
 			"[+1 Faith] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			// "[+1 Culture] <with [10]% chance>",
+			"[+1 Culture] <with [5]% chance>",
 			// "[+1 Happiness] <with [10]% chance>",
 		],
 	},
@@ -180,10 +180,10 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"RGB": [0, 171, 169],
 		"uniques": [
 			"Fresh water",
-			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // two chances at each resource
-			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",  // two chances at each resource
+			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
+			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
+			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
 		],
 	},
 	{
@@ -192,10 +192,10 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 1,
 		"RGB": [70, 138, 216],
 		"uniques": [
-			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
+			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
+			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
+			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
 		],
 
 	},
@@ -204,14 +204,15 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"type": "Water",
 		"movementCost": 1,
 		"uniques": [
-			"[+2 Food] <in [Friendly Land] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Food] <in [Friendly Land] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+2 Gold] <in [Friendly Land] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+1 Gold] <in [Friendly Land] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+2 Food] <in [Friendly Land] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
+			"[+1 Food] <in [Friendly Land] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
+			"[+2 Gold] <in [Friendly Land] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
+			"[+1 Gold] <in [Friendly Land] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
 		],
 		"RGB": [33, 97, 171],
 	},
-	{
+	{  // todo: rename to 'Rough Ocean' 
+	   // remember in map editor to replace tiles w/ new tile, then decom deep ocean tile
 		"name": "Deep Ocean",  // treacherous terrain used as a soft clip
 		"type": "Water",
 		"movementCost": 3,
@@ -321,8 +322,10 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		],
 		"RGB": [43, 97, 181],  // this is what the flat tile color will look like in map previews, not the overlying natural wonder color
 	},
-	{
-		"name": "Boulder",  // exists both this TerrainFeature, and improvement version. This one is map-baked as a TerrainFeature.
+	{  // Exists both as this TerrainFeature, and as an Improvement. This entity is map-baked as a TerrainFeature, able to mod movement. 
+	   // This WAS a problem, confusing the AI due to the above - special thanks to @SeventhM for solving related crash issues 
+		
+		"name": "Boulder",  
 		"type": "TerrainFeature",
 		"occursOn": ["Grassland","Plains","Desert","Marsh","Cave"],
 		"movementCost": 5, // hard to pass through
