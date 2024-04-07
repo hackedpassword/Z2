@@ -36,7 +36,7 @@
 		],
 		// "impassable": true,
 		"techRequired": "Engineering",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"terrainsCanBeBuiltOn": ["Land","NaturalWonder","ThreeEye Rock Palace"], // testing general NaturalWonder application, then specific
 	},
 	{
 		"name": "Work district",  // universal productivity
@@ -331,7 +331,7 @@
 	{
 	// Name: Path
 		"name": "Road",
-		"terrainsCanBeBuiltOn": ["Land","NaturalWonder"], // so paths can cross bridges
+		"terrainsCanBeBuiltOn": ["Land","NaturalWonder","Bridge1coast"], // so paths can cross bridges
 		"turnsToBuild": 4,
 		"production": 1,  // roads make cities more productive
 		"techRequired": "The Wheel",
