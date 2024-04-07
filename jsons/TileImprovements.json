@@ -331,7 +331,7 @@
 	{
 	// Name: Path
 		"name": "Road",
-		"terrainsCanBeBuiltOn": ["Land","Natural Wonder"], // so paths can cross bridges
+		"terrainsCanBeBuiltOn": ["Land","NaturalWonder"], // so paths can cross bridges
 		"turnsToBuild": 4,
 		"production": 1,  // roads make cities more productive
 		"techRequired": "The Wheel",
@@ -346,7 +346,7 @@
 	{
 	// Name: Fast travel
 		"name": "Railroad",
-		"terrainsCanBeBuiltOn": ["Land","Natural Wonder"], // so fast travel can cross bridges
+		"terrainsCanBeBuiltOn": ["Land","NaturalWonder"], // so fast travel can cross bridges
 		"turnsToBuild": 4,
 		"production": 2,
 		"techRequired": "Railroads",
