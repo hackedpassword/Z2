@@ -800,7 +800,7 @@
 		"techs": [
 			{  // #TODO: re-appropriate Carrier, add nuclear carrier here
 				"name": "Naval Security",
-				"row": 6,
+				"row": 5,
 				"prerequisites": ["Nuclear Fission"],
 				"quote": ""
 			},
