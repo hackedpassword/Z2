@@ -800,13 +800,13 @@
 		"techs": [
 			{  // #TODO: re-appropriate Carrier, add nuclear carrier here
 				"name": "Naval Security",
-				"row": 5,
+				"row": 6,
 				"prerequisites": ["Nuclear Fission"],
 				"quote": ""
 			},
 			{
 				"name": "Advanced Ballistics",
-				"row": 4,
+				"row": 5,
 				"prerequisites": ["Nuclear Fission","Rocketry"],
 				"quote": "'Our scientific power has outrun our spiritual power, we have guided missiles and misguided men.' – Martin Luther King Jr."
 			},
