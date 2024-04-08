@@ -713,7 +713,7 @@
 			},
 			{
 				"name": "Radar",
-				"row": 6,
+				"row": 7,
 				"prerequisites": ["Radio","Replaceable Parts"],
 				"quote": "'Vision is the art of seeing things invisible.' - Jonathan Swift"
 			},
@@ -743,7 +743,7 @@
 			},
 			{
 				"name": "Atomic Theory",
-				"row": 3,
+				"row": 4,
 				"prerequisites": ["Radar","Plastics"],
 				"quote": "'The unleashed power of the atom has changed everything save our modes of thinking, and we thus drift toward unparalleled catastrophes.' - Albert Einstein"
 			},
@@ -798,21 +798,27 @@
 		"buildingCost": 750,
 		"wonderCost": 1250,
 		"techs": [
+			{  // #TODO: re-appropriate Carrier, add nuclear carrier here
+				"name": "Naval Security",
+				"row": 6,
+				"prerequisites": ["Nuclear Fission"],
+				"quote": ""
+			},
 			{
 				"name": "Advanced Ballistics",
-				"row": 5,
+				"row": 4,
 				"prerequisites": ["Nuclear Fission","Rocketry"],
 				"quote": "'Our scientific power has outrun our spiritual power, we have guided missiles and misguided men.' – Martin Luther King Jr."
 			},
 			{
 				"name": "Mobile Tactics",
-				"row": 6,
-				"prerequisites": ["Telecommunications","Nuclear Fission"],
+				"row": 8,
+				"prerequisites": ["Telecommunications"],
 				"quote": "'All men can see these tactics whereby I conquer, but what none can see is the strategy out of which victory is evolved.' - Sun Tzu"
 			},
 			{
 				"name": "Satellites",
-				"row": 8,
+				"row": 7,
 				"prerequisites": ["Rocketry","Telecommunications"],
 				"uniques": ["Reveals the entire map"],
 				"quote": "'Now, somehow, in some new way, the sky seemed almost alien.' - Lyndon B. Johnson"
@@ -825,7 +831,7 @@
 			},
 			{
 				"name": "Lasers",
-				"row": 3,
+				"row": 4,
 				"prerequisites": ["Nuclear Fission"],
 				"quote": "'The night is far spent, the day is at hand: let us therefore cast off the works of darkness, and let us put on the armor of light.' - The Holy Bible: Romans, 13:12"
 			},
@@ -852,7 +858,7 @@
 			},
 			{
 				"name": "Nuclear Fusion",
-				"row": 4,
+				"row": 3,
 				"prerequisites": ["Advanced Ballistics","Lasers"],  // GDR requires Robotics discovery
 				"quote": "'The release of atomic energy has not created a new problem. It has readily made more urgent the necessity of solving an existing one.' - Albert Einstein"
 			},
