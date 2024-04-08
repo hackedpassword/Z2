@@ -800,7 +800,7 @@
 		"techs": [
 			{  // #TODO: re-appropriate Carrier, add nuclear carrier here
 				"name": "Naval Security",
-				"row": 6,
+				"row": 3,
 				"prerequisites": ["Nuclear Fission"],
 				"quote": ""
 			},
@@ -853,12 +853,12 @@
 			{
 				"name": "Particle Physics",
 				"row": 2,
-				"prerequisites": ["Lasers","Ecology","Advanced Ballistics"],
+				"prerequisites": ["Lasers","Ecology","Advanced Ballistics","Naval Security"],
 				"quote": "'Every particle of matter is attracted by or gravitates to every other particle of matter with a force inversely proportional to the squares of their distances.' - Isaac Newton"
 			},
 			{
 				"name": "Nuclear Fusion",
-				"row": 3,
+				"row": 4,
 				"prerequisites": ["Advanced Ballistics","Lasers"],  // GDR requires Robotics discovery
 				"quote": "'The release of atomic energy has not created a new problem. It has readily made more urgent the necessity of solving an existing one.' - Albert Einstein"
 			},
