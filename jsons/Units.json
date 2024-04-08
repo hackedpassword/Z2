@@ -333,7 +333,7 @@
 		"range": 3,
 		"rangedStrength": 85,
 		"cost": 475,
-		"requiredTech": "Mobile Tactics",
+		"requiredTech": "Naval Security",
 		"requiredResource": "Uranium",  // how is this not in original G&K? asked every player
 		"uniques": [
 			"[75]% chance to intercept air attacks",
@@ -349,7 +349,7 @@
 		],
 		"attackSound": "torpedo",
 	},
-	{
+	{  // #TODO: re-appropriate for the era, add nuclear carrier
 		"name": "Carrier",  // Unciv appears to handle carrying units by the maximum number specified for all uniques is the max capacity, so here, 4 units any combo max
 		"unitType": "Aircraft Carrier",
 		"movement": 2,  // slow, +1 global, x2 deep ocean = fast on open water
