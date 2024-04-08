@@ -800,7 +800,7 @@
 		"techs": [
 			{  // #TODO: re-appropriate Carrier, add nuclear carrier here
 				"name": "Naval Security",
-				"row": 4,
+				"row": 3,
 				"prerequisites": ["Nuclear Fission"],
 				"quote": ""
 			},
@@ -831,7 +831,7 @@
 			},
 			{
 				"name": "Lasers",
-				"row": 3,
+				"row": 4,
 				"prerequisites": ["Nuclear Fission"],
 				"quote": "'The night is far spent, the day is at hand: let us therefore cast off the works of darkness, and let us put on the armor of light.' - The Holy Bible: Romans, 13:12"
 			},
@@ -858,7 +858,7 @@
 			},
 			{
 				"name": "Nuclear Fusion",
-				"row": 4,
+				"row": 5,
 				"prerequisites": ["Advanced Ballistics","Lasers"],  // GDR requires Robotics discovery
 				"quote": "'The release of atomic energy has not created a new problem. It has readily made more urgent the necessity of solving an existing one.' - Albert Einstein"
 			},
