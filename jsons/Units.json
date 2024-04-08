@@ -200,6 +200,7 @@
 		"movement": 3,
 		"strength": 5,
 		"cost": 40,
+		"upgradesTo": "Crossbowman",  // #TODO: make assassin unit type in scout upgrade path
 		"obsoleteTech": "Scientific Theory",
 		"uniques": [
 			// "[-1] Sight <before the [Classical era]>",
