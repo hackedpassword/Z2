@@ -257,6 +257,10 @@
 				"prerequisites": ["Sailing"],
 				"uniques": [
 					"[1] Movement point cost to disembark",
+					"[+1] Sight [in all cities] <with a garrison>",
+					"[+1] Sight <for [Archery] units>",
+					"[+1] Sight <for [Water] units> <in [your] tiles> <within [3] tiles of a [City center]>",
+
 				],
 				"quote": "'He made an instrument to know if the moon shine at full or no.' - Samuel Butler"
 			},
