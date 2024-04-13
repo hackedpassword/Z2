@@ -815,7 +815,7 @@
 		"name": "Ambush I",
 		"uniques": [
 			"Invisible to non-adjacent units <in [Rough terrain] tiles> <when at war>",
-			"[+50]% Strength <vs [{Armored} {Siege}] units>",
+			"[+50]% Strength <vs [{Armored} {Siege} {Archery}] units>",
 		],
 		"unitTypes": ["Scout","Sword","Gunpowder","Fighter","Bomber"],
         "column": 25,
@@ -826,7 +826,7 @@
 		"prerequisites": ["Ambush I"],
 		"uniques": [
 			"Invisible to non-adjacent units <when at war>"
-			"[+100]% Strength <vs [{Armored} {Siege}] units>",
+			"[+100]% Strength <vs [{Armored} {Siege} {Archery}] units>",
 		],
 		"unitTypes": ["Scout","Sword","Gunpowder","Fighter","Bomber"],
         "column": 25,
