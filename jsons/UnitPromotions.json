@@ -195,12 +195,20 @@
 	},
 
 	{
-		"name": "Volley",
+		"name": "Volley I",
 		"prerequisites": ["Accuracy I","Barrage I"],
 		"uniques": ["[+50]% Strength <vs cities>"],
-		"unitTypes": ["Siege"],
+		"unitTypes": ["Siege","Archery"],
         "column": 3,
         "row": 1
+	},
+	{
+		"name": "Volley II",
+		"prerequisites": ["Volley I"],
+		"uniques": ["[+100]% Strength <vs cities>"],
+		"unitTypes": ["Siege","Archery"],
+        "column": 3,
+        "row": 2
 	},
 	{
 		"name": "Extended Range",
@@ -289,7 +297,7 @@
 		"uniques": [
 			"[+33]% Strength <vs [{Sword} {Gunpowder} {Mounted}] units>", 
 		],
-		"unitTypes": ["Sword","Gunpowder","Mounted"],
+		"unitTypes": ["Sword","Gunpowder","Mounted","Archery"],
         "column": 7,
         "row": 2
 	},
@@ -297,9 +305,9 @@
 		"name": "Formation II",
 		"prerequisites": ["Formation I"],
 		"uniques": [
-			"[+33]% Strength <vs [{Sword} {Gunpowder} {Mounted}] units>", 
+			"[+75]% Strength <vs [{Sword} {Gunpowder} {Mounted}] units>", 
 		],
-		"unitTypes": ["Sword","Gunpowder","Mounted"],
+		"unitTypes": ["Sword","Gunpowder","Mounted","Archery"],
         "column": 7,
         "row": 3
 	},
@@ -496,7 +504,7 @@
 	{
 		"name": "Targeting II",
 		"prerequisites": ["Targeting I"],
-		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"uniques": ["[+25]% Strength <vs [Water] units>"],
 		"unitTypes": ["Ranged Water"],
         "column": 13,
         "row": 2
@@ -504,7 +512,7 @@
 	{
 		"name": "Targeting III",
 		"prerequisites": ["Targeting II"],
-		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"uniques": ["[+50]% Strength <vs [Water] units>"],
 		"unitTypes": ["Ranged Water"],
         "column": 13,
         "row": 3
@@ -727,14 +735,14 @@
 	{
 		"name": "Mobility II",
 		"prerequisites": ["Mobility I"],
-		"uniques": ["[+1] Movement"],
+		"uniques": ["[+2] Movement"],
 		"unitTypes": ["Helicopter"],
         "column": 22,
         "row": 2
 	},
 	{
 		"name": "Anti-Armor I",
-		"uniques": ["[+25]% Strength <vs [Armored] units>"],
+		"uniques": ["[+100]% Strength <vs {[Armored] [Siege]} units>"],
 		"unitTypes": ["Helicopter"],
         "column": 23,
         "row": 1
@@ -742,7 +750,7 @@
 	{
 		"name": "Anti-Armor II",
 		"prerequisites": ["Anti-Armor I"],
-		"uniques": ["[+25]% Strength <vs [Armored] units>"],
+		"uniques": ["[+200]% Strength <vs {[Armored] [Siege]} units>"],
 		"unitTypes": ["Helicopter"],
         "column": 23,
         "row": 2
@@ -784,7 +792,7 @@
 	},
 	{
 		"name": "Sentry",
-		"prerequisites": ["Accuracy I","Barrage I","Shock II","Drill II","Bombardment I","Targeting I","Boarding Party I","Coastal Raider I"],
+		"prerequisites": ["Accuracy I","Barrage I","Shock I","Drill I","Bombardment I","Targeting I","Boarding Party I","Coastal Raider I"],
 		"uniques": ["[+1] Sight"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Ranged Water","Armored","Melee Water"],
         "column": 24,
