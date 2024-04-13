@@ -295,7 +295,9 @@
 		"name": "Formation I",
 		"prerequisites": ["Shock I","Drill I"], // G&K also has Accuracy II & Barrage II as possible prerequisites for this, but I couldn't find a source for the unittypes
 		"uniques": [
-			"[+33]% Strength <vs [{Sword} {Gunpowder} {Mounted}] units>", 
+			"[+33]% Strength <vs [{Sword}] units>",
+			"[+33]% Strength <vs [{Gunpowder}] units>",
+			"[+33]% Strength <vs [{Mounted}] units>",
 		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Archery"],
         "column": 7,
@@ -305,7 +307,9 @@
 		"name": "Formation II",
 		"prerequisites": ["Formation I"],
 		"uniques": [
-			"[+75]% Strength <vs [{Sword} {Gunpowder} {Mounted}] units>", 
+			"[+75]% Strength <vs [{Sword}] units>",
+			"[+75]% Strength <vs [{Gunpowder}] units>",
+			"[+75]% Strength <vs [{Mounted}] units>",
 		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Archery"],
         "column": 7,
@@ -811,11 +815,13 @@
         "row": 5
 	},
 
-	{
+	{  // line for line attributes, since apparently [{this} {that}] implies AND :(
 		"name": "Ambush I",
 		"uniques": [
 			"Invisible to non-adjacent units <in [Rough terrain] tiles> <when at war>",
-			"[+50]% Strength <vs [{Armored} {Siege} {Archery}] units>",
+			"[+50]% Strength <vs [{Armored}] units>",
+			"[+50]% Strength <vs [{Siege}] units>",
+			"[+50]% Strength <vs [{Archery}] units>",
 		],
 		"unitTypes": ["Scout","Sword","Gunpowder","Fighter","Bomber"],
         "column": 25,
@@ -825,8 +831,10 @@
 		"name": "Ambush II",
 		"prerequisites": ["Ambush I"],
 		"uniques": [
-			"Invisible to non-adjacent units <when at war>"
-			"[+100]% Strength <vs [{Armored} {Siege} {Archery}] units>",
+			"Invisible to non-adjacent units <when at war>",
+			"[+100]% Strength <vs [{Armored}] units>",
+			"[+100]% Strength <vs [{Siege}] units>",
+			"[+100]% Strength <vs [{Archery}] units>",
 		],
 		"unitTypes": ["Scout","Sword","Gunpowder","Fighter","Bomber"],
         "column": 25,
