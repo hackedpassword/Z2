@@ -223,16 +223,16 @@
 			"Gives a defensive bonus of [100]%"  // it's a Fort, not a Shelter
 		]
 	},
-	{
+	{  // Let's make citadel worth the sacrifice of the general
 		"name": "Citadel",
 		"terrainsCanBeBuiltOn": ["Land"],
 		"uniques": [
 			"Great Improvement",
-			"Gives a defensive bonus of [100]%",
+			"Gives a defensive bonus of [150]%",
 			"Adjacent enemy units ending their turn take [50] damage",  // To be feared
-			"Can be built just outside your borders",
                 	"Constructing it will take over the tiles around it and assign them to your closest city",
-			"Removes removable features when built"
+			"Removes removable features when built", 
+			"Can be built outside your borders",
 		]
 	},
 
