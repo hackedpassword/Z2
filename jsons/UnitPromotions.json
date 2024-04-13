@@ -322,7 +322,7 @@
 	},
 	{  // too deep in the tree, more useful now
 		"name": "Woodsman",
-		"prerequisites": ["Shock I","Drill I"],
+		// "prerequisites": ["Shock I","Drill I"],
 		"uniques": ["Double movement in [Forest]","Double movement in [Jungle]"],
 		"unitTypes": ["Sword","Gunpowder"],
         "column": 6,
@@ -775,10 +775,10 @@
 
 	{
 		"name": "March",
-		"prerequisites": ["Accuracy II","Barrage II","Shock III","Drill III"],
+		"prerequisites": ["Accuracy II","Barrage II","Shock III","Drill III","Formation I"],
 		"uniques": ["Unit will heal every turn, even if it performs an action"],
 		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege","Mounted"],
-        "column": 10,
+        "column": 11,
         "row": 3
 	},
 	{
@@ -793,7 +793,10 @@
 	{
 		"name": "Sentry",
 		"prerequisites": ["Accuracy I","Barrage I","Shock I","Drill I","Bombardment I","Targeting I","Boarding Party I","Coastal Raider I"],
-		"uniques": ["[+1] Sight"],
+		"uniques": [
+			"[+2] Sight",
+			"Can see invisible [Land] units", 
+		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Ranged Water","Armored","Melee Water"],
         "column": 24,
         "row": 4
