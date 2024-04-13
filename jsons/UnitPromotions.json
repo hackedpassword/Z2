@@ -283,9 +283,9 @@
         "column": 6,
         "row": 3
 	},
-	{
+	{  // useless being so far into the promotion tree, making more useful
 		"name": "Formation I",
-		"prerequisites": ["Shock II","Drill II"], // G&K also has Accuracy II & Barrage II as possible prerequisites for this, but I couldn't find a source for the unittypes
+		"prerequisites": ["Shock I","Drill I"], // G&K also has Accuracy II & Barrage II as possible prerequisites for this, but I couldn't find a source for the unittypes
 		"uniques": [
 			"[+33]% Strength <vs [{Sword} {Gunpowder} {Mounted}] units>", 
 		],
@@ -312,9 +312,9 @@
         "column": 6,
         "row": 4
 	},
-	{
+	{  // too deep in the tree, more useful now
 		"name": "Woodsman",
-		"prerequisites": ["Shock III","Drill III"],
+		"prerequisites": ["Shock I","Drill I"],
 		"uniques": ["Double movement in [Forest]","Double movement in [Jungle]"],
 		"unitTypes": ["Sword","Gunpowder"],
         "column": 6,
@@ -323,15 +323,19 @@
 	{
 		"name": "Amphibious",
 		"prerequisites": ["Shock I", "Drill I"],
-		"uniques": ["Eliminates combat penalty for attacking over a river", "Eliminates combat penalty for attacking across a coast"],
+		"uniques": [
+			"May travel on Water tiles without embarking",
+			"Eliminates combat penalty for attacking over a river",
+			"Eliminates combat penalty for attacking across a coast",
+		],
 		"unitTypes": ["Sword","Gunpowder"],
         "column": 6,
         "row": 1
 	},
 	{
 		"name": "Medic",
-		"prerequisites": ["Shock I", "Drill I", "Scouting II", "Survivalism II"],
-		"uniques": ["All adjacent units heal [+5] HP when healing"],
+		"prerequisites": ["Shock I", "Drill I", "Scouting I", "Survivalism I"],
+		"uniques": ["All adjacent units heal [+10] HP when healing"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout"],
         "column": 10, // after scout base
         "row": 1
@@ -339,7 +343,10 @@
 	{
 		"name": "Medic II",
 		"prerequisites": ["Medic"],
-		"uniques": ["[+5] HP when healing <in [Foreign Land] tiles>", "All adjacent units heal [+5] HP when healing"],
+		"uniques": [
+			"[+10] HP when healing <in [Foreign Land] tiles>",
+			"All adjacent units heal [+25] HP when healing",
+		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout"],
         "column": 10,
         "row": 2
@@ -348,7 +355,11 @@
 	// Scout
 	{
 		"name": "Scouting I",
-		"uniques": ["[+1] Sight"],
+		"uniques": [
+			"[+1] Sight",
+			"[+1] Movement",
+			"May withdraw before melee ([10]%)",
+		],
 		"unitTypes": ["Scout"],
         "column": 8,
         "row": 1
@@ -356,7 +367,13 @@
 	{
 		"name": "Scouting II",
 		"prerequisites": ["Scouting I"],
-		"uniques": ["[+1] Sight"],
+		"uniques": [
+			"[+1] Sight",
+			"[+1] Movement",
+			"Ignores Zone of Control",
+			"May withdraw before melee ([25]%)",
+			"May Paradrop up to [2] tiles from inside friendly territory",
+		],
 		"unitTypes": ["Scout"],
         "column": 8,
         "row": 2
@@ -364,14 +381,24 @@
 	{
 		"name": "Scouting III",
 		"prerequisites": ["Scouting II"],
-		"uniques": ["[+1] Movement"],
+		"uniques": [
+			"[+1] Sight",
+			"[+1] Movement",
+			"Ignores Zone of Control",
+			"May enter foreign tiles without open borders",
+			"May withdraw before melee ([75]%)",
+			"May Paradrop up to [3] tiles from inside friendly territory",
+		],
 		"unitTypes": ["Scout"],
         "column": 8,
         "row": 3
 	},
 	{
 		"name": "Survivalism I",
-		"uniques": ["[+5] HP when healing <in [Foreign Land] tiles>", "[+25]% Strength <when defending>"],
+		"uniques": [
+			"[+10] HP when healing <in [Foreign Land] tiles>",
+			"[+25]% Strength <when defending>",
+		],
 		"unitTypes": ["Scout"],
         "column": 9,
         "row": 1
@@ -379,7 +406,10 @@
 	{
 		"name": "Survivalism II",
 		"prerequisites": ["Survivalism I"],
-		"uniques": ["[+5] HP when healing <in [Foreign Land] tiles>", "[+25]% Strength <when defending>"],
+		"uniques": [
+			"[+15] HP when healing <in [Foreign Land] tiles>",
+			"[+35]% Strength <when defending>",
+		],
 		"unitTypes": ["Scout"],
         "column": 9,
         "row": 2
@@ -387,7 +417,12 @@
 	{
 		"name": "Survivalism III",
 		"prerequisites": ["Survivalism II"],
-		"uniques": ["Unit will heal every turn, even if it performs an action", "May withdraw before melee ([75]%)"], // This number is not based on any source
+		"uniques": [
+			"[+25] HP when healing <in [Foreign Land] tiles>",
+			"Unit will heal every turn, even if it performs an action",
+			"[+50]% Strength <when defending>",
+			"May withdraw before melee ([75]%)", // combined with scouting III, very agile 
+		],
 		"unitTypes": ["Scout"],
         "column": 9,
         "row": 3
@@ -767,16 +802,22 @@
 
 	{
 		"name": "Ambush I",
-		"uniques": ["[+33]% Strength <vs [Armored] units>"],
-		"unitTypes": ["Sword","Gunpowder","Fighter","Bomber"],
+		"uniques": [
+			"Invisible to non-adjacent units <in [Rough terrain] tiles> <when at war>",
+			"[+50]% Strength <vs [{Armored} {Siege}] units>",
+		],
+		"unitTypes": ["Scout","Sword","Gunpowder","Fighter","Bomber"],
         "column": 25,
         "row": 1
 	},
 	{
 		"name": "Ambush II",
 		"prerequisites": ["Ambush I"],
-		"uniques": ["[+33]% Strength <vs [Armored] units>"],
-		"unitTypes": ["Sword","Gunpowder","Fighter","Bomber"],
+		"uniques": [
+			"Invisible to non-adjacent units <when at war>"
+			"[+100]% Strength <vs [{Armored} {Siege}] units>",
+		],
+		"unitTypes": ["Scout","Sword","Gunpowder","Fighter","Bomber"],
         "column": 25,
         "row": 2
 	},
