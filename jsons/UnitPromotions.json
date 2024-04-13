@@ -293,7 +293,7 @@
 	},
 	{  // useless being so far into the promotion tree, making more useful
 		"name": "Formation I",
-		"prerequisites": ["Shock I","Drill I"], // G&K also has Accuracy II & Barrage II as possible prerequisites for this, but I couldn't find a source for the unittypes
+		"prerequisites": ["Shock I","Drill I","Accuracy I","Barrage I"], // G&K also has Accuracy II & Barrage II as possible prerequisites for this, but I couldn't find a source for the unittypes
 		"uniques": [
 			"[+33]% Strength <vs [Sword] units>",
 			"[+33]% Strength <vs [Gunpowder] units>",
