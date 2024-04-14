@@ -327,7 +327,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		
 		"name": "Boulder",  
 		"type": "TerrainFeature",
-		"occursOn": ["Grassland","Plains","Desert","Marsh","Cave"],
+		"occursOn": ["Grassland","Plains","Desert","Marsh","Cave","Cavern"],
 		"movementCost": 5, // hard to pass through
 		"unbuildable": false,  // can be built by villagers as an TileImprovement, no idea how this parameter affects building #TODO
 		"turnsToBuild": 7,
