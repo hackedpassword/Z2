@@ -727,16 +727,38 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 // Units adjusted to Prehistoric era
 
 	{
+		"name": "Swordsman",
+		"unitType": "Sword",
+		"movement": 2,
+		"strength": 14,
+		"cost": 75,
+		"requiredTech": "Iron Working",
+		"upgradesTo": "Longswordsman",
+		"obsoleteTech": "Steel",
+		"requiredResource": "Iron",
+		"hurryCostModifier": 20,
+		"uniques": [
+			"This Unit gains [15] XP <upon entering a new era>",
+			"[+50]% Strength <with [25]% chance> <when attacking>",
+		],
+		"attackSound": "metalhit"
+	},
+	{
 		"name": "Longswordsman",  // To be migrated into an elven hero type
 		"unitType": "Sword",
 		"movement": 2,
 		"strength": 21,
 		"cost": 120,
 		"requiredTech": "Steel",
-		"upgradesTo": "Musketman",  // no. #todo
+		// "upgradesTo": "Musketman",  // no. #todo
 		"obsoleteTech": "Gunpowder",
 		"requiredResource": "Iron",
-		"attackSound": "metalhit"
+		"uniques": [
+			"This Unit gains [15] XP <upon entering a new era>",
+			"This unit gains [30] XP <upon conquering a city>", 
+			"[+50]% Strength <with [35]% chance> <when attacking>",
+		],
+		"attackSound": "metalhit", 
 	},
 	{
 		"name": "Warrior",
@@ -1371,19 +1393,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"upgradesTo": "Crossbowman",
 		"attackSound": "arrow"
 	},
-	{
-		"name": "Swordsman",
-		"unitType": "Sword",
-		"movement": 2,
-		"strength": 14,
-		"cost": 75,
-		"requiredTech": "Iron Working",
-		"upgradesTo": "Longswordsman",
-		"obsoleteTech": "Steel",
-		"requiredResource": "Iron",
-		"hurryCostModifier": 20,
-		"attackSound": "metalhit"
-	},
+	
 	{
 		"name": "Legion",
 		"unitType": "Sword",
@@ -1415,22 +1425,6 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"promotions": ["[Mohawk Warrior] ability"],
 		"attackSound": "metalhit"
 	},
-	/*
-	{
-		"name": "Swordsman",
-		"unitType": "Sword",
-		"movement": 2,
-		"strength": 14,
-		"cost": 75,
-		"requiredTech": "Iron Working",
-		"upgradesTo": "Longswordsman",
-		"obsoleteTech": "Gunpowder",
-		"requiredResource": "Iron",
-		"hurryCostModifier": 20,
-		"attackSound": "metalhit"
-		// Barbarian unique Swordsman. Has same icon and name but slightly different 3d texture
-	},
-	*/
 
 	// Medieval Era
 	{
