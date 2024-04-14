@@ -750,15 +750,34 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"strength": 21,
 		"cost": 120,
 		"requiredTech": "Steel",
-		// "upgradesTo": "Musketman",  // no. #todo
+		"upgradesTo": "Knight",
 		"obsoleteTech": "Gunpowder",
 		"requiredResource": "Iron",
+		"promotions": ["Shock I","Drill I"],
 		"uniques": [
 			"This Unit gains [15] XP <upon entering a new era>",
 			"This unit gains [30] XP <upon conquering a city>", 
 			"[+50]% Strength <with [35]% chance> <when attacking>",
 		],
 		"attackSound": "metalhit", 
+	},
+	{
+		"name": "Knight",
+		"unitType": "Sword",
+		"movement": 3,
+		"strength": 35,
+		"cost": 120,
+		"requiredTech": "Chivalry",
+		// "obsoleteTech": "Military Science",
+		"requiredResource": "Iron",
+		"promotions": ["Shock II","Drill II"],
+		"uniques": [
+			"This Unit gains [15] XP <upon entering a new era>",
+			"This unit gains [30] XP <upon conquering a city>", 
+			"[+50]% Strength <with [50]% chance> <when attacking>",
+			"Can move after attacking",
+		],
+		"attackSound": "metalhit"
 	},
 	{
 		"name": "Warrior",
@@ -1467,19 +1486,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"uniques": ["Cannot enter ocean tiles"],
 		"attackSound": "arrow"
 	},
-	{
-		"name": "Knight",
-		"unitType": "Mounted",
-		"movement": 4,
-		"strength": 20,
-		"cost": 120,
-		"requiredTech": "Chivalry",
-		"obsoleteTech": "Military Science",
-		"upgradesTo": "Cavalry",
-		"requiredResource": "Horses",
-		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>", "Never appears as a Barbarian unit"],
-		"attackSound": "horse"
-	},
+
 	{
 		"name": "Camel Archer",
 		"unitType": "Archery",
