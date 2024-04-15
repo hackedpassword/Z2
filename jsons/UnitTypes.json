@@ -88,7 +88,7 @@
         "name": "Gunpowder",
         "movementType": "Land", 
         "uniques": [
-            "Can build [Remove Trap] improvements on tiles",
+            "Can build [Remove Trap] improvements on tiles <in [Trap] tiles>",
             "Double movement in [Force]",
             "Double movement in [OceanTile]", 
             "Double movement in [CoastTile]",
@@ -98,7 +98,7 @@
         "name": "Archery",
         "movementType": "Land", 
         "uniques": [
-            "Can build [Remove Trap] improvements on tiles",
+            "Can build [Remove Trap] improvements on tiles <in [Trap] tiles>",
             "Double movement in [Force]",
             "Double movement in [OceanTile]", 
             "Double movement in [CoastTile]",
@@ -108,7 +108,7 @@
         "name": "Ranged Gunpowder",
         "movementType": "Land", 
         "uniques": [
-            "Can build [Remove Trap] improvements on tiles",
+            "Can build [Remove Trap] improvements on tiles <in [Trap] tiles>",
             "Double movement in [Force]",
             "Double movement in [OceanTile]", 
             "Double movement in [CoastTile]",
@@ -118,7 +118,7 @@
         "name": "Mounted",
         "movementType": "Land", 
         "uniques": [
-            "Can build [Remove Trap] improvements on tiles",
+            // "Can build [Remove Trap] improvements on tiles",
             "Double movement in [Force]",
             "Double movement in [OceanTile]", 
             "Double movement in [CoastTile]",
@@ -128,7 +128,7 @@
         "name": "Armored",
         "movementType": "Land", 
         "uniques": [
-            "Can build [Remove Trap] improvements on tiles",
+            // "Can build [Remove Trap] improvements on tiles",
             "Double movement in [Force]",
             "Double movement in [OceanTile]", 
             "Double movement in [CoastTile]",
@@ -138,7 +138,7 @@
         "name": "Siege",
         "movementType": "Land", 
         "uniques": [
-            "Can build [Remove Trap] improvements on tiles",
+            // "Can build [Remove Trap] improvements on tiles",
             "Double movement in [Force]",
             "Double movement in [OceanTile]", 
             "Double movement in [CoastTile]",
