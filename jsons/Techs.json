@@ -445,7 +445,7 @@
 			},
 			{
 				"name": "Education",
-				"row": 6,
+				"row": 7,
 				"prerequisites": ["Physics","Guilds"],
 				"uniques": ["Enables conversion of city production to [Science]","Enables Research agreements"],
 				"quote": "'Education is the best provision for old age.' - Aristotle"
@@ -600,6 +600,12 @@
 				"quote": "'Is it a fact - or have I dreamt it - that, by means of electricity, the world of matter has become a great nerve, vibrating thousands of miles in a breathless point of time?' - Nathaniel Hawthorne"
 			},
 			{
+				"name": "Petroleum",
+				"row": 2,
+				"prerequisites": ["Archaeology"],
+				"quote": "'I love the smell of napalm in the morning.'", 
+			},
+			{
 				"name": "Industrialization",
 				"row": 3,
 				"prerequisites": ["Steam Power","Free Trade"],
@@ -635,15 +641,10 @@
 			{
 				"name": "Biology",
 				"row": 1,
-				"prerequisites": ["Navigation","Archaeology"],
+				"prerequisites": ["Navigation","Petroleum"],
 				"quote": "'If the brain were so simple we could understand it, we would be so simple we couldn't.' - Lyall Watson", 
 			},
-	        	{
-				"name": "Petroleum",
-				"row": 2,
-				"prerequisites": ["Industrialization","Archaeology"],
-				"quote": "'I love the smell of napalm in the morning.'", 
-			},
+	        	
 			{
 				"name": "Electronics",
 				"row": 7,
@@ -678,7 +679,7 @@
 			{
 				"name": "Refrigeration",
 				"row": 2,
-				"prerequisites": ["Biology", "Petroleum"],
+				"prerequisites": ["Biology", "Industrialization"],
 				"quote": "'And homeless near a thousand homes I stood, and near a thousand tables pined and wanted food.' - William Wordsworth"
 			},
 			{
@@ -863,7 +864,7 @@
 			},
 			{
 				"name": "Nuclear Fusion",
-				"row": 5,
+				"row": 3,
 				"prerequisites": ["Advanced Ballistics","Lasers"],  // GDR requires Robotics discovery
 				"quote": "'The release of atomic energy has not created a new problem. It has readily made more urgent the necessity of solving an existing one.' - Albert Einstein"
 			},
