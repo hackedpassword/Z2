@@ -138,12 +138,26 @@
 
 
 	{
-		"name": "Heal Instantly",
-		"uniques": ["Heal this unit by [50] HP", "Doing so will consume this opportunity to choose a Promotion"],
+		"name": "Heal Instantly I",
+		"uniques": ["Heal this unit by [50] HP <once>"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine"],
         "row": 0,
         "column": 0
-    },
+	},
+	{
+		"name": "Heal Instantly II",
+		"uniques": ["Heal this unit by [75] HP <once>"],
+		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine"],
+        "row": 0,
+        "column": 1
+	},
+	{
+		"name": "Heal Instantly III",
+		"uniques": ["Heal this unit by [100] HP", "Doing so will consume this opportunity to choose a Promotion"],
+		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine"],
+        "row": 0,
+        "column": 2
+	},
 
 	// Ranged+Siege
 	{
@@ -790,7 +804,7 @@
 
 	{
 		"name": "March", // granting this against Heal Instantly, so using that isn't a total waste
-		"prerequisites": ["Heal Instantly","Accuracy II","Barrage II","Shock II","Drill II","Formation I"],
+		"prerequisites": ["Heal Instantly II","Accuracy II","Barrage II","Shock II","Drill II","Formation I"],
 		"uniques": ["Unit will heal every turn, even if it performs an action"],
 		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege","Mounted"],
         "column": 10,
