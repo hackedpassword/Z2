@@ -787,7 +787,7 @@
 			"May withdraw before melee [10]%", 
 		],
 		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege"],
-        "column": 7,
+        "column": 10,
         "row": 1
 	},
 	{
@@ -800,7 +800,7 @@
 			"May withdraw before melee [20]%",
 		],
 		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege"],
-        "column": 7,
+        "column": 10,
         "row": 2
 	},
 
@@ -809,7 +809,7 @@
 		"prerequisites": ["Heal Instantly II","Accuracy II","Barrage II","Shock II","Drill II","Formation I"],
 		"uniques": ["Unit will heal every turn, even if it performs an action"],
 		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege","Mounted"],
-        "column": 10,
+        "column": 11,
         "row": 3
 	},
 	{
