@@ -328,7 +328,7 @@
 		"name": "Woodsman",
 		// "prerequisites": ["Shock I","Drill I"],
 		"uniques": ["Double movement in [Forest]","Double movement in [Jungle]"],
-		"unitTypes": ["Sword","Gunpowder"],
+		"unitTypes": ["Sword","Gunpowder","Scout"],
         "column": 6,
         "row": 5
 	},
