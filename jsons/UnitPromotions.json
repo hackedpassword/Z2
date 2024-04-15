@@ -200,7 +200,7 @@
 		"uniques": ["[+50]% Strength <vs cities>"],
 		"unitTypes": ["Siege","Archery"],
         "column": 3,
-        "row": 1
+        "row": 2
 	},
 	{
 		"name": "Volley II",
@@ -208,16 +208,9 @@
 		"uniques": ["[+100]% Strength <vs cities>"],
 		"unitTypes": ["Siege","Archery"],
         "column": 3,
-        "row": 2
+        "row": 3
 	},
-	{
-		"name": "Extended Range",
-		"prerequisites": ["Accuracy III","Barrage III","Targeting II","Bombardment II","Wolfpack II","Volley II"],
-		"uniques": ["[+1] Range"],
-		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water","Submarine"],
-        "column": 4,
-        "row": 5
-	},
+	
 	{
 		"name": "Indirect Fire",
 		"prerequisites": ["Accuracy I", "Barrage I", "Bombardment II", "Targeting II"],
@@ -225,6 +218,14 @@
 		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water"],
         "column": 3,
         "row": 4
+	},
+	{
+		"name": "Extended Range",
+		"prerequisites": ["Indirect Fire","Accuracy II","Barrage II","Targeting II","Bombardment II","Wolfpack II","Volley II"],
+		"uniques": ["[+1] Range"],
+		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water","Submarine"],
+        "column": 3,
+        "row": 5
 	},
 
 	// Melee, Mounted+Armor
@@ -782,8 +783,8 @@
 		"prerequisites": ["Accuracy II","Barrage II","Shock III","Drill III","Formation I"],
 		"uniques": ["Unit will heal every turn, even if it performs an action"],
 		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege","Mounted"],
-        "column": 11,
-        "row": 3
+        "column": 3,
+        "row": 4
 	},
 	{
 		"name": "Mobility",
