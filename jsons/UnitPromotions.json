@@ -232,7 +232,7 @@
 		"prerequisites": ["Accuracy I", "Barrage I", "Bombardment II", "Targeting II"],
 		"uniques": ["Ranged attacks may be performed over obstacles"],
 		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water"],
-        "column": 9,
+        "column": 7,
         "row": 4
 	},
 	{
@@ -317,7 +317,7 @@
 			"[+33]% Strength <vs [Mounted] units>",
 		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Archery"],
-        "column": 7,
+        "column": 9,
         "row": 2
 	},
 	{
@@ -329,7 +329,7 @@
 			"[+75]% Strength <vs [Mounted] units>",
 		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Archery"],
-        "column": 7,
+        "column": 9,
         "row": 3
 	},
 
