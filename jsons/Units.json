@@ -202,7 +202,7 @@
 		"cost": 40,
 		"upgradesTo": "Crossbowman",  // #TODO: make assassin unit type in scout upgrade path
 		"obsoleteTech": "Scientific Theory",
-		"promotions": "Woodsman",
+		"promotions": ["Woodsman"],
 		"uniques": [
 			// "[-1] Sight <before the [Classical era]>",
 			"Can instantly construct a [Fort] improvement <by consuming this unit>",  // great upgrade
