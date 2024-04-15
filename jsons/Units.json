@@ -1482,7 +1482,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"cost": 100,
 		"requiredTech": "Compass",
 		"obsoleteTech": "Navigation",
-		"upgradesTo": "Frigate",
+		"upgradesTo": "Caravel",
 		"uniques": ["Cannot enter ocean tiles"],
 		"attackSound": "arrow"
 	},
