@@ -280,7 +280,7 @@
 	{
 		"name": "Oil well",
 		"turnsToBuild": 9,
-		"techRequired": "Biology",
+		"techRequired": "Petroleum",
 		"uniques": [
 			"Can only be built to improve a resource",
 			"Cannot be built on [Water] tiles",
@@ -291,7 +291,7 @@
 	},
 	{
 		"name": "Offshore Platform",
-		"techRequired": "Petroleum",
+		"techRequired": "Biology",
 		"uniques": [
 			"Can only be built to improve a resource",
 			"Can only be built on [Water] tiles",
