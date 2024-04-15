@@ -224,8 +224,8 @@
 		"prerequisites": ["Indirect Fire","Accuracy III","Barrage III","Targeting II","Bombardment II","Wolfpack II","Cover II"],
 		"uniques": ["[+1] Range"],
 		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water","Submarine"],
-        "column": 9,
-        "row": 6
+        "column": 6,
+        "row": 4
 	},
 
 	// Melee, Mounted+Armor
@@ -771,7 +771,7 @@
 			"May withdraw before melee [10]%", 
 		],
 		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege"],
-        "column": 9,
+        "column": 7,
         "row": 1
 	},
 	{
@@ -784,7 +784,7 @@
 			"May withdraw before melee [20]%",
 		],
 		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege"],
-        "column": 9,
+        "column": 7,
         "row": 2
 	},
 
@@ -822,8 +822,8 @@
 			"Bombardment III", "Coastal Raider III","Boarding Party III","Siege III", "Mobility II", "Anti-Armor II"],
 		"uniques": ["[1] additional attacks per turn", "Can move after attacking"],
 		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Melee Water","Ranged Water","Submarine","Fighter","Bomber","Helicopter"],
-        "column": 24,
-        "row": 5
+        "column": 2,
+        "row": 4
 	},
 
 	{  // line for line attributes, since apparently [{this} {that}] implies AND :(
