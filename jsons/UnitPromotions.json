@@ -146,6 +146,7 @@
 	},
 	{
 		"name": "Heal Instantly II",
+		"prerequisites": ["Heal Instantly I"],
 		"uniques": ["Heal this unit by [75] HP <once>"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine"],
         "row": 1,
@@ -153,6 +154,7 @@
 	},
 	{
 		"name": "Heal Instantly III",
+		"prerequisites": ["Heal Instantly II"],
 		"uniques": ["Heal this unit by [100] HP", "Doing so will consume this opportunity to choose a Promotion"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine"],
         "row": 2,
