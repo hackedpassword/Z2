@@ -202,6 +202,7 @@
 		"cost": 40,
 		"upgradesTo": "Crossbowman",  // #TODO: make assassin unit type in scout upgrade path
 		"obsoleteTech": "Scientific Theory",
+		"promotions": "Woodsman",
 		"uniques": [
 			// "[-1] Sight <before the [Classical era]>",
 			"Can instantly construct a [Fort] improvement <by consuming this unit>",  // great upgrade
@@ -756,7 +757,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"promotions": ["Shock I","Drill I"],
 		"uniques": [
 			"This Unit gains [15] XP <upon entering a new era>",
-			"This unit gains [30] XP <upon conquering a city>", 
+			"This unit gains [30] XP <upon conquering a city>",  // should apply this to Sword group
 			"[+50]% Strength <with [35]% chance> <when attacking>",
 		],
 		"attackSound": "metalhit", 
@@ -770,7 +771,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"requiredTech": "Chivalry",
 		// "obsoleteTech": "Military Science",
 		"requiredResource": "Iron",
-		"promotions": ["Shock II","Drill II"],
+		"promotions": ["Shock II","Drill II"], // new units will lack level I promotions
 		"uniques": [
 			"This Unit gains [15] XP <upon entering a new era>",
 			"This unit gains [30] XP <upon conquering a city>", 
