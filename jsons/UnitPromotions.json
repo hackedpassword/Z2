@@ -156,7 +156,7 @@
 	{
 		"name": "Accuracy II",
 		"prerequisites": ["Accuracy I"],
-		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
+		"uniques": ["[+20]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
 		"unitTypes": ["Siege","Archery","Ranged Gunpowder"],
         "column": 1,
         "row": 2
@@ -164,7 +164,7 @@
 	{
 		"name": "Accuracy III",
 		"prerequisites": ["Accuracy II"],
-		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
+		"uniques": ["[+25]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
 		"unitTypes": ["Siege","Archery","Ranged Gunpowder"],
         "column": 1,
         "row": 3
@@ -180,7 +180,7 @@
 	{
 		"name": "Barrage II",
 		"prerequisites": ["Barrage I"],
-		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
+		"uniques": ["[+20]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
 		"unitTypes": ["Siege","Archery","Ranged Gunpowder"],
         "column": 2,
         "row": 2
@@ -188,7 +188,7 @@
 	{
 		"name": "Barrage III",
 		"prerequisites": ["Barrage II"],
-		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
+		"uniques": ["[+25]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
 		"unitTypes": ["Siege","Archery","Ranged Gunpowder"],
         "column": 2,
         "row": 3
@@ -212,11 +212,11 @@
 	},
 	{
 		"name": "Extended Range",
-		"prerequisites": ["Accuracy III","Barrage III","Targeting II","Bombardment II", "Wolfpack II"],
+		"prerequisites": ["Accuracy III","Barrage III","Targeting II","Bombardment II","Wolfpack II","Volley II"],
 		"uniques": ["[+1] Range"],
 		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water","Submarine"],
-        "column": 3,
-        "row": 3
+        "column": 4,
+        "row": 5
 	},
 	{
 		"name": "Indirect Fire",
