@@ -148,15 +148,15 @@
 		"name": "Heal Instantly II",
 		"uniques": ["Heal this unit by [75] HP <once>"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine"],
-        "row": 0,
-        "column": 1
+        "row": 1,
+        "column": 0
 	},
 	{
 		"name": "Heal Instantly III",
 		"uniques": ["Heal this unit by [100] HP", "Doing so will consume this opportunity to choose a Promotion"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine"],
-        "row": 0,
-        "column": 2
+        "row": 2,
+        "column": 0
 	},
 
 	// Ranged+Siege
