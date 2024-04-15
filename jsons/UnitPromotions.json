@@ -221,11 +221,11 @@
 	},
 	{
 		"name": "Extended Range",
-		"prerequisites": ["Indirect Fire","Accuracy II","Barrage II","Targeting II","Bombardment II","Wolfpack II","Volley I"],
+		"prerequisites": ["Indirect Fire","Accuracy III","Barrage III","Targeting II","Bombardment II","Wolfpack II","Cover II"],
 		"uniques": ["[+1] Range"],
 		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water","Submarine"],
         "column": 3,
-        "row": 5
+        "row": 6
 	},
 
 	// Melee, Mounted+Armor
@@ -764,7 +764,12 @@
 	// Mixed
 	{
 		"name": "Cover I",
-		"uniques": ["[+33]% Strength <vs [Ranged] units> <when defending>"],
+		"uniques": [
+			"[+33]% Strength <vs [Ranged] units> <when defending>",
+			"Invisible to non-adjacent units <in [Open terrain] tiles> <when at war>",
+			"[+50]% Strength <vs [Air] units> <when defending>",
+			"May withdraw before melee [10]%", 
+		],
 		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege"],
         "column": 24,
         "row": 1
@@ -772,7 +777,12 @@
 	{
 		"name": "Cover II",
 		"prerequisites": ["Cover I"],
-		"uniques": ["[+33]% Strength <vs [Ranged] units> <when defending>"],
+		"uniques": [
+			"[+33]% Strength <vs [Ranged] units> <when defending>",
+			"Invisible to non-adjacent units <when at war>",
+			"[+50]% Strength <vs [Air] units>",
+			"May withdraw before melee [20]%",
+		],
 		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege"],
         "column": 24,
         "row": 2
