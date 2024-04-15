@@ -789,11 +789,11 @@
 	},
 
 	{
-		"name": "March",
-		"prerequisites": ["Accuracy II","Barrage II","Shock II","Drill II","Formation I"],
+		"name": "March", // granting this against Heal Instantly, so using that isn't a total waste
+		"prerequisites": ["Heal Instantly","Accuracy II","Barrage II","Shock II","Drill II","Formation I"],
 		"uniques": ["Unit will heal every turn, even if it performs an action"],
 		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege","Mounted"],
-        "column": 10,
+        "column": 0,
         "row": 3
 	},
 	{
