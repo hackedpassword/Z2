@@ -44,7 +44,8 @@
 			"Can instantly construct a [Farm] improvement",
 			"Can instantly construct a [Work district] improvement",
 			"Can instantly construct a [Trading post] improvement",
-			
+			"Founds a new city",
+
 			"Can instantly construct a [Mine] improvement",
 			"Can instantly construct a [Remove Marsh] improvement",
 			"Can instantly construct a [Remove Forest] improvement",
@@ -52,6 +53,10 @@
 			// two transforms? let's find out
 			"Can transform to [Giant Death Robot MK-III]",
 			"Can transform to [Sprite]",
+			"Can transform to [Worker]",
+			"Can transform to [Scout]",
+			"Can transform to [Caveman]",
+
 		// all other attributes
 			"Can carry [10] [All] units",  // bag of holding
 			"Can carry [5] extra [All] units",  // back pocket of holding
