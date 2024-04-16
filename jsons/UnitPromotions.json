@@ -384,16 +384,29 @@
         "row": 5
 	},
 	{
-		"name": "Amphibious",
+		"name": "Amphibious I",
 		"prerequisites": ["Shock I", "Drill I"],
 		"uniques": [
-			"May travel on Water tiles without embarking",
+			"May attack when embarked",
+			"[1] Movement point cost to disembark",
+			"[1] Movement point cost to disembark",
 			"Eliminates combat penalty for attacking over a river",
-			"Eliminates combat penalty for attacking across a coast",
 		],
-		"unitTypes": ["Sword","Gunpowder"],
+		"unitTypes": ["Sword","Gunpowder","Archery"],
         "column": 6,
         "row": 1
+	},	{
+		"name": "Amphibious II",
+		"prerequisites": ["Amphibious I"],
+		"uniques": [
+			"Defense bonus when embarked",
+			"[0] Movement point cost to disembark",
+			"[0] Movement point cost to disembark",
+			"Eliminates combat penalty for attacking across a coast",
+		],
+		"unitTypes": ["Sword","Gunpowder","Archery"],
+        "column": 6,
+        "row": 2
 	},
 	{
 		"name": "Medic",
