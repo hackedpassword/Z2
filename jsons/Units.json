@@ -83,6 +83,8 @@
 			"Can instantly construct a [Remove Marsh] improvement",
 			"Can instantly construct a [Remove Forest] improvement",
 			"Can instantly construct a [Remove All Road] improvement",  // we'll see if this needs to be more specific
+			"Can instantly construct a [Road] improvement",  // we'll see if this needs to be more specific
+			"Can instantly construct a [Railroad] improvement",  // we'll see if this needs to be more specific
 
 		// transformations
 			"Can transform to [Sprite]",  // Magi-swap
