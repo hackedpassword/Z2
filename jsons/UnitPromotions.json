@@ -422,8 +422,7 @@
 		"unitTypes": ["Sword","Gunpowder","Archery"],
         "column": 6,
         "row": 1
-	},
-	{
+	},	{
 		"name": "Amphibious II",
 		"prerequisites": ["Amphibious I"],
 		"uniques": [
