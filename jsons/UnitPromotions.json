@@ -185,7 +185,97 @@
         "column": 1,
         "row": 3
     },
+	{
+		"name": "Indirect Fire",
+		"prerequisites": ["Accuracy I", "Barrage I", "Bombardment II", "Targeting II"],
+		"uniques": ["Ranged attacks may be performed over obstacles"],
+		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water"],
+        "column": 2,
+        "row": 2
+	},
+	{
+		"name": "Extended Range I",
+		"prerequisites": ["Indirect Fire","Accuracy III","Barrage III","Targeting II","Bombardment II","Wolfpack II","Cover II"],
+		"uniques": ["[+1] Range"],
+		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water","Submarine"],
+        "column": 2,
+        "row": 4
+	},
+	{
+		"name": "Extended Range II",
+		"prerequisites": ["Extended Range I"],
+		"uniques": ["[+1] Range"],
+		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water","Submarine"],
+        "column": 2,
+        "row": 5
+	},
+	{  // useless being so far into the promotion tree, making more useful
+		"name": "Formation I",
+		"prerequisites": ["Shock I","Drill I","Accuracy I","Barrage I"], // G&K also has Accuracy II & Barrage II as possible prerequisites for this, but I couldn't find a source for the unittypes
+		"uniques": [
+			"[+33]% Strength <vs [Sword] units>",
+			"[+33]% Strength <vs [Gunpowder] units>",
+			"[+33]% Strength <vs [Mounted] units>",
+		],
+		"unitTypes": ["Sword","Gunpowder","Mounted","Archery"],
+        "column": 3,
+        "row": 2
+	},
+	{
+		"name": "Formation II",
+		"prerequisites": ["Formation I"],
+		"uniques": [
+			"[+75]% Strength <vs [Sword] units>",
+			"[+75]% Strength <vs [Gunpowder] units>",
+			"[+75]% Strength <vs [Mounted] units>",
+		],
+		"unitTypes": ["Sword","Gunpowder","Mounted","Archery"],
+        "column": 3,
+        "row": 3
+	},
 
+
+	{
+		"name": "Volley I",
+		"prerequisites": ["Accuracy I","Barrage I"],
+		"uniques": ["[+50]% Strength <vs cities>"],
+		"unitTypes": ["Siege","Archery"],
+        "column": 4,
+        "row": 2
+	},
+	{
+		"name": "Volley II",
+		"prerequisites": ["Volley I"],
+		"uniques": ["[+50]% Strength <vs cities>"],
+		"unitTypes": ["Siege","Archery"],
+        "column": 4,
+        "row": 3
+	},
+	{
+		"name": "Cover I",
+		"uniques": [
+			"[+33]% Strength <vs [Ranged] units> <when defending>",
+			"Invisible to non-adjacent units <in [Open terrain] tiles> <when at war>",
+			"[+50]% Strength <vs [Air] units> <when defending>",
+			"May withdraw before melee [10]%", 
+		],
+		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege"],
+        "column": 5,
+        "row": 1
+	},
+	{
+		"name": "Cover II",
+		"prerequisites": ["Cover I"],
+		"uniques": [
+			"[+33]% Strength <vs [Ranged] units> <when defending>",
+			"Invisible to non-adjacent units <when at war>",
+			"[+50]% Strength <vs [Air] units>",
+			"May withdraw before melee [20]%",
+		],
+		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege"],
+        "column": 5,
+        "row": 2
+	},
 	{
 		"name": "Barrage I",
 		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
@@ -208,48 +298,6 @@
 		"unitTypes": ["Siege","Archery","Ranged Gunpowder"],
         "column": 9,
         "row": 3
-	},
-
-	{
-		"name": "Volley I",
-		"prerequisites": ["Accuracy I","Barrage I"],
-		"uniques": ["[+50]% Strength <vs cities>"],
-		"unitTypes": ["Siege","Archery"],
-        "column": 11,
-        "row": 2
-	},
-	{
-		"name": "Volley II",
-		"prerequisites": ["Volley I"],
-		"uniques": ["[+50]% Strength <vs cities>"],
-		"unitTypes": ["Siege","Archery"],
-        "column": 11,
-        "row": 3
-	},
-	
-	{
-		"name": "Indirect Fire",
-		"prerequisites": ["Accuracy I", "Barrage I", "Bombardment II", "Targeting II"],
-		"uniques": ["Ranged attacks may be performed over obstacles"],
-		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water"],
-        "column": 12,
-        "row": 2
-	},
-	{
-		"name": "Extended Range I",
-		"prerequisites": ["Indirect Fire","Accuracy III","Barrage III","Targeting II","Bombardment II","Wolfpack II","Cover II"],
-		"uniques": ["[+1] Range"],
-		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water","Submarine"],
-        "column": 12,
-        "row": 4
-	},
-	{
-		"name": "Extended Range II",
-		"prerequisites": ["Extended Range I"],
-		"uniques": ["[+1] Range"],
-		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water","Submarine"],
-        "column": 12,
-        "row": 5
 	},
 
 	// Melee, Mounted+Armor
@@ -316,30 +364,7 @@
         "column": 6,
         "row": 3
 	},
-	{  // useless being so far into the promotion tree, making more useful
-		"name": "Formation I",
-		"prerequisites": ["Shock I","Drill I","Accuracy I","Barrage I"], // G&K also has Accuracy II & Barrage II as possible prerequisites for this, but I couldn't find a source for the unittypes
-		"uniques": [
-			"[+33]% Strength <vs [Sword] units>",
-			"[+33]% Strength <vs [Gunpowder] units>",
-			"[+33]% Strength <vs [Mounted] units>",
-		],
-		"unitTypes": ["Sword","Gunpowder","Mounted","Archery"],
-        "column": 11,
-        "row": 2
-	},
-	{
-		"name": "Formation II",
-		"prerequisites": ["Formation I"],
-		"uniques": [
-			"[+75]% Strength <vs [Sword] units>",
-			"[+75]% Strength <vs [Gunpowder] units>",
-			"[+75]% Strength <vs [Mounted] units>",
-		],
-		"unitTypes": ["Sword","Gunpowder","Mounted","Archery"],
-        "column": 11,
-        "row": 3
-	},
+
 
 	{
 		"name": "Blitz",
@@ -786,31 +811,7 @@
 	},
 
 	// Mixed
-	{
-		"name": "Cover I",
-		"uniques": [
-			"[+33]% Strength <vs [Ranged] units> <when defending>",
-			"Invisible to non-adjacent units <in [Open terrain] tiles> <when at war>",
-			"[+50]% Strength <vs [Air] units> <when defending>",
-			"May withdraw before melee [10]%", 
-		],
-		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege"],
-        "column": 10,
-        "row": 1
-	},
-	{
-		"name": "Cover II",
-		"prerequisites": ["Cover I"],
-		"uniques": [
-			"[+33]% Strength <vs [Ranged] units> <when defending>",
-			"Invisible to non-adjacent units <when at war>",
-			"[+50]% Strength <vs [Air] units>",
-			"May withdraw before melee [20]%",
-		],
-		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege"],
-        "column": 10,
-        "row": 2
-	},
+
 
 	{
 		"name": "March", // granting this against Heal Instantly, so using that isn't a total waste
