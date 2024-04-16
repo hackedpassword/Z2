@@ -153,6 +153,7 @@
 
 		// field actions
 			"Uncapturable",
+			"Can build [Land] improvements on tiles",  // so we can test regular building
 			"May create improvements on water resources",
 			"May withdraw before melee ([100]%)",  // 2 fast 4 u
 			"[+1000]% Strength <when defending>",  // fairy shield
