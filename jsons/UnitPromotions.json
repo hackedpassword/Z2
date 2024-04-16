@@ -233,7 +233,7 @@
 		"uniques": ["Ranged attacks may be performed over obstacles"],
 		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water"],
         "column": 17,
-        "row": 4
+        "row": 2
 	},
 	{
 		"name": "Extended Range I",
