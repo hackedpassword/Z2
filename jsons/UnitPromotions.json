@@ -312,7 +312,7 @@
 	{
 		"name": "Shock II",
 		"prerequisites": ["Shock I"],
-		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+		"uniques": ["[+20]% Strength <when fighting in [Open terrain] tiles>"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
         "column": 4,
         "row": 2
@@ -320,7 +320,7 @@
 	{
 		"name": "Shock III",
 		"prerequisites": ["Shock II"],
-		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+		"uniques": ["[+25]% Strength <when fighting in [Open terrain] tiles>"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
         "column": 4,
         "row": 3
@@ -336,7 +336,7 @@
 	{
 		"name": "Drill II",
 		"prerequisites": ["Drill I"],
-		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>"],
+		"uniques": ["[+20]% Strength <when fighting in [Rough terrain] tiles>"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
         "column": 15,
         "row": 2
@@ -344,7 +344,7 @@
 	{
 		"name": "Drill III",
 		"prerequisites": ["Drill II"],
-		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>"],
+		"uniques": ["[+25]% Strength <when fighting in [Rough terrain] tiles>"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
         "column": 15,
         "row": 3
@@ -362,7 +362,7 @@
 		"prerequisites": ["Shock II","Drill II"],
 		"uniques": ["[+50]% Strength <vs cities>"],
 		"unitTypes": ["Sword","Gunpowder"],
-        "column": 6,
+        "column": 18,
         "row": 3
 	},
 
