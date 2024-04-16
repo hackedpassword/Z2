@@ -215,7 +215,7 @@
 		"prerequisites": ["Accuracy I","Barrage I"],
 		"uniques": ["[+50]% Strength <vs cities>"],
 		"unitTypes": ["Siege","Archery"],
-        "column": 8,
+        "column": 16,
         "row": 2
 	},
 	{
@@ -223,7 +223,7 @@
 		"prerequisites": ["Volley I"],
 		"uniques": ["[+50]% Strength <vs cities>"],
 		"unitTypes": ["Siege","Archery"],
-        "column": 8,
+        "column": 16,
         "row": 3
 	},
 	
@@ -232,7 +232,7 @@
 		"prerequisites": ["Accuracy I", "Barrage I", "Bombardment II", "Targeting II"],
 		"uniques": ["Ranged attacks may be performed over obstacles"],
 		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water"],
-        "column": 7,
+        "column": 17,
         "row": 4
 	},
 	{
@@ -240,7 +240,7 @@
 		"prerequisites": ["Indirect Fire","Accuracy III","Barrage III","Targeting II","Bombardment II","Wolfpack II","Cover II"],
 		"uniques": ["[+1] Range"],
 		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water","Submarine"],
-        "column": 7,
+        "column": 17,
         "row": 4
 	},
 	{
@@ -248,7 +248,7 @@
 		"prerequisites": ["Extended Range I"],
 		"uniques": ["[+1] Range"],
 		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water","Submarine"],
-        "column": 7,
+        "column": 17,
         "row": 5
 	},
 
