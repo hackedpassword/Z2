@@ -163,10 +163,18 @@
 
 	// Ranged+Siege
 	{
+		"name": "Indirect Fire",
+		"prerequisites": ["Accuracy I", "Barrage I", "Bombardment II", "Targeting II"],
+		"uniques": ["Ranged attacks may be performed over obstacles"],
+		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water"],
+        "column": 1,
+        "row": 2
+	},
+	{
 		"name": "Accuracy I",
 		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
 		"unitTypes": ["Siege","Archery","Ranged Gunpowder"],
-        "column": 1,
+        "column": 2,
         "row": 1
     },
 	{
@@ -174,7 +182,7 @@
 		"prerequisites": ["Accuracy I"],
 		"uniques": ["[+20]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
 		"unitTypes": ["Siege","Archery","Ranged Gunpowder"],
-        "column": 1,
+        "column": 2,
         "row": 2
     },
 	{
@@ -182,17 +190,10 @@
 		"prerequisites": ["Accuracy II"],
 		"uniques": ["[+25]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
 		"unitTypes": ["Siege","Archery","Ranged Gunpowder"],
-        "column": 1,
+        "column": 2,
         "row": 3
     },
-	{
-		"name": "Indirect Fire",
-		"prerequisites": ["Accuracy I", "Barrage I", "Bombardment II", "Targeting II"],
-		"uniques": ["Ranged attacks may be performed over obstacles"],
-		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water"],
-        "column": 2,
-        "row": 2
-	},
+
 	{
 		"name": "Extended Range I",
 		"prerequisites": ["Indirect Fire","Accuracy III","Barrage III","Targeting II","Bombardment II","Wolfpack II","Cover II"],
