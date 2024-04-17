@@ -49,17 +49,17 @@ The hidden water path above hosts a land unit, non-embarked. The submarine canno
 
 ## Nuances
 
-It’s not quite as simple to implement as you’d think. Directional combinations of bridge building except N-S is tricky, with angle bridges being untried at this time. On second thought they’re probably not too much harder.
+Getting visuals for the tiles are not quite as simple to implement as you’d think, since we're dealing with hexagonal tiles that offset in 4 out of 6 directions.
 
 N-S in Z2 is represented by Bridge3. Tile laid down, easy peasy.
 
-W-E in Z2 is represented by Bridge1 and Bridge2, where 1 is top, 2 is bottom. Hex tile interlacing requires a 1-2-1-2 etc pattern to establish the horizontal path for consistent aesthetics. Land units appear proper standing on tile 2, but on tile 1 they stand in the water. Solvable with more dedicated tiles.
+W-E in Z2 is represented by Bridge1 and Bridge2, where 1 is top, 2 is bottom. Hex tile interlacing requires a 1-2-1-2 etc pattern to establish the horizontal path for consistent aesthetics. Land units appear proper standing on tile 2, but on tile 1 they stand in the water and look weird, sure there's some solution. 
 
-Secondly on W-E bridges, endpoints are rendered over by the next row of tiles, rendering the graphic overlays clipped. To solve this, a terrainFeature called BridgeFL (feature left) and BridgeFR (feature right) are applied to the shoreline tile.
+Secondly on W-E bridges, endpoints are rendered/drawn over by the next row of tiles, rendering the graphic overlays clipped. To solve this, a terrainFeature called BridgeFL (feature left) and BridgeFR (feature right) are applied to the shoreline tiles.
 
 Angle bridges are an entire project on their own, but doable. Likely a variant of the above technique.
 
-I implemented OceanTile with movement=0 as the Raft crosses in one movement. Once, Unciv crashed due to the AI zig-zagging back and forth on the water infinitly. Yairm210 figured this out using his code-ray vision. Basically, until float movement values are implemented, not a good idea to use zero.
+I implemented OceanTile with movement=0 since the game Raft crosses in one movement. Unciv would crash due to the AI zig-zagging back and forth on the water infinitly. Yairm210 figured this out using his code-ray vision. Basically, not a good idea to use zero for a movement value.
 
 
 ## Issues
@@ -128,7 +128,7 @@ TileResources.json
 
 ## Other Hacky Efforts
 
-There remains an uncovered hack-feature that’s out of my/modders’ control to steer properly:
+There remains an uncovered hack-feature found along the way, was not able to capture it:
 
 Settle a city adjacent to a Citadel/Great Palace (buried in the mountains direct center of the map). Upon settlement and borders established, the Improvement image should flip from GreatPalace to Citadel. I believe this is because Z2 is not a ruleset, but Citadel.png is a palace image in the Z2 mod, however when the settlement occurs, the engine falls back to the G&K image of Citadel.png, probably due to the tile `ruleVariants` not existing in either Z2/HexaRealm.json or G&K/HexaRealm.json. Note in Z2/HexaRealm.json I’ve disabled `fallbackTileSet`.
 
