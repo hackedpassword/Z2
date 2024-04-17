@@ -1,5 +1,5 @@
 
-Author: hackedpassword | discord/wphoenix
+Author: hackedpassword
 
 
 
@@ -28,9 +28,9 @@ _You’ll want to read on before jumping into this, there’s a bit more to it._
 
 ## How
 
-Because the engine allows `turnsInto:` to accept a `TerrainFeature` as `Type:String`, apparently neither Land or Water units are implied, becoming (sort of) “whatever” (vs Any, neither, both, null). That's my observation at least.
+Because the engine allows `turnsInto:` to accept a `TerrainFeature` entity as a value, apparently neither Land or Water units are implied, becoming (sort of) “whatever” (vs Any, neither, both, null). That's my observation at least.
 
-Credit unwittingly goes to A1y0sh4 for inadvertently applying this strange behavior to Rock of Gibraltar in [the Great Unciv Rework](https://github.com/A1y0sh4/The-Great-Unciv-Rework) versions <= 2.1. I recognized when the Wonder tile was placed next to a Coast, unit mobility behavior acted like a canal tile. Experiments proved bridge building with this technique was possible.
+Credit unwittingly goes to A1y0sh4 for inadvertently applying this strange behavior to Rock of Gibraltar in [the Great Unciv Rework](https://github.com/A1y0sh4/The-Great-Unciv-Rework) versions <= 2.1. I had recognized that when the Wonder tile was placed next to a Coast, unit mobility behavior acted like a canal tile. Experiments proved bridge building with this technique was possible.
 
 
 ## Features
