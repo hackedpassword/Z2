@@ -885,11 +885,32 @@
 	{
 		"name": "Logistics",
 		"prerequisites": ["Accuracy III","Barrage III","Targeting III", "Wolfpack III",
-			"Bombardment III", "Coastal Raider III","Boarding Party III","Siege III", "Mobility II", "Anti-Armor II"],
+			"Bombardment III", "Coastal Raider III","Boarding Party III","Siege III",
+			"Mobility II", "Anti-Armor II","Volley II"],
 		"uniques": ["[1] additional attacks per turn", "Can move after attacking"],
 		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Melee Water","Ranged Water","Submarine","Fighter","Bomber","Helicopter"],
         "column": 2,
         "row": 4
+	},
+	{
+		"name": "Logistics I",
+		"prerequisites": ["Accuracy III","Barrage III","Targeting III", "Wolfpack III",
+			"Bombardment III", "Coastal Raider III","Boarding Party III","Siege III",
+			"Mobility II", "Anti-Armor II","Volley II"],
+		"uniques": ["[1] additional attacks per turn", "Can move after attacking"],
+		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Melee Water","Ranged Water","Submarine","Fighter","Bomber","Helicopter"],
+        "column": 2,
+        "row": 4
+	},
+	{
+		"name": "Logistics II",
+		"prerequisites": ["Accuracy III","Barrage III","Targeting III", "Wolfpack III",
+			"Bombardment III", "Coastal Raider III","Boarding Party III","Siege III",
+			"Mobility II", "Anti-Armor II","Volley II"],
+		"uniques": ["[1] additional attacks per turn", "Can move after attacking"],
+		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Melee Water","Ranged Water","Submarine","Fighter","Bomber","Helicopter"],
+        "column": 2,
+        "row": 5
 	},
 
 	{  // line for line attributes, since apparently [{this} {that}] implies AND :(
@@ -946,8 +967,15 @@
 
 	// Uniques that should be kept on upgrades
 	{
-		"name": "Morale", // Heroic Epic
-		"uniques": ["[+15]% Strength"]
+		"name": "Morale", // Heroic Epic - making it worth having motivated units! 
+		"uniques": [
+			"[+15]% Strength", // base bonus
+			"[+20]% Strength <while the empire is happy>",
+			"[+10]% Strength <during a Golden Age>",
+			"[+10]% Strength <during We Love The King Day>",
+			"[+25]% XP gained from combat",
+			"Great General provides double combat bonus",
+		]
 	},
 	{
 		"name": "Great Generals I", // only for Companion Cavalry, Keshik and their subsequent upgrades
