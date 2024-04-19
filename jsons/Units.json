@@ -263,9 +263,11 @@
 			"Can instantly construct a [Fort] improvement <by consuming this unit>",  // great upgrade
 			"Can instantly construct a [Ancient ruins] improvement <in [Wheat] tiles> <by consuming this unit>",
 			"May upgrade to [Archer] through ruins-like effects",
+			"Can transform to [Worker]", // Can demote to labor
 			"Never appears as a Barbarian unit",
 			// "Ignores terrain cost <in tiles without [Mountain]>",
-			"Ignores terrain cost",  // we'll default til the above is fixed
+			// "Ignores terrain cost",  // we'll default til the above is fixed
+			"Ignores terrain cost <in [non-[Mountain]] tiles>", // attempt using negative context
 		],
 		"attackSound": "nonmetalhit",
 	},
