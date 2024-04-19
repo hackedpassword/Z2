@@ -408,7 +408,7 @@
 		],
 		"unitTypes": ["Sword","Gunpowder","Archery"],
         "column": 6,
-        "row": 1
+        "row": 2
 	},
 	{
 		"name": "Amphibious I",
@@ -422,7 +422,7 @@
 		],
 		"unitTypes": ["Sword","Gunpowder","Archery"],
         "column": 6,
-        "row": 1
+        "row": 2
 	},	{
 		"name": "Amphibious II",
 		"prerequisites": ["Amphibious I"],
@@ -434,7 +434,7 @@
 		],
 		"unitTypes": ["Sword","Gunpowder","Archery"],
         "column": 6,
-        "row": 2
+        "row": 3
 	},
 	{
 		"name": "Medic",
