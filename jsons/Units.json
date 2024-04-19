@@ -1906,8 +1906,8 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"attackSound": "horse"
 	},
 	{
-		"name": "Ironclad",
-		"unitType": "Melee Water",
+		"name": "Ironclad", // #TODO: Split into 2nd USS Monitor class unit
+		"unitType": "Ranged Water",  // More in line with the Merrimack type ships
 		"movement": 3,
 		"strength": 45,
 		"cost": 250,
@@ -1915,7 +1915,13 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"requiredResource": "Coal",
 		"upgradesTo": "Destroyer",
 		"obsoleteTech": "Combustion",
-		"uniques": ["[+33]% Strength <vs cities>","Double movement in [Coast]", "Never appears as a Barbarian unit"],
+		"uniques": [
+			"", 
+			"[+33]% Strength <vs cities>",
+			"Double movement in [Coast]", 
+			"Never appears as a Barbarian unit", 
+		],
+		"promotions": ["Armor Plating I"],
 		"attackSound": "shipguns"
 	},
 	{
