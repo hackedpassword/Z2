@@ -418,6 +418,7 @@
 			"[1] Movement point cost to disembark",
 			"[1] Movement point cost to disembark",
 			"Eliminates combat penalty for attacking over a river",
+			"Eliminates combat penalty for attacking across a coast <if it hasn't used other actions yet>", 
 		],
 		"unitTypes": ["Sword","Gunpowder","Archery"],
         "column": 6,
@@ -437,6 +438,14 @@
 	},
 	{
 		"name": "Medic",
+		"prerequisites": ["Shock I", "Drill I", "Scouting I", "Survivalism I"],
+		"uniques": ["All adjacent units heal [+10] HP when healing"],
+		"unitTypes": ["Sword","Gunpowder","Mounted","Scout"],
+        "column": 10, // after scout base
+        "row": 1
+	},
+	{
+		"name": "Medic I",
 		"prerequisites": ["Shock I", "Drill I", "Scouting I", "Survivalism I"],
 		"uniques": ["All adjacent units heal [+10] HP when healing"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout"],
@@ -582,7 +591,10 @@
 	},
 	{
 		"name": "Landing Party",
-		"uniques": ["Eliminates combat penalty for attacking across a coast"],
+		"uniques": [
+			"Eliminates combat penalty for attacking across a coast",
+			"Earn [33]% of the damage done to [Land] units as [Gold]"
+		],
 		"unitTypes": ["Melee Water"],
         "column": 12,
         "row": 5
@@ -592,7 +604,7 @@
 	{
 		"name": "Targeting I",
 		"uniques": ["[+15]% Strength <vs [Water] units>"],
-		"unitTypes": ["Ranged Water"],
+		"unitTypes": ["Ranged Water","Archery","Ranged Gunpowder"],
         "column": 13,
         "row": 1
 	},
@@ -600,7 +612,7 @@
 		"name": "Targeting II",
 		"prerequisites": ["Targeting I"],
 		"uniques": ["[+25]% Strength <vs [Water] units>"],
-		"unitTypes": ["Ranged Water"],
+		"unitTypes": ["Ranged Water","Archery","Ranged Gunpowder"],
         "column": 13,
         "row": 2
 	},
@@ -608,7 +620,7 @@
 		"name": "Targeting III",
 		"prerequisites": ["Targeting II"],
 		"uniques": ["[+50]% Strength <vs [Water] units>"],
-		"unitTypes": ["Ranged Water"],
+		"unitTypes": ["Ranged Water","Archery","Ranged Gunpowder"],
         "column": 13,
         "row": 3
 	},
@@ -641,24 +653,32 @@
 	// Aircraft Carrier
 	{
 		"name": "Armor Plating I",
-		"uniques": ["[+25]% Strength <when defending>"],
-		"unitTypes": ["Aircraft Carrier"],
+		"uniques": [
+			"Only available <for [Water] units> <after discovering [Steam Power]>",
+			"[+25]% Strength <when defending>"],
+		"unitTypes": ["Aircraft Carrier","Melee Water","Ranged Water"],
         "column": 15,
         "row": 1
 	},
 	{
 		"name": "Armor Plating II",
 		"prerequisites": ["Armor Plating I"],
-		"uniques": ["[+25]% Strength <when defending>"],
-		"unitTypes": ["Aircraft Carrier"],
+		"uniques": [
+			"Only available <for [Water] units> <after discovering [Steam Power]>",
+			"[+25]% Strength <when defending>",
+		],
+		"unitTypes": ["Aircraft Carrier","Melee Water","Ranged Water"],
         "column": 15,
         "row": 2
 	},
 	{
 		"name": "Armor Plating III",
 		"prerequisites": ["Armor Plating II"],
-		"uniques": ["[+25]% Strength <when defending>"],
-		"unitTypes": ["Aircraft Carrier"],
+		"uniques": [
+			"Only available <for [Water] units> <after discovering [Steam Power]>",
+			"[+25]% Strength <when defending>",
+		],
+		"unitTypes": ["Aircraft Carrier","Melee Water","Ranged Water"],
         "column": 15,
         "row": 3
 	},
