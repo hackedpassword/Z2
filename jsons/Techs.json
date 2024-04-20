@@ -409,7 +409,7 @@
 			{
 				"name": "Global Exploration",
 				"row": 1,
-				"prerequisites": ["Compass","Aesthetics"],
+				"prerequisites": ["Compass"],
 				"uniques": [
 					"Enables Defensive Pacts",
 					"When declaring friendship, both parties gain a [+25]% boost to great person generation",
@@ -445,7 +445,7 @@
 			},
 			{
 				"name": "Education",
-				"row": 7,
+				"row": 6,
 				"prerequisites": ["Physics","Guilds"],
 				"uniques": ["Enables conversion of city production to [Science]","Enables Research agreements"],
 				"quote": "'Education is the best provision for old age.' - Aristotle"
@@ -528,7 +528,7 @@
 			},
 			{
 				"name": "Scientific Theory",
-				"row": 6,
+				"row": 7,
 				"prerequisites": ["Education","Printing Press"],
 				"quote": "'Every great advance in science has issued from a new audacity of imagination.' - John Dewey"
 			},
@@ -558,10 +558,21 @@
 				"prerequisites": ["Architecture"],
 				"quote": "'Those who cannot remember the past are condemned to repeat it.' - George Santayana"
 			},
-
+			{
+				"name": "Industrialization",
+				"row": 3,
+				"prerequisites": ["Steam Power","Free Trade"],
+				"quote": "'Industrialization based on machinery, already referred to as a characteristic of our age, is but one aspect of the revolution that is being wrought by technology.' - Emily Greene Balch"
+			},
+			{
+				"name": "Railroads",
+				"row": 5,
+				"prerequisites": ["Economics","Scientific Theory"],
+				"quote": "'The introduction of so powerful an agent as steam to a carriage on wheels will make a great change in the situation of man.' - Thomas Jefferson"
+			},
 			{
 				"name": "Steam Power",
-				"row": 6,
+				"row": 3,
 				"uniques": [
 					"[+1] Movement <for [Embarked] units>",
 					"[+1] Movement <for [Water] units> <in [Ocean] tiles>",  // thinking of creating a steam power promotion as a ship retrofit
@@ -579,7 +590,7 @@
 			{
 				"name": "Military Science",
 				"row": 10,
-				"prerequisites": ["Gunpowder","Chivalry"],
+				"prerequisites": ["Chemistry"],
 				"quote": "'Wars may be fought with weapons, but they are won by men. It is the spirit of the men who follow and of the man who leads that gains the victory.' - George S. Patton"
 			},
 		]
@@ -603,27 +614,17 @@
 			{
 				"name": "Petroleum",
 				"row": 2,
-				"prerequisites": ["Archaeology"],
+				"prerequisites": ["Archaeology","Steam Power"],
 				"quote": "'I love the smell of napalm in the morning.'", 
 			},
-			{
-				"name": "Industrialization",
-				"row": 3,
-				"prerequisites": ["Steam Power","Free Trade"],
-				"quote": "'Industrialization based on machinery, already referred to as a characteristic of our age, is but one aspect of the revolution that is being wrought by technology.' - Emily Greene Balch"
-			},
+
 			{
 				"name": "Flight",
 				"row": 6,
 				"prerequisites": ["Steam Power"],
 				"quote": "'Aeronautics was neither an industry nor a science. It was a miracle.' - Igor Sikorsky"
 			},
-			{
-				"name": "Railroads",
-				"row": 5,
-				"prerequisites": ["Steam Power"],
-				"quote": "'The introduction of so powerful an agent as steam to a carriage on wheels will make a great change in the situation of man.' - Thomas Jefferson"
-			},
+
 			{
 				"name": "Dynamite",
 				"row": 9,
@@ -655,7 +656,7 @@
 			{
 				"name": "Combustion",
 				"row": 5,
-				"prerequisites": ["Flight","Industrialization","Railroads"],
+				"prerequisites": ["Flight","Industrialization"],
 				"quote": "'Any man who can drive safely while kissing a pretty girl is simply not giving the kiss the attention it deserves.' - Albert Einstein"
 			},
 			{
