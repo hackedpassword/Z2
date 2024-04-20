@@ -445,7 +445,7 @@
 			},
 			{
 				"name": "Education",
-				"row": 6,
+				"row": 7,
 				"prerequisites": ["Physics","Guilds"],
 				"uniques": ["Enables conversion of city production to [Science]","Enables Research agreements"],
 				"quote": "'Education is the best provision for old age.' - Aristotle"
@@ -516,7 +516,7 @@
 			},
 			{
 				"name": "Scientific Theory",
-				"row": 7,
+				"row": 6,
 				"prerequisites": ["Education","Printing Press"],
 				"quote": "'Every great advance in science has issued from a new audacity of imagination.' - John Dewey"
 			},
@@ -528,7 +528,7 @@
 			},
 			{
 				"name": "Chemistry",
-				"row": 8,
+				"row": 7,
 				"prerequisites": ["Education","Gunpowder"],
 				"quote": "'Wherever we look, the work of the chemist has raised the level of our civilization and has increased the productive capacity of the nation.' - Calvin Coolidge"
 			},
