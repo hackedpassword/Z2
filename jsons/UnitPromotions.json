@@ -454,10 +454,10 @@
 	},
 	{
 		"name": "Medic II",
-		"prerequisites": ["Medic"],
+		"prerequisites": ["Medic I"],
 		"uniques": [
 			"[+10] HP when healing <in [Foreign Land] tiles>",
-			"All adjacent units heal [+25] HP when healing",
+			"All adjacent units heal [+15] HP when healing",
 		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout"],
         "column": 10,
@@ -876,7 +876,8 @@
 
 	{
 		"name": "March", // granting this against Heal Instantly, so using that isn't a total waste
-		"prerequisites": ["Heal Instantly II","Accuracy II","Barrage II","Shock II","Drill II","Formation I"],
+		"prerequisites": ["Heal Instantly II","Accuracy II","Barrage II","Shock II","Drill II",
+			"Formation I","Medic I"],
 		"uniques": ["Unit will heal every turn, even if it performs an action"],
 		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege","Mounted"],
         "column": 11,
