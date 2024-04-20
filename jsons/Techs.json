@@ -656,7 +656,7 @@
 			{
 				"name": "Combustion",
 				"row": 5,
-				"prerequisites": ["Flight","Industrialization"],
+				"prerequisites": ["Flight","Petroleum"],
 				"quote": "'Any man who can drive safely while kissing a pretty girl is simply not giving the kiss the attention it deserves.' - Albert Einstein"
 			},
 			{
@@ -680,8 +680,8 @@
 		"techs": [
 			{
 				"name": "Refrigeration",
-				"row": 2,
-				"prerequisites": ["Biology", "Industrialization"],
+				"row": 3,
+				"prerequisites": ["Biology", "Railroads"],
 				"quote": "'And homeless near a thousand homes I stood, and near a thousand tables pined and wanted food.' - William Wordsworth"
 			},
 			{
@@ -715,7 +715,7 @@
 		"techs": [
 			{
 				"name": "Plastics",
-				"row": 2,
+				"row": 3,
 				"prerequisites": ["Refrigeration"],
 				"quote": "'Ben, I want to say one word to you, just one word: plastics.' - Buck Henry and Calder Willingham, The Graduate"
 			},
