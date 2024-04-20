@@ -534,7 +534,7 @@
 			},
 			{
 				"name": "Economics",
-				"row": 5,
+				"row": 6,
 				"prerequisites": ["Banking","Education"],
 				"quote": "'Compound interest is the most powerful force in the universe.' - Albert Einstein"
 			},
@@ -561,7 +561,7 @@
 			{
 				"name": "Industrialization",
 				"row": 5,
-				"prerequisites": ["Steam Power","Free Trade"],
+				"prerequisites": ["Scientific Theory","Free Trade"],
 				"quote": "'Industrialization based on machinery, already referred to as a characteristic of our age, is but one aspect of the revolution that is being wrought by technology.' - Emily Greene Balch"
 			},
 			{
@@ -608,7 +608,7 @@
 			{
 				"name": "Electricity",
 				"row": 7,
-				"prerequisites": ["Steam Power"],
+				"prerequisites": ["Steam Power","Industrialization"],
 				"quote": "'Is it a fact - or have I dreamt it - that, by means of electricity, the world of matter has become a great nerve, vibrating thousands of miles in a breathless point of time?' - Nathaniel Hawthorne"
 			},
 			{
