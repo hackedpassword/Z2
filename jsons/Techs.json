@@ -515,6 +515,18 @@
 				"quote": "'The winds and the waves are always on the side of the ablest navigators.' - Edward Gibbon"
 			},
 			{
+				"name": "Free Trade",
+				"row": 3,
+				"uniques": [
+					"[+50]% [Gold] from Trade Routes",  // Big trade bonus, with a secondary specific to coastal cities next
+					"[+2 Gold] [in all cities connected to capital] <in [Coastal] tiles>",  // Much appreciation to @SomeTroglodyte for redesigning this unique
+					"[+1] Movement <for [Civilian] units> <in [Coast] tiles>",
+					// #todo: add CS trade improvements, maybe other trade improvements
+				],
+				"prerequisites": ["Banking","Astronomy"],
+				"quote": "'A market is a law system. Without it, the only possible economy is the street robbery.' - Eugen von Böhm-Bawerk"
+			},
+			{
 				"name": "Scientific Theory",
 				"row": 6,
 				"prerequisites": ["Education","Printing Press"],
@@ -546,18 +558,7 @@
 				"prerequisites": ["Architecture"],
 				"quote": "'Those who cannot remember the past are condemned to repeat it.' - George Santayana"
 			},
-			{
-				"name": "Free Trade",
-				"row": 4,
-				"uniques": [
-					"[+50]% [Gold] from Trade Routes",  // Big trade bonus, with a secondary specific to coastal cities next
-					"[+2 Gold] [in all cities connected to capital] <in [Coastal] tiles>",  // Much appreciation to @SomeTroglodyte for redesigning this unique
-					"[+1] Movement <for [Civilian] units> <in [Coast] tiles>",
-					// #todo: add CS trade improvements, maybe other trade improvements
-				],
-				"prerequisites": ["Economics","Navigation"],
-				"quote": "'A market is a law system. Without it, the only possible economy is the street robbery.' - Eugen von Böhm-Bawerk"
-			},
+
 			{
 				"name": "Steam Power",
 				"row": 6,
