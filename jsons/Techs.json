@@ -560,7 +560,7 @@
 			},
 			{
 				"name": "Industrialization",
-				"row": 5,
+				"row": 7,
 				"prerequisites": ["Scientific Theory","Free Trade"],
 				"quote": "'Industrialization based on machinery, already referred to as a characteristic of our age, is but one aspect of the revolution that is being wrought by technology.' - Emily Greene Balch"
 			},
@@ -620,7 +620,7 @@
 
 			{
 				"name": "Flight",
-				"row": 6,
+				"row": 4,
 				"prerequisites": ["Steam Power","Railroads"],
 				"quote": "'Aeronautics was neither an industry nor a science. It was a miracle.' - Igor Sikorsky"
 			},
@@ -655,7 +655,7 @@
 			},
 			{
 				"name": "Combustion",
-				"row": 5,
+				"row": 4,
 				"prerequisites": ["Flight","Petroleum"],
 				"quote": "'Any man who can drive safely while kissing a pretty girl is simply not giving the kiss the attention it deserves.' - Albert Einstein"
 			},
