@@ -560,19 +560,19 @@
 			},
 			{
 				"name": "Industrialization",
-				"row": 3,
+				"row": 5,
 				"prerequisites": ["Steam Power","Free Trade"],
 				"quote": "'Industrialization based on machinery, already referred to as a characteristic of our age, is but one aspect of the revolution that is being wrought by technology.' - Emily Greene Balch"
 			},
 			{
 				"name": "Railroads",
-				"row": 5,
+				"row": 3,
 				"prerequisites": ["Economics","Scientific Theory"],
 				"quote": "'The introduction of so powerful an agent as steam to a carriage on wheels will make a great change in the situation of man.' - Thomas Jefferson"
 			},
 			{
 				"name": "Steam Power",
-				"row": 3,
+				"row": 4,
 				"uniques": [
 					"[+1] Movement <for [Embarked] units>",
 					"[+1] Movement <for [Water] units> <in [Ocean] tiles>",  // thinking of creating a steam power promotion as a ship retrofit
@@ -621,7 +621,7 @@
 			{
 				"name": "Flight",
 				"row": 6,
-				"prerequisites": ["Steam Power"],
+				"prerequisites": ["Steam Power","Railroads"],
 				"quote": "'Aeronautics was neither an industry nor a science. It was a miracle.' - Igor Sikorsky"
 			},
 
