@@ -13,7 +13,7 @@
 	},	
 		
 // Strategic resources - Z2 replacements //		
-		
+
 	{  // Fairy	
 		name: "Horses",
 		resourceType: "Strategic",
@@ -44,7 +44,7 @@
 	{  // Heart	
 		name: "Oil",
 		resourceType: "Strategic",
-		revealedBy: "Petroleum",
+		revealedBy: "Archaeology", // not petroleum, this is the reveal, next tech is the application
 		terrainsCanBeFoundOn: ["Desert","Coast","Tundra","Marsh","Jungle","Cave","Cavern"],
 		production: 1,
 		improvedBy: ["Oil well", "Offshore Platform"],
@@ -53,7 +53,7 @@
 	{  // Magic potion	
 		name: "Aluminum",
 		resourceType: "Strategic",
-		revealedBy: "Radio",
+		revealedBy: "Flight",
 		terrainsCanBeFoundOn: ["Desert","Tundra","Hill","Snow","Jungle","Cave","Cavern"],
 		production: 1,
 		improvement: "Mine",
@@ -62,7 +62,7 @@
 	{  // Link doll	
 		name: "Uranium",
 		resourceType: "Strategic",
-		revealedBy: "Atomic Theory",
+		revealedBy: "Radio",
 		terrainsCanBeFoundOn: ["Marsh","Forest","Tundra"],
 		production: 1,
 		improvement: "Mine",
