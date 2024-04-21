@@ -693,13 +693,13 @@
 			},
 			{
 				"name": "Radio",
-				"row": 7,
+				"row": 8,
 				"prerequisites": ["Electronics"],
 				"quote": "'The whole country was tied together by radio. We all experienced the same heroes and comedians and singers. They were giants.' - Woody Allen"
 			},
 			{
 				"name": "Replaceable Parts",
-				"row": 6,
+				"row": 4,
 				"prerequisites": ["Electronics","Combustion"],
 				"quote": "'Nothing is particularly hard if you divide it into small jobs.' - Henry Ford"
 			},
@@ -722,13 +722,13 @@
 			},
 				{
 				"name": "Atomic Theory",
-				"row": 4,
+				"row": 5,
 				"prerequisites": ["Radio"],
 				"quote": "'The unleashed power of the atom has changed everything save our modes of thinking, and we thus drift toward unparalleled catastrophes.' - Albert Einstein"
 			},
 			{
 				"name": "Radar",
-				"row": 8,
+				"row": 7,
 				"prerequisites": ["Radio","Replaceable Parts"],
 				"quote": "'Vision is the art of seeing things invisible.' - Jonathan Swift"
 			},
