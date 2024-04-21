@@ -693,7 +693,7 @@
 			},
 			{
 				"name": "Radio",
-				"row": 8,
+				"row": 7,
 				"prerequisites": ["Electronics"],
 				"quote": "'The whole country was tied together by radio. We all experienced the same heroes and comedians and singers. They were giants.' - Woody Allen"
 			},
