@@ -687,7 +687,7 @@
 		"techs": [
 			{
 				"name": "Refrigeration",
-				"row": 3,
+				"row": 2,
 				"prerequisites": ["Biology", "Combustion"],
 				"quote": "'And homeless near a thousand homes I stood, and near a thousand tables pined and wanted food.' - William Wordsworth"
 			},
@@ -717,7 +717,7 @@
 			{
 				"name": "Plastics",
 				"row": 2,
-				"prerequisites": ["Refrigeration"],
+				"prerequisites": ["Refrigeration","Replaceable Parts"],
 				"quote": "'Ben, I want to say one word to you, just one word: plastics.' - Buck Henry and Calder Willingham, The Graduate"
 			},
 				{
