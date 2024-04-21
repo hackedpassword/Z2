@@ -529,7 +529,7 @@
 			{
 				"name": "Scientific Theory",
 				"row": 7,
-				"prerequisites": ["Education"],
+				"prerequisites": ["Education","Printing Press"],
 				"quote": "'Every great advance in science has issued from a new audacity of imagination.' - John Dewey"
 			},
 			{
@@ -583,7 +583,7 @@
 			},
 			{
 				"name": "Fertilizer",
-				"row": 9,
+				"row": 8,
 				"prerequisites": ["Chemistry","Scientific Theory"],
 				"quote": "'The nation that destroys its soil destroys itself.' - Franklin Delano Roosevelt"
 			},
@@ -693,7 +693,7 @@
 			},
 			{
 				"name": "Radio",
-				"row": 8,
+				"row": 7,
 				"prerequisites": ["Electronics"],
 				"quote": "'The whole country was tied together by radio. We all experienced the same heroes and comedians and singers. They were giants.' - Woody Allen"
 			},
@@ -716,20 +716,26 @@
 		"techs": [
 			{
 				"name": "Plastics",
-				"row": 3,
+				"row": 2,
 				"prerequisites": ["Refrigeration"],
 				"quote": "'Ben, I want to say one word to you, just one word: plastics.' - Buck Henry and Calder Willingham, The Graduate"
 			},
+				{
+				"name": "Atomic Theory",
+				"row": 4,
+				"prerequisites": ["Radio"],
+				"quote": "'The unleashed power of the atom has changed everything save our modes of thinking, and we thus drift toward unparalleled catastrophes.' - Albert Einstein"
+			},
 			{
 				"name": "Radar",
-				"row": 7,
+				"row": 8,
 				"prerequisites": ["Radio","Replaceable Parts"],
 				"quote": "'Vision is the art of seeing things invisible.' - Jonathan Swift"
 			},
 			{
 				"name": "Combined Arms",
 				"row": 9,
-				"prerequisites": ["Ballistics","Replaceable Parts","Radio"],
+				"prerequisites": ["Ballistics","Radio"],
 				"quote": "'The root of the evil is not the construction of new, more dreadful weapons. It is the spirit of conquest.' - Ludwig von Mises"
 			},
 		]
@@ -750,12 +756,7 @@
 				"prerequisites": ["Plastics"],
 				"quote": "'In nothing do men more nearly approach the gods than in giving health to men.' - Cicero"
 			},
-			{
-				"name": "Atomic Theory",
-				"row": 4,
-				"prerequisites": ["Radar","Plastics"],
-				"quote": "'The unleashed power of the atom has changed everything save our modes of thinking, and we thus drift toward unparalleled catastrophes.' - Albert Einstein"
-			},
+
 			{
 				"name": "Computers",
 				"row": 9,
@@ -773,7 +774,7 @@
 		"techs": [
 			{
 				"name": "Ecology",
-				"row": 1,
+				"row": 2,
 				"prerequisites": ["Atomic Theory","Pharmaceuticals"],
 				"quote": "'Only within the moment of time represented by the present century has one species, man, acquired significant power to alter the nature of his world.' - Rachel Carson"
 			},
@@ -807,12 +808,14 @@
 		"buildingCost": 750,
 		"wonderCost": 1250,
 		"techs": [
+		/*
 			{  // #TODO: re-appropriate Carrier, add nuclear carrier here
 				"name": "Naval Security",
 				"row": 3,
 				"prerequisites": ["Nuclear Fission"],
 				"quote": ""
 			},
+		*/
 			{
 				"name": "Advanced Ballistics",
 				"row": 5,
@@ -862,7 +865,7 @@
 			{
 				"name": "Particle Physics",
 				"row": 2,
-				"prerequisites": ["Lasers","Ecology","Advanced Ballistics","Naval Security"],
+				"prerequisites": ["Lasers","Ecology"],
 				"quote": "'Every particle of matter is attracted by or gravitates to every other particle of matter with a force inversely proportional to the squares of their distances.' - Isaac Newton"
 			},
 			{
