@@ -445,7 +445,7 @@
 			},
 			{
 				"name": "Education",
-				"row": 7,
+				"row": 5,
 				"prerequisites": ["Physics","Guilds"],
 				"uniques": ["Enables conversion of city production to [Science]","Enables Research agreements"],
 				"quote": "'Education is the best provision for old age.' - Aristotle"
@@ -490,7 +490,7 @@
 			{
 				"name": "Gunpowder",
 				"row": 9,
-				"prerequisites": ["Metallurgy"],
+				"prerequisites": ["Metallurgy","Chivalry"],
 				"quote": "'The day when two army corps can annihilate each other in one second, all civilized nations, it is to be hoped, will recoil from war and discharge their troops.' - Alfred Nobel"
 			},
 		]
@@ -528,13 +528,13 @@
 			},
 			{
 				"name": "Scientific Theory",
-				"row": 6,
+				"row": 7,
 				"prerequisites": ["Education","Printing Press"],
 				"quote": "'Every great advance in science has issued from a new audacity of imagination.' - John Dewey"
 			},
 			{
 				"name": "Economics",
-				"row": 5,
+				"row": 6,
 				"prerequisites": ["Banking","Education"],
 				"quote": "'Compound interest is the most powerful force in the universe.' - Albert Einstein"
 			},
