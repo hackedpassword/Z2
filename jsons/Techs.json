@@ -426,7 +426,7 @@
 			},
 			{
 				"name": "Printing Press",
-				"row": 8,
+				"row": 5,
 				"prerequisites": ["Machinery"],
 				"uniques": [
 					"[+100 Faith]",
@@ -484,7 +484,7 @@
 			{
 				"name": "Banking",
 				"row": 4,
-				"prerequisites": ["Enterprising"],
+				"prerequisites": ["Enterprising","Printing Press"],
 				"quote": "'Happiness: a good bank account, a good cook and a good digestion' - Jean Jacques Rousseau"
 			},
 			{
@@ -535,7 +535,7 @@
 			{
 				"name": "Economics",
 				"row": 6,
-				"prerequisites": ["Banking","Education"],
+				"prerequisites": ["Banking"],
 				"quote": "'Compound interest is the most powerful force in the universe.' - Albert Einstein"
 			},
 			{
