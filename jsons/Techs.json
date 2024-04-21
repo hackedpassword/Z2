@@ -445,7 +445,7 @@
 			},
 			{
 				"name": "Education",
-				"row": 6,
+				"row": 7,
 				"prerequisites": ["Physics","Guilds"],
 				"uniques": ["Enables conversion of city production to [Science]","Enables Research agreements"],
 				"quote": "'Education is the best provision for old age.' - Aristotle"
@@ -560,7 +560,7 @@
 			},
 			{
 				"name": "Industrialization",
-				"row": 7,
+				"row": 5,
 				"prerequisites": ["Scientific Theory","Free Trade"],
 				"quote": "'Industrialization based on machinery, already referred to as a characteristic of our age, is but one aspect of the revolution that is being wrought by technology.' - Emily Greene Balch"
 			},
