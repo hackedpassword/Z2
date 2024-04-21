@@ -596,6 +596,7 @@
 		"cost": 2500,
 		"requiredTech": "Nuclear Fusion",
 		"uniques": [
+			"Comment <Gained at Nuclear Fusion tech, also requires Telecommunications tech>",
 			"Nuclear weapon of Strength [3]",
 			"[200]% maintenance costs",  // expensive
 			"Destroys tile improvements when attacking",
