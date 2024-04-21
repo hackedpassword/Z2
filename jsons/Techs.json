@@ -528,13 +528,13 @@
 			},
 			{
 				"name": "Scientific Theory",
-				"row": 7,
+				"row": 6,
 				"prerequisites": ["Education","Printing Press"],
 				"quote": "'Every great advance in science has issued from a new audacity of imagination.' - John Dewey"
 			},
 			{
 				"name": "Economics",
-				"row": 6,
+				"row": 5,
 				"prerequisites": ["Banking","Education"],
 				"quote": "'Compound interest is the most powerful force in the universe.' - Albert Einstein"
 			},
@@ -583,7 +583,7 @@
 			},
 			{
 				"name": "Fertilizer",
-				"row": 8,
+				"row": 9,
 				"prerequisites": ["Chemistry","Scientific Theory"],
 				"quote": "'The nation that destroys its soil destroys itself.' - Franklin Delano Roosevelt"
 			},
@@ -620,7 +620,7 @@
 
 			{
 				"name": "Flight",
-				"row": 5,
+				"row": 4,
 				"prerequisites": ["Steam Power","Railroads"],
 				"quote": "'Aeronautics was neither an industry nor a science. It was a miracle.' - Igor Sikorsky"
 			},
