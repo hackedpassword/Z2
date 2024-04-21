@@ -528,7 +528,7 @@
 			},
 			{
 				"name": "Scientific Theory",
-				"row": 7,
+				"row": 6,
 				"prerequisites": ["Education","Printing Press"],
 				"quote": "'Every great advance in science has issued from a new audacity of imagination.' - John Dewey"
 			},
@@ -560,7 +560,7 @@
 			},
 			{
 				"name": "Industrialization",
-				"row": 6,
+				"row": 7,
 				"prerequisites": ["Scientific Theory","Free Trade"],
 				"quote": "'Industrialization based on machinery, already referred to as a characteristic of our age, is but one aspect of the revolution that is being wrought by technology.' - Emily Greene Balch"
 			},
@@ -572,7 +572,7 @@
 			},
 			{
 				"name": "Steam Power",
-				"row": 5,
+				"row": 3,
 				"uniques": [
 					"[+1] Movement <for [Embarked] units>",
 					"[+1] Movement <for [Water] units> <in [Ocean] tiles>",  // thinking of creating a steam power promotion as a ship retrofit
@@ -607,7 +607,7 @@
 		"techs": [
 			{
 				"name": "Electricity",
-				"row": 7,
+				"row": 5,
 				"prerequisites": ["Steam Power","Industrialization"],
 				"quote": "'Is it a fact - or have I dreamt it - that, by means of electricity, the world of matter has become a great nerve, vibrating thousands of miles in a breathless point of time?' - Nathaniel Hawthorne"
 			},
