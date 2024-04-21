@@ -566,8 +566,8 @@
 			},
 			{
 				"name": "Railroads",
-				"row": 4,
-				"prerequisites": ["Economics","Scientific Theory"],
+				"row": 1,
+				"prerequisites": ["Navigation"],
 				"quote": "'The introduction of so powerful an agent as steam to a carriage on wheels will make a great change in the situation of man.' - Thomas Jefferson"
 			},
 			{
@@ -578,7 +578,7 @@
 					"[+1] Movement <for [Water] units> <in [Ocean] tiles>",  // thinking of creating a steam power promotion as a ship retrofit
 					// "[+1] Movement <for non-[Embarked] units> <in [Ocean] tiles>",  // MC complaint: contains the conditional "for non-[Embarked] units", which is of an unknown type!
 				],
-				"prerequisites": ["Scientific Theory"],
+				"prerequisites": ["Scientific Theory","Economics"],
 				"quote": "'The nations of the West hope that by means of steam communication all the world will become as one family.' - Townsend Harris"
 			},
 			{
@@ -607,14 +607,14 @@
 		"techs": [
 			{
 				"name": "Electricity",
-				"row": 5,
+				"row": 6,
 				"prerequisites": ["Steam Power","Industrialization"],
 				"quote": "'Is it a fact - or have I dreamt it - that, by means of electricity, the world of matter has become a great nerve, vibrating thousands of miles in a breathless point of time?' - Nathaniel Hawthorne"
 			},
 			{
 				"name": "Petroleum",
-				"row": 2,
-				"prerequisites": ["Archaeology","Steam Power"],
+				"row": 1,
+				"prerequisites": ["Railroads","Archaeology"],
 				"quote": "'I love the smell of napalm in the morning.'", 
 			},
 
@@ -630,6 +630,13 @@
 				"row": 9,
 				"prerequisites": ["Fertilizer","Military Science"],
 				"quote": "'As soon as men decide that all means are permitted to fight an evil, then their good becomes indistinguishable from the evil that they set out to destroy.' - Christopher Dawson"
+			},
+			{
+			// special tech, to be developed
+				"name": "Steampunk Tech",
+				"row": 3,
+				"prerequisites": ["Steam Power"],
+				"quote": "special tech WIP",
 			},
 		]
 	},
@@ -650,7 +657,7 @@
 			{
 				"name": "Electronics",
 				"row": 7,
-				"prerequisites": ["Electricity"],
+				"prerequisites": ["Electricity","Flight"],
 				"quote": "'There's a basic principle about consumer electronics: it gets more powerful all the time and it gets cheaper all the time.' - Trip Hawkins"
 			},
 			{
@@ -696,13 +703,7 @@
 				"prerequisites": ["Electronics","Combustion"],
 				"quote": "'Nothing is particularly hard if you divide it into small jobs.' - Henry Ford"
 			},
-			{
-			// special tech, to be developed
-				"name": "Steampunk Tech",
-				"row": 10,
-				"prerequisites": ["Ballistics"],
-				"quote": "special tech",
-			},
+
 
 		]
 	},
