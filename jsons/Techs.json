@@ -620,8 +620,8 @@
 
 			{
 				"name": "Flight",
-				"row": 3,
-				"prerequisites": ["Steam Power","Railroads"],
+				"row": 7,
+				"prerequisites": ["Steam Power","Scientific Theory"],
 				"quote": "'Aeronautics was neither an industry nor a science. It was a miracle.' - Igor Sikorsky"
 			},
 
@@ -656,7 +656,7 @@
 			{
 				"name": "Combustion",
 				"row": 4,
-				"prerequisites": ["Flight","Petroleum"],
+				"prerequisites": ["Electricity","Petroleum"],
 				"quote": "'Any man who can drive safely while kissing a pretty girl is simply not giving the kiss the attention it deserves.' - Albert Einstein"
 			},
 			{
