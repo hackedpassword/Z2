@@ -134,7 +134,10 @@
 	// Can only be removed by UnitType: Sword, and is called "Fight enemy!" via translations
 		"name": "Remove Trap",
 		"turnsToBuild": 2,  // usually one turn, at least on King difficulty atm
-		"uniques": ["Can be built outside your borders"],
+		"uniques": [
+			"[+15] Experience", // Gain exp for fighting enemies! 
+			"Can be built outside your borders", 
+		],
 	},
 	{
 		"name": "Remove Fort",  // Permanence not required
