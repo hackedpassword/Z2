@@ -339,11 +339,12 @@
 		"turnsToBuild": 4,
 		// "production": 1,  // roads make cities more productive - moved to uniques
 		"techRequired": "The Wheel",
-		"uniques": ["Can be built outside your borders", "Costs [1] [Gold] per turn"],
 		"shortcutKey": "R",
-		//"uniques": [
-		//	"[+1 Production] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>", // no spamming resource icons
-		//], 
+		"uniques": [
+			"Can be built outside your borders",
+			"Costs [1] [Gold] per turn",
+			"[+1 Production] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>", // no spamming resource icons
+		/,
 	        "civilopediaText": [
 	        	{"text":"Paths double movement between tiles. Adjacent Fast travel tiles also count for 2x movement."},
 	        	{"text":"Increases movement 3x after discovering Machinery.", "link":"Technology/Machinery"},
@@ -355,11 +356,12 @@
 		"name": "Railroad",
 		"terrainsCanBeBuiltOn": ["Land","Natural Wonder"], // so fast travel can cross bridges
 		"turnsToBuild": 4,
-		// "production": 2,
+		// "production": 2, // same concept as road
 		"techRequired": "Railroads",
-		"uniques": ["Can be built outside your borders", "Costs [2] [Gold] per turn"],
 		"shortcutKey": "R",
 		"uniques": [
+			"Can be built outside your borders",
+			"Costs [2] [Gold] per turn",
 			"[+2 Production] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>", // no spamming resource icons
 		], 
 	        "civilopediaText": [
