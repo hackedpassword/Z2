@@ -3,7 +3,7 @@
         "name": "Civilian",
         "movementType": "Land", 
         "uniques": [
-            "Double movement in [Plains]",
+            "Double movement in [Plains] <when not at war>",
         ] 
     },
     {
@@ -79,6 +79,7 @@
         "movementType": "Land",
         "uniques": [
             "Can build [Remove Trap] improvements on tiles <in [Trap] tiles>",  // fight enemies of the land
+            "This Unit gains [15] XP <upon building a [Remove Trap] improvement>", // OH THIS CLEVER LMAO and adds further accuracy to the mod's intent. Beautiful, invented right here in Z2.
             "Double movement in [Force]",
             "Double movement in [OceanTile]", 
             "Double movement in [CoastTile]",
@@ -89,6 +90,7 @@
         "movementType": "Land", 
         "uniques": [
             "Can build [Remove Trap] improvements on tiles <in [Trap] tiles>",
+            "This Unit gains [15] XP <upon building a [Remove Trap] improvement>",
             "Double movement in [Force]",
             "Double movement in [OceanTile]", 
             "Double movement in [CoastTile]",
@@ -99,6 +101,7 @@
         "movementType": "Land", 
         "uniques": [
             "Can build [Remove Trap] improvements on tiles <in [Trap] tiles>",
+            "This Unit gains [15] XP <upon building a [Remove Trap] improvement>",
             "Double movement in [Force]",
             "Double movement in [OceanTile]", 
             "Double movement in [CoastTile]",
@@ -109,6 +112,7 @@
         "movementType": "Land", 
         "uniques": [
             "Can build [Remove Trap] improvements on tiles <in [Trap] tiles>",
+            "This Unit gains [15] XP <upon building a [Remove Trap] improvement>",
             "Double movement in [Force]",
             "Double movement in [OceanTile]", 
             "Double movement in [CoastTile]",
