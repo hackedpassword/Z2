@@ -135,7 +135,8 @@
 		"name": "Remove Trap",
 		"turnsToBuild": 2,  // usually one turn, at least on King difficulty atm
 		"uniques": [
-			"[+15] Experience", // Gain exp for fighting enemies! 
+			// "[+15] Experience", // Gain exp for fighting enemies! 
+			// "[amount] XP gained from combat", // well fine whatever the above doesn't exist yet
 			"Can be built outside your borders", 
 		],
 	},
