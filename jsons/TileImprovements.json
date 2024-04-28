@@ -135,8 +135,9 @@
 		"name": "Remove Trap",
 		"turnsToBuild": 2,  // usually one turn, at least on King difficulty atm
 		"uniques": [
+			// The below doesn't exist, however, head over to UnitTypes.json and see the unique that gives XP for fighting enemies, i.e. removing traps
+			// What this additionally infers is that sudo world events in the form of improvements can interpret into themed gameplay actions
 			// "[+15] Experience", // Gain exp for fighting enemies! 
-			// "[amount] XP gained from combat", // well fine whatever the above doesn't exist yet
 			"Can be built outside your borders", 
 		],
 	},
@@ -344,12 +345,12 @@
 			"Can be built outside your borders",
 			"Costs [1] [Gold] per turn",
 			"[+1 Production] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>", // no spamming resource icons
-		/,
+		],
 	        "civilopediaText": [
 	        	{"text":"Paths double movement between tiles. Adjacent Fast travel tiles also count for 2x movement."},
 	        	{"text":"Increases movement 3x after discovering Machinery.", "link":"Technology/Machinery"},
-	        	{"text":"Unable to build bridges over lava flows."}
-	        ]
+	        	{"text":"Unable to build bridges over lava flows."},
+	        ],
 	},
 	{
 	// Name: Fast travel
@@ -365,9 +366,9 @@
 			"[+2 Production] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>", // no spamming resource icons
 		], 
 	        "civilopediaText": [
-			{"text":"Movement increases 10x on Fast travel paths."}
+			{"text":"Movement increases 10x on Fast travel paths."},
 	        	{"text":"Unable to build bridges over lava flows."}
-		]
+		],
 	},
 
 
