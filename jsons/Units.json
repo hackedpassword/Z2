@@ -400,7 +400,8 @@
 			"[+75]% Strength <when attacking>",
 			"Can only attack [Water] tiles",
 			"[+2] Sight",
-			"Double movement in [Deep Ocean]",
+			"Double movement in [Deep Ocean]", // depreciated
+			"Double movement in [Rough Ocean]",
 			"Can carry [2] [Missile] units",
 			"Can carry [1] [Payload] units <after discovering [Rocketry]>",  // can launch payload munitions at target
 			"Can carry [1] [Atomic Payload] units",
