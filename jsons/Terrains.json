@@ -211,9 +211,21 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		],
 		"RGB": [33, 97, 171],
 	},
-	{  // todo: rename to 'Rough Ocean' 
-	   // remember in map editor to replace tiles w/ new tile, then decom deep ocean tile
+	{  // depreciated -> use Rough Ocean
 		"name": "Deep Ocean",  // treacherous terrain used as a soft clip
+		"type": "Water",
+		"movementCost": 3,
+		"RGB": [3, 65, 114],
+		"uniques": [
+			"Rough terrain",
+			"Blocks line-of-sight from tiles at same elevation",  // waves and swells. <3 this! GREAT ocean movement strategy maker! Map tiles placed with intent, awesome tactical concept
+			"Units ending their turn on this terrain take [10] damage <with [50]% chance>",  // choppy and dangerous
+                        "Never receives any resources",
+	        	// "Has an elevation of [1] for visibility calculations",  // keep vis down by retaining default elevation, so viewing to/through ocean is reduced with navigation channels
+		],
+	},
+	{
+		"name": "Rough Ocean",  // treacherous terrain used as a soft clip
 		"type": "Water",
 		"movementCost": 3,
 		"RGB": [3, 65, 114],
