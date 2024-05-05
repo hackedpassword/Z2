@@ -321,11 +321,13 @@
 		// "upgradesTo": "Modern Armor",  // No. These units have their own purpose, and consume oil instead of more valuable aluminum
 		"uniques": [
 			"Can move after attacking <if it hasn't used other actions yet>",
+			// Ordering strengths high to low, group alike
 			"[+75]% Strength <vs [Gunpowder] units> <when defending>",
-			"[+50]% Strength <vs [Armored] units> <when attacking>",  // Armor piercing shells
+			"[+50]% Strength <vs [Armored] units> <when attacking>",  // Armor piercing shells // #todo upgrade to APS instead
 			"[+25]% Strength <vs cities>",
-			"[-25]% Strength <vs [Missile] units>",
+			"[-25]% Strength <vs [{Missile} {Ranged Water}] units>",
 			"No defensive terrain bonus",
+			"Comment [Ranged unit]", // Let the player know since this is an important difference from unmodded Unciv
 			// does "Never appears as a Barbarian unit"  // deals were made - but do barbarians need oil resource? 
 		],
 		"attackSound": "tankshot",
@@ -783,9 +785,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		],
 		"attackSound": "shipguns"
 	},
-
-// Units adjusted to Prehistoric era
-
+// Hero class, still to be developed, continuing with sword unitType for now
 	{
 		"name": "Swordsman",
 		"unitType": "Sword",
@@ -839,6 +839,13 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		],
 		"attackSound": "metalhit"
 	},
+
+////////////////
+// UNMODIFIED //    ///////////////////////////////////
+////////////////
+
+// Some below are modified and need to be moved to the upper section yet
+			
 	{
 		"name": "Warrior",
 		"unitType": "Sword",
@@ -2195,7 +2202,11 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"cost": 300,
 		"requiredTech": "Combined Arms",
 		"upgradesTo": "Helicopter Gunship",
-		"uniques": ["[+100]% Strength <vs [Armored] units>", "Never appears as a Barbarian unit"],
+		"uniques": [
+			"[+100]% Strength <vs [Armored] units>",
+			"[+200]% Strength <vs [{Landship} {Tank} {Modern Armor}] units>", // Anti-tank guns are otherwise barely useful and almost immediately superceded
+			"Never appears as a Barbarian unit", 
+		],
 		"attackSound": "machinegun"
 	},
 	{
