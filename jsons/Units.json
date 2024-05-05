@@ -394,7 +394,7 @@
 		"range": 3,
 		"rangedStrength": 85,
 		"cost": 475,
-		"requiredTech": "Naval Security",
+		"requiredTech": "Nuclear Fission", // "Naval Security",
 		"requiredResource": "Uranium",  // how is this not in original G&K? asked every player
 		"uniques": [
 			"[75]% chance to intercept air attacks",
