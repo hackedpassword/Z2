@@ -44,6 +44,8 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"Never receives any resources",
 			//"Units ending their turn on this terrain take [10] damage <with [20]% chance>",  // enemies amidst
 			"[-2 Gold] <in [River] tiles>",  // turn down resource noise
+			"[+100]% Strength <vs [Air] units> <when defending>",
+			"[+50]% Strength <vs [Land] units> <when defending>", 
 		],
 	},
 	{
@@ -77,7 +79,9 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			// "[+1 Culture] <with [10]% chance>",
 			// "[+1 Happiness] <with [10]% chance>",
 			// "[+1 Faith] <with [10]% chance>",
-                        // "[+1000]% Strength <vs [Air] units> <when defending>",  // not for base terrain, put into globalUniques
+                        /*
+			"[+1000]% Strength <vs [Air] units> <when defending>",  
+			*/ not for base terrain, put into globalUniques
 
 		// #todo: figure out ways to implement these
 			// "[5]% Chance to be destroyed by nukes",  // base terrains transform this value to 0% - semi-bug
@@ -225,7 +229,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		],
 	},
 	{
-		"name": "Rough Ocean",  // treacherous terrain used as a soft clip
+		"name": "Rough Ocean",  // (map version z14 updated tiles) treacherous terrain used as a soft clip
 		"type": "Water",
 		"movementCost": 3,
 		"RGB": [3, 65, 114],
@@ -238,8 +242,19 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		],
 	},
 	{
+		"name": "Tundra", // obsolete, replaced by Volcanic 
+		"type": "Land",
+		"movementCost": 1,
+		"uniques": [
+			"Rough terrain",
+			"[+1 Science] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+		],
+		"RGB": [200, 76, 12],
+	},
+	{
 	// #todo: replace by a similar terrain, more volcanic (basically rename)
-		"name": "Tundra",
+		"name": "Volcanic", // to be integrated into map version z15
 		"type": "Land",
 		"movementCost": 1,
 		"uniques": [
