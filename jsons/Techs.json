@@ -722,13 +722,13 @@
 			},
 				{
 				"name": "Atomic Theory",
-				"row": 4,
+				"row": 3,
 				"prerequisites": ["Radio","Replaceable Parts"],
 				"quote": "'The unleashed power of the atom has changed everything save our modes of thinking, and we thus drift toward unparalleled catastrophes.' - Albert Einstein"
 			},
 			{
 				"name": "Radar",
-				"row": 7,
+				"row": 8,
 				"prerequisites": ["Radio","Replaceable Parts"],
 				"quote": "'Vision is the art of seeing things invisible.' - Jonathan Swift"
 			},
