@@ -2040,10 +2040,13 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"cost": 375,
 		"requiredTech": "Plastics",
 		"upgradesTo": "Mechanized Infantry",
-		"obsoleteTech": "Mobile Tactics",
+		// "obsoleteTech": "Mobile Tactics",
+		"uniques": [
+			"Double movement in [Desert] tiles", 
+		], 
 		"attackSound": "shot"
 	},
-	{
+	{ // will be able to transform into RPG Support and back
 		"name": "Machine Gun",
 		"unitType": "Ranged Gunpowder",
 		"range": 1,
@@ -2052,9 +2055,24 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"rangedStrength": 60,
 		"cost": 350,
 		"requiredTech": "Ballistics",
-		// "upgradesTo": "Mechanized Infantry",
+		// "upgradesTo": "Pulse Rifle", // then to Railgun
 		"attackSound": "machinegun"
-		// Upgrades to Bazooka in BNW
+	},
+	{
+		"name": "RPG Support",
+		"unitType": "Ranged Gunpowder",
+		"range": 2,
+		"movement": 2,
+		"strength": 50,
+		"rangedStrength": 140,
+		"cost": 350,
+		"requiredTech": "Ballistics",
+		// "upgradesTo": "", 
+		"uniques": [
+			"", 
+		], 
+
+		"attackSound": "missile"
 	},
 	{
 		"name": "Anti-Aircraft Gun",
@@ -2090,11 +2108,12 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 	// The idea here is these units come pre-trained. Not just Soldier, no, Marine, and thus better trained on deployment for front-line combat.
 		"name": "Marine",
 		"unitType": "Gunpowder",
-		"movement": 2,
+		"movement": 3,
 		"strength": 65,
 		"cost": 400,
 		"requiredTech": "Pharmaceuticals",
-		"promotions": ["Amphibious","Medic","Woodsman","Cover I","Ambush I"],
+		"promotions": ["Amphibious I","Medic I","Woodsman","Ambush I"],
+		"upgradesTo": "Paratrooper",
 		"uniques": [
 			"[+1] Sight <when [Embarked]>",
 			"Can move immediately once bought",
@@ -2168,12 +2187,12 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"name": "Paratrooper",
 		"unitType": "Gunpowder",
 		"movement": 2,
-		"strength": 65,
+		"strength": 85,
 		"cost": 375,
 		"requiredTech": "Radar",
 		"uniques": [
 			"May Paradrop up to [5] tiles from inside friendly territory",
-			"Cannot enter ocean tiles", // may be temporary
+			// "Cannot enter ocean tiles", // may be temporary
 			"Can move immediately once bought",  // bonus for buying, air delivery
                         "Never appears as a Barbarian unit"],
 		"attackSound": "shot"
