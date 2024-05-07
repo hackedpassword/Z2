@@ -27,7 +27,7 @@
 		name: "Iron",
 		resourceType: "Strategic",
 		revealedBy: "Iron Working",
-		terrainsCanBeFoundOn: ["Grassland","Plains","Desert","Tundra","Hill","Marsh"],
+		terrainsCanBeFoundOn: ["Volcanic","Grassland","Plains","Desert","Tundra","Hill","Marsh"],
 		production: 1,
 		improvement: "Mine",
 		improvementStats: {"production": 1},  // missing from original resource
@@ -36,7 +36,7 @@
 		name: "Coal",
 		resourceType: "Strategic",
 		revealedBy: "Metallurgy",
-		terrainsCanBeFoundOn: ["Grassland","Plains","Hill","Forest","Marsh","Cave","Cavern"],
+		terrainsCanBeFoundOn: ["Volcanic","Grassland","Plains","Hill","Forest","Marsh","Cave","Cavern"],
 		production: 1,
 		improvement: "Mine",
 		improvementStats: {"production": 2},
@@ -45,7 +45,7 @@
 		name: "Oil",
 		resourceType: "Strategic",
 		revealedBy: "Archaeology", // not petroleum, this is the reveal, next tech is the application
-		terrainsCanBeFoundOn: ["Desert","Coast","Tundra","Marsh","Jungle","Cave","Cavern"],
+		terrainsCanBeFoundOn: ["Volcanic","Desert","Coast","Tundra","Marsh","Jungle","Cave","Cavern"],
 		production: 1,
 		improvedBy: ["Oil well", "Offshore Platform"],
 		improvementStats: {"production": 3},
