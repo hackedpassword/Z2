@@ -9,6 +9,10 @@
 		"[200]% Strength <for [Land] units> <when defending> <vs [Air] units> <in [Cave] tiles>",
 		"[100]% Strength <for [Land] units> <when defending> <vs [Air] units> <in [Mountain] tiles>",
 
+		// testing application, does this work? DTW? 
+		"[50]% Strength <for [Sword] units> <in [Cavern] tiles>", 
+		"[100]% Strength <for [Civilian] units> <in [Cavern] tiles>", 
+
 		// move to Techs
 		"[-90]% maintenance on road & railroads",  // Not trying to penalize player for establishing movement paths
 		
