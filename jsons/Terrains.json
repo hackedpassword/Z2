@@ -310,7 +310,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 2,
 		"overrideStats": true,
 		"defenceBonus": 0.25,
-		"occursOn": ["Tundra","Plains","Grassland","Desert","Mountain"],
+		"occursOn": ["Volcanic","Tundra","Plains","Grassland","Desert","Mountain"],
 		"uniques": [
 			"Rough terrain",
 			"[+10] Strength for cities built on this terrain",
@@ -326,7 +326,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 2,
 		"overrideStats": true,
 		"defenceBonus": 0.25,
-		"occursOn": ["Tundra","Plains","Grassland","Desert"],
+		"occursOn": ["Volcanic","Tundra","Plains","Grassland","Desert"],
 		"uniques": [
 			"Rough terrain",
 			"[+10] Strength for cities built on this terrain",
@@ -354,7 +354,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		
 		"name": "Boulder",  
 		"type": "TerrainFeature",
-		"occursOn": ["Grassland","Plains","Desert","Marsh","Cave","Cavern"],
+		"occursOn": ["Volcanic","Grassland","Plains","Desert","Marsh","Cave","Cavern"],
 		"movementCost": 5, // hard to pass through
 		"unbuildable": false,  // can be built by villagers as an TileImprovement, no idea how this parameter affects building #TODO
 		"turnsToBuild": 7,
@@ -382,7 +382,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"Blocks line-of-sight from tiles at same elevation", 
 //			"[99]% Chance to be destroyed by nukes",
 		],
-		"occursOn": ["Grassland","Plains","Forest","Desert","Tundra","Hill","Mound","Cavern","Cave"],
+		"occursOn": ["Volcanic","Grassland","Plains","Forest","Desert","Tundra","Hill","Mound","Cavern","Cave"],
 		"defenceBonus": -0.30
 	},
 
