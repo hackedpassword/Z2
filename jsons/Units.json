@@ -197,7 +197,7 @@
 		"cost": 50,
 		"uniques": [
 			"[+1] Movement <after discovering [Horseback Riding]>",
-			"Founds a new city <by consuming this unit>",
+			"Founds a new city <by consuming this unit> <in tiles without [{Cavern} {Cave}]",
 			"Excess Food converted to Production when under construction",
 			"Requires at least [2] population",
 			"Can instantly construct a [Landmark] improvement <for [Human player]> <when [cheatsOn]>",  // test
@@ -215,7 +215,7 @@
 		"obsoleteTech": "Shelter",
 		"uniques": [
 			// The idea here is players cannot immediately settle and must explore a bit first. 
-			"Founds a new city <after [5] turns> <upon discovering a Natural Wonder> <by consuming this unit>",  // critical gameplay element, explore or found colony?
+			"Founds a new city <after [5] turns> <by consuming this unit> <in tiles without [Cavern]>",  // critical gameplay element, explore or found colony?
 			// "Founds a new city <upon discovering a Natural Wonder> <[3] times> <by consuming this unit>",
 
 			"[-2] Sight <during the [Prehistoric era]>",
