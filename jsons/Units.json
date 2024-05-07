@@ -2069,7 +2069,8 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"requiredTech": "Ballistics",
 		// "upgradesTo": "", 
 		"uniques": [
-			"", 
+			"Only available <for [Human player]>", // experimental unit
+			// destroy improvement w/ 20% chance
 		], 
 
 		"attackSound": "missile"
