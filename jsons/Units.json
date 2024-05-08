@@ -279,17 +279,17 @@
 		"range": 2,
 		"rangedStrength": 80,
 		"strength": 45,
-		"cost": 425,
+		"cost": 525,
 		"requiredTech": "Rocketry",
 		"uniques": [
 			"Can carry [2] [Missile] units",  // another obvious unit attribute
 			"[90]% chance to intercept air attacks",
-			"[+150]% Strength <vs [Air] units>",
-			"[+150]% Strength <vs [Helicopter] units>",
-			"[+200]% Strength <vs [Missile] units>",  // enough to take down a cruise missile
+			"[+250]% Strength <vs [Air] units>",
+			"[+100]% Strength <vs [Helicopter] units>",
+			"[+50]% Strength <vs [{Missile} {Payload}] units>",
 			"[-100]% Strength <vs [{Land} {Water}] units>", // proposed as a SAM
 			"Never appears as a Barbarian unit",
-			"Comment [Carries one missile and counters air units ONLY, including helicopters and missile strikes.]", 
+			"Comment [Carries two missiles and counters air units ONLY, including helicopters and missile strikes.]", 
 		],
 		"attackSound": "missile",
 	},
