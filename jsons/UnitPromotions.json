@@ -283,7 +283,7 @@
 		"prerequisites": ["Cover I"],
 		"uniques": [
 			"[+33]% Strength <vs [Ranged] units> <when defending>",
-			"Invisible to non-adjacent units <when at war> <when [Fortified]>",
+			"Invisible to non-adjacent units <when at war> <if it hasn't used other actions yet>",
 			"[+50]% Strength <vs [Air] units>",
 			"[+20]% Strength <vs [Water] units>", 
 			"May withdraw before melee [20]%",
@@ -925,17 +925,21 @@
 		"prerequisites": ["Accuracy III","Barrage III","Targeting III", "Wolfpack III",
 			"Bombardment III", "Coastal Raider III","Boarding Party III","Siege III",
 			"Mobility II", "Anti-Armor II","Volley II"],
-		"uniques": ["[1] additional attacks per turn", "Can move after attacking"],
+		"uniques": [
+			"[1] additional attacks per turn", 
+			"Can move after attacking", 
+		],
 		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Melee Water","Ranged Water","Submarine","Fighter","Bomber","Helicopter"],
         "column": 2,
         "row": 4
 	},
 	{
 		"name": "Logistics II",
-		"prerequisites": ["Accuracy III","Barrage III","Targeting III", "Wolfpack III",
-			"Bombardment III", "Coastal Raider III","Boarding Party III","Siege III",
-			"Mobility II", "Anti-Armor II","Volley II"],
-		"uniques": ["[1] additional attacks per turn", "Can move after attacking"],
+		"prerequisites": ["Logistics I"],
+		"uniques": [
+			"[1] additional attacks per turn", 
+			"Can move after attacking", 
+		],
 		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Melee Water","Ranged Water","Submarine","Fighter","Bomber","Helicopter"],
         "column": 2,
         "row": 5
@@ -957,10 +961,10 @@
 		"name": "Ambush II",
 		"prerequisites": ["Ambush I"],
 		"uniques": [
-			"Invisible to non-adjacent units <in [Rough terrain] tiles> <when at war>",
-			"[+100]% Strength <vs [Armored] units>",
-			"[+100]% Strength <vs [Siege] units>",
-			"[+100]% Strength <vs [Archery] units>",
+			"Invisible to non-adjacent units <in [Rough terrain] tiles> <when at war> <if it hasn't used other actions yet>",
+			"[+75]% Strength <vs [Armored] units>",
+			"[+75]% Strength <vs [Siege] units>",
+			"[+75]% Strength <vs [Archery] units>",
 		],
 		"unitTypes": ["Scout","Sword","Gunpowder","Fighter","Bomber"],
         "column": 25,
