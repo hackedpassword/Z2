@@ -273,22 +273,23 @@
 	},
 	{
 		"name": "Mobile SAM",  // carries missiles. So carry one.
-		"unitType": "Gunpowder",
-		"movement": 3,
+		"unitType": "Ranged Gunpowder",
+		"movement": 1,
 		"interceptRange": 2,
-		"range": 3,
+		"range": 2,
 		"rangedStrength": 80,
-		"strength": 65,
+		"strength": 45,
 		"cost": 425,
 		"requiredTech": "Rocketry",
 		"uniques": [
-			"Can carry [1] [Missile] units",  // another obvious unit attribute
-			"[100]% chance to intercept air attacks",
+			"Can carry [2] [Missile] units",  // another obvious unit attribute
+			"[90]% chance to intercept air attacks",
 			"[+150]% Strength <vs [Air] units>",
 			"[+150]% Strength <vs [Helicopter] units>",
 			"[+200]% Strength <vs [Missile] units>",  // enough to take down a cruise missile
+			"[-100]% Strength <vs [{Land} {Water}] units>", // proposed as a SAM
 			"Never appears as a Barbarian unit",
-			"Comment [Carries one missile and counters incoming air attacks, including missile strikes.]", 
+			"Comment [Carries one missile and counters air units ONLY, including helicopters and missile strikes.]", 
 		],
 		"attackSound": "missile",
 	},
@@ -424,7 +425,7 @@
 			"Can carry [4] [Bomber] units",
 			"Can carry [1] [Helicopter] units",
 			"Can carry [2] [Atomic Bomber] units",
-			"Can carry [1] [Missile] units",
+			// "Can carry [1] [Missile] units",
 			// 2nd try, testing
 			"Can carry [2] [Land] units",  // [Gunpowder] didn't work :/
 			"[+1] Movement <in [Ocean] tiles>",
@@ -467,6 +468,7 @@
 			"[60]% chance to intercept air attacks",  // AA
 			"May withdraw before melee ([80]%)",  // evasive
 			"Can carry [3] [Missile] units",  // how does a destroyer not have missile launch capabilities?
+			"Can carry [1] [Payload] units",
 			"Can carry [1] [Nuclear Missile] units",  // specific to and no more than one - required loading this unit before missile units
 			"[+100]% Strength <vs [Submarine] units>",
 			"[+50]% Strength <vs [Water] units>"
@@ -511,7 +513,7 @@
 	{  // #todo build a Patriot missile
 	// i.e. Tomahawk, shock-and-awe type destruction
 		"name": "Cruise Missile",
-		"unitType": "Missile",
+		"unitType": "Payload",
 		"movement": 1,
 		"strength": 90,
 		"rangedStrength": 350,  // meant to one-shot most units, weak against Gunpowder units
