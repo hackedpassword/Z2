@@ -137,7 +137,7 @@
 ////////////////////////////////
 
 
-	{
+	{ // Will queue an instant heal action
 		"name": "Heal Instantly I",
 		"uniques": ["Heal this unit by [50] HP <once>"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine"],
@@ -270,9 +270,9 @@
 		"name": "Cover I",
 		"uniques": [
 			"[+33]% Strength <vs [Ranged] units> <when defending>",
-			"Invisible to non-adjacent units <in [Open terrain] tiles> <when at war> <if it hasn't used other actions yet>",
-			"[+50]% Strength <vs [Air] units> <when defending>",
-			"May withdraw before melee [10]%", 
+			"Invisible to non-adjacent units <in [Open terrain] tiles> <when at war> <when [Fortified]>",
+			"[+20]% Strength <vs [Air] units> <when defending> <when [Fortified]>",
+			"May withdraw before melee [10]% <when [Fortified]>", 
 		],
 		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege"],
         "column": 5,
@@ -283,8 +283,9 @@
 		"prerequisites": ["Cover I"],
 		"uniques": [
 			"[+33]% Strength <vs [Ranged] units> <when defending>",
-			"Invisible to non-adjacent units <when at war> <if it hasn't used other actions yet>",
+			"Invisible to non-adjacent units <when at war> <when [Fortified]>",
 			"[+50]% Strength <vs [Air] units>",
+			"[+20]% Strength <vs [Water] units>", 
 			"May withdraw before melee [20]%",
 		],
 		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege"],
@@ -436,10 +437,12 @@
         "column": 6,
         "row": 3
 	},
-	{
+	{ // obsolete
 		"name": "Medic",
 		"prerequisites": ["Shock I", "Drill I", "Scouting I", "Survivalism I"],
-		"uniques": ["All adjacent units heal [+10] HP when healing"],
+		"uniques": [
+			"All adjacent units heal [+10] HP when healing",
+		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout"],
         "column": 10, // after scout base
         "row": 1
@@ -447,7 +450,10 @@
 	{
 		"name": "Medic I",
 		"prerequisites": ["Shock I", "Drill I", "Scouting I", "Survivalism I"],
-		"uniques": ["All adjacent units heal [+10] HP when healing"],
+		"uniques": [
+			"All adjacent units heal [+10] HP when healing", 
+			"All adjacent units heal [+5] HP when healing <when [Fortified]>",
+		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout"],
         "column": 10, // after scout base
         "row": 1
@@ -456,8 +462,9 @@
 		"name": "Medic II",
 		"prerequisites": ["Medic I"],
 		"uniques": [
-			"[+10] HP when healing <in [Foreign Land] tiles>",
+			"[+5] HP when healing <in [Foreign Land] tiles>",
 			"All adjacent units heal [+15] HP when healing",
+			"All adjacent units heal [+10] HP when healing <when [Fortified]>",
 		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout"],
         "column": 10,
@@ -937,7 +944,7 @@
 	{  // line for line attributes, since apparently [{this} {that}] implies AND :(
 		"name": "Ambush I",
 		"uniques": [
-			"Invisible to non-adjacent units <in [Rough terrain] tiles> <when at war>",
+			"Invisible to non-adjacent units <in [Rough terrain] tiles> <when at war> <when [Fortified]>",
 			"[+50]% Strength <vs [Armored] units>",
 			"[+50]% Strength <vs [Siege] units>",
 			"[+50]% Strength <vs [Archery] units>",
@@ -950,7 +957,7 @@
 		"name": "Ambush II",
 		"prerequisites": ["Ambush I"],
 		"uniques": [
-			"Invisible to non-adjacent units <when at war>",
+			"Invisible to non-adjacent units <in [Rough terrain] tiles> <when at war>",
 			"[+100]% Strength <vs [Armored] units>",
 			"[+100]% Strength <vs [Siege] units>",
 			"[+100]% Strength <vs [Archery] units>",
