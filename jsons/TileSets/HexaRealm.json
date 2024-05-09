@@ -59,11 +59,13 @@
 		"Plains+Ivory+Camp": ["Plains","Flash","Ivory"],
 		"Desert+Salt+Mine": ["Desert","Flash","Salt"],
 		"Plains+Gold Ore+Smelter": ["Plains","Smelter","Flash","Gold Ore"],
-		
+
+		// Blowed up palaces
+		"Great Palace+Fallout": ["Great Palace", "Fallout"], 
 
 		
 // Unit experiment - can we render watercraft under bridges?
-
+// hmm maybe via a unitset.. FantasyHex? 
 		"Bridge1ocean+Destroyer": ["Destroyer","Bridge1ocean"],
 		"Bridge1coast+Destroyer": ["Destroyer","Bridge1coast"],
 		"Bridge2ocean+Destroyer": ["Destroyer","Bridge2ocean",],
