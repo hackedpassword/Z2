@@ -62,7 +62,8 @@
 
 		// Blowed up palaces
 		"Fallout+Great Palace": ["Great Palace", "Fallout"],
-		
+		// Bug: any combo of the following will not render the above:
+		// M+F+G, M+G+F, G+F, F+G
 
 		
 // Unit experiment - can we render watercraft under bridges?
