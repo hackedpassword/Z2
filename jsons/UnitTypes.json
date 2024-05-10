@@ -80,7 +80,7 @@
         "uniques": [
             "Can build [Remove Trap] improvements on tiles <in [Trap] tiles>",  // fight enemies of the land
             "This Unit gains [15] XP <upon building a [Remove Trap] improvement>", // why won't this work????
-            "Double movement in [Force]",
+            "Double movement in [Force]", // All hybrid tiles
             "Double movement in [OceanTile]", 
             "Double movement in [CoastTile]",
         ],
@@ -90,7 +90,7 @@
         "movementType": "Land", 
         "uniques": [
             "Can build [Remove Trap] improvements on tiles <in [Trap] tiles>",
-            "This Unit gains [15] XP <upon building a [Remove Trap] improvement>",
+            "This Unit gains [+15] XP <upon building a [Remove Trap] improvement>",
             "Double movement in [Force]",
             "Double movement in [OceanTile]", 
             "Double movement in [CoastTile]",
@@ -101,7 +101,7 @@
         "movementType": "Land", 
         "uniques": [
             "Can build [Remove Trap] improvements on tiles <in [Trap] tiles>",
-            "This Unit gains [15] XP <upon building a [Remove Trap] improvement>",
+            "This Unit gains [+15] XP <upon building a [Remove Trap] improvement>",
             "Double movement in [Force]",
             "Double movement in [OceanTile]", 
             "Double movement in [CoastTile]",
@@ -112,7 +112,18 @@
         "movementType": "Land", 
         "uniques": [
             "Can build [Remove Trap] improvements on tiles <in [Trap] tiles>",
-            "This Unit gains [15] XP <upon building a [Remove Trap] improvement>",
+            "This Unit gains [+15] XP <upon building a [Remove Trap] improvement>",
+            "Double movement in [Force]",
+            "Double movement in [OceanTile]", 
+            "Double movement in [CoastTile]",
+        ],
+    },
+    {
+        "name": "Ballistics",
+        "movementType": "Land", 
+        "uniques": [
+            // "Can build [Remove Trap] improvements on tiles <in [Trap] tiles>",
+            "This Unit gains [+15] XP <upon building a [Remove Trap] improvement>",
             "Double movement in [Force]",
             "Double movement in [OceanTile]", 
             "Double movement in [CoastTile]",
