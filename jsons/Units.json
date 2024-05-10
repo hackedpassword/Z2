@@ -273,7 +273,7 @@
 	},
 	{
 		"name": "Mobile SAM",  // carries missiles. So carry one.
-		"unitType": "Ranged Gunpowder",
+		"unitType": "Ballistics",
 		"movement": 1,
 		"interceptRange": 2,
 		"range": 2,
@@ -787,6 +787,8 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		],
 		"attackSound": "shipguns"
 	},
+
+
 // Hero class, still to be developed, continuing with sword unitType for now
 	{
 		"name": "Swordsman",
@@ -2194,10 +2196,12 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"cost": 375,
 		"requiredTech": "Radar",
 		"uniques": [
-			"May Paradrop up to [5] tiles from inside friendly territory",
-			// "Cannot enter ocean tiles", // may be temporary
+			"May Paradrop up to [6] tiles from inside friendly territory",
+			"[+75]% Strength <vs [Ballistics] units>", 
+			"Double movement in [Grassland]", 
 			"Can move immediately once bought",  // bonus for buying, air delivery
-                        "Never appears as a Barbarian unit"],
+                        "Never appears as a Barbarian unit", 
+		],
 		"attackSound": "shot"
 		// upgradesTo "XCOM Squad", "No Movement Cost to Pillage" in BNW
 	},
