@@ -313,9 +313,9 @@
 		"name": "Tank",
 		"unitType": "Armored",
 		"movement": 4,  // not too quick
-		"strength": 70,
+		"strength": 100,
 		"range": 2,  // justify costly requirement of oil, can't take cities
-		"rangedStrength": 80,
+		"rangedStrength": 130,
 		"cost": 375,
 		"requiredTech": "Combined Arms",
 		"requiredResource": "Oil",
@@ -323,6 +323,7 @@
 		"uniques": [
 			"Can move after attacking <if it hasn't used other actions yet>",
 			// Ordering strengths high to low, group alike
+			"[+200]% Strength <vs [Gunpowder] units <when attacking>", 
 			"[+75]% Strength <vs [Gunpowder] units> <when defending>",
 			"[+50]% Strength <vs [Armored] units> <when attacking>",  // Armor piercing shells // #todo upgrade to APS instead
 			"[+25]% Strength <vs cities>",
@@ -337,8 +338,8 @@
 		"name": "Modern Armor",
 		"unitType": "Armored",
 		"movement": 6,
-		"strength": 100,
-		"rangedStrength": 120,
+		"strength": 200,
+		"rangedStrength": 225,
 		"range": 3,
 		"cost": 425,
 		"requiredTech": "Lasers",
@@ -346,6 +347,7 @@
 		// "upgradesTo": "Giant Death Robot",  // GDR is not a tank it is a mech, sorry Steel Battalion 
 		"uniques": [
 			"Can move after attacking <if it hasn't used other actions yet>",
+			"[+300]% Strength <vs [Gunpowder] units <when attacking>", 
 			"[+150]% Strength <vs [Gunpowder] units> <when defending>",
 			"[+100]% Strength <vs [Armored] units> <when attacking>",
 			"Invisible to non-adjacent units <after discovering [Stealth]>",  // modern camouflage
@@ -2222,12 +2224,12 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 	},
 	{
 		"name": "Anti-Tank Gun",
-		"unitType": "Gunpowder",
+		"unitType": "Ballistics",
 		"movement": 2,
 		"strength": 50,
 		"cost": 300,
 		"requiredTech": "Combined Arms",
-		"upgradesTo": "Helicopter Gunship",
+		// "upgradesTo": "Helicopter Gunship",
 		"uniques": [
 			"[+100]% Strength <vs [Armored] units>",
 			"[+200]% Strength <vs [{Landship} {Tank} {Modern Armor}] units>", // Anti-tank guns are otherwise barely useful and almost immediately superceded
