@@ -45,7 +45,7 @@
 		name: "Oil",
 		resourceType: "Strategic",
 		revealedBy: "Archaeology", // not petroleum, this is the reveal, next tech is the application
-		terrainsCanBeFoundOn: ["Volcanic","Desert","Coast","Tundra","Marsh","Jungle","Cave","Cavern"],
+		terrainsCanBeFoundOn: ["Volcanic","Desert","Coast","Tundra","Marsh","Cave","Cavern"],
 		production: 1,
 		improvedBy: ["Oil well", "Offshore Platform"],
 		improvementStats: {"production": 3},
@@ -54,7 +54,7 @@
 		name: "Aluminum",
 		resourceType: "Strategic",
 		revealedBy: "Flight",
-		terrainsCanBeFoundOn: ["Desert","Tundra","Hill","Snow","Jungle","Cave","Cavern"],
+		terrainsCanBeFoundOn: ["Desert","Tundra","Hill","Snow","Cave","Cavern"],
 		production: 1,
 		improvement: "Mine",
 		improvementStats: {"production": 1},
@@ -74,7 +74,7 @@
 	{  // Trophy	
 		name: "Silver",
 		resourceType: "Luxury",
-		terrainsCanBeFoundOn: ["Hill","Forest","Jungle","Tundra","Grassland","Cave","Cavern"],
+		terrainsCanBeFoundOn: ["Hill","Forest","Tundra","Grassland","Cave","Cavern"],
 		gold: 2,
 		improvement: "Smelter",
 	},	
@@ -89,7 +89,7 @@
 	{  // Hammer	
 		name: "Copper",
 		resourceType: "Luxury",
-		terrainsCanBeFoundOn: ["Hill","Forest","Jungle","Grassland","Tundra","Cave","Cavern"],
+		terrainsCanBeFoundOn: ["Hill","Forest","Grassland","Tundra","Cave","Cavern"],
 		gold: 2,
 		improvement: "Mine",
 	},	
@@ -106,7 +106,7 @@
 	{  // Power glove	
 		name: "Silk",
 		resourceType: "Luxury",
-		terrainsCanBeFoundOn: ["Forest","Jungle"],
+		terrainsCanBeFoundOn: ["Forest"],
 		gold: 2,
 		improvement: "Plantation",
 	},	
@@ -145,7 +145,7 @@
 	{ // Triforce	
 		name: "Gold Ore",
 		resourceType: "Luxury",
-		terrainsCanBeFoundOn: ["Desert","Hill","Forest","Jungle","Plains"],
+		terrainsCanBeFoundOn: ["Desert","Hill","Forest","Plains"],
 		gold: 4,
 		culture: 6,
 		faith: 4,
@@ -282,7 +282,7 @@
 	{	
 		name: "Truffles",
 		resourceType: "Luxury",
-		terrainsCanBeFoundOn: ["Forest","Marsh","Jungle"],
+		terrainsCanBeFoundOn: ["Forest","Marsh"],
 		gold: 2,
 		improvement: "Camp",
 		improvementStats: {"gold": 1},
