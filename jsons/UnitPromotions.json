@@ -282,7 +282,7 @@
 	{
 		"name": "Cover II",
 		"prerequisites": ["Cover I"],
-		"uniques": 
+		"uniques": [
 			"[+25]% Strength <when fortified>", 
 			"[+33]% Strength <vs [Ranged] units> <when defending>",
 			"Invisible to non-adjacent units <when at war> <if it hasn't used other actions yet>",
