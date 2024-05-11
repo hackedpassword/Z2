@@ -2197,7 +2197,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"requiredTech": "Radar",
 		"uniques": [
 			"May Paradrop up to [6] tiles from inside friendly territory",
-			"[+75]% Strength <vs [Ballistics] units>", 
+			"[+75]% Strength <vs [Ballistics] units> <when attacking>", 
 			"Double movement in [Grassland]", 
 			"Can move immediately once bought",  // bonus for buying, air delivery
                         "Never appears as a Barbarian unit", 
