@@ -464,9 +464,9 @@
 		"cost": 450,
 		"requiredTech": "Combustion",
 		"uniques": [
-			"[+1] Movement <after discovering [Replaceable parts]>",
+			"[+1] Movement <after discovering [Replaceable Parts]>",
 			"This Unit gains the [Supply] promotion <after discovering [Plastics]>",
-			"[+1] Movement <after discovering [Combined arms]>",
+			"[+1] Movement <after discovering [Combined Arms]>",
 			"This Unit gains the [Accuracy I] promotion <after discovering [Electronics]>",
 			"This Unit gains the [Accuracy II] promotion <after discovering [Radar]>",
 			"This Unit gains the [Accuracy III] promotion <after discovering [Satellites]>",
