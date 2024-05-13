@@ -458,22 +458,29 @@
 	{
 		"name": "Destroyer",
 		"unitType": "Melee Water",
-		"movement": 6,
-		"strength": 55,
-		"interceptRange": 2,
-		"cost": 375,
+		"movement": 4,
+		"strength": 60,
+		"interceptRange": 1,
+		"cost": 450,
 		"requiredTech": "Combustion",
 		"uniques": [
+			"[+1] Movement <after discovering [Replaceable parts]>",
+			"This Unit gains the [Supply] promotion <after discovering [Plastics]>",
+			"[+1] Movement <after discovering [Combined arms]>",
+			"This Unit gains the [Accuracy I] promotion <after discovering [Electronics]>",
+			"This Unit gains the [Accuracy II] promotion <after discovering [Radar]>",
+			"This Unit gains the [Accuracy III] promotion <after discovering [Satellites]>",
 			"Can see invisible [Submarine] units",
-			"[+3] Sight <in [Deep Ocean] tiles>",  // advanced oceanic detection systems
+			"[+1] Sight <in [Deep Ocean] tiles>",  // advanced oceanic detection systems
 			"[+1] Sight <when adjacent to a [Destroyer] unit>",  // combined data enhances resolution
-			"[60]% chance to intercept air attacks",  // AA
-			"May withdraw before melee ([80]%)",  // evasive
+			"[65]% chance to intercept air attacks",  // AA
+			"May withdraw before melee ([15]%)",  // evasive
 			"Can carry [3] [Missile] units",  // how does a destroyer not have missile launch capabilities?
 			"Can carry [1] [Payload] units",
-			"Can carry [1] [Nuclear Missile] units",  // specific to and no more than one - required loading this unit before missile units
-			"[+100]% Strength <vs [Submarine] units>",
-			"[+50]% Strength <vs [Water] units>"
+			"Can carry [1] [Nuclear Missile] units",  // specific to and no more than one - requires loading this unit before missile units
+			"[+100]% Strength <vs [Submarine] units> <when attacking>",
+			"[+150]% Strength <vs [Melee Water] units> <when attacking>",
+			"[+200]% Strength <vs [Land] units <in [Water] tiles> <when attacking>", 
 		],
 		"attackSound": "shipguns",
 	},
