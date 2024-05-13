@@ -140,7 +140,7 @@
 	{ // Will queue an instant heal action
 		"name": "Heal Instantly I",
 		"uniques": ["Heal this unit by [50] HP <once>"],
-		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine"],
+		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine","Ballistics"],
         "row": 0,
         "column": 0
 	},
@@ -148,7 +148,7 @@
 		"name": "Heal Instantly II",
 		"prerequisites": ["Heal Instantly I"],
 		"uniques": ["Heal this unit by [50] HP <once>"],
-		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine"],
+		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine","Ballistics"],
         "row": 1,
         "column": 0
 	},
@@ -156,7 +156,7 @@
 		"name": "Heal Instantly III",
 		"prerequisites": ["Heal Instantly II"],
 		"uniques": ["Heal this unit by [75] HP", "Doing so will consume this opportunity to choose a Promotion"],
-		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine"],
+		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine","Ballistics"],
         "row": 2,
         "column": 0
 	},
@@ -166,14 +166,14 @@
 		"name": "Indirect Fire",
 		"prerequisites": ["Accuracy I", "Barrage I", "Bombardment II", "Targeting II"],
 		"uniques": ["Ranged attacks may be performed over obstacles"],
-		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water"],
+		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water","Ballistics"],
         "column": 1,
         "row": 2
 	},
 	{
 		"name": "Accuracy I",
 		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
-		"unitTypes": ["Siege","Archery","Ranged Gunpowder"],
+		"unitTypes": ["Siege","Archery","Ranged Gunpowder","Ballistics"],
         "column": 2,
         "row": 1
     },
@@ -181,7 +181,7 @@
 		"name": "Accuracy II",
 		"prerequisites": ["Accuracy I"],
 		"uniques": ["[+20]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
-		"unitTypes": ["Siege","Archery","Ranged Gunpowder"],
+		"unitTypes": ["Siege","Archery","Ranged Gunpowder","Ballistics"],
         "column": 2,
         "row": 2
     },
@@ -189,7 +189,7 @@
 		"name": "Accuracy III",
 		"prerequisites": ["Accuracy II"],
 		"uniques": ["[+25]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
-		"unitTypes": ["Siege","Archery","Ranged Gunpowder"],
+		"unitTypes": ["Siege","Archery","Ranged Gunpowder","Ballistics"],
         "column": 2,
         "row": 3
     },
@@ -205,7 +205,7 @@
 		"name": "Extended Range I",
 		"prerequisites": ["Indirect Fire","Accuracy III","Barrage III","Targeting II","Bombardment II","Wolfpack II","Cover II"],
 		"uniques": ["[+1] Range"],
-		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water","Submarine"],
+		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water","Submarine","Ballistics"],
         "column": 5,
         "row": 4
 	},
@@ -213,7 +213,7 @@
 		"name": "Extended Range II",
 		"prerequisites": ["Extended Range I"],
 		"uniques": ["[+1] Range"],
-		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water","Submarine"],
+		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water","Submarine","Ballistics"],
         "column": 5,
         "row": 5
 	},
@@ -275,7 +275,7 @@
 			"[+20]% Strength <vs [Air] units> <when defending>",
 			"May withdraw before melee [10]% <when [Fortified]>", 
 		],
-		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege"],
+		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Ballistics"],
         "column": 5,
         "row": 1
 	},
@@ -290,14 +290,14 @@
 			"[+20]% Strength <vs [Water] units> <when defending> <if it hasn't used other actions yet>", 
 			"May withdraw before melee [20]%",
 		],
-		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege"],
+		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Ballistics"],
         "column": 5,
         "row": 2
 	},
 	{
 		"name": "Barrage I",
 		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
-		"unitTypes": ["Siege","Archery","Ranged Gunpowder"],
+		"unitTypes": ["Siege","Archery","Ranged Gunpowder","Ballistics"],
         "column": 9,
         "row": 1
 	},
@@ -305,7 +305,7 @@
 		"name": "Barrage II",
 		"prerequisites": ["Barrage I"],
 		"uniques": ["[+20]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
-		"unitTypes": ["Siege","Archery","Ranged Gunpowder"],
+		"unitTypes": ["Siege","Archery","Ranged Gunpowder","Ballistics"],
         "column": 9,
         "row": 2
 	},
@@ -313,7 +313,7 @@
 		"name": "Barrage III",
 		"prerequisites": ["Barrage II"],
 		"uniques": ["[+25]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
-		"unitTypes": ["Siege","Archery","Ranged Gunpowder"],
+		"unitTypes": ["Siege","Archery","Ranged Gunpowder","Ballistics"],
         "column": 9,
         "row": 3
 	},
@@ -395,7 +395,10 @@
 	{  // too deep in the tree, more useful now
 		"name": "Woodsman",
 		// "prerequisites": ["Shock I","Drill I"],
-		"uniques": ["Double movement in [Forest]","Double movement in [Jungle]"],
+		"uniques": [
+			"Double movement in [{Forest} {Jungle}]",
+			"All healing effects doubled <in [{Forest} {Jungle}] tiles>"
+		],
 		"unitTypes": ["Sword","Gunpowder","Scout"],
         "column": 6,
         "row": 5
@@ -931,7 +934,7 @@
 			"[1] additional attacks per turn", 
 			"Can move after attacking", 
 		],
-		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Melee Water","Ranged Water","Submarine","Fighter","Bomber","Helicopter"],
+		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Melee Water","Ranged Water","Submarine","Fighter","Bomber","Helicopter","Ballistics"],
         "column": 2,
         "row": 4
 	},
@@ -942,7 +945,7 @@
 			"[1] additional attacks per turn", 
 			"Can move after attacking", 
 		],
-		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Melee Water","Ranged Water","Submarine","Fighter","Bomber","Helicopter"],
+		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Melee Water","Ranged Water","Submarine","Fighter","Bomber","Helicopter","Ballistics"],
         "column": 2,
         "row": 5
 	},
@@ -955,7 +958,7 @@
 			"[+50]% Strength <vs [Siege] units> <when attacking>",
 			"[+50]% Strength <vs [Archery] units> <when attacking>",
 		],
-		"unitTypes": ["Scout","Sword","Gunpowder","Fighter","Bomber"],
+		"unitTypes": ["Scout","Sword","Gunpowder","Fighter","Bomber","Ballistics"],
         "column": 25,
         "row": 1
 	},
@@ -968,7 +971,7 @@
 			"[+75]% Strength <vs [Siege] units> <when attacking>",
 			"[+75]% Strength <vs [Archery] units> <when attacking>",
 		],
-		"unitTypes": ["Scout","Sword","Gunpowder","Fighter","Bomber"],
+		"unitTypes": ["Scout","Sword","Gunpowder","Fighter","Bomber","Ballistics"],
         "column": 25,
         "row": 2
 	},
@@ -977,24 +980,24 @@
 	// Water ranged and air units
 	{
 		"name": "Bombardment I",
-		"uniques": ["[+33]% Strength <vs [Land] units>"],
-		"unitTypes": ["Ranged Water","Fighter","Bomber"],
+		"uniques": ["[+33]% Strength <vs [Land] units> <when attacking>"],
+		"unitTypes": ["Ranged Water","Fighter","Bomber","Ballistics"],
         "column": 26,
         "row": 1
 	},
 	{
 		"name": "Bombardment II",
 		"prerequisites": ["Bombardment I"],
-		"uniques": ["[+33]% Strength <vs [Land] units>"],
-		"unitTypes": ["Ranged Water","Fighter","Bomber"],
+		"uniques": ["[+33]% Strength <vs [Land] units> <when attacking>"],
+		"unitTypes": ["Ranged Water","Fighter","Bomber","Ballistics"],
         "column": 26,
         "row": 2
 	},
 	{
 		"name": "Bombardment III",
 		"prerequisites": ["Bombardment II"],
-		"uniques": ["[+34]% Strength <vs [Land] units>"],
-		"unitTypes": ["Ranged Water","Fighter","Bomber"],
+		"uniques": ["[+34]% Strength <vs [Land] units> <when attacking>"],
+		"unitTypes": ["Ranged Water","Fighter","Bomber","Ballistics"],
         "column": 26,
         "row": 3
 	},
