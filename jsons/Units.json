@@ -2231,9 +2231,9 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"requiredTech": "Combined Arms",
 		// "upgradesTo": "Helicopter Gunship",
 		"uniques": [
-			// "[+100]% Strength <vs [Armored] units>",
-			"[+250]% Strength <vs [{Landship} {Tank} {Modern Armor}] units>", // Anti-tank guns are otherwise barely useful and almost immediately superceded
-			"[+150]% Strength <vs [{Armored} {Siege}] units>", 
+			"[+250]% Strength <vs [Armored] units>",
+			// not working? "[+250]% Strength <vs [{Landship} {Tank} {Modern Armor}] units>", // Anti-tank guns are otherwise barely useful and almost immediately superceded
+			"[+150]% Strength <vs [Siege] units>", 
 			"Never appears as a Barbarian unit", 
 		],
 		"attackSound": "tankshot"
