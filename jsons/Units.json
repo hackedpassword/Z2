@@ -368,6 +368,7 @@
 		"requiredTech": "Computers",
 		"requiredResource": "Aluminum",
 		"uniques": [
+			"[+1] Sight <in [{Deep Ocean} {Rough Ocean}] tiles>",
 			"[+100]% Strength <vs [Armored] units> <when attacking>",  // strength is in attacking
 			"[1] additional attacks per turn <after discovering [Mobile Tactics]>",  // upgrade retrofit
 			"[-50]% Strength <vs [Armored] units> <when defending>",  // weakness against heavy arms
@@ -432,6 +433,7 @@
 			"Can carry [2] [Land] units",  // [Gunpowder] didn't work :/
 			"[+1] Movement <in [Ocean] tiles>",
 			"Double movement in [Deep Ocean]",
+			"Double movement in [Rough Ocean]", 
 		],
 	},
 	{
@@ -472,12 +474,14 @@
 			"This Unit gains the [Accuracy III] promotion <after discovering [Satellites]>",
 			"Can see invisible [Submarine] units",
 			"[+1] Sight <in [Deep Ocean] tiles>",  // advanced oceanic detection systems
+			"[+1] Sight <in [Rough Ocean] tiles>",  // advanced oceanic detection systems
 			"[+1] Sight <when adjacent to a [Destroyer] unit>",  // combined data enhances resolution
 			"[65]% chance to intercept air attacks",  // AA
 			"May withdraw before melee ([15]%)",  // evasive
 			"Can carry [3] [Missile] units",  // how does a destroyer not have missile launch capabilities?
 			"Can carry [1] [Payload] units",
 			"Can carry [1] [Nuclear Missile] units",  // specific to and no more than one - requires loading this unit before missile units
+			"[+75]% Strength <vs [Helicopter] units>",
 			"[+100]% Strength <vs [Submarine] units> <when attacking>",
 			"[+150]% Strength <vs [Melee Water] units> <when attacking>",
 			"[+200]% Strength <vs [Land] units <in [Water] tiles> <when attacking>", 
