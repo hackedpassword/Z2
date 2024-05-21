@@ -51,7 +51,7 @@
 		"name": "Fire",
 		"uniques": [
 			"Only available <for [Military] units>",
-			"Can carry [1] [RPG] units",  // bazooka
+			"Can carry [2] [RPG] units",  // bazooka
 			"Ranged attacks may be performed over obstacles",
 			"May attack when embarked",
 			"Free [RPG] appears <starting from the [Modern era]> <for [1] movement> <[2] times>", // equip two rockets (one at a time) 
