@@ -53,7 +53,7 @@
 			"Only available <for [Military] units>",
 			"Can carry [1] [RPG] units",  // bazooka
 			"May attack when embarked",
-			"Free [RPG] appears", // equip a rocket 
+			"Free [RPG] appears <starting from the [Modern era]>", // equip a rocket 
 		]
 	},
         {
