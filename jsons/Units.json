@@ -521,6 +521,7 @@
 		"cost": 100,
 		"requiredTech": "Replaceable Parts",  // Needs a computer to be guided
 		"uniques": [
+			"Free [RPG] appears <for units with [Fire]>", // trigger
 			"[-100]% maintenance costs", 
 			// "Cannot be purchased",
 			"[+100]% Strength <vs [Helicopter] units>",
