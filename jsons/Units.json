@@ -510,17 +510,35 @@
 	},
 
 // Ordnance //
-	
+
+	{
+		"name": "RPG", 
+		"unitType": "Missile",
+		"movement": 0,
+		"strength": 10,
+		"rangedStrength": 80,
+		"range": 3,
+		"requiredTech": "Replaceable Parts",  // Needs a computer to be guided
+		"uniques": [
+			"[-100]% maintenance costs", 
+			"Cannot be purchased",
+			"[+100]% Strength <vs [Helicopter] units>",
+		],
+		"attackSound": "artillery",
+	}, 
 	{
 		"name": "Guided Missile",
 		"unitType": "Missile",
 		"movement": 1,
 		"strength": 60,
-		"rangedStrength": 125,  // not a C6-3, missiles blow stuff up
-		"range": 8,
+		"rangedStrength": 100,  // not a C6-3, missiles blow stuff up
+		"range": 5,
 		"cost": 150,
 		"requiredTech": "Computers",  // Needs a computer to be guided
-		"uniques": ["[-75]% maintenance costs"],  // little maintenance needed
+		"uniques": [
+			"[-75]% maintenance costs",
+			"[+150]% Strength <vs [Ballistics] units>", 
+		],
 		"attackSound": "missile",
 	},
 	{  // #todo build a Patriot missile
@@ -531,12 +549,13 @@
 		"strength": 90,
 		"rangedStrength": 350,  // meant to one-shot most units, weak against Gunpowder units
 		"range": 16,  // Long range ordnance
-		"cost": 400,
+		"cost": 600,
 		"requiredTech": "Advanced Ballistics",
 		"uniques": [
 			"[25]% maintenance costs",  // more expensive to maintain
 			"Destroys tile improvements when attacking",
 			"[+100]% Strength <vs [Armored] units> <when attacking>",
+			"Consumes [1] [Aluminum]",
 		],
 		"attackSound": "missile",
 	},
@@ -600,6 +619,7 @@
 			"Only available <after discovering [Computers]>",
 			"Destroys tile improvements when attacking",
 			"Blast radius [2]",
+			"Consumes [1] [Aluminum]", // game balance
 			"Consumes [2] [Uranium]", 
 		],
 		"attackSound": "nuke",
@@ -629,6 +649,7 @@
 		"attackSound": "nuke",
 	},
 	{
+		// This weapon is a city killer, intentionally. Some counter should be devised. 
 		"name": "Nuclear Bunker Buster",
 		"unitType": "Atomic Payload",  // Can be carried by Nuclear sub
 		"movement": 1,
@@ -639,7 +660,7 @@
 		"requiredTech": "Nuclear Fusion",
 		"requiredResource": "Uranium",
 		"uniques": [
-			"[150]% maintenance costs",  // expensive
+			"[500]% maintenance costs",  // expensive
 			"Can only attack [Land] tiles",
 			"Limited to [2] per Civilization",
 			"Triggers the following global alert: [A deeply resonating quake was felt!]",
@@ -648,22 +669,25 @@
 			"Nuclear weapon of Strength [3]",  // minimum needed to demolish city
 			"Only available <if [Manhattan Project] is constructed>",
 			"Consumes [2] [Uranium]",
-			"Consumes [1] [Aluminum]"
+			"Consumes [1] [Aluminum]", 
+			"Consumes [2] [Iron]",
 		],
 		"attackSound": "torpedo",
 	},
-	{
-		"name": "TSAR Nuclear Bomb",  // ultimate WMD (til the orbital kinetic weapon platform is built...tbd) 
+	{  
+		// Civ killer. Ultimate WMD (til the orbital kinetic weapon platform is built...tbd) 
+		"name": "TSAR Nuclear Bomb",
 		"unitType": "Atomic Ordinance",  // need to make a new unitType for heavy WMD's
-		"movement": 1,
+		"movement": 0,
 		"strength": 75,
-		"rangedStrength": 500,
-		"range": 15,
+		"rangedStrength": 500, // damage done as a dud
+		"range": 15, // needs some type of air drop delivery system, how to fly this unit to its destination? 
 		"cost": 4000,
 		"requiredTech": "Particle Physics",
 		"uniques": [
 			"Nuclear weapon of Strength [6]",
-			"[500]% maintenance costs",  // needs tlc
+			"Blast radius [6]",  // armageddon!
+			"[2500]% maintenance costs",  // needs tlc
 			"Triggers a global alert upon build start",
 			"Triggers a global alert upon completion",
 			"Cannot be carried by [Submarine] units",  // Air drop only via city
@@ -671,7 +695,6 @@
 			"Limited to [1] per Civilization",
 			"Only available <if [Manhattan Project] is constructed>",
 			"Only available <after discovering [Nuclear Fusion]>",
-			"Blast radius [6]",  // armageddon!
 			"Consumes [5] [Uranium]",  // slightly more efficient than 1:1
 			"Consumes [1] [Aluminum]",  // massive casing
 		],
@@ -692,8 +715,9 @@
 		"requiredResource": "Uranium",
 		"uniques": [
 			"Only available <after discovering [Robotics]>",  // Allows other tech to be discovered from Nuclear Fusion
-			// "Can move after attacking",  // first gen not agile 
-			"[+125]% Strength <vs cities> <when attacking>",  // GDR's are urban menaces 
+			// "Can move after attacking",  // first gen not agile, maybe add promotion
+			"[+100]% Strength <vs cities> <when attacking>",  // GDR's are urban menaces 
+			"Can instantly build a [Remove Land] improvement", // speaking of, blast that improvement! nice little hack here
 			"No defensive terrain bonus",
 			"Can see over obstacles",
 			"Never appears as a Barbarian unit"
