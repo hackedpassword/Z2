@@ -2276,7 +2276,10 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"strength": 90,
 		"cost": 375,
 		"requiredTech": "Mobile Tactics",
-		"uniques": ["Never appears as a Barbarian unit"],
+		"uniques": [
+			"Free [Guided Missile] appears <for units with [Fire]>", // attempt to grant one rpg
+			"Never appears as a Barbarian unit", 
+		],
 		"attackSound": "tankshot"
 	},
 	{
