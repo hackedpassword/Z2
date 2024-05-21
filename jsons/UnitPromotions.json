@@ -51,10 +51,9 @@
 		"name": "Fire",
 		"uniques": [
 			"Only available <for [Military] units>",
-			"Can carry [1] [Guided Missile] units",  // bazooka? rpg? prob should make a rocket unit
-			"Ranged attacks may be performed over obstacles",
+			"Can carry [1] [RPG] units",  // bazooka
 			"May attack when embarked",
-			"Free [Guided Missile] appears <once>", // attempt to equip a rocket 
+			"Free [RPG] appears", // equip a rocket 
 		]
 	},
         {
