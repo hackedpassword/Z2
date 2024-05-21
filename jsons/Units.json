@@ -514,7 +514,7 @@
 	{
 		"name": "RPG", 
 		"unitType": "Missile",
-		"movement": 0,
+		"movement": 1,
 		"strength": 10,
 		"rangedStrength": 80,
 		"range": 3,
