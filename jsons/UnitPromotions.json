@@ -17,7 +17,7 @@
         {
 		"name": "Shield",
 		"uniques": [
-			"Only available <for [Military] units>",  // if a Villager does receive the promotion, this will, should, keep the effect deactivated, though the promo will still show
+			"Only available <for [Military] units>",  // needs to be built into UnitTypes 
 			"[25]% Strength bonus for [All] units within [1] tiles",
 			"May withdraw before melee ([25]%)",
 		]
@@ -50,12 +50,23 @@
         {
 		"name": "Fire",
 		"uniques": [
-			"Only available <for [Military] units>",
-			"Can carry [2] [RPG] units",  // bazooka
+			// "Only available <for [Military] units>",
+
+		// Adds ability to equip up to two RPGs. The following grants units the ability to carry, then, 
+		// activate a menu button showing "Ready RPG". Hitting the button places one RPG air-based unit
+		// into the units' inventory (like a plane in a carrier). Civilian units will not equip the RPG, 
+		// instead will hand off the RPG unit to the nearest unit/city that can carry RPG or Missile, 
+		// making civilians into RPG squires.
+		// The '<[1] times>' UnitActionModifier is critical, which activates the menu button. 
+			// "Can carry [2] [Fireball] units",  // doesn't exist yet
+			"Can carry [2] [RPG] units",  // gains a bazooka
+			"Free [RPG] appears <starting from the [Modern era]> <for [1] movement> <[1] times>",
+		// Design notes: atm, everyone gets the promo. Later, I'll rebuild to be fireballs, then in Modern era, 
+		//   retain fireballs but unlock buying RPG instead of giving with promos. 
+			
 			"Ranged attacks may be performed over obstacles",
 			"May attack when embarked",
-			"Free [RPG] appears <starting from the [Modern era]> <for [1] movement> <[2] times>", // equip two rockets (one at a time) 
-		]
+		], 
 	},
         {
 		"name": "Reflect",
