@@ -680,7 +680,7 @@
 		// Civ killer. Ultimate WMD (til the orbital kinetic weapon platform is built...tbd) 
 		"name": "TSAR Nuclear Bomb",
 		"unitType": "Atomic Ordinance",  // need to make a new unitType for heavy WMD's
-		"movement": 0,
+		"movement": 1, // M=0 will prevent city-city transport
 		"strength": 75,
 		"rangedStrength": 500, // damage done as a dud
 		"range": 15, // needs some type of air drop delivery system, how to fly this unit to its destination? 
