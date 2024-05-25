@@ -80,7 +80,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			// "[+1 Happiness] <with [10]% chance>",
 			// "[+1 Faith] <with [10]% chance>",
                         /*
-			"[+1000]% Strength <vs [Air] units> <when defending>",  
+			// "[+1000]% Strength <vs [Air] units> <when defending>",
 			*/ not for base terrain, put into globalUniques
 
 		// #todo: figure out ways to implement these
@@ -108,7 +108,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 
 ////  Z2 feature: dynmamic tile resources  ////
 /*
-	Base tiles provide scaling and dynamic resources that update per turn, within city borders only. Statically designated base resources are intentionally absent.
+	Base tiles provide scaling and dynamic resources that update per turn, *within city borders* and within workable distance ONLY. Static resources are intentionally absent.
 	Auto-assigned pop will follow/reassign to selected resource Focus when turn starts, optimizing returns for that year.
 		Meaning: You will ONLY see food, production, etc, resource icons:
 		    + inside city borders
@@ -183,7 +183,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"type": "Water",
 		"RGB": [0, 171, 169],
 		"uniques": [
-			"Fresh water",
+			// "Fresh water",  // this is interfering with building roads across wonders
 			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",  // two chances at each resource
 			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
 			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
