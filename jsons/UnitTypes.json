@@ -69,6 +69,7 @@
         "uniques": [
             "Self-destructs when attacking",
             "Cannot be intercepted <before discovering [Advanced Ballistics]>", 
+            "[-100]% Strength <vs [Submarine] units>", 
         ]
     },
 
@@ -174,7 +175,11 @@
     {
         "name": "Submarine",
         "movementType": "Water",
-        "uniques": ["Can enter ice tiles", "Invisible to non-adjacent units", "Can see invisible [Submarine] units"]
+        "uniques": [
+			"Can enter ice tiles", 
+			"Invisible to non-adjacent units", 
+			"Can see invisible [Submarine] units",  // this should be an upgrade
+		], 
     },
     {
         "name": "Aircraft Carrier",
