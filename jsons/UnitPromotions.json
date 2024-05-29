@@ -154,6 +154,7 @@
 	// Gameplay logic still being worked out, experimental. 
 	{
 		"name": "Training I", 
+		"UnitTypes": ["Military"], 
 		"uniques": [
 			"This Unit gains [3] XP <for all movement> <[5] times>",  // should cause 5x turn training menu button
 			"This Unit upgrades for free",  // otherwise this promo sponges the promo opportunity providing no actual upgrade 
@@ -164,6 +165,8 @@
 	}, 
 	{
 		"name": "Training II", 
+		"UnitTypes": ["Military"], 
+		"prerequisites": ["Training I"], 
 		"uniques": [
 			"This Unit gains [3] XP <for all movement> <[10] times>",  // +30xp
 			"This Unit upgrades for free",
