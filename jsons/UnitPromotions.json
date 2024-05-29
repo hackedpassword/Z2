@@ -148,10 +148,34 @@
 
 ////////////////////////////////
 
-
+	{  
+	// Will expand on this promo. 
+	// Basic idea is that units having no action opportunity can train up, gain xp. 
+	// Gameplay logic still being worked out, experimental. 
+	{
+		"name": "Training I", 
+		"uniques": [
+			"This Unit gains [3] XP <for all movement> <[5] times>",  // should cause 5x turn training menu button
+			"This Unit upgrades for free",  // otherwise this promo sponges the promo opportunity providing no actual upgrade 
+			// "Doing so will consume this opportunity to choose a Promotion", // saving for a level 3 promo
+		], 
+		"row": 0,
+       		"column": 1,
+	}, 
+	{
+		"name": "Training II", 
+		"uniques": [
+			"This Unit gains [3] XP <for all movement> <[10] times>",  // +30xp
+			"This Unit upgrades for free",
+			"This Unit gains [2] XP <when defending>", 
+			"This Unit gains [3] XP <when attacking>",
+		], 
+		"row": 1,
+       		"column": 1,
+	}, 
 	{ // Will queue an instant heal action
 		"name": "Heal Instantly I",
-		"uniques": ["Heal this unit by [50] HP <once>"],
+		"uniques": ["Heal this unit by [50] HP <for [1] movement>"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine","Ballistics"],
         "row": 0,
         "column": 0
@@ -159,7 +183,7 @@
 	{
 		"name": "Heal Instantly II",
 		"prerequisites": ["Heal Instantly I"],
-		"uniques": ["Heal this unit by [50] HP <once>"],
+		"uniques": ["Heal this unit by [50] HP <for [1] movement>"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine","Ballistics"],
         "row": 1,
         "column": 0
@@ -167,7 +191,10 @@
 	{
 		"name": "Heal Instantly III",
 		"prerequisites": ["Heal Instantly II"],
-		"uniques": ["Heal this unit by [75] HP", "Doing so will consume this opportunity to choose a Promotion"],
+		"uniques": [
+			"Heal this unit by [75] HP", 
+			"Doing so will consume this opportunity to choose a Promotion",
+		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine","Ballistics"],
         "row": 2,
         "column": 0
