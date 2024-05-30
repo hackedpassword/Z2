@@ -50,7 +50,8 @@
         {
 		"name": "Fire",
 		"uniques": [
-			// "Only available <for [Military] units>",
+			// "Only available <for [Military] units>",  // doesn't work, bug? 
+			"Only available <for non-[Civilian] units>",
 
 		// Adds ability to equip up to two RPGs. The following grants units the ability to carry, then, 
 		// activate a menu button showing "Ready RPG". Hitting the button places one RPG air-based unit
@@ -89,9 +90,10 @@
         {
 		"name": "Thunder",
 		"uniques": [
-			"Only available <for [Military] units>",
-			"[+100]% Strength <when attacking> <in [Enemy land] tiles>",
-			"[+200]% Strength <when attacking> <if it hasn't used other actions yet> <during a Golden Age>",  // bezerker rally mode
+			// "Only available <for [Military] units>",
+			"Only available <for non-[Civilian] units>", 
+			"[+100]% Strength <when attacking> <in [Enemy land] tiles> <[2] times>",
+			"[+200]% Strength <when attacking> <if it hasn't used other actions yet> <during a Golden Age> <once>",  // bezerker rally mode
 		]
 	},
 
