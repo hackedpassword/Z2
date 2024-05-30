@@ -17,23 +17,27 @@
             "Double movement in [CoastTile]",
         ]
     },
-    {
+    {  // Units not yet implemented 
         "name": "Warplane Bomber",  // on-field plane aircraft, like helicopters
-        "movementType": "Air",
+        "movementType": "Land",
         "uniques": [
-            "Cannot attack",
-            "Can pass through impassable tiles",
-            "May travel on Water tiles without embarking",
-            "Unable to capture cities",
-            "All tiles cost 1 movement",
+		"Aircraft",  // Applied to a land movement unit, we'll see how it works 
+		"Tactical Air", // Class for air units posing as ground/land maneuverable 
+		"Cannot attack",
+		"Can pass through impassable tiles",
+		"May travel on Water tiles without embarking",
+		"Unable to capture cities",
+		"All tiles cost 1 movement",
+		"Invisible to non-adjacent units",
         ]
     },
     {
         "name": "Helicopter",
         "movementType": "Land",
         "uniques": [
-            "Can pass through impassable tiles",
-            "May travel on Water tiles without embarking",  // how is this not default behavior
+		"Tactical Air", 
+		"Can pass through impassable tiles",
+		"May travel on Water tiles without embarking",  // how is this not default behavior
         ]
     },
     {
@@ -201,42 +205,5 @@
         "uniques": ["Aircraft"]
     },
 
-    // Deprecated unit types required for mods without a UnitTypes.json file to work
 
-    {
-        "name": "Melee",
-        "movementType": "Land"
-    },
-    {
-        "name": "Ranged",
-        "movementType": "Land"
-    },
-    {
-        "name": "Armor",
-        "movementType": "Land"
-    },
-    {
-        "name": "WaterCivilian",
-        "movementType": "Water"
-    },
-    {
-        "name": "WaterMelee",
-        "movementType": "Water"
-    },
-    {
-        "name": "WaterRanged",
-        "movementType": "Water"
-    },
-    {
-        "name": "WaterSubmarine",
-        "movementType": "Water"
-    },
-    {
-        "name": "WaterAircraftCarrier",
-        "movementType": "Water"
-    },
-    {
-        "name": "AtomicBomber",
-        "movementType": "Air"
-    }
-]
+], 
