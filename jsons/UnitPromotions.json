@@ -164,7 +164,7 @@
 			"Fighter","Bomber","Helicopter", 
 		],
 		"uniques": [
-			"This Unit gains [3] XP <if it hasn't used other actions yet> <for all movement> <[5] times>",  // should cause 5x turn training menu button
+			"This Unit gains [3] XP <for all movement> <[5] times> <if it hasn't used other actions yet>",  // should cause 5x turn training menu button
 			"This promotion is free",  // otherwise this promo sponges the promo opportunity providing no actual upgrade 
 			// "Doing so will consume this opportunity to choose a Promotion", // saving for a level 3 promo
 			"Comment [Be sure to complete Training I before starting Training II]", 
