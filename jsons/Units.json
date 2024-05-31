@@ -735,7 +735,7 @@
 		"strength": 225,
 		"cost": 805,
 		"requiredTech": "Nanotechnology",  // several other requirements below
-		"requiredResource": "Uranium",  // civopedia is confused: reqRes(1) + Consumes(2) = 3U? Must decipher correct usage.
+		// "requiredResource": "Uranium",  // civopedia is confused: reqRes(1) + Consumes(2) = 3U? Must decipher correct usage.
 		"promotions": [],
 		"uniques": [
 			"Consumes [2] [Uranium]",
@@ -765,17 +765,17 @@
 		"strength": 375,
 		"cost": 1400,
 		"requiredTech": "Future Tech",  // the ultimate in war machines
-		"requiredResource": "Uranium",
+		"requiredResource": "Uranium",  // Fusion generator, U += 1
 		"promotions": ["March","Rejuvenation"],  // Gen-2 nanotech
 		"uniques": [
-			"[1000]% maintenance costs",  // not for the feint 
-			"Only available <if [Spaceship Factory] is constructed> <in this city>",  // requires advanced construction facilities
+			"[1000]% maintenance costs",  // not for the feint
+			"Only available <if [{Spaceship Factory} {Nuclear Plant}] is constructed> <in this city>",  // requires advanced construction facilities
 			// "Only available <if [Nuclear Plant] is constructed> <in this city>",  // local materials handling
 			"[2] additional attacks per turn",  // massive firepower, usage must be balanced against available movement points
-			"Consumes [2] [Uranium]",  // dual reactor, fusion generator, 3 U total
+			"Consumes [2] [Uranium]",  // dual reactor, 3 U total
 			"May Paradrop up to [4] tiles from inside friendly territory",  // extended range plasma-lithium jump jets (ER-PL JJ)
 			"No defensive terrain bonus",
-			"Ignores Zone of Control",
+			"Ignores Zone of Control",  // When GDR-III steps into your ZoC, you requst permission to stay
                         // "Adjacent enemy units ending their turn take [40] damage",  // not for Units; but know that the MK-III has optional automated proximity suppression pulse lasers
 			"Destroys tile improvements when attacking",
 			"[+200]% Strength <vs cities> <when attacking>",  // siege mech
