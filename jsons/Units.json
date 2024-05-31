@@ -769,8 +769,8 @@
 		"promotions": ["March","Rejuvenation"],  // Gen-2 nanotech
 		"uniques": [
 			"[1000]% maintenance costs",  // not for the feint
-			"Only available <if [{Spaceship Factory} {Nuclear Plant}] is constructed> <in this city>",  // requires advanced construction facilities
-			// "Only available <if [Nuclear Plant] is constructed> <in this city>",  // local materials handling
+			"Only available <if [Spaceship Factory] is constructed> <in this city>",  // requires advanced construction facilities
+			"Only available <if [Nuclear Plant] is constructed> <in this city>",  // local materials handling
 			"[2] additional attacks per turn",  // massive firepower, usage must be balanced against available movement points
 			"Consumes [2] [Uranium]",  // dual reactor, 3 U total
 			"May Paradrop up to [4] tiles from inside friendly territory",  // extended range plasma-lithium jump jets (ER-PL JJ)
