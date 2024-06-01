@@ -576,7 +576,8 @@
 			"[45]% maintenance costs <after discovering [Rocketry]>",  // propulsion and navigation add cost
 			"Can only attack [Land] tiles",
 			"Destroys tile improvements when attacking",
-			"[+300]% Strength <vs [{Armored} {Siege}] units>",  // big hit against big targets
+			"[+300]% Strength <vs [Armored] units>",  // big hit against big targets
+			"[+300]% Strength <vs [Siege] units>",
 			// bb's w/o and w/ launch capabilities
 			"[+200]% Strength <vs cities> <when attacking> <before discovering [Rocketry]>",  // should generally do 50-66% dmg
 			"[+400]% Strength <vs cities> <when attacking> <after discovering [Rocketry]>",
