@@ -576,10 +576,13 @@
 			"[45]% maintenance costs <after discovering [Rocketry]>",  // propulsion and navigation add cost
 			"Can only attack [Land] tiles",
 			"Destroys tile improvements when attacking",
+			// bb's w/o and w/ launch capabilities
 			"[+200]% Strength <vs cities> <when attacking> <before discovering [Rocketry]>",  // should generally do 50-66% dmg
 			"[+400]% Strength <vs cities> <when attacking> <after discovering [Rocketry]>",
+			"[+300]% Strength <vs [{Armored} {Siege}] units",  // big hit against big targets
 			"Self-destructs when attacking",
 			"Consumes [1] [Aluminum]",  // trade-off resource, can keep even without spare aluminum (won't cause missing resource penalty)
+			"Consumes [1] [Iron]",  // Heavy ordinance
 		],
 		"attackSound": "torpedo",
 	},
@@ -590,7 +593,7 @@
 		"strength": 150,
 		"rangedStrength": 150,
 		"range": 10,
-		"cost": 600,
+		"cost": 1500,
 		"requiredTech": "Nuclear Fission",
 		"requiredResource": "Uranium",
 		"promotions" : [], // "Evasion"
@@ -599,6 +602,7 @@
 			"Only available <if [Manhattan Project] is constructed>",
 			"Self-destructs when attacking",
 			"Blast radius [2]", 
+			"Consumes [1] [Iron]",  // Balancing player considerations of nuke arsenal
 		],
 		"attackSound": "nuke"
 		// Plane rather than a missile - can be based in city or Carrier only.
@@ -611,19 +615,19 @@
 		"strength": 50,
 		"rangedStrength": 300,
 		"range": 8,
-		"cost": 1500,
+		"cost": 2500,
 		"requiredTech": "Advanced Ballistics",
 		"requiredResource": "Uranium",
 		"uniques": [
-			"Nuclear weapon of Strength [2]",
+			"Nuclear weapon of Strength [2]",  // breaks city defense
 			"[100]% maintenance costs",  // more expensive to maintain
 			"Triggers the following global alert: [A nuclear explosion was witnessed!]",
 			"Only available <if [Manhattan Project] is constructed>",
 			"Only available <after discovering [Computers]>",
 			"Destroys tile improvements when attacking",
 			"Blast radius [2]",
-			"Consumes [1] [Aluminum]", // game balance
-			"Consumes [2] [Uranium]", 
+			"Consumes [1] [Aluminum]",  // game balance
+			"Consumes [1] [Uranium]",  // +1 U = 2 U
 		],
 		"attackSound": "nuke",
 	},
@@ -634,8 +638,9 @@
 		"strength": 75,
 		"rangedStrength": 300,
 		"range": 15,
-		"cost": 2500,
+		"cost": 6000,
 		"requiredTech": "Nuclear Fusion",
+		"requiredResource": "Uranium",
 		"uniques": [
 			"Comment <Gained at Nuclear Fusion tech, also requires Telecommunications tech>",
 			"Nuclear weapon of Strength [3]",
@@ -646,8 +651,9 @@
 			"Only available <if [Manhattan Project] is constructed>",
 			"Only available <after discovering [Telecommunications]>",
 			"Blast radius [3]",
-			"Consumes [3] [Uranium]",
-			"Consumes [1] [Aluminum]",
+			"Consumes [2] [Uranium]",  // count 1 + 2 = 3 U
+			"Consumes [1] [Aluminum]",  // required for rocket
+			"Consumes [1] [Oil]",  // required for launch
 		],
 		"attackSound": "nuke",
 	},
@@ -659,7 +665,7 @@
 		"strength": 120,
 		"rangedStrength": 500, // concentrated damage
 		"range": 8,
-		"cost": 3000,
+		"cost": 4000,
 		"requiredTech": "Nuclear Fusion",
 		"requiredResource": "Uranium",
 		"uniques": [
@@ -671,9 +677,10 @@
 			"Blast radius [0]",  // single tile
 			"Nuclear weapon of Strength [3]",  // minimum needed to demolish city
 			"Only available <if [Manhattan Project] is constructed>",
-			"Consumes [2] [Uranium]",
+			"Consumes [2] [Uranium]",  // 3 U
 			"Consumes [1] [Aluminum]", 
-			"Consumes [2] [Iron]",
+			"Consumes [2] [Iron]",  // super heavy
+			"Consumes [1] [Oil]", // rocket delivery
 		],
 		"attackSound": "torpedo",
 	},
@@ -685,10 +692,11 @@
 		"strength": 75,
 		"rangedStrength": 500, // damage done as a dud
 		"range": 15, // needs some type of air drop delivery system, how to fly this unit to its destination? 
-		"cost": 4000,
+				// delivery strategy atm is city-city hop, send settlers or take cities
+		"cost": 8000,  // more likely bought but it's gonna be expensive
 		"requiredTech": "Particle Physics",
 		"uniques": [
-			"Nuclear weapon of Strength [6]",
+			"Nuclear weapon of Strength [6]",  // doom
 			"Blast radius [6]",  // armageddon!
 			"[2500]% maintenance costs",  // needs tlc
 			"Triggers a global alert upon build start",
@@ -699,7 +707,7 @@
 			"Only available <if [Manhattan Project] is constructed>",
 			"Only available <after discovering [Nuclear Fusion]>",
 			"Consumes [5] [Uranium]",  // slightly more efficient than 1:1
-			"Consumes [1] [Aluminum]",  // massive casing
+			"Consumes [3] [Iron]",  // massive casing
 		],
 		"attackSound": "nuke",
 	},
