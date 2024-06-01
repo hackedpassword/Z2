@@ -579,7 +579,7 @@
 			// bb's w/o and w/ launch capabilities
 			"[+200]% Strength <vs cities> <when attacking> <before discovering [Rocketry]>",  // should generally do 50-66% dmg
 			"[+400]% Strength <vs cities> <when attacking> <after discovering [Rocketry]>",
-			"[+300]% Strength <vs [{Armored} {Siege}] units",  // big hit against big targets
+			"[+300]% Strength <vs [{Armored} {Siege}] units>",  // big hit against big targets
 			"Self-destructs when attacking",
 			"Consumes [1] [Aluminum]",  // trade-off resource, can keep even without spare aluminum (won't cause missing resource penalty)
 			"Consumes [1] [Iron]",  // Heavy ordinance
