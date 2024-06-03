@@ -432,8 +432,8 @@
 			"[+1 Food] from [Ocean] tiles <in [Friendly Land] tiles> <within [3] tiles of a [City center]>", // removing [in this city] so we only pop resources in workable tiles
 			"[+1 Food] from [Coast] tiles <in [Friendly Land] tiles> <within [3] tiles of a [City center]>", 
 			"[+1 Food] from [Fish] tiles <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-			"[+10] Strength <for [Military] units <when attacking> <in this city>",
-			"[+10] Strength <for [Civilian] units <when defending> <in this city>",
+			"[+10] Strength <for [Military] units> <when attacking> <in this city>",
+			"[+10] Strength <for [Civilian] units> <when defending> <in this city>",
 		],
 		"requiredTech": "Optics",
 	},
