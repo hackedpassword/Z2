@@ -389,7 +389,24 @@
 	},
 
 // Water units //
-	
+	{
+		"name": "Submarine",
+		"unitType": "Submarine",
+		"movement": 5,
+		"strength": 35,
+		"rangedStrength": 60,
+		"cost": 325,
+		"requiredResource": "Iron",
+		"requiredTech": "Refrigeration",
+		// "upgradesTo": "Nuclear Submarine",
+		"uniques": [
+			"[+75]% Strength <when attacking>",
+			"Can only attack [Water] tiles", 
+			"Never appears as a Barbarian unit",
+			"May withdraw before melee ([30]%)",
+		],
+		"attackSound": "torpedo",
+	},
 	{  // Note that if Missile(s) are carried, they must be offloaded first to load Atomic Bombers
 		"name": "Nuclear Submarine",  // carries WMD's
 		"unitType": "Submarine",
@@ -2012,24 +2029,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 
 	// Modern era
 
-	{
-		"name": "Submarine",
-		"unitType": "Submarine",
-		"movement": 5,
-		"strength": 35,
-		"rangedStrength": 60,
-		"cost": 325,
-		"requiredResource": "Iron",
-		"requiredTech": "Refrigeration",
-		// "upgradesTo": "Nuclear Submarine",
-		"uniques": [
-			"[+75]% Strength <when attacking>",
-			"Can only attack [Water] tiles", 
-			"Never appears as a Barbarian unit",
-			"May withdraw before melee ([30]%)",
-		],
-		"attackSound": "torpedo",
-	},
+
 	{
 		"name": "Great War Infantry",
 		"unitType": "Gunpowder",
@@ -2166,8 +2166,8 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"strength": 65,
 		"cost": 400,
 		"requiredTech": "Pharmaceuticals",
-		"promotions": ["Amphibious I","Medic I","Woodsman","Ambush I"],
-		"upgradesTo": "Paratrooper",
+		"promotions": ["Amphibious I","Medic I","Woodsman","Ambush I"],  // Well-trained unit
+		// "upgradesTo": "Paratrooper",
 		"uniques": [
 			"[+1] Sight <when [Embarked]>",
 			"Can move immediately once bought",
