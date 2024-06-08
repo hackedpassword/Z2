@@ -151,9 +151,16 @@
 ////////////////////////////////
 
 	
-	// Will expand on this promo. 
-	// Basic idea is that units having no action opportunity can train up, gain xp. 
-	// Gameplay logic still being worked out, experimental. 
+
+	{  // This promo is a hack for Training. When Training II is gained, the Training I button remains. Losing Training I eliminates the prereq thus Training II,
+	   // so we splice a sub-promo in to satisfy the prereq for Training II by removing Training I and leaving this promo.
+		"name": "Training Discipline",
+		"uniques": [
+			"Heals [5] damage if it kills a unit",
+		],
+		"row": 0,
+       		"column": 0,
+	},
 	{
 		"name": "Training I", 
 		// "UnitTypes": ["Military"], // not working
@@ -164,7 +171,7 @@
 			"Fighter","Bomber","Helicopter", 
 		],
 		"uniques": [
-			// We're trying for using all movement first, no specific unique to do that atm. 
+			"This Unit gains the [Training Discipline] promotion",
 			"This Unit gains [1] XP <in [City center] tiles> <for all movement> <if it hasn't used other actions yet>",
 			// "This promotion is free",  // otherwise this promo sponges the promo opportunity providing no actual upgrade 
 			// "Doing so will consume this opportunity to choose a Promotion", // saving for a level 3 promo
@@ -175,15 +182,15 @@
 	}, 
 	{
 		"name": "Training II", 
-		// "UnitTypes": ["Military"], 
 		"unitTypes": [  // listing all until the above is figured out 
 			"Gunpowder","Mounted","Sword","Scout","Armored", 
 			"Archery","Ranged Gunpowder","Siege","Ballistics", 
 			"Melee Water","Ranged Water","Submarine","Aircraft Carrier", 
 			"Fighter","Bomber","Helicopter", 
 		],
-		"prerequisites": ["Training I"], 
+		"prerequisites": ["Training I","Training Discipline"], 
 		"uniques": [
+			"This Unit loses the ["Training I"] promotion",
 			"This Unit gains [2] XP <in [City center] tiles> <for all movement> <if it hasn't used other actions yet>",
 			// "Comment [Training with both I and II promotions will count against each promo, and you only get one XP promo buff.]", 
 		], 
