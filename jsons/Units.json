@@ -23,6 +23,7 @@
 			"[-2] Sight <before the [Classical era]>",
 			"[-1] Sight <starting from the [Classical era]>",
 			"Automation is a primary action",
+			"Can transform to [Scout] <after discovering [Politics]>",  // Volunteer minutemen
 			"Can build [Boulder] improvements on tiles <after discovering [Engineering]>",
 			"Can build [Forage] improvements on tiles <with [30]% chance> <before the [Pioneer era]>",  // foraging is not a guaranteed improvement
 			"Can build [Slog mud] improvements on tiles <before the [Pioneer era]>",
@@ -200,7 +201,7 @@
 			"Founds a new city <by consuming this unit> <in tiles without [{Cavern} {Cave}]>",
 			"Excess Food converted to Production when under construction",
 			"Requires at least [2] population",
-			"Can instantly construct a [Landmark] improvement <for [Human player]> <when [cheatsOn]>",  // test
+			// "Can instantly construct a [Landmark] improvement <for [Human player]> <when [cheatsOn]>",  // test
 		],
 		"hurryCostModifier": 20, 
 	},
@@ -246,6 +247,7 @@
 			"Never appears as a Barbarian unit",
 			"Ignores terrain cost <in [Plains] tiles>",  // the conditional here will break unciv when this is a starting unit
 		],
+		"promotions": ["Survivalism I"],
 		"attackSound": "nonmetalhit",
 	},
 	{
@@ -256,8 +258,8 @@
 		"strength": 5,
 		"cost": 40,
 		"upgradesTo": "Crossbowman",  // #TODO: make assassin unit type in scout upgrade path
-		"obsoleteTech": "Scientific Theory",
-		"promotions": ["Woodsman"],
+		// "obsoleteTech": "Scientific Theory",
+		"promotions": ["Woodsman", "Survivalism I"],
 		"uniques": [
 			// "[-1] Sight <before the [Classical era]>",
 			"Can instantly construct a [Fort] improvement <by consuming this unit>",  // great upgrade
@@ -265,9 +267,8 @@
 			"May upgrade to [Archer] through ruins-like effects",
 			"Can transform to [Worker]", // Can demote to labor
 			"Never appears as a Barbarian unit",
-			// "Ignores terrain cost <in tiles without [Mountain]>",
-			// "Ignores terrain cost",  // we'll default til the above is fixed
-			"Ignores terrain cost <in [non-[Mountain]] tiles>", // attempt using negative context
+			"Ignores terrain cost <after discovering [Scientific Theory]>",
+			// "Ignores terrain cost <in [non-[Mountain]] tiles>", // attempt using negative context
 		],
 		"attackSound": "nonmetalhit",
 	},
@@ -286,15 +287,16 @@
 			"[90]% chance to intercept air attacks",
 			"[+250]% Strength <vs [Air] units>",
 			"[+100]% Strength <vs [Helicopter] units>",
-			"[+50]% Strength <vs [{Missile} {Payload}] units>",
-			"[-100]% Strength <vs [{Land} {Water}] units>", // proposed as a SAM
+			"[+50]% Strength <vs [Missile] units>",
+			"[+50]% Strength <vs [Payload] units>",
+			"[-100]% Strength <vs [Land] units>", // proposed as a SAM
+			"[-100]% Strength <vs [Water] units>", // proposed as a SAM
 			"Never appears as a Barbarian unit",
 			"Comment [Carries two missiles and counters air units ONLY, including helicopters and missile strikes.]", 
 		],
 		"attackSound": "missile",
 	},
 	{
-	// Why can't rifleman take cities, but tank can? order of rangedStrength and range? duplicating tank's order
 		"name": "Rifleman",
 		"unitType": "Gunpowder",
 		"movement": 2,
@@ -327,7 +329,8 @@
 			"[+75]% Strength <vs [Gunpowder] units> <when defending>",
 			"[+50]% Strength <vs [Armored] units> <when attacking>",  // Armor piercing shells // #todo upgrade to APS instead
 			"[+25]% Strength <vs cities>",
-			"[-25]% Strength <vs [{Missile} {Ranged Water}] units>",
+			"[-25]% Strength <vs [Ranged Water] units>",
+			"[-15]% Strength <vs [Missile] units>",
 			"No defensive terrain bonus",
 			"Comment [Ranged unit]", // Let the player know since this is an important difference from unmodded Unciv
 			// does "Never appears as a Barbarian unit"  // deals were made - but do barbarians need oil resource? 
@@ -335,7 +338,7 @@
 		"attackSound": "tankshot",
 	},
 	{
-		"name": "Modern Armor",
+		"name": "Modern Armor",  // #todo: revert to melee, create artillery shell units
 		"unitType": "Armored",
 		"movement": 6,
 		"strength": 200,
@@ -350,8 +353,9 @@
 			"[+300]% Strength <vs [Gunpowder] units <when attacking>", 
 			"[+150]% Strength <vs [Gunpowder] units> <when defending>",
 			"[+100]% Strength <vs [Armored] units> <when attacking>",
-			"Invisible to non-adjacent units <after discovering [Stealth]>",  // modern camouflage
+			"Invisible to non-adjacent units <after discovering [Stealth]> <in [Rough Terrain] tiles>",  // modern camouflage
 			"No defensive terrain bonus",
+			"Comment [Ranged unit]", // Let the player know since this is an important difference from unmodded Unciv
 			"Never appears as a Barbarian unit",
 		],
 		"promotions": ["Indirect Fire"],
@@ -380,8 +384,8 @@
 			"All tiles cost 1 movement",
 			"Ignores Zone of Control",
 			"Unable to capture cities",
-			"Can carry [1] [Payload] units",  // bunker buster delivery
-			"Can carry [2] [Guided Missile] units",  // Gun-ship, aluminum is a costly requirement
+			"Can carry [1] [Bunker Buster] units",  // bunker buster delivery
+			"Can carry [4] [Missile] units",  // Gun-ship, aluminum is a costly requirement
 			"Ranged attacks may be performed over obstacles",
 			"Never appears as a Barbarian unit"
 		],
@@ -390,7 +394,7 @@
 
 // Water units //
 	{
-		"name": "Submarine",
+		"name": "Submarine",  // should make torpedo units
 		"unitType": "Submarine",
 		"movement": 5,
 		"strength": 35,
@@ -443,11 +447,8 @@
 			"Can only attack [Melee Water] units",  // better believe the Navy put a couple guns on these
 			"Can carry [4] [Fighter] units",
 			"Can carry [4] [Bomber] units",
-			"Can carry [1] [Helicopter] units",
+			// "Can carry [1] [Helicopter] units",  // type land, not air
 			"Can carry [2] [Atomic Bomber] units",
-			// "Can carry [1] [Missile] units",
-			// 2nd try, testing
-			"Can carry [2] [Land] units",  // [Gunpowder] didn't work :/
 			"[+1] Movement <in [Ocean] tiles>",
 			"Double movement in [Deep Ocean]",
 			"Double movement in [Rough Ocean]", 
@@ -467,7 +468,7 @@
 			"Never appears as a Barbarian unit",
 			"[+100]% Strength <vs [{Ranged Water} {Melee Water}] units>",
 			"[+75]% Strength <with [15]% chance> <vs [Water] units>",  // critical hit
-			// "Can carry [1] [Gunpowder] units",  // doesn't work
+			// "Can carry [1] [Gunpowder] units",  // doesn't work, carrying needs to be air units? probably
 			"Can carry [1] [Missile] units", 
 			"Double movement in [Ocean]",
 		],
@@ -484,8 +485,8 @@
 		"requiredTech": "Combustion",
 		"uniques": [
 			"[+1] Movement <after discovering [Replaceable Parts]>",
-			"This Unit gains the [Supply] promotion <after discovering [Plastics]>",
 			"[+1] Movement <after discovering [Combined Arms]>",
+			"This Unit gains the [Supply] promotion <after discovering [Plastics]>",
 			"This Unit gains the [Accuracy I] promotion <after discovering [Electronics]>",
 			"This Unit gains the [Accuracy II] promotion <after discovering [Radar]>",
 			"This Unit gains the [Accuracy III] promotion <after discovering [Satellites]>",
@@ -497,7 +498,7 @@
 			"May withdraw before melee ([15]%)",  // evasive
 			"Can carry [3] [Missile] units",  // how does a destroyer not have missile launch capabilities?
 			"Can carry [1] [Payload] units",
-			"Can carry [1] [Nuclear Missile] units",  // specific to and no more than one - requires loading this unit before missile units
+			"Can carry [1] [Atomic Payload] units",  // specific to and no more than one - requires loading this unit before missile units
 			"[+75]% Strength <vs [Helicopter] units>",
 			"[+100]% Strength <vs [Submarine] units> <when attacking>",
 			"[+150]% Strength <vs [Melee Water] units> <when attacking>",
@@ -536,11 +537,9 @@
 		"rangedStrength": 80,
 		"range": 3,
 		"cost": 100,
-		"requiredTech": "Replaceable Parts",  // Needs a computer to be guided
+		"requiredTech": "Replaceable Parts",
 		"uniques": [
-			//"Free [RPG] appears <for units with [Fire]>", // trigger
 			"[-100]% maintenance costs", 
-			// "Cannot be purchased",
 			"[+100]% Strength <vs [Helicopter] units>",
 			"[-1] Sight",
 		],
@@ -585,7 +584,7 @@
 		"movement": 1,
 		"strength": 120,
 		"rangedStrength": 150,
-		"range": 8,
+		"range": 2,
 		"cost": 800,
 		"requiredTech": "Radar",
 		"uniques": [
@@ -593,12 +592,13 @@
 			"[45]% maintenance costs <after discovering [Rocketry]>",  // propulsion and navigation add cost
 			"Can only attack [Land] tiles",
 			"Destroys tile improvements when attacking",
+			"Self-destructs when attacking",
 			"[+300]% Strength <vs [Armored] units>",  // big hit against big targets
 			"[+300]% Strength <vs [Siege] units>",
-			// bb's w/o and w/ launch capabilities
-			"[+200]% Strength <vs cities> <when attacking> <before discovering [Rocketry]>",  // should generally do 50-66% dmg
-			"[+400]% Strength <vs cities> <when attacking> <after discovering [Rocketry]>",
-			"Self-destructs when attacking",
+		// bb's w/o and w/ launch capabilities
+			"[+300]% Strength <vs cities> <when attacking> <before discovering [Rocketry]>",  // should generally do 50-66% dmg
+			"[+350]% Strength <vs cities> <when attacking> <after discovering [Rocketry]>",
+			"[+6] Range <after discovering [Rocketry]>",
 			"Consumes [1] [Aluminum]",  // trade-off resource, can keep even without spare aluminum (won't cause missing resource penalty)
 			"Consumes [1] [Iron]",  // Heavy ordinance
 		],
@@ -628,7 +628,7 @@
 	},
 	{
 		"name": "Nuclear Missile",
-		"unitType": "Atomic Payload",  // vs old missile unittype, don't want these roving about without clearance
+		"unitType": "Atomic Payload",
 		"movement": 1,
 		"strength": 50,
 		"rangedStrength": 300,
@@ -651,7 +651,7 @@
 	},
 	{
 		"name": "Nuclear Missile ICBM",
-		"unitType": "Atomic Payload",  // Can be carried by Nuclear sub
+		"unitType": "Atomic Ordinance",
 		"movement": 1,
 		"strength": 75,
 		"rangedStrength": 300,
@@ -697,7 +697,7 @@
 			"Only available <if [Manhattan Project] is constructed>",
 			"Consumes [2] [Uranium]",  // 3 U
 			"Consumes [1] [Aluminum]", 
-			"Consumes [2] [Iron]",  // super heavy
+			"Consumes [2] [Iron]",  // super heavy penetration
 			"Consumes [1] [Oil]", // rocket delivery
 		],
 		"attackSound": "torpedo",
@@ -719,13 +719,15 @@
 			"[2500]% maintenance costs",  // needs tlc
 			"Triggers a global alert upon build start",
 			"Triggers a global alert upon completion",
-			"Cannot be carried by [Submarine] units",  // Air drop only via city
+			// "Cannot be carried by [Submarine] units",  // Air drop only via city
 			"Triggers the following global alert: [Man-made Armageddon has scorched the land. Is this the price of Victory?]",
 			"Limited to [1] per Civilization",
 			"Only available <if [Manhattan Project] is constructed>",
+			"Only available <if [Nuclear Plant] is constructed> <in this city>",
 			"Only available <after discovering [Nuclear Fusion]>",
 			"Consumes [5] [Uranium]",  // slightly more efficient than 1:1
 			"Consumes [3] [Iron]",  // massive casing
+			"Consumes [2] [Oil]",  // Shipping and Handling
 		],
 		"attackSound": "nuke",
 	},
@@ -2138,7 +2140,12 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"requiredTech": "Ballistics",
 		"upgradesTo": "Mobile SAM",
 		"obsoleteTech": "Rocketry",
-		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Air] units>", "[+150]% Strength <vs [Helicopter] units>", "Never appears as a Barbarian unit"],
+		"uniques": [
+			"[100]% chance to intercept air attacks", 
+			"[+150]% Strength <vs [Air] units>", 
+			"[+150]% Strength <vs [Helicopter] units>", 
+			"Never appears as a Barbarian unit",
+		],
 		"attackSound": "machinegun"
 	},
 	{
@@ -2167,7 +2174,6 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"cost": 400,
 		"requiredTech": "Pharmaceuticals",
 		"promotions": ["Amphibious I","Medic I","Woodsman","Ambush I"],  // Well-trained unit
-		// "upgradesTo": "Paratrooper",
 		"uniques": [
 			"[+1] Sight <when [Embarked]>",
 			"Can move immediately once bought",
@@ -2188,7 +2194,11 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"requiredTech": "Radar",
 		"requiredResource": "Oil",
 		"upgradesTo": "Jet Fighter",
-		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>"],
+		"uniques": [
+			"[100]% chance to intercept air attacks", 
+			"[+150]% Strength <vs [Bomber] units>", 
+			"[+150]% Strength <vs [Helicopter] units>",
+		],
 		"attackSound": "machinegun"
 	},
 	{
@@ -2204,7 +2214,11 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"cost": 375,
 		"requiredTech": "Radar",
 		"upgradesTo": "Jet Fighter",
-		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>"],
+		"uniques": [
+			"[100]% chance to intercept air attacks", 
+			"[+150]% Strength <vs [Bomber] units>", 
+			"[+150]% Strength <vs [Helicopter] units>",
+		],
 		"promotions": ["[Zero] ability"],
 		"attackSound": "machinegun"
 	},
@@ -2278,9 +2292,8 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"requiredTech": "Combined Arms",
 		// "upgradesTo": "Helicopter Gunship",
 		"uniques": [
-			"[+250]% Strength <vs [Armored] units>",
-			// not working? "[+250]% Strength <vs [{Landship} {Tank} {Modern Armor}] units>", // Anti-tank guns are otherwise barely useful and almost immediately superceded
-			"[+150]% Strength <vs [Siege] units>", 
+			"[+500]% Strength <vs [Armored] units>",
+			"[+250]% Strength <vs [Siege] units>", 
 			"Never appears as a Barbarian unit", 
 		],
 		"attackSound": "tankshot"
@@ -2295,7 +2308,8 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"cost": 425,
 		"requiredTech": "Rocketry",
 		"requiredResource": "Aluminum",
-		"uniques": ["[+250]% Strength <vs cities> <when attacking>",
+		"uniques": [
+			"[+250]% Strength <vs cities> <when attacking>",
 			"No defensive terrain bonus",
 			"[-1] Sight", 
 			"Never appears as a Barbarian unit",
@@ -2313,10 +2327,12 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"cost": 375,
 		"requiredTech": "Mobile Tactics",
 		"uniques": [
-			"Free [Guided Missile] appears <for units with [Fire]>", // attempt to grant one rpg
+			"[+25]% Strength <vs [Air] units> <when defending>",
+			"May withdraw before melee ([25]%) <vs [Air] units> <when defending>",
 			"Never appears as a Barbarian unit", 
 		],
-		"attackSound": "tankshot"
+		"promotions": ["Blitz"],
+		"attackSound": "tankshot",
 	},
 	{
 		"name": "Jet Fighter",
