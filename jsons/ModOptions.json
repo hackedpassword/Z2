@@ -8,6 +8,7 @@
 	"topics":["unciv-mod","unciv-mod-rulesets","unciv-mod-fun","unciv-mod-maps"],
 	// "constants":{"unitUpgradeCost":{}},
 	"uniques":[
+		"Mod preselects map [Z2]",
 		"Allow raze capital",
 		"Allow raze holy city",  // All cities can be destroyed
 	// info message
