@@ -18,16 +18,14 @@
 		]
 	},
 
-	{
 	// This boulder is an improvement, not a terrainFeature, has the same name. The difference is in what uniques can be attributed.
-	// You'll see below that a number of desired gameplay effects are not available when constructing a boulder.
+	{  // Boulder slows movement and causes some damage. Can be used strategically like walls, or to destroy land.
 		"name": "Boulder",
 		"terrainsCanBeBuiltOn": ["NaturalWonder","Plains","Grassland","Volcanic","Cavern","Cave","Desert"],
 			// "Land","NaturalWonder","ThreeEye Rock Palace"], // testing general Natural Wonder application, then specific
-		// "movementCost": 5, // hard to pass through, does this even work on improvements? I don't think so :(
-		"turnsToBuild": 1, // 5
+		"turnsToBuild": 5,
 		"uniques": [
-			"Turn this tile into a [Boulder] tile",  // We're going to convert the improvement-Boulder into a TerrainFeature-Boulder
+			"Turn this tile into a [Boulder] tile",  // We're going to convert the Improvement-Boulder into a TerrainFeature-Boulder
 			"Removes removable features when built",  // pepper an opponents' land with boulders, pillage tiles and roll em in
 			"Can be built outside your borders",
 		],
