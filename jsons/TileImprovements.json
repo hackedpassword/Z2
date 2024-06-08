@@ -11,6 +11,9 @@
 			"Ensures a minimum tile yield of [+2 Food, +2 Production] <starting from the [Medieval era]>",  // will build upon this
 			"Unpillagable", "Irremovable", "Unbuildable",  // Sōdesu ka? Wareware wa mirudearou.
 			// "Blocks line-of-sight from tiles at same elevation",  // This should be a city center default unique - doesn't work
+			"Cannot be built on [Boulder] tiles",
+			"Cannot be built on [Cave] tiles",
+			"Cannot be built on [Cavern] tiles",
 		],
         "civilopediaText": [
 			{"text":"Marks the center of a city"},
@@ -64,6 +67,7 @@
 			"[-1 Production] <after discovering [Iron Working]>",
 			"[-1 Production] <after discovering [Aesthetics]>",
 			"Comment [Nasty peasant work gathering mud, clay, stones, and other earthy muck needed to supplement building materials.]",
+			"Cannot be built on [Boulder] tiles",
 		],
 		"terrainsCanBeBuiltOn": ["Grassland","Plains","Desert"],
 	},
@@ -83,6 +87,7 @@
 			// "[99]% Chance to be destroyed by nukes",
                         "Pillaging this improvement yields approximately [+18 Gold]",
 			"Comment [This is a farm. It has better food production than foraging.]",  // testing new comment unique
+			"Cannot be built on [Boulder] tiles",
 		],
 		"shortcutKey": "F"
 	},
@@ -99,6 +104,7 @@
 			"[-1 Food] <with [1] to [6] neighboring [Forage] tiles>",  // This food resource is not too compete with farms nor itself
 			"[-1 Food] <with [3] to [6] neighboring [Forage] tiles>",
 			"[-1 Food] <with [5] to [6] neighboring [Forage] tiles>",  // Diminishing returns, upgrade to farm!
+			"Cannot be built on [Boulder] tiles",
 		],
 		"terrainsCanBeBuiltOn": ["Land"],
 	},
@@ -161,6 +167,7 @@
 		"uniques": [
 			"[+1 Production] <after discovering [Chemistry]>",
 		        "Pillaging this improvement yields approximately [+20 Gold]"
+			"Cannot be built on [Boulder] tiles",
 		],
 		"shortcutKey": "M"
 	},
@@ -174,6 +181,7 @@
 			"Can only be built to improve a resource",
 //			"[95]% Chance to be destroyed by nukes",
 			"Pillaging this improvement yields approximately [+20 Gold]"
+			"Cannot be built on [Boulder] tiles",
 		],
 	},
 	{
@@ -204,6 +212,7 @@
 			"Pillaging this improvement yields approximately [+20 Gold]",
 			// "[95]% Chance to be destroyed by nukes",
 			"Gives a defensive bonus of [25]%"
+			"Cannot be built on [Boulder] tiles",
 		] 
 	},
 	{
@@ -220,6 +229,7 @@
 			"Ensures a minimum tile yield of [+1 Culture]",  // Remember the Alamo? Or was that a '!'
 			"[+1 Faith] for each adjacent [Fort]",  // There's belief in security
 			"Gives a defensive bonus of [100]%"  // it's a Fort, not a Shelter
+			"Cannot be built on [Boulder] tiles",
 		]
 	},
 	{  // Let's make citadel worth the sacrifice of the general
@@ -232,6 +242,7 @@
                 	"Constructing it will take over the tiles around it and assign them to your closest city",
 			"Removes removable features when built", 
 			"Can be built outside your borders",
+			"Cannot be built on [Boulder] tiles",
 		]
 	},
 
@@ -245,6 +256,7 @@
 			"[+1 Production] <after discovering [Scientific Theory]>",
 			// "[99]% Chance to be destroyed by nukes",
 			"Pillaging this improvement yields approximately [+10 Gold]"
+			"Cannot be built on [Boulder] tiles",
 		],
 		"shortcutKey": "L"
 	},
@@ -259,6 +271,7 @@
 			"[+1 Gold] <after discovering [Economics]>",
 			// "[99]% Chance to be destroyed by nukes",
 			"Pillaging this improvement yields approximately [+20 Gold]"
+			"Cannot be built on [Boulder] tiles",
 		],
 		"shortcutKey": "T"
 	},
@@ -273,6 +286,7 @@
 			"Can only be built to improve a resource",
 			// "[99]% Chance to be destroyed by nukes",
 			"Pillaging this improvement yields approximately [+10 Gold]"
+			"Cannot be built on [Boulder] tiles",
 		],
 		"shortcutKey": "C"
 	},
@@ -285,6 +299,7 @@
 			"Cannot be built on [Water] tiles",
 			// "[99]% Chance to be destroyed by nukes",
 			"Pillaging this improvement yields approximately [+20 Gold]"
+			"Cannot be built on [Boulder] tiles",
 		],
 		"shortcutKey": "W"
 	},
@@ -308,6 +323,7 @@
 			"Can only be built to improve a resource",
 			// "[99]% Chance to be destroyed by nukes",
 			"Pillaging this improvement yields approximately [+10 Gold]"
+			"Cannot be built on [Boulder] tiles",
 		],
 		"shortcutKey": "P"
 	},
@@ -321,6 +337,7 @@
 			"Can only be built to improve a resource",
 			// "[99]% Chance to be destroyed by nukes",
 			"Pillaging this improvement yields approximately [+10 Gold]"
+			"Cannot be built on [Boulder] tiles",
 		],
 		"shortcutKey": "P"
 	},
@@ -339,6 +356,7 @@
 			"Can be built outside your borders",
 			"Costs [1] [Gold] per turn",
 			"[+1 Production] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>", // no spamming resource icons
+			"Cannot be built on [Boulder] tiles",
 		],
 	        "civilopediaText": [
 	        	{"text":"Paths double movement between tiles. Adjacent Fast travel tiles also count for 2x movement."},
@@ -358,6 +376,7 @@
 			"Can be built outside your borders",
 			"Costs [2] [Gold] per turn",
 			"[+2 Production] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>", // no spamming resource icons
+			"Cannot be built on [Boulder] tiles",
 		], 
 	        "civilopediaText": [
 			{"text":"Movement increases 10x on Fast travel paths."},
@@ -376,9 +395,12 @@
 		"name": "Quarry",
 		"turnsToBuild": 8,
 		"techRequired": "Masonry",
-		"uniques": ["[+1 Production] <after discovering [Chemistry]>", "Can only be built to improve a resource", "Pillaging this improvement yields approximately [+20 Gold]"],
+		"uniques": ["[+1 Production] <after discovering [Chemistry]>", "Can only be built to improve a resource", "Pillaging this improvement yields approximately [+20 Gold]",
+			"Cannot be built on [Boulder] tiles",
+		],
 		"shortcutKey": "Q"
-	},
+
+},
 
 
 
@@ -391,7 +413,7 @@
 		"techRequired": "Mining",
 		"uniques": ["Can be built outside your borders"],
 		"shortcutKey": "X",
-        "civilopediaText": [{"text":"Provides a one-time Production bonus depending on distance to the closest city once finished"}]
+	        "civilopediaText": [{"text":"Provides a one-time Production bonus depending on distance to the closest city once finished"}]
 	},
 	{
 		"name": "Remove Jungle",
@@ -447,26 +469,34 @@
 		"name": "Academy",
 		"terrainsCanBeBuiltOn": ["Land"],
 		"science": 8,
-		"uniques": ["Great Improvement", "[+2 Science] <after discovering [Scientific Theory]>", "[+2 Science] <after discovering [Atomic Theory]>", "Removes removable features when built", "Pillaging this improvement yields approximately [+20 Gold]"]
+		"uniques": ["Great Improvement", "[+2 Science] <after discovering [Scientific Theory]>", "[+2 Science] <after discovering [Atomic Theory]>", "Removes removable features when built", "Pillaging this improvement yields approximately [+20 Gold]",
+			"Cannot be built on [Boulder] tiles",
+		]
 	},
 	{
 		"name": "Manufactory",
 		"terrainsCanBeBuiltOn": ["Land"],
 		"production": 4,
-		"uniques": ["Great Improvement", "[+1 Production] <after discovering [Chemistry]>", "Removes removable features when built", "Pillaging this improvement yields approximately [+20 Gold]"]
+		"uniques": ["Great Improvement", "[+1 Production] <after discovering [Chemistry]>", "Removes removable features when built", "Pillaging this improvement yields approximately [+20 Gold]",
+			"Cannot be built on [Boulder] tiles",
+		]
 	},
 	{
 		"name": "Customs house",
 		"terrainsCanBeBuiltOn": ["Land"],
 		"gold": 4,
-		"uniques": ["Great Improvement", "[+1 Gold] <after discovering [Economics]>", "Removes removable features when built", "Pillaging this improvement yields approximately [+20 Gold]"]
+		"uniques": ["Great Improvement", "[+1 Gold] <after discovering [Economics]>", "Removes removable features when built", "Pillaging this improvement yields approximately [+20 Gold]",
+			"Cannot be built on [Boulder] tiles",		
+		]
 	},
 
 	{
 		"name": "Holy site",
 		"terrainsCanBeBuiltOn": ["Land"],
 		"faith": 6,
-		"uniques": ["Great Improvement", "Removes removable features when built", "Pillaging this improvement yields approximately [+20 Gold]"]
+		"uniques": ["Great Improvement", "Removes removable features when built", "Pillaging this improvement yields approximately [+20 Gold]",
+			"Cannot be built on [Boulder] tiles",		
+		]
 	},
 
 	//Civilization unique improvements
