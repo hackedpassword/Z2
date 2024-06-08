@@ -154,9 +154,13 @@
 
 	{  // This promo is a hack for Training. When Training II is gained, the Training I button remains. Losing Training I eliminates the prereq thus Training II,
 	   // so we splice a sub-promo in to satisfy the prereq for Training II by removing Training I and leaving this promo.
+
+		// Gameplay notes: Choosing training as an upgrade is an investment. Regaining xp spent on this promo to gain the next is expensive, even more so 
+		// in the next tier. Since each level up is more costly, investing into training must be carefully considered even though it looks like a cheap
+		// way to get promos. Since the unit must be garrisoned, that city cannot buy military units. Train wisely. 
 		"name": "Training Discipline",
 		"uniques": [
-			"Heals [5] damage if it kills a unit",
+			"Heals [5] damage if it kills a unit",  // Seeing application of training
 		],
 		"row": 0,
        		"column": 0,
@@ -172,10 +176,8 @@
 		],
 		"uniques": [
 			"This Unit gains the [Training Discipline] promotion",
-			"This Unit gains [1] XP <in [City center] tiles> <for all movement> <if it hasn't used other actions yet>",
-			// "This promotion is free",  // otherwise this promo sponges the promo opportunity providing no actual upgrade 
-			// "Doing so will consume this opportunity to choose a Promotion", // saving for a level 3 promo
-			// "Comment [Be sure to complete Training I before starting Training II]", 
+			"This Unit gains [2] XP <in [City center] tiles> <for all movement> <if it hasn't used other actions yet>",
+			// looking to add xp when fighting
 		], 
 		"row": 0,
        		"column": 1,
@@ -190,9 +192,8 @@
 		],
 		"prerequisites": ["Training I","Training Discipline"], 
 		"uniques": [
-			"This Unit loses the [Training I] promotion",  // button noise removed
-			"This Unit gains [2] XP <in [City center] tiles> <for all movement> <if it hasn't used other actions yet>",
-			// "Comment [Training with both I and II promotions will count against each promo, and you only get one XP promo buff.]", 
+			"This Unit loses the [Training I] promotion",  // GUI menu button noise removed, correctly, with modhax promo as noted
+			"This Unit gains [4] XP <in [City center] tiles> <for all movement> <if it hasn't used other actions yet>",
 		], 
 		"row": 1,
        		"column": 1,
