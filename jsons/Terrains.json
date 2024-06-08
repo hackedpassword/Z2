@@ -94,7 +94,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"type": "Land",
 		"movementCost": 3,
 		"defenceBonus": 0.5,
-	        "impassable": true,  // unless unit received Adventurer training/promotion 
+	        "impassable": false,  // unless unit received Adventurer training/promotion 
 		"RGB": [99, 40, 7],
 		"uniques": [
 			"Rough terrain",
