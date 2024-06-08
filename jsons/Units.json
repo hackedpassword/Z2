@@ -650,7 +650,7 @@
 		"attackSound": "nuke",
 	},
 	{
-		"name": "Nuclear Missile ICBM",
+		"name": "Nuclear Missile ICBM",  // rename to Nuclear ICBM Missile (after this game)
 		"unitType": "Atomic Ordinance",
 		"movement": 1,
 		"strength": 75,
