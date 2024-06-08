@@ -24,15 +24,10 @@
 		"name": "Boulder",
 		"movementCost": 5, // hard to pass through, does this even work on improvements? I don't think so :(
 		"turnsToBuild": 5,
-		"uniques": [  // commented lines are desired but are not allowed :/
-			"Nullifies all other stats this tile provides",
-			"Units ending their turn on this terrain take [20] damage <with [50]% chance>",
-			"Has an elevation of [1] for visibility calculations",
-			"Rough terrain",
+		"uniques": [
 			"Removes removable features when built",  // pepper an opponents' land with boulders, pillage tiles and roll em in
-			"Gives a defensive bonus of [25]%",
 			"Can be built outside your borders",
-			// "[-3] Movement",  // I really want movement modifiers on improvements
+			"Turn this tile into a [Boulder] tile",  // We're going to convert the improvement-Boulder into a TerrainFeature-Boulder
 		],
 		// "impassable": true,
 		"techRequired": "Engineering",
