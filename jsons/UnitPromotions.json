@@ -161,6 +161,7 @@
 		"name": "Training Discipline",
 		"uniques": [
 			"Heals [5] damage if it kills a unit",  // Seeing application of training
+			"Comment [Takes the place of Training I, signals promotion chain to show only the latest Training promo.]", 
 		],
 		"row": 0,
        		"column": 0,
@@ -175,7 +176,6 @@
 			"Fighter","Bomber","Helicopter", 
 		],
 		"uniques": [
-			"This Unit gains the [Training Discipline] promotion",
 			"This Unit gains [2] XP <in [City center] tiles> <for all movement> <if it hasn't used other actions yet>",
 			// looking to add xp when fighting
 		], 
@@ -192,8 +192,26 @@
 		],
 		"prerequisites": ["Training I","Training Discipline"], 
 		"uniques": [
+			"This Unit gains the [Training Discipline] promotion",
 			"This Unit loses the [Training I] promotion",  // GUI menu button noise removed, correctly, with modhax promo as noted
 			"This Unit gains [4] XP <in [City center] tiles> <for all movement> <if it hasn't used other actions yet>",
+		], 
+		"row": 1,
+       		"column": 1,
+	}, 
+	{
+		"name": "Training III", 
+		"unitTypes": [  // listing all until the above is figured out 
+			"Gunpowder","Mounted","Sword","Scout","Armored", 
+			"Archery","Ranged Gunpowder","Siege","Ballistics", 
+			"Melee Water","Ranged Water","Submarine","Aircraft Carrier", 
+			"Fighter","Bomber","Helicopter", 
+		],
+		"prerequisites": ["Training II","Training Discipline"], 
+		"uniques": [
+			"This promotion is free",  // award for completing Training 
+			"This Unit loses the [Training II] promotion",  // GUI menu button noise removed, correctly, with modhax promo as noted
+			"This Unit gains [6] XP <in [City center] tiles> <for all movement> <if it hasn't used other actions yet>",
 		], 
 		"row": 1,
        		"column": 1,
