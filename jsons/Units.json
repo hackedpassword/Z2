@@ -198,7 +198,7 @@
 		"cost": 50,
 		"uniques": [
 			"[+1] Movement <after discovering [Horseback Riding]>",
-			"Founds a new city <in tiles without [Cavern]> <by consuming this unit>",
+			"Founds a new city <in tiles without [Cavern]> <in tiles without [Cave]> <by consuming this unit>",
 			"Excess Food converted to Production when under construction",
 			"Requires at least [2] population",
 			// "Can instantly construct a [Landmark] improvement <for [Human player]> <when [cheatsOn]>",  // test
