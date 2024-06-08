@@ -190,7 +190,7 @@
 		],
 		"prerequisites": ["Training I","Training Discipline"], 
 		"uniques": [
-			"This Unit loses the ["Training I"] promotion",
+			"This Unit loses the [Training I] promotion",  // button noise removed
 			"This Unit gains [2] XP <in [City center] tiles> <for all movement> <if it hasn't used other actions yet>",
 			// "Comment [Training with both I and II promotions will count against each promo, and you only get one XP promo buff.]", 
 		], 
