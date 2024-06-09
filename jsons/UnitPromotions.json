@@ -218,7 +218,7 @@
 	}, 
 	{ // Will queue an instant heal action
 		"name": "Heal Instantly I",
-		"uniques": ["Heal this unit by [35] HP <for [1] movement>"],
+		"uniques": ["Heal this unit by [35] HP <for [1] movement> <once>"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine","Ballistics"],
         "row": 0,
         "column": 0
@@ -226,7 +226,7 @@
 	{
 		"name": "Heal Instantly II",
 		"prerequisites": ["Heal Instantly I"],
-		"uniques": ["Heal this unit by [50] HP <for [1] movement>"],
+		"uniques": ["Heal this unit by [50] HP <for [1] movement> <once>"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine","Ballistics"],
         "row": 1,
         "column": 0
