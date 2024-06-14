@@ -751,7 +751,7 @@
 			"Comment [Activate self destruct]", 
 			"Only available <for [Nuclear Submarine] units>",
 			"Grants the [Self Destruct] promotion <upon turn end>", 
-			"Self-destruct when attacking <for [1] movement> <once>", 
+			"[+1] Movement <for [1] movement> <once>", 
 		],
 		"unitTypes": ["Submarine"], 
 		"column": 27,
