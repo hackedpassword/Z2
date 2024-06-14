@@ -744,6 +744,19 @@
         "row": 3
 	},
 
+	{
+		"name": "Overload", 
+		"prerequisites": "Mobility", 
+		"uniques": [
+			"Self-destructs when attacking <upon turn end>",
+			"Blast radius [2]",
+			"Nuclear weapon of Strength [1]", 
+		],
+		"unitType": ["Nuclear Submarine"], 
+
+	} 
+
+
 	// Aircraft Carrier
 	{
 		"name": "Armor Plating I",
