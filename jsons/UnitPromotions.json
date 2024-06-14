@@ -753,7 +753,7 @@
 			"Blast radius [2]",
 			"Nuclear weapon of Strength [1]", 
 		],
-		"unitType": ["Submarine"], 
+		"unitTypes": ["Submarine"], 
 		"column": 27,
 		"row": 3, 
 	} 
