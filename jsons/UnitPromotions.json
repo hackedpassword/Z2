@@ -753,7 +753,8 @@
 			"Nuclear weapon of Strength [1]", 
 		],
 		"unitType": ["Nuclear Submarine"], 
-
+		"column": 15,
+		"row": 3, 
 	} 
 
 
