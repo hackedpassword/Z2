@@ -748,12 +748,13 @@
 		"name": "Overload", 
 		"prerequisites": ["Mobility"], 
 		"uniques": [
+			"Only available <for [Nuclear Submarine] units>", 
 			"Self-destructs when attacking <upon turn end>",
 			"Blast radius [2]",
 			"Nuclear weapon of Strength [1]", 
 		],
-		"unitType": ["Nuclear Submarine"], 
-		"column": 15,
+		"unitType": ["Submarine"], 
+		"column": 27,
 		"row": 3, 
 	} 
 
