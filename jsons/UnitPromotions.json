@@ -750,17 +750,22 @@
 		"uniques": [
 			"Comment [Activate self destruct]", 
 			"Only available <for [Nuclear Submarine] units>",
-			"[-12] Range",
-			"Self-destructs when attacking <upon turn end>",
-			"Blast radius [2]",
-			"Nuclear weapon of Strength [1]", 
+			"Grants the [Self Destruct] promotion <upon turn end>", 
 			"Heal this unit by [35] HP <for [1] movement> <once>", 
 		],
 		"unitTypes": ["Submarine"], 
 		"column": 27,
 		"row": 3, 
-	} 
-
+	}, 
+	{
+		"name": "Self Destruct", 
+		"uniques": [
+			"[-12] Range",
+			"Self-destructs when attacking <upon turn end>",
+			"Blast radius [2]",
+			"Nuclear weapon of Strength [1]", 
+		], 
+	}, 
 
 	// Aircraft Carrier
 	{
