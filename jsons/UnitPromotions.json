@@ -751,7 +751,7 @@
 			"Comment [Activate self destruct]", 
 			"Only available <for [Nuclear Submarine] units>",
 			"Grants the [Self Destruct] promotion <upon turn end>", 
-			"Heal this unit by [35] HP <for [1] movement> <once>", 
+			"Self-destruct when attacking <for [1] movement> <once>", 
 		],
 		"unitTypes": ["Submarine"], 
 		"column": 27,
@@ -761,7 +761,7 @@
 		"name": "Self Destruct", 
 		"uniques": [
 			"[-12] Range",
-			"Self-destructs when attacking <upon turn end>",
+			"Self-destructs when attacking",
 			"Blast radius [2]",
 			"Nuclear weapon of Strength [1]", 
 		], 
