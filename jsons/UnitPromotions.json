@@ -750,17 +750,16 @@
 		"uniques": [
 			"Comment [Activate self destruct]", 
 			"Only available <for [Nuclear Submarine] units>",
-			"This Unit gains the [Self Destruct] promotion <for [1] movement> <once>", 
+			"This Unit gains the [Self Destruct] promotion <for all movement> <once>",  // The UI trigger (button) 
 		],
 		"unitTypes": ["Submarine"], 
 		"column": 27,
 		"row": 3, 
 	}, 
 	{
-		"name": "Self Destruct", 
-		"range": 1,
+		"name": "Self Destruct",
 		"uniques": [
-			// "[-12] Range",
+			"[-2] Range",  // must be adjacent to the enemy
 			"Self-destructs when attacking",
 			"Blast radius [2]",
 			"Nuclear weapon of Strength [1]", 
