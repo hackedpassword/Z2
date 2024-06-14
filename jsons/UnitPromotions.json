@@ -758,8 +758,9 @@
 	}, 
 	{
 		"name": "Self Destruct", 
+		"range": 1,
 		"uniques": [
-			"[-12] Range",
+			// "[-12] Range",
 			"Self-destructs when attacking",
 			"Blast radius [2]",
 			"Nuclear weapon of Strength [1]", 
