@@ -748,8 +748,9 @@
 		"name": "Overload", 
 		"prerequisites": ["Mobility"], 
 		"uniques": [
+			"Comment [Activate self destruct] <once>", 
 			"Only available <for [Nuclear Submarine] units>", 
-			"Self-destructs when attacking <upon turn end> <once>",
+			"Self-destructs when attacking <upon turn end>",
 			"Blast radius [2]",
 			"Nuclear weapon of Strength [1]", 
 		],
