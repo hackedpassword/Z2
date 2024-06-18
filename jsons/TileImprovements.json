@@ -187,7 +187,7 @@
 	},
 	{
 		"name": "Fishing Boats",
-		"terrainsCanBeBuiltOn": ["Coast"],
+		"terrainsCanBeBuiltOn": ["Coast","CoastTile"],
 		"food": 1,
 		"techRequired": "Fishing",
 		"uniques": [  // the sea is a trove of resources
