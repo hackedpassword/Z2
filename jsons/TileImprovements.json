@@ -110,6 +110,7 @@
 	},
 	{
 		"name": "Bridge",  // represents the secret rift between Death Mountain and the Maze Island bridge
+				  // youtube Zelda 2 sub-7 speedrun if you don't know what this is
 		"turnsToBuild": 7,
 		"terrainsCanBeBuiltOn": ["Coast","CoastTile","Ocean","Lakes"],
 		"culture": 3,
@@ -160,10 +161,10 @@
 	{
 		"name": "Mine",  // This leads to production improvements w/ Mountains as resources in Z2 are scarce
 				 // don't forget workers are taking 50 dmg/t/Mountain so building these are tricky
-		"terrainsCanBeBuiltOn": ["Hill","Mound","Mountain"],
+		"terrainsCanBeBuiltOn": ["Hill","Mound","Mountain","Cavern"],
 		"production": 2,
 		"turnsToBuild": 7,
-		"techRequired": "Mining",  // ..and requires the worker unit to have learned Adventurer promotion
+		"techRequired": "Mining",  // ..and requires the worker unit to have learned Adventurer promotion to build on Mountain
 		"uniques": [
 			"[+1 Production] <after discovering [Chemistry]>",
 		        "Pillaging this improvement yields approximately [+20 Gold]"
@@ -348,6 +349,7 @@
 	// Name: Path
 		"name": "Road",
 		"terrainsCanBeBuiltOn": ["Land","NaturalWonder"], // so paths can cross bridges
+		// #todo: filter terrains down to bridges
 		"turnsToBuild": 4,
 		// "production": 1,  // roads make cities more productive - moved to uniques
 		"techRequired": "The Wheel",
