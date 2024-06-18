@@ -904,11 +904,14 @@
 				"prerequisites": ["Globalization","Particle Physics","Nuclear Fusion","Nanotechnology","Stealth"],
 				"uniques": [
 					"[+50]% Great Person generation [in all cities]",
+					"Free Social Policy", 
+					"Free Great Person", 
+					"New [All] units start with [3] Experience [in all cities]", 
 					"Quantity of strategic resources produced by the empire +[+25]%",  // inconsistent implementation "+[+N]" should be "[+N]" unless "+[" denotes guaranteed positive value
 					"Can be continually researched",
 				],
 				"quote": "",
-              		   	"civilopediaText": [{"text": "The future only exists in the present. Ask any time traveller."}]
+              		   	"civilopediaText": [{"text": "Yesterday don't mean $#!/ -Pantera"}],
 			},
 		]
 	}
