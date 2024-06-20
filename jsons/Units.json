@@ -2322,7 +2322,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 	{
 		"name": "Mechanized Infantry",
 		"unitType": "Gunpowder",
-		"movement": 3,
+		"movement": 4,
 		"strength": 90,
 		"cost": 375,
 		"requiredTech": "Mobile Tactics",
@@ -2370,7 +2370,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"uniques": [
             "Empire enters a [8]-turn Golden Age <by consuming this unit>",
             "Can instantly construct a [Landmark] improvement <by consuming this unit>",
-            "Great Person - [Culture]", "Unbuildable", "Uncapturable"],
+            "Great Person - [Culture]", "Unbuildable", "Uncapturable <when [Fortified]>"],  // shhh busy
 		"movement": 2
 	},
 	{
@@ -2379,7 +2379,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"uniques": [
             "Can hurry technology research",
             "Can instantly construct a [Academy] improvement <by consuming this unit>",
-            "Great Person - [Science]", "Unbuildable", "Uncapturable"],
+            "Great Person - [Science]", "Unbuildable"],  // totally capturable
 		"movement": 2
 	},
 	{
@@ -2387,7 +2387,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"unitType": "Civilian",
 		"uniques": ["Can undertake a trade mission with City-State, giving a large sum of gold and [30] Influence",
             "Can instantly construct a [Customs house] improvement <by consuming this unit>",
-			"Great Person - [Gold]", "Unbuildable", "Uncapturable"],
+			"Great Person - [Gold]", "Unbuildable", "Uncapturable <in [{non-[Enemy land]}] tiles>"],  // can talk a way out of trouble while travelling
 		"movement": 2
 	},
 	{
@@ -2395,7 +2395,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"unitType": "Civilian",
 		"uniques": ["Can speed up construction of a building",
             "Can instantly construct a [Manufactory] improvement <by consuming this unit>",
-            "Great Person - [Production]", "Unbuildable", "Uncapturable"],
+            "Great Person - [Production]", "Unbuildable","Uncapturable <in [Friendly] tiles>"],  // Do not disturb my circles
 		"movement": 2
 	},
 	{
