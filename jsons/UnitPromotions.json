@@ -176,7 +176,7 @@
 			"Fighter","Bomber","Helicopter", 
 		],
 		"uniques": [
-			"This Unit gains [2] XP <in [City center] tiles> <for all movement> <if it hasn't used other actions yet>",
+			"This Unit gains [4] XP <in [City center] tiles> <for all movement> <if it hasn't used other actions yet>",
 			// looking to add xp when fighting
 		], 
 		"row": 0,
@@ -194,7 +194,7 @@
 		"uniques": [
 			"This Unit gains the [Training Discipline] promotion",
 			"This Unit loses the [Training I] promotion",  // GUI menu button noise removed, correctly, with modhax promo as noted
-			"This Unit gains [4] XP <in [City center] tiles> <for all movement> <if it hasn't used other actions yet>",
+			"This Unit gains [8] XP <in [City center] tiles> <for all movement> <if it hasn't used other actions yet>",  // values compensating for burning a promo, free promo not working yet
 		], 
 		"row": 1,
        		"column": 1,
@@ -211,7 +211,7 @@
 		"uniques": [
 			"This promotion is free",  // award for completing Training 
 			"This Unit loses the [Training II] promotion",  // GUI menu button noise removed, correctly, with modhax promo as noted
-			"This Unit gains [6] XP <in [City center] tiles> <for all movement> <if it hasn't used other actions yet>",
+			"This Unit gains [12] XP <in [City center] tiles> <for all movement> <if it hasn't used other actions yet>",
 		], 
 		"row": 1,
        		"column": 1,
