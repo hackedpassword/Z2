@@ -352,6 +352,7 @@
 			"Can move after attacking <if it hasn't used other actions yet>",
 			"[+300]% Strength <vs [Gunpowder] units <when attacking>", 
 			"[+150]% Strength <vs [Gunpowder] units> <when defending>",
+			"[+125]% Strength <vs [Mech] units> <when attacking>", 
 			"[+100]% Strength <vs [Armored] units> <when attacking>",
 			"Invisible to non-adjacent units <after discovering [Stealth]> <in [Rough Terrain] tiles>",  // modern camouflage
 			"No defensive terrain bonus",
@@ -745,6 +746,7 @@
 		"requiredTech": "Nuclear Fusion",
 		"requiredResource": "Uranium",
 		"uniques": [
+			"Mech", 
 			"Only available <after discovering [Robotics]>",  // Allows other tech to be discovered from Nuclear Fusion
 			// "Can move after attacking",  // first gen not agile, maybe add promotion
 			"[+100]% Strength <vs cities> <when attacking>",  // GDR's are urban menaces 
@@ -766,6 +768,7 @@
 		// "requiredResource": "Uranium",  // civopedia is confused: reqRes(1) + Consumes(2) = 3U? Must decipher correct usage.
 		"promotions": [],
 		"uniques": [
+			"Mech", 
 			"Consumes [2] [Uranium]",
 			"[450]% maintenance costs",  // very costly to operate
 			"Can move after attacking",  //
@@ -796,6 +799,7 @@
 		"requiredResource": "Uranium",  // Fusion generator, U += 1
 		"promotions": ["March","Rejuvenation"],  // Gen-2 nanotech
 		"uniques": [
+			"Mech", 
 			"[1000]% maintenance costs",  // not for the feint
 			"Only available <if [Spaceship Factory] is constructed> <in this city>",  // requires advanced construction facilities
 			"Only available <if [Nuclear Plant] is constructed> <in this city>",  // local materials handling
