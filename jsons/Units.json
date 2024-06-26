@@ -2263,7 +2263,7 @@ Units surviving incursions with the hulking MK-III note only: 'Run.'",
 		"cost": 375,
 		"requiredTech": "Radar",
 		"uniques": [
-			"May Paradrop up to [6] tiles from inside friendly territory",
+			"May Paradrop up to [6] tiles from inside friendly territory <in [City center] tiles>",
 			"[+75]% Strength <vs [Ballistics] units> <when attacking>", 
 			"Double movement in [Grassland]", 
 			"Can move immediately once bought",  // bonus for buying, air delivery
