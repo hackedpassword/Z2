@@ -58,6 +58,7 @@
 		// into the units' inventory (like a plane in a carrier). Civilian units will not equip the RPG, 
 		// instead will hand off the RPG unit to the nearest unit/city that can carry RPG or Missile, 
 		// making civilians into RPG squires.
+		// Note: Sometimes when activating, RPG unit goes somewhere else, close, like a city. \o/
 		// The '<[1] times>' UnitActionModifier is critical, which activates the menu button. 
 			// "Can carry [2] [Fireball] units",  // doesn't exist yet
 			"Can carry [2] [RPG] units",  // gains a bazooka
@@ -74,7 +75,7 @@
 		"uniques": [
 			"Only available <for [Military] units>",
 			// "Only available <with [Marble]>",  // can't double down on Only Available's :p
-			"Can see invisible [All] units",
+			"Can see invisible [Land] units",
 			"Ignores Zone of Control",
 		]
 	},
@@ -84,7 +85,7 @@
 			"Only available <for [Military] units>",
 			"May capture killed [Land] units <with [20]% chance>",
 			"Earn [50]% of killed [All] unit's [Cost] as [Gold]",
-			"Can transform to [Scout]",  // gonna try it
+			"Can transform to [Scout] <in [City center] tiles>",
 		]
 	},
         {
@@ -135,12 +136,17 @@
 	},
         {
 		"name": "Magic Key",
+		"prerequisites": ["Spell"],  // considering adding Thunder to prereqs to indicate Kasuto was visited
 		"uniques": [
 			// "Only available <for [Military] units>",
-			"Only available <when above [1] [Uranium]>",  // For now we're going with a simple unlock that's sensible
-			// "Comment [Requires both Thrust promotions to activate]", 
+		// The way magic key is supposed to be made available is with Spell, which being that Spell is in New Kasuto also, 
+		// we need another mechanism to obtain this most powerful promo. I'm using the 8th magic potion requirement requiring 
+		// finding the 3 others, but for gameplay, owning 2 magic potion tiles, or, 1 with double resources, or, 1 with Future Tech 
+		// resources bonuses, will be adequate. 
+			"Only available <when above [4] [Oil]>",  // 4 units per tile, need more than 1 tile's worth
 			"May enter foreign tiles without open borders",  // the key to the land
 			"Free Social Policy <upon conquering a city>",  // the key to the city
+		// unitType will be all
 		]
 	},
 
@@ -217,7 +223,7 @@
        		"column": 1,
 	}, 
 	{ // Will queue an instant heal action
-		"name": "Heal Instantly I",
+		"name": "Heal Instantly I",  // will try to better align this to a Heal spell
 		"uniques": ["Heal this unit by [35] HP <for [1] movement> <once>"],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine","Ballistics"],
         "row": 0,
