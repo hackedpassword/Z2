@@ -757,8 +757,9 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 3,
 		"occursOn": ["Desert"],
 		"uniques": [
-			// "Comment [A mighty Jump will gain you audience with the towns' Knight!]",
-			"Grants [Downward Thrust] ([Learned from the town's Hylian Knight]) to adjacent [Land] units for the rest of the game",  // supposed to use a <conditional> but won't accept any
+			"Comment [A mighty Jump will gain you audience with the towns' Knight!]",
+			"Comment [Learn the Jump spell to unlock Downward Thrust.]", 
+			// "Grants [Downward Thrust] ([Learned from the town's Hylian Knight]) to adjacent [Land] units for the rest of the game",  // supposed to use a <conditional> but won't accept any
 			// "Comment [You must obtain the Water of Life to gain audience with the town's Wise Man!]",
 			"Grants [Fairy] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
@@ -801,8 +802,9 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 3,
 		"occursOn": ["Desert"],
 		"uniques": [
-			// "Comment [A mighty Jump will gain you audience with the towns' Knight!]",
-			"Grants [Upward Thrust] ([Learned from the town's Hylian Knight]) to adjacent [Land] units for the rest of the game",  // supposed to use a <conditional> but won't accept any
+			"Comment [A mighty Jump will gain you audience with the towns' Knight!]",
+			"Comment [Learn the Jump spell to unlock Upward Thrust.]", 
+			// "Grants [Upward Thrust] ([Learned from the town's Hylian Knight]) to adjacent [Land] units for the rest of the game",  // supposed to use a <conditional> but won't accept any
 			// "Comment [You must save the Lost Child to speak with the town's Wise Man!]",
 			"Grants [Reflect] ([Combat magic]) to adjacent [Land] units for the rest of the game",  // supposed to use a <conditional> but won't accept any
 			"Tile provides yield without assigned population",
@@ -825,10 +827,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"occursOn": ["Grassland"],
 		"uniques": [
 			"Grants [Spell] ([Combat magic]) to adjacent [Land] units for the rest of the game",
-			"Grants [Magic Key] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",  // supposed to use a <conditional> but won't accept any
-		// Units looking to take advantage will be on mission to visit the needed towns.
-		// Magic Key is a very powerful upgrade. For now the req is uranium.
-			// "Comment [Magic Key promotion requires both Thrusts to activate.]", 
+			// Magic key becomes available but has additional requirements
 			"Tile provides yield without assigned population",
 			"Comment [Healer house recovers 50HP per turn (as minus 50 damage)]",
 			"Units ending their turn on this terrain take [-50] damage",  // healer house
