@@ -125,7 +125,7 @@
 		"name": "Upward Thrust",
 		"prerequisites": ["Jump"],
 		"uniques": [
-			"Only available <for units with [Reflect]>",l
+			"Only available <for units with [Reflect]>",
 			"[50]% chance to intercept air attacks",
 			"[100]% Strength <vs [Air] units>",
 			"May Paradrop up to [6] tiles from inside friendly territory <for units with [Spell]>",
