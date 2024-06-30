@@ -136,14 +136,15 @@
 	},
         {
 		"name": "Magic Key",
-		"prerequisites": ["Spell"],  // considering adding Thunder to prereqs to indicate Kasuto was visited
+		// "prerequisites": ["Spell"],  // considering adding Thunder to prereqs to indicate Kasuto was visited
 		"uniques": [
 			// "Only available <for [Military] units>",
 		// The way magic key is supposed to be made available is with Spell, which being that Spell is in New Kasuto also, 
 		// we need another mechanism to obtain this most powerful promo. I'm using the 8th magic potion requirement requiring 
 		// finding the 3 others, but for gameplay, owning 2 magic potion tiles, or, 1 with double resources, or, 1 with Future Tech 
 		// resources bonuses, will be adequate. 
-			"Only available <when above [4] [Oil]>",  // 4 units per tile, need more than 1 tile's worth
+			"Only available <for units with [Spell]>", 
+			// "Only available <when above [4] [Oil]>",  // 4 units per tile, need more than 1 tile's worth
 			"May enter foreign tiles without open borders",  // the key to the land
 			"Free Social Policy <upon conquering a city>",  // the key to the city
 		// unitType will be all
