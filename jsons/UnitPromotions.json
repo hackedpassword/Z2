@@ -87,8 +87,8 @@
 			"Earn [50]% of killed [All] unit's [Cost] as [Gold]",
 			"Can transform to [Scout] <in [City center] tiles>",
 
-			"This Unit gains the [Magic Key] promotion",  // hax to convince promo tree to see this dependency 
-			"This Unit loses the [Magic Key] promotion",
+			"This Unit gains the [Magic Key] promotion <on [New Kasuto] tiles> <for all movement>",  // hax to convince promo tree to see this dependency 
+			// "This Unit loses the [Magic Key] promotion",
 			
 		]
 	},
@@ -149,7 +149,7 @@
 		// resources bonuses, will be adequate. 
 			
 			// "Only available <for units with [Spell]>", 
-			// "Only available <when above [4] [Oil]>",  // 4 units per tile, need more than 1 tile's worth
+			"Only available <when above [4] [Oil]>",  // 4 units per tile, need more than 1 tile's worth
 			"May enter foreign tiles without open borders",  // the key to the land
 			"Free Social Policy <upon conquering a city>",  // the key to the city
 		// unitType will be all
