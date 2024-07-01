@@ -221,7 +221,7 @@
 		],
 		"prerequisites": ["Training II","Training Discipline"], 
 		"uniques": [
-			"This promotion is free",  // award for completing Training 
+			"This Promotion is free",  // award for completing Training 
 			"This Unit loses the [Training II] promotion",  // GUI menu button noise removed, correctly, with modhax promo as noted
 			"This Unit gains [12] XP <in [City center] tiles> <for all movement> <if it hasn't used other actions yet>",
 		], 
