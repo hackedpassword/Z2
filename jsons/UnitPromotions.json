@@ -87,7 +87,11 @@
 			"Earn [50]% of killed [All] unit's [Cost] as [Gold]",
 			"Can transform to [Scout] <in [City center] tiles>",
 
-			"This Unit gains the [Magic Key] promotion <in [Kasuto Town] tiles> <when above [4] [Oil]> <for all movement> <once>",
+			
+			// works, testing if improvement counts
+			//"This Unit gains the [Magic Key] promotion <in [Kasuto Town] tiles> <when above [4] [Oil]> <for all movement> <once>",
+			"This Unit gains the [Magic Key] promotion <in [Kasuto Town] tiles> <when above [1] [Oil well]> <for all movement> <once>",
+
 			// "This Unit loses the [Magic Key] promotion",
 			
 		]
