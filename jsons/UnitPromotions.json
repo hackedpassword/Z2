@@ -86,6 +86,10 @@
 			"May capture killed [Land] units <with [20]% chance>",
 			"Earn [50]% of killed [All] unit's [Cost] as [Gold]",
 			"Can transform to [Scout] <in [City center] tiles>",
+
+			"This Unit gains the [Magic Key] promotion",  // hax to convince promo tree to see this dependency 
+			"This Unit loses the [Magic Key] promotion",
+			
 		]
 	},
         {
@@ -143,8 +147,6 @@
 		// we need another mechanism to obtain this most powerful promo. I'm using the 8th magic potion requirement requiring 
 		// finding the 3 others, but for gameplay, owning 2 magic potion tiles, or, 1 with double resources, or, 1 with Future Tech 
 		// resources bonuses, will be adequate. 
-			"This Unit gains the [Magic Key] promotion",  // hax to convince promo tree to see this dependency 
-			"This Unit loses the [Magic Key] promotion",
 			
 			// "Only available <for units with [Spell]>", 
 			// "Only available <when above [4] [Oil]>",  // 4 units per tile, need more than 1 tile's worth
