@@ -827,6 +827,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"occursOn": ["Grassland"],
 		"uniques": [
 			"Grants [Spell] ([Combat magic]) to adjacent [Land] units for the rest of the game",
+			// "Grants [Magic Key] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			// Magic key becomes available but has additional requirements
 			"Tile provides yield without assigned population",
 			"Comment [Healer house recovers 50HP per turn (as minus 50 damage)]",
