@@ -87,7 +87,7 @@
 			"Earn [50]% of killed [All] unit's [Cost] as [Gold]",
 			"Can transform to [Scout] <in [City center] tiles>",
 
-			"This Unit gains the [Magic Key] promotion <on [New Kasuto] tiles> <for all movement>",  // hax to convince promo tree to see this dependency 
+			"This Unit gains the [Magic Key] promotion <on [Kasuto Town] tiles> <for all movement>",  // hax to convince promo tree to see this dependency 
 			// "This Unit loses the [Magic Key] promotion",
 			
 		]
