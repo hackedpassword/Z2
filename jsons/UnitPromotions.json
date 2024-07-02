@@ -89,7 +89,7 @@
 
 			
 			// works, testing if improvement counts
-			//"This Unit gains the [Magic Key] promotion <in [Kasuto Town] tiles> <when above [4] [Oil]> <for all movement> <once>",
+			//"This Unit gains the [Magic Key] promotion <in [Kasuto Town] tiles> <when above [4] [Aluminum]> <for all movement> <once>",
 			"This Unit gains the [Magic Key] promotion <in [Kasuto Town] tiles> <when above [1] [Oil well]> <for all movement> <once>",
 
 			// "This Unit loses the [Magic Key] promotion",
