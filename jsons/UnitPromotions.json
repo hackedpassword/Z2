@@ -23,7 +23,7 @@
 		], 
 		"column": 40,
 		"row": 1,
-		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
+		//"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
 	},
         {
 		"name": "Jump",
@@ -37,9 +37,9 @@
 			"This Unit gains the [Downward Thrust] promotion <in [Darunia Town] tiles> <for all movement> <once>",
 			"This Unit gains the [Upward Thrust] promotion <in [Mido Town] tiles> <for all movement> <once>",
 		], 
-		"column": 20,
+		"column": 40,
 		"row": 2,
-		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
+		//"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
 	},
         {
 		"name": "Life",
@@ -50,7 +50,7 @@
 		],
 		"column": 41,
 		"row": 1,
-		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
+		//"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
 	},
         {
 		"name": "Fairy",
@@ -62,7 +62,7 @@
 		],
 		"column": 41,
 		"row": 2,
-		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
+		//"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
 	},
         {
 		"name": "Fire",
@@ -88,7 +88,7 @@
 		],
 		"column": 42,
 		"row": 1,
-		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
+		//"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
 	},
         {
 		"name": "Reflect",
@@ -100,11 +100,12 @@
 		],
 		"column": 42,
 		"row": 2,
-		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
+		//"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
 	},
         {  // transformations, transmorphing
 		"name": "Spell",
 		"uniques": [
+			"Only available <for units with [Spell]>",  // hax to show the promo with UnitTypes, but unavailable until granted
 			//"Only available <for [Military] units>",
 			"May capture killed [Land] units <with [20]% chance>",
 			"Earn [50]% of killed [All] unit's [Cost] as [Gold]",
@@ -129,7 +130,7 @@
 		],
 		"column": 44,
 		"row": 1,
-		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
+		//"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
 	},
 
 // The following 3 promotions are supposed to be difficult to obtain, and very powerful. 
@@ -151,7 +152,7 @@
 		// and this line only recognizes the last conditional. 
 			// "[+50]% Strength <for units with [Shield]> <for units with [Jump]> <for units with [Life]>",  // ditto 
 		],
-	"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
+	//"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
         "column": 40,
         "row": 3, 
 	},
@@ -164,7 +165,7 @@
 			"[100]% Strength <vs [Air] units>",
 			"May Paradrop up to [6] tiles from inside friendly territory <for units with [Spell]>",
 		],
-		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
+		//"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
         "column": 41,
         "row": 3,
 	},
@@ -186,7 +187,7 @@
 		],
 		"column": 43,
 		"row": 3,
-		"unitTypes": ["Land"],
+		//"unitTypes": ["Land"],
 	},
 
 ////////////////////////////////
