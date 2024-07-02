@@ -20,7 +20,9 @@
 			"Only available <for [Military] units>",  // needs to be built into UnitTypes 
 			"[25]% Strength bonus for [All] units within [1] tiles",
 			"May withdraw before melee ([25]%)",
-		]
+		], 
+		"column": 0,
+		"row": 40,
 	},
         {
 		"name": "Jump",
@@ -28,7 +30,15 @@
 			"Only available <for [Military] units>",
 			"Can see over obstacles",
 			"Can move after attacking",
-		]
+
+			// Jump is required for each thrust upgrade
+			// The unit needs to be in the town tile to gain the promo
+			"This Unit gains the [Downward Thrust] promotion <in [Darunia Town] tiles> <for all movement> <once>",
+			"This Unit gains the [Upward Thrust] promotion <in [Mido Town] tiles> <for all movement> <once>",
+			
+		], 
+		"column": 1,
+		"row": 40,
 	},
         {
 		"name": "Life",
@@ -36,7 +46,9 @@
 			"Only available <for [Military] units>",
 			"Unit will heal every turn, even if it performs an action",
 			"All adjacent units heal [20] HP when healing",
-		]
+		],
+		"column": 0,
+		"row": 41,
 	},
         {
 		"name": "Fairy",
@@ -45,7 +57,9 @@
 			// "Only available <with [Citrus]>",		
 			"Ignores terrain cost <for [Military] units> <with [Citrus]>",  // current bug makes this delayed by one unit action (self) per turn, see: https://github.com/yairm210/Unciv/issues/10674
 			"Ignores Zone of Control",
-		]
+		],
+		"column": 1,
+		"row": 41,
 	},
         {
 		"name": "Fire",
@@ -68,7 +82,9 @@
 			
 			"Ranged attacks may be performed over obstacles",
 			"May attack when embarked",
-		], 
+		],
+		"column": 0,
+		"row": 42,
 	},
         {
 		"name": "Reflect",
@@ -77,7 +93,9 @@
 			// "Only available <with [Marble]>",  // can't double down on Only Available's :p
 			"Can see invisible [Land] units",
 			"Ignores Zone of Control",
-		]
+		],
+		"column": 1,
+		"row": 42,
 	},
         {  // transformations, transmorphing
 		"name": "Spell",
@@ -87,14 +105,13 @@
 			"Earn [50]% of killed [All] unit's [Cost] as [Gold]",
 			"Can transform to [Scout] <in [City center] tiles>",
 
-			
-			// works, testing if improvement counts
 			"This Unit gains the [Magic Key] promotion <in [Kasuto Town] tiles> <when above [4] [Aluminum]> <for all movement> <once>",
-			//"This Unit gains the [Magic Key] promotion <in [Kasuto Town] tiles> <when above [1] [Oil well]> <for all movement> <once>",
-
-			// "This Unit loses the [Magic Key] promotion",
 			
-		]
+			//"This Unit gains the [Magic Key] promotion <in [Kasuto Town] tiles> <when above [1] [Oil well]> <for all movement> <once>",
+			
+		],
+		"column": 0,
+		"row": 43,
 	},
         {
 		"name": "Thunder",
@@ -103,7 +120,9 @@
 			"Only available <for non-[Civilian] units>", 
 			"[+100]% Strength <when attacking> <in [Enemy land] tiles> <[2] times>",
 			"[+200]% Strength <when attacking> <if it hasn't used other actions yet> <during a Golden Age> <once>",  // bezerker rally mode
-		]
+		],
+		"column": 0,
+		"row": 44,
 	},
 
 // The following 3 promotions are supposed to be difficult to obtain, and very powerful. 
@@ -126,8 +145,8 @@
 			// "[+50]% Strength <for units with [Shield]> <for units with [Jump]> <for units with [Life]>",  // ditto 
 		],
 	"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
-        "column": 1,
-        "row": 5, 
+        "column": 2,
+        "row": 40, 
 	},
         {
 		"name": "Upward Thrust",
@@ -139,8 +158,8 @@
 			"May Paradrop up to [6] tiles from inside friendly territory <for units with [Spell]>",
 		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
-        "column": 1,
-        "row": 6, 
+        "column": 2,
+        "row": 41,
 	},
         {
 		"name": "Magic Key",
@@ -153,11 +172,13 @@
 		// resources bonuses, will be adequate. 
 			
 			// "Only available <for units with [Spell]>", 
-			"Only available <when above [4] [Oil]>",  // 4 units per tile, need more than 1 tile's worth
+			// "Only available <when above [4] [Oil]>",  // 4 units per tile, need more than 1 tile's worth
 			"May enter foreign tiles without open borders",  // the key to the land
 			"Free Social Policy <upon conquering a city>",  // the key to the city
 		// unitType will be all
-		]
+		],
+		"column": 2,
+		"row": 43,
 	},
 
 ////////////////////////////////
