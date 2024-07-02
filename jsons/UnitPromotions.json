@@ -27,12 +27,12 @@
         {
 		"name": "Jump",
 		"uniques": [
-			"Only available <for [Military] units>",
+			"Only available <for non-[Civilian] units>",
 			"Can see over obstacles",
 			"Can move after attacking",
 
-			// Jump is required for each thrust upgrade
-			// The unit needs to be in the town tile to gain the promo
+		// Jump is required for each thrust upgrade
+		// The unit needs to be in the town tile to gain the promo
 			"This Unit gains the [Downward Thrust] promotion <in [Darunia Town] tiles> <for all movement> <once>",
 			"This Unit gains the [Upward Thrust] promotion <in [Mido Town] tiles> <for all movement> <once>",
 			
