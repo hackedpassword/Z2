@@ -23,6 +23,7 @@
 		], 
 		"column": 40,
 		"row": 1,
+		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
 	},
         {
 		"name": "Jump",
@@ -35,10 +36,10 @@
 		// The unit needs to be in the town tile to gain the promo
 			"This Unit gains the [Downward Thrust] promotion <in [Darunia Town] tiles> <for all movement> <once>",
 			"This Unit gains the [Upward Thrust] promotion <in [Mido Town] tiles> <for all movement> <once>",
-			
 		], 
 		"column": 20,
 		"row": 2,
+		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
 	},
         {
 		"name": "Life",
@@ -49,6 +50,7 @@
 		],
 		"column": 41,
 		"row": 1,
+		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
 	},
         {
 		"name": "Fairy",
@@ -60,6 +62,7 @@
 		],
 		"column": 41,
 		"row": 2,
+		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
 	},
         {
 		"name": "Fire",
@@ -85,6 +88,7 @@
 		],
 		"column": 42,
 		"row": 1,
+		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
 	},
         {
 		"name": "Reflect",
@@ -96,6 +100,7 @@
 		],
 		"column": 42,
 		"row": 2,
+		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
 	},
         {  // transformations, transmorphing
 		"name": "Spell",
@@ -112,6 +117,7 @@
 		],
 		"column": 43,
 		"row": 1,
+		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
 	},
         {
 		"name": "Thunder",
@@ -123,6 +129,7 @@
 		],
 		"column": 44,
 		"row": 1,
+		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
 	},
 
 // The following 3 promotions are supposed to be difficult to obtain, and very powerful. 
@@ -171,11 +178,12 @@
 		// finding the 3 others, but for gameplay, owning 2 magic potion tiles, or, 1 with double resources, or, 1 with Future Tech 
 		// resources bonuses, will be adequate. 
 			
-			// "Only available <for units with [Spell]>", 
-			// "Only available <when above [4] [Oil]>",  // 4 units per tile, need more than 1 tile's worth
+			"Only available <for units with [Spell]>", 
+			// "Only available <when above [4] [Aluminum]>",  // 4 units per tile, need more than 1 tile's worth
 			"May enter foreign tiles without open borders",  // the key to the land
 			"Free Social Policy <upon conquering a city>",  // the key to the city
 		// unitType will be all
+			"unitTypes": ["Land"],
 		],
 		"column": 43,
 		"row": 3,
