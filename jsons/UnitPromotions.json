@@ -27,7 +27,7 @@
         {
 		"name": "Jump",
 		"uniques": [
-			"Only available <for non-[Civilian] units>",
+			// "Only available <for non-[Civilian] units>",
 			"Can see over obstacles",
 			"Can move after attacking",
 
