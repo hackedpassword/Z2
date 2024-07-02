@@ -24,7 +24,7 @@
 		], 
 		"column": 40,
 		"row": 1,
-		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
+		"unitTypes": ["Gunpowder","Mounted","Sword","Scout","Armored","Archery","Ranged Gunpowder","Siege","Ballistics","Helicopter"], 
 	},
         {
 		"name": "Jump",
@@ -41,7 +41,7 @@
 		], 
 		"column": 40,
 		"row": 2,
-		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
+		"unitTypes": ["Gunpowder","Mounted","Sword","Scout","Armored","Archery","Ranged Gunpowder","Siege","Ballistics","Helicopter"],
 	},
         {
 		"name": "Life",
@@ -53,7 +53,7 @@
 		],
 		"column": 41,
 		"row": 1,
-		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
+		"unitTypes": ["Gunpowder","Mounted","Sword","Scout","Armored","Archery","Ranged Gunpowder","Siege","Ballistics","Helicopter"],
 	},
         {
 		"name": "Fairy",
@@ -66,7 +66,7 @@
 		],
 		"column": 41,
 		"row": 2,
-		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
+		"unitTypes": ["Gunpowder","Mounted","Sword","Scout","Armored","Archery","Ranged Gunpowder","Siege","Ballistics","Helicopter"],
 	},
         {
 		"name": "Fire",
@@ -93,7 +93,7 @@
 		],
 		"column": 42,
 		"row": 1,
-		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
+		"unitTypes": ["Gunpowder","Mounted","Sword","Scout","Armored","Archery","Ranged Gunpowder","Siege","Ballistics","Helicopter"],
 	},
         {
 		"name": "Reflect",
@@ -106,7 +106,7 @@
 		],
 		"column": 42,
 		"row": 2,
-		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
+		"unitTypes": ["Gunpowder","Mounted","Sword","Scout","Armored","Archery","Ranged Gunpowder","Siege","Ballistics","Helicopter"],
 	},
         {  // transformations, transmorphing
 		"name": "Spell",
@@ -124,7 +124,7 @@
 		],
 		"column": 43,
 		"row": 1,
-		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
+		"unitTypes": ["Gunpowder","Mounted","Sword","Scout","Armored","Archery","Ranged Gunpowder","Siege","Ballistics","Helicopter"],
 	},
         {
 		"name": "Thunder",
@@ -137,7 +137,7 @@
 		],
 		"column": 44,
 		"row": 1,
-		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
+		"unitTypes": ["Gunpowder","Mounted","Sword","Scout","Armored","Archery","Ranged Gunpowder","Siege","Ballistics","Helicopter"],
 	},
 
 // The following 3 promotions are supposed to be difficult to obtain, and very powerful. 
@@ -160,9 +160,9 @@
 		// and this line only recognizes the last conditional. 
 			// "[+50]% Strength <for units with [Shield]> <for units with [Jump]> <for units with [Life]>",  // ditto 
 		],
-	"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
         "column": 40,
         "row": 3, 
+		"unitTypes": ["Gunpowder","Mounted","Sword","Scout","Armored","Archery","Ranged Gunpowder","Siege","Ballistics","Helicopter"],
 	},
         {
 		"name": "Upward Thrust",
@@ -173,9 +173,9 @@
 			"[100]% Strength <vs [Air] units>",
 			"May Paradrop up to [6] tiles from inside friendly territory <for units with [Spell]>",
 		],
-		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
         "column": 41,
         "row": 3,
+		"unitTypes": ["Gunpowder","Mounted","Sword","Scout","Armored","Archery","Ranged Gunpowder","Siege","Ballistics","Helicopter"],
 	},
         {
 		"name": "Magic Key",
@@ -196,8 +196,8 @@
 		],
 		"column": 43,
 		"row": 3,
-		"unitTypes": ["Land"],
-	},
+		"unitTypes": ["Gunpowder","Mounted","Sword","Scout","Armored","Archery","Ranged Gunpowder","Siege","Ballistics","Helicopter"],
+	}, 
 
 ////////////////////////////////
 
