@@ -118,9 +118,6 @@
 			"Can transform to [Scout] <in [City center] tiles>",
 
 			"This Unit gains the [Magic Key] promotion <in [Kasuto Town] tiles> <when above [4] [Aluminum]> <for all movement> <once>",
-			
-			//"This Unit gains the [Magic Key] promotion <in [Kasuto Town] tiles> <when above [1] [Oil well]> <for all movement> <once>",
-			
 		],
 		"column": 43,
 		"row": 1,
@@ -145,7 +142,7 @@
 	
         {
 		"name": "Downward Thrust",
-		"prerequisites": ["Jump"],
+		"prerequisites": ["Jump"],  // See Jump to understand how this is gained
 		"uniques": [
 			"Only available <for units with [Downward Thrust]>",  // made prereq attrib above
 			// "Comment [Requires visiting Ruto town to activate (requirement may change)]",  // supposed to have the trophy but can't <with [Silver]>
@@ -166,7 +163,7 @@
 	},
         {
 		"name": "Upward Thrust",
-		"prerequisites": ["Jump"],
+		"prerequisites": ["Jump"],  // See Jump to understand how this is gained
 		"uniques": [
 			"Only available <for units with [Upward Thrust]>",
 			"[50]% chance to intercept air attacks",
