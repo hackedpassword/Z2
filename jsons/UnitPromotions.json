@@ -17,12 +17,12 @@
         {
 		"name": "Shield",
 		"uniques": [
-			"Only available <for [Military] units>",  // needs to be built into UnitTypes 
+			//"Only available <for [Military] units>",  // needs to be built into UnitTypes 
 			"[25]% Strength bonus for [All] units within [1] tiles",
 			"May withdraw before melee ([25]%)",
 		], 
 		"column": 40,
-		"row": 0,
+		"row": 1,
 	},
         {
 		"name": "Jump",
@@ -38,28 +38,28 @@
 			
 		], 
 		"column": 20,
-		"row": 1,
+		"row": 2,
 	},
         {
 		"name": "Life",
 		"uniques": [
-			"Only available <for [Military] units>",
+			//"Only available <for [Military] units>",
 			"Unit will heal every turn, even if it performs an action",
 			"All adjacent units heal [20] HP when healing",
 		],
 		"column": 41,
-		"row": 0,
+		"row": 1,
 	},
         {
 		"name": "Fairy",
 		"uniques": [
-			"Only available <for [Military] units>",
+			//"Only available <for [Military] units>",
 			// "Only available <with [Citrus]>",		
 			"Ignores terrain cost <for [Military] units> <with [Citrus]>",  // current bug makes this delayed by one unit action (self) per turn, see: https://github.com/yairm210/Unciv/issues/10674
 			"Ignores Zone of Control",
 		],
 		"column": 41,
-		"row": 1,
+		"row": 2,
 	},
         {
 		"name": "Fire",
@@ -84,23 +84,23 @@
 			"May attack when embarked",
 		],
 		"column": 42,
-		"row": 0,
+		"row": 1,
 	},
         {
 		"name": "Reflect",
 		"uniques": [
-			"Only available <for [Military] units>",
+			//"Only available <for [Military] units>",
 			// "Only available <with [Marble]>",  // can't double down on Only Available's :p
 			"Can see invisible [Land] units",
 			"Ignores Zone of Control",
 		],
 		"column": 42,
-		"row": 1,
+		"row": 2,
 	},
         {  // transformations, transmorphing
 		"name": "Spell",
 		"uniques": [
-			"Only available <for [Military] units>",
+			//"Only available <for [Military] units>",
 			"May capture killed [Land] units <with [20]% chance>",
 			"Earn [50]% of killed [All] unit's [Cost] as [Gold]",
 			"Can transform to [Scout] <in [City center] tiles>",
@@ -111,7 +111,7 @@
 			
 		],
 		"column": 43,
-		"row": 0,
+		"row": 1,
 	},
         {
 		"name": "Thunder",
@@ -122,7 +122,7 @@
 			"[+200]% Strength <when attacking> <if it hasn't used other actions yet> <during a Golden Age> <once>",  // bezerker rally mode
 		],
 		"column": 44,
-		"row": 0,
+		"row": 1,
 	},
 
 // The following 3 promotions are supposed to be difficult to obtain, and very powerful. 
@@ -146,7 +146,7 @@
 		],
 	"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
         "column": 40,
-        "row": 2, 
+        "row": 3, 
 	},
         {
 		"name": "Upward Thrust",
@@ -159,7 +159,7 @@
 		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
         "column": 41,
-        "row": 2,
+        "row": 3,
 	},
         {
 		"name": "Magic Key",
@@ -178,7 +178,7 @@
 		// unitType will be all
 		],
 		"column": 43,
-		"row": 2,
+		"row": 3,
 	},
 
 ////////////////////////////////
