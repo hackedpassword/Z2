@@ -21,8 +21,8 @@
 			"[25]% Strength bonus for [All] units within [1] tiles",
 			"May withdraw before melee ([25]%)",
 		], 
-		"column": 0,
-		"row": 40,
+		"column": 40,
+		"row": 0,
 	},
         {
 		"name": "Jump",
@@ -37,8 +37,8 @@
 			"This Unit gains the [Upward Thrust] promotion <in [Mido Town] tiles> <for all movement> <once>",
 			
 		], 
-		"column": 1,
-		"row": 40,
+		"column": 20,
+		"row": 1,
 	},
         {
 		"name": "Life",
@@ -47,8 +47,8 @@
 			"Unit will heal every turn, even if it performs an action",
 			"All adjacent units heal [20] HP when healing",
 		],
-		"column": 0,
-		"row": 41,
+		"column": 41,
+		"row": 0,
 	},
         {
 		"name": "Fairy",
@@ -58,8 +58,8 @@
 			"Ignores terrain cost <for [Military] units> <with [Citrus]>",  // current bug makes this delayed by one unit action (self) per turn, see: https://github.com/yairm210/Unciv/issues/10674
 			"Ignores Zone of Control",
 		],
-		"column": 1,
-		"row": 41,
+		"column": 41,
+		"row": 1,
 	},
         {
 		"name": "Fire",
@@ -83,8 +83,8 @@
 			"Ranged attacks may be performed over obstacles",
 			"May attack when embarked",
 		],
-		"column": 0,
-		"row": 42,
+		"column": 42,
+		"row": 0,
 	},
         {
 		"name": "Reflect",
@@ -94,8 +94,8 @@
 			"Can see invisible [Land] units",
 			"Ignores Zone of Control",
 		],
-		"column": 1,
-		"row": 42,
+		"column": 42,
+		"row": 1,
 	},
         {  // transformations, transmorphing
 		"name": "Spell",
@@ -110,8 +110,8 @@
 			//"This Unit gains the [Magic Key] promotion <in [Kasuto Town] tiles> <when above [1] [Oil well]> <for all movement> <once>",
 			
 		],
-		"column": 0,
-		"row": 43,
+		"column": 43,
+		"row": 0,
 	},
         {
 		"name": "Thunder",
@@ -121,8 +121,8 @@
 			"[+100]% Strength <when attacking> <in [Enemy land] tiles> <[2] times>",
 			"[+200]% Strength <when attacking> <if it hasn't used other actions yet> <during a Golden Age> <once>",  // bezerker rally mode
 		],
-		"column": 0,
-		"row": 44,
+		"column": 44,
+		"row": 0,
 	},
 
 // The following 3 promotions are supposed to be difficult to obtain, and very powerful. 
@@ -145,8 +145,8 @@
 			// "[+50]% Strength <for units with [Shield]> <for units with [Jump]> <for units with [Life]>",  // ditto 
 		],
 	"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
-        "column": 2,
-        "row": 40, 
+        "column": 40,
+        "row": 2, 
 	},
         {
 		"name": "Upward Thrust",
@@ -158,8 +158,8 @@
 			"May Paradrop up to [6] tiles from inside friendly territory <for units with [Spell]>",
 		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
-        "column": 2,
-        "row": 41,
+        "column": 41,
+        "row": 2,
 	},
         {
 		"name": "Magic Key",
@@ -177,8 +177,8 @@
 			"Free Social Policy <upon conquering a city>",  // the key to the city
 		// unitType will be all
 		],
-		"column": 2,
-		"row": 43,
+		"column": 43,
+		"row": 2,
 	},
 
 ////////////////////////////////
