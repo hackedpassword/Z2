@@ -183,10 +183,10 @@
 			"May enter foreign tiles without open borders",  // the key to the land
 			"Free Social Policy <upon conquering a city>",  // the key to the city
 		// unitType will be all
-			"unitTypes": ["Land"],
 		],
 		"column": 43,
 		"row": 3,
+		"unitTypes": ["Land"],
 	},
 
 ////////////////////////////////
