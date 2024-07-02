@@ -132,7 +132,7 @@
 		"name": "Downward Thrust",
 		"prerequisites": ["Jump"],
 		"uniques": [
-			"Only available <for units with [Fairy]>",  // made prereq attrib above
+			// "Only available <for units with [Fairy]>",  // made prereq attrib above
 			// "Comment [Requires visiting Ruto town to activate (requirement may change)]",  // supposed to have the trophy but can't <with [Silver]>
 			"[1] additional attacks per turn <if it hasn't used other actions yet>",
 			"Can move after attacking",
@@ -152,7 +152,7 @@
 		"name": "Upward Thrust",
 		"prerequisites": ["Jump"],
 		"uniques": [
-			"Only available <for units with [Reflect]>",
+			// "Only available <for units with [Reflect]>",
 			"[50]% chance to intercept air attacks",
 			"[100]% Strength <vs [Air] units>",
 			"May Paradrop up to [6] tiles from inside friendly territory <for units with [Spell]>",
