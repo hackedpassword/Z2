@@ -214,6 +214,7 @@ The mage focused the transmorphic properties of a dark magic Spell into the arti
 			",
 				"link": "UnitPromotions/Spell",
 				"extraImage": "UnitPromotionIcons/Spell",
+				"imageSize": 96,
 			},
 			{
 				"text":
@@ -225,6 +226,7 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 			",
 				"link": "UnitPromotions/Thunder",
 				"extraImage": "UnitPromotionIcons/Thunder",
+				"imageSize": 96,
 			},
 		],
 	},
