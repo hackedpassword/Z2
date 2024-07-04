@@ -638,6 +638,7 @@
 		"requiredTech": "Advanced Ballistics",
 		"requiredResource": "Uranium",
 		"uniques": [
+			"Cannot be purchased <when at war>",
 			"Nuclear weapon of Strength [2]",  // breaks city defense
 			"[100]% maintenance costs",  // more expensive to maintain
 			"Triggers the following global alert: [A nuclear explosion was witnessed!]",
@@ -661,7 +662,8 @@
 		"requiredTech": "Nuclear Fusion",
 		"requiredResource": "Uranium",
 		"uniques": [
-			"Comment <Gained at Nuclear Fusion tech, also requires Telecommunications tech>",
+			"Cannot be purchased", 
+			"Comment [Gained at Nuclear Fusion tech, also requires Telecommunications tech]",
 			"Nuclear weapon of Strength [3]",
 			"[200]% maintenance costs",  // expensive
 			"Destroys tile improvements when attacking",
@@ -688,6 +690,7 @@
 		"requiredTech": "Nuclear Fusion",
 		"requiredResource": "Uranium",
 		"uniques": [
+			"Cannot be purchased <before discovering [Future Tech]>",
 			"[500]% maintenance costs",  // expensive
 			"Can only attack [Land] tiles",
 			"Limited to [2] per Civilization",
@@ -715,6 +718,7 @@
 		"cost": 8000,  // more likely bought but it's gonna be expensive
 		"requiredTech": "Particle Physics",
 		"uniques": [
+			"Cannot be purchased",
 			"Nuclear weapon of Strength [6]",  // doom
 			"Blast radius [6]",  // armageddon!
 			"[2500]% maintenance costs",  // needs tlc
@@ -723,10 +727,12 @@
 			// "Cannot be carried by [Submarine] units",  // Air drop only via city
 			"Triggers the following global alert: [Man-made Armageddon has scorched the land. Is this the price of Victory?]",
 			"Limited to [1] per Civilization",
+			"Can only be built <in [Capital] cities>",
 			"Only available <if [Manhattan Project] is constructed>",
 			"Only available <if [Nuclear Plant] is constructed> <in this city>",
 			"Only available <after discovering [Nuclear Fusion]>",
 			"Consumes [5] [Uranium]",  // slightly more efficient than 1:1
+			"Consumes [1] [Aluminum]",  // chassis
 			"Consumes [3] [Iron]",  // massive casing
 			"Consumes [2] [Oil]",  // Shipping and Handling
 		],
