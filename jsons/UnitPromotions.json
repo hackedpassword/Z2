@@ -178,7 +178,7 @@
 		"name": "Magic Key",
 		"prerequisites": ["Spell"],  // considering adding Thunder to prereqs to indicate Kasuto was visited
 		"uniques": [
-			"Comment [To gain Magic Key, have 5 or more Magic Potions available to demonstrate deserving the towns' help.", 
+			"Comment [To gain Magic Key, while in New Kasuto, have 5 or more Magic Potions available to demonstrate deserving the towns' help.",
 			
 			"Only available <for units with [Magic Key]>",  // hax to show the promo with UnitTypes, but unavailable until granted
 			// "Only available <for [Military] units>",
@@ -224,6 +224,8 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 			",
 				"link": "UnitPromotions/Thunder",
 			},
+			{ "separator": true },
+			{ "text": "Z2 Design note: The requirement of 5 potions is akin to NES 3 needed to aquire the 4th, and since Spell has no prereq, we're merging the two events. Five potions indicates having at least 2 of the 4 world potion resources, or another advancement of resources, ensuring Magic Key is not so easily obtained.", },
 		],
 	},
 
