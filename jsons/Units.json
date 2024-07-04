@@ -692,7 +692,7 @@
 		"requiredResource": "Uranium",
 		"uniques": [
 			"Cannot be purchased <before discovering [Future Tech]>",
-			"Can only be built <if [Military base] is constructed> <in this city>",
+			"Can only be built <if [Military Base] is constructed> <in this city>",
 			"[500]% maintenance costs",  // expensive
 			"Can only attack [Land] tiles",
 			"Limited to [2] per Civilization",
