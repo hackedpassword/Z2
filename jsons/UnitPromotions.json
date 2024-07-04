@@ -213,8 +213,6 @@
 The mage focused the transmorphic properties of a dark magic Spell into the artifact, intending a dynamically reshaping key with coherent polymorphism to open any lock. 
 			",
 				"link": "UnitPromotions/Spell",
-				"extraImage": "UnitPromotionIcons/Spell",
-				"imageSize": 96,
 			},
 			{
 				"text":
@@ -225,8 +223,6 @@ At the moment the key took the energy like an implosion, it unexpectedly release
 Merely half of the survivors escaped. The mage and the town priest caught glimpses of the ravaging Purple Moas as they fled. The Magic Key was carried in secret, buried in a sunken tomb at the outskirt of New Kasuto, left to be forgotten, never to be spoken of, lest the people of Kasuto find out the truth of the Kasuto Ruins.
 			",
 				"link": "UnitPromotions/Thunder",
-				"extraImage": "UnitPromotionIcons/Thunder",
-				"imageSize": 96,
 			},
 		],
 	},
