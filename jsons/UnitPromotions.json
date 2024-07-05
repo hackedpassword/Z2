@@ -178,7 +178,7 @@
 		"name": "Magic Key",
 		"prerequisites": ["Spell"],  // considering adding Thunder to prereqs to indicate Kasuto was visited
 		"uniques": [
-			"Comment [To gain Magic Key, while in New Kasuto, have 5 or more Magic Potions available to demonstrate deserving the towns' help.",
+			"Comment [To gain Magic Key, while in New Kasuto, have 5 or more Magic Potions available to demonstrate deserving the towns' help.]",
 			
 			"Only available <for units with [Magic Key]>",  // hax to show the promo with UnitTypes, but unavailable until granted
 			// "Only available <for [Military] units>",
@@ -203,7 +203,7 @@
 				"imageSize": 128,
 			},
 			{
-				"text": "Unrestricted access to all that possess it",
+				"text": "The secrets of the Key of Kasuto",
 				"header": 1,
 			},
 			{
