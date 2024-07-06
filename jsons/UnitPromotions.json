@@ -575,7 +575,7 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 		"prerequisites": ["Shock I", "Drill I"],
 		"uniques": [
 			"May attack when embarked",
-			"[1] Movement point cost to disembark",
+			"[1] Movement point cost to embark",
 			"[1] Movement point cost to disembark",
 			"Eliminates combat penalty for attacking over a river",
 		],
@@ -588,7 +588,7 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 		"prerequisites": ["Shock I", "Drill I"],
 		"uniques": [
 			"May attack when embarked",
-			"[1] Movement point cost to disembark",
+			"[1] Movement point cost to embark",
 			"[1] Movement point cost to disembark",
 			"Eliminates combat penalty for attacking over a river",
 			"Eliminates combat penalty for attacking across a coast <if it hasn't used other actions yet>", 
@@ -601,7 +601,7 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 		"prerequisites": ["Amphibious I"],
 		"uniques": [
 			"Defense bonus when embarked",
-			"[0] Movement point cost to disembark",
+			"[0] Movement point cost to embark",
 			"[0] Movement point cost to disembark",
 			"Eliminates combat penalty for attacking across a coast",
 		],
