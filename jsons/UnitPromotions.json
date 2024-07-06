@@ -36,8 +36,8 @@
 
 		// Jump is required for each thrust upgrade
 		// The unit needs to be in the town tile to gain the promo
-			"This Unit gains the [Downward Thrust] promotion <in [Darunia Town] tiles> <for all movement> <once>",
-			"This Unit gains the [Upward Thrust] promotion <in [Mido Town] tiles> <for all movement> <once>",
+			"This Unit gains the [Upward Thrust] promotion <in [Darunia Town] tiles> <for all movement> <once>",
+			"This Unit gains the [Downward Thrust] promotion <in [Mido Town] tiles> <for all movement> <once>",
 		], 
 		"column": 40,
 		"row": 2,
@@ -160,11 +160,27 @@
         "column": 40,
         "row": 3, 
 		"unitTypes": ["Gunpowder","Mounted","Sword","Scout","Armored","Archery","Ranged Gunpowder","Siege","Ballistics","Helicopter"],
+		"civilopediaText": [
+			{
+				"extraImage": "UnitPromotionIcons/Downward Thrust",
+				"imageSize": 128,
+			},
+			{
+				"text": "Technique of the Knight of Mido",
+				"header": 1,
+			},
+			{
+				"text": "", 
+			},
+{ "separator": true },
+			{ "text": "Z2 gameplay note: Standing on the town tile counts as \"visiting\" the town."}, 
+		], 	
 	},
         {
 		"name": "Upward Thrust",
 		"prerequisites": ["Jump"],  // See Jump to understand how this is gained
 		"uniques": [
+			"Comment [To gain Upward Thrust, first learn Jump from Ruto town, then enter Darunia town to be trained by the Knight.]", 
 			"Only available <for units with [Upward Thrust]>",
 			"[50]% chance to intercept air attacks",
 			"[100]% Strength <vs [Air] units>",
@@ -173,6 +189,21 @@
         "column": 41,
         "row": 3,
 		"unitTypes": ["Gunpowder","Mounted","Sword","Scout","Armored","Archery","Ranged Gunpowder","Siege","Ballistics","Helicopter"],
+		"civilopediaText": [
+			{
+				"extraImage": "UnitPromotionIcons/Upward Thrust",
+				"imageSize": 128,
+			},
+			{
+				"text": "Technique of the Knight of Darunia",
+				"header": 1,
+			},
+			{
+				"text": "", 
+			},
+{ "separator": true },
+			{ "text": "Z2 gameplay note: Standing on the town tile counts as \"visiting\" the town."}, 
+		], 	
 	},
         {
 		"name": "Magic Key",
