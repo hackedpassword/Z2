@@ -563,8 +563,11 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 		"name": "Woodsman",
 		// "prerequisites": ["Shock I","Drill I"],
 		"uniques": [
-			"Double movement in [{Forest} {Jungle}]",
-			"All healing effects doubled <in [{Forest} {Jungle}] tiles>"
+			"Double movement in [Forest]",
+			"All healing effects doubled <in [Forest] tiles>",
+			"[+25]% Strength <when fighting in [Forest] tiles>",
+			"[+50]% Strength <when defending> <vs [Ranged] units> <in [Forest] tiles>",
+			"Withdraws before melee combat <with [25]% chance> <in [Forest] tiles>",
 		],
 		"unitTypes": ["Sword","Gunpowder","Scout"],
         "column": 6,
