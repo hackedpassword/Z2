@@ -24,7 +24,7 @@
 	// This boulder is an improvement, not a terrainFeature, has the same name. The difference is in what uniques can be attributed.
 	{  // Boulder slows movement and causes some damage. Can be used strategically like walls, or to destroy land.
 		"name": "Boulder",
-		"terrainsCanBeBuiltOn": ["Natural Wonder","Plains","Grassland","Volcanic","Cavern","Cave","Desert"],
+		"terrainsCanBeBuiltOn": ["Land"], // ["Natural Wonder","Plains","Grassland","Volcanic","Cavern","Cave","Desert"],
 			// "Land","Natural Wonder","ThreeEye Rock Palace"], // testing general Natural Wonder application, then specific
 		"turnsToBuild": 5,
 		"uniques": [
@@ -347,7 +347,7 @@
 	{
 	// Name: Path
 		"name": "Road",
-		"terrainsCanBeBuiltOn": ["Land","Natural Wonder"], // so paths can cross bridges
+		"terrainsCanBeBuiltOn": ["Land"], //,"Natural Wonder"], // so paths can cross bridges
 		// #todo: filter terrains down to bridges
 		"turnsToBuild": 4,
 		// "production": 1,  // roads make cities more productive - moved to uniques
@@ -368,7 +368,7 @@
 	{
 	// Name: Fast travel
 		"name": "Railroad",
-		"terrainsCanBeBuiltOn": ["Land","Natural Wonder"], // so fast travel can cross bridges
+		"terrainsCanBeBuiltOn": ["Land"], //,"Natural Wonder"], // so fast travel can cross bridges
 		"turnsToBuild": 4,
 		// "production": 2, // same concept as road
 		"techRequired": "Railroads",
