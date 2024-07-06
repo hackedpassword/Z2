@@ -987,4 +987,10 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"RGB": [240, 188, 60],  // ignored, references turnsInto tile RGB color instead
 	},
 
+// temporary
+	{ "name": "Snow", "type": "Land", }
+	{ "name": "NorthCastle", "type": "NaturalWonder", },
+	{ "name": "GreatPalace", "type": "NaturalWonder", },
+
+
 ]
