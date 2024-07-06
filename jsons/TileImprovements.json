@@ -282,7 +282,6 @@
 		"techRequired": "Trapping",
 		"uniques": [
 			"Does not need removal of [Forest]",
-			"Does not need removal of [Jungle]",
 			"[+1 Gold] <after discovering [Economics]>",
 			"Can only be built to improve a resource",
 			// "[99]% Chance to be destroyed by nukes",
@@ -418,23 +417,9 @@
 	        "civilopediaText": [{"text":"Provides a one-time Production bonus depending on distance to the closest city once finished"}]
 	},
 	{
-		"name": "Remove Jungle",
-		"turnsToBuild": 7,
-		"techRequired": "Bronze Working",
-		"uniques": ["Can be built outside your borders"],
-		"shortcutKey": "X"
-	},
-	{
 		"name": "Remove Fallout",
 		"turnsToBuild": 2,
 		// Has no tech requirements as it can always be built
-		"uniques": ["Can be built outside your borders"],
-		"shortcutKey": "X"
-	},
-	{
-		"name": "Remove Marsh",
-		"turnsToBuild": 6,
-		"techRequired": "Masonry",
 		"uniques": ["Can be built outside your borders"],
 		"shortcutKey": "X"
 	},
@@ -501,42 +486,6 @@
 		]
 	},
 
-	//Civilization unique improvements
-	{
-		"name": "Moai",
-		"uniqueTo": "Polynesia",
-		"terrainsCanBeBuiltOn": ["Land"],
-		"culture": 1,
-		"turnsToBuild": 4,
-		"uniques": ["Can only be built on [Coastal] tiles", "[+1 Culture] for each adjacent [Moai]", "[+1 Gold] <after discovering [Flight]>", "Pillaging this improvement yields approximately [+10 Gold]"],
-		"techRequired": "Construction",
-		"shortcutKey": "M"
-	},
-	{
-		"name": "Terrace farm",
-		"uniqueTo": "Inca",
-		"terrainsCanBeBuiltOn": ["Hill"],
-		"food": 1,
-		"turnsToBuild": 7,
-		"uniques": ["Cannot be built on [Bonus resource] tiles",
-			"[+1 Food] for each adjacent [Mountain]",
-			"[+1 Food] from [Fresh water] tiles <after discovering [Civil Service]>",
-			"[+1 Food] from [non-fresh water] tiles <after discovering [Fertilizer]>",
-            "Pillaging this improvement yields approximately [+18 Gold]"],
-		"techRequired": "Construction",
-		"shortcutKey": "F"
-	},
-	{
-		"name": "Polder",
-		"uniqueTo": "The Netherlands",
-		"food": 3,
-		"terrainsCanBeBuiltOn": ["Marsh", "Flood plains"],
-		"turnsToBuild": 7,
-		"uniques": ["[+1 Production, +2 Gold] <after discovering [Economics]>", "Pillaging this improvement yields approximately [+18 Gold]"],
-		"techRequired": "Guilds",
-		"shortcutKey": "F"
-	},
-
 	// Unbuildable improvements
 	{
 		"name": "Ancient ruins",
@@ -551,13 +500,13 @@
 		"name": "City ruins",
 		"terrainsCanBeBuiltOn": ["Land"],
 		"uniques": ["Unpillagable", "Unbuildable", "Will be replaced by automated workers"],
-        "civilopediaText": [{"text":"A bleak reminder of the destruction wreaked by War"}]
+	        "civilopediaText": [{"text":"A bleak reminder of the destruction wreaked by War"}]
 	},
 	{
 		"name": "Barbarian encampment",
 		"terrainsCanBeBuiltOn": ["Land"],
 		"uniques": ["Unpillagable", "Unbuildable"],
-        "civilopediaText": [{"text":"Home to uncivilized barbarians, will spawn a hostile unit from time to time"}]
+		"civilopediaText": [{"text":""}]
 	}
 
 ]
