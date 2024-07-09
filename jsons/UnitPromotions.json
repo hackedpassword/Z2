@@ -17,7 +17,7 @@
         {
 		"name": "Shield",
 		"uniques": [
-			"Only available <for units with [Shield]>",  // hax to show the promo with UnitTypes, but unavailable until granted
+			"Only available <for units with [Shield]>",  // hax to show the promo, but unavailable until granted
 			//"Only available <for [Military] units>",  // needs to be built into UnitTypes 
 			"[25]% Strength bonus for [All] units within [1] tiles",
 			"May withdraw before melee ([25]%)",
@@ -29,7 +29,7 @@
         {
 		"name": "Jump",
 		"uniques": [
-			"Only available <for units with [Jump]>",  // hax to show the promo with UnitTypes, but unavailable until granted
+			"Only available <for units with [Jump]>",  // hax to show the promo, but unavailable until granted
 			// "Only available <for non-[Civilian] units>",
 			"Can see over obstacles",
 			"Can move after attacking",
@@ -46,7 +46,7 @@
         {
 		"name": "Life",
 		"uniques": [
-			"Only available <for units with [Life]>",  // hax to show the promo with UnitTypes, but unavailable until granted
+			"Only available <for units with [Life]>",  // hax to show the promo, but unavailable until granted
 			//"Only available <for [Military] units>",
 			"Unit will heal every turn, even if it performs an action",
 			"All adjacent units heal [20] HP when healing",
@@ -58,10 +58,8 @@
         {
 		"name": "Fairy",
 		"uniques": [
-			"Only available <for units with [Fairy]>",  // hax to show the promo with UnitTypes, but unavailable until granted
-			//"Only available <for [Military] units>",
-			// "Only available <with [Citrus]>",		
-			"Ignores terrain cost <for [Military] units> <with [Citrus]>",  // current bug makes this delayed by one unit action (self) per turn, see: https://github.com/yairm210/Unciv/issues/10674
+			"Only available <for units with [Fairy]>",  // hax to show the promo, but unavailable until granted	
+			"Ignores terrain cost <with [Citrus]>",  // current bug makes this delayed by one unit action (self) per turn, see: https://github.com/yairm210/Unciv/issues/10674
 			"Ignores Zone of Control",
 		],
 		"column": 41,
@@ -71,7 +69,7 @@
         {
 		"name": "Fire",
 		"uniques": [
-			"Only available <for units with [Fire]>",  // hax to show the promo with UnitTypes, but unavailable until granted
+			"Only available <for units with [Fire]>",  // hax to show the promo, but unavailable until granted
 			// "Only available <for [Military] units>",  // doesn't work, bug? 
 			//"Only available <for non-[Civilian] units>",
 
@@ -98,7 +96,7 @@
         {
 		"name": "Reflect",
 		"uniques": [
-			"Only available <for units with [Reflect]>",  // hax to show the promo with UnitTypes, but unavailable until granted
+			"Only available <for units with [Reflect]>",  // hax to show the promo, but unavailable until granted
 			//"Only available <for [Military] units>",
 			// "Only available <with [Marble]>",  // can't double down on Only Available's :p
 			"Can see invisible [Land] units",
@@ -111,13 +109,13 @@
         {  // transformations, transmorphing
 		"name": "Spell",
 		"uniques": [
-			"Only available <for units with [Spell]>",  // hax to show the promo with UnitTypes, but unavailable until granted
+			"Only available <for units with [Spell]>",  // hax to show the promo, but unavailable until granted
 			//"Only available <for [Military] units>",
 			"May capture killed [Land] units <with [20]% chance>",
 			"Earn [50]% of killed [All] unit's [Cost] as [Gold]",
 			"Can transform to [Scout] <in [City center] tiles>",
 
-			"This Unit gains the [Magic Key] promotion <in [Kasuto Town] tiles> <when above [4] [Aluminum]> <for all movement> <once>",
+			"This Unit gains the [Magic Key] promotion <in [Kasuto Town] tiles> <when above [2] [Aluminum]> <for all movement> <once>",  // need 3 or more Magic Potions
 		],
 		"column": 43,
 		"row": 1,
@@ -126,9 +124,7 @@
         {
 		"name": "Thunder",
 		"uniques": [
-			"Only available <for units with [Thunder]>",  // hax to show the promo with UnitTypes, but unavailable until granted
-			// "Only available <for [Military] units>",
-			//"Only available <for non-[Civilian] units>", 
+			"Only available <for units with [Thunder]>",  // hax to show the promo, but unavailable until granted
 			"[+100]% Strength <when attacking> <in [Enemy land] tiles> <[2] times>",
 			"[+200]% Strength <when attacking> <if it hasn't used other actions yet> <during a Golden Age> <once>",  // bezerker rally mode
 		],
@@ -144,9 +140,9 @@
 		"name": "Downward Thrust",
 		"prerequisites": ["Jump"],  // See Jump to understand how this is gained
 		"uniques": [
-			"Only available <for units with [Downward Thrust]>",  // made prereq attrib above
-			// "Comment [Requires visiting Ruto town to activate (requirement may change)]",  // supposed to have the trophy but can't <with [Silver]>
-			"[1] additional attacks per turn <if it hasn't used other actions yet>",
+			"Only available <for units with [Downward Thrust]>",  // only show, under unavailable until granted
+			"Comment [Requires visiting Ruto town and learning Jump to gain access to the town's Knight]",  // supposed to have the trophy but can't <with [Silver]>
+			"[1] additional attacks per turn <if it hasn't used other actions yet>",  // actually this should be when it has used actions, indicating move+attack
 			"Can move after attacking",
 			"[+50]% Strength <when attacking> <if it hasn't used other actions yet>",
 			"Great General provides double combat bonus",
@@ -181,7 +177,7 @@
 		"prerequisites": ["Jump"],  // See Jump to understand how this is gained
 		"uniques": [
 			"Comment [To gain Upward Thrust, first learn Jump from Ruto town, then enter Darunia town to be trained by the Knight.]", 
-			"Only available <for units with [Upward Thrust]>",
+			"Only available <for units with [Upward Thrust]>",  // only show, under unavailable until granted
 			"[50]% chance to intercept air attacks",
 			"[100]% Strength <vs [Air] units>",
 			"May Paradrop up to [6] tiles from inside friendly territory <for units with [Spell]>",
@@ -209,17 +205,17 @@
 		"name": "Magic Key",
 		"prerequisites": ["Spell"],  // considering adding Thunder to prereqs to indicate Kasuto was visited
 		"uniques": [
-			"Comment [To gain Magic Key, while in New Kasuto, have 5 or more Magic Potions available to demonstrate deserving the towns' help.]",
+			"Comment [To gain Magic Key, while in New Kasuto, have 3 or more Magic Potions available to demonstrate deserving the towns' help.]",
+			"Comment [When acquired, if total available Magic Potions falls under 3, Magic Key will fail!]",
 			
-			"Only available <for units with [Magic Key]>",  // hax to show the promo with UnitTypes, but unavailable until granted
-			// "Only available <for [Military] units>",
+			"Only available <for units with [Magic Key]>",  // hax to show the promo, but unavailable until granted
 		// The way magic key is supposed to be made available is with Spell, which being that Spell is in New Kasuto also, 
 		// we need another mechanism to obtain this most powerful promo. I'm using the 8th magic potion requirement requiring 
 		// finding the 3 others, but for gameplay, owning 2 magic potion tiles, or, 1 with double resources, or, 1 with Future Tech 
 		// resources bonuses, will be adequate. 
 			
 			// "Only available <for units with [Spell]>", 
-			// "Only available <when above [4] [Aluminum]>",  // 4 units per tile, need more than 1 tile's worth
+			"Only available <when above [2] [Aluminum]>",  // Magic key will fail if under 3 available Magic Potions 
 			"May enter foreign tiles without open borders",  // the key to the land
 			"Free Social Policy <upon conquering a city>",  // the key to the city
 		// unitType will be all
