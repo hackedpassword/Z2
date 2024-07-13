@@ -358,6 +358,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 5, // hard to pass through
 		"unbuildable": false,  // can be built by villagers as an TileImprovement, no idea how this parameter affects building #TODO
 		"turnsToBuild": 7,
+		"impassable": true,  // instead of movement impairment, now boulders function as they originally did on the NES
 		"uniques": [
 			"Rare feature",  // map gen unique blah
 			"Nullifies all other stats this tile provides",
