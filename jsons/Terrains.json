@@ -757,7 +757,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 3,
 		"occursOn": ["Desert"],
 		"uniques": [
-			"Comment [A mighty Jump will gain you audience with the towns' Knight!]",
+			"Comment [A mighty Jump gains an audience with the towns' Knight!]",
 			"Comment [Learn the Jump spell to unlock Downward Thrust.]", 
 			// "Grants [Downward Thrust] ([Learned from the town's Hylian Knight]) to adjacent [Land] units for the rest of the game",  // supposed to use a <conditional> but won't accept any
 			// "Comment [You must obtain the Water of Life to gain audience with the town's Wise Man!]",
@@ -802,7 +802,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 3,
 		"occursOn": ["Desert"],
 		"uniques": [
-			"Comment [A mighty Jump will gain you audience with the towns' Knight!]",
+			"Comment [A mighty Jump gains an audience with the towns' Knight!]",
 			"Comment [Learn the Jump spell to unlock Upward Thrust.]", 
 			// "Grants [Upward Thrust] ([Learned from the town's Hylian Knight]) to adjacent [Land] units for the rest of the game",  // supposed to use a <conditional> but won't accept any
 			// "Comment [You must save the Lost Child to speak with the town's Wise Man!]",
