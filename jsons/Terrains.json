@@ -967,8 +967,8 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"[-10] Strength for cities built on this terrain",
 		],
 		"turnsInto": "Force",
-		//"unbuildable": false,
-		//"impassable": false,
+		"unbuildable": true,
+		"impassable": false,
 		"RGB": [240, 188, 60],  // ignored, references turnsInto tile RGB color instead
 	},
 	{  // Vertical bridge with Lake
