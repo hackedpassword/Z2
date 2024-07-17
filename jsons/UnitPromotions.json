@@ -36,7 +36,7 @@
 
 		// Jump is required for each thrust upgrade
 		// The unit needs to be in the town tile to gain the promo
-			"This Unit gains the [Upward Thrust] promotion <in [Darunia Town] tiles>", //<for all movement> <once>",
+			"This Unit gains the [Upward Thrust] promotion <in [Darunia Town] tiles> <for all movement> <once>",
 			"This Unit gains the [Downward Thrust] promotion <in [Mido Town] tiles> <for all movement> <once>",
 		], 
 		"column": 40,
