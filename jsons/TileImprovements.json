@@ -355,7 +355,7 @@
 	{
 	// Name: Path
 		"name": "Road",
-		"terrainsCanBeBuiltOn": ["Land","Natural Wonder"], // so paths can cross bridges
+		"terrainsCanBeBuiltOn": ["Land","Natural Wonder","Force"], // so paths can cross bridges
 		// #todo: filter terrains down to bridges
 		"turnsToBuild": 4,
 		// "production": 1,  // roads make cities more productive - moved to uniques
@@ -376,7 +376,7 @@
 	{
 	// Name: Fast travel
 		"name": "Railroad",
-		"terrainsCanBeBuiltOn": ["Land","Natural Wonder"], // so fast travel can cross bridges
+		"terrainsCanBeBuiltOn": ["Land","Natural Wonder","Force"], // so fast travel can cross bridges
 		"turnsToBuild": 4,
 		// "production": 2, // same concept as road
 		"techRequired": "Railroads",
