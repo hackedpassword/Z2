@@ -10,6 +10,7 @@
         "name": "Scout",
         "movementType": "Land", 
         "uniques": [
+		"Infantry",
             "Double movement in [Plains]",
             "Double movement in [Grassland]",
             "Double movement in [Force]",
@@ -83,6 +84,7 @@
         "name": "Sword",
         "movementType": "Land",
         "uniques": [
+		"Infantry",
             "Can build [Remove Trap] improvements on tiles <in [Trap] tiles>",  // fight enemies of the land
             "This Unit gains [15] XP <upon building a [Remove Trap] improvement>", // why won't this work????
             "Double movement in [Force]", // All hybrid tiles
@@ -94,6 +96,7 @@
         "name": "Gunpowder",
         "movementType": "Land", 
         "uniques": [
+		"Infantry",
             "Can build [Remove Trap] improvements on tiles <in [Trap] tiles>",
             "This Unit gains [+15] XP <upon building a [Remove Trap] improvement>",
             "Double movement in [Force]",
@@ -105,6 +108,7 @@
         "name": "Archery",
         "movementType": "Land", 
         "uniques": [
+		"Infantry",
             "Can build [Remove Trap] improvements on tiles <in [Trap] tiles>",
             "This Unit gains [+15] XP <upon building a [Remove Trap] improvement>",
             "Double movement in [Force]",
@@ -116,18 +120,8 @@
         "name": "Ranged Gunpowder",
         "movementType": "Land", 
         "uniques": [
+		"Infantry",
             "Can build [Remove Trap] improvements on tiles <in [Trap] tiles>",
-            "This Unit gains [+15] XP <upon building a [Remove Trap] improvement>",
-            "Double movement in [Force]",
-            "Double movement in [OceanTile]", 
-            "Double movement in [CoastTile]",
-        ],
-    },
-    {
-        "name": "Ballistics",
-        "movementType": "Land", 
-        "uniques": [
-            // "Can build [Remove Trap] improvements on tiles <in [Trap] tiles>",
             "This Unit gains [+15] XP <upon building a [Remove Trap] improvement>",
             "Double movement in [Force]",
             "Double movement in [OceanTile]", 
@@ -138,7 +132,17 @@
         "name": "Mounted",
         "movementType": "Land", 
         "uniques": [
-            // "Can build [Remove Trap] improvements on tiles",
+		"Infantry",
+            "Can build [Remove Trap] improvements on tiles",
+            "Double movement in [Force]",
+            "Double movement in [OceanTile]", 
+            "Double movement in [CoastTile]",
+        ],
+    },
+    {
+        "name": "Ballistics",
+        "movementType": "Land", 
+        "uniques": [
             "Double movement in [Force]",
             "Double movement in [OceanTile]", 
             "Double movement in [CoastTile]",
@@ -148,7 +152,6 @@
         "name": "Armored",
         "movementType": "Land", 
         "uniques": [
-            // "Can build [Remove Trap] improvements on tiles",
             "Double movement in [Force]",
             "Double movement in [OceanTile]", 
             "Double movement in [CoastTile]",
@@ -158,7 +161,6 @@
         "name": "Siege",
         "movementType": "Land", 
         "uniques": [
-            // "Can build [Remove Trap] improvements on tiles",
             "Double movement in [Force]",
             "Double movement in [OceanTile]", 
             "Double movement in [CoastTile]",
