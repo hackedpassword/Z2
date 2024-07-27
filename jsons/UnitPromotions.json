@@ -387,10 +387,13 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
         "column": 2,
         "row": 3
     },
-	{ // legacy support, will remove at end of current game
+	{  // legacy support for saves where units retain promos that are obsolete. Migrate to the new promo. 
 		"name": "Extended Range",
 		"prerequisites": ["Indirect Fire","Accuracy III","Barrage III","Targeting II","Bombardment II","Wolfpack II","Cover II"],
-		"uniques": ["[+1] Range"],
+		"uniques": [
+			"This Unit gains the [Extended Range I] promotion",  // migrate
+			"This Unit loses the [Extended Range] promotion",  // cleanup
+		],
 		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water","Submarine"],
         "column": 5,
         "row": 4
@@ -439,7 +442,10 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 	{
 		"name": "Volley",
 		"prerequisites": ["Accuracy I","Barrage I"],
-		"uniques": ["[+50]% Strength <vs cities>"],
+		"uniques": [
+			"This Unit gains the [Volley I] promotion",  // migrate
+			"This Unit loses the [Volley] promotion",  // cleanup
+		], 
 		"unitTypes": ["Siege","Archery"],
         "column": 4,
         "row": 2
@@ -604,10 +610,8 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 		"name": "Amphibious",
 		"prerequisites": ["Shock I", "Drill I"],
 		"uniques": [
-			"May attack when embarked",
-			"[1] Movement point cost to embark",
-			"[1] Movement point cost to disembark",
-			"Eliminates combat penalty for attacking over a river",
+			"This Unit gains the [Amphibious I] promotion",  // migrate
+			"This Unit loses the [Amphibious] promotion",  // cleanup
 		],
 		"unitTypes": ["Sword","Gunpowder","Archery"],
         "column": 6,
@@ -643,7 +647,8 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 		"name": "Medic",
 		"prerequisites": ["Shock I", "Drill I", "Scouting I", "Survivalism I"],
 		"uniques": [
-			"All adjacent units heal [+10] HP when healing",
+			"This Unit gains the [Medic I] promotion",  // migrate
+			"This Unit loses the [Medic] promotion",  // cleanup
 		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout"],
         "column": 10, // after scout base
@@ -1139,7 +1144,10 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 		"prerequisites": ["Accuracy III","Barrage III","Targeting III", "Wolfpack III",
 			"Bombardment III", "Coastal Raider III","Boarding Party III","Siege III",
 			"Mobility II", "Anti-Armor II","Volley II"],
-		"uniques": ["[1] additional attacks per turn", "Can move after attacking"],
+		"uniques": [
+			"This Unit gains the [Logistics I] promotion",  // migrate
+			"This Unit loses the [Logistics] promotion",  // cleanup
+		],
 		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Melee Water","Ranged Water","Submarine","Fighter","Bomber","Helicopter"],
         "column": 2,
         "row": 4
