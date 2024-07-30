@@ -89,7 +89,7 @@
 			{
 				"name": "Pottery",
 				"row": 8,
-				"prerequisites": ["Fire","Shelter","Tools"],
+				"prerequisites": ["Fire","Tools"],
 				"quote": "'Shall the clay say to him that fashioneth it, what makest thou?' - Bible Isaiah 45:9",
 			},
 			{
