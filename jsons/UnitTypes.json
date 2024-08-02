@@ -206,6 +206,10 @@
         "movementType": "Air",
         "uniques": ["Aircraft"]
     },
+	{
+		"name": "Infantry",
+		"movementType": "Land", 
+	},
 
 
 ]
