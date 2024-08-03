@@ -325,7 +325,7 @@
 		"uniques": [
 			"Can move after attacking <if it hasn't used other actions yet>",
 			// Ordering strengths high to low, group alike
-			"[+200]% Strength <vs [Gunpowder] units <when attacking>", 
+			"[+200]% Strength <vs [Gunpowder] units> <when attacking>", 
 			"[+75]% Strength <vs [Gunpowder] units> <when defending>",
 			"[+50]% Strength <vs [Armored] units> <when attacking>",  // Armor piercing shells // #todo upgrade to APS instead
 			"[+25]% Strength <vs cities>",
@@ -350,7 +350,7 @@
 		// "upgradesTo": "Giant Death Robot",  // GDR is not a tank it is a mech, sorry Steel Battalion 
 		"uniques": [
 			"Can move after attacking <if it hasn't used other actions yet>",
-			"[+300]% Strength <vs [Gunpowder] units <when attacking>", 
+			"[+300]% Strength <vs [Gunpowder] units> <when attacking>", 
 			"[+150]% Strength <vs [Gunpowder] units> <when defending>",
 			"[+125]% Strength <vs [Mech] units> <when attacking>", 
 			"[+100]% Strength <vs [Armored] units> <when attacking>",
@@ -503,7 +503,7 @@
 			"[+75]% Strength <vs [Helicopter] units>",
 			"[+100]% Strength <vs [Submarine] units> <when attacking>",
 			"[+150]% Strength <vs [Melee Water] units> <when attacking>",
-			"[+200]% Strength <vs [Land] units <in [Water] tiles> <when attacking>", 
+			"[+200]% Strength <vs [Land] units> <in [Water] tiles> <when attacking>", 
 		],
 		"attackSound": "shipguns",
 	},
