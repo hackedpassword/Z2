@@ -11,6 +11,10 @@
 			"Ensures a minimum tile yield of [+2 Food, +2 Production] <starting from the [Medieval era]>",  // will build upon this
 			"Unpillagable", "Irremovable", "Unbuildable",  // Sōdesu ka? Wareware wa mirudearou.
 			// "Blocks line-of-sight from tiles at same elevation",  // This should be a city center default unique - doesn't work
+	
+			// trying to combine into one statement
+			"Cannot be built on [{Boulder} {Cave} {Cavern} {North Castle} {Parapa Palace} {Midoro Palace} {Island Palace} {Maze Palace} {Sea Palace} {ThreeEye Rock Palace} {Great Palace}] tiles",
+	/*
 			"Cannot be built on [Boulder] tiles",
 			"Cannot be built on [Cave] tiles",
 			"Cannot be built on [Cavern] tiles",
@@ -22,6 +26,8 @@
 			"Cannot be built on [Sea Palace] tiles",
 			"Cannot be built on [ThreeEye Rock Palace] tiles",
 			"Cannot be built on [Great Palace] tiles",
+	*/
+	
 		],
         "civilopediaText": [
 			{"text":"Marks the center of a city"},
