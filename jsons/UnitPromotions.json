@@ -5,49 +5,49 @@
 		"uniques": [
 			"Can pass through impassable tiles",
 			"Double movement in [Natural Wonder] <when not at war>",
-		]
+		],
 	},
-        {  // Granted by generic towns and other events
+	{  // Granted by generic towns and other events
 		"name": "Combat",
 		"uniques": [
 			"Eliminates combat penalty for attacking across a coast",
 			"[+50]% Strength <vs cities>",
-		]
+		],
 	},
-        {
+	{
 		"name": "Shield",
 		"uniques": [
 			"Only available <for units with [Shield]>",  // hax to show the promo, but unavailable until granted
-			//"Only available <for [Military] units>",  // needs to be built into UnitTypes 
+                        //"Only available <for [Military] units>",  // needs to be built into UnitTypes
 			"[25]% Strength bonus for [All] units within [1] tiles",
 			"May withdraw before melee ([25]%)",
-		], 
+		],
 		"column": 40,
 		"row": 1,
-		"unitTypes": ["Gunpowder","Mounted","Sword","Scout","Armored","Archery","Ranged Gunpowder","Siege","Ballistics","Helicopter"], 
+		"unitTypes": ["Gunpowder","Mounted","Sword","Scout","Armored","Archery","Ranged Gunpowder","Siege","Ballistics","Helicopter"],
 	},
-        {
+	{
 		"name": "Jump",
 		"uniques": [
 			"Only available <for units with [Jump]>",  // hax to show the promo, but unavailable until granted
-			// "Only available <for non-[Civilian] units>",
+                        // "Only available <for non-[Civilian] units>",
 			"Can see over obstacles",
 			"Can move after attacking",
 
-		// Jump is required for each thrust upgrade
-		// The unit needs to be in the town tile to gain the promo
+                // Jump is required for each thrust upgrade
+                // The unit needs to be in the town tile to gain the promo
 			"This Unit gains the [Upward Thrust] promotion <in [Darunia Town] tiles> <for all movement> <once>",
 			"This Unit gains the [Downward Thrust] promotion <in [Mido Town] tiles> <for all movement> <once>",
-		], 
+		],
 		"column": 40,
 		"row": 2,
 		"unitTypes": ["Gunpowder","Mounted","Sword","Scout","Armored","Archery","Ranged Gunpowder","Siege","Ballistics","Helicopter"],
 	},
-        {
+	{
 		"name": "Life",
 		"uniques": [
 			"Only available <for units with [Life]>",  // hax to show the promo, but unavailable until granted
-			//"Only available <for [Military] units>",
+                        //"Only available <for [Military] units>",
 			"Unit will heal every turn, even if it performs an action",
 			"All adjacent units heal [20] HP when healing",
 		],
@@ -55,10 +55,10 @@
 		"row": 1,
 		"unitTypes": ["Gunpowder","Mounted","Sword","Scout","Armored","Archery","Ranged Gunpowder","Siege","Ballistics","Helicopter"],
 	},
-        {
+	{
 		"name": "Fairy",
 		"uniques": [
-			"Only available <for units with [Fairy]>",  // hax to show the promo, but unavailable until granted	
+			"Only available <for units with [Fairy]>",  // hax to show the promo, but unavailable until granted
 			"Ignores terrain cost <with [Citrus]>",  // current bug makes this delayed by one unit action (self) per turn, see: https://github.com/yairm210/Unciv/issues/10674
 			"Ignores Zone of Control",
 		],
@@ -66,26 +66,26 @@
 		"row": 2,
 		"unitTypes": ["Gunpowder","Mounted","Sword","Scout","Armored","Archery","Ranged Gunpowder","Siege","Ballistics","Helicopter"],
 	},
-        {
+	{
 		"name": "Fire",
 		"uniques": [
 			"Only available <for units with [Fire]>",  // hax to show the promo, but unavailable until granted
-			// "Only available <for [Military] units>",  // doesn't work, bug? 
-			//"Only available <for non-[Civilian] units>",
+                        // "Only available <for [Military] units>",  // doesn't work, bug?
+                        //"Only available <for non-[Civilian] units>",
 
-		// Adds ability to equip up to two RPGs. The following grants units the ability to carry, then, 
-		// activate a menu button showing "Ready RPG". Hitting the button places one RPG air-based unit
-		// into the units' inventory (like a plane in a carrier). Civilian units will not equip the RPG, 
-		// instead will hand off the RPG unit to the nearest unit/city that can carry RPG or Missile, 
-		// making civilians into RPG squires.
-		// Note: Sometimes when activating, RPG unit goes somewhere else, close, like a city. \o/
-		// The '<[1] times>' UnitActionModifier is critical, which activates the menu button. 
-			// "Can carry [2] [Fireball] units",  // doesn't exist yet
+                // Adds ability to equip up to two RPGs. The following grants units the ability to carry, then,
+                // activate a menu button showing "Ready RPG". Hitting the button places one RPG air-based unit
+                // into the units' inventory (like a plane in a carrier). Civilian units will not equip the RPG,
+                // instead will hand off the RPG unit to the nearest unit/city that can carry RPG or Missile,
+                // making civilians into RPG squires.
+                // Note: Sometimes when activating, RPG unit goes somewhere else, close, like a city. \o/
+                // The '<[1] times>' UnitActionModifier is critical, which activates the menu button.
+                        // "Can carry [2] [Fireball] units",  // doesn't exist yet
 			"Can carry [2] [RPG] units",  // gains a bazooka
 			"Free [RPG] appears <starting from the [Modern era]> <for [1] movement> <[1] times>",
-		// Design notes: atm, everyone gets the promo. Later, I'll rebuild to be fireballs, then in Modern era, 
-		//   retain fireballs but unlock buying RPG instead of giving with promos. 
-			
+                // Design notes: atm, everyone gets the promo. Later, I'll rebuild to be fireballs, then in Modern era,
+                //   retain fireballs but unlock buying RPG instead of giving with promos.
+
 			"Ranged attacks may be performed over obstacles",
 			"May attack when embarked",
 		],
@@ -93,12 +93,12 @@
 		"row": 1,
 		"unitTypes": ["Gunpowder","Mounted","Sword","Scout","Armored","Archery","Ranged Gunpowder","Siege","Ballistics","Helicopter"],
 	},
-        {
+	{
 		"name": "Reflect",
 		"uniques": [
 			"Only available <for units with [Reflect]>",  // hax to show the promo, but unavailable until granted
-			//"Only available <for [Military] units>",
-			// "Only available <with [Marble]>",  // can't double down on Only Available's :p
+                        //"Only available <for [Military] units>",
+                        // "Only available <with [Marble]>",  // can't double down on Only Available's :p
 			"Can see invisible [Land] units",
 			"Ignores Zone of Control",
 		],
@@ -106,11 +106,11 @@
 		"row": 2,
 		"unitTypes": ["Gunpowder","Mounted","Sword","Scout","Armored","Archery","Ranged Gunpowder","Siege","Ballistics","Helicopter"],
 	},
-        {  // transformations, transmorphing
+	{  // transformations, transmorphing
 		"name": "Spell",
 		"uniques": [
 			"Only available <for units with [Spell]>",  // hax to show the promo, but unavailable until granted
-			//"Only available <for [Military] units>",
+                        //"Only available <for [Military] units>",
 			"May capture killed [Land] units <with [20]% chance>",
 			"Earn [50]% of killed [All] unit's [Cost] as [Gold]",
 			"Can transform to [Scout] <in [City center] tiles>",
@@ -121,7 +121,7 @@
 		"row": 1,
 		"unitTypes": ["Gunpowder","Mounted","Sword","Scout","Armored","Archery","Ranged Gunpowder","Siege","Ballistics","Helicopter"],
 	},
-        {
+	{
 		"name": "Thunder",
 		"uniques": [
 			"Only available <for units with [Thunder]>",  // hax to show the promo, but unavailable until granted
@@ -133,10 +133,10 @@
 		"unitTypes": ["Gunpowder","Mounted","Sword","Scout","Armored","Archery","Ranged Gunpowder","Siege","Ballistics","Helicopter"],
 	},
 
-// The following 3 promotions are supposed to be difficult to obtain, and very powerful. 
-// Problem is I can't find a way to trigger them at the desired time. Still looking! 
-	
-        {
+// The following 3 promotions are supposed to be difficult to obtain, and very powerful.
+// Problem is I can't find a way to trigger them at the desired time. Still looking!
+
+	{
 		"name": "Downward Thrust",
 		"prerequisites": ["Jump"],  // See Jump to understand how this is gained
 		"uniques": [
@@ -147,16 +147,16 @@
 			"[+50]% Strength <when attacking> <if it hasn't used other actions yet>",
 			"Great General provides double combat bonus",
 
-		// The below should work, does register in game, but does not trigger.
-		// solution: elements are and'd not or'd
-			// "[+50]% Strength <for units with [{Shield} {Jump} {Life}]>",  // use prerequisites instead
-		// and this line only recognizes the last conditional. 
-			// "[+50]% Strength <for units with [Shield]> <for units with [Jump]> <for units with [Life]>",  // ditto 
+                // The below should work, does register in game, but does not trigger.
+                // solution: elements are and'd not or'd
+                        // "[+50]% Strength <for units with [{Shield} {Jump} {Life}]>",  // use prerequisites instead
+                // and this line only recognizes the last conditional.
+                        // "[+50]% Strength <for units with [Shield]> <for units with [Jump]> <for units with [Life]>",  // ditto
 		],
-        "column": 40,
-        "row": 3, 
+		"column": 40,
+		"row": 3,
 		"unitTypes": ["Gunpowder","Mounted","Sword","Scout","Armored","Archery","Ranged Gunpowder","Siege","Ballistics","Helicopter"],
-		"civilopediaText": [
+				"civilopediaText": [
 			{
 				"extraImage": "UnitPromotionIcons/Downward Thrust",
 				"imageSize": 128,
@@ -166,26 +166,26 @@
 				"header": 1,
 			},
 			{
-				"text": "", 
+				"text": "",
 			},
-{ "separator": true },
-			{ "text": "Z2 gameplay note: Standing on the town tile counts as \"visiting\" the town."}, 
-		], 	
+			{ "separator": true },
+			{ "text": "Z2 gameplay note: Standing on the town tile counts as \"visiting\" the town."},
+		],
 	},
-        {
+	{
 		"name": "Upward Thrust",
 		"prerequisites": ["Jump"],  // See Jump to understand how this is gained
 		"uniques": [
-			"Comment [To gain Upward Thrust, first learn Jump from Ruto town, then enter Darunia town to be trained by the Knight.]", 
+			"Comment [To gain Upward Thrust, first learn Jump from Ruto town, then enter Darunia town to be trained by the Knight.]",
 			"Only available <for units with [Upward Thrust]>",  // only show, under unavailable until granted
 			"[50]% chance to intercept air attacks",
 			"[100]% Strength <vs [Air] units>",
 			"May Paradrop up to [6] tiles from inside friendly territory <for units with [Spell]>",
 		],
-        "column": 41,
-        "row": 3,
+		"column": 41,
+		"row": 3,
 		"unitTypes": ["Gunpowder","Mounted","Sword","Scout","Armored","Archery","Ranged Gunpowder","Siege","Ballistics","Helicopter"],
-		"civilopediaText": [
+				"civilopediaText": [
 			{
 				"extraImage": "UnitPromotionIcons/Upward Thrust",
 				"imageSize": 128,
@@ -195,36 +195,36 @@
 				"header": 1,
 			},
 			{
-				"text": "", 
+				"text": "",
 			},
-{ "separator": true },
-			{ "text": "Z2 gameplay note: Standing on the town tile counts as \"visiting\" the town."}, 
-		], 	
+			{ "separator": true },
+			{ "text": "Z2 gameplay note: Standing on the town tile counts as \"visiting\" the town."},
+		],
 	},
-        {
+	{
 		"name": "Magic Key",
 		"prerequisites": ["Spell"],  // considering adding Thunder to prereqs to indicate Kasuto was visited
 		"uniques": [
 			"Comment [To gain Magic Key, while in New Kasuto, have 3 or more Magic Potions available to demonstrate deserving the towns' help.]",
 			"Comment [When acquired, if total available Magic Potions falls under 3, Magic Key will fail!]",
-			
+
 			"Only available <for units with [Magic Key]>",  // hax to show the promo, but unavailable until granted
-		// The way magic key is supposed to be made available is with Spell, which being that Spell is in New Kasuto also, 
-		// we need another mechanism to obtain this most powerful promo. I'm using the 8th magic potion requirement requiring 
-		// finding the 3 others, but for gameplay, owning 2 magic potion tiles, or, 1 with double resources, or, 1 with Future Tech 
-		// resources bonuses, will be adequate. 
-			
-			// "Only available <for units with [Spell]>", 
-			"Only available <when above [2] [Aluminum]>",  // Magic key will fail if under 3 available Magic Potions 
+                // The way magic key is supposed to be made available is with Spell, which being that Spell is in New Kasuto also,
+                // we need another mechanism to obtain this most powerful promo. I'm using the 8th magic potion requirement requiring
+                // finding the 3 others, but for gameplay, owning 2 magic potion tiles, or, 1 with double resources, or, 1 with Future Tech
+                // resources bonuses, will be adequate.
+
+                        // "Only available <for units with [Spell]>",
+			"Only available <when above [2] [Aluminum]>",  // Magic key will fail if under 3 available Magic Potions
 			"May enter foreign tiles without open borders",  // the key to the land
 			"Free Social Policy <upon conquering a city>",  // the key to the city
-		// unitType will be all
+                // unitType will be all
 		],
 		"column": 43,
 		"row": 3,
 		"unitTypes": ["Gunpowder","Mounted","Sword","Scout","Armored","Archery","Ranged Gunpowder","Siege","Ballistics","Helicopter"],
-		
-		"civilopediaText": [
+
+				"civilopediaText": [
 			{
 				"extraImage": "UnitPromotionIcons/Magic Key",
 				"imageSize": 128,
@@ -235,15 +235,15 @@
 			},
 			{
 				"text":
-"This exceptionally powerful artifact was created by a legendary mage from Kasuto.
-			
-The mage focused the transmorphic properties of a dark magic Spell into the artifact, intending a dynamically reshaping key with coherent polymorphism to open any lock. 
+			"This exceptionally powerful artifact was created by a legendary mage from Kasuto.
+
+The mage focused the transmorphic properties of a dark magic Spell into the artifact, intending a dynamically reshaping key with coherent polymorphism to open any lock.
 			",
 				"link": "UnitPromotions/Spell",
 			},
 			{
 				"text":
-"Setting the spell as a permanent enchantment required simultaneously conjuring Thunder to draw the energy needed to focus Spell. The procedure worked, but.. 
+			"Setting the spell as a permanent enchantment required simultaneously conjuring Thunder to draw the energy needed to focus Spell. The procedure worked, but..
 
 At the moment the key took the energy like an implosion, it unexpectedly released a mana energy byproduct loosely resembling a combination Spell and Thunder, with such force the town itself was destroyed in a flash. Nearly 1/3 of the villagers vanished instantly. Villagers witnessed people being attacked by invisible entities, not knowing what direction to even run.
 
@@ -262,86 +262,90 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 
 ////////////////////////////////
 
-	
+
 
 	{  // This promo is a hack for Training. When Training II is gained, the Training I button remains. Losing Training I eliminates the prereq thus Training II,
-	   // so we splice a sub-promo in to satisfy the prereq for Training II by removing Training I and leaving this promo.
+           // so we splice a sub-promo in to satisfy the prereq for Training II by removing Training I and leaving this promo.
 
-		// Gameplay notes: Choosing training as an upgrade is an investment. Regaining xp spent on this promo to gain the next is expensive, even more so 
-		// in the next tier. Since each level up is more costly, investing into training must be carefully considered even though it looks like a cheap
-		// way to get promos. Since the unit must be garrisoned, that city cannot buy military units. Train wisely. 
+                // Gameplay notes: Choosing training as an upgrade is an investment. Regaining xp spent on this promo to gain the next is expensive, even more so
+                // in the next tier. Since each level up is more costly, investing into training must be carefully considered even though it looks like a cheap
+                // way to get promos. Since the unit must be garrisoned, that city cannot buy military units. Train wisely.
 		"name": "Training Discipline",
 		"uniques": [
 			"Heals [5] damage if it kills a unit",  // Seeing application of training
-			"Comment [Takes the place of Training I, signals promotion chain to show only the latest Training promo.]", 
+			"Comment [Takes the place of Training I, signals promotion chain to show only the latest Training promo.]",
 		],
 		"row": 0,
-       		"column": 0,
+		"column": 0,
 	},
 	{
-		"name": "Training I", 
-		// "UnitTypes": ["Military"], // not working
-		"unitTypes": [  // listing all until the above is figured out 
-			"Gunpowder","Mounted","Sword","Scout","Armored", 
-			"Archery","Ranged Gunpowder","Siege","Ballistics", 
-			"Melee Water","Ranged Water","Submarine","Aircraft Carrier", 
-			"Fighter","Bomber","Helicopter", 
+		"name": "Training I",
+                // "UnitTypes": ["Military"], // not working
+		"unitTypes": [  // listing all until the above is figured out
+			"Gunpowder","Mounted","Sword","Scout","Armored",
+			"Archery","Ranged Gunpowder","Siege","Ballistics",
+			"Melee Water","Ranged Water","Submarine","Aircraft Carrier",
+			"Fighter","Bomber","Helicopter",
 		],
 		"uniques": [
 			"This Unit gains [4] XP <in [City center] tiles> <for all movement> <if it hasn't used other actions yet>",
-			// looking to add xp when fighting
-		], 
-		"row": 0,
-       		"column": 1,
-	}, 
-	{
-		"name": "Training II", 
-		"unitTypes": [  // listing all until the above is figured out 
-			"Gunpowder","Mounted","Sword","Scout","Armored", 
-			"Archery","Ranged Gunpowder","Siege","Ballistics", 
-			"Melee Water","Ranged Water","Submarine","Aircraft Carrier", 
-			"Fighter","Bomber","Helicopter", 
+                        // looking to add xp when fighting
 		],
-		"prerequisites": ["Training I","Training Discipline"], 
+		"row": 0,
+		"column": 1,
+	},
+	{
+		"name": "Training II",
+		"unitTypes": [  // listing all until the above is figured out
+			"Gunpowder","Mounted","Sword","Scout","Armored",
+			"Archery","Ranged Gunpowder","Siege","Ballistics",
+			"Melee Water","Ranged Water","Submarine","Aircraft Carrier",
+			"Fighter","Bomber","Helicopter",
+		],
+		"prerequisites": ["Training I","Training Discipline"],
 		"uniques": [
 			"This Unit gains the [Training Discipline] promotion",
 			"This Unit loses the [Training I] promotion",  // GUI menu button noise removed, correctly, with modhax promo as noted
 			"This Unit gains [8] XP <in [City center] tiles> <for all movement> <if it hasn't used other actions yet>",  // values compensating for burning a promo, free promo not working yet
-		], 
-		"row": 1,
-       		"column": 1,
-	}, 
-	{
-		"name": "Training III", 
-		"unitTypes": [  // listing all until the above is figured out 
-			"Gunpowder","Mounted","Sword","Scout","Armored", 
-			"Archery","Ranged Gunpowder","Siege","Ballistics", 
-			"Melee Water","Ranged Water","Submarine","Aircraft Carrier", 
-			"Fighter","Bomber","Helicopter", 
 		],
-		"prerequisites": ["Training II","Training Discipline"], 
+		"row": 1,
+		"column": 1,
+	},
+	{
+		"name": "Training III",
+		"unitTypes": [  // listing all until the above is figured out
+			"Gunpowder","Mounted","Sword","Scout","Armored",
+			"Archery","Ranged Gunpowder","Siege","Ballistics",
+			"Melee Water","Ranged Water","Submarine","Aircraft Carrier",
+			"Fighter","Bomber","Helicopter",
+		],
+		"prerequisites": ["Training II","Training Discipline"],
 		"uniques": [
-			"This Promotion is free",  // award for completing Training 
+			"This Promotion is free",  // award for completing Training
 			"This Unit loses the [Training II] promotion",  // GUI menu button noise removed, correctly, with modhax promo as noted
 			"This Unit gains [12] XP <in [City center] tiles> <for all movement> <if it hasn't used other actions yet>",
-		], 
+		],
 		"row": 1,
-       		"column": 1,
-	}, 
+		"column": 1,
+	},
 	{ // Will queue an instant heal action
 		"name": "Heal Instantly I",  // will try to better align this to a Heal spell
-		"uniques": ["Heal this unit by [35] HP <for [1] movement> <once>"],
+		"uniques": [
+			"Heal this unit by [35] HP <for [1] movement> <once>",
+		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine","Ballistics"],
-        "row": 0,
-        "column": 0
+		"row": 0,
+		"column": 0,
 	},
 	{
 		"name": "Heal Instantly II",
 		"prerequisites": ["Heal Instantly I"],
-		"uniques": ["Heal this unit by [50] HP <for [1] movement> <once>"],
+		"uniques": [
+			"Heal this unit by [50] HP <for [1] movement> <once>",
+		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine","Ballistics"],
-        "row": 1,
-        "column": 0
+		"row": 1,
+		"column": 0,
 	},
 	{
 		"name": "Heal Instantly III",
@@ -351,43 +355,51 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 			"Doing so will consume this opportunity to choose a Promotion",
 		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine","Ballistics"],
-        "row": 2,
-        "column": 0
+		"row": 2,
+		"column": 0,
 	},
 
-	// Ranged+Siege
+        // Ranged+Siege
 	{
 		"name": "Indirect Fire",
 		"prerequisites": ["Accuracy I", "Barrage I", "Bombardment II", "Targeting II"],
-		"uniques": ["Ranged attacks may be performed over obstacles"],
+		"uniques": [
+			"Ranged attacks may be performed over obstacles",
+		],
 		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water","Ballistics"],
-        "column": 1,
-        "row": 2
+		"column": 1,
+		"row": 2,
 	},
 	{
 		"name": "Accuracy I",
-		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
+		"uniques": [
+			"[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>",
+		],
 		"unitTypes": ["Siege","Archery","Ranged Gunpowder","Ballistics"],
-        "column": 2,
-        "row": 1
-    },
+		"column": 2,
+		"row": 1,
+	},
 	{
 		"name": "Accuracy II",
 		"prerequisites": ["Accuracy I"],
-		"uniques": ["[+20]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
+		"uniques": [
+			"[+20]% Strength <when fighting in [Open terrain] tiles> <when attacking>",
+		],
 		"unitTypes": ["Siege","Archery","Ranged Gunpowder","Ballistics"],
-        "column": 2,
-        "row": 2
-    },
+		"column": 2,
+		"row": 2,
+	},
 	{
 		"name": "Accuracy III",
 		"prerequisites": ["Accuracy II"],
-		"uniques": ["[+25]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
+		"uniques": [
+			"[+25]% Strength <when fighting in [Open terrain] tiles> <when attacking>",
+		],
 		"unitTypes": ["Siege","Archery","Ranged Gunpowder","Ballistics"],
-        "column": 2,
-        "row": 3
-    },
-	{  // legacy support for saves where units retain promos that are obsolete. Migrate to the new promo. 
+		"column": 2,
+		"row": 3,
+	},
+	{  // legacy support for saves where units retain promos that are obsolete. Migrate to the new promo.
 		"name": "Extended Range",
 		"prerequisites": ["Indirect Fire","Accuracy III","Barrage III","Targeting II","Bombardment II","Wolfpack II","Cover II"],
 		"uniques": [
@@ -395,24 +407,28 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 			"This Unit loses the [Extended Range] promotion",  // cleanup
 		],
 		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water","Submarine"],
-        "column": 5,
-        "row": 4
+		"column": 5,
+		"row": 4,
 	},
 	{
 		"name": "Extended Range I",
 		"prerequisites": ["Indirect Fire","Accuracy III","Barrage III","Targeting II","Bombardment II","Wolfpack II","Cover II"],
-		"uniques": ["[+1] Range"],
+		"uniques": [
+			"[+1] Range",
+		],
 		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water","Submarine","Ballistics"],
-        "column": 5,
-        "row": 4
+		"column": 5,
+		"row": 4,
 	},
 	{
 		"name": "Extended Range II",
 		"prerequisites": ["Extended Range I"],
-		"uniques": ["[+1] Range"],
+		"uniques": [
+			"[+1] Range",
+		],
 		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water","Submarine","Ballistics"],
-        "column": 5,
-        "row": 5
+		"column": 5,
+		"row": 5,
 	},
 	{  // useless being so far into the promotion tree, making more useful
 		"name": "Formation I",
@@ -423,8 +439,8 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 			"[+33]% Strength <vs [Mounted] units>",
 		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Archery"],
-        "column": 3,
-        "row": 2
+		"column": 3,
+		"row": 2,
 	},
 	{
 		"name": "Formation II",
@@ -435,8 +451,8 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 			"[+75]% Strength <vs [Mounted] units>",
 		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Archery"],
-        "column": 3,
-        "row": 3
+		"column": 3,
+		"row": 3,
 	},
 
 	{
@@ -445,156 +461,184 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 		"uniques": [
 			"This Unit gains the [Volley I] promotion",  // migrate
 			"This Unit loses the [Volley] promotion",  // cleanup
-		], 
+		],
 		"unitTypes": ["Siege","Archery"],
-        "column": 4,
-        "row": 2
+		"column": 4,
+		"row": 2,
 	},
 	{
 		"name": "Volley I",
 		"prerequisites": ["Accuracy I","Barrage I"],
-		"uniques": ["[+50]% Strength <vs cities>"],
+		"uniques": [
+			"[+50]% Strength <vs cities>",
+		],
 		"unitTypes": ["Siege","Archery"],
-        "column": 4,
-        "row": 2
+		"column": 4,
+		"row": 2,
 	},
 	{
 		"name": "Volley II",
 		"prerequisites": ["Volley I"],
-		"uniques": ["[+50]% Strength <vs cities>"],
+		"uniques": [
+			"[+50]% Strength <vs cities>",
+		],
 		"unitTypes": ["Siege","Archery"],
-        "column": 4,
-        "row": 3
+		"column": 4,
+		"row": 3,
 	},
 	{
 		"name": "Cover I",
 		"uniques": [
-			"[+25]% Strength <when fortified>", 
+			"[+25]% Strength <when fortified>",
 			"[+33]% Strength <vs [Ranged] units> <when defending>",
 			"Invisible to non-adjacent units <in [Open terrain] tiles> <when at war> <when [Fortified]>",
 			"[+20]% Strength <vs [Air] units> <when defending>",
-			"May withdraw before melee [10]% <when [Fortified]>", 
+			"May withdraw before melee [10]% <when [Fortified]>",
 		],
 		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Ballistics"],
-        "column": 5,
-        "row": 1
+		"column": 5,
+		"row": 1,
 	},
 	{
 		"name": "Cover II",
 		"prerequisites": ["Cover I"],
 		"uniques": [
-			"[+25]% Strength <when [Fortified]>", 
+			"[+25]% Strength <when [Fortified]>",
 			"[+33]% Strength <vs [Ranged] units> <when defending>",
 			"Invisible to non-adjacent units <when at war> <if it hasn't used other actions yet>",
 			"[+50]% Strength <vs [Air] units> <when defending>",
-			"[+20]% Strength <vs [Water] units> <when defending> <if it hasn't used other actions yet>", 
+			"[+20]% Strength <vs [Water] units> <when defending> <if it hasn't used other actions yet>",
 			"May withdraw before melee [20]%",
 		],
 		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Ballistics"],
-        "column": 5,
-        "row": 2
+		"column": 5,
+		"row": 2,
 	},
 	{
 		"name": "Barrage I",
-		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
+		"uniques": [
+			"[+15]% Strength <when fighting in [Rough terrain] tiles> <when attacking>",
+		],
 		"unitTypes": ["Siege","Archery","Ranged Gunpowder","Ballistics"],
-        "column": 9,
-        "row": 1
+		"column": 9,
+		"row": 1,
 	},
 	{
 		"name": "Barrage II",
 		"prerequisites": ["Barrage I"],
-		"uniques": ["[+20]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
+		"uniques": [
+			"[+20]% Strength <when fighting in [Rough terrain] tiles> <when attacking>",
+		],
 		"unitTypes": ["Siege","Archery","Ranged Gunpowder","Ballistics"],
-        "column": 9,
-        "row": 2
+		"column": 9,
+		"row": 2,
 	},
 	{
 		"name": "Barrage III",
 		"prerequisites": ["Barrage II"],
-		"uniques": ["[+25]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
+		"uniques": [
+			"[+25]% Strength <when fighting in [Rough terrain] tiles> <when attacking>",
+		],
 		"unitTypes": ["Siege","Archery","Ranged Gunpowder","Ballistics"],
-        "column": 9,
-        "row": 3
+		"column": 9,
+		"row": 3,
 	},
 
-	// Melee, Mounted+Armor
+        // Melee, Mounted+Armor
 	{
 		"name": "Shock I",
-		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+		"uniques": [
+			"[+15]% Strength <when fighting in [Open terrain] tiles>",
+		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
-        "column": 4,
-        "row": 1
+		"column": 4,
+		"row": 1,
 	},
 	{
 		"name": "Shock II",
 		"prerequisites": ["Shock I"],
-		"uniques": ["[+20]% Strength <when fighting in [Open terrain] tiles>"],
+		"uniques": [
+			"[+20]% Strength <when fighting in [Open terrain] tiles>",
+		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
-        "column": 4,
-        "row": 2
+		"column": 4,
+		"row": 2,
 	},
 	{
 		"name": "Shock III",
 		"prerequisites": ["Shock II"],
-		"uniques": ["[+25]% Strength <when fighting in [Open terrain] tiles>"],
+		"uniques": [
+			"[+25]% Strength <when fighting in [Open terrain] tiles>",
+		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
-        "column": 4,
-        "row": 3
+		"column": 4,
+		"row": 3,
 	},
 
 	{
 		"name": "Drill I",
-		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>"],
+		"uniques": [
+			"[+15]% Strength <when fighting in [Rough terrain] tiles>",
+		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
-        "column": 15,
-        "row": 1
+		"column": 15,
+		"row": 1,
 	},
 	{
 		"name": "Drill II",
 		"prerequisites": ["Drill I"],
-		"uniques": ["[+20]% Strength <when fighting in [Rough terrain] tiles>"],
+		"uniques": [
+			"[+20]% Strength <when fighting in [Rough terrain] tiles>",
+		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
-        "column": 15,
-        "row": 2
+		"column": 15,
+		"row": 2,
 	},
 	{
 		"name": "Drill III",
 		"prerequisites": ["Drill II"],
-		"uniques": ["[+25]% Strength <when fighting in [Rough terrain] tiles>"],
+		"uniques": [
+			"[+25]% Strength <when fighting in [Rough terrain] tiles>",
+		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
-        "column": 15,
-        "row": 3
+		"column": 15,
+		"row": 3,
 	},
 	{
 		"name": "Charge",
 		"prerequisites": ["Shock II","Drill II"],
-		"uniques": ["[+33]% Strength <vs [Wounded] units>"],
+		"uniques": [
+			"[+33]% Strength <vs [Wounded] units>",
+		],
 		"unitTypes": ["Mounted","Armored"],
-        "column": 6,
-        "row": 2
+		"column": 6,
+		"row": 2,
 	},
 	{
 		"name": "Besiege", // Not called "Siege" in order to not conflict with siege type units for translations
 		"prerequisites": ["Shock II","Drill II"],
-		"uniques": ["[+50]% Strength <vs cities>"],
+		"uniques": [
+			"[+50]% Strength <vs cities>",
+		],
 		"unitTypes": ["Sword","Gunpowder"],
-        "column": 18,
-        "row": 3
+		"column": 18,
+		"row": 3,
 	},
 
 
 	{
 		"name": "Blitz",
 		"prerequisites": ["Shock III","Drill III"],
-		"uniques": ["[1] additional attacks per turn"],
+		"uniques": [
+			"[1] additional attacks per turn",
+		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
-        "column": 6,
-        "row": 4
+		"column": 6,
+		"row": 4,
 	},
 	{  // too deep in the tree, more useful now
 		"name": "Woodsman",
-		// "prerequisites": ["Shock I","Drill I"],
+                // "prerequisites": ["Shock I","Drill I"],
 		"uniques": [
 			"Double movement in [Forest]",
 			"All healing effects doubled <in [Forest] tiles>",
@@ -603,8 +647,8 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 			"Withdraws before melee combat <with [25]% chance> <in [Forest] tiles>",
 		],
 		"unitTypes": ["Sword","Gunpowder","Scout"],
-        "column": 6,
-        "row": 5
+		"column": 6,
+		"row": 5,
 	},
 	{ // legacy support
 		"name": "Amphibious",
@@ -614,8 +658,8 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 			"This Unit loses the [Amphibious] promotion",  // cleanup
 		],
 		"unitTypes": ["Sword","Gunpowder","Archery"],
-        "column": 6,
-        "row": 2
+		"column": 6,
+		"row": 2,
 	},
 	{
 		"name": "Amphibious I",
@@ -625,12 +669,12 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 			"[1] Movement point cost to embark",
 			"[1] Movement point cost to disembark",
 			"Eliminates combat penalty for attacking over a river",
-			"Eliminates combat penalty for attacking across a coast <if it hasn't used other actions yet>", 
+			"Eliminates combat penalty for attacking across a coast <if it hasn't used other actions yet>",
 		],
 		"unitTypes": ["Sword","Gunpowder","Archery"],
-        "column": 6,
-        "row": 2
-	},	{
+		"column": 6,
+		"row": 2,
+	},      {
 		"name": "Amphibious II",
 		"prerequisites": ["Amphibious I"],
 		"uniques": [
@@ -640,8 +684,8 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 			"Eliminates combat penalty for attacking across a coast",
 		],
 		"unitTypes": ["Sword","Gunpowder","Archery"],
-        "column": 6,
-        "row": 3
+		"column": 6,
+		"row": 3,
 	},
 	{ // obsolete
 		"name": "Medic",
@@ -651,19 +695,19 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 			"This Unit loses the [Medic] promotion",  // cleanup
 		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout"],
-        "column": 10, // after scout base
-        "row": 1
+		"column": 10, // after scout base
+		"row": 1,
 	},
 	{
 		"name": "Medic I",
 		"prerequisites": ["Shock I", "Drill I", "Scouting I", "Survivalism I"],
 		"uniques": [
-			"All adjacent units heal [+10] HP when healing", 
+			"All adjacent units heal [+10] HP when healing",
 			"All adjacent units heal [+5] HP when healing <when [Fortified]>",
 		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout"],
-        "column": 10, // after scout base
-        "row": 1
+		"column": 10, // after scout base
+		"row": 1,
 	},
 	{
 		"name": "Medic II",
@@ -674,11 +718,11 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 			"All adjacent units heal [+10] HP when healing <when [Fortified]>",
 		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout"],
-        "column": 10,
-        "row": 2
+		"column": 10,
+		"row": 2,
 	},
 
-	// Scout
+        // Scout
 	{
 		"name": "Scouting I",
 		"uniques": [
@@ -687,8 +731,8 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 			"May withdraw before melee ([10]%)",
 		],
 		"unitTypes": ["Scout"],
-        "column": 8,
-        "row": 1
+		"column": 8,
+		"row": 1,
 	},
 	{
 		"name": "Scouting II",
@@ -701,8 +745,8 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 			"May Paradrop up to [2] tiles from inside friendly territory",
 		],
 		"unitTypes": ["Scout"],
-        "column": 8,
-        "row": 2
+		"column": 8,
+		"row": 2,
 	},
 	{
 		"name": "Scouting III",
@@ -716,8 +760,8 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 			"May Paradrop up to [3] tiles from inside friendly territory",
 		],
 		"unitTypes": ["Scout"],
-        "column": 8,
-        "row": 3
+		"column": 8,
+		"row": 3,
 	},
 	{
 		"name": "Survivalism I",
@@ -726,8 +770,8 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 			"[+25]% Strength <when defending>",
 		],
 		"unitTypes": ["Scout"],
-        "column": 9,
-        "row": 1
+		"column": 9,
+		"row": 1,
 	},
 	{
 		"name": "Survivalism II",
@@ -737,8 +781,8 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 			"[+35]% Strength <when defending>",
 		],
 		"unitTypes": ["Scout"],
-        "column": 9,
-        "row": 2
+		"column": 9,
+		"row": 2,
 	},
 	{
 		"name": "Survivalism III",
@@ -747,61 +791,73 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 			"[+25] HP when healing <in [Foreign Land] tiles>",
 			"Unit will heal every turn, even if it performs an action",
 			"[+50]% Strength <when defending>",
-			"May withdraw before melee ([75]%)", // combined with scouting III, very agile 
+			"May withdraw before melee ([75]%)", // combined with scouting III, very agile
 		],
 		"unitTypes": ["Scout"],
-        "column": 9,
-        "row": 3
+		"column": 9,
+		"row": 3,
 	},
 
 
-	// Water melee
+        // Water melee
 	{
 		"name": "Boarding Party I",
-		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"uniques": [
+			"[+15]% Strength <vs [Water] units>",
+		],
 		"unitTypes": ["Melee Water"],
-        "column": 11,
-        "row": 1
+		"column": 11,
+		"row": 1,
 	},
 	{
 		"name": "Boarding Party II",
 		"prerequisites": ["Boarding Party I"],
-		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"uniques": [
+			"[+15]% Strength <vs [Water] units>",
+		],
 		"unitTypes": ["Melee Water"],
-        "column": 11,
-        "row": 2
+		"column": 11,
+		"row": 2,
 	},
 	{
 		"name": "Boarding Party III",
 		"prerequisites": ["Boarding Party II"],
-		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"uniques": [
+			"[+15]% Strength <vs [Water] units>",
+		],
 		"unitTypes": ["Melee Water"],
-        "column": 11,
-        "row": 3
+		"column": 11,
+		"row": 3,
 	},
 
 	{
 		"name": "Coastal Raider I",
-		"uniques": ["[+20]% Strength <vs cities>", "Earn [33]% of the damage done to [City] units as [Gold]"],
+		"uniques": [
+			"[+20]% Strength <vs cities>", "Earn [33]% of the damage done to [City] units as [Gold]",
+		],
 		"unitTypes": ["Melee Water"],
-        "column": 12,
-        "row": 1
+		"column": 12,
+		"row": 1,
 	},
 	{
 		"name": "Coastal Raider II",
 		"prerequisites": ["Coastal Raider I"],
-		"uniques": ["[+20]% Strength <vs cities>", "Earn [33]% of the damage done to [City] units as [Gold]"],
+		"uniques": [
+			"[+20]% Strength <vs cities>", "Earn [33]% of the damage done to [City] units as [Gold]",
+		],
 		"unitTypes": ["Melee Water"],
-        "column": 12,
-        "row": 2
+		"column": 12,
+		"row": 2,
 	},
 	{
 		"name": "Coastal Raider III",
 		"prerequisites": ["Coastal Raider II"],
-		"uniques": ["[+20]% Strength <vs cities>", "Earn [33]% of the damage done to [City] units as [Gold]"],
+		"uniques": [
+			"[+20]% Strength <vs cities>", "Earn [33]% of the damage done to [City] units as [Gold]",
+		],
 		"unitTypes": ["Melee Water"],
-        "column": 12,
-        "row": 3
+		"column": 12,
+		"row": 3,
 	},
 	{
 		"name": "Landing Party",
@@ -810,91 +866,103 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 			"Earn [33]% of the damage done to [Land] units as [Gold]"
 		],
 		"unitTypes": ["Melee Water"],
-        "column": 12,
-        "row": 5
+		"column": 12,
+		"row": 5,
 	},
 
-	// Water Ranged
+        // Water Ranged
 	{
 		"name": "Targeting I",
-		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"uniques": [
+			"[+15]% Strength <vs [Water] units>",
+		],
 		"unitTypes": ["Ranged Water","Archery","Ranged Gunpowder"],
-        "column": 13,
-        "row": 1
+		"column": 13,
+		"row": 1,
 	},
 	{
 		"name": "Targeting II",
 		"prerequisites": ["Targeting I"],
-		"uniques": ["[+25]% Strength <vs [Water] units>"],
+		"uniques": [
+			"[+25]% Strength <vs [Water] units>",
+		],
 		"unitTypes": ["Ranged Water","Archery","Ranged Gunpowder"],
-        "column": 13,
-        "row": 2
+		"column": 13,
+		"row": 2,
 	},
 	{
 		"name": "Targeting III",
 		"prerequisites": ["Targeting II"],
-		"uniques": ["[+50]% Strength <vs [Water] units>"],
+		"uniques": [
+			"[+50]% Strength <vs [Water] units>",
+		],
 		"unitTypes": ["Ranged Water","Archery","Ranged Gunpowder"],
-        "column": 13,
-        "row": 3
+		"column": 13,
+		"row": 3,
 	},
 
-	// Submarine
+        // Submarine
 	{
 		"name": "Wolfpack I",
-		"uniques": ["[+25]% Strength <when attacking>"],
+		"uniques": [
+			"[+25]% Strength <when attacking>",
+		],
 		"unitTypes": ["Submarine"],
-        "column": 14,
-        "row": 1
+		"column": 14,
+		"row": 1,
 	},
 	{
 		"name": "Wolfpack II",
 		"prerequisites": ["Wolfpack I"],
-		"uniques": ["[+25]% Strength <when attacking>"],
+		"uniques": [
+			"[+25]% Strength <when attacking>",
+		],
 		"unitTypes": ["Submarine"],
-        "column": 14,
-        "row": 2
+		"column": 14,
+		"row": 2,
 	},
 	{
 		"name": "Wolfpack III",
 		"prerequisites": ["Wolfpack II"],
-		"uniques": ["[+25]% Strength <when attacking>"],
+		"uniques": [
+			"[+25]% Strength <when attacking>",
+		],
 		"unitTypes": ["Submarine"],
-        "column": 14,
-        "row": 3
+		"column": 14,
+		"row": 3,
 	},
 
 	{
-		"name": "Overload", 
-		"prerequisites": ["Mobility"], 
+		"name": "Overload",
+		"prerequisites": ["Mobility"],
 		"uniques": [
-			"Comment [Activate self destruct]", 
+			"Comment [Activate self destruct]",
 			"Only available <for [Nuclear Submarine] units>",
-			"This Unit gains the [Self Destruct] promotion <for all movement> <once>",  // The UI trigger (button) 
+			"This Unit gains the [Self Destruct] promotion <for all movement> <once>",  // The UI trigger (button)
 		],
-		"unitTypes": ["Submarine"], 
+		"unitTypes": ["Submarine"],
 		"column": 27,
-		"row": 3, 
-	}, 
+		"row": 3,
+	},
 	{
 		"name": "Self Destruct",
 		"uniques": [
 			"[-2] Range",  // must be adjacent to the enemy
 			"Self-destructs when attacking",
 			"Blast radius [2]",
-			"Nuclear weapon of Strength [1]", 
-		], 
-	}, 
+			"Nuclear weapon of Strength [1]",
+		],
+	},
 
-	// Aircraft Carrier
+        // Aircraft Carrier
 	{
 		"name": "Armor Plating I",
 		"uniques": [
 			"Only available <for [Water] units> <after discovering [Steam Power]>",
 			"[+25]% Strength <when defending>"],
 		"unitTypes": ["Aircraft Carrier","Melee Water","Ranged Water"],
-        "column": 15,
-        "row": 1
+		"column": 15,
+		"row": 1,
 	},
 	{
 		"name": "Armor Plating II",
@@ -904,8 +972,8 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 			"[+25]% Strength <when defending>",
 		],
 		"unitTypes": ["Aircraft Carrier","Melee Water","Ranged Water"],
-        "column": 15,
-        "row": 2
+		"column": 15,
+		"row": 2,
 	},
 	{
 		"name": "Armor Plating III",
@@ -915,229 +983,279 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 			"[+25]% Strength <when defending>",
 		],
 		"unitTypes": ["Aircraft Carrier","Melee Water","Ranged Water"],
-        "column": 15,
-        "row": 3
+		"column": 15,
+		"row": 3,
 	},
 	{
 		"name": "Flight Deck I",
-		"uniques": ["Can carry [1] extra [Aircraft] units"],
+		"uniques": [
+			"Can carry [1] extra [Aircraft] units",
+		],
 		"unitTypes": ["Aircraft Carrier"],
-        "column": 16,
-        "row": 1
+		"column": 16,
+		"row": 1,
 	},
 	{
 		"name": "Flight Deck II",
 		"prerequisites": ["Flight Deck I"],
-		"uniques": ["Can carry [1] extra [Aircraft] units"],
+		"uniques": [
+			"Can carry [1] extra [Aircraft] units",
+		],
 		"unitTypes": ["Aircraft Carrier"],
-        "column": 16,
-        "row": 2
+		"column": 16,
+		"row": 2,
 	},
 	{
 		"name": "Flight Deck III",
 		"prerequisites": ["Flight Deck II"],
-		"uniques": ["Can carry [1] extra [Aircraft] units"],
+		"uniques": [
+			"Can carry [1] extra [Aircraft] units",
+		],
 		"unitTypes": ["Aircraft Carrier"],
-        "column": 16,
-        "row": 3
+		"column": 16,
+		"row": 3,
 	},
 
-	// Mixed Water
+        // Mixed Water
 	{
-		"name" : "Supply",
+		"name": "Supply",
 		"prerequisites": ["Bombardment III", "Targeting III", "Boarding Party III", "Coastal Raider III"],
-		"uniques": ["May heal outside of friendly territory", "[+15] HP when healing <in [Foreign Land] tiles>"],
+		"uniques": [
+			"May heal outside of friendly territory", "[+15] HP when healing <in [Foreign Land] tiles>",
+		],
 		"unitTypes": ["Melee Water", "Ranged Water"],
-        "column": 16,
-        "row": 4
+		"column": 16,
+		"row": 4,
 	},
 
-	// Bomber
+        // Bomber
 	{
 		"name": "Siege I",
-		"uniques": ["[+33]% Strength <vs cities>"],
+		"uniques": [
+			"[+33]% Strength <vs cities>",
+		],
 		"unitTypes": ["Bomber"],
-        "column": 17,
-        "row": 1
+		"column": 17,
+		"row": 1,
 	},
 	{
 		"name": "Siege II",
 		"prerequisites": ["Siege I"],
-		"uniques": ["[+33]% Strength <vs cities>"],
+		"uniques": [
+			"[+33]% Strength <vs cities>",
+		],
 		"unitTypes": ["Bomber"],
-        "column": 17,
-        "row": 2
+		"column": 17,
+		"row": 2,
 	},
 	{
 		"name": "Siege III",
 		"prerequisites": ["Siege II"],
-		"uniques": ["[+34]% Strength <vs cities>"],
+		"uniques": [
+			"[+34]% Strength <vs cities>",
+		],
 		"unitTypes": ["Bomber"],
-        "column": 17,
-        "row": 3
+		"column": 17,
+		"row": 3,
 	},
 	{
 		"name": "Evasion",
 		"prerequisites": ["Siege II", "Bombardment II"],
-		"uniques": ["Damage taken from interception reduced by [50]%"],
+		"uniques": [
+			"Damage taken from interception reduced by [50]%",
+		],
 		"unitTypes": ["Bomber"],
-        "column": 17,
-        "row": 4
+		"column": 17,
+		"row": 4,
 	},
 
-	// Aircraft
+        // Aircraft
 	{
 		"name": "Interception I",
-		"uniques": ["[+33]% Damage when intercepting"],
+		"uniques": [
+			"[+33]% Damage when intercepting",
+		],
 		"unitTypes": ["Fighter"],
-        "column": 18,
-        "row": 1
+		"column": 18,
+		"row": 1,
 	},
 	{
 		"name": "Interception II",
 		"prerequisites": ["Interception I"],
-		"uniques": ["[+33]% Damage when intercepting"],
+		"uniques": [
+			"[+33]% Damage when intercepting",
+		],
 		"unitTypes": ["Fighter"],
-        "column": 18,
-        "row": 2
+		"column": 18,
+		"row": 2,
 	},
 	{
 		"name": "Interception III",
 		"prerequisites": ["Interception II"],
-		"uniques": ["[+34]% Damage when intercepting"],
+		"uniques": [
+			"[+34]% Damage when intercepting",
+		],
 		"unitTypes": ["Fighter"],
-        "column": 18,
-        "row": 3
+		"column": 18,
+		"row": 3,
 	},
 	{
 		"name": "Dogfighting I",
-		"uniques": ["[+33]% Strength when performing Air Sweep"],
+		"uniques": [
+			"[+33]% Strength when performing Air Sweep",
+		],
 		"unitTypes": ["Fighter"],
-        "column": 19,
-        "row": 1
+		"column": 19,
+		"row": 1,
 	},
 	{
 		"name": "Dogfighting II",
 		"prerequisites": ["Dogfighting I"],
-		"uniques": ["[+33]% Strength when performing Air Sweep"],
+		"uniques": [
+			"[+33]% Strength when performing Air Sweep",
+		],
 		"unitTypes": ["Fighter"],
-        "column": 19,
-        "row": 2
+		"column": 19,
+		"row": 2,
 	},
 	{
 		"name": "Dogfighting III",
 		"prerequisites": ["Dogfighting II"],
-		"uniques": ["[+34]% Strength when performing Air Sweep"],
+		"uniques": [
+			"[+34]% Strength when performing Air Sweep",
+		],
 		"unitTypes": ["Fighter"],
-        "column": 19,
-        "row": 3
+		"column": 19,
+		"row": 3,
 	},
 	{
 		"name": "Air Targeting I",
 		"prerequisites": ["Interception I","Siege I","Bombardment I","Dogfighting I"],
-		"uniques": ["[+33]% Strength <vs [Water] units>"],
+		"uniques": [
+			"[+33]% Strength <vs [Water] units>",
+		],
 		"unitTypes": ["Fighter","Bomber"],
-        "column": 20,
-        "row": 1
+		"column": 20,
+		"row": 1,
 	},
 	{
 		"name": "Air Targeting II",
 		"prerequisites": ["Air Targeting I"],
-		"uniques": ["[+33]% Strength <vs [Water] units>"],
+		"uniques": [
+			"[+33]% Strength <vs [Water] units>",
+		],
 		"unitTypes": ["Fighter","Bomber"],
-        "column": 20,
-        "row": 2
+		"column": 20,
+		"row": 2,
 	},
 
 	{
 		"name": "Sortie",
 		"prerequisites": ["Interception II", "Dogfighting II"],
-		"uniques": ["[1] extra interceptions may be made per turn"],
+		"uniques": [
+			"[1] extra interceptions may be made per turn",
+		],
 		"unitTypes": ["Fighter"],
-        "column": 21,
-        "row": 2
+		"column": 21,
+		"row": 2,
 	},
 
 	{
 		"name": "Operational Range",
 		"prerequisites": ["Interception I", "Dogfighting I", "Siege I", "Bombardment I"],
-		"uniques": ["[+2] Range"],
+		"uniques": [
+			"[+2] Range",
+		],
 		"unitTypes": ["Fighter","Bomber"],
-        "column": 21,
-        "row": 1
+		"column": 21,
+		"row": 1,
 	},
 	{
 		"name": "Air Repair",
 		"prerequisites": ["Interception II", "Dogfighting II", "Siege II", "Bombardment II", "Mobility II", "Anti-Armor II"],
-		"uniques": ["Unit will heal every turn, even if it performs an action"],
+		"uniques": [
+			"Unit will heal every turn, even if it performs an action",
+		],
 		"unitTypes": ["Fighter", "Bomber", "Helicopter"],
-        "column": 21,
-        "row": 3
+		"column": 21,
+		"row": 3,
 	},
 
-	// Helicopter
+        // Helicopter
 	{
 		"name": "Mobility I",
-		"uniques": ["[+1] Movement"],
+		"uniques": [
+			"[+1] Movement",
+		],
 		"unitTypes": ["Helicopter"],
-        "column": 22,
-        "row": 1
+		"column": 22,
+		"row": 1,
 	},
 	{
 		"name": "Mobility II",
 		"prerequisites": ["Mobility I"],
-		"uniques": ["[+2] Movement"],
+		"uniques": [
+			"[+2] Movement",
+		],
 		"unitTypes": ["Helicopter"],
-        "column": 22,
-        "row": 2
+		"column": 22,
+		"row": 2,
 	},
 	{
 		"name": "Anti-Armor I",
-		"uniques": ["[+100]% Strength <vs {[Armored] [Siege]} units>"],
+		"uniques": [
+			"[+100]% Strength <vs {[Armored] [Siege]} units>",
+		],
 		"unitTypes": ["Helicopter"],
-        "column": 23,
-        "row": 1
+		"column": 23,
+		"row": 1,
 	},
 	{
 		"name": "Anti-Armor II",
 		"prerequisites": ["Anti-Armor I"],
-		"uniques": ["[+200]% Strength <vs {[Armored] [Siege]} units>"],
+		"uniques": [
+			"[+200]% Strength <vs {[Armored] [Siege]} units>",
+		],
 		"unitTypes": ["Helicopter"],
-        "column": 23,
-        "row": 2
+		"column": 23,
+		"row": 2,
 	},
 
-	// Mixed
+        // Mixed
 
 
 	{
 		"name": "March", // granting this against Heal Instantly, so using that isn't a total waste
 		"prerequisites": ["Heal Instantly II","Accuracy II","Barrage II","Shock II","Drill II",
 			"Formation I","Medic I"],
-		"uniques": ["Unit will heal every turn, even if it performs an action"],
+		"uniques": [
+			"Unit will heal every turn, even if it performs an action",
+		],
 		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege","Mounted"],
-        "column": 11,
-        "row": 3
+		"column": 11,
+		"row": 3,
 	},
 	{
 		"name": "Mobility",
 		"prerequisites": ["Shock II","Drill II","Targeting I",
 			"Bombardment I","Boarding Party I", "Coastal Raider I", "Wolfpack I"],
-		"uniques": ["[+1] Movement"],
+		"uniques": [
+			"[+1] Movement",
+		],
 		"unitTypes": ["Mounted","Melee Water","Ranged Water","Armored","Submarine"],
-        "column": 24,
-        "row": 3
+		"column": 24,
+		"row": 3,
 	},
 	{
 		"name": "Sentry",
 		"prerequisites": ["Accuracy I","Barrage I","Shock I","Drill I","Bombardment I","Targeting I","Boarding Party I","Coastal Raider I"],
 		"uniques": [
 			"[+2] Sight",
-			"Can see invisible [Land] units", 
+			"Can see invisible [Land] units",
 		],
 		"unitTypes": ["Sword","Gunpowder","Mounted","Ranged Water","Armored","Melee Water"],
-        "column": 24,
-        "row": 4
+		"column": 24,
+		"row": 4,
 	},
 	{
 		"name": "Logistics",
@@ -1149,8 +1267,8 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 			"This Unit loses the [Logistics] promotion",  // cleanup
 		],
 		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Melee Water","Ranged Water","Submarine","Fighter","Bomber","Helicopter"],
-        "column": 2,
-        "row": 4
+		"column": 2,
+		"row": 4,
 	},
 	{
 		"name": "Logistics I",
@@ -1158,23 +1276,23 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 			"Bombardment III", "Coastal Raider III","Boarding Party III","Siege III",
 			"Mobility II", "Anti-Armor II","Volley II"],
 		"uniques": [
-			"[1] additional attacks per turn", 
-			"Can move after attacking", 
+			"[1] additional attacks per turn",
+			"Can move after attacking",
 		],
 		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Melee Water","Ranged Water","Submarine","Fighter","Bomber","Helicopter","Ballistics"],
-        "column": 2,
-        "row": 4
+		"column": 2,
+		"row": 4,
 	},
 	{
 		"name": "Logistics II",
 		"prerequisites": ["Logistics I"],
 		"uniques": [
-			"[1] additional attacks per turn", 
-			"Can move after attacking", 
+			"[1] additional attacks per turn",
+			"Can move after attacking",
 		],
 		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Melee Water","Ranged Water","Submarine","Fighter","Bomber","Helicopter","Ballistics"],
-        "column": 2,
-        "row": 5
+		"column": 2,
+		"row": 5,
 	},
 
 	{  // line for line attributes, since apparently [{this} {that}] implies AND :(
@@ -1186,8 +1304,8 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 			"[+50]% Strength <vs [Archery] units> <when attacking>",
 		],
 		"unitTypes": ["Scout","Sword","Gunpowder","Fighter","Bomber","Ballistics"],
-        "column": 25,
-        "row": 1
+		"column": 25,
+		"row": 1,
 	},
 	{
 		"name": "Ambush II",
@@ -1199,39 +1317,45 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 			"[+75]% Strength <vs [Archery] units> <when attacking>",
 		],
 		"unitTypes": ["Scout","Sword","Gunpowder","Fighter","Bomber","Ballistics"],
-        "column": 25,
-        "row": 2
+		"column": 25,
+		"row": 2,
 	},
 
 
-	// Water ranged and air units
+        // Water ranged and air units
 	{
 		"name": "Bombardment I",
-		"uniques": ["[+33]% Strength <vs [Land] units> <when attacking>"],
+		"uniques": [
+			"[+33]% Strength <vs [Land] units> <when attacking>",
+		],
 		"unitTypes": ["Ranged Water","Fighter","Bomber","Ballistics"],
-        "column": 26,
-        "row": 1
+		"column": 26,
+		"row": 1,
 	},
 	{
 		"name": "Bombardment II",
 		"prerequisites": ["Bombardment I"],
-		"uniques": ["[+33]% Strength <vs [Land] units> <when attacking>"],
+		"uniques": [
+			"[+33]% Strength <vs [Land] units> <when attacking>",
+		],
 		"unitTypes": ["Ranged Water","Fighter","Bomber","Ballistics"],
-        "column": 26,
-        "row": 2
+		"column": 26,
+		"row": 2,
 	},
 	{
 		"name": "Bombardment III",
 		"prerequisites": ["Bombardment II"],
-		"uniques": ["[+34]% Strength <vs [Land] units> <when attacking>"],
+		"uniques": [
+			"[+34]% Strength <vs [Land] units> <when attacking>",
+		],
 		"unitTypes": ["Ranged Water","Fighter","Bomber","Ballistics"],
-        "column": 26,
-        "row": 3
+		"column": 26,
+		"row": 3,
 	},
 
-	// Uniques that should be kept on upgrades
+        // Uniques that should be kept on upgrades
 	{
-		"name": "Morale", // Heroic Epic - making it worth having motivated units! 
+		"name": "Morale", // Heroic Epic - making it worth having motivated units!
 		"uniques": [
 			"[+15]% Strength", // base bonus
 			"[+20]% Strength <while the empire is happy>",
@@ -1239,83 +1363,120 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 			"[+10]% Strength <during We Love The King Day>",
 			"[+25]% XP gained from combat",
 			"Great General provides double combat bonus",
-		]
+		],
 	},
 	{
 		"name": "Great Generals I", // only for Companion Cavalry, Keshik and their subsequent upgrades
-		"uniques": ["[Great General] is earned [50]% faster"]
+		"uniques": [
+			"[Great General] is earned [50]% faster",
+		],
 	},
 	{
 		"name": "Great Generals II", // only for Samurai and subsequent upgrades
-		"uniques": ["[Great General] is earned [100]% faster"]
+		"uniques": [
+			"[Great General] is earned [100]% faster",
+		],
 	},
 	{
 		"name": "Quick Study", // only for Keshik and subsequent upgrades
-		"uniques": ["[+50]% XP gained from combat"]
+		"uniques": [
+			"[+50]% XP gained from combat",
+		],
 	},
 	{
 		"name": "Haka War Dance", // only for Maori Warrior and subsequent upgrades
-		"uniques": ["[-10]% Strength for enemy [Military] units in adjacent [All] tiles"]
+		"uniques": [
+			"[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
+		],
 	},
 	{
 		"name": "Rejuvenation", // only for Units that have been close to Natural Wonder Fountain of Youth
-		"uniques": ["All healing effects doubled"]
+		"uniques": [
+			"All healing effects doubled",
+		],
 	},
 	{
 		"name": "Slinger Withdraw", // only for Slinger and subsequent upgrades
-		"uniques": ["May withdraw before melee ([80]%)"]
+		"uniques": [
+			"May withdraw before melee ([80]%)",
+		],
 	},
 	{
 		"name": "Ignore terrain cost",
-		"uniques": ["Ignores terrain cost"]
+		"uniques": [
+			"Ignores terrain cost",
+		],
 	},
 	{
 		"name": "Pictish Courage", // only for Pictish Warrior and subsequent upgrades
-		"uniques": ["No movement cost to pillage", "[+20]% Strength <when fighting in [Foreign Land] tiles>"]
+		"uniques": [
+			"No movement cost to pillage", "[+20]% Strength <when fighting in [Foreign Land] tiles>",
+		],
 	},
 	{
 		"name": "Home Sweet Home", // only for Mehal Sefari and subsequent upgrades
-		"uniques": ["[+30]% Strength decreasing with distance from the capital"]
+		"uniques": [
+			"[+30]% Strength decreasing with distance from the capital",
+		],
 	},
-    {
-        "name": "Devout",
-        "uniques": ["Can Spread Religion <[1] additional time(s)>"]
-    },
+	{
+		"name": "Devout",
+		"uniques": [
+			"Can Spread Religion <[1] additional time(s)>",
+		],
+	},
 	{
 		"name": "[Mohawk Warrior] ability",
-		"uniques": ["[+33]% Strength <when fighting in [Forest] tiles>", "[+33]% Strength <when fighting in [Jungle] tiles>"]
+		"uniques": [
+			"[+33]% Strength <when fighting in [Forest] tiles>", "[+33]% Strength <when fighting in [Jungle] tiles>",
+		],
 	},
 	{
 		"name": "[Jaguar] ability",
-		"uniques": ["[+33]% Strength <when fighting in [Forest] tiles>", "[+33]% Strength <when fighting in [Jungle] tiles>", "Heals [25] damage if it kills a unit"]
+		"uniques": [
+			"[+33]% Strength <when fighting in [Forest] tiles>", "[+33]% Strength <when fighting in [Jungle] tiles>", "Heals [25] damage if it kills a unit",
+		],
 	},
 	{
 		"name": "[Persian Immortal] ability",
-		"uniques": ["[+10] HP when healing"]
+		"uniques": [
+			"[+10] HP when healing",
+		],
 	},
 	{
 		"name": "[Conquistador] ability",
-		"uniques": ["Defense bonus when embarked"]
+		"uniques": [
+			"Defense bonus when embarked",
+		],
 	},
 	{
 		"name": "[Janissary] ability",
-		"uniques": ["Heals [50] damage if it kills a unit", "[+25]% Strength <when attacking>"]
+		"uniques": [
+			"Heals [50] damage if it kills a unit", "[+25]% Strength <when attacking>",
+		],
 	},
 	{
 		"name": "[Sipahi] ability",
-		"uniques": ["No movement cost to pillage"]
+		"uniques": [
+			"No movement cost to pillage",
+		],
 	},
 	{
 		"name": "[Cossack] ability",
-		"uniques": ["[+50]% Strength <vs [Wounded] units>"]
+		"uniques": [
+			"[+50]% Strength <vs [Wounded] units>",
+		],
 	},
 	{
 		"name": "[Hussar] ability",
-		"uniques": ["[+50]% to Flank Attack bonuses"]
+		"uniques": [
+			"[+50]% to Flank Attack bonuses",
+		],
 	},
 	{
 		"name": "[Norwegian Ski Infantry] ability",
-		"uniques": ["[+25]% Strength <when fighting in [Snow] tiles>",
+		"uniques": [
+			"[+25]% Strength <when fighting in [Snow] tiles>",
 			"[+25]% Strength <when fighting in [Tundra] tiles>",
 			"[+25]% Strength <when fighting in [Hill] tiles>",
 			"Double movement in [Snow]",
@@ -1324,14 +1485,20 @@ Merely half of the survivors escaped. The mage and the town priest caught glimps
 	},
 	{
 		"name": "[Hakkapeliitta] ability",
-		"uniques": ["Transfer Movement to [Great General]", "[+15]% Strength when stacked with [Great General]"]
+		"uniques": [
+			"Transfer Movement to [Great General]", "[+15]% Strength when stacked with [Great General]",
+		],
 	},
 	{
 		"name": "[Zero] ability",
-		"uniques": ["[+33]% Strength <vs [Fighter] units>"]
+		"uniques": [
+			"[+33]% Strength <vs [Fighter] units>",
+		],
 	},
-    {
-        "name": "[Chu-Ko-Nu] ability",
-        "uniques": ["[1] additional attacks per turn", "Can move after attacking"]
-    }
-]
+	{
+		"name": "[Chu-Ko-Nu] ability",
+		"uniques": [
+			"[1] additional attacks per turn", "Can move after attacking",
+		],
+	},
+],
