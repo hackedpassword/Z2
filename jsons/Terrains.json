@@ -38,6 +38,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 2,
 		"RGB": [63, 27, 8],
 		"uniques": [
+			"Impeded terrain",
 			"Rough terrain",
 		        "Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
 			"Blocks line-of-sight from tiles at same elevation",
@@ -55,6 +56,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"RGB": [200, 76, 12],
 		// to-do: settlers shouldn't settle here - for now it's essentially a nuke safe haven
 		"uniques": [
+			"Impeded terrain",
 			"Rough terrain",
 			//"Units ending their turn on this terrain take [15] damage <with [20]% chance>",  // enemies amidst
 			"Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
@@ -97,6 +99,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 	        "impassable": true,  // unless unit received Adventurer training/promotion 
 		"RGB": [99, 40, 7],
 		"uniques": [
+			"Impeded terrain",
 			"Rough terrain",
 		        "Has an elevation of [1] for visibility calculations",  // not too tall, wanting limited tile reveal
 			"Blocks line-of-sight from tiles at same elevation",  // cull vis
@@ -360,6 +363,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"turnsToBuild": 7,
 		"impassable": true,  // instead of movement impairment, now boulders function as they originally did on the NES
 		"uniques": [
+			"Impeded terrain",
 			"Rare feature",  // map gen unique blah
 			"Nullifies all other stats this tile provides",
 			"Units ending their turn on this terrain take [20] damage <with [50]% chance>",
@@ -376,6 +380,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 4,
 		"unbuildable": true,
 		"uniques": [
+			"Impeded terrain",
 			"Rare feature",
 			"Nullifies all other stats this tile provides",
 			"Units ending their turn on this terrain take [35] damage",
@@ -450,6 +455,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"culture": 10,
 		"occursOn": ["Plains"],
 		"uniques": [
+			"Impeded terrain",
 			"Comment [Requires Shield to gain Adventurer promotion]",
 			"Grants [Adventurer] ([Overcome difficult terrain!]) to adjacent [Land] units for the rest of the game",  // doesn't trigger: <for units with [Shield]>
 			"Tile provides yield without assigned population",
@@ -467,6 +473,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"culture": 5,
 		"occursOn": ["Plains","Grassland","Desert"],
 		"uniques": [
+			"Impeded terrain",
 			"Rough terrain",
 			// "Comment [Requires Shield to gain Adventurer promotion]",
 			"Grants [Adventurer] ([Overcome difficult terrain!]) to adjacent [Land] units for the rest of the game", 
@@ -486,6 +493,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"culture": 5,
 		"occursOn": ["Plains","Grassland","Desert"],
 		"uniques": [
+			"Impeded terrain",
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage <for units without [Jump]>",  // experiment
@@ -504,6 +512,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"culture": 5,
 		"occursOn": ["Plains","Grassland","Desert"],
 		"uniques": [
+			"Impeded terrain",
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage",
@@ -522,6 +531,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"culture": 5,
 		"occursOn": ["Plains","Grassland","Desert"],
 		"uniques": [
+			"Impeded terrain",
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage",
@@ -540,6 +550,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"culture": 5,
 		"occursOn": ["Plains","Grassland","Desert"],
 		"uniques": [
+			"Impeded terrain",
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage",
@@ -558,6 +569,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"culture": 5,
 		"occursOn": ["Plains","Grassland","Desert"],
 		"uniques": [
+			"Impeded terrain",
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage",
@@ -576,6 +588,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"culture": 5,
 		"occursOn": ["Plains","Grassland","Desert"],
 		"uniques": [
+			"Impeded terrain",
 			"Rough terrain",
 			"Grants [Adventurer] ([Power up!]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [10] damage",
@@ -622,6 +635,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 3,
 		"occursOn": ["Plains"],
 		"uniques": [
+			"Impeded terrain",
 			//   // can't make this unique value '50' so it'll be 500 
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
@@ -643,6 +657,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 3,
 		"occursOn": ["Desert"],
 		"uniques": [
+			"Impeded terrain",
 			// 
 			// "Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
@@ -663,6 +678,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 3,
 		"occursOn": ["Grassland"],
 		"uniques": [
+			"Impeded terrain",
 			// 
 			"Grants [Combat] ([Military/warrior training]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
@@ -689,6 +705,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 3,
 		"occursOn": ["Grassland"],
 		"uniques": [
+			"Impeded terrain",
 			  // Want this to be 100G but only 500G is hardcoded
 			"Grants [Shield] ([Combat magic]) to adjacent [Military] units for the rest of the game",
 			"Tile provides yield without assigned population",
@@ -711,6 +728,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 3,
 		"occursOn": ["Plains"],
 		"uniques": [
+			"Impeded terrain",
 			// "Comment [Must possess the Trophy to gain the magic!]",
 			// "Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game <when above [0] [Silver]>",
 			// "Grants [Jump] ([Combat magic]) to adjacent [Land] units for the rest of the game <with [Silver]>",
@@ -737,6 +755,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 3,
 		"occursOn": ["Plains"],
 		"uniques": [
+			"Impeded terrain",
 			"Grants [Life] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Comment [Healer house recovers 50HP per turn (as minus 50 damage)]",
@@ -758,6 +777,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 3,
 		"occursOn": ["Desert"],
 		"uniques": [
+			"Impeded terrain",
 			"Comment [A mighty Jump gains an audience with the towns' Knight!]",
 			"Comment [Learn the Jump spell to unlock Downward Thrust.]", 
 			// "Grants [Downward Thrust] ([Learned from the town's Hylian Knight]) to adjacent [Land] units for the rest of the game",  // supposed to use a <conditional> but won't accept any
@@ -782,6 +802,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 3,
 		"occursOn": ["Plains"],
 		"uniques": [
+			"Impeded terrain",
 			"Grants [Fire] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Tile provides yield without assigned population",
 			"Comment [Healer house recovers 50HP per turn (as minus 50 damage)]",
@@ -803,6 +824,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 3,
 		"occursOn": ["Desert"],
 		"uniques": [
+			"Impeded terrain",
 			"Comment [A mighty Jump gains an audience with the towns' Knight!]",
 			"Comment [Learn the Jump spell to unlock Upward Thrust.]", 
 			// "Grants [Upward Thrust] ([Learned from the town's Hylian Knight]) to adjacent [Land] units for the rest of the game",  // supposed to use a <conditional> but won't accept any
@@ -827,6 +849,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 3,
 		"occursOn": ["Grassland"],
 		"uniques": [
+			"Impeded terrain",
 			"Grants [Spell] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			// "Grants [Magic Key] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			// Magic key becomes available but has additional requirements
@@ -846,6 +869,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 4,
 		"occursOn": ["Plains"],
 		"uniques": [
+			"Impeded terrain",
 			"Grants [Thunder] ([Combat magic]) to adjacent [Land] units for the rest of the game",
 			"Units ending their turn on this terrain take [20] damage <without [Salt]>",  // conditional prob doesn't work anyway
 		],
@@ -867,7 +891,9 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"type": "NaturalWonder",
 		"movementCost": 1,
 		"occursOn": ["Coast"],
-		"uniques": ["Rare feature",
+		"uniques": [
+			"Impeded terrain",
+			// "Rare feature",
 			"Units ending their turn on this terrain take [10] damage", // won't trigger: <for [land units] units>
 			"[-50] Strength for cities built on this terrain", // not a good place to settle
 			"Never receives any resources <in [Force] tiles>",
@@ -884,7 +910,9 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"type": "NaturalWonder",
 		"movementCost": 1,
 		"occursOn": ["Ocean"],
-		"uniques": ["Rare feature",
+		"uniques": [
+			"Impeded terrain",
+			// "Rare feature",
 			"Units ending their turn on this terrain take [10] damage", // won't trigger: <for [land units] units>
 			"Never receives any resources <in [Force] tiles>", // Force bakes into the map upon game start, important design aspect
 			"Always Fertility [-1] for Map Generation",
