@@ -101,7 +101,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"uniques": [
 			"Impeded terrain",
 			"Rough terrain",
-		        "Has an elevation of [1] for visibility calculations",  // not too tall, wanting limited tile reveal
+		        //"Has an elevation of [1] for visibility calculations",  // not too tall, wanting limited tile reveal
 			"Blocks line-of-sight from tiles at same elevation",  // cull vis
 		        "Units ending their turn on this terrain take [50] damage <with [80]% chance>",  // get in get out
 			"Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
