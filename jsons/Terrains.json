@@ -58,9 +58,9 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"uniques": [
 			"Impeded terrain",
 			"Rough terrain",
-			//"Units ending their turn on this terrain take [15] damage <with [20]% chance>",  // enemies amidst
+			// "Units ending their turn on this terrain take [15] damage <with [20]% chance>",  // enemies amidst
 			"Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
-		        "Has an elevation of [-1] for visibility calculations",  // testing negative vis
+		        // "Has an elevation of [-1] for visibility calculations",  // testing negative vis
 			"Blocks line-of-sight from tiles at same elevation", 
 			"[+1 Gold] <before discovering [Fire]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			"[+1 Gold] <after discovering [Fire]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // From here down, gaining gold from Cavern can reap big rewards
