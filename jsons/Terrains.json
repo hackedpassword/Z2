@@ -128,7 +128,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"RGB": [240, 188, 60],
 		"uniques": [
 		// Remember that each roll of chance below aggregates an additional resource, on top of any other modifying resource bonuses
-			"[+1 Food] <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // The King's Tomb graveyard provides too much food (wheat), reduce baseline food supply
+/*			"[+1 Food] <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // The King's Tomb graveyard provides too much food (wheat), reduce baseline food supply
 			"[+1 Production] <with [2] to [5] neighboring [Grassland] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",     // more food at some edges
 			"[+1 Food] <before discovering [Clans]> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // poor food source initially, community pooling
 			"[+1 Food] <after discovering [Clans]> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // bonus chance for 2x food
@@ -140,6 +140,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			// "[+1 Culture]  // something like <when occupied by a [Player] unit> <when adjacent to a non-[Player] unit>
 			// "[+1 Happiness] <with [10]% chance>",
 			// "[+1 Faith] <with [10]% chance>",
+*/
 			"[+1 Food]", 
 		],
 	},
