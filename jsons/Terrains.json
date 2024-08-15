@@ -140,6 +140,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			// "[+1 Culture]  // something like <when occupied by a [Player] unit> <when adjacent to a non-[Player] unit>
 			// "[+1 Happiness] <with [10]% chance>",
 			// "[+1 Faith] <with [10]% chance>",
+			"[+1 Food]", 
 		],
 	},
 	{
@@ -160,6 +161,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			// "[+1 Happiness] <with [10]% chance>",
 			// "[+1 Faith] <with [10]% chance>",
 			"[+1 Food] <with [50]% chance> <within [1] tiles of a [Town]>",
+			"[+1 Food]",
 		],
 	},
 	{
@@ -180,6 +182,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"[+1 Faith] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			"[+1 Culture] <with [5]% chance>",
 			// "[+1 Happiness] <with [10]% chance>",
+			"[+1 Food]", 
 		],
 	},
 	{
