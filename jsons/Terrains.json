@@ -77,14 +77,14 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // same output as desert
 			"[-2 Gold] <in [River] tiles>",  // turn down resource noise - still unable to find what is granting 2 gold to river tiles
 */
-			[+1 Gold],
+			"[+1 Gold]",
 			// balancing tweaks
 			// "[+1 Gold] <with [5]% chance>",
 			// "[+1 Culture] <with [10]% chance>",
 			// "[+1 Happiness] <with [10]% chance>",
 			// "[+1 Faith] <with [10]% chance>",
                         /*
-			// "[+1000]% Strength <vs [Air] units> <when defending>",
+			   "[+1000]% Strength <vs [Air] units> <when defending>",
 			*/ not for base terrain, put into globalUniques
 
 		// #todo: figure out ways to implement these
@@ -201,7 +201,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
 			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
 */
-			[+1 Food],
+			"[+1 Food]",
 		],
 	},
 	{
@@ -215,7 +215,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
 			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
 */
-			[+1 Food],
+			"[+1 Food]",
 		],
 
 	},
@@ -229,7 +229,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"[+2 Gold] <in [Friendly Land] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
 			"[+1 Gold] <in [Friendly Land] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
 */
-			[+1 Food],
+			"[+1 Food]",
 		],
 		"RGB": [33, 97, 171],
 	},
@@ -268,7 +268,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 /*			"[+1 Science] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 */
-			[+1 Food],
+			"[+1 Food]",
 		],
 		"RGB": [200, 76, 12],
 	},
@@ -282,7 +282,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 /*			"[+1 Science] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 */
-			[+1 Food],
+			"[+1 Food]",
 		],
 		"RGB": [200, 76, 12],
 	},
@@ -311,7 +311,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"[+1 Food] <with [25]% chance> <after discovering [Hunting]> <before discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			"[+1 Food] <with [50]% chance> <after discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 */
-			[+1 Food],
+			"[+1 Food]",
 		],
 	},
 	{
