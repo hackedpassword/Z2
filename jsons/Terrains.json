@@ -159,7 +159,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			// "[+1 Culture] <with [10]% chance>",
 			// "[+1 Happiness] <with [10]% chance>",
 			// "[+1 Faith] <with [10]% chance>",
-			"[+1 Food] <with [50]% chance> <within [1] tiles of a [Town]>',
+			"[+1 Food] <with [50]% chance> <within [1] tiles of a [Town]>",
 		],
 	},
 	{
