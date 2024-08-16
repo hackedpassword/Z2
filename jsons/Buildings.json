@@ -63,7 +63,8 @@
 		"isWonder": false,  // needs to be sellable
 	        "uniques": [
 			"Only available <for [Human player]>",
-			"[+64] Sight <for [Fairy] units>"
+			"[+32] Sight <for [Fairy] units>",  // super slow vis calc watch out!
+			"[Fairy] units gain the [Jump] promotion",  // prevents some vis blocking
 		],
 	},
 	{
