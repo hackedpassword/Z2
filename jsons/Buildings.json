@@ -58,6 +58,15 @@
                 ],
 	},
 	{
+		"name": "Wizard's hut",
+		"cost": 1,
+		"isWonder": false,  // needs to be sellable
+	        "uniques": [
+			"Only available <for [Human player]>",
+			"[+64] Sight <for [Fairy] units>"
+		],
+	},
+	{
 		"name": "Horse Track",  // Do something with stale strategic resources, horses, coal, and iron
 		"cost": 180,
 		"maintenance": 2,
