@@ -513,7 +513,7 @@
 	// Unbuildable improvements
 	{
 		"name": "Ancient ruins",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"terrainsCanBeBuiltOn": ["Land","Terrain"],
 		"uniques": [
 			"Unpillagable", 
 			"Provides a random bonus when entered", 
