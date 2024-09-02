@@ -62,7 +62,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"Considered [Undesirable] when determining start locations",  // for spillover of > 15 civs
 		        // "Has an elevation of [-1] for visibility calculations",  // testing negative vis
 			"Blocks line-of-sight from tiles at same elevation", 
-/*			"[+1 Gold] <before discovering [Fire]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Gold] <before discovering [Fire]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			"[+1 Gold] <after discovering [Fire]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // From here down, gaining gold from Cavern can reap big rewards
 			"[+1 Gold] <after discovering [Tools]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			"[+1 Gold] <after discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
@@ -76,8 +76,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"[+1 Gold] <after discovering [Lasers]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // same output as desert
 			"[-2 Gold] <in [River] tiles>",  // turn down resource noise - still unable to find what is granting 2 gold to river tiles
-*/
-			"[+1 Gold]",
+
 			// balancing tweaks
 			// "[+1 Gold] <with [5]% chance>",
 			// "[+1 Culture] <with [10]% chance>",
@@ -130,7 +129,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"RGB": [240, 188, 60],
 		"uniques": [
 		// Remember that each roll of chance below aggregates an additional resource, on top of any other modifying resource bonuses
-/*			"[+1 Food] <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // The King's Tomb graveyard provides too much food (wheat), reduce baseline food supply
+			"[+1 Food] <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // The King's Tomb graveyard provides too much food (wheat), reduce baseline food supply
 			"[+1 Production] <with [2] to [5] neighboring [Grassland] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",     // more food at some edges
 			"[+1 Food] <before discovering [Clans]> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // poor food source initially, community pooling
 			"[+1 Food] <after discovering [Clans]> <in tiles without [Wheat]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // bonus chance for 2x food
@@ -142,8 +141,6 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			// "[+1 Culture]  // something like <when occupied by a [Player] unit> <when adjacent to a non-[Player] unit>
 			// "[+1 Happiness] <with [10]% chance>",
 			// "[+1 Faith] <with [10]% chance>",
-*/
-			"[+1 Food]", 
 		],
 	},
 	{
@@ -154,7 +151,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"RGB": [128, 208, 16],
 		"uniques": [
 		// base tiles providing scaling and dynamic resources
-/*			"[+1 Food] <before discovering [Tools]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // poor food source initially
+			"[+1 Food] <before discovering [Tools]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // poor food source initially
 			"[+1 Food] <after discovering [Tools]> <before discovering [Animal Husbandry]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			"[+1 Food] <after discovering [Animal Husbandry]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			"[+1 Food] <after discovering [Calendar]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // up to +4 food at this point
@@ -164,8 +161,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			// "[+1 Happiness] <with [10]% chance>",
 			// "[+1 Faith] <with [10]% chance>",
 			"[+1 Food] <with [50]% chance> <within [1] tiles of a [Town]>",
-*/
-			"[+1 Food]",
+
 		],
 	},
 	{
@@ -176,7 +172,7 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"RGB": [252, 188, 176],
 		"uniques": [
 		// base tiles providing scaling and dynamic resources
-/*			// "[+1 Production] <before discovering [The Wheel]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // poor production source initially
+			// "[+1 Production] <before discovering [The Wheel]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // poor production source initially
 			// 
 			"[+1 Production] <after discovering [The Wheel]> <before discovering [Mining]> <in [Friendly Land] tiles> <within [1] tiles of a [City center]>", // must be adjacent to city
 			// "[+1 Production] <after discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
@@ -186,8 +182,6 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"[+1 Faith] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			"[+1 Culture] <with [5]% chance>",
 			// "[+1 Happiness] <with [10]% chance>",
-*/
-			"[+1 Food]", 
 		],
 	},
 	{
@@ -196,12 +190,11 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"RGB": [0, 171, 169],
 		"uniques": [
 			// "Fresh water",  // this is interfering with building roads across wonders
-/*			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",  // two chances at each resource
+			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",  // two chances at each resource
 			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
 			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
 			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
-*/
-			"[+1 Food]",
+
 		],
 	},
 	{
@@ -210,12 +203,11 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 1,
 		"RGB": [70, 138, 216],
 		"uniques": [
-/*			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
+			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
 			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
 			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
 			"[+1 Gold] <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
-*/
-			"[+1 Food]",
+
 		],
 
 	},
@@ -224,12 +216,11 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"type": "Water",
 		"movementCost": 1,
 		"uniques": [
-/*			"[+2 Food] <in [Friendly Land] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
+			"[+2 Food] <in [Friendly Land] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
 			"[+1 Food] <in [Friendly Land] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
 			"[+2 Gold] <in [Friendly Land] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
 			"[+1 Gold] <in [Friendly Land] tiles> <in [Friendly Land] tiles> <within [3] tiles of a [City center]> <with [50]% chance>",
-*/
-			"[+1 Food]",
+
 		],
 		"RGB": [33, 97, 171],
 	},
@@ -265,10 +256,8 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 1,
 		"uniques": [
 			"Rough terrain",
-/*			"[+1 Science] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Science] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-*/
-			"[+1 Food]",
 		],
 		"RGB": [200, 76, 12],
 	},
@@ -279,10 +268,8 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 		"movementCost": 1,
 		"uniques": [
 			"Rough terrain",
-/*			"[+1 Science] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+			"[+1 Science] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			"[+1 Food] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-*/
-			"[+1 Food]",
 		],
 		"RGB": [200, 76, 12],
 	},
@@ -304,14 +291,12 @@ These mod checker warnings cannot currently be suppressed. All derive from hybri
 			"Provides a one-time Production bonus to the closest city when cut down",
 			"Blocks line-of-sight from tiles at same elevation",
 			"[99]% Chance to be destroyed by nukes",  // this works, can set values to TerrainFeatures
-/*			//"[+1 Food] <before discovering [Hunting]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // poor food source initially
+			//"[+1 Food] <before discovering [Hunting]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // poor food source initially
 			//"[+1 Food] <after discovering [Hunting]> <before discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			//"[+1 Food] <after discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			"[+1 Food] <with [25]% chance> <before discovering [Hunting]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",  // poor food source initially
 			"[+1 Food] <with [25]% chance> <after discovering [Hunting]> <before discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
 			"[+1 Food] <with [50]% chance> <after discovering [Mining]> <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
-*/
-			"[+1 Food]",
 		],
 	},
 	{
