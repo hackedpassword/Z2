@@ -3,6 +3,12 @@
 
 Looking for some NES nostalgia? With a Civ V twist? You’ve come to the right place.
 
+Z2 hasn't been in development in a while. It's really 2 mods atm, due to experimentation. The non-Z2 portion is a rebuild of G&K that could/should be peeled off into its own mod. This side of Z2 is actually really cool, Unciv combat taken to the next level.
+
+The stopping point here was an issue with the AI that confounded AI settlers, to where gameplay vs AI was too distraught. This was an important lesson in Unciv modding - conversion mods (or total conversion TC mods) can quickly become burdened by AI glitches due to unintended original gameplay. This lesson has been a serious consideration in advancing my Ultima V mod from a themed graphics mod to a TC mod.
+
+Resuming work on this mod is a matter of when. =)
+
 ![](https://raw.githubusercontent.com/hackedpassword/Z2/main/preview.png)
 
 I’m a huge fan of the original Zelda 2, up to and including no-lives-lost vanila game completion. I also have a [less than 7 minute completion speedrun time](https://youtu.be/uHrhG_AkObw) which you may find entertaining. ;) 
