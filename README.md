@@ -1,3 +1,5 @@
+[Leave a reaction for this repo here!](https://github.com/hackedpassword/Z2/discussions/21)
+❤️👀👍💯🥇
 
 # Z2 : Zelda 2 for Unciv
 
